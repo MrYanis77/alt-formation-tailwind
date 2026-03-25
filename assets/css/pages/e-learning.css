@@ -1,0 +1,193 @@
+/**
+ * e-learning.css — Styles spécifiques à la page E-learning
+ *
+ * Ce fichier complète main.css et couvre :
+ *   - Section "Notre plateforme" : grille 2×2 de feature cards
+ *   - Section Statistiques (+200 / 92% / 4.8/5)
+ *   - Section CTA "Prêt à démarrer votre apprentissage ?"
+ *   - Responsive mobile
+ *
+ * @package AltFormationsRH
+ */
+
+/* =========================================================
+   SECTION : PRÉSENTATION DE LA PLATEFORME
+   Titre + sous-titre centré
+   ========================================================= */
+.section-platform {
+    padding: 60px 40px;
+    background: var(--color-white);
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-platform .section-title {
+    margin-bottom: 40px;
+}
+
+/* =========================================================
+   COMPOSANT : GRILLE 2×2 DE FEATURE CARDS
+   Chaque card décrit une fonctionnalité clé de la plateforme.
+   Design épuré : bordure légère, fond blanc, coins arrondis.
+   ========================================================= */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left;
+}
+
+/* Card individuelle */
+.feature-card {
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: 28px 26px;
+    background: var(--color-white);
+    transition: box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Titre de la feature */
+.feature-card h3 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-navy);
+    margin-bottom: 10px;
+}
+
+/* Texte descriptif */
+.feature-card p {
+    font-size: 13px;
+    color: var(--color-muted);
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+/* Liste à puces des points fonctionnels */
+.feature-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.feature-card ul li {
+    font-size: 12px;
+    color: #555;
+    padding-left: 14px;
+    position: relative;
+    line-height: 1.4;
+}
+
+/* Tiret en puce */
+.feature-card ul li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: var(--color-orange);
+}
+
+/* =========================================================
+   SECTION : STATISTIQUES CLÉS
+   Trois chiffres forts sur fond blanc (ou #f9f9f9).
+   Les valeurs numériques sont en orange pour l'impact visuel.
+   ========================================================= */
+.section-stats {
+    padding: 50px 40px;
+    background: var(--color-white);
+    text-align: center;
+}
+
+/* Conteneur flex centré */
+.stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+/* Bloc stat individuel */
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+/* La valeur numérique grande en orange */
+.stat-value {
+    font-family: var(--font-heading);
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--color-orange);
+    line-height: 1;
+}
+
+/* Le libellé sous le chiffre */
+.stat-label {
+    font-size: 13px;
+    color: var(--color-muted);
+}
+
+/* =========================================================
+   SECTION CTA — "Prêt à démarrer votre apprentissage ?"
+   ========================================================= */
+.section-cta-elearning {
+    padding: 70px 40px;
+    background: var(--color-white);
+    text-align: center;
+}
+
+.section-cta-elearning .section-title {
+    font-size: 28px;
+    margin-bottom: 14px;
+}
+
+.section-cta-elearning p {
+    font-size: 14px;
+    color: var(--color-muted);
+    max-width: 420px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   RESPONSIVE — Mobile (≤ 768px)
+   ========================================================= */
+@media (max-width: 768px) {
+
+    .section-platform {
+        padding: 40px 16px;
+    }
+
+    /* Features en colonne unique sur mobile */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-stats {
+        padding: 40px 16px;
+    }
+
+    /* Stats empilées verticalement sur mobile */
+    .stats-row {
+        gap: 40px;
+    }
+
+    .stat-value {
+        font-size: 36px;
+    }
+
+    .section-cta-elearning {
+        padding: 50px 16px;
+    }
+
+    .section-cta-elearning .section-title {
+        font-size: 22px;
+    }
+}
