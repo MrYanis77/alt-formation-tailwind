@@ -1,3 +1,9 @@
+
+export const hero = {
+  titre: "Alternance",
+  sousTitre: "Conjuguez théorie et pratique avec nos formations en alternance reconnues par l'État",
+};
+
 export const benefits = [
   {
     titre: 'Rémunération',

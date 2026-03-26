@@ -14,6 +14,13 @@
  * Structuré en 2 colonnes : comment ça marche + montant disponible
  * @type {Object}
  */
+
+
+export const hero = {
+  titre: "Financements",
+  sousTitre: "Plusieurs solutions de financement pour rendre votre formation accessible",
+};
+
 export const cpf = {
   titre: 'Compte Personnel de Formation (CPF)',
   description:

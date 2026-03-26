@@ -3,7 +3,7 @@ import Breadcrumb from '../components/Breadcrumb';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import CardFormation from '../components/CardFormation'; // Import du nouveau composant
-import { catalogue } from '../data/formations';
+import { hero,catalogue } from '../data/formations';
 
 export default function FormationsPage() {
   return (
@@ -14,8 +14,8 @@ export default function FormationsPage() {
       
       {/* Hero Section */}
       <Hero
-        title="Nos formations"
-        subtitle="340 parcours certifiants adaptés à vos ambitions professionnelles"
+        title={hero.titre}
+        subtitle={hero.sousTitre}
       />
 
       {/* ===== CATALOGUE ===== */}

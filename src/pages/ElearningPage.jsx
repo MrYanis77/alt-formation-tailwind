@@ -6,7 +6,7 @@ import CardGrid from '../components/CardGrid';
 import StatsSection from '../components/StatsSection';
 
 // Données : features doit être formaté avec { titre, description, items }
-import { features, stats } from '../data/elearning';
+import {hero, features, stats } from '../data/elearning';
 
 export default function ElearningPage() {
   return (
@@ -15,8 +15,8 @@ export default function ElearningPage() {
       <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'E-learning' }]} />
       
       <Hero
-        title="E-learning"
-        subtitle="Formez-vous à votre rythme avec notre plateforme d'apprentissage en ligne"
+          title={hero.titre}
+          subtitle={hero.sousTitre}
       />
 
       {/* ===== SECTION PLATEFORME (Image 9ab569) ===== */}

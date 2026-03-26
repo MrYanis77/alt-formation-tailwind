@@ -15,6 +15,12 @@ import EntreprisePage from './pages/EntreprisePage';
 import AproposPage from './pages/AproposPage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
+import ConnexionPage from './pages/ConnexionPage';
+import InscriptionPage from './pages/InscriptionPage';
+import FormationDetail from './pages/FormationDetail';
+import CampusPage from './pages/CampusPages';
+import CertificationPage from './pages/CertificationPage';
+import NousRejoindre from './pages/NousRejoindrePage';
 
 function ComingSoon({ title }) {
   return (
@@ -58,7 +64,12 @@ export default function App() {
           <Route path="/a-propos" element={<AproposPage/>} />
           <Route path="/blog" element={<BlogPage/>} />
           <Route path="/contact" element={<ContactPage/>} />
-          <Route path="/inscription" element={<ComingSoon title="Inscription" />} />
+          <Route path="/inscription" element={<InscriptionPage/>} />
+          <Route path="/connexion" element={<ConnexionPage/>} />
+          <Route path="/formations/:slug" element={<FormationDetail />} />
+          <Route path="/campus" element={<CampusPage/>} />
+          <Route path="/certification" element={<CertificationPage/>} />
+           <Route path="/nous-rejoindre" element={<NousRejoindre/>} />
 
           {/* 404 */}
           <Route path="*" element={<ComingSoon title="Page introuvable" />} />

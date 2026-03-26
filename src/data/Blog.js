@@ -2,6 +2,11 @@
  * blogData.js - Données extraites des maquettes pour la section Actualités / Blog
  */
 
+export const hero= {
+  titre: "Blog",
+  sousTitre: "Actualités, conseils et tendances du monde de la formation professionnelle",
+};
+
 // 1. Liste des catégories pour les filtres (image_a607a6.png)
 export const categories = [
   "Tous",

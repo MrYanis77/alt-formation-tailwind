@@ -12,6 +12,12 @@
  * Structuré en 3 colonnes : Analyse / Déploiement / Suivi & Évaluation
  * @type {Object}
  */
+
+export const hero = {
+  titre: "Solutions Entreprises",
+  sousTitre: "Développez les compétences de vos équipes avec des solutions sur-mesure",
+};
+
 export const formationSurMesure = {
   titre: 'Formation sur-mesure',
   description:

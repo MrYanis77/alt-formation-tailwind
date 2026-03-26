@@ -1,3 +1,12 @@
+/**
+ * contact.js — Données de la page Contact
+ */
+
+export const hero= {
+  titre: "Contactez-nous",
+  sousTitre: "Notre équipe est à votre écoute pour répondre à toutes vos questions",
+};
+
 export const contactData = {
   // Section Coordonnées
   coordonnees: {

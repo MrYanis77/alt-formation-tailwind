@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar';
 import Breadcrumb from '../components/Breadcrumb';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
-import { cpf, opco, poleEmploi, autresSolutions } from '../data/financement';
+import {hero, cpf, opco, poleEmploi, autresSolutions } from '../data/financement';
 
 export default function FinancementsPage() {
   return (
@@ -10,9 +10,9 @@ export default function FinancementsPage() {
       <Breadcrumb
         items={[{ label: 'Accueil', to: '/' }, { label: 'Financements' }]}
       />
-      <Hero
-        title="Financements"
-        subtitle="Plusieurs solutions de financement pour rendre votre formation accessible"
+     <Hero
+        title={hero.titre}
+        subtitle={hero.sousTitre}
       />
 
       <main className="py-[60px] px-6 max-w-[1100px] mx-auto flex flex-col gap-8" id="main-content">

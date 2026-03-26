@@ -1,8 +1,7 @@
 import Breadcrumb from '../components/Breadcrumb';
 import Hero from '../components/Hero';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import { 
+  hero,
   formationSurMesure, 
   servicesComplementaires, 
   recrutementAlternance, 
@@ -13,9 +12,9 @@ export default function EntreprisePage() {
   return (
     <div className="bg-white min-h-screen">
       <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'Entreprise' }]} />
-      <Hero 
-        title="Solutions Entreprises" 
-        subtitle="Développez les compétences de vos équipes avec des solutions sur-mesure" 
+      <Hero
+          title={hero.titre}
+          subtitle={hero.sousTitre}
       />
 
       <main className="py-[60px] px-6 max-w-[1100px] mx-auto flex flex-col gap-8" id="main-content">

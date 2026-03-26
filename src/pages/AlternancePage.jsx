@@ -7,17 +7,17 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 // Import des données
-import { benefits, formations, steps } from '../data/alternance';
+import { hero,benefits, formations, steps } from '../data/alternance';
 
 export default function AlternancePage() {
   return (
     <div className="bg-white min-h-screen">
       <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'Alternance' }]} />
       
-      <Hero
-        title="Alternance"
-        subtitle="Conjuguez théorie et pratique avec nos formations en alternance reconnues par l'État."
-      />
+    <Hero
+        title={hero.titre}
+        subtitle={hero.sousTitre}
+    />
 
       {/* ===== SECTION AVANTAGES (Image 9a35a3) ===== */}
       <section className="py-20 px-6 bg-white">

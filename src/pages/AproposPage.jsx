@@ -3,96 +3,96 @@ import Navbar from '../components/Navbar';
 import Breadcrumb from '../components/Breadcrumb';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
+import TexteSection from '../components/TexteSection'; // Import du composant flexible
 import { hero, notreHistoire, nosValeurs, certificationsAgrements } from '../data/apropos';
 
 export default function AproposPage() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen font-body antialiased">
+      
       <Breadcrumb
         items={[{ label: 'Accueil', to: '/' }, { label: 'À propos' }]}
       />
+      
       <Hero
         title={hero.titre}
         subtitle={hero.sousTitre}
       />
 
-      <main className="py-[60px] px-6 max-w-[1100px] mx-auto flex flex-col gap-8" id="main-content">
+      <main id="main-content">
         
-        {/* ======== BLOC 1 : NOTRE HISTOIRE ======== */}
-        <section className="bg-white border border-gray-100 rounded-xl p-10 md:p-12 shadow-sm">
-          <h2 className="font-heading text-[28px] font-bold text-navy mb-8">
-            {notreHistoire.titre}
-          </h2>
-          <div className="flex flex-col gap-6">
-            {notreHistoire.contenu.map((paragraph, i) => (
-              <p key={i} className="text-[15px] text-[#444] leading-relaxed">
-                {paragraph}
-              </p>
-            ))}
-          </div>
-        </section>
+        {/* ======== BLOC 1 : NOTRE HISTOIRE (TexteSection) ======== */}
+        {/* Ce composant gère l'image de manière conditionnelle et applique la barre orange */}
+        <TexteSection data={notreHistoire} imageRight={true} />
 
-        {/* ======== BLOC 2 : NOS VALEURS ======== */}
-        <section className="bg-[#fcfcfc] border border-orange rounded-xl p-10 md:p-12 shadow-sm">
-          <h2 className="font-heading text-[28px] font-bold text-navy mb-10 text-center">
-            {nosValeurs.titre}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {nosValeurs.items.map((valeur, idx) => (
-              <div key={idx} className="flex flex-col items-center text-center">
-                {/* Petit accent visuel orange comme sur la maquette */}
-                <div className="w-12 h-1 bg-orange mb-6 rounded-full" />
-                <h4 className="font-heading text-[18px] font-bold text-navy mb-4">
-                  {valeur.nom}
-                </h4>
-                <p className="text-[14px] text-[#555] leading-relaxed">
-                  {valeur.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ======== BLOC 3 : CERTIFICATIONS & AGREMENTS ======== */}
-        <section className="bg-white border border-gray-100 rounded-xl p-10 md:p-12 shadow-sm">
-          <h2 className="font-heading text-[28px] font-bold text-navy mb-10">
-            {certificationsAgrements.titre}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
-            {certificationsAgrements.items.map((cert, idx) => (
-              <div key={idx} className="flex items-start gap-4">
-                <span className="text-orange font-bold text-2xl leading-none mt-[-2px]">•</span>
-                <div>
-                  <h4 className="font-heading text-[16px] font-bold text-navy mb-2">
-                    {cert.nom}
+        <div className="max-w-[1100px] mx-auto px-6 flex flex-col gap-16 pb-24">
+          
+          {/* ======== BLOC 2 : NOS VALEURS ======== */}
+          <section className="bg-[#fcfcfc] border border-orange/30 rounded-3xl p-10 md:p-16 shadow-sm">
+            <h2 className="font-heading text-[32px] font-black text-navy mb-12 text-center uppercase tracking-tight">
+              {nosValeurs.titre}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              {nosValeurs.items.map((valeur, idx) => (
+                <div key={idx} className="flex flex-col items-center text-center group">
+                  <div className="w-12 h-1 bg-orange mb-6 rounded-full transition-all group-hover:w-20" />
+                  <h4 className="font-heading text-[20px] font-bold text-navy mb-4 uppercase">
+                    {valeur.nom}
                   </h4>
-                  <p className="text-[14px] text-[#555] leading-relaxed">
-                    {cert.description}
+                  <p className="text-[15px] text-muted leading-relaxed">
+                    {valeur.description}
                   </p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
 
+          {/* ======== BLOC 3 : CERTIFICATIONS & AGREMENTS ======== */}
+          <section className="bg-white border border-gray-100 rounded-3xl p-10 md:p-16 shadow-sm">
+            <div className="flex items-center mb-10">
+              <div className="w-[6px] h-8 bg-orange rounded-full mr-4"></div>
+              <h2 className="font-heading text-[28px] font-black text-navy uppercase tracking-tight">
+                {certificationsAgrements.titre}
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+              {certificationsAgrements.items.map((cert, idx) => (
+                <div key={idx} className="flex items-start gap-5 p-4 rounded-xl hover:bg-gray-50 transition-colors">
+                  <span className="text-orange font-bold text-2xl leading-none">•</span>
+                  <div>
+                    <h4 className="font-heading text-[17px] font-bold text-navy mb-2 uppercase">
+                      {cert.nom}
+                    </h4>
+                    <p className="text-[14px] text-muted leading-relaxed">
+                      {cert.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
       </main>
 
       {/* ======== SECTION CTA FINAL ======== */}
-      <section className="bg-[#f9fafb] py-[80px] px-6 text-center">
-        <h2 className="font-heading text-[32px] font-bold text-navy mb-4">
-          Rejoingnez l'aventure
-        </h2>
-        <p className="text-[#666] text-[16px] mb-10">
-          Vous êtes formateur expert ou passionné par la pédagogie ? Nous recrutons régulièrement de nouveaux talents pour renforcer notre équipe.
-        </p>
-        <a 
-          href="#contact" 
-          className="inline-block bg-orange hover:bg-orange-dark text-white px-12 py-4 rounded-lg font-heading text-[16px] font-bold transition-all no-underline shadow-md"
-        >
-          Voir nos offres d'emploi
-        </a>
+      <section className="bg-gray-50 py-24 px-6 text-center border-t border-gray-100">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-heading text-[36px] font-black text-navy mb-6 uppercase tracking-tight">
+            Rejoignez l'aventure
+          </h2>
+          <p className="text-muted text-lg mb-10 leading-relaxed">
+            Vous êtes formateur expert ou passionné par la pédagogie ? Nous recrutons régulièrement de nouveaux talents pour renforcer notre équipe.
+          </p>
+          <a 
+            href="#contact" 
+            className="btn-orange inline-block px-12 py-5 shadow-lg hover:-translate-y-1"
+          >
+            Voir nos offres d'emploi
+          </a>
+        </div>
       </section>
 
+    
     </div>
   );
 }

@@ -7,6 +7,12 @@
  *   label    {string} — titre de la catégorie
  *   items[]  {Object} — formations : titre + features (3 bullets)
  */
+
+export const hero = {
+  titre: "Nos formations",
+  sousTitre: "Des parcours certifiants adaptés à vos ambitions professionnelles",
+};
+
 export const catalogue = [
   {
     id: 'cybersecurite',

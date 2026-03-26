@@ -1,3 +1,9 @@
+
+export const hero = {
+  titre: "E-learning",
+  sousTitre: "Formez-vous à votre rythme avec notre plateforme d'apprentissage en ligne",
+};
+
 export const features = [
   {
     titre: 'Accessible 24/7',
