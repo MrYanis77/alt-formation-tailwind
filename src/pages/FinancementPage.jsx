@@ -49,7 +49,7 @@ export default function FinancementsPage() {
                 {cpf.amount.description}
               </p>
               <a
-                href={cpf.amount.ctaHref}
+                href={"https://www.service-public.gouv.fr/particuliers/vosdroits/R46472"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-orange hover:bg-orange-dark text-white px-8 py-3.5 rounded-lg font-heading text-[15px] font-bold transition-all no-underline shadow-sm"
@@ -147,7 +147,7 @@ export default function FinancementsPage() {
           Nos conseillers vous accompagnent dans le montage de votre dossier
         </p>
         <a 
-          href="#contact" 
+          href="/contact" 
           className="inline-block bg-orange hover:bg-orange-dark text-white px-12 py-4 rounded-lg font-heading text-[16px] font-bold transition-all no-underline shadow-md"
         >
           Prendre rendez-vous

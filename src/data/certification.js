@@ -8,56 +8,57 @@ export const certifications = [
   {
     id: 1,
     nom: "Développeur Web et Web Mobile",
-    rncp: "RNCP 37674",
+    rncp: "37674",
+    niveau : "5",
     lien: "https://www.francecompetences.fr/recherche/rncp/37674/"
   },
   {
     id: 2,
     nom: "Concepteur Développeur d'Applications",
-    rncp: "RNCP 37625",
+    rncp: "37625",
+    niveau : "6",
     lien: "https://www.francecompetences.fr/recherche/rncp/37625/"
   },
   {
     id: 3,
-    nom: "Développeur d'applications multimédia",
-    rncp: "Titre RNCP",
-    lien: "https://www.francecompetences.fr/"
+    nom: "Technicien Supérieur Systèmes et Réseaux",
+    rncp: "37682",
+    niveau : "5",
+    lien: "https://www.francecompetences.fr/recherche/rncp/37682/"
   },
   {
     id: 4,
-    nom: "Technicien Supérieur Systèmes et Réseaux",
-    rncp: "RNCP 37682",
+    nom: "Community Manager",
+    rncp: "37682",
+    niveau : "6",
     lien: "https://www.francecompetences.fr/recherche/rncp/37682/"
   },
-  // Image 3
   {
     id: 5,
-    nom: "Community Manager",
-    rncp: "Certification RNCP",
-    lien: "https://www.francecompetences.fr/"
-  },
-  {
-    id: 6,
     nom: "Assistant(e) Ressources Humaines",
-    rncp: "RNCP 36612",
+    rncp: "36612",
+    niveau : "5",
     lien: "https://www.francecompetences.fr/recherche/rncp/36612/"
   },
   {
-    id: 7,
+    id: 6,
     nom: "Gestionnaire de Paie",
-    rncp: "RNCP 37948",
+    rncp: "37948",
+    niveau : "5",
     lien: "https://www.francecompetences.fr/recherche/rncp/37948/"
   },
   {
-    id: 8,
+    id: 7,
     nom: "Secrétaire Comptable",
-    rncp: "Titre RNCP",
-    lien: "https://www.francecompetences.fr/"
+    rncp: "36434",
+    niveau : "4",
+    lien: "https://www.francecompetences.fr/recherche/rncp/36434/"
   },
   {
     id: 9,
     nom: "Conseiller(ère) Relation Client à Distance",
-    rncp: "Titre RNCP",
-    lien: "https://www.francecompetences.fr/"
+    rncp: "35304",
+    niveau : "4",
+    lien: "https://www.francecompetences.fr/recherche/rncp/35304/"
   }
 ];

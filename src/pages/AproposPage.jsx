@@ -84,7 +84,7 @@ export default function AproposPage() {
             Vous êtes formateur expert ou passionné par la pédagogie ? Nous recrutons régulièrement de nouveaux talents pour renforcer notre équipe.
           </p>
           <a 
-            href="#contact" 
+            href="/nous-rejoindre" 
             className="btn-orange inline-block px-12 py-5 shadow-lg hover:-translate-y-1"
           >
             Voir nos offres d'emploi

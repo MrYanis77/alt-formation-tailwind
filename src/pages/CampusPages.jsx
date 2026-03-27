@@ -1,8 +1,8 @@
 import React from 'react';
 import { campus } from '../data/campus';
 import CardFormation from '../components/CardFormation';
-import Breadcrumb from '../components/Breadcrumb'; // Assure-toi de l'import
-import Hero from '../components/Hero'; // Assure-toi de l'import
+import Breadcrumb from '../components/Breadcrumb'; 
+import Hero from '../components/Hero'; 
 
 export default function CampusPage() {
   return (
@@ -15,7 +15,7 @@ export default function CampusPage() {
         ]}
       />
 
-      {/* 1. HERO SECTION (Utilisation du composant Hero) */}
+      {/* 1. HERO SECTION */}
       <Hero
         title="Nos Campus"
         subtitle="Retrouvez-nous dans toute l'Île-de-France. Des infrastructures modernes au service de votre réussite."
@@ -30,7 +30,8 @@ export default function CampusPage() {
                 key={item.id}
                 title={item.nom}
                 image={item.image}
-                // Adaptation des points pour le contexte Campus
+                // On passe le lien Google Maps à la prop href du composant
+                href={item.mapLink}
                 points={[
                   item.adresse,
                   "Espaces de coworking modernes",
@@ -43,8 +44,6 @@ export default function CampusPage() {
           </div>
         </div>
       </section>
-
-      
     </div>
   );
 }

@@ -1,7 +1,6 @@
-import Navbar from '../components/Navbar';
+
 import Breadcrumb from '../components/Breadcrumb';
 import Hero from '../components/Hero';
-import Footer from '../components/Footer';
 import CardFormation from '../components/CardFormation'; // Import du nouveau composant
 import { hero,catalogue } from '../data/formations';
 
@@ -16,6 +15,8 @@ export default function FormationsPage() {
       <Hero
         title={hero.titre}
         subtitle={hero.sousTitre}
+        href={hero.href} // On passe le nouveau lien ici
+        image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1200" // Image spécifique pour la page formations
       />
 
       {/* ===== CATALOGUE ===== */}
@@ -77,8 +78,6 @@ export default function FormationsPage() {
           </a>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

@@ -1,6 +1,14 @@
-
 export const navlinks = [
-  { label: "Formations", href: "/formations" },
+  { 
+    label: "Formations", 
+    href: "/formations",
+    submenu: [
+      { label: "Cybersécurité", href: "/formations/expert-cybersecurite" },
+      { label: "Management", href: "/formations/management" },
+      { label: "Ressources Humaines", href: "/formations/ressources-humaines" },
+      { label: "Digital Marketing", href: "/formations/digitaletmarketing" },
+    ]
+  },
   { label: "Alternance", href: "/alternance" },
   { label: "E-learning", href: "/e-learning" },
   { label: "Financements", href: "/financements" },

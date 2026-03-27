@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import de Link
 import FormUser from '../components/FormUser';
 
 export default function ConnexionPage() {
@@ -14,7 +15,13 @@ export default function ConnexionPage() {
       </div>
 
       <p className="mt-8 text-gray-600 text-sm font-medium text-center">
-        Pas encore de compte ? <span className="text-[#F39233] font-bold cursor-pointer hover:underline">S'inscrire gratuitement</span>
+        Pas encore de compte ?{' '}
+        <Link 
+          to="/inscription" 
+          className="text-[#F39233] font-bold no-underline hover:underline"
+        >
+          S'inscrire gratuitement
+        </Link>
       </p>
     </div>
   );

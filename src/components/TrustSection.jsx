@@ -1,39 +1,50 @@
 export default function TrustSection({ partenaires, temoignages }) {
+  // On double le tableau des partenaires pour créer l'effet de boucle infinie
+  const doublePartenaires = [...partenaires, ...partenaires];
+
   return (
     <div className="bg-slate-50">
-      {/* Partenaires */}
-      <section className="py-16 px-6 bg-white">
-        <h2 className="font-heading text-2xl text-dark text-center mb-12 uppercase tracking-wide">
-          Ils nous font confiance
-        </h2>
-        <div className="flex flex-wrap justify-center gap-6 md:gap-8 max-w-[1000px] mx-auto">
-          {partenaires.map((nom) => (
-            <div key={nom} className="px-6 py-4 border border-border rounded-lg text-muted font-bold text-sm grayscale opacity-70 hover:opacity-100 transition-all cursor-default bg-white">
-              {nom}
-            </div>
-          ))}
+      {/* Partenaires avec Défilement Automatique */}
+      <section className="py-[70px] bg-white border-t border-border overflow-hidden">
+        <div className="max-w-[1100px] mx-auto px-6 mb-12">
+          <h2 className="font-heading text-2xl md:text-[32px] font-extrabold text-[#1E2F47] text-center uppercase tracking-wider">
+            Ils nous font confiance
+          </h2>
         </div>
+
+        {/* Conteneur du Carrousel */}
+        <div className="relative flex overflow-hidden group">
+          <div className="flex py-4 animate-scroll whitespace-nowrap">
+            {doublePartenaires.map((partenaire, index) => (
+              <div 
+                key={index} 
+                className="flex-shrink-0 w-[150px] md:w-[200px] mx-8 md:mx-12 flex items-center justify-center transition-opacity duration-300 opacity-80 hover:opacity-100"
+              >
+                <img 
+                  src={partenaire.logo} 
+                  alt={partenaire.nom} 
+                  className="h-12 md:h-16 w-auto object-contain"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Ajout du style pour l'animation scroll */}
+        <style dangerouslySetInnerHTML={{ __html: `
+          @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .animate-scroll {
+            display: flex;
+            width: max-content;
+            animation: scroll 60s linear infinite;
+          }
+        `}} />
       </section>
 
-      {/* Témoignages */}
-      <section className="py-20 px-6 max-w-[1100px] mx-auto">
-        <h2 className="font-heading text-2xl text-dark text-center mb-16 uppercase tracking-wide">
-          Témoignages
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {temoignages.map((t) => (
-            <article key={t.author} className="bg-white p-8 border-l-4 border-l-orange shadow-sm rounded-r-lg flex flex-col justify-between">
-              <blockquote className="text-[14px] italic text-[#555] leading-relaxed mb-8 font-body">
-                "{t.quote}"
-              </blockquote>
-              <div>
-                <p className="font-heading font-bold text-navy text-[15px]">{t.author}</p>
-                <p className="text-orange text-[12px] font-bold uppercase tracking-wide font-body">{t.role}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
+     
     </div>
   );
 }

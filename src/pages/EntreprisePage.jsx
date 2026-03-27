@@ -117,9 +117,12 @@ export default function EntreprisePage() {
         <p className="text-[#666] text-[16px] max-w-[600px] mx-auto mb-10">
           Nos experts vous proposent un audit gratuit et sans engagement pour identifier vos besoins en formation
         </p>
-        <button className="bg-orange hover:bg-orange-dark text-white px-12 py-4 rounded-lg font-heading text-[16px] font-bold transition-all shadow-md">
+        <a 
+          href="/contact" 
+          className="inline-block bg-orange hover:bg-orange-dark text-white px-12 py-4 rounded-lg font-heading text-[16px] font-bold transition-all shadow-md no-underline"
+        >
           Demander un devis
-        </button>
+        </a>
       </section>
 
     </div>

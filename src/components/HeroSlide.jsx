@@ -1,13 +1,20 @@
+// Composant HeroSlide
+// - Affiche le contenu de la slide principale du carousel
+// - Gère le rendu du bouton CTA (interne ou externe)
+
 import { Link } from 'react-router-dom';
 
 export default function HeroSlide({ slide }) {
+  // Détecter si c'est un lien externe (Google Maps, etc.) ou interne (React Router)
+  const isExternal = slide.ctaTo?.startsWith('http');
+
   return (
     <div className="max-w-[700px]">
       <span className="inline-block bg-orange text-white font-heading text-[11px] font-bold px-3 py-1 rounded-full tracking-wider mb-4.5 uppercase">
         {slide.badge}
       </span>
 
-      <h1 className="font-heading text-3xl md:text-[38px] font-extrabold text-white leading-[1.15] mb-3 whitespace-pre-line">
+      <h1 className="font-heading text-3xl md:text-[38px] font-extrabold text-white leading-[1.15] mb-3 whitespace-pre-line uppercase tracking-tight">
         {slide.title}
       </h1>
 
@@ -19,12 +26,23 @@ export default function HeroSlide({ slide }) {
         {slide.desc}
       </p>
 
-      <Link 
-        to={slide.ctaTo} 
-        className="btn-orange inline-block px-7 py-3 text-sm shadow-lg"
-      >
-        {slide.cta}
-      </Link>
+      {isExternal ? (
+        <a 
+          href={slide.ctaTo}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-orange inline-block px-7 py-3 text-sm shadow-lg no-underline uppercase font-bold tracking-wide transition-transform hover:-translate-y-1"
+        >
+          {slide.cta}
+        </a>
+      ) : (
+        <Link 
+          to={slide.ctaTo} 
+          className="btn-orange inline-block px-7 py-3 text-sm shadow-lg no-underline uppercase font-bold tracking-wide transition-transform hover:-translate-y-1"
+        >
+          {slide.cta}
+        </Link>
+      )}
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import de Link
 import FormUser from '../components/FormUser';
 
 export default function InscriptionPage() {
@@ -15,11 +16,14 @@ export default function InscriptionPage() {
 
       <div className="mt-8 text-center space-y-4 text-sm">
         <p className="text-gray-600 font-medium">
-          Vous avez déjà un compte ? <span className="text-[#F39233] font-bold cursor-pointer hover:underline">Se connecter</span>
+          Vous avez déjà un compte ?{' '}
+          <Link 
+            to="/connexion" 
+            className="text-[#F39233] font-bold no-underline hover:underline"
+          >
+            Se connecter
+          </Link>
         </p>
-        <button className="text-gray-400 text-xs font-bold hover:text-[#002D4C] transition-colors uppercase tracking-widest block mx-auto">
-          ← Retour à l'accueil
-        </button>
       </div>
     </div>
   );

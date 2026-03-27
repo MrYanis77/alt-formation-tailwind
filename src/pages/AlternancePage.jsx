@@ -27,10 +27,13 @@ export default function AlternancePage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {benefits.map((b, index) => (
-              <InfoCard 
+           <InfoCard 
                 key={index} 
-                titre={b.titre} // Prop corrigée : titre
-                description={b.description} 
+                titre={b.titre} 
+                description={b.description}
+                // Si tu veux que l'icône dans l'InfoCard suive aussi 
+                // la charte, tu peux forcer la variante ici
+                variant="orange" 
               />
             ))}
           </div>

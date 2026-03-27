@@ -21,6 +21,11 @@ import FormationDetail from './pages/FormationDetail';
 import CampusPage from './pages/CampusPages';
 import CertificationPage from './pages/CertificationPage';
 import NousRejoindre from './pages/NousRejoindrePage';
+import MentionsLegales from './pages/MentionsLegales';
+import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite';
+import ReglementInterieur from './pages/ReglementInterieur';
+import PolitiqueCookies from './pages/PolitiqueCookies';
+
 
 function ComingSoon({ title }) {
   return (
@@ -69,8 +74,10 @@ export default function App() {
           <Route path="/formations/:slug" element={<FormationDetail />} />
           <Route path="/campus" element={<CampusPage/>} />
           <Route path="/certification" element={<CertificationPage/>} />
-           <Route path="/nous-rejoindre" element={<NousRejoindre/>} />
-
+          <Route path="/nous-rejoindre" element={<NousRejoindre/>} />
+          <Route path="/mentions-legales" element={<MentionsLegales/>} />
+          <Route path="/politique-de-confidentialite" element={<PolitiqueConfidentialite/>} />
+          <Route path="/conditions-generales" element={<PolitiqueCookies/>} />
           {/* 404 */}
           <Route path="*" element={<ComingSoon title="Page introuvable" />} />
         </Routes>

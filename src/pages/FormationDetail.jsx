@@ -1,34 +1,50 @@
 import React from 'react';
-import { useParams, Navigate } from 'react-router-dom'; // <-- Ajout des hooks de routing
-import Breadcrumb from '../components/Breadcrumb';
-import HeroFormation from '../components/HeroFormation'; 
+import { useParams, Navigate, Link } from 'react-router-dom'; 
+import { allFormations } from '../data';
+
+// Importation des composants standards
+import Hero from '../components/Hero';
 import StatsBar from '../components/StatsBar'; 
 import TexteSection from '../components/TexteSection';
 import CardModule from '../components/CardModule';
 import CardJob from '../components/CardJob';
 import InfoCard from '../components/InfoCard';
-import { allFormations } from '../data'; // <-- On importe notre dictionnaire de données
+import { Target, CheckCircle, GraduationCap } from "lucide-react";
+import Breadcrumb from '../components/Breadcrumb';
 
 export default function FormationDetail() {
-  const { slug } = useParams(); // Récupère "expert-cybersecurite" ou "ressources-humaines" depuis l'URL
+  const { slug } = useParams(); 
   const data = allFormations[slug];
 
-  // Si l'utilisateur tape une URL qui n'existe pas dans nos données, on le redirige
   if (!data) return <Navigate to="/404" replace />;
 
+  const breadcrumb = [
+    { label: 'Accueil', to: '/' }, 
+    { label: 'Formations', to: '/formations' }, 
+    { label: data.hero.titre }
+  ];
+
   return (
-    <div className="bg-white font-body antialiased">
-      <Breadcrumb 
+    <div className="bg-white min-h-screen antialiased text-left">
+       <Breadcrumb 
         items={[
           { label: 'Accueil', to: '/' }, 
           { label: 'Formations', to: '/formations' }, 
           { label: data.hero.titre } // <-- Le titre change dynamiquement !
         ]} 
       />
+      {/* 1. HERO - Format Standard */}
+      <Hero 
+        title={data.hero.titre}
+        subtitle={data.hero.sousTitre || "Maîtrisez les compétences de demain avec nos experts."}
+        image={data.hero.image || "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"}
+        href={data.hero.href} // Lien dynamique pour le CTA
+      />
 
-      <HeroFormation hero={data.hero} />
+      {/* 2. STATS BAR */}
       <StatsBar stats={data.stats} />
 
+      {/* 3. PRÉSENTATION - TexteSection standard */}
       <TexteSection 
         data={{
           titre: data.presentation.titre,
@@ -38,44 +54,46 @@ export default function FormationDetail() {
         imageRight={true} 
       />
 
-      <section className="bg-navy py-24 px-6">
-        <div className="max-w-[1200px] mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-heading text-3xl md:text-[42px] font-black text-white mb-4 tracking-tight">
+      {/* 4. DÉBOUCHÉS - Style Navy comme "Nous Rejoindre" */}
+      <section className="py-[70px] px-6 bg-navy">
+        <div className="max-w-[1100px] mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-white text-2xl md:text-[32px] font-extrabold mb-4 uppercase tracking-wider">
               {data.debouches.titre}
             </h2>
-            <p className="text-white/90 text-lg font-medium">
+            <p className="text-white/80 text-[15px] max-w-[700px] mx-auto leading-relaxed">
               {data.debouches.sousTitre}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
             {data.debouches.postes.map((poste, idx) => (
               <CardJob key={idx} poste={poste} />
             ))}
           </div>
 
-          <div className="bg-white rounded-xl p-8 border-l-[6px] border-orange shadow-xl">
-            <p className="text-navy text-[15px] leading-relaxed">
-              <strong className="font-black uppercase tracking-wider mr-2">Secteurs d'activité :</strong>
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
+            <p className="text-white text-[15px] leading-relaxed">
+              <strong className="text-orange font-bold uppercase tracking-wider mr-2 text-sm">Secteurs d'activité :</strong>
               {data.debouches.secteurs}
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-[900px] mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="font-heading text-[42px] font-black text-navy mb-4">
+      {/* 5. PROGRAMME - Format Compact */}
+      <section className="py-[70px] px-6 bg-white">
+        <div className="max-w-[900px] mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-[#1E2F47] text-2xl md:text-[32px] font-extrabold mb-3 uppercase tracking-wider">
               Programme de la formation
             </h2>
-            <p className="text-muted text-lg">
-              {data.programme.dureeTotale} {/* Rendu dynamique */}
+            <p className="text-orange font-bold text-sm uppercase tracking-widest">
+              {data.programme.dureeTotale}
             </p>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="space-y-4">
             {data.programme.modules.map((module) => (
               <CardModule key={module.id} module={module} />
             ))}
@@ -83,93 +101,76 @@ export default function FormationDetail() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="max-w-[1200px] mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <InfoCard 
-              titre={data.infosPratiques.modalites.titre}
-              description={
-                <ul className="space-y-4 text-left w-full">
-                  {data.infosPratiques.modalites.points.map((point, idx) => (
-                    <li key={idx} className="flex items-center gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 rounded-full border border-orange flex items-center justify-center">
-                        <svg className="w-3 h-3 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="4">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      <span className="text-navy font-medium">{point}</span>
-                    </li>
-                  ))}
-                </ul>
-              }
-            />
-            <InfoCard 
-              titre={data.infosPratiques.prerequis.titre}
-              description={
-                <ul className="space-y-4 text-left w-full">
-                  {data.infosPratiques.prerequis.points.map((point, idx) => (
-                    <li key={idx} className="flex items-center gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 rounded-full border border-orange flex items-center justify-center">
-                        <svg className="w-3 h-3 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="4">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      <span className="text-navy font-medium">{point}</span>
-                    </li>
-                  ))}
-                </ul>
-              }
-            />
-          </div>
+      {/* 6. INFOS PRATIQUES - Grille comme "Pourquoi nous rejoindre" */}
+      <section className="py-[70px] px-6 bg-gray-50 border-y border-border">
+        <div className="max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <InfoCard 
+            titre={data.infosPratiques.modalites.titre}
+            icon={Target}
+            variant="orange"
+            description={
+              <ul className="space-y-3 mt-4">
+                {data.infosPratiques.modalites.points.map((p, i) => (
+                  <li key={i} className="flex items-center gap-3 text-navy font-medium text-[14px]">
+                    <CheckCircle className="w-4 h-4 text-orange flex-shrink-0" /> {p}
+                  </li>
+                ))}
+              </ul>
+            }
+          />
+          <InfoCard 
+            titre={data.infosPratiques.prerequis.titre}
+            icon={GraduationCap}
+            variant="navy"
+            description={
+              <ul className="space-y-3 mt-4">
+                {data.infosPratiques.prerequis.points.map((p, i) => (
+                  <li key={i} className="flex items-center gap-3 text-navy font-medium text-[14px]">
+                    <CheckCircle className="w-4 h-4 text-navy flex-shrink-0" /> {p}
+                  </li>
+                ))}
+              </ul>
+            }
+          />
         </div>
       </section>
 
-      <section className="bg-navy py-20 px-6">
-        <div className="max-w-[1200px] mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-heading text-3xl md:text-[42px] font-black text-white mb-4 tracking-tight">
-              Compétences développées
-            </h2>
-            <div className="w-20 h-1 bg-orange mx-auto rounded-full"></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {/* 7. COMPÉTENCES - Style Grid comme "Nos Avantages" */}
+      <section className="py-[70px] px-6 bg-white">
+        <div className="max-w-[1100px] mx-auto">
+          <h2 className="text-[#1E2F47] text-2xl md:text-[32px] font-extrabold text-center mb-12 uppercase tracking-wider">
+            Compétences développées
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {data.competences.map((competence, idx) => (
-              <div 
-                key={idx} 
-                className="bg-white/5 border border-white/10 rounded-xl p-6 flex items-center gap-4 hover:border-orange/50 transition-all group"
-              >
-                <div className="flex-shrink-0 text-orange">
-                  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
+              <div key={idx} className="flex items-center gap-4 bg-gray-50 border border-border p-5 rounded-xl hover:shadow-md transition-all group">
+                <div className="bg-white p-2 rounded-lg shadow-sm group-hover:bg-orange transition-colors">
+                  <CheckCircle className="w-5 h-5 text-orange group-hover:text-white" />
                 </div>
-                <span className="text-white/90 font-bold text-[17px] tracking-wide group-hover:text-white transition-colors">
-                  {competence}
-                </span>
+                <span className="text-navy font-bold text-[15px]">{competence}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-[1200px] mx-auto px-6">
-          <div className="bg-orange rounded-[20px] p-12 md:p-20 text-center flex flex-col items-center justify-center shadow-lg">
-            <h2 className="font-heading text-3xl md:text-[44px] font-black text-navy mb-6 tracking-tight">
-              {data.ctaFinal.titre}
-            </h2>
-            <p className="text-navy text-lg md:text-xl font-medium mb-12 max-w-2xl">
-              {data.ctaFinal.sousTitre}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-              <button className="bg-white text-orange px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-50 transition-colors shadow-sm">
-                {data.ctaFinal.boutons[0].label}
-              </button>
-              <button className="bg-navy text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-navy-light transition-colors shadow-sm">
-                {data.ctaFinal.boutons[1].label}
-              </button>
-            </div>
+      {/* 8. CTA FINAL - Style Bleu Marine identique */}
+      <section className="py-20 px-6 bg-navy text-center text-white">
+        <div className="max-w-[700px] mx-auto">
+          <h2 className="text-2xl md:text-[34px] font-extrabold mb-4 uppercase">
+            {data.ctaFinal.titre}
+          </h2>
+          <p className="text-[15px] opacity-80 mb-10 leading-relaxed">
+            {data.ctaFinal.sousTitre}
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/contact" className="btn-orange px-10 py-4 text-sm shadow-xl hover:-translate-y-1 transition-all no-underline inline-block">
+              {data.ctaFinal.boutons[0].label}
+            </Link>
+            <Link to="/formations" className="bg-white text-navy px-10 py-4 rounded-default font-bold text-sm hover:bg-gray-100 transition-all no-underline inline-block">
+              Toutes les formations
+            </Link>
           </div>
         </div>
       </section>

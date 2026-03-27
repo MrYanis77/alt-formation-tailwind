@@ -45,7 +45,7 @@ export default function ElearningPage() {
             Rejoignez des milliers d'étudiants et accédez immédiatement à nos modules certifiants.
           </p>
           <a 
-            href="#" 
+            href="/connexion" 
             className="inline-block bg-orange hover:bg-orange-dark text-white font-heading font-bold py-4 px-12 rounded-default transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-orange/20 no-underline uppercase tracking-wider text-sm"
           >
             Accéder à la plateforme
