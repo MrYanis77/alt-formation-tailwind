@@ -38,7 +38,6 @@ export default function FormationDetail() {
         title={data.hero.titre}
         subtitle={data.hero.sousTitre || "Maîtrisez les compétences de demain avec nos experts."}
         image={data.hero.image || "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"}
-        href={data.hero.href} // Lien dynamique pour le CTA
       />
 
       {/* 2. STATS BAR */}

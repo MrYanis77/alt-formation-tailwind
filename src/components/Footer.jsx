@@ -17,10 +17,10 @@ export default function Footer({ showContact = true }) {
               Formations
             </h4>
             <ul className="list-none p-0 m-0 space-y-2">
-              <li><Link to="/formations#cybersecurite" className="text-[#aaa] text-[12px] hover:text-white transition-colors">Cybersécurité</Link></li>
-              <li><Link to="/formations#management" className="text-[#aaa] text-[12px] hover:text-white transition-colors">Management</Link></li>
-              <li><Link to="/formations#ressources-humaines" className="text-[#aaa] text-[12px] hover:text-white transition-colors">Ressources Humaines</Link></li>
-              <li><Link to="/formations#digital" className="text-[#aaa] text-[12px] hover:text-white transition-colors">Digital</Link></li>
+              <li><Link to="/formations/expert-cybersecurite" className="text-[#aaa] text-[12px] hover:text-white transition-colors">Cybersécurité</Link></li>
+              <li><Link to="/formations/management" className="text-[#aaa] text-[12px] hover:text-white transition-colors">Management</Link></li>
+              <li><Link to="/formations/ressources-humaines" className="text-[#aaa] text-[12px] hover:text-white transition-colors">Ressources Humaines</Link></li>
+              <li><Link to="/formations/digitaletmarketing" className="text-[#aaa] text-[12px] hover:text-white transition-colors">Digital</Link></li>
             </ul>
           </div>
 
