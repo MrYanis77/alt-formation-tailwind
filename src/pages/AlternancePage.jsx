@@ -1,12 +1,16 @@
-import Breadcrumb from '../components/Breadcrumb';
-import Hero from '../components/Hero';
-import InfoCard from '../components/InfoCard';
-import DetailHeader from '../components/DetailHeader';
-import StepItem from '../components/StepItem';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+/*
+ * Page Alternance
+ * Cette page présente les informations sur l'alternance, incluant :
+ * - Les avantages de l'alternance
+ * - Le catalogue des titres RNCP
+ * - Les étapes pour intégrer les formations
+ */
 
-// Import des données
+import Breadcrumb from '../components/Breadcrumb';
+import Hero from '../components/Hero/Hero';
+import InfoGrid from '../components/Infos/InfoGrid';
+import DetailHeader from '../components/Card/CardJob';
+import StepItem from '../components/Items/StepItem';
 import { hero,benefits, formations, steps } from '../data/alternance';
 
 export default function AlternancePage() {
@@ -27,12 +31,10 @@ export default function AlternancePage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {benefits.map((b, index) => (
-           <InfoCard 
+           <InfoGrid
                 key={index} 
                 titre={b.titre} 
                 description={b.description}
-                // Si tu veux que l'icône dans l'InfoCard suive aussi 
-                // la charte, tu peux forcer la variante ici
                 variant="orange" 
               />
             ))}
@@ -54,10 +56,10 @@ export default function AlternancePage() {
             {formations.map((f, index) => (
               <DetailHeader 
                 key={index}
-                titre={f.titre}   // Prop corrigée : titre
-                code={f.code}     // Prop corrigée : code
-                duree={f.duree}   // Prop corrigée : duree
-                rythme={f.rythme} // Prop corrigée : rythme
+                titre={f.titre}   
+                code={f.code}     
+                duree={f.duree}  
+                rythme={f.rythme} 
               />
             ))}
           </div>
@@ -78,9 +80,9 @@ export default function AlternancePage() {
             {steps.map((s) => (
               <div key={s.num} className="relative z-10 bg-white px-2">
                 <StepItem 
-                  num={s.num}    // Prop corrigée : num
-                  titre={s.titre} // Prop corrigée : titre
-                  desc={s.desc}   // Prop corrigée : desc
+                  num={s.num}    
+                  titre={s.titre} 
+                  desc={s.desc}   
                 />
               </div>
             ))}

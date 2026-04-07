@@ -1,3 +1,8 @@
+/*
+ * Données de la page E-learning
+ * Contient le texte du hero, les fonctionnalités de la plateforme
+ * et les statistiques clés affichées sur la page.
+ */
 
 export const hero = {
   titre: "E-learning",

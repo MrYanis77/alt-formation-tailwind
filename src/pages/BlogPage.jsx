@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Breadcrumb from '../components/Breadcrumb';
-import Hero from '../components/Hero';
+import Hero from '../components/Hero/Hero';
 import Footer from '../components/Footer';
 
 // Import des données et composants dédiés au blog

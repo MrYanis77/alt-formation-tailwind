@@ -1,3 +1,11 @@
+/*
+ * Composant StepItem
+ * Affiche un élément d'étape dans un processus, avec :
+ * - Un cercle numéroté en orange
+ * - Un titre en majuscules
+ * - Une description courte
+ */
+
 export default function StepItem({ num, titre, desc }) {
   return (
     <div className="flex flex-col items-center text-center group">

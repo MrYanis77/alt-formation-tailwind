@@ -1,3 +1,12 @@
+/*
+ * Composant CardGrid
+ * Affiche une grille de cartes pour les services ou formations.
+ * Supporte deux variantes :
+ * - "training" : cartes avec image pour les formations
+ * - "default" : cartes simples pour les services/plateformes
+ * Props : services (array), cols (2 ou 3), variant ("training" ou "default")
+ */
+
 export default function CardGrid({ services, cols = 3, variant = "default" }) {
   const gridCols = cols === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3';
   

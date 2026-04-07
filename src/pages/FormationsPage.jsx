@@ -1,6 +1,6 @@
 
 import Breadcrumb from '../components/Breadcrumb';
-import Hero from '../components/Hero';
+import Hero from '../components/Hero/Hero';
 import CardFormation from '../components/CardFormation'; // Import du nouveau composant
 import { hero,catalogue } from '../data/formations';
 

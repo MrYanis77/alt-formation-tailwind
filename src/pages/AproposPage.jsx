@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Breadcrumb from '../components/Breadcrumb';
-import Hero from '../components/Hero';
+import Hero from '../components/Hero/Hero';
 import Footer from '../components/Footer';
 import TexteSection from '../components/TexteSection'; // Import du composant flexible
 import { hero, notreHistoire, nosValeurs, certificationsAgrements } from '../data/apropos';

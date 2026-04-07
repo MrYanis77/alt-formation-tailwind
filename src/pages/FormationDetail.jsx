@@ -3,12 +3,12 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { allFormations } from '../data';
 
 // Importation des composants standards
-import Hero from '../components/Hero';
+import Hero from '../components/Hero/Hero';
 import StatsBar from '../components/StatsBar'; 
 import TexteSection from '../components/TexteSection';
 import CardModule from '../components/CardModule';
-import CardJob from '../components/CardJob';
-import InfoCard from '../components/InfoCard';
+// CardJob supprimé car injecté en ligne
+import InfoGrid from '../components/Infos/InfoGrid';
 import { Target, CheckCircle, GraduationCap } from "lucide-react";
 import Breadcrumb from '../components/Breadcrumb';
 
@@ -18,22 +18,17 @@ export default function FormationDetail() {
 
   if (!data) return <Navigate to="/404" replace />;
 
-  const breadcrumb = [
-    { label: 'Accueil', to: '/' }, 
-    { label: 'Formations', to: '/formations' }, 
-    { label: data.hero.titre }
-  ];
-
   return (
     <div className="bg-white min-h-screen antialiased text-left">
        <Breadcrumb 
         items={[
           { label: 'Accueil', to: '/' }, 
           { label: 'Formations', to: '/formations' }, 
-          { label: data.hero.titre } // <-- Le titre change dynamiquement !
+          { label: data.hero.titre } 
         ]} 
       />
-      {/* 1. HERO - Format Standard */}
+      
+      {/* 1. HERO */}
       <Hero 
         title={data.hero.titre}
         subtitle={data.hero.sousTitre || "Maîtrisez les compétences de demain avec nos experts."}
@@ -43,7 +38,7 @@ export default function FormationDetail() {
       {/* 2. STATS BAR */}
       <StatsBar stats={data.stats} />
 
-      {/* 3. PRÉSENTATION - TexteSection standard */}
+      {/* 3. PRÉSENTATION */}
       <TexteSection 
         data={{
           titre: data.presentation.titre,
@@ -53,7 +48,7 @@ export default function FormationDetail() {
         imageRight={true} 
       />
 
-      {/* 4. DÉBOUCHÉS - Style Navy comme "Nous Rejoindre" */}
+      {/* 4. DÉBOUCHÉS - Avec le code de CardJob intégré directement */}
       <section className="py-[70px] px-6 bg-navy">
         <div className="max-w-[1100px] mx-auto">
           <div className="text-center mb-12">
@@ -67,7 +62,33 @@ export default function FormationDetail() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
             {data.debouches.postes.map((poste, idx) => (
-              <CardJob key={idx} poste={poste} />
+              /* --- DÉBUT DU CODE CARDJOB INJECTÉ --- */
+              <div key={idx} className="bg-white p-8 rounded-[20px] shadow-lg flex flex-col justify-between relative group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                {/* Icône de validation verte */}
+                <div className="absolute top-6 right-6 text-[#4ADE80]">
+                  <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                </div>
+
+                <div className="mt-2">
+                  <h3 className="font-heading font-black text-navy text-[20px] leading-tight mb-6 pr-8">
+                    {poste.titre}
+                  </h3>
+
+                  <div className="flex items-center gap-3 text-orange">
+                    <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                      <polyline points="17 6 23 6 23 12" />
+                    </svg>
+                    <span className="font-bold text-[16px] tracking-wide">
+                      {poste.salaire}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              /* --- FIN DU CODE CARDJOB INJECTÉ --- */
             ))}
           </div>
 
@@ -80,7 +101,7 @@ export default function FormationDetail() {
         </div>
       </section>
 
-      {/* 5. PROGRAMME - Format Compact */}
+      {/* 5. PROGRAMME */}
       <section className="py-[70px] px-6 bg-white">
         <div className="max-w-[900px] mx-auto">
           <div className="text-center mb-12">
@@ -100,10 +121,10 @@ export default function FormationDetail() {
         </div>
       </section>
 
-      {/* 6. INFOS PRATIQUES - Grille comme "Pourquoi nous rejoindre" */}
+      {/* 6. INFOS PRATIQUES */}
       <section className="py-[70px] px-6 bg-gray-50 border-y border-border">
         <div className="max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <InfoCard 
+          <InfoGrid 
             titre={data.infosPratiques.modalites.titre}
             icon={Target}
             variant="orange"
@@ -117,7 +138,7 @@ export default function FormationDetail() {
               </ul>
             }
           />
-          <InfoCard 
+          <InfoGrid 
             titre={data.infosPratiques.prerequis.titre}
             icon={GraduationCap}
             variant="navy"
@@ -134,7 +155,7 @@ export default function FormationDetail() {
         </div>
       </section>
 
-      {/* 7. COMPÉTENCES - Style Grid comme "Nos Avantages" */}
+      {/* 7. COMPÉTENCES */}
       <section className="py-[70px] px-6 bg-white">
         <div className="max-w-[1100px] mx-auto">
           <h2 className="text-[#1E2F47] text-2xl md:text-[32px] font-extrabold text-center mb-12 uppercase tracking-wider">
@@ -153,7 +174,7 @@ export default function FormationDetail() {
         </div>
       </section>
 
-      {/* 8. CTA FINAL - Style Bleu Marine identique */}
+      {/* 8. CTA FINAL */}
       <section className="py-20 px-6 bg-navy text-center text-white">
         <div className="max-w-[700px] mx-auto">
           <h2 className="text-2xl md:text-[34px] font-extrabold mb-4 uppercase">

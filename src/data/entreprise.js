@@ -80,12 +80,12 @@ export const servicesComplementaires = [
  * Recrutement en alternance — processus en 4 étapes
  * @type {Object}
  */
+
 export const recrutementAlternance = {
   titre: 'Recrutement en alternance',
-  description:
-    'Trouvez vos futurs talents parmi nos apprenants qualifiés et motivés',
+  description: 'Trouvez vos futurs talents parmi nos apprenants qualifiés et motivés',
   steps: [
-    {
+   {
       titre: 'Sourcing',
       desc: 'Accès à votre vivier de candidats pré-qualifiés',
     },
@@ -103,6 +103,7 @@ export const recrutementAlternance = {
     },
   ],
 };
+
 
 /**
  * Statistiques clés — 4 chiffres forts en orange

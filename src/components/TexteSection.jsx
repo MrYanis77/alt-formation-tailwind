@@ -1,9 +1,15 @@
 import React from 'react';
 
-/**
- * TexteSection.jsx — Design fidèle à l'image 3e9e23.jpg
+/*
+ * Composant TexteSection
+ * Affiche une section de texte avec titre et contenu, optionnellement accompagnée d'une image.
+ * Design fidèle à l'image 3e9e23.jpg
+ * Props :
+ * - data : objet avec titre, contenu (array de paragraphes), image (optionnel)
+ * - imageRight : boolean pour positionner l'image à droite (défaut) ou à gauche
  */
-const TexteSection = ({ data, imageRight = true }) => {
+
+export default function  TexteSection ({ data, imageRight = true }) {
   if (!data) return null;
 
   const { titre, contenu, image } = data;
@@ -53,4 +59,3 @@ const TexteSection = ({ data, imageRight = true }) => {
   );
 };
 
-export default TexteSection;

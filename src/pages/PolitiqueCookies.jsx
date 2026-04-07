@@ -1,8 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
-import Hero from '../components/Hero';
 import { sections, hero } from '../data/politiqueCookies';
 
 export default function PolitiqueCookies() {

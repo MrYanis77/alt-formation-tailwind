@@ -1,9 +1,16 @@
-import Hero from '../components/Hero';
-import Navbar from '../components/Navbar';
+/*
+ * Page ElearningPage
+ * Présente la plateforme e-learning avec :
+ * - Section héros
+ * - Fonctionnalités de la plateforme (grille de cartes)
+ * - Statistiques
+ * - Appel à l'action pour accéder à la plateforme
+ */
+
+import Hero from '../components/Hero/Hero';
 import Breadcrumb from '../components/Breadcrumb';
-import Footer from '../components/Footer';
-import CardGrid from '../components/CardGrid';
-import StatsSection from '../components/StatsSection';
+import CardGrid from '../components/Card/CardGrid';
+import StatsSection from '../components/Stats/StatsSection';
 
 // Données : features doit être formaté avec { titre, description, items }
 import {hero, features, stats } from '../data/elearning';
@@ -33,7 +40,7 @@ export default function ElearningPage() {
       </main>
 
       {/* ===== SECTION STATISTIQUES ===== */}
-      <StatsSection stats={stats} />
+      <StatsSection stats={stats} variant="light" />
 
       {/* ===== SECTION CTA ===== */}
       <section className="py-24 px-6 bg-gray-50 text-center">

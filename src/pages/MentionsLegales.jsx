@@ -1,8 +1,5 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import React from 'react';;
 import Breadcrumb from '../components/Breadcrumb';
-import Hero from '../components/Hero';
 import { hero, editeur, prestataires, articlesMentions } from '../data/mentionsLegales';
 
 export default function MentionsLegales() {

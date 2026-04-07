@@ -1,9 +1,6 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
-import Hero from '../components/Hero';
-import { reglementData, hero } from '../data/reglementInterieur';
+import { reglementData} from '../data/reglementInterieur';
 
 export default function ReglementInterieur() {
   return (

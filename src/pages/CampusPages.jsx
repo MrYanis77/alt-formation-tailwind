@@ -2,7 +2,7 @@ import React from 'react';
 import { campus } from '../data/campus';
 import CardFormation from '../components/CardFormation';
 import Breadcrumb from '../components/Breadcrumb'; 
-import Hero from '../components/Hero'; 
+import Hero from '../components/Hero/Hero'; 
 
 export default function CampusPage() {
   return (

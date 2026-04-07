@@ -1,38 +1,48 @@
-// Page d'accueil d'ALT FORMATIONS
-// - Structure les sections principales (Hero, stats, services, vidéo, témoignages)
-// - Gère le carousel dynamique avec framer-motion
+/**
+ * Page d'accueil - ALT FORMATIONS
+ * * Ce fichier centralise les sections principales de la landing page :
+ * - Hero Carousel : Diaporama dynamique avec Framer Motion (slides importées).
+ * - StatsSection : Affichage des chiffres clés.
+ * - ServicesGrid : Grille des prestations proposées.
+ * - VideoSection : Section de présentation vidéo.
+ * - TrustSection : (Intégrée) Bandeau de logos partenaires avec défilement infini en CSS.
+ * - Témoignages : Grille de retours clients avec un design à bordure colorée.
+ * - CTA Final : Appel à l'action pour la prise de contact.
+ * * Dépendances : framer-motion, tailwindcss
+ */
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// Import des composants
-import HeroSlide from '../components/HeroSlide';
-import StatsSection from '../components/StatsSection';
-import ServicesGrid from '../components/CardGrid';
+// Import des sous-composants
+import HeroSlide from '../components/Hero/HeroSlide';
+import StatsSection from '../components/Stats/StatsSection';
+import ServicesGrid from '../components/Card/CardGrid';
 import VideoSection from '../components/VideoSection';
-import TrustSection from '../components/TrustSection';
 
-// Import des données
+// Import des données statiques
 import { slides, stats, services, partenaires, temoignages } from '../data/home';
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Auto-play du carousel
+  // Préparation des logos pour l'effet "marquée" (boucle infinie)
+  const doublePartenaires = [...partenaires, ...partenaires];
+
+  // Gestion du cycle automatique du Hero (toutes les 6 secondes)
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6000); // 6 secondes pour laisser le temps de lire
+    }, 6000);
     return () => clearInterval(timer);
   }, []);
 
   return (
     <div className="bg-white antialiased">
       
-      {/* SECTION 1 : HERO CAROUSEL DYNAMIQUE */}
+      {/* SECTION 1 : HERO CAROUSEL */}
       <section className="relative h-[600px] md:h-[550px] bg-navy overflow-hidden flex items-center">
-        
-        {/* Images de fond animées (Transition fluide entre les images) */}
+        {/* Animation de fond */}
         <AnimatePresence mode="wait">
           <motion.div
             key={`bg-${currentSlide}`}
@@ -45,15 +55,13 @@ export default function HomePage() {
             <img 
               src={slides[currentSlide].image} 
               className="w-full h-full object-cover" 
-              alt="Décor campus" 
+              alt="Background ALT Formations" 
             />
           </motion.div>
         </AnimatePresence>
 
-        {/* Overlay dégradé pour la lisibilité du texte */}
         <div className="absolute inset-0 z-10 bg-gradient-to-r from-navy via-navy/80 to-transparent" />
 
-        {/* Contenu de la Slide */}
         <div className="container mx-auto relative z-20 px-6 md:px-[60px]">
           <AnimatePresence mode="wait">
             <motion.div
@@ -68,16 +76,16 @@ export default function HomePage() {
           </AnimatePresence>
         </div>
 
-        {/* Barre de Navigation (Dots modernes) */}
+        {/* Navigation Dots */}
         <div className="absolute bottom-10 left-6 md:left-[60px] z-30 flex gap-3">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`h-1.5 rounded-full transition-all duration-500 cursor-pointer ${
+              className={`h-1.5 rounded-full transition-all duration-500 ${
                 index === currentSlide ? 'w-10 bg-orange' : 'w-4 bg-white/30 hover:bg-white/60'
               }`}
-              aria-label={`Aller à la slide ${index + 1}`}
+              aria-label={`Slide ${index + 1}`}
             />
           ))}
         </div>
@@ -97,9 +105,49 @@ export default function HomePage() {
       {/* SECTION 4 : VIDÉO */}
       <VideoSection title="Découvrez ALT FORMATIONS en vidéo" />
 
-      {/* SECTION 5 : CONFIANCE & TÉMOIGNAGES */}
-      <TrustSection partenaires={partenaires} temoignages={temoignages} />
+      {/* SECTION 5 : TRUST SECTION (LOGOS) */}
+      <section className="py-[70px] bg-white border-t border-border overflow-hidden">
+        <div className="max-w-[1100px] mx-auto px-6 mb-12">
+          <h2 className="font-heading text-2xl md:text-[32px] font-extrabold text-[#1E2F47] text-center uppercase tracking-wider">
+            Ils nous font confiance
+          </h2>
+        </div>
 
+        <div className="relative flex overflow-hidden group">
+          <div className="flex py-4 animate-scroll whitespace-nowrap">
+            {doublePartenaires.map((partenaire, index) => (
+              <div 
+                key={index} 
+                className="flex-shrink-0 w-[150px] md:w-[200px] mx-8 md:mx-12 flex items-center justify-center transition-opacity duration-300 opacity-80 hover:opacity-100"
+              >
+                <img 
+                  src={partenaire.logo} 
+                  alt={partenaire.nom} 
+                  className="h-12 md:h-16 w-auto object-contain"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Style CSS inline pour l'animation de défilement infini */}
+        <style dangerouslySetInnerHTML={{ __html: `
+          @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .animate-scroll {
+            display: flex;
+            width: max-content;
+            animation: scroll 40s linear infinite;
+          }
+          .animate-scroll:hover {
+            animation-play-state: paused;
+          }
+        `}} />
+      </section>
+
+      {/* SECTION 6 : TÉMOIGNAGES */}
       <section className="py-[70px] px-6 max-w-[1100px] mx-auto">
         <h2 className="font-heading text-2xl md:text-[32px] font-extrabold text-dark text-center mb-16 uppercase tracking-wider">
           Témoignages
@@ -119,7 +167,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SECTION 6 : CTA FINAL */}
+      {/* SECTION 7 : CALL TO ACTION */}
       <section className="py-24 px-6 bg-slate-50 text-center border-t border-border">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-heading text-[28px] md:text-[36px] font-extrabold text-navy mb-6 uppercase tracking-tight">

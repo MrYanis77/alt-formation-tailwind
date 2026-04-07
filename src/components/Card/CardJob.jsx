@@ -1,4 +1,13 @@
-export default function DetailHeader({ titre, type, lieu, date, onClick, href = "#contact" }) {
+/*
+ * Composant CardJob
+ * Affiche une carte pour une offre d'emploi avec :
+ * - Le titre du poste
+ * - Le type de contrat (CDI, CDD, Freelance)
+ * - Le lieu et la date de publication
+ * - Un bouton pour postuler
+ */
+
+export default function CardJob({ titre, type, lieu, date, onClick, href = "#contact" }) {
   return (
     <div className="bg-white rounded-default shadow-sm border border-border border-l-[6px] border-l-orange p-6 flex flex-col md:flex-row md:items-center justify-between gap-6 transition-all hover:shadow-md w-full">
       <div className="flex-1">

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Hero from '../components/Hero';
-import InfoCard from '../components/InfoCard';
-import DetailHeader from '../components/DetailHeader'; 
+import Hero from '../components/Hero/Hero';
+import InfoGrid from '../components/Infos/InfoGrid';
+import DetailHeader from '../components/Card/CardJob'; 
 import AdvantageCard from '../components/AdvantageCard';
 import { Heart, TrendingUp, Target } from "lucide-react";
 
@@ -75,7 +75,7 @@ export default function NousRejoindre() {
               const icons = { 1: Heart, 2: TrendingUp, 3: Target };
               const IconComponent = icons[valeur.id] || Target;
               return (
-                <InfoCard
+                <InfoGrid
                   key={valeur.id}
                   titre={valeur.titre}
                   description={valeur.description}

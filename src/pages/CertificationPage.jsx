@@ -2,7 +2,7 @@ import React from 'react';
 import { certifications, hero } from '../data/certification'; 
 import CardFormation from '../components/CardFormation';
 import Breadcrumb from '../components/Breadcrumb';
-import Hero from '../components/Hero';
+import Hero from '../components/Hero/Hero';
 
 export default function CertificationPage() {
   return (
