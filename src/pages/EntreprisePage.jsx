@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '../components/Hero/Hero';
 import Breadcrumb from '../components/Breadcrumb';
 import CardDesc from '../components/Card/CardDesc';
-import CardGrid from '../components/Card/CardGrid'; // Import de ton composant
+import CardGrid from '../components/Card/CardGrid'; 
 import StatsSection from '../components/Stats/StatsSection';
 
 // Import des données
