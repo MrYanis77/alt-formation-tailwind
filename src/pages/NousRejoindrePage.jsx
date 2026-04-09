@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import Hero from '../components/Hero/Hero';
 import InfoGrid from '../components/Infos/InfoGrid';
 import DetailHeader from '../components/Card/CardJob'; 
-import AdvantageCard from '../components/AdvantageCard';
+import AdvantageCard from '../components/Card/AdvantageCard';
 import { Heart, TrendingUp, Target } from "lucide-react";
-
-// Importation des données
 import * as CollabData from '../data/collaborateur';
 import * as FormData from '../data/formateur';
 import Breadcrumb from '../components/Breadcrumb';
@@ -19,23 +17,17 @@ export default function NousRejoindre() {
     ? CollabData.offresOuvertes 
     : FormData.offresOuvertesFormateurs;
 
-  const breadcrumb = [
-    { label: 'Accueil', to: '/' },
-    { label: 'Recrutements' }
-  ];
 
   return (
     <div className="bg-white min-h-screen antialiased">
 
-      <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'Nous-rejoindre' }]} />
-      
       {/* 1. HERO - Taille réduite pour matcher la home */}
       <Hero 
         title={view === 'collaborateur' ? CollabData.heroRecrutement?.titre : FormData.heroFormateur?.titre} 
         subtitle="Découvrez nos opportunités et rejoignez une équipe d'experts passionnés."
-        breadcrumbItems={breadcrumb}
       />
 
+      <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'Nous-rejoindre' }]} />
 
       {/* 3. POURQUOI NOUS REJOINDRE - Format compact py-[70px] */}
       <section className="py-[70px] px-6 bg-white">

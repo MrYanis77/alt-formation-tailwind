@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import de Link
-import FormUser from '../components/FormUser';
+import FormUser from '../components/Form/FormUser';
 
 export default function ConnexionPage() {
   return (
@@ -16,8 +16,8 @@ export default function ConnexionPage() {
 
       <p className="mt-8 text-gray-600 text-sm font-medium text-center">
         Pas encore de compte ?{' '}
-        <Link 
-          to="/inscription" 
+        <Link
+          to="/inscription"
           className="text-[#F39233] font-bold no-underline hover:underline"
         >
           S'inscrire gratuitement

@@ -1,5 +1,5 @@
 import React from 'react';
-import { nosValeurs } from '../data/apropos';
+import { nosValeurs } from '../../data/apropos';
 
 const TexteGrid = () => {
   return (

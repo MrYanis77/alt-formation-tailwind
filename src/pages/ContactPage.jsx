@@ -1,20 +1,13 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import Breadcrumb from '../components/Breadcrumb';
 import Hero from '../components/Hero/Hero';
-import Footer from '../components/Footer';
-import { hero,contactData } from '../data/contact';
+import { hero, contactData } from '../data/contact';
 
 export default function ContactPage() {
   const { coordonnees, horaires, formulaire } = contactData;
 
   return (
     <div className="bg-white min-h-screen">
-      
-      {/* 1. BREADCRUMB */}
-      <Breadcrumb
-        items={[{ label: 'Accueil', to: '/' }, { label: 'Contact' }]}
-      />
 
       {/* 2. HERO SECTION */}
       <Hero
@@ -22,13 +15,18 @@ export default function ContactPage() {
         subtitle={hero.sousTitre}
       />
 
+      {/* 1. BREADCRUMB */}
+      <Breadcrumb
+        items={[{ label: 'Accueil', to: '/' }, { label: 'Contact' }]}
+      />
+
       {/* 3. MAIN CONTENT (Infos + Formulaire) */}
       <main className="max-w-[1100px] mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row gap-16">
-        
+
         {/* Colonne Gauche : Infos & Horaires */}
         <div className="w-full md:w-1/3">
           <h2 className="text-navy font-bold text-[24px] mb-8">{coordonnees.titre}</h2>
-          
+
           <div className="flex flex-col gap-8 mb-12">
             {coordonnees.items.map((item, index) => (
               <div key={index} className="flex items-start gap-4">
@@ -58,13 +56,13 @@ export default function ContactPage() {
         {/* Colonne Droite : Formulaire */}
         <div className="w-full md:w-2/3">
           <h2 className="text-navy font-bold text-[24px] mb-8">{formulaire.titre}</h2>
-          
+
           <form className="grid grid-cols-1 md:grid-cols-2 gap-6" onSubmit={(e) => e.preventDefault()}>
             <div className="flex flex-col gap-2">
               <label className="text-[14px] font-medium text-navy">{formulaire.champs.nom}</label>
               <input type="text" className="border border-gray-200 p-3 rounded-lg focus:outline-none focus:border-orange transition-colors" />
             </div>
-            
+
             <div className="flex flex-col gap-2">
               <label className="text-[14px] font-medium text-navy">{formulaire.champs.prenom}</label>
               <input type="text" className="border border-gray-200 p-3 rounded-lg focus:outline-none focus:border-orange transition-colors" />

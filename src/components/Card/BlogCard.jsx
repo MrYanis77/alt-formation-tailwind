@@ -7,7 +7,7 @@ const BlogCard = ({ article }) => {
       <div className="h-52 bg-navy flex items-center justify-center text-white font-bold opacity-90">
         {article.categoryShort || 'Blog'}
       </div>
-      
+
       <div className="p-6">
         <span className="inline-block px-4 py-1 bg-orange/10 text-orange rounded-full text-[12px] font-bold mb-4">
           {article.category}
@@ -18,7 +18,7 @@ const BlogCard = ({ article }) => {
         <p className="text-[#666] text-[14px] line-clamp-3 mb-6">
           {article.excerpt}
         </p>
-        
+
         <div className="flex items-center justify-between pt-4 border-t border-gray-50 text-[13px] text-[#888]">
           <div className="flex items-center gap-2">
             <span className="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center">👤</span>

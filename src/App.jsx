@@ -75,7 +75,7 @@ export default function App() {
           <Route path="/contact" element={<ContactPage/>} />
           <Route path="/inscription" element={<InscriptionPage/>} />
           <Route path="/connexion" element={<ConnexionPage/>} />
-          <Route path="/formations/:slug" element={<FormationDetail />} />
+          <Route path="/formation/:id" element={<FormationDetail />} />
           <Route path="/campus" element={<CampusPage/>} />
           <Route path="/certification" element={<CertificationPage/>} />
           <Route path="/nous-rejoindre" element={<NousRejoindre/>} />

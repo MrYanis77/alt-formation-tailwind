@@ -1,24 +1,25 @@
 import React from 'react';
-import { certifications, hero } from '../data/certification'; 
-import CardFormation from '../components/CardFormation';
+import { certifications, hero } from '../data/certification';
+import CardFormation from '../components/Card/CardFormation';
 import Breadcrumb from '../components/Breadcrumb';
 import Hero from '../components/Hero/Hero';
 
 export default function CertificationPage() {
   return (
     <div className="bg-white min-h-screen">
-      {/* Fil d'Ariane cohérent avec le Hero */}
-      <Breadcrumb
-        items={[
-          { label: 'Accueil', to: '/' }, 
-          { label: 'Certifications' }
-        ]}
-      />
 
       {/* Hero dynamique via data/certification.js */}
       <Hero
         title={hero.titre}
         subtitle={hero.sousTitre}
+      />
+
+      {/* Fil d'Ariane cohérent avec le Hero */}
+      <Breadcrumb
+        items={[
+          { label: 'Accueil', to: '/' },
+          { label: 'Certifications' }
+        ]}
       />
 
       <section className="py-20 px-6">
@@ -50,7 +51,7 @@ export default function CertificationPage() {
         <div className="max-w-[800px] mx-auto text-center px-6">
           <h2 className="text-navy font-bold text-2xl mb-4">Besoin d'un renseignement ?</h2>
           <p className="text-muted mb-8">
-            Nos conseillers vous accompagnent dans le choix de votre certification 
+            Nos conseillers vous accompagnent dans le choix de votre certification
             et le montage de votre dossier de financement.
           </p>
           <button className="btn-orange">

@@ -67,18 +67,41 @@ export default function Navbar() {
                         )}
                       </Link>
 
-                      {/* Dropdown Desktop (Niveau 2) */}
+                      {/* Dropdown Desktop (Niveau 2 et 3) */}
                       {sub.submenu && (
-                        <div className="absolute top-0 left-full ml-0 w-[240px] bg-white shadow-xl rounded-lg overflow-hidden opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 translate-x-[-10px] group-hover/sub:translate-x-0 z-50">
+                        <div className="absolute top-0 left-full ml-0 w-[240px] bg-white shadow-xl rounded-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 translate-x-[-10px] group-hover/sub:translate-x-0 z-[60]">
                           <div className="flex flex-col py-2">
                             {sub.submenu.map((subItem) => (
-                              <Link
-                                key={subItem.label}
-                                to={subItem.href}
-                                className="px-5 py-3 text-[13px] font-bold text-navy hover:bg-orange hover:text-white transition-colors no-underline font-heading block w-full"
-                              >
-                                {subItem.label}
-                              </Link>
+                              <div key={subItem.label} className="relative group/subItem">
+                                <Link
+                                  to={subItem.href}
+                                  className="px-5 py-3 text-[13px] font-bold text-navy hover:bg-orange hover:text-white transition-colors no-underline font-heading flex items-center justify-between w-full"
+                                >
+                                  {subItem.label}
+                                  {subItem.submenu && (
+                                    <svg className="w-3 h-3 fill-current opacity-50" viewBox="0 0 20 20">
+                                      <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" />
+                                    </svg>
+                                  )}
+                                </Link>
+
+                                {/* Dropdown Desktop (Niveau 3) */}
+                                {subItem.submenu && (
+                                  <div className="absolute top-0 left-full ml-0 w-[260px] bg-white shadow-xl rounded-lg overflow-hidden opacity-0 invisible group-hover/subItem:opacity-100 group-hover/subItem:visible transition-all duration-300 translate-x-[-10px] group-hover/subItem:translate-x-0 z-50">
+                                    <div className="flex flex-col py-2">
+                                      {subItem.submenu.map((subSub) => (
+                                        <Link
+                                          key={subSub.label}
+                                          to={subSub.href}
+                                          className="px-5 py-3 text-[12px] font-bold text-navy hover:bg-orange hover:text-white transition-colors no-underline font-heading block w-full"
+                                        >
+                                          {subSub.label}
+                                        </Link>
+                                      ))}
+                                    </div>
+                                  </div>
+                                )}
+                              </div>
                             ))}
                           </div>
                         </div>
@@ -153,14 +176,40 @@ export default function Navbar() {
                       {sub.submenu && openMobileMenus[sub.label] && (
                         <div className="flex flex-col gap-4 pl-4 border-l-2 border-slate-600">
                           {sub.submenu.map((subItem) => (
-                            <Link
-                              key={subItem.label}
-                              to={subItem.href}
-                              onClick={() => setIsOpen(false)}
-                              className="text-gray-500 text-sm font-semibold no-underline"
-                            >
-                              {subItem.label}
-                            </Link>
+                            <div key={subItem.label} className="flex flex-col gap-3">
+                              <div className="flex items-center justify-between w-full">
+                                <Link
+                                  to={subItem.href}
+                                  onClick={() => !subItem.submenu && setIsOpen(false)}
+                                  className="text-gray-400 text-sm font-semibold no-underline flex-grow"
+                                >
+                                  {subItem.label}
+                                </Link>
+                                {subItem.submenu && (
+                                  <button onClick={() => toggleMobileMenu(subItem.label)} className="p-1 text-gray-500">
+                                    <svg className={`w-4 h-4 fill-current transition-transform ${openMobileMenus[subItem.label] ? "rotate-180" : ""}`} viewBox="0 0 20 20">
+                                      <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                                    </svg>
+                                  </button>
+                                )}
+                              </div>
+                              
+                              {/* Niveau 3 (Mobile) */}
+                              {subItem.submenu && openMobileMenus[subItem.label] && (
+                                <div className="flex flex-col gap-3 pl-4 border-l-2 border-gray-600/50">
+                                  {subItem.submenu.map((subSub) => (
+                                    <Link
+                                      key={subSub.label}
+                                      to={subSub.href}
+                                      onClick={() => setIsOpen(false)}
+                                      className="text-gray-500 text-xs font-semibold no-underline"
+                                    >
+                                      {subSub.label}
+                                    </Link>
+                                  ))}
+                                </div>
+                              )}
+                            </div>
                           ))}
                         </div>
                       )}

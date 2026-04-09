@@ -7,7 +7,7 @@
  * - Appel à l'action pour accéder à la plateforme
  */
 
-import PageCarousel from '../components/PageCarousel';
+import Hero from '../components/Hero/Hero';
 import Breadcrumb from '../components/Breadcrumb';
 import CardGrid from '../components/Card/CardGrid';
 import StatsSection from '../components/Stats/StatsSection';
@@ -16,19 +16,14 @@ import StatsSection from '../components/Stats/StatsSection';
 import {hero, features, stats } from '../data/elearning';
 
 export default function ElearningPage() {
-  const carouselSlides = [
-    {
-      type: 'image',
-      src: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1200', // Example image, adjust as needed
-      title: hero.titre,
-      subtitle: hero.sousTitre,
-    }
-  ];
-
   return (
     <div className="bg-white min-h-screen">
       
-      <PageCarousel slides={carouselSlides} />
+      <Hero 
+        title={hero.titre}
+        subtitle={hero.sousTitre}
+        image="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1200"
+      />
       <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'E-learning' }]} />
 
       {/* ===== SECTION PLATEFORME (Image 9ab569) ===== */}

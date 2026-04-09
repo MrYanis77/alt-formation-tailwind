@@ -1,0 +1,2276 @@
+{
+    "formations-administrateur-dinfrastructures-securisees-ais": {
+        "hero": {
+            "titre": "Devenez Administrateur·rice d’infrastructures sécurisées",
+            "sousTitre": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôl...",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-set-of-code-lines-running-on-screen-22634-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Durée",
+                "value": "24 mois"
+            },
+            {
+                "label": "Compétences clés",
+                "value": "+20 compétences clés"
+            },
+            {
+                "label": "Certification",
+                "value": "Titre professionnel RNCP – niveau 6 (équivalent Bac+3/4)"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôle est central : il intervient aussi bien sur les serveurs, les réseaux, les systèmes que sur les enjeux de cybersécurité , en veillant à la continuité d’activité et à la protection des données. 👉 C’est un métier à forte responsabilité, recherché par les entreprises confrontées à des enjeux croissants de sécurité informatique."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
+            "postes": [
+                {
+                    "titre": "Administrateur systèmes et réseaux",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Administrateur d’infrastructures sécurisées",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Technicien systèmes & réseaux confirmé",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Technicien sécurité informatique",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Administrateur cloud junior",
+                    "salaire": "Selon expérience"
+                }
+            ],
+            "secteurs": "Formation diplômante · IT / Systèmes & Réseaux"
+        },
+        "programme": {
+            "dureeTotale": "Programme complet – voir brochure pour les détails",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "Fondamentaux systèmes & réseaux",
+                    "description": "Module 1 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 2,
+                    "title": "Sécurité des infrastructures informatiques",
+                    "description": "Module 2 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 3,
+                    "title": "Virtualisation & environnements serveurs",
+                    "description": "Module 3 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 4,
+                    "title": "Réseaux avancés et services",
+                    "description": "Module 4 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 5,
+                    "title": "Supervision, maintenance et continuité de service",
+                    "description": "Module 5 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 6,
+                    "title": "Projets professionnels et mises en situation",
+                    "description": "Module 6 de la formation.",
+                    "duration": "À définir"
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Formation accessible en formation continue ou alternance.",
+                    "Entrées possibles selon calendrier.",
+                    "Financement : CPF",
+                    "Financement : Alternance",
+                    "Financement : Financements selon situation (à étudier)"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Personnes en reconversion vers les métiers de l’IT.",
+                    "Techniciens souhaitant monter en compétences.",
+                    "Profils attirés par les systèmes, réseaux et la sécurité.",
+                    "Motivation, rigueur et intérêt pour l’informatique requis."
+                ]
+            }
+        },
+        "competences": [
+            "Administration systèmes (Windows / Linux).",
+            "Gestion des réseaux et services associés.",
+            "Sécurisation des infrastructures et des accès.",
+            "Virtualisation et haute disponibilité.",
+            "Supervision, maintenance et gestion des incidents.",
+            "Documentation technique et bonnes pratiques IT."
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Administrateur·rice d’infrastructures sécurisées ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "formations-developpeur-web-mobile": {
+        "hero": {
+            "titre": "Devenez Développeur Web & Mobile",
+            "sousTitre": "Le Développeur Web & Web Mobile conçoit et développe des applications accessibles via un navigateur ou un terminal mobile. Il travaille sur la partie visible (interface utilisateur) comme sur la partie technique (serveur, base de données), en veillan...",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-41876-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Certification",
+                "value": "Titre professionnel Développeur Web & Web Mobile Niveau RNCP à préciser"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "Le Développeur Web & Web Mobile conçoit et développe des applications accessibles via un navigateur ou un terminal mobile. Il travaille sur la partie visible (interface utilisateur) comme sur la partie technique (serveur, base de données), en veillant à la performance, à la sécurité et à l’expérience utilisateur. Il collabore avec des chefs de projet, designers et autres développeurs dans des environnements agiles ou classiques."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
+            "postes": [
+                {
+                    "titre": "Développeur Web",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Développeur Web Mobile",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Intégrateur Web",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Développeur Front-end / Back-end",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Développeur Full Stack junior",
+                    "salaire": "Selon expérience"
+                }
+            ],
+            "secteurs": "Formation certifiante · Développement Web & Mobile"
+        },
+        "programme": {
+            "dureeTotale": "Programme complet – voir brochure pour les détails",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "(aperçu – contenu détaillé dans la brochure)",
+                    "description": "Module 1 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 2,
+                    "title": "Environnement de travail HTML / CSS Notions d’ergonomie et d’accessibilité",
+                    "description": "Module 2 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 3,
+                    "title": "JavaScript Interfaces interactives Responsive design",
+                    "description": "Module 3 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 4,
+                    "title": "Logique serveur Bases de données Sécurisation des échanges",
+                    "description": "Module 4 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 5,
+                    "title": "Applications mobiles Adaptation multi-supports Optimisation des performances",
+                    "description": "Module 5 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 6,
+                    "title": "Mise en situation réelle Travail en équipe Présentation de projet",
+                    "description": "Module 6 de la formation.",
+                    "duration": "À définir"
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Dossier de candidature",
+                    "Entretien de positionnement",
+                    "Validation du projet professionnel",
+                    "Financement : CPF",
+                    "Financement : Financement entreprise",
+                    "Financement : Dispositifs selon statut (salarié, demandeur d’emploi)"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Personnes en reconversion professionnelle",
+                    "Salariés souhaitant évoluer dans le numérique",
+                    "Demandeurs d’emploi",
+                    "Jeunes adultes attirés par les métiers du web et du mobile"
+                ]
+            }
+        },
+        "competences": [
+            "Maîtrise des langages du web (HTML, CSS, JavaScript)",
+            "Développement front-end et back-end",
+            "Gestion des bases de données",
+            "Utilisation de frameworks et outils modernes",
+            "Méthodologie de projet et travail en équipe",
+            "Mise en production et maintenance applicative"
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Développeur Web & Mobile ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "formations-developpeur-dapplications-multimedia": {
+        "hero": {
+            "titre": "Devenez Développeur d’applications multimédia",
+            "sousTitre": "Développeur d’Applications Multimédia : un métier créatif et technique Le Développeur d’Applications Multimédia conçoit des applications interactives intégrant différents médias (graphisme, animation, son, vidéo). Il intervient sur des projets variés...",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-41876-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Durée",
+                "value": "Durée"
+            },
+            {
+                "label": "Certification",
+                "value": "Titre professionnel Développeur d’Applications Niveau RNCP à préciser"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "Développeur d’Applications Multimédia : un métier créatif et technique Le Développeur d’Applications Multimédia conçoit des applications interactives intégrant différents médias (graphisme, animation, son, vidéo). Il intervient sur des projets variés : applications web, mobiles, interfaces interactives, supports numériques ou expériences immersives. Il travaille en collaboration avec des designers, chefs de projet et équipes techniques afin de proposer des solutions performantes, ergonomiques et innovantes."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
+            "postes": [
+                {
+                    "titre": "Développeur d’applications multimédia",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Développeur front-end",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Intégrateur multimédia",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Développeur web ou mobile orienté UX",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Chargé de projets numériques interactifs",
+                    "salaire": "Selon expérience"
+                }
+            ],
+            "secteurs": "Formation diplômante · IT / Systèmes & Réseaux"
+        },
+        "programme": {
+            "dureeTotale": "Programme complet – voir brochure pour les détails",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "Bases du développement web et applicatif Langages et environnements de développement Architecture des applications",
+                    "description": "Module 1 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 2,
+                    "title": "Intégration d’éléments graphiques et visuels Gestion des contenus audio et vidéo Animations et interactions utilisateur",
+                    "description": "Module 2 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 3,
+                    "title": "Ergonomie et UX/UI Conception d’interfaces interactives Responsive design et accessibilité",
+                    "description": "Module 3 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 4,
+                    "title": "Réalisation de projets multimédia concrets Travail en équipe Présentation et soutenance de projets",
+                    "description": "Module 4 de la formation.",
+                    "duration": "À définir"
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Demandeurs d’emploi",
+                    "Salariés en reconversion ou évolution professionnelle",
+                    "Jeunes adultes souhaitant accéder aux métiers du numérique",
+                    "Toute personne intéressée par le développement multimédia",
+                    "Financement : CPF",
+                    "Financement : Alternance",
+                    "Financement : Financements selon situation (à étudier)"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Demandeurs d’emploi",
+                    "Salariés en reconversion ou évolution professionnelle",
+                    "Jeunes adultes souhaitant accéder aux métiers du numérique",
+                    "Toute personne intéressée par le développement multimédia"
+                ]
+            }
+        },
+        "competences": [
+            "Développement front-end et interaction utilisateur",
+            "Programmation applicative multimédia",
+            "Intégration de médias numériques",
+            "Animation et interactivité",
+            "Gestion de projet multimédia",
+            "Tests, maintenance et optimisation des applications"
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Développeur d’applications multimédia ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "formations-concepteur-developpeur-dapplications": {
+        "hero": {
+            "titre": "Devenez Concepteur Développeur d’Applications",
+            "sousTitre": "Le Concepteur Développeur d’Applications conçoit et développe des applications logicielles complètes répondant à des besoins métiers spécifiques. Il intervient sur l’analyse des besoins, la conception technique, le développement, les tests et la main...",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-set-of-code-lines-running-on-screen-22634-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Certification",
+                "value": "Titre professionnel Concepteur Développeur d’Applications"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "Le Concepteur Développeur d’Applications conçoit et développe des applications logicielles complètes répondant à des besoins métiers spécifiques. Il intervient sur l’analyse des besoins, la conception technique, le développement, les tests et la maintenance des solutions applicatives. Il travaille en collaboration avec des chefs de projet, développeurs, designers et équipes métiers, dans des environnements agiles ou classiques."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
+            "postes": [
+                {
+                    "titre": "Concepteur Développeur d’Applications",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Développeur d’applications",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Développeur back-end / full stack",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Analyste programmeur",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Développeur logiciel",
+                    "salaire": "Selon expérience"
+                }
+            ],
+            "secteurs": "Concepteur Développeur d’Applications"
+        },
+        "programme": {
+            "dureeTotale": "Programme complet – voir brochure pour les détails",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "(aperçu – programme détaillé dans la brochure)",
+                    "description": "Module 1 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 2,
+                    "title": "Analyse des besoins utilisateurs",
+                    "description": "Module 2 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 3,
+                    "title": "Modélisation applicative",
+                    "description": "Module 3 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 4,
+                    "title": "Architecture logicielle",
+                    "description": "Module 4 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 5,
+                    "title": "Développement front-end",
+                    "description": "Module 5 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 6,
+                    "title": "Développement back-end",
+                    "description": "Module 6 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 7,
+                    "title": "Gestion des données",
+                    "description": "Module 7 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 8,
+                    "title": "Tests applicatifs",
+                    "description": "Module 8 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 9,
+                    "title": "Sécurisation des applications",
+                    "description": "Module 9 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 10,
+                    "title": "Optimisation des performances",
+                    "description": "Module 10 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 11,
+                    "title": "Projet applicatif complet",
+                    "description": "Module 11 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 12,
+                    "title": "Travail en équipe",
+                    "description": "Module 12 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 13,
+                    "title": "Présentation et soutenance",
+                    "description": "Module 13 de la formation.",
+                    "duration": "À définir"
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Étude du dossier de candidature",
+                    "Entretien de positionnement",
+                    "Validation du projet professionnel",
+                    "Financement : CPF",
+                    "Financement : Alternance",
+                    "Financement : Financement entreprise",
+                    "Financement : Dispositifs selon le statut"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Demandeurs d’emploi",
+                    "Salariés en reconversion ou évolution professionnelle",
+                    "Personnes souhaitant accéder aux métiers du développement applicatif"
+                ]
+            }
+        },
+        "competences": [
+            "Analyse des besoins fonctionnels",
+            "Conception d’architectures applicatives",
+            "Développement front-end et back-end",
+            "Gestion des bases de données",
+            "Tests, déploiement et maintenance",
+            "Travail en équipe projet"
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Concepteur Développeur d’Applications ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "formations-technicien-superieur-systemes-et-reseaux": {
+        "hero": {
+            "titre": "Devenez Technicien supérieur systèmes et réseaux",
+            "sousTitre": "Le Technicien Supérieur Systèmes et Réseaux assure l’installation, la configuration et la maintenance des infrastructures informatiques d’une organisation. Il veille à la disponibilité des systèmes, à la sécurité des réseaux et accompagne les utilisa...",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-41876-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Certification",
+                "value": "Titre professionnel Technicien Supérieur Systèmes et Réseaux Certification reconnue par l’État Niveau RNCP"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "Le Technicien Supérieur Systèmes et Réseaux assure l’installation, la configuration et la maintenance des infrastructures informatiques d’une organisation. Il veille à la disponibilité des systèmes, à la sécurité des réseaux et accompagne les utilisateurs dans leur usage quotidien des outils numériques. Il travaille en lien avec les équipes informatiques, les prestataires et les utilisateurs finaux."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
+            "postes": [
+                {
+                    "titre": "Technicien systèmes et réseaux",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Administrateur systèmes junior",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Technicien support informatique",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Technicien réseau",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Assistant administrateur IT",
+                    "salaire": "Selon expérience"
+                }
+            ],
+            "secteurs": "Formation diplômante · IT / Systèmes & Réseaux"
+        },
+        "programme": {
+            "dureeTotale": "Programme complet – voir brochure pour les détails",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "(aperçu – programme détaillé dans la brochure)",
+                    "description": "Module 1 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 2,
+                    "title": "Installation et configuration des systèmes",
+                    "description": "Module 2 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 3,
+                    "title": "Gestion des utilisateurs et des droits",
+                    "description": "Module 3 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 4,
+                    "title": "Supervision des serveurs",
+                    "description": "Module 4 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 5,
+                    "title": "Architecture réseau",
+                    "description": "Module 5 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 6,
+                    "title": "Configuration des équipements",
+                    "description": "Module 6 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 7,
+                    "title": "Sécurisation des flux",
+                    "description": "Module 7 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 8,
+                    "title": "Sauvegarde et restauration",
+                    "description": "Module 8 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 9,
+                    "title": "Sécurité des systèmes et réseaux",
+                    "description": "Module 9 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 10,
+                    "title": "Gestion des incidents",
+                    "description": "Module 10 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 11,
+                    "title": "Mise en situation réelle",
+                    "description": "Module 11 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 12,
+                    "title": "Projet d’infrastructure",
+                    "description": "Module 12 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 13,
+                    "title": "Présentation et validation",
+                    "description": "Module 13 de la formation.",
+                    "duration": "À définir"
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Dossier de candidature",
+                    "Entretien de positionnement",
+                    "Validation du projet professionnel",
+                    "Financement : CPF",
+                    "Financement : Alternance",
+                    "Financement : Financement entreprise",
+                    "Financement : Dispositifs selon le statut"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Demandeurs d’emploi",
+                    "Salariés en reconversion ou évolution professionnelle",
+                    "Personnes souhaitant accéder aux métiers des systèmes et réseaux"
+                ]
+            }
+        },
+        "competences": [
+            "Administration des systèmes d’exploitation",
+            "Gestion des réseaux locaux et étendus",
+            "Sécurité des systèmes et des réseaux",
+            "Supervision et maintenance informatique",
+            "Assistance et support technique",
+            "Documentation et procédures IT"
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Technicien supérieur systèmes et réseaux ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "formations-lead-developpeur-web": {
+        "hero": {
+            "titre": "Devenez Lead Développeur Web",
+            "sousTitre": "Le Lead Développeur Web conçoit, développe et supervise des applications web complexes. Il coordonne les équipes techniques, définit les choix d’architecture, veille à la qualité du code et assure la mise en production des projets. Il joue un rôle cl...",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-41876-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Compétences clés",
+                "value": "+20 compétences clés"
+            },
+            {
+                "label": "Certification",
+                "value": "Titre professionnel Lead Développeur Web"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "Le Lead Développeur Web conçoit, développe et supervise des applications web complexes. Il coordonne les équipes techniques, définit les choix d’architecture, veille à la qualité du code et assure la mise en production des projets. Il joue un rôle clé entre les équipes techniques, les chefs de projet et les clients, en garantissant le respect des délais, des performances et des standards de développement."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
+            "postes": [
+                {
+                    "titre": "Lead Développeur Web",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Développeur Web senior",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Chef de projet technique",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Responsable technique web",
+                    "salaire": "Selon expérience"
+                }
+            ],
+            "secteurs": "Formation diplômante Développement & Pilotage web"
+        },
+        "programme": {
+            "dureeTotale": "Programme complet – voir brochure pour les détails",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "Module 1 – Méthodes de gestion de projet",
+                    "description": "Module 1 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 2,
+                    "title": "Principes fondamentaux de la gestion de projet",
+                    "description": "Module 2 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 3,
+                    "title": "Organisation, planification et coordination",
+                    "description": "Module 3 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 4,
+                    "title": "Module 2 – Développement Front-End",
+                    "description": "Module 4 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 5,
+                    "title": "HTML5 / CSS3",
+                    "description": "Module 5 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 6,
+                    "title": "JavaScript et jQuery",
+                    "description": "Module 6 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 7,
+                    "title": "Framework Bootstrap",
+                    "description": "Module 7 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 8,
+                    "title": "Interfaces web responsives et interactives",
+                    "description": "Module 8 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 9,
+                    "title": "Module 3 – Développement Back-End",
+                    "description": "Module 9 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 10,
+                    "title": "Bases de données MySQL",
+                    "description": "Module 10 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 11,
+                    "title": "Langage SQL",
+                    "description": "Module 11 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 12,
+                    "title": "Interaction application / base de données",
+                    "description": "Module 12 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 13,
+                    "title": "👉 Le programme détaillé est disponible dans la brochure officielle.",
+                    "description": "Module 13 de la formation.",
+                    "duration": "À définir"
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Personnes souhaitant évoluer vers des fonctions techniques avancées",
+                    "Profils attirés par le développement web et la gestion de projet",
+                    "Candidats en reconversion ou en évolution professionnelle",
+                    "Financement : Alternance",
+                    "Financement : Financements selon situation (à étudier)"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Personnes souhaitant évoluer vers des fonctions techniques avancées",
+                    "Profils attirés par le développement web et la gestion de projet",
+                    "Candidats en reconversion ou en évolution professionnelle"
+                ]
+            }
+        },
+        "competences": [
+            "Maîtrise des langages web (HTML, CSS, JavaScript)",
+            "Développement front-end et back-end",
+            "Utilisation des frameworks et outils modernes",
+            "Gestion de bases de données (MySQL / SQL)",
+            "Organisation et pilotage de projet",
+            "Coordination d’équipe et communication technique",
+            "Respect des normes de sécurité et de performance"
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Lead Développeur Web ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "formations-community-manager": {
+        "hero": {
+            "titre": "Devenez Community Manager",
+            "sousTitre": "Le Community Manager est en charge de la gestion et de l’animation des communautés en ligne d’une entreprise ou d’une marque. Il crée des contenus adaptés, planifie les publications, interagit avec les internautes et veille à l’e-réputation de l’orga...",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-two-business-women-having-a-professional-conversation-41707-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Durée",
+                "value": "12 à 24 mois"
+            },
+            {
+                "label": "Compétences clés",
+                "value": "Recrutement, Paie, Droit"
+            },
+            {
+                "label": "Certification",
+                "value": "Titre RNCP (Niveau 5 à 6)"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "Ce métier central vous permet d'intervenir sur la gestion administrative, le développement des talents et la stratégie des ressources humaines au sein de l'entreprise. Vous serez l'interlocuteur clé entre la direction et les collaborateurs, garantissant un environnement de travail épanouissant et conforme à la législation."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
+            "postes": [
+                {
+                    "titre": "Community Manager",
+                    "salaire": "24K€ - 35K€ brut/an"
+                },
+                {
+                    "titre": "Assistant(e) de direction / RH",
+                    "salaire": "22K€ - 30K€ brut/an"
+                }
+            ],
+            "secteurs": "Ressources Humaines, Secrétariat, Management, Tertiaire."
+        },
+        "programme": {
+            "dureeTotale": "Programme complet – voir brochure pour les détails",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "Droit du travail et veille sociale",
+                    "duration": "35 heures",
+                    "description": "Comprendre les fondamentaux juridiques."
+                },
+                {
+                    "id": 2,
+                    "title": "Administration du personnel",
+                    "duration": "49 heures",
+                    "description": "Contrats, absences, et gestion quotidienne."
+                },
+                {
+                    "id": 3,
+                    "title": "Recrutement et intégration",
+                    "duration": "35 heures",
+                    "description": "Sourcing, entretiens, et onboarding."
+                },
+                {
+                    "id": 4,
+                    "title": "Gestion de la paie",
+                    "duration": "70 heures",
+                    "description": "Éléments variables, DSN, et bulletins."
+                },
+                {
+                    "id": 5,
+                    "title": "Développement des compétences",
+                    "duration": "35 heures",
+                    "description": "GPEC et ingénierie de formation."
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Dossier de candidature",
+                    "Entretien de positionnement",
+                    "Validation du projet professionnel",
+                    "Financement : CPF",
+                    "Financement : Alternance",
+                    "Financement : Financement entreprise",
+                    "Financement : Dispositifs selon le statut"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Personnes ayant une forte appétence pour les relations humaines, titulaires d'un Bac ou équivalent, avec un bon sens de l'organisation.",
+                    "Aisance avec les outils informatiques.",
+                    "Motivation et capacité d'adaptation."
+                ]
+            }
+        },
+        "competences": [
+            "Gestion de l'administration du personnel",
+            "Élaboration et suivi du plan de formation",
+            "Maîtrise du cadre légal et droit du travail",
+            "Recrutement et intégration des talents",
+            "Communication interne et relations sociales",
+            "Préparation et gestion des éléments de paie"
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Community Manager ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "formations-assistante-ressources-humaines": {
+        "hero": {
+            "titre": "Devenez Assistant(e) Ressources Humaines",
+            "sousTitre": "Véritable trait d'union entre la direction et les salariés, l'Assistant(e) Ressources Humaines participe activement à la gestion administrative du personnel, au recrutement, à la formation et contribue au bon climat social de l'entreprise.",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-two-business-women-having-a-professional-conversation-41707-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Durée",
+                "value": "12 mois"
+            },
+            {
+                "label": "Compétences clés",
+                "value": "Gestion administrative, Paie, Recrutement"
+            },
+            {
+                "label": "Certification",
+                "value": "Titre professionnel RNCP – niveau 5 (équivalent Bac+2)"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "L'Assistant(e) Ressources Humaines gère les dossiers administratifs du personnel, de l'embauche jusqu'au départ du salarié. Il ou elle prépare les éléments fixes et variables de la paie, participe aux processus de recrutement et aide au déploiement du plan de développement des compétences. 👉 C'est un métier polyvalent et humain, indispensable au bon fonctionnement de toute entreprise ou structure."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine des RH.",
+            "postes": [
+                {
+                    "titre": "Assistant(e) Ressources Humaines",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Assistant(e) de gestion du personnel",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Chargé(e) de recrutement junior",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Assistant(e) formation",
+                    "salaire": "Selon expérience"
+                }
+            ],
+            "secteurs": "Formation diplômante · Gestion / RH"
+        },
+        "programme": {
+            "dureeTotale": "Programme complet de 12 mois",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "Administration du personnel",
+                    "description": "Gérer les contrats, les absences, les congés et les dossiers salariés.",
+                    "duration": "Module 1"
+                },
+                {
+                    "id": 2,
+                    "title": "Processus de recrutement",
+                    "description": "Rédiger des annonces, trier les CV, participer aux entretiens et à l'intégration.",
+                    "duration": "Module 2"
+                },
+                {
+                    "id": 3,
+                    "title": "Développement des compétences",
+                    "description": "Organiser la formation interne et suivre le plan de développement.",
+                    "duration": "Module 3"
+                },
+                {
+                    "id": 4,
+                    "title": "Préparation de la paie",
+                    "description": "Collecter et vérifier les éléments variables pour la transmission à la paie.",
+                    "duration": "Module 4"
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Formation accessible en formation continue ou alternance.",
+                    "Entrées possibles selon le calendrier.",
+                    "Financement : CPF",
+                    "Financement : Alternance ou Contrat de professionnalisation"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Titulaire d'un diplôme de niveau Bac minimum.",
+                    "Aptitude à la communication orale et écrite.",
+                    "Rigueur, sens de la confidentialité et de l'organisation.",
+                    "Personnes en reconversion vers les métiers administratifs et RH."
+                ]
+            }
+        },
+        "competences": [
+            "Assurer l'administration courante du personnel.",
+            "Préparer les éléments de la paie.",
+            "Contribuer au processus de recrutement.",
+            "Participer au développement des compétences.",
+            "Assurer la communication interne RH."
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Assistant(e) Ressources Humaines ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "formations-assistante-administratifve": {
+        "hero": {
+            "titre": "Devenez Assistant(e) Administratif(ve)",
+            "sousTitre": "L'Assistant(e) Administratif(ve) est le pilier de l'organisation d'un service ou d'une entreprise. Il ou elle gère l'accueil, le traitement du courrier, la saisie des documents et assure le suivi administratif courant.",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-business-people-meeting-at-a-work-table-41718-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Durée",
+                "value": "12 à 24 mois"
+            },
+            {
+                "label": "Compétences clés",
+                "value": "Recrutement, Paie, Droit"
+            },
+            {
+                "label": "Certification",
+                "value": "Titre RNCP (Niveau 5 à 6)"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "Ce métier central vous permet d'intervenir sur la gestion administrative, le développement des talents et la stratégie des ressources humaines au sein de l'entreprise. Vous serez l'interlocuteur clé entre la direction et les collaborateurs, garantissant un environnement de travail épanouissant et conforme à la législation."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine administratif.",
+            "postes": [
+                {
+                    "titre": "Assistant(e) Administratif(ve)",
+                    "salaire": "24K€ - 35K€ brut/an"
+                },
+                {
+                    "titre": "Assistant(e) de direction / RH",
+                    "salaire": "22K€ - 30K€ brut/an"
+                }
+            ],
+            "secteurs": "Ressources Humaines, Secrétariat, Management, Tertiaire."
+        },
+        "programme": {
+            "dureeTotale": "Programme complet de 12 mois",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "Droit du travail et veille sociale",
+                    "duration": "35 heures",
+                    "description": "Comprendre les fondamentaux juridiques."
+                },
+                {
+                    "id": 2,
+                    "title": "Administration du personnel",
+                    "duration": "49 heures",
+                    "description": "Contrats, absences, et gestion quotidienne."
+                },
+                {
+                    "id": 3,
+                    "title": "Recrutement et intégration",
+                    "duration": "35 heures",
+                    "description": "Sourcing, entretiens, et onboarding."
+                },
+                {
+                    "id": 4,
+                    "title": "Gestion de la paie",
+                    "duration": "70 heures",
+                    "description": "Éléments variables, DSN, et bulletins."
+                },
+                {
+                    "id": 5,
+                    "title": "Développement des compétences",
+                    "duration": "35 heures",
+                    "description": "GPEC et ingénierie de formation."
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Formation accessible en continue ou en alternance.",
+                    "Financement : CPF",
+                    "Financement : Contrat d'apprentissage / professionnalisation"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Personnes ayant une forte appétence pour les relations humaines, titulaires d'un Bac ou équivalent, avec un bon sens de l'organisation.",
+                    "Aisance avec les outils informatiques.",
+                    "Motivation et capacité d'adaptation."
+                ]
+            }
+        },
+        "competences": [
+            "Gestion de l'administration du personnel",
+            "Élaboration et suivi du plan de formation",
+            "Maîtrise du cadre légal et droit du travail",
+            "Recrutement et intégration des talents",
+            "Communication interne et relations sociales",
+            "Préparation et gestion des éléments de paie"
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Assistant(e) Administratif(ve) ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "formations-assistante-commerciale": {
+        "hero": {
+            "titre": "Devenez Assistant(e) Commercial(e)",
+            "sousTitre": "L’Assistant(e) Commercial(e) joue un rôle central dans le bon fonctionnement de l’activité commerciale. Véritable interface entre les clients, les équipes de vente et les services internes, il ou elle assure le suivi administratif des ventes, la rela...",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-two-business-women-having-a-professional-conversation-41707-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Durée",
+                "value": "12 à 24 mois"
+            },
+            {
+                "label": "Compétences clés",
+                "value": "Recrutement, Paie, Droit"
+            },
+            {
+                "label": "Certification",
+                "value": "Titre RNCP (Niveau 5 à 6)"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "Ce métier central vous permet d'intervenir sur la gestion administrative, le développement des talents et la stratégie des ressources humaines au sein de l'entreprise. Vous serez l'interlocuteur clé entre la direction et les collaborateurs, garantissant un environnement de travail épanouissant et conforme à la législation."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
+            "postes": [
+                {
+                    "titre": "Assistant(e) Commercial(e)",
+                    "salaire": "24K€ - 35K€ brut/an"
+                },
+                {
+                    "titre": "Assistant(e) de direction / RH",
+                    "salaire": "22K€ - 30K€ brut/an"
+                }
+            ],
+            "secteurs": "Ressources Humaines, Secrétariat, Management, Tertiaire."
+        },
+        "programme": {
+            "dureeTotale": "Programme complet – voir brochure pour les détails",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "Droit du travail et veille sociale",
+                    "duration": "35 heures",
+                    "description": "Comprendre les fondamentaux juridiques."
+                },
+                {
+                    "id": 2,
+                    "title": "Administration du personnel",
+                    "duration": "49 heures",
+                    "description": "Contrats, absences, et gestion quotidienne."
+                },
+                {
+                    "id": 3,
+                    "title": "Recrutement et intégration",
+                    "duration": "35 heures",
+                    "description": "Sourcing, entretiens, et onboarding."
+                },
+                {
+                    "id": 4,
+                    "title": "Gestion de la paie",
+                    "duration": "70 heures",
+                    "description": "Éléments variables, DSN, et bulletins."
+                },
+                {
+                    "id": 5,
+                    "title": "Développement des compétences",
+                    "duration": "35 heures",
+                    "description": "GPEC et ingénierie de formation."
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "CPF",
+                    "Plan de développement des compétences",
+                    "Financement entreprise",
+                    "Autres dispositifs selon statut",
+                    "Financement : CPF",
+                    "Financement : Alternance",
+                    "Financement : Financements selon situation (à étudier)"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Personnes ayant une forte appétence pour les relations humaines, titulaires d'un Bac ou équivalent, avec un bon sens de l'organisation.",
+                    "Aisance avec les outils informatiques.",
+                    "Motivation et capacité d'adaptation."
+                ]
+            }
+        },
+        "competences": [
+            "Gestion de l'administration du personnel",
+            "Élaboration et suivi du plan de formation",
+            "Maîtrise du cadre légal et droit du travail",
+            "Recrutement et intégration des talents",
+            "Communication interne et relations sociales",
+            "Préparation et gestion des éléments de paie"
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Assistant(e) Commercial(e) ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "formations-secretaire-comptable": {
+        "hero": {
+            "titre": "Devenez Secrétaire Comptable",
+            "sousTitre": "Le métier de Secrétaire Comptable combine la polyvalence du secrétariat et la rigueur de la comptabilité. Vous assurez le suivi administratif, la facturation, les devis et la tenue de la comptabilité courante.",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-hands-typing-on-a-calculator-and-a-keyboard-41619-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Durée",
+                "value": "12 à 24 mois"
+            },
+            {
+                "label": "Compétences clés",
+                "value": "Bilan, TVA, Fiscalité"
+            },
+            {
+                "label": "Certification",
+                "value": "Titre RNCP (Niveau 5 à 6)"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "La comptabilité est la colonne vertébrale de l'entreprise. Vous serez responsable de la lisibilité financière de la structure, de la saisie des opérations courantes jusqu'à la préparation des bilans. C'est un métier exigeant l'application de normes strictes et une maîtrise des outils numériques actuels."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler à des postes polyvalents en PME.",
+            "postes": [
+                {
+                    "titre": "Secrétaire Comptable",
+                    "salaire": "26K€ - 38K€ brut/an"
+                },
+                {
+                    "titre": "Assistant(e) de direction / COMPTABILITE",
+                    "salaire": "22K€ - 30K€ brut/an"
+                }
+            ],
+            "secteurs": "Cabinets d'expertise comptable, PME, Grandes entreprises."
+        },
+        "programme": {
+            "dureeTotale": "Programme complet de 12 mois",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "Comptabilité générale et opérations courantes",
+                    "duration": "70 heures",
+                    "description": "Maîtrise des écritures de base."
+                },
+                {
+                    "id": 2,
+                    "title": "Fiscalité de l'entreprise",
+                    "duration": "49 heures",
+                    "description": "TVA, impôts sur les sociétés, liasses fiscales."
+                },
+                {
+                    "id": 3,
+                    "title": "Travaux d'inventaire et Bilan",
+                    "duration": "70 heures",
+                    "description": "Amortissements, provisions, et clôture."
+                },
+                {
+                    "id": 4,
+                    "title": "Gestion financière et trésorerie",
+                    "duration": "35 heures",
+                    "description": "Analyse financière et suivi bancaire."
+                },
+                {
+                    "id": 5,
+                    "title": "Numérisation de la fonction comptable",
+                    "duration": "21 heures",
+                    "description": "Maîtrise de Sage, Cegid et autres ERP."
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Formation en alternance ou en initiale.",
+                    "Financement : CPF",
+                    "Dispositifs Pôle Emploi ou OPCO"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Personnes rigoureuses, avec un goût prononcé pour les chiffres. Titulaires d'un Bac ou équivalent.",
+                    "Aisance avec les outils informatiques.",
+                    "Motivation et capacité d'adaptation."
+                ]
+            }
+        },
+        "competences": [
+            "Saisie des écritures comptables courantes",
+            "Établissements des déclarations fiscales (TVA, IS)",
+            "Préparation du bilan et du compte de résultat",
+            "Suivi de la trésorerie et rapprochements bancaires",
+            "Traitement de la comptabilité fournisseurs et clients",
+            "Utilisation des ERP et logiciels comptables"
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Secrétaire Comptable ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "formations-conseillerere-relation-client-a-distance": {
+        "hero": {
+            "titre": "Devenez Conseiller(ère) Relation Client à Distance",
+            "sousTitre": "Le Conseiller Relation Client à Distance est la voix de l'entreprise. Il assure l'accueil, le conseil, la vente ou l'assistance par téléphone, e-mail ou tchat, en veillant à la satisfaction du client.",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-business-people-meeting-at-a-work-table-41718-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Durée",
+                "value": "12 à 24 mois"
+            },
+            {
+                "label": "Compétences clés",
+                "value": "Recrutement, Paie, Droit"
+            },
+            {
+                "label": "Certification",
+                "value": "Titre RNCP (Niveau 5 à 6)"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "Ce métier central vous permet d'intervenir sur la gestion administrative, le développement des talents et la stratégie des ressources humaines au sein de l'entreprise. Vous serez l'interlocuteur clé entre la direction et les collaborateurs, garantissant un environnement de travail épanouissant et conforme à la législation."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler en centre de relation client ou en entreprise.",
+            "postes": [
+                {
+                    "titre": "Conseiller(ère) Relation Client à Distance",
+                    "salaire": "24K€ - 35K€ brut/an"
+                },
+                {
+                    "titre": "Assistant(e) de direction / RH",
+                    "salaire": "22K€ - 30K€ brut/an"
+                }
+            ],
+            "secteurs": "Ressources Humaines, Secrétariat, Management, Tertiaire."
+        },
+        "programme": {
+            "dureeTotale": "Programme modulaire intensif",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "Droit du travail et veille sociale",
+                    "duration": "35 heures",
+                    "description": "Comprendre les fondamentaux juridiques."
+                },
+                {
+                    "id": 2,
+                    "title": "Administration du personnel",
+                    "duration": "49 heures",
+                    "description": "Contrats, absences, et gestion quotidienne."
+                },
+                {
+                    "id": 3,
+                    "title": "Recrutement et intégration",
+                    "duration": "35 heures",
+                    "description": "Sourcing, entretiens, et onboarding."
+                },
+                {
+                    "id": 4,
+                    "title": "Gestion de la paie",
+                    "duration": "70 heures",
+                    "description": "Éléments variables, DSN, et bulletins."
+                },
+                {
+                    "id": 5,
+                    "title": "Développement des compétences",
+                    "duration": "35 heures",
+                    "description": "GPEC et ingénierie de formation."
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Formation continue ou en alternance.",
+                    "Financement : CPF",
+                    "Financement entreprise ou Pôle Emploi"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Personnes ayant une forte appétence pour les relations humaines, titulaires d'un Bac ou équivalent, avec un bon sens de l'organisation.",
+                    "Aisance avec les outils informatiques.",
+                    "Motivation et capacité d'adaptation."
+                ]
+            }
+        },
+        "competences": [
+            "Gestion de l'administration du personnel",
+            "Élaboration et suivi du plan de formation",
+            "Maîtrise du cadre légal et droit du travail",
+            "Recrutement et intégration des talents",
+            "Communication interne et relations sociales",
+            "Préparation et gestion des éléments de paie"
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Conseiller(ère) Relation Client ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "administrateur-reseaux-netops": {
+        "hero": {
+            "titre": "Devenez administrateur(trice) Réseaux NetOps",
+            "sousTitre": "La formation Administrateur(trice) Réseaux NetOps prépare aux métiers de l’administration et de l’automatisation des infrastructures réseau modernes. Elle permet d’acquérir les compétences nécessaires pour configurer, superviser et sécuriser des rése...",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-set-of-code-lines-running-on-screen-22634-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Durée",
+                "value": "Durée"
+            },
+            {
+                "label": "Certification",
+                "value": "Titre professionnel Administrateur(trice) Réseaux NetOps Certification inscrite au RNCP 36163 Niveau 6 – équivalent Bac +3 / Bac +4"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "La formation Administrateur(trice) Réseaux NetOps prépare aux métiers de l’administration et de l’automatisation des infrastructures réseau modernes. Elle permet d’acquérir les compétences nécessaires pour configurer, superviser et sécuriser des réseaux informatiques complexes , qu’ils soient déployés en entreprise, dans un datacenter ou dans le cloud. Ce parcours mène à l’obtention d’un Titre Professionnel de niveau 6 (équivalent Bac +3/4) reconnu par l’État et inscrit au Répertoire National des Certifications Professionnelles (RNCP 36163) . Les apprenants développent une expertise dans l’administration réseau, l’automatisation des infrastructures et la supervision des systèmes afin d’assurer la continuité, la sécurité et la performance des réseaux informatiques ."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
+            "postes": [
+                {
+                    "titre": "Administrateur réseaux",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Administrateur systèmes et réseaux",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Ingénieur NetOps",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Administrateur infrastructures cloud",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Ingénieur réseaux datacenter",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Consultant infrastructures IT",
+                    "salaire": "Selon expérience"
+                }
+            ],
+            "secteurs": "Formation diplômante · IT / Systèmes & Réseaux"
+        },
+        "programme": {
+            "dureeTotale": "Programme complet – voir brochure pour les détails",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "Module principal",
+                    "description": "Contenu détaillé disponible sur demande.",
+                    "duration": "À définir"
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Demandeurs d’emploi",
+                    "Salariés en reconversion ou évolution professionnelle",
+                    "Jeunes souhaitant accéder aux métiers du numérique",
+                    "Toute personne intéressée par les métiers des réseaux informatiques",
+                    "Financement : CPF",
+                    "Financement : Alternance",
+                    "Financement : Financement Pôle emploi selon situation",
+                    "Financement : Financement entreprise"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Demandeurs d’emploi",
+                    "Salariés en reconversion ou évolution professionnelle",
+                    "Jeunes souhaitant accéder aux métiers du numérique",
+                    "Toute personne souhaitant se spécialiser dans l’administration réseau"
+                ]
+            }
+        },
+        "competences": [
+            "Administration et configuration d’infrastructures réseau Automatisation des déploiements réseau",
+            "Gestion et supervision des infrastructures informatiques",
+            "Sécurisation des systèmes et des flux réseau",
+            "Gestion d’architectures cloud et datacenter",
+            "Diagnostic et résolution d’incidents réseau"
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir administrateur(trice) Réseaux NetOps ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "administrateursysteme-devops": {
+        "hero": {
+            "titre": "Devenez Administrateur système DevOps",
+            "sousTitre": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôl...",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-41876-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Durée",
+                "value": "24 mois"
+            },
+            {
+                "label": "Compétences clés",
+                "value": "+20 compétences clés"
+            },
+            {
+                "label": "Certification",
+                "value": "Titre professionnel RNCP – niveau 6 (équivalent Bac+3/4)"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôle est central : il intervient aussi bien sur les serveurs, les réseaux, les systèmes que sur les enjeux de cybersécurité , en veillant à la continuité d’activité et à la protection des données. 👉 C’est un métier à forte responsabilité, recherché par les entreprises confrontées à des enjeux croissants de sécurité informatique."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
+            "postes": [
+                {
+                    "titre": "Administrateur systèmes et réseaux",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Administrateur d’infrastructures sécurisées",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Technicien systèmes & réseaux confirmé",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Technicien sécurité informatique",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Administrateur cloud junior",
+                    "salaire": "Selon expérience"
+                }
+            ],
+            "secteurs": "Formation diplômante · Gestion / RH"
+        },
+        "programme": {
+            "dureeTotale": "Programme complet – voir brochure pour les détails",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "Fondamentaux systèmes & réseaux",
+                    "description": "Module 1 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 2,
+                    "title": "Sécurité des infrastructures informatiques",
+                    "description": "Module 2 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 3,
+                    "title": "Virtualisation & environnements serveurs",
+                    "description": "Module 3 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 4,
+                    "title": "Réseaux avancés et services",
+                    "description": "Module 4 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 5,
+                    "title": "Supervision, maintenance et continuité de service",
+                    "description": "Module 5 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 6,
+                    "title": "Projets professionnels et mises en situation",
+                    "description": "Module 6 de la formation.",
+                    "duration": "À définir"
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Formation accessible en formation continue ou alternance.",
+                    "Entrées possibles selon calendrier.",
+                    "Financement : CPF",
+                    "Financement : Alternance",
+                    "Financement : Financements selon situation (à étudier)"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Personnes en reconversion vers les métiers de l’IT.",
+                    "Techniciens souhaitant monter en compétences.",
+                    "Profils attirés par les systèmes, réseaux et la sécurité.",
+                    "Motivation, rigueur et intérêt pour l’informatique requis."
+                ]
+            }
+        },
+        "competences": [
+            "Administration systèmes (Windows / Linux).",
+            "Gestion des réseaux et services associés.",
+            "Sécurisation des infrastructures et des accès.",
+            "Virtualisation et haute disponibilité.",
+            "Supervision, maintenance et gestion des incidents.",
+            "Documentation technique et bonnes pratiques IT."
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Administrateur système DevOps ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "technicien-reseaux-cybersecurite": {
+        "hero": {
+            "titre": "Devenez Technicien réseaux cybersécurité",
+            "sousTitre": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôl...",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-set-of-code-lines-running-on-screen-22634-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Durée",
+                "value": "24 mois"
+            },
+            {
+                "label": "Compétences clés",
+                "value": "+20 compétences clés"
+            },
+            {
+                "label": "Certification",
+                "value": "Titre professionnel RNCP – niveau 6 (équivalent Bac+3/4)"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôle est central : il intervient aussi bien sur les serveurs, les réseaux, les systèmes que sur les enjeux de cybersécurité , en veillant à la continuité d’activité et à la protection des données. 👉 C’est un métier à forte responsabilité, recherché par les entreprises confrontées à des enjeux croissants de sécurité informatique."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
+            "postes": [
+                {
+                    "titre": "Administrateur systèmes et réseaux",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Administrateur d’infrastructures sécurisées",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Technicien systèmes & réseaux confirmé",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Technicien sécurité informatique",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Administrateur cloud junior",
+                    "salaire": "Selon expérience"
+                }
+            ],
+            "secteurs": "Formation diplômante · Gestion / RH"
+        },
+        "programme": {
+            "dureeTotale": "Programme complet – voir brochure pour les détails",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "Fondamentaux systèmes & réseaux",
+                    "description": "Module 1 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 2,
+                    "title": "Sécurité des infrastructures informatiques",
+                    "description": "Module 2 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 3,
+                    "title": "Virtualisation & environnements serveurs",
+                    "description": "Module 3 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 4,
+                    "title": "Réseaux avancés et services",
+                    "description": "Module 4 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 5,
+                    "title": "Supervision, maintenance et continuité de service",
+                    "description": "Module 5 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 6,
+                    "title": "Projets professionnels et mises en situation",
+                    "description": "Module 6 de la formation.",
+                    "duration": "À définir"
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Formation accessible en formation continue ou alternance.",
+                    "Entrées possibles selon calendrier.",
+                    "Financement : CPF",
+                    "Financement : Alternance",
+                    "Financement : Financements selon situation (à étudier)"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Personnes en reconversion vers les métiers de l’IT.",
+                    "Techniciens souhaitant monter en compétences.",
+                    "Profils attirés par les systèmes, réseaux et la sécurité.",
+                    "Motivation, rigueur et intérêt pour l’informatique requis."
+                ]
+            }
+        },
+        "competences": [
+            "Administration systèmes (Windows / Linux).",
+            "Gestion des réseaux et services associés.",
+            "Sécurisation des infrastructures et des accès.",
+            "Virtualisation et haute disponibilité.",
+            "Supervision, maintenance et gestion des incidents.",
+            "Documentation technique et bonnes pratiques IT."
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Technicien réseaux cybersécurité ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "formation-intelligence-artificielle": {
+        "hero": {
+            "titre": "Faites votre Formation en IA",
+            "sousTitre": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôl...",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-41876-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Durée",
+                "value": "24 mois"
+            },
+            {
+                "label": "Compétences clés",
+                "value": "+20 compétences clés"
+            },
+            {
+                "label": "Certification",
+                "value": "Titre professionnel RNCP – niveau 6 (équivalent Bac+3/4)"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôle est central : il intervient aussi bien sur les serveurs, les réseaux, les systèmes que sur les enjeux de cybersécurité , en veillant à la continuité d’activité et à la protection des données. 👉 C’est un métier à forte responsabilité, recherché par les entreprises confrontées à des enjeux croissants de sécurité informatique."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
+            "postes": [
+                {
+                    "titre": "Administrateur systèmes et réseaux",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Administrateur d’infrastructures sécurisées",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Technicien systèmes & réseaux confirmé",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Technicien sécurité informatique",
+                    "salaire": "Selon expérience"
+                },
+                {
+                    "titre": "Administrateur cloud junior",
+                    "salaire": "Selon expérience"
+                }
+            ],
+            "secteurs": "Formation diplômante · Gestion / RH"
+        },
+        "programme": {
+            "dureeTotale": "Programme complet – voir brochure pour les détails",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "Fondamentaux systèmes & réseaux",
+                    "description": "Module 1 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 2,
+                    "title": "Sécurité des infrastructures informatiques",
+                    "description": "Module 2 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 3,
+                    "title": "Virtualisation & environnements serveurs",
+                    "description": "Module 3 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 4,
+                    "title": "Réseaux avancés et services",
+                    "description": "Module 4 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 5,
+                    "title": "Supervision, maintenance et continuité de service",
+                    "description": "Module 5 de la formation.",
+                    "duration": "À définir"
+                },
+                {
+                    "id": 6,
+                    "title": "Projets professionnels et mises en situation",
+                    "description": "Module 6 de la formation.",
+                    "duration": "À définir"
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Formation accessible en formation continue ou alternance.",
+                    "Entrées possibles selon calendrier.",
+                    "Financement : CPF",
+                    "Financement : Alternance",
+                    "Financement : Financements selon situation (à étudier)"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Personnes en reconversion vers les métiers de l’IT.",
+                    "Techniciens souhaitant monter en compétences.",
+                    "Profils attirés par les systèmes, réseaux et la sécurité.",
+                    "Motivation, rigueur et intérêt pour l’informatique requis."
+                ]
+            }
+        },
+        "competences": [
+            "Administration systèmes (Windows / Linux).",
+            "Gestion des réseaux et services associés.",
+            "Sécurisation des infrastructures et des accès.",
+            "Virtualisation et haute disponibilité.",
+            "Supervision, maintenance et gestion des incidents.",
+            "Documentation technique et bonnes pratiques IT."
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Formation en IA ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "gestionnaire-comptable-fiscal": {
+        "hero": {
+            "titre": "Devenez Gestionnaire comptable et fiscal",
+            "sousTitre": "Le Gestionnaire comptable et fiscal est responsable de la tenue de la comptabilité jusqu'à l'élaboration de la liasse fiscale. Il produit les états financiers et réalise des tableaux de bord.",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-financial-graphs-and-charts-on-a-computer-screen-41584-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Durée",
+                "value": "12 à 24 mois"
+            },
+            {
+                "label": "Compétences clés",
+                "value": "Bilan, TVA, Fiscalité"
+            },
+            {
+                "label": "Certification",
+                "value": "Titre RNCP (Niveau 5 à 6)"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "La comptabilité est la colonne vertébrale de l'entreprise. Vous serez responsable de la lisibilité financière de la structure, de la saisie des opérations courantes jusqu'à la préparation des bilans. C'est un métier exigeant l'application de normes strictes et une maîtrise des outils numériques actuels."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler en cabinet d'expertise ou en entreprise.",
+            "postes": [
+                {
+                    "titre": "Gestionnaire comptable et fiscal",
+                    "salaire": "26K€ - 38K€ brut/an"
+                },
+                {
+                    "titre": "Assistant(e) de direction / COMPTABILITE",
+                    "salaire": "22K€ - 30K€ brut/an"
+                }
+            ],
+            "secteurs": "Cabinets d'expertise comptable, PME, Grandes entreprises."
+        },
+        "programme": {
+            "dureeTotale": "Programme complet de 12 à 18 mois",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "Comptabilité générale et opérations courantes",
+                    "duration": "70 heures",
+                    "description": "Maîtrise des écritures de base."
+                },
+                {
+                    "id": 2,
+                    "title": "Fiscalité de l'entreprise",
+                    "duration": "49 heures",
+                    "description": "TVA, impôts sur les sociétés, liasses fiscales."
+                },
+                {
+                    "id": 3,
+                    "title": "Travaux d'inventaire et Bilan",
+                    "duration": "70 heures",
+                    "description": "Amortissements, provisions, et clôture."
+                },
+                {
+                    "id": 4,
+                    "title": "Gestion financière et trésorerie",
+                    "duration": "35 heures",
+                    "description": "Analyse financière et suivi bancaire."
+                },
+                {
+                    "id": 5,
+                    "title": "Numérisation de la fonction comptable",
+                    "duration": "21 heures",
+                    "description": "Maîtrise de Sage, Cegid et autres ERP."
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Accessible en alternance ou en formation initiale.",
+                    "Financement : CPF",
+                    "Dispositifs OPCO et Pôle Emploi"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Personnes rigoureuses, avec un goût prononcé pour les chiffres. Titulaires d'un Bac ou équivalent.",
+                    "Aisance avec les outils informatiques.",
+                    "Motivation et capacité d'adaptation."
+                ]
+            }
+        },
+        "competences": [
+            "Saisie des écritures comptables courantes",
+            "Établissements des déclarations fiscales (TVA, IS)",
+            "Préparation du bilan et du compte de résultat",
+            "Suivi de la trésorerie et rapprochements bancaires",
+            "Traitement de la comptabilité fournisseurs et clients",
+            "Utilisation des ERP et logiciels comptables"
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Gestionnaire Comptable ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    },
+    "formations-comptable-assistant": {
+        "hero": {
+            "titre": "Devenez Comptable assistant",
+            "sousTitre": "Le Comptable assistant recueille, contrôle et comptabilise l'ensemble des documents commerciaux, sociaux et financiers de l'entreprise. Il réalise les déclarations courantes.",
+            "image": "https://assets.mixkit.co/videos/preview/mixkit-hands-typing-on-a-calculator-and-a-keyboard-41619-large.mp4"
+        },
+        "stats": [
+            {
+                "label": "Durée",
+                "value": "12 à 24 mois"
+            },
+            {
+                "label": "Compétences clés",
+                "value": "Bilan, TVA, Fiscalité"
+            },
+            {
+                "label": "Certification",
+                "value": "Titre RNCP (Niveau 5 à 6)"
+            }
+        ],
+        "presentation": {
+            "titre": "Le métier",
+            "paragraphes": "La comptabilité est la colonne vertébrale de l'entreprise. Vous serez responsable de la lisibilité financière de la structure, de la saisie des opérations courantes jusqu'à la préparation des bilans. C'est un métier exigeant l'application de normes strictes et une maîtrise des outils numériques actuels."
+        },
+        "debouches": {
+            "titre": "Les métiers visés",
+            "sousTitre": "Après cette formation, vous pourrez postuler dans divers environnements comptables.",
+            "postes": [
+                {
+                    "titre": "Comptable assistant",
+                    "salaire": "26K€ - 38K€ brut/an"
+                },
+                {
+                    "titre": "Assistant(e) de direction / COMPTABILITE",
+                    "salaire": "22K€ - 30K€ brut/an"
+                }
+            ],
+            "secteurs": "Cabinets d'expertise comptable, PME, Grandes entreprises."
+        },
+        "programme": {
+            "dureeTotale": "Programme complet de 9 à 12 mois",
+            "modules": [
+                {
+                    "id": 1,
+                    "title": "Comptabilité générale et opérations courantes",
+                    "duration": "70 heures",
+                    "description": "Maîtrise des écritures de base."
+                },
+                {
+                    "id": 2,
+                    "title": "Fiscalité de l'entreprise",
+                    "duration": "49 heures",
+                    "description": "TVA, impôts sur les sociétés, liasses fiscales."
+                },
+                {
+                    "id": 3,
+                    "title": "Travaux d'inventaire et Bilan",
+                    "duration": "70 heures",
+                    "description": "Amortissements, provisions, et clôture."
+                },
+                {
+                    "id": 4,
+                    "title": "Gestion financière et trésorerie",
+                    "duration": "35 heures",
+                    "description": "Analyse financière et suivi bancaire."
+                },
+                {
+                    "id": 5,
+                    "title": "Numérisation de la fonction comptable",
+                    "duration": "21 heures",
+                    "description": "Maîtrise de Sage, Cegid et autres ERP."
+                }
+            ]
+        },
+        "infosPratiques": {
+            "modalites": {
+                "titre": "Modalités d'apprentissage",
+                "points": [
+                    "Formation initiale ou en contrat d'alternance.",
+                    "Financement : CPF",
+                    "Financement : Pôle Emploi"
+                ]
+            },
+            "prerequis": {
+                "titre": "Public concerné & Prérequis",
+                "points": [
+                    "Personnes rigoureuses, avec un goût prononcé pour les chiffres. Titulaires d'un Bac ou équivalent.",
+                    "Aisance avec les outils informatiques.",
+                    "Motivation et capacité d'adaptation."
+                ]
+            }
+        },
+        "competences": [
+            "Saisie des écritures comptables courantes",
+            "Établissements des déclarations fiscales (TVA, IS)",
+            "Préparation du bilan et du compte de résultat",
+            "Suivi de la trésorerie et rapprochements bancaires",
+            "Traitement de la comptabilité fournisseurs et clients",
+            "Utilisation des ERP et logiciels comptables"
+        ],
+        "ctaFinal": {
+            "titre": "Prêt(e) à devenir Comptable assistant ?",
+            "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+            "boutons": [
+                {
+                    "label": "S'inscrire maintenant",
+                    "url": "/contact"
+                }
+            ]
+        }
+    }
+}

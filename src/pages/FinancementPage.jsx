@@ -1,24 +1,19 @@
 import React from 'react';
 import Breadcrumb from '../components/Breadcrumb';
-import PageCarousel from '../components/PageCarousel';
+import Hero from '../components/Hero/Hero';
 import CardDesc from '../components/Card/CardDesc';
 
 // Import des données depuis ton fichier JS
 import { hero, cpf, opco, poleEmploi, autresSolutions } from '../data/financement';
 
 export default function FinancementsPage() {
-  const carouselSlides = [
-    {
-      type: 'image',
-      src: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1200', // Example image
-      title: hero.titre,
-      subtitle: hero.sousTitre,
-    }
-  ];
-
   return (
     <div className="bg-white min-h-screen">
-      <PageCarousel slides={carouselSlides} />
+      <Hero 
+        title={hero.titre}
+        subtitle={hero.sousTitre}
+        image="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1200"
+      />
       <Breadcrumb
         items={[{ label: 'Accueil', to: '/' }, { label: 'Financements' }]}
       />

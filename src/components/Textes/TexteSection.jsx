@@ -29,7 +29,7 @@ export default function  TexteSection ({ data, imageRight = true }) {
 
             {/* Paragraphes : Interlignage aéré, couleur muted */}
             <div className="flex flex-col gap-8">
-              {contenu.map((paragraphe, index) => (
+              {(Array.isArray(contenu) ? contenu : [contenu]).filter(Boolean).map((paragraphe, index) => (
                 <p 
                   key={index} 
                   className="text-[17px] md:text-[18px] text-muted leading-relaxed font-body"

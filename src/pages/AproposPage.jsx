@@ -1,24 +1,17 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import Breadcrumb from '../components/Breadcrumb';
-import PageCarousel from '../components/PageCarousel';
-import Footer from '../components/Footer';
-import TexteSection from '../components/TexteSection'; // Import du composant flexible
+import Hero from '../components/Hero/Hero';
+import TexteSection from '../components/Textes/TexteSection'; // Import du composant flexible
 import { hero, notreHistoire, nosValeurs, certificationsAgrements } from '../data/apropos';
 
 export default function AproposPage() {
-  const carouselSlides = [
-    {
-      type: 'image',
-      src: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1200', // Example image
-      title: hero.titre,
-      subtitle: hero.sousTitre,
-    }
-  ];
-
   return (
     <div className="bg-white min-h-screen font-body antialiased">
-      <PageCarousel slides={carouselSlides} />
+      <Hero 
+        title={hero.titre}
+        subtitle={hero.sousTitre}
+        image="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1200"
+      />
       <Breadcrumb
         items={[{ label: 'Accueil', to: '/' }, { label: 'À propos' }]}
       />
