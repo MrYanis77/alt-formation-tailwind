@@ -12,6 +12,7 @@ export default function CertificationPage() {
       <Hero
         title={hero.titre}
         subtitle={hero.sousTitre}
+        video={hero.video}
       />
 
       {/* Fil d'Ariane cohérent avec le Hero */}

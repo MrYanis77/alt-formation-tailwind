@@ -15,9 +15,9 @@
 
 export const hero = {
   titre: "Solutions Entreprises",
-  sousTitre: "Développez les compétences de vos équipes avec des solutions sur-mesure",
+  sousTitre: "Plusieurs solutions de financement pour rendre votre formation accessible",
+  video: "public/Assets/video/entreprise.mp4",
 };
-
 export const formationSurMesure = {
   titre: 'Formation sur-mesure',
   description:
@@ -85,7 +85,7 @@ export const recrutementAlternance = {
   titre: 'Recrutement en alternance',
   description: 'Trouvez vos futurs talents parmi nos apprenants qualifiés et motivés',
   steps: [
-   {
+    {
       titre: 'Sourcing',
       desc: 'Accès à votre vivier de candidats pré-qualifiés',
     },
@@ -111,7 +111,7 @@ export const recrutementAlternance = {
  */
 export const stats = [
   { value: '+300', label: 'Entreprises partenaires' },
-  { value: '98%',  label: 'Satisfaction clients' },
-  { value: '72h',  label: 'Délai de réponse moyen' },
+  { value: '98%', label: 'Satisfaction clients' },
+  { value: '72h', label: 'Délai de réponse moyen' },
   { value: '100%', label: 'Financement OPCO' },
 ];

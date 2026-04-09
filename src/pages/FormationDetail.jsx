@@ -15,7 +15,7 @@ import Breadcrumb from '../components/Breadcrumb';
 
 export default function FormationDetail() {
   const { id } = useParams();
-  
+
   // 1. Cherche dans les 4 pages métiers "Premium" (via FormationsPage) 
   // 2. Ou sinon, cherche dans le JSON (via le Mega Menu)
   const data = allFormations[id] || formationsArray.find(f => f.id === id);
@@ -43,7 +43,7 @@ export default function FormationDetail() {
       <Hero
         title={data.hero?.titre || data.titre}
         subtitle={data.hero?.sousTitre || "Maîtrisez les compétences de demain avec nos experts."}
-        image={data.hero?.image || "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"}
+        video={data.hero?.video}
       />
 
       <Breadcrumb
@@ -210,7 +210,7 @@ export default function FormationDetail() {
                   <div className="bg-white p-6 rounded-xl shadow border border-transparent group-hover:border-orange transition-all duration-300">
                     <div className="overflow-hidden rounded-lg mb-4">
                       {f.hero?.image && (
-                         <img src={f.hero.image} alt={f.hero?.titre || f.id} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <img src={f.hero.image} alt={f.hero?.titre || f.id} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
                       )}
                     </div>
                     <span className="text-xs font-bold text-orange uppercase tracking-wider mb-2 block">

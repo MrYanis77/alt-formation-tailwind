@@ -3,14 +3,16 @@
  * Source de vérité unique consommée par FormationsPage.jsx
  *
  * Structure :
- *   id       {string} — ancre HTML de la catégorie
- *   label    {string} — titre de la catégorie
- *   items[]  {Object} — formations : titre + features (3 bullets)
+ * id       {string} — ancre HTML de la catégorie
+ * label    {string} — titre de la catégorie
+ * items[]  {Object} — formations : titre + features (3 bullets)
  */
 
 export const hero = {
   titre: "Nos formations",
   sousTitre: "Des parcours certifiants adaptés à vos ambitions professionnelles",
+  // Ajout de la vidéo ici (tu peux remplacer le lien par ta propre vidéo .mp4)
+  image: "https://cdn.pixabay.com/video/2020/05/11/38608-418804928_tiny.mp4",
 };
 
 export const catalogue = [

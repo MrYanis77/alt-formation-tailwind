@@ -12,14 +12,14 @@ const categoryMap = {
   'formations-assistante-ressources-humaines': 'rh',
   'formations-assistante-administratifve': 'rh',
   'formations-assistante-commerciale': 'rh',
-  'formations-secretaire-comptable': 'comptabilite',
+  'formations-secretaire-comptable': 'rh',
   'formations-conseillerere-relation-client-a-distance': 'rh',
   'administrateur-reseaux-netops': 'numerique',
   'administrateursysteme-devops': 'numerique',
   'technicien-reseaux-cybersecurite': 'numerique',
   'formation-intelligence-artificielle': 'numerique',
-  'gestionnaire-comptable-fiscal': 'comptabilite',
-  'formations-comptable-assistant': 'comptabilite'
+  'gestionnaire-comptable-fiscal': 'rh',
+  'formations-comptable-assistant': 'rh'
 };
 
 // Conversion du JSON en tableau et ajout dynamique de la catégorie si manquante
@@ -87,12 +87,7 @@ export const navlinks = [
             label: "Formations Gestion/RH",
             href: "/formations?categorie=rh",
             submenu: getSubMenu('rh')
-          },
-          {
-            label: "Formations Comptabilité",
-            href: "/formations?categorie=comptabilite",
-            submenu: getSubMenu('comptabilite')
-          },
+          }
         ],
       },
       {

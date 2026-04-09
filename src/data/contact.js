@@ -5,6 +5,7 @@
 export const hero = {
   titre: "Contactez-nous",
   sousTitre: "Notre équipe est à votre écoute pour répondre à toutes vos questions",
+  video: "public/Assets/video/contact.mp4",
 };
 
 export const contactData = {

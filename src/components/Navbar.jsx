@@ -22,7 +22,7 @@ export default function Navbar() {
         <img 
           src="../public/Assets/logo-altrh.png" 
           alt="Logo ALT Formations" 
-          className="h-8 w-auto object-contain" 
+          className="h-8 w-auto object-contain [filter:drop-shadow(0_0_8px_rgba(255,255,255,1))_drop-shadow(0_0_20px_rgba(255,255,255,0.5))]" 
         />
         <span className="text-white font-heading font-extrabold text-base tracking-wider uppercase cursor-pointer">
           ALT FORMATIONS

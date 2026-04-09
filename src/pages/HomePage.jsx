@@ -1,6 +1,6 @@
 /**
  * Page d'accueil - ALT FORMATIONS
- * * Ce fichier centralise les sections principales de la landing page :
+ * Ce fichier centralise les sections principales de la landing page :
  * - Hero Carousel : Diaporama dynamique avec Framer Motion (slides importées).
  * - StatsSection : Affichage des chiffres clés.
  * - ServicesGrid : Grille des prestations proposées.
@@ -8,10 +8,10 @@
  * - TrustSection : (Intégrée) Bandeau de logos partenaires avec défilement infini en CSS.
  * - Témoignages : Grille de retours clients avec un design à bordure colorée.
  * - CTA Final : Appel à l'action pour la prise de contact.
- * * Dépendances : framer-motion, tailwindcss
+ * Dépendances : framer-motion, tailwindcss
  */
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Import des sous-composants
@@ -39,7 +39,7 @@ export default function HomePage() {
 
   return (
     <div className="bg-white antialiased">
-      
+
       {/* SECTION 1 : HERO CAROUSEL */}
       <section className="relative h-[600px] md:h-[550px] bg-navy overflow-hidden flex items-center group">
         {/* Animation de fond */}
@@ -52,11 +52,30 @@ export default function HomePage() {
             transition={{ duration: 0.8 }}
             className="absolute inset-0 z-0"
           >
-            <img 
-              src={slides[currentSlide].image} 
-              className="w-full h-full object-cover" 
-              alt="Background ALT Formations" 
-            />
+            {/* VÉRIFICATION : Si une vidéo existe, on l'affiche, sinon on affiche l'image */}
+            {slides[currentSlide].video ? (
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+              >
+                <source src={slides[currentSlide].video} type="video/mp4" />
+                {/* Fallback image si la vidéo ne charge pas */}
+                <img
+                  src={slides[currentSlide].image}
+                  className="w-full h-full object-cover"
+                  alt="Background ALT Formations fallback"
+                />
+              </video>
+            ) : (
+              <img
+                src={slides[currentSlide].image}
+                className="w-full h-full object-cover"
+                alt="Background ALT Formations"
+              />
+            )}
           </motion.div>
         </AnimatePresence>
 
@@ -98,9 +117,8 @@ export default function HomePage() {
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`h-1.5 rounded-full transition-all duration-500 ${
-                index === currentSlide ? 'w-10 bg-orange' : 'w-4 bg-white/30 hover:bg-white/60'
-              }`}
+              className={`h-1.5 rounded-full transition-all duration-500 ${index === currentSlide ? 'w-10 bg-orange' : 'w-4 bg-white/30 hover:bg-white/60'
+                }`}
               aria-label={`Slide ${index + 1}`}
             />
           ))}
@@ -132,13 +150,13 @@ export default function HomePage() {
         <div className="relative flex overflow-hidden group">
           <div className="flex py-4 animate-scroll whitespace-nowrap">
             {doublePartenaires.map((partenaire, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="flex-shrink-0 w-[150px] md:w-[200px] mx-8 md:mx-12 flex items-center justify-center transition-opacity duration-300 opacity-80 hover:opacity-100"
               >
-                <img 
-                  src={partenaire.logo} 
-                  alt={partenaire.nom} 
+                <img
+                  src={partenaire.logo}
+                  alt={partenaire.nom}
                   className="h-12 md:h-16 w-auto object-contain"
                 />
               </div>
@@ -147,7 +165,8 @@ export default function HomePage() {
         </div>
 
         {/* Style CSS inline pour l'animation de défilement infini */}
-        <style dangerouslySetInnerHTML={{ __html: `
+        <style dangerouslySetInnerHTML={{
+          __html: `
           @keyframes scroll {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
@@ -192,8 +211,8 @@ export default function HomePage() {
           <p className="text-muted text-[16px] mb-10 leading-relaxed font-body max-w-2xl mx-auto">
             Rejoignez une communauté de talents et bénéficiez d'un accompagnement sur mesure pour réussir votre insertion professionnelle.
           </p>
-          <a 
-            href="/contact" 
+          <a
+            href="/contact"
             className="btn-orange inline-block py-4 px-12 text-sm shadow-xl hover:-translate-y-1 transition-all uppercase font-bold tracking-widest"
           >
             Demander un rendez-vous gratuit

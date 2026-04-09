@@ -3,7 +3,7 @@
         "hero": {
             "titre": "Devenez Administrateur·rice d’infrastructures sécurisées",
             "sousTitre": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôl...",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-set-of-code-lines-running-on-screen-22634-large.mp4"
+            "video": "/Assets/video/formations/admin-infra.mp4"
         },
         "stats": [
             {
@@ -135,7 +135,7 @@
         "hero": {
             "titre": "Devenez Développeur Web & Mobile",
             "sousTitre": "Le Développeur Web & Web Mobile conçoit et développe des applications accessibles via un navigateur ou un terminal mobile. Il travaille sur la partie visible (interface utilisateur) comme sur la partie technique (serveur, base de données), en veillan...",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-41876-large.mp4"
+            "video": "/Assets/video/formations/dev-web-mobile.mp4"
         },
         "stats": [
             {
@@ -260,7 +260,7 @@
         "hero": {
             "titre": "Devenez Développeur d’applications multimédia",
             "sousTitre": "Développeur d’Applications Multimédia : un métier créatif et technique Le Développeur d’Applications Multimédia conçoit des applications interactives intégrant différents médias (graphisme, animation, son, vidéo). Il intervient sur des projets variés...",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-41876-large.mp4"
+            "video": "/Assets/video/formations/dev-app.mp4"
         },
         "stats": [
             {
@@ -378,7 +378,7 @@
         "hero": {
             "titre": "Devenez Concepteur Développeur d’Applications",
             "sousTitre": "Le Concepteur Développeur d’Applications conçoit et développe des applications logicielles complètes répondant à des besoins métiers spécifiques. Il intervient sur l’analyse des besoins, la conception technique, le développement, les tests et la main...",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-set-of-code-lines-running-on-screen-22634-large.mp4"
+            "video": "/Assets/video/formations/dev-app.mp4"
         },
         "stats": [
             {
@@ -545,7 +545,7 @@
         "hero": {
             "titre": "Devenez Technicien supérieur systèmes et réseaux",
             "sousTitre": "Le Technicien Supérieur Systèmes et Réseaux assure l’installation, la configuration et la maintenance des infrastructures informatiques d’une organisation. Il veille à la disponibilité des systèmes, à la sécurité des réseaux et accompagne les utilisa...",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-41876-large.mp4"
+            "video": "/Assets/video/formations/technicien-sr.mp4"
         },
         "stats": [
             {
@@ -712,7 +712,7 @@
         "hero": {
             "titre": "Devenez Lead Développeur Web",
             "sousTitre": "Le Lead Développeur Web conçoit, développe et supervise des applications web complexes. Il coordonne les équipes techniques, définit les choix d’architecture, veille à la qualité du code et assure la mise en production des projets. Il joue un rôle cl...",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-41876-large.mp4"
+            "video": "/Assets/video/formations/dev-app.mp4"
         },
         "stats": [
             {
@@ -878,7 +878,7 @@
         "hero": {
             "titre": "Devenez Community Manager",
             "sousTitre": "Le Community Manager est en charge de la gestion et de l’animation des communautés en ligne d’une entreprise ou d’une marque. Il crée des contenus adaptés, planifie les publications, interagit avec les internautes et veille à l’e-réputation de l’orga...",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-two-business-women-having-a-professional-conversation-41707-large.mp4"
+            "video": "/Assets/video/formations/manager.mp4"
         },
         "stats": [
             {
@@ -993,7 +993,7 @@
         "hero": {
             "titre": "Devenez Assistant(e) Ressources Humaines",
             "sousTitre": "Véritable trait d'union entre la direction et les salariés, l'Assistant(e) Ressources Humaines participe activement à la gestion administrative du personnel, au recrutement, à la formation et contribue au bon climat social de l'entreprise.",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-two-business-women-having-a-professional-conversation-41707-large.mp4"
+            "video": "/Assets/video/formations/rh.mp4"
         },
         "stats": [
             {
@@ -1107,7 +1107,7 @@
         "hero": {
             "titre": "Devenez Assistant(e) Administratif(ve)",
             "sousTitre": "L'Assistant(e) Administratif(ve) est le pilier de l'organisation d'un service ou d'une entreprise. Il ou elle gère l'accueil, le traitement du courrier, la saisie des documents et assure le suivi administratif courant.",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-business-people-meeting-at-a-work-table-41718-large.mp4"
+            "video": "/Assets/video/formations/administration.mp4"
         },
         "stats": [
             {
@@ -1218,7 +1218,7 @@
         "hero": {
             "titre": "Devenez Assistant(e) Commercial(e)",
             "sousTitre": "L’Assistant(e) Commercial(e) joue un rôle central dans le bon fonctionnement de l’activité commerciale. Véritable interface entre les clients, les équipes de vente et les services internes, il ou elle assure le suivi administratif des ventes, la rela...",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-two-business-women-having-a-professional-conversation-41707-large.mp4"
+            "video": "/Assets/video/formations/administration.mp4"
         },
         "stats": [
             {
@@ -1333,7 +1333,7 @@
         "hero": {
             "titre": "Devenez Secrétaire Comptable",
             "sousTitre": "Le métier de Secrétaire Comptable combine la polyvalence du secrétariat et la rigueur de la comptabilité. Vous assurez le suivi administratif, la facturation, les devis et la tenue de la comptabilité courante.",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-hands-typing-on-a-calculator-and-a-keyboard-41619-large.mp4"
+            "video": "/Assets/video/formations/comptable.mp4"
         },
         "stats": [
             {
@@ -1444,7 +1444,7 @@
         "hero": {
             "titre": "Devenez Conseiller(ère) Relation Client à Distance",
             "sousTitre": "Le Conseiller Relation Client à Distance est la voix de l'entreprise. Il assure l'accueil, le conseil, la vente ou l'assistance par téléphone, e-mail ou tchat, en veillant à la satisfaction du client.",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-business-people-meeting-at-a-work-table-41718-large.mp4"
+            "video": "/Assets/video/contact.mp4"
         },
         "stats": [
             {
@@ -1555,7 +1555,7 @@
         "hero": {
             "titre": "Devenez administrateur(trice) Réseaux NetOps",
             "sousTitre": "La formation Administrateur(trice) Réseaux NetOps prépare aux métiers de l’administration et de l’automatisation des infrastructures réseau modernes. Elle permet d’acquérir les compétences nécessaires pour configurer, superviser et sécuriser des rése...",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-set-of-code-lines-running-on-screen-22634-large.mp4"
+            "video": "/Assets/video/formations/admin-infra.mp4"
         },
         "stats": [
             {
@@ -1569,7 +1569,7 @@
         ],
         "presentation": {
             "titre": "Le métier",
-            "paragraphes": "La formation Administrateur(trice) Réseaux NetOps prépare aux métiers de l’administration et de l’automatisation des infrastructures réseau modernes. Elle permet d’acquérir les compétences nécessaires pour configurer, superviser et sécuriser des réseaux informatiques complexes , qu’ils soient déployés en entreprise, dans un datacenter ou dans le cloud. Ce parcours mène à l’obtention d’un Titre Professionnel de niveau 6 (équivalent Bac +3/4) reconnu par l’État et inscrit au Répertoire National des Certifications Professionnelles (RNCP 36163) . Les apprenants développent une expertise dans l’administration réseau, l’automatisation des infrastructures et la supervision des systèmes afin d’assurer la continuité, la sécurité et la performance des réseaux informatiques ."
+            "paragraphes": "La formation Administrateur(trice) Réseaux NetOps prépare aux métiers de l’administration et de l’automatisation des infrastructures réseau modernes. Elle permet d’acquérir les compétences nécessaires pour configurer, superviser et sécuriser des réseaux informatiques complexes , qu’ils soient déployés en entreprise, dans un datacenter ou dans le cloud. Ce parcours mène à l’obtention d’un Titre Professionnel de niveau 6 (équivalent Bac +3/4) reconnu par l’État et inscrit au Répertoire National des Certifications Professionnelles (RNCP 36163) . Les apprenants développent une expertise dans l’administration réseau, l’automatisation des infrastructures et la supervision des systèmes afin d’assurer la continuity, la sécurité et la performance des réseaux informatiques ."
         },
         "debouches": {
             "titre": "Les métiers visés",
@@ -1659,7 +1659,7 @@
         "hero": {
             "titre": "Devenez Administrateur système DevOps",
             "sousTitre": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôl...",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-41876-large.mp4"
+            "video": "/Assets/video/formations/technicien-sr.mp4"
         },
         "stats": [
             {
@@ -1791,7 +1791,7 @@
         "hero": {
             "titre": "Devenez Technicien réseaux cybersécurité",
             "sousTitre": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôl...",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-set-of-code-lines-running-on-screen-22634-large.mp4"
+            "video": "/Assets/video/formations/cyber.mp4"
         },
         "stats": [
             {
@@ -1923,7 +1923,7 @@
         "hero": {
             "titre": "Faites votre Formation en IA",
             "sousTitre": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôl...",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-41876-large.mp4"
+            "video": "/Assets/video/formations/dev-web-mobile.mp4"
         },
         "stats": [
             {
@@ -1999,7 +1999,7 @@
                 },
                 {
                     "id": 5,
-                    "title": "Supervision, maintenance et continuité de service",
+                    "title": "Supervision, maintenance et continuity de service",
                     "description": "Module 5 de la formation.",
                     "duration": "À définir"
                 },
@@ -2055,7 +2055,7 @@
         "hero": {
             "titre": "Devenez Gestionnaire comptable et fiscal",
             "sousTitre": "Le Gestionnaire comptable et fiscal est responsable de la tenue de la comptabilité jusqu'à l'élaboration de la liasse fiscale. Il produit les états financiers et réalise des tableaux de bord.",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-financial-graphs-and-charts-on-a-computer-screen-41584-large.mp4"
+            "video": "/Assets/video/formations/comptable.mp4"
         },
         "stats": [
             {
@@ -2166,7 +2166,7 @@
         "hero": {
             "titre": "Devenez Comptable assistant",
             "sousTitre": "Le Comptable assistant recueille, contrôle et comptabilise l'ensemble des documents commerciaux, sociaux et financiers de l'entreprise. Il réalise les déclarations courantes.",
-            "image": "https://assets.mixkit.co/videos/preview/mixkit-hands-typing-on-a-calculator-and-a-keyboard-41619-large.mp4"
+            "video": "/Assets/video/formations/comptable.mp4"
         },
         "stats": [
             {

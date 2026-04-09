@@ -16,7 +16,7 @@ export const slides = [
     desc: 'Protégez les données et systèmes de demain avec nos certifications de pointe.',
     cta: 'Découvrir nos formations',
     ctaTo: '/formations',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200'
+    image: '/Assets/video/formations/cybersecurite.mp4'
   },
   {
     id: 2,
@@ -55,9 +55,9 @@ export const slides = [
  */
 export const stats = [
   { value: '+5000', label: 'Stagiaires formés' },
-  { value: '+40',   label: 'Experts formateurs' },
-  { value: '95%',   label: 'Taux de satisfaction' },
-  { value: '+150',  label: 'Formations disponibles' },
+  { value: '+40', label: 'Experts formateurs' },
+  { value: '95%', label: 'Taux de satisfaction' },
+  { value: '+150', label: 'Formations disponibles' },
 ];
 
 /**

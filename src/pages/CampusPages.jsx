@@ -35,6 +35,7 @@ export default function CampusPage() {
                 href={item.mapLink}
                 points={[
                   item.adresse,
+                  item.telephone, // <-- Numéro de téléphone inséré ici
                   "Espaces de coworking modernes",
                   "Accessible en transports en commun",
                   item.id === "val-d-europe" ? "Campus principal (Siège)" : "Centre de formation certifié"

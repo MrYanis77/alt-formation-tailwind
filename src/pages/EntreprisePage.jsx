@@ -20,7 +20,7 @@ export default function EntreprisePage() {
       <Hero
         title={hero.titre}
         subtitle={hero.sousTitre}
-        image="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1200"
+        video={hero.video}
       />
       <Breadcrumb
         items={[{ label: 'Accueil', to: '/' }, { label: 'Entreprise' }]}

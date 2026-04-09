@@ -14,6 +14,7 @@ export default function ContactPage() {
       <Hero
         title={hero.titre}
         subtitle={hero.sousTitre}
+        video={hero.video}
       />
 
       {/* 1. BREADCRUMB */}
