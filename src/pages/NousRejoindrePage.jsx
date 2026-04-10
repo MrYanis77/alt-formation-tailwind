@@ -36,6 +36,28 @@ export default function NousRejoindre() {
 
       <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'Nous rejoindre' }]} />
 
+      {/* TOGGLE CATEGORIES */}
+      <section className="py-10 bg-gray-50 border-b border-border">
+        <div className="max-w-[1100px] mx-auto text-center px-6">
+          <div className="flex bg-white p-1.5 rounded-full shadow-sm w-fit mx-auto border border-gray-200">
+            <button
+              onClick={() => setView('collaborateur')}
+              className={`px-8 md:px-10 py-3 rounded-full font-bold transition-all duration-300 cursor-pointer ${view === 'collaborateur' ? 'bg-orange text-white shadow-md' : 'text-gray-500 hover:text-navy'
+                }`}
+            >
+              Collaborateur
+            </button>
+            <button
+              onClick={() => setView('formateur')}
+              className={`px-8 md:px-10 py-3 rounded-full font-bold transition-all duration-300 cursor-pointer ${view === 'formateur' ? 'bg-[#1E2F47] text-white shadow-md' : 'text-gray-500 hover:text-navy'
+                }`}
+            >
+              Formateur
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* 2. POURQUOI NOUS REJOINDRE */}
       <section className="py-[70px] px-6 bg-white">
         <div className="max-w-[1100px] mx-auto text-center">
@@ -80,28 +102,6 @@ export default function NousRejoindre() {
                 index={index}
               />
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* TOGGLE CATEGORIES */}
-      <section className="py-10 bg-gray-50 border-b border-border">
-        <div className="max-w-[1100px] mx-auto text-center px-6">
-          <div className="flex bg-white p-1.5 rounded-full shadow-sm w-fit mx-auto border border-gray-200">
-            <button
-              onClick={() => setView('collaborateur')}
-              className={`px-8 md:px-10 py-3 rounded-full font-bold transition-all duration-300 cursor-pointer ${view === 'collaborateur' ? 'bg-orange text-white shadow-md' : 'text-gray-500 hover:text-navy'
-                }`}
-            >
-              Collaborateur
-            </button>
-            <button
-              onClick={() => setView('formateur')}
-              className={`px-8 md:px-10 py-3 rounded-full font-bold transition-all duration-300 cursor-pointer ${view === 'formateur' ? 'bg-[#1E2F47] text-white shadow-md' : 'text-gray-500 hover:text-navy'
-                }`}
-            >
-              Formateur
-            </button>
           </div>
         </div>
       </section>
