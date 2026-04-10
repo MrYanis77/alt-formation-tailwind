@@ -1,22 +1,19 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import Breadcrumb from '../components/Breadcrumb';
 import Hero from '../components/Hero/Hero';
-import Footer from '../components/Footer';
-import TexteSection from '../components/TexteSection'; // Import du composant flexible
+import TexteSection from '../components/Textes/TexteSection'; // Import du composant flexible
 import { hero, notreHistoire, nosValeurs, certificationsAgrements } from '../data/apropos';
 
 export default function AproposPage() {
   return (
     <div className="bg-white min-h-screen font-body antialiased">
-      
-      <Breadcrumb
-        items={[{ label: 'Accueil', to: '/' }, { label: 'À propos' }]}
-      />
-      
-      <Hero
+      <Hero 
         title={hero.titre}
         subtitle={hero.sousTitre}
+        image="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1200"
+      />
+      <Breadcrumb
+        items={[{ label: 'Accueil', to: '/' }, { label: 'À propos' }]}
       />
 
       <main id="main-content">

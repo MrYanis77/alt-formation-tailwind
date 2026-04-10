@@ -2,9 +2,10 @@
  * contact.js — Données de la page Contact
  */
 
-export const hero= {
+export const hero = {
   titre: "Contactez-nous",
   sousTitre: "Notre équipe est à votre écoute pour répondre à toutes vos questions",
+  video: "public/Assets/video/contact.mp4",
 };
 
 export const contactData = {
@@ -19,12 +20,12 @@ export const contactData = {
       },
       {
         type: "Email",
-        valeur: "contact@alt-rh.fr",
+        valeur: "yanislaldjipro@gmail.com",
         icon: "✉️"
       },
       {
         type: "Adresse",
-        valeur: "123 Avenue de la Formation, 75001 Paris",
+        valeur: "3 rue du cochet 77700 Baily-Romainvilliers",
         icon: "📍"
       }
     ]
@@ -34,7 +35,7 @@ export const contactData = {
     titre: "Horaires d'ouverture",
     jours: [
       { label: "Lundi - Vendredi", heures: "9h00 - 18h00" },
-      { label: "Samedi", heures: "9h00 - 12h00" },
+      { label: "Samedi", heures: "Fermé" },
       { label: "Dimanche", heures: "Fermé" }
     ]
   },

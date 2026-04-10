@@ -21,11 +21,15 @@ export default function CardDesc ({ title, description, columns = [], highlight 
         </p>
       )}
 
-      <div className={`grid grid-cols-1 ${columns.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'} gap-12`}>
+      <div className={`grid grid-cols-1 ${
+        columns.length === 4 ? 'md:grid-cols-2 lg:grid-cols-4' : 
+        columns.length === 3 ? 'md:grid-cols-3' : 
+        'md:grid-cols-2'
+      } gap-12`}>
         {columns.map((col, idx) => (
           <div key={idx} className="flex flex-col h-full">
             <h3 className="font-heading text-[18px] font-bold text-navy mb-5 uppercase tracking-tight text-sm">
-              {col.label}
+              {col.label || col.titre}
             </h3>
             
             {/* Cas 1 : Affichage d'une liste d'items */}
@@ -41,9 +45,9 @@ export default function CardDesc ({ title, description, columns = [], highlight 
             )}
 
             {/* Cas 2 : Affichage d'un texte simple */}
-            {col.text && (
+            {(col.text || col.desc) && (
               <p className="text-[14px] text-[#555] leading-relaxed mb-6">
-                {col.text}
+                {col.text || col.desc}
               </p>
             )}
 

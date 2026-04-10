@@ -16,12 +16,12 @@ import { hero,benefits, formations, steps } from '../data/alternance';
 export default function AlternancePage() {
   return (
     <div className="bg-white min-h-screen">
-      <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'Alternance' }]} />
-      
-    <Hero
+      <Hero 
         title={hero.titre}
         subtitle={hero.sousTitre}
-    />
+        image="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=1200"
+      />
+      <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'Présentiel' }]} />
 
       {/* ===== SECTION AVANTAGES (Image 9a35a3) ===== */}
       <section className="py-20 px-6 bg-white">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import de Link
-import FormUser from '../components/FormUser';
+import FormUser from '../components/Form/FormUser';
 
 export default function InscriptionPage() {
   return (
@@ -17,8 +17,8 @@ export default function InscriptionPage() {
       <div className="mt-8 text-center space-y-4 text-sm">
         <p className="text-gray-600 font-medium">
           Vous avez déjà un compte ?{' '}
-          <Link 
-            to="/connexion" 
+          <Link
+            to="/connexion"
             className="text-[#F39233] font-bold no-underline hover:underline"
           >
             Se connecter

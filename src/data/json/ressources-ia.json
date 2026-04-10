@@ -1,0 +1,103 @@
+{
+    "ressourcesIA": {
+        "hero": {
+            "titre": "Ressources Intelligence Artificielle",
+            "sousTitre": "Découvrez notre sélection d'outils et de guides pour intégrer l'IA dans votre quotidien professionnel.",
+            "video": "public/Assets/video/ai-background.mp4"
+        },
+        "intro": {
+            "titre": "L'IA, votre nouvel atout professionnel",
+            "description": "L'intelligence artificielle transforme tous les secteurs d'activité. Que vous cherchiez à automatiser des tâches répétitives, à générer du contenu créatif ou à analyser des données complexes, maîtriser ces outils est devenu indispensable. Découvrez notre boîte à outils."
+        },
+        "categories": [
+            {
+                "id": "generation-texte",
+                "titre": "Génération de texte & Assistance",
+                "icon": "Message",
+                "outils": [
+                    {
+                        "nom": "ChatGPT (OpenAI)",
+                        "description": "L'assistant conversationnel de référence pour la rédaction, la synthèse et le brainstorming d'idées.",
+                        "tag": "Incontournable",
+                        "lien": "https://chat.openai.com/"
+                    },
+                    {
+                        "nom": "Claude (Anthropic)",
+                        "description": "Une excellente alternative, réputée pour sa capacité d'analyse de longs documents et sa sécurité.",
+                        "tag": "Avancé",
+                        "lien": "https://claude.ai/"
+                    }
+                ]
+            },
+            {
+                "id": "creation-visuelle",
+                "titre": "Création Visuelle & Design",
+                "icon": "Palette",
+                "outils": [
+                    {
+                        "nom": "Midjourney",
+                        "description": "Générateur d'images à partir de texte offrant une qualité artistique et un réalisme époustouflants.",
+                        "tag": "Créatif",
+                        "lien": "https://www.midjourney.com/"
+                    },
+                    {
+                        "nom": "Canva AI",
+                        "description": "Outils d'IA intégrés au Studio Magique pour simplifier la création de vos supports de communication.",
+                        "tag": "Accessible",
+                        "lien": "https://www.canva.com/"
+                    }
+                ]
+            },
+            {
+                "id": "productivite",
+                "titre": "Productivité & Automatisation",
+                "icon": "Zap",
+                "outils": [
+                    {
+                        "nom": "Zapier",
+                        "description": "Connectez vos applications et automatisez vos flux de travail grâce à l'intégration poussée de l'IA.",
+                        "tag": "Automatisation",
+                        "lien": "https://zapier.com/"
+                    },
+                    {
+                        "nom": "Microsoft Copilot",
+                        "description": "L'assistant IA directement intégré dans vos outils de bureautique quotidiens (Word, Excel, Teams).",
+                        "tag": "Bureautique",
+                        "lien": "https://copilot.microsoft.com/"
+                    }
+                ]
+            }
+        ],
+        "glossaire": {
+            "titre": "Mini-glossaire de l'IA",
+            "termes": [
+                {
+                    "terme": "Prompt",
+                    "definition": "La phrase ou l'instruction textuelle que vous donnez à une IA pour obtenir un résultat spécifique."
+                },
+                {
+                    "terme": "LLM (Large Language Model)",
+                    "definition": "Modèle de langage entraîné sur de vastes quantités de textes pour comprendre et générer du langage humain."
+                },
+                {
+                    "terme": "Machine Learning",
+                    "definition": "Technologie permettant à une machine d'apprendre automatiquement et de s'améliorer à partir de données fournies."
+                }
+            ]
+        },
+        "cta": {
+            "titre": "Envie d'aller plus loin ?",
+            "description": "L'IA évolue vite. Découvrez nos formations dédiées pour maîtriser ces outils et les intégrer efficacement dans la stratégie de votre entreprise.",
+            "boutons": [
+                {
+                    "label": "Voir nos formations IA",
+                    "url": "/formations"
+                },
+                {
+                    "label": "Nous contacter",
+                    "url": "/contact"
+                }
+            ]
+        }
+    }
+}

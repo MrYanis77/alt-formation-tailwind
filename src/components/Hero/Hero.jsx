@@ -1,35 +1,51 @@
+import React from 'react';
+
 /**
- * Hero.jsx — Bannière hero dynamique
- * Supporte maintenant une image de fond personnalisée via props.
+ * Hero.jsx — Bannière hero avec vidéo uniquement
+ * Version éclaircie (Overlay 20%)
  */
-export default function Hero({ 
-  title, 
-  subtitle, 
-  image  
+export default function Hero({
+  title,
+  subtitle,
+  video
 }) {
   return (
-    <section 
+    <section
       className="relative min-h-[400px] flex items-center justify-center bg-navy px-6 py-20 text-center overflow-hidden"
-      style={{
-        // L'image est maintenant dynamique via la prop 'image'
-        backgroundImage: `url('${image}')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed' // Optionnel : petit effet parallaxe sympa
-      }}
       aria-label={`Bandeau ${title}`}
     >
-      {/* Overlay respectant ta variable --color-hero-overlay (défini dans index.css) */}
-      <div className="absolute inset-0 bg-hero-overlay z-0"></div>
+      {/* Rendu de la vidéo en arrière-plan */}
+      {video && (
+        <video
+          key={video}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        >
+          <source src={video} type="video/mp4" />
+        </video>
+      )}
+
+      {/* Overlay éclairci (passé de /40 à /20) */}
+      <div className="absolute inset-0 bg-[#0A192F]/20 z-0"></div>
 
       {/* Contenu textuel */}
       <div className="relative z-10 max-w-4xl mx-auto">
-        <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 uppercase tracking-tight">
+        {/* Ajout d'un léger shadow pour la lisibilité sur fond clair */}
+        <h1
+          className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 uppercase tracking-tight"
+          style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}
+        >
           {title}
         </h1>
-        
+
         {subtitle && (
-          <p className="text-white/90 text-lg md:text-xl font-body max-w-2xl mx-auto leading-relaxed">
+          <p
+            className="text-white text-lg md:text-xl font-body max-w-2xl mx-auto leading-relaxed"
+            style={{ textShadow: '0 1px 5px rgba(0,0,0,0.3)' }}
+          >
             {subtitle}
           </p>
         )}

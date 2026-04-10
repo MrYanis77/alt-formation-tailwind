@@ -6,30 +6,30 @@ import CardGrid from '../components/Card/CardGrid';
 import StatsSection from '../components/Stats/StatsSection';
 
 // Import des données
-import { 
-  hero, 
-  formationSurMesure, 
-  servicesComplementaires, 
+import {
+  hero,
+  formationSurMesure,
+  servicesComplementaires,
   recrutementAlternance,
-  stats 
+  stats
 } from '../data/entreprise';
 
 export default function EntreprisePage() {
   return (
     <div className="bg-white min-h-screen antialiased">
-      <Breadcrumb
-        items={[{ label: 'Accueil', to: '/' }, { label: 'Entreprise' }]}
-      />
-      
       <Hero
         title={hero.titre}
         subtitle={hero.sousTitre}
+        video={hero.video}
+      />
+      <Breadcrumb
+        items={[{ label: 'Accueil', to: '/' }, { label: 'Entreprise' }]}
       />
 
       <main className="py-[60px] px-6 max-w-[1100px] mx-auto flex flex-col gap-12" id="main-content">
-        
+
         {/* ======== 1. FORMATION SUR-MESURE ======== */}
-        <CardDesc 
+        <CardDesc
           title={formationSurMesure.titre}
           description={formationSurMesure.description}
           columns={formationSurMesure.columns}
@@ -37,25 +37,15 @@ export default function EntreprisePage() {
         />
 
         {/* ======== 2. SERVICES COMPLÉMENTAIRES (Utilisation de CardGrid) ======== */}
-        <section className="bg-[#fcfcfc] border border-border rounded-xl p-10 md:p-12 shadow-sm">
-          <div className="mb-10">
-            <h2 className="font-heading text-[28px] font-bold text-navy mb-4">
-              Audit & Accompagnement RH
-            </h2>
-            <p className="text-[15px] text-muted max-w-2xl leading-relaxed">
-              Nous vous accompagnons dans l'optimisation de votre capital humain grâce à des solutions d'audit et de conseil stratégique.
-            </p>
-          </div>
+        <CardGrid
+          services={servicesComplementaires}
+          cols={2}
+          variant="default"
+        />
 
-          <CardGrid 
-            services={servicesComplementaires} 
-            cols={2} 
-            variant="default" 
-          />
-        </section>
 
         {/* ======== 3. RECRUTEMENT EN ALTERNANCE ======== */}
-        <CardDesc 
+        <CardDesc
           title={recrutementAlternance.titre}
           description={recrutementAlternance.description}
           columns={recrutementAlternance.steps}
@@ -75,8 +65,8 @@ export default function EntreprisePage() {
           <p className="text-muted text-[16px] mb-10 leading-relaxed">
             Nos experts vous proposent un audit gratuit pour identifier vos besoins en formation et recrutement.
           </p>
-          <a 
-            href="/contact" 
+          <a
+            href="/contact"
             className="inline-block bg-orange hover:bg-orange-dark text-white px-12 py-4 rounded-lg font-heading text-[16px] font-bold transition-all shadow-lg no-underline uppercase tracking-wider"
           >
             Demander un devis

@@ -19,6 +19,7 @@
 export const hero = {
   titre: "Financements",
   sousTitre: "Plusieurs solutions de financement pour rendre votre formation accessible",
+  video: "public/Assets/video/financement.mp4",
 };
 
 export const cpf = {

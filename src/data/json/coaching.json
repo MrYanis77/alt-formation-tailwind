@@ -1,0 +1,69 @@
+{
+    "coaching": {
+        "hero": {
+            "titre": "Bilan de compétences",
+            "sousTitre": "Faites le point sur vos compétences et définissez sereinement votre avenir professionnel avec notre équipe.",
+            "video": "public/Assets/video/contact.mp4"
+        },
+        "titre": "Coaching professionnel",
+        "url": "https://alt-formations.com/gestion-de-carriere/coaching-2/",
+        "image": "https://alt-formations.com/wp-content/uploads/2026/01/bilan-competences.webp",
+        "imageCoaching": "https://alt-formations.com/wp-content/uploads/2026/01/Coaching.webp",
+        "tagline": "Développez votre potentiel, renforcez votre posture professionnelle et accompagnez le changement.",
+        "description": "Le coaching est un accompagnement personnalisé visant à développer l'efficacité professionnelle, la confiance et la capacité d'adaptation face aux évolutions du monde du travail.",
+        "pourquoiChoisir": {
+            "titre": "Pourquoi choisir le coaching ?",
+            "intro": "Choisir Alt-Formations, c'est faire le choix d'un organisme de formation qui place l'humain, l'adaptation et la qualité pédagogique au cœur de chaque parcours.",
+            "avantages": [
+                {
+                    "titre": "Développer son potentiel",
+                    "description": "Identifier ses ressources, dépasser ses freins et renforcer son impact professionnel."
+                },
+                {
+                    "titre": "Accompagner le changement",
+                    "description": "Identifier ses ressources, dépasser ses freins et renforcer son impact professionnel."
+                },
+                {
+                    "titre": "Améliorer les relations professionnelles",
+                    "description": "Communication, posture managériale, leadership et coopération."
+                },
+                {
+                    "titre": "Agir dans un cadre structuré",
+                    "description": "Un accompagnement professionnel, confidentiel et orienté résultats."
+                }
+            ]
+        },
+        "coachingIndividuel": {
+            "titre": "Le coaching individuel",
+            "intro": "L'appréhension de son mode de fonctionnement, de ses ressources et de ses freins, sa communication avec l'entreprise ou son équipe, permet au coaché de :",
+            "benefices": [
+                "Développer sa dimension stratégique.",
+                "Améliorer sa relation à l'autre.",
+                "Relever des défis professionnels.",
+                "Développer son potentiel de manager.",
+                "Prendre de nouvelles responsabilités.",
+                "Mieux se connaître."
+            ]
+        },
+        "coachingEquipe": {
+            "titre": "Le coaching d'équipe",
+            "description": "Le coaching d'équipe s'adapte à une grande diversité de situations. Il peut se dérouler lors d'un séminaire ou se déployer dans un programme de plusieurs séances étalées sur plusieurs mois.",
+            "axes": [
+                "Centré sur l'identité de l'équipe.",
+                "Centré sur les relations au sein de l'équipe.",
+                "Centré sur l'organisation de l'équipe.",
+                "Centré sur le sens et la vision partagée."
+            ]
+        },
+        "cta": [
+            {
+                "label": "Demander un coaching",
+                "url": "https://alt-formations.com/contact/"
+            },
+            {
+                "label": "Lancez-vous !",
+                "url": "https://alt-formations.com/contact/"
+            }
+        ]
+    }
+}

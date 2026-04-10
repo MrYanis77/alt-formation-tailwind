@@ -5,49 +5,51 @@
 
 /**
  * Slides du carousel hero.
- * Ajout de la propriété 'image' pour un fond dynamique.
+ * - 2 Formations Numérique
+ * - 2 Formations Gestion / RH
+ * Les liens 'ctaTo' sont prêts pour rediriger vers les bonnes pages.
  */
 export const slides = [
   {
     id: 1,
-    badge: 'Cybersécurité',
-    title: 'Sécurisez votre carrière,\nrévélez votre potentiel',
-    subtitle: 'Expert en Cybersécurité',
-    desc: 'Protégez les données et systèmes de demain avec nos certifications de pointe.',
-    cta: 'Découvrir nos formations',
-    ctaTo: '/formations',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200'
+    badge: 'Infrastructure & Sécurité',
+    title: 'Devenez Administrateur·rice\nd’infrastructures sécurisées',
+    subtitle: 'Garantissez la disponibilité et la sécurité',
+    desc: 'Concevez, administrez et sécurisez les infrastructures informatiques pour devenir un pilier stratégique des entreprises.',
+    cta: 'Découvrir la formation',
+    ctaTo: '/formations/administrateur-dinfrastructures-securisees-ais',
+    video: '/Assets/video/formations/admin-infra.mp4'
   },
   {
     id: 2,
-    badge: 'Management',
-    title: 'Devenez le leader\nque vous rêvez d\'être',
-    subtitle: 'Manager de Projet & d\'Équipe',
-    desc: 'Développez vos compétences en leadership et gestion d\'équipe opérationnelle.',
-    cta: 'Découvrir nos formations',
-    ctaTo: '/formations',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1200'
+    badge: 'Développement Web',
+    title: 'Devenez Développeur\nWeb & Mobile',
+    subtitle: 'Créez les applications de demain',
+    desc: 'Concevez la partie visible et technique d\'applications web et mobiles, en veillant à la performance et à l’expérience utilisateur.',
+    cta: 'Découvrir la formation',
+    ctaTo: '/formations/developpeur-web-mobile',
+    video: '/Assets/video/formations/dev-web-mobile.mp4'
   },
   {
     id: 3,
     badge: 'Ressources Humaines',
-    title: 'Façonnez l\'avenir\ndes talents en entreprise',
-    subtitle: 'Responsable RH (Bac+5)',
-    desc: 'Maîtrisez le recrutement, la paie et le développement stratégique des RH.',
-    cta: 'Découvrir nos formations',
-    ctaTo: '/formations',
-    image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1200'
+    title: 'Devenez Assistant(e)\nRessources Humaines',
+    subtitle: 'Véritable trait d\'union dans l\'entreprise',
+    desc: 'Participez activement à la gestion administrative du personnel, au recrutement, à la formation et au bon climat social.',
+    cta: 'Découvrir la formation',
+    ctaTo: '/formations/assistante-ressources-humaines',
+    video: '/Assets/video/formations/rh.mp4'
   },
   {
     id: 4,
-    badge: 'Digital & Marketing',
-    title: 'Boostez votre carrière\ndans le digital',
-    subtitle: 'Chef de Projet Digital',
-    desc: 'Maîtrisez les outils et stratégies de pointe du marketing numérique.',
-    cta: 'Découvrir nos formations',
-    ctaTo: '/formations',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200'
-  },
+    badge: 'Comptabilité & Gestion',
+    title: 'Devenez Gestionnaire\ncomptable et fiscal',
+    subtitle: 'La colonne vertébrale de l\'entreprise',
+    desc: 'Assurez la lisibilité financière de la structure, de la saisie des opérations courantes jusqu\'à l\'élaboration de la liasse fiscale.',
+    cta: 'Découvrir la formation',
+    ctaTo: '/formations/gestionnaire-comptable-fiscal',
+    video: '/Assets/video/formations/comptable.mp4'
+  }
 ];
 
 /**
@@ -55,14 +57,14 @@ export const slides = [
  */
 export const stats = [
   { value: '+5000', label: 'Stagiaires formés' },
-  { value: '+40',   label: 'Experts formateurs' },
-  { value: '95%',   label: 'Taux de satisfaction' },
-  { value: '+150',  label: 'Formations disponibles' },
+  { value: '+40', label: 'Experts formateurs' },
+  { value: '95%', label: 'Taux de satisfaction' },
+  { value: '+150', label: 'Formations disponibles' },
 ];
 
 /**
  * Services mis en avant.
- * Ajout des propriétés 'href' et 'image' pour la grille.
+ * Les liens 'href' sont intégrés pour vos cartes de services.
  */
 export const services = [
   {
@@ -101,25 +103,24 @@ export const services = [
 ];
 
 /**
- * Logos partenaires.
- * Note: Dans React, les fichiers dans 'public' sont accessibles via '/Assets/...'
+ * Logos partenaires avec liens vers leurs sites officiels.
  */
 export const partenaires = [
-  { nom: 'agefiph', logo: '/Assets/partenaires/agefiph.png' },
-  { nom: 'akto', logo: '/Assets/partenaires/akto.png' },
-  { nom: 'bnp-paribas', logo: '/Assets/partenaires/bnp-paribas.png' },
-  { nom: 'cic', logo: '/Assets/partenaires/cic.png' },
-  { nom: 'credit-agricole', logo: '/Assets/partenaires/credit-agricole.png' },
-  { nom: 'edf', logo: '/Assets/partenaires/edf.png' },
-  { nom: 'france-compétence', logo: '/Assets/partenaires/france-compétence.png' },
-  { nom: 'france-travail', logo: '/Assets/partenaires/france-travail.png' },
-  { nom: 'région ile de france', logo: '/Assets/partenaires/idf.png' },
-  { nom: 'microsoft', logo: '/Assets/partenaires/microsoft.png' },
-  { nom: 'orange', logo: '/Assets/partenaires/orange.png' },
-  { nom: 'pdf', logo: '/Assets/partenaires/pdf.png' },
-  { nom: 'pennylane', logo: '/Assets/partenaires/pennylane.png' },
-  { nom: 'uniformation', logo: '/Assets/partenaires/uniformation.png' },
-  { nom: 'verisure', logo: '/Assets/partenaires/verisure.png' },
+  { nom: 'agefiph', logo: '/Assets/partenaires/agefiph.png', url: 'https://www.agefiph.fr/' },
+  { nom: 'akto', logo: '/Assets/partenaires/akto.png', url: 'https://www.akto.fr/' },
+  { nom: 'bnp-paribas', logo: '/Assets/partenaires/bnp-paribas.png', url: 'https://mabanque.bnpparibas/' },
+  { nom: 'cic', logo: '/Assets/partenaires/cic.png', url: 'https://www.cic.fr/' },
+  { nom: 'credit-agricole', logo: '/Assets/partenaires/credit-agricole.png', url: 'https://www.credit-agricole.fr/' },
+  { nom: 'edf', logo: '/Assets/partenaires/edf.png', url: 'https://www.edf.fr/' },
+  { nom: 'france-compétence', logo: '/Assets/partenaires/france-competence.png', url: 'https://www.francecompetences.fr/' },
+  { nom: 'france-travail', logo: '/Assets/partenaires/france-travail.png', url: 'https://www.francetravail.fr/' },
+  { nom: 'région ile de france', logo: '/Assets/partenaires/idf.png', url: 'https://www.iledefrance.fr/' },
+  { nom: 'microsoft', logo: '/Assets/partenaires/microsoft.png', url: 'https://www.microsoft.com/' },
+  { nom: 'orange', logo: '/Assets/partenaires/orange.png', url: 'https://www.orange.fr/' },
+  { nom: 'pdf', logo: '/Assets/partenaires/pdf.png', url: 'https://adobe.com/pdf' },
+  { nom: 'pennylane', logo: '/Assets/partenaires/pennylane.png', url: 'https://www.pennylane.com/' },
+  { nom: 'uniformation', logo: '/Assets/partenaires/uniformation.png', url: 'https://www.uniformation.fr/' },
+  { nom: 'verisure', logo: '/Assets/partenaires/verisure.png', url: 'https://www.verisure.fr/' },
 ];
 
 /**
@@ -142,3 +143,15 @@ export const temoignages = [
     role: 'DRH Entreprise Tech',
   },
 ];
+
+export const certifications = {
+  titre: "Organisme certifié & reconnu",
+  description: "La qualité de nos formations est certifiée. Nous répondons aux exigences les plus strictes pour vous garantir une montée en compétences d'excellence, éligible aux dispositifs de financement (CPF, OPCO, France Travail).",
+  badges: [
+    {
+      nom: "Qualiopi",
+      image: "Assets/images/qualiopi.png"
+    }
+    // Vous pouvez ajouter d'autres badges ici (RNCP, etc.)
+  ]
+};
