@@ -16,13 +16,13 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-[100] w-full bg-navy px-6 lg:px-10 flex items-center justify-between h-[70px]">
-      
+
       {/* Logo */}
       <Link to="/" className="flex-shrink-0 no-underline flex items-center gap-3">
-        <img 
-          src="../public/Assets/logo-altrh.png" 
-          alt="Logo ALT Formations" 
-          className="h-8 w-auto object-contain [filter:drop-shadow(0_0_8px_rgba(255,255,255,1))_drop-shadow(0_0_20px_rgba(255,255,255,0.5))]" 
+        <img
+          src="/Assets/logo-altrh.png"
+          alt="Logo ALT Formations"
+          className="h-8 w-auto object-contain [filter:drop-shadow(0_0_8px_rgba(255,255,255,1))_drop-shadow(0_0_20px_rgba(255,255,255,0.5))]"
         />
         <span className="text-white font-heading font-extrabold text-base tracking-wider uppercase cursor-pointer">
           ALT FORMATIONS
@@ -37,7 +37,7 @@ export default function Navbar() {
               to={item.href}
               className={`text-[13px] font-semibold transition-colors duration-200 no-underline font-heading flex items-center gap-1
                 ${location.pathname.startsWith(item.href) && item.href !== "/"
-                  ? "text-orange" 
+                  ? "text-orange"
                   : "text-gray-400 group-hover:text-white"
                 }`}
             >
@@ -149,7 +149,7 @@ export default function Navbar() {
                   </button>
                 )}
               </div>
-              
+
               {/* Niveau 1 (Mobile) */}
               {item.submenu && openMobileMenus[item.label] && (
                 <div className="flex flex-col gap-4 pl-4 border-l-2 border-orange/30">
@@ -165,13 +165,13 @@ export default function Navbar() {
                         </Link>
                         {sub.submenu && (
                           <button onClick={() => toggleMobileMenu(sub.label)} className="p-2 text-gray-400">
-                             <svg className={`w-5 h-5 fill-current transition-transform ${openMobileMenus[sub.label] ? "rotate-180" : ""}`} viewBox="0 0 20 20">
-                                <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
-                             </svg>
+                            <svg className={`w-5 h-5 fill-current transition-transform ${openMobileMenus[sub.label] ? "rotate-180" : ""}`} viewBox="0 0 20 20">
+                              <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                            </svg>
                           </button>
                         )}
                       </div>
-                      
+
                       {/* Niveau 2 (Mobile) */}
                       {sub.submenu && openMobileMenus[sub.label] && (
                         <div className="flex flex-col gap-4 pl-4 border-l-2 border-slate-600">
@@ -193,7 +193,7 @@ export default function Navbar() {
                                   </button>
                                 )}
                               </div>
-                              
+
                               {/* Niveau 3 (Mobile) */}
                               {subItem.submenu && openMobileMenus[subItem.label] && (
                                 <div className="flex flex-col gap-3 pl-4 border-l-2 border-gray-600/50">
