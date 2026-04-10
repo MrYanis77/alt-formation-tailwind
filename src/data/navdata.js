@@ -75,6 +75,10 @@ export const navlinks = [
     href: "/formations",
     submenu: [
       {
+        label: "Présentiel",
+        href: "/alternance",
+      },
+      {
         label: "E-learning",
         href: "/e-learning",
         submenu: [
@@ -90,15 +94,31 @@ export const navlinks = [
           }
         ],
       },
-      {
-        label: "Présentiel",
-        href: "/alternance",
-      },
+
     ],
   },
+
   { label: "Financements", href: "/financements" },
   { label: "Entreprise", href: "/entreprise" },
-  { label: "Certification", href: "/certification" },
+  { label: "Certifications", href: "/certification" },
+  {
+    label: "Ressources",
+    submenu: [
+      {
+        label: "Coaching emploi",
+        href: "/coaching-emploi",
+      },
+      {
+        label: "Gestion de carrières",
+        href: "/bilans-carriere",
+      },
+      {
+        label: "Ressources IA",
+        href: "/ressources-ia",
+      },
+
+    ],
+  },
   { label: "Nous rejoindre", href: "/nous-rejoindre" },
   { label: "Contact", href: "/contact" },
 ];

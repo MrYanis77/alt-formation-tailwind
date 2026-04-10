@@ -26,6 +26,9 @@ import MentionsLegales from './pages/MentionsLegales';
 import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite';
 import ReglementInterieur from './pages/ReglementInterieur';
 import PolitiqueCookies from './pages/PolitiqueCookies';
+import BilansCarriere from './pages/BilansCarriere';
+import Coaching from './pages/CoachingPage';
+import RessourcesIAPages from './pages/RessourcesIAPages';
 
 
 function ComingSoon({ title }) {
@@ -61,27 +64,30 @@ export default function App() {
 
           {/* Pages Principales */}
           <Route path="/accueil" element={<HomePage />} />
-          
+
           <Route path="/formations" element={<FormationsPage />} />
           <Route path="/alternance" element={<AlternancePage />} />
           <Route path="/e-learning" element={<ElearningPage />} />
           <Route path="/financements" element={<FinancementPage />} />
-          <Route path="/entreprise" element={<EntreprisePage />} />  
-         
+          <Route path="/entreprise" element={<EntreprisePage />} />
+
 
           {/* Placeholders */}
-          <Route path="/a-propos" element={<AproposPage/>} />
-          <Route path="/blog" element={<BlogPage/>} />
-          <Route path="/contact" element={<ContactPage/>} />
-          <Route path="/inscription" element={<InscriptionPage/>} />
-          <Route path="/connexion" element={<ConnexionPage/>} />
+          <Route path="/a-propos" element={<AproposPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/inscription" element={<InscriptionPage />} />
+          <Route path="/connexion" element={<ConnexionPage />} />
           <Route path="/formation/:id" element={<FormationDetail />} />
-          <Route path="/campus" element={<CampusPage/>} />
-          <Route path="/certification" element={<CertificationPage/>} />
-          <Route path="/nous-rejoindre" element={<NousRejoindre/>} />
-          <Route path="/mentions-legales" element={<MentionsLegales/>} />
-          <Route path="/politique-de-confidentialite" element={<PolitiqueConfidentialite/>} />
-          <Route path="/conditions-generales" element={<PolitiqueCookies/>} />
+          <Route path="/campus" element={<CampusPage />} />
+          <Route path="/certification" element={<CertificationPage />} />
+          <Route path="/bilans-carriere" element={<BilansCarriere />} />
+          <Route path="/coaching-emploi" element={<Coaching />} />
+          <Route path="/ressources-ia" element={<RessourcesIAPages />} />
+          <Route path="/nous-rejoindre" element={<NousRejoindre />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="/politique-de-confidentialite" element={<PolitiqueConfidentialite />} />
+          <Route path="/conditions-generales" element={<PolitiqueCookies />} />
           {/* 404 */}
           <Route path="*" element={<ComingSoon title="Page introuvable" />} />
         </Routes>

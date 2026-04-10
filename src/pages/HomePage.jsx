@@ -143,7 +143,7 @@ export default function HomePage() {
       <section className="py-[70px] bg-white border-t border-border overflow-hidden">
         <div className="max-w-[1100px] mx-auto px-6 mb-12">
           <h2 className="font-heading text-2xl md:text-[32px] font-extrabold text-[#1E2F47] text-center uppercase tracking-wider">
-            Ils nous font confiance
+            Nos Partenaires
           </h2>
         </div>
 

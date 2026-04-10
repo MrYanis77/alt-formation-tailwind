@@ -1,0 +1,244 @@
+{
+    "bilanDeCompetences": {
+        "hero": {
+            "titre": "Bilan de compétences",
+            "sousTitre": "Faites le point sur vos compétences et définissez sereinement votre avenir professionnel avec notre équipe.",
+            "video": "public/Assets/video/contact.mp4"
+        },
+        "descriptionComplete": [
+            "Le bilan de compétences permet au salarié de faire un point sur ses compétences, aptitudes et motivations, et de définir un projet professionnel ou de formation.",
+            "Le bilan consiste à faire un point sur l'ensemble du cursus professionnel, les principaux traits de personnalité afin d'établir un portefeuille de compétences et de donner un nouveau cap à son avenir professionnel.",
+            "La démarche est fondée sur un travail de réflexion personnelle rythmé par des entretiens approfondis et des évaluations pertinentes avec un consultant qui par son expertise porte un regard extérieur sur les éléments du parcours et propose des axes de réflexion. Il s'assure également de la viabilité des projets et informe sur les différents dispositifs existants."
+        ],
+        "publicConcerne": {
+            "titre": "Public concerné",
+            "cible": "Employés et Cadres, tous secteurs d'activité",
+            "items": [
+                "Tout salarié a un droit au congé de bilan de compétences. (Art.L931-21 du code du travail).",
+                "Dans le cadre du compte personnel de formation (CPF) sur demande du salarié."
+            ]
+        },
+        "duree": {
+            "titre": "Durée",
+            "total": "24 heures",
+            "detail": [
+                "9 heures de travail personnel",
+                "15 heures d'entretien en face à face (2-3 heures toutes les semaines environ).",
+                "Réalisé en 4 mois environ."
+            ]
+        },
+        "delaiAcces": {
+            "titre": "Délai d'accès",
+            "delai": "15 jours",
+            "detail": [
+                "Dès que le dossier administratif est complet.",
+                "Peut varier selon les disponibilités."
+            ]
+        },
+        "outilsMethodes": {
+            "titre": "Nos outils & méthodes",
+            "accompagnementIndividualise": {
+                "titre": "Accompagnement individualisé",
+                "description": "Un conseiller expérimenté accompagne chaque bénéficiaire tout au long du bilan, selon des modalités adaptées à son rythme et à ses besoins.",
+                "items": [
+                    "Entretiens en face à face (présentiel ou distanciel)",
+                    "Échanges approfondis favorisant la réflexion personnelle",
+                    "Regard extérieur expert sur le parcours professionnel"
+                ]
+            },
+            "outilsAnalyse": {
+                "titre": "Outils d'analyse et d'auto-diagnostic",
+                "items": [
+                    "Questionnaires d'auto-diagnostic",
+                    "Supports méthodologiques favorisant la progression du bénéficiaire",
+                    "Grilles d'analyse pré-structurées : compétences, centres d'intérêt, motivations"
+                ]
+            },
+            "enquetesMetiers": {
+                "titre": "Enquêtes métiers & validation des pistes",
+                "items": [
+                    "Enquêtes métiers ciblées",
+                    "Mise en relation avec notre réseau professionnel (dans la mesure du possible)",
+                    "Validation réaliste des pistes professionnelles envisagées"
+                ]
+            },
+            "tests": {
+                "titre": "Tests",
+                "items": [
+                    "Inventaires des Intérêts Professionnels–R",
+                    "Test de personnalité",
+                    "Test d'Intelligence Émotionnelle–R",
+                    "Tests de culture générale et de langue (français / anglais)"
+                ]
+            },
+            "ressourcesProfessionnelles": {
+                "titre": "Ressources professionnelles",
+                "items": [
+                    "Référentiels métiers : REAC, RC, Fiche ROME",
+                    "Ressources CIDJ, ONISEP, APEC",
+                    "Presse spécialisée et services d'accès à l'emploi"
+                ]
+            },
+            "etapes": [
+                {
+                    "numero": "01",
+                    "titre": "Phase préliminaire",
+                    "items": [
+                        "Confirmer l'engagement du bénéficiaire dans sa démarche",
+                        "Définir et analyser la nature de ses besoins",
+                        "Informer des conditions de déroulement du bilan",
+                        "Analyser son parcours professionnel et personnel"
+                    ]
+                },
+                {
+                    "numero": "02",
+                    "titre": "Phase d'investigation",
+                    "items": [
+                        "Analyser motivations et intérêts professionnels",
+                        "Identifier compétences et aptitudes",
+                        "Explorer les possibilités d'évolution",
+                        "Réaliser des enquêtes métiers"
+                    ]
+                },
+                {
+                    "numero": "03",
+                    "titre": "Phase de conclusion",
+                    "items": [
+                        "Restitution des résultats",
+                        "Validation du projet professionnel",
+                        "Construction du plan d'action",
+                        "Remise du document de synthèse"
+                    ]
+                },
+                {
+                    "numero": "04",
+                    "titre": "Suivi post-bilan",
+                    "items": [
+                        "Entretien de suivi à 6 mois",
+                        "Validation de la mise en œuvre du projet"
+                    ]
+                }
+            ],
+            "financements": {
+                "titre": "Financements possibles",
+                "items": [
+                    "CPF (compte personnel de formation) via mon compte formation",
+                    "Plan de développement des compétences via l'employeur",
+                    "AIF (Aide Individuelle à la formation) via France Travail",
+                    "CSP (Contrat de sécurisation professionnel) via France Travail",
+                    "Financement personnel"
+                ]
+            },
+            "lieu": {
+                "titre": "Lieu & accueil",
+                "description": "Le bilan peut se faire en présentiel mais aussi en distanciel selon la préférence du bénéficiaire.",
+                "accessibilite": "Pour les personnes à mobilité réduite (PMR), notre référent handicap est à votre écoute pour mettre en œuvre les adaptations permettant votre autonomie dans le centre de formation.",
+                "contact": {
+                    "telephone": "0160439430",
+                    "email": "bilandecompetences@alt-formations.com"
+                }
+            },
+            "cta": {
+                "label": "Lancez-vous !",
+                "url": "https://alt-formations.com/contact-2/"
+            }
+        }
+    },
+    "bilanDeMiCarriere": {
+        "hero": {
+            "titre": "Bilan de mi-carrière",
+            "sousTitre": "Analysez votre trajectoire et construisez la seconde partie de votre carrière avec nos experts.",
+            "video": "public/Assets/video/contact.mp4"
+        },
+        "titre": "Bilan de mi-carrière",
+        "url": "https://alt-formations.com/gestion-de-carriere/bilan-de-mi-carriere/",
+        "image": "https://alt-formations.com/wp-content/uploads/2026/01/bilan-mi-carriere-1.webp",
+        "description": "À mi-parcours, il est parfois nécessaire de faire le point. Le bilan de mi-carrière vous aide à analyser votre trajectoire, valoriser votre expérience et construire un projet professionnel réaliste et motivant.",
+        "pourquoi": {
+            "titre": "Pourquoi réaliser un bilan de mi-carrière ?",
+            "description": "Outil essentiel de gestion de carrière, le bilan de mi-carrière permet de prendre du recul sur son parcours professionnel et d'anticiper la suite de sa vie active.",
+            "pourQui": "Il s'adresse aux personnes qui souhaitent :",
+            "items": [
+                "Envisager une seconde partie de carrière avec sérénité",
+                "Redynamiser un parcours professionnel",
+                "Clarifier un projet d'évolution ou de reconversion",
+                "Valoriser leur expérience et leurs compétences acquises"
+            ],
+            "note": "Ce dispositif s'inscrit dans une logique de maintien dans l'emploi et d'adaptation aux évolutions du marché du travail, notamment pour les actifs expérimentés."
+        },
+        "objectifs": {
+            "titre": "Objectifs du bilan",
+            "items": [
+                "Favoriser le maintien dans l'emploi par une évolution de poste ou d'activité",
+                "Faciliter les transitions professionnelles (mobilité, reconversion, restructuration)",
+                "Sécuriser les parcours après une perte ou un changement d'emploi",
+                "Remobiliser les actifs en questionnement professionnel",
+                "Mettre en valeur l'expérience et les compétences singulières",
+                "Construire des perspectives professionnelles réalistes et motivantes"
+            ]
+        },
+        "publicConcerne": {
+            "titre": "Public concerné",
+            "intro": "Ce bilan s'adresse notamment à :",
+            "items": [
+                "Actifs de plus de 45 ans",
+                "Actifs disposant de plus de 20 ans d'expérience professionnelle",
+                "Salariés",
+                "Demandeurs d'emploi de 50 ans et plus"
+            ]
+        },
+        "duree": {
+            "titre": "Durée",
+            "items": [
+                "Durée du bilan : 4 à 12 semaines",
+                "Volume maximum : 24 heures",
+                "Modalités définies dans le cadre d'une contractualisation entre l'entreprise ou l'organisme prescripteur, le bénéficiaire, et le prestataire (ALT-Formations)"
+            ]
+        },
+        "methodologie": {
+            "titre": "Une méthodologie structurée et personnalisée",
+            "description": "Le bilan de mi-carrière repose sur une approche individualisée et confidentielle, combinant plusieurs outils :",
+            "outils": [
+                "Entretiens individuels avec un conseiller référent",
+                "Outils de positionnement et questionnaires",
+                "Analyse de poste et du parcours professionnel",
+                "Portefeuille de compétences",
+                "Tests, mises en situation et travaux de réflexion guidés"
+            ],
+            "note": "L'accompagnement est assuré tout au long du parcours par un interlocuteur dédié."
+        },
+        "etapes": [
+            {
+                "numero": "01",
+                "titre": "Phase préliminaire",
+                "items": [
+                    "Analyse de la demande et des attentes",
+                    "Étude du parcours, des compétences et des motivations",
+                    "Identification des freins et leviers",
+                    "Exploration des possibilités d'évolution professionnelle",
+                    "Construction du plan d'action et du projet de seconde partie de carrière"
+                ]
+            },
+            {
+                "numero": "02",
+                "titre": "Phase d'investigation",
+                "items": [
+                    "Entretien de contractualisation",
+                    "Diagnostic de la situation professionnelle actuelle",
+                    "Identification des compétences transférables",
+                    "Stabilisation du projet professionnel",
+                    "Rédaction d'une synthèse finale confidentielle"
+                ]
+            }
+        ],
+        "conclusion": {
+            "titre": "Prêt(e) à faire le point sur votre carrière ?",
+            "description": "Faites-vous accompagner par un professionnel pour clarifier vos perspectives et construire un projet professionnel aligné avec votre expérience et vos aspirations."
+        },
+        "cta": {
+            "label": "Faire mon bilan de mi-carrière",
+            "url": "https://alt-formations.com/contact/",
+            "labelSecondaire": "Être accompagné(e) pour mon bilan de mi-carrière"
+        }
+    }
+}
