@@ -102,16 +102,21 @@ export const navlinks = [
   { label: "Entreprise", href: "/entreprise" },
   { label: "Certifications", href: "/certification" },
   {
-    label: "Ressources",
+    label: "Gestion de Carrières",
     submenu: [
-      {
-        label: "Coaching emploi",
-        href: "/coaching-emploi",
-      },
       {
         label: "Gestion de carrières",
         href: "/bilans-carriere",
       },
+      {
+        label: "Coaching emploi",
+        href: "/coaching-emploi",
+      },
+    ],
+  },
+  {
+    label: "Ressources",
+    submenu: [
       {
         label: "Ressources IA",
         href: "/ressources-ia",
@@ -121,4 +126,5 @@ export const navlinks = [
   },
   { label: "Nous rejoindre", href: "/nous-rejoindre" },
   { label: "Contact", href: "/contact" },
+  { label: "Nos Campus", href: "/campus" },
 ];

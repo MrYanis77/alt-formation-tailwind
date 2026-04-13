@@ -73,7 +73,7 @@ export default function FormationsPage() {
             href="tel:0123456789"
             className="btn-orange text-[15px] px-12 py-5 shadow-xl hover:-translate-y-1 inline-block"
           >
-            Être rappelé gratuitement
+            ÊTRE RAPPELÉ GRATUITEMENT
           </a>
         </div>
       </section>

@@ -22,7 +22,7 @@ import VideoSection from '../components/VideoSection';
 import CertificationSection from '../components/CertificationSection';
 
 // Import des données statiques depuis home.js
-import { slides, stats, services, partenaires, temoignages, certifications } from '../data/home';
+import { slides, stats, presentation, services, partenaires, temoignages, certifications } from '../data/home';
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -125,8 +125,39 @@ export default function HomePage() {
       {/* SECTION 2 : STATS */}
       <StatsSection stats={stats} />
 
+      {/* SECTION PRÉSENTATION : Professionnels et engagés */}
+      <section className="py-20 px-6 max-w-[1000px] mx-auto text-center">
+        <h2 className="font-heading text-2xl md:text-[32px] font-extrabold text-navy uppercase tracking-wider mb-8">
+          {presentation.titre}
+        </h2>
+        <div className="space-y-6 text-muted text-[16px] md:text-lg font-body leading-relaxed">
+          <p className="font-bold text-orange text-xl mb-8">
+            {presentation.accroche}
+          </p>
+          <p>
+            {presentation.paragraphe1}
+          </p>
+          <p>
+            {presentation.paragraphe2}
+          </p>
+          <div className="bg-gray-50 p-8 rounded-2xl mx-auto my-8 max-w-[800px] border border-gray-100 shadow-sm text-left">
+            <p className="mb-4">
+              <strong className="text-navy font-bold">{presentation.mission.label} </strong> 
+              {presentation.mission.texte}
+            </p>
+            <p>
+              <strong className="text-navy font-bold">{presentation.objectif.label} </strong> 
+              {presentation.objectif.texte}
+            </p>
+          </div>
+          <p className="font-bold text-navy text-[18px] md:text-xl pt-4">
+            {presentation.conclusion}
+          </p>
+        </div>
+      </section>
+
       {/* SECTION 3 : NOS SERVICES / FORMATIONS */}
-      <section className="py-[80px] px-6 md:px-[60px] max-w-[1200px] mx-auto">
+      <section className="pb-[80px] pt-10 px-6 md:px-[60px] max-w-[1200px] mx-auto">
         <h2 className="font-heading text-2xl md:text-[32px] font-extrabold text-navy text-center mb-[50px] uppercase tracking-wider">
           Nos Formations & Services
         </h2>

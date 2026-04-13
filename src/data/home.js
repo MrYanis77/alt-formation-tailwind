@@ -155,3 +155,22 @@ export const certifications = {
     // Vous pouvez ajouter d'autres badges ici (RNCP, etc.)
   ]
 };
+
+/**
+ * Section Présentation (Professionnels et engagés)
+ */
+export const presentation = {
+  titre: "Professionnels et engagés",
+  accroche: "ALT-FORMATIONS : Formons les talents au Travail de demain.",
+  paragraphe1: "Notre centre de formation et CFA, filiale du groupe ALT RH CONSULTING, s’impose comme un acteur de référence dans la formation, le développement des compétences professionnelles. Spécialistes des métiers du numérique, de l’intelligence artificielle, de la cybersécurité et des ressources humaines, nous concevons des parcours de formation innovants, certifiants et orientés terrain.",
+  paragraphe2: "Dans un environnement en constante mutation, marqué par la transformation digitale des entreprises, l’essor de l’intelligence artificielle et les enjeux croissants de la cybersécurité, notre ingénierie pédagogique moderne et des formateurs experts, nous proposons des formats d’apprentissage flexibles (présentiel, distanciel, blended learning) adaptés aux exigences actuelles des entreprises.",
+  mission: {
+    label: "Notre mission :",
+    texte: "rendre chaque apprenant immédiatement opérationnel et favoriser son insertion ou sa reconversion professionnelle."
+  },
+  objectif: {
+    label: "Notre Objectif :",
+    texte: "vous faire réussir vos certifications, accélérer votre insertion ou votre reconversion, et vous rendre employable immédiatement."
+  },
+  conclusion: "Rejoindre ALT-FORMATIONS, c’est choisir une formation reconnue, concrète et tournée vers l’avenir professionnel."
+};
