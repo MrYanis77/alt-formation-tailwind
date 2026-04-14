@@ -17,14 +17,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-[100] w-full bg-navy px-6 lg:px-10 flex items-center justify-between h-[70px]">
 
-<<<<<<< HEAD
-      {/* Logo */}
-      <Link to="/" className="flex-shrink-0 no-underline flex items-center gap-3">
-        <img
-          src="/Assets/logo-altrh.png"
-          alt="Logo ALT Formations"
-          className="h-8 w-auto object-contain [filter:drop-shadow(0_0_8px_rgba(255,255,255,1))_drop-shadow(0_0_20px_rgba(255,255,255,0.5))]"
-=======
+
       {/* Logo - Taille réduite */}
       <Link to="/" className="flex-shrink-0 no-underline flex items-center gap-3 group">
         <img
@@ -32,7 +25,6 @@ export default function Navbar() {
           alt="Logo ALT Formations"
           // Hauteur réduite (h-8 sur mobile, h-10 sur desktop)
           className="h-8 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105 [filter:drop-shadow(0_0_8px_rgba(255,255,255,0.8))]"
->>>>>>> prototype
         />
         {/* Texte réduit (text-base md:text-lg) */}
         <span className="text-white font-heading font-extrabold text-base md:text-lg tracking-widest uppercase drop-shadow-md transition-colors duration-300 group-hover:text-orange">
@@ -50,11 +42,8 @@ export default function Navbar() {
               className={`text-[15px] font-semibold transition-colors duration-200 no-underline font-heading flex items-center gap-1
                 ${location.pathname.startsWith(item.href) && item.href !== "/"
                   ? "text-orange"
-<<<<<<< HEAD
-                  : "text-gray-400 group-hover:text-white"
-=======
+
                   : "text-gray-300 group-hover:text-white"
->>>>>>> prototype
                 }`}
             >
               {item.label}
