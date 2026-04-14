@@ -102,11 +102,11 @@ export const navlinks = [
   { label: "Certifications", href: "/certification" },
   { label: "Financements", href: "/financements" },
   {
-    label: "Gestion de Carrières",
+    label: "Carrières",
     submenu: [
       {
         label: "Gestion de carrières",
-        href: "/bilans-carriere",
+        href: "/gestion-carrieres",
       },
       {
         label: "Coaching emploi",
@@ -121,10 +121,6 @@ export const navlinks = [
       {
         label: "Fiches métier",
         href: "/ressources-ia",
-      },
-      {
-        label: "Coaching emploi",
-        href: "/coaching-emploi",
       },
       {
         label: "IA",

@@ -26,10 +26,9 @@ import MentionsLegales from './pages/MentionsLegales';
 import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite';
 import ReglementInterieur from './pages/ReglementInterieur';
 import PolitiqueCookies from './pages/PolitiqueCookies';
-import BilansCarriere from './pages/BilansCarriere';
-import Coaching from './pages/CoachingPage';
 import RessourcesIAPages from './pages/RessourcesIAPages';
 import FaqPage from './pages/FaqPage';
+import GestionCarriere from './pages/GestionCarriere';
 
 function ComingSoon({ title }) {
   return (
@@ -81,8 +80,7 @@ export default function App() {
           <Route path="/formation/:id" element={<FormationDetail />} />
           <Route path="/campus" element={<CampusPage />} />
           <Route path="/certification" element={<CertificationPage />} />
-          <Route path="/bilans-carriere" element={<BilansCarriere />} />
-          <Route path="/coaching-emploi" element={<Coaching />} />
+          <Route path="/gestion-carrieres" element={<GestionCarriere />} />
           <Route path="/ressources-ia" element={<RessourcesIAPages />} />
           <Route path="/nous-rejoindre" element={<NousRejoindre />} />
           <Route path="/faq" element={<FaqPage />} />
