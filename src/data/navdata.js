@@ -98,8 +98,9 @@ export const navlinks = [
     ],
   },
 
-  { label: "Financements", href: "/financements" },
+
   { label: "Certifications", href: "/certification" },
+  { label: "Financements", href: "/financements" },
   {
     label: "Gestion de Carrières",
     submenu: [
@@ -136,20 +137,20 @@ export const navlinks = [
 
     ],
   },
-  {
-    label: "Entreprises",
-    href: "/entreprise",
-    submenu: [
-      {
-        label: "Solutions recrutement",
-        href: "/bilans-carriere",
-      },
-      {
-        label: "Formation collaborateurs",
-        href: "/coaching-emploi",
-      },
-    ],
-  },
+  // {
+  //   label: "Entreprises",
+  //   href: "/entreprise",
+  //   submenu: [
+  //     {
+  //       label: "Solutions recrutement",
+  //       href: "/bilans-carriere",
+  //     },
+  //     {
+  //       label: "Formation collaborateurs",
+  //       href: "/coaching-emploi",
+  //     },
+  //   ],
+  // },
   { label: "Nous rejoindre", href: "/nous-rejoindre" },
   { label: "Nos Campus", href: "/campus" },
   { label: "Contact", href: "/contact" },
