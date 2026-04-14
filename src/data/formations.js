@@ -9,7 +9,7 @@ const mapIdToItem = (id) => {
     titre: data.hero.titre.replace(/^Devenez\s+/i, '').replace(/^Faites votre Formation en\s+/i, ''),
     features: (data.competences || []).slice(0, 3), // On prend au max les 3 premières compétences
     imageUrl: data.hero.image || "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800",
-    href: `/formations/${id}`
+    href: `/formation/${id}`
   };
 };
 

@@ -34,7 +34,7 @@ export default function HomePage() {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 6000);
     return () => clearInterval(timer);
-  }, []);
+  }, [currentSlide]);
 
   return (
     <div className="bg-white antialiased">
@@ -250,7 +250,7 @@ export default function HomePage() {
       {/* SECTION 8 : CALL TO ACTION FINAL */}
       <section className="py-24 px-6 bg-slate-50 text-center border-t border-border">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-heading text-[28px] md:text-[36px] font-extrabold text-navy mb-6 uppercase tracking-tight">
+          <h2 className="font-heading text-[28px] md:text-[33px] font-extrabold text-navy mb-6 uppercase tracking-tight">
             Prêt à transformer votre carrière ?
           </h2>
           <p className="text-muted text-[16px] mb-10 leading-relaxed font-body max-w-2xl mx-auto">

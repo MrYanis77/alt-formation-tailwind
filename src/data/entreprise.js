@@ -19,7 +19,7 @@ export const hero = {
   video: "public/Assets/video/entreprise.mp4",
 };
 export const formationSurMesure = {
-  titre: 'Formation sur-mesure',
+  titre: 'Formations sur-mesure',
   description:
     'Nous concevons des programmes de formation adaptés aux besoins spécifiques de votre entreprise et de vos équipes.',
   columns: [

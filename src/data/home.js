@@ -17,7 +17,7 @@ export const slides = [
     subtitle: 'Garantissez la disponibilité et la sécurité',
     desc: 'Concevez, administrez et sécurisez les infrastructures informatiques pour devenir un pilier stratégique des entreprises.',
     cta: 'Découvrir la formation',
-    ctaTo: '/formations/administrateur-dinfrastructures-securisees-ais',
+    ctaTo: '/formation/formations-administrateur-dinfrastructures-securisees-ais',
     video: '/Assets/video/formations/infra-reseau.mp4'
   },
   {
@@ -27,7 +27,7 @@ export const slides = [
     subtitle: 'Créez les applications de demain',
     desc: 'Concevez la partie visible et technique d\'applications web et mobiles, en veillant à la performance et à l’expérience utilisateur.',
     cta: 'Découvrir la formation',
-    ctaTo: '/formations/developpeur-web-mobile',
+    ctaTo: '/formation/formations-developpeur-web-mobile',
     video: '/Assets/video/formations/dev-web-mobile.mp4'
   },
   {
@@ -37,7 +37,7 @@ export const slides = [
     subtitle: 'Véritable trait d\'union dans l\'entreprise',
     desc: 'Participez activement à la gestion administrative du personnel, au recrutement, à la formation et au bon climat social.',
     cta: 'Découvrir la formation',
-    ctaTo: '/formations/assistante-ressources-humaines',
+    ctaTo: '/formation/formations-assistante-ressources-humaines',
     video: '/Assets/video/formations/rh.mp4'
   },
   {

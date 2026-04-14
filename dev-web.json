@@ -1,0 +1,125 @@
+{
+  "hero": {
+    "titre": "Devenez Développeur Web & Mobile",
+    "sousTitre": "Le Développeur Web & Web Mobile conçoit et développe des applications accessibles via un navigateur ou un terminal mobile. Il travaille sur la partie visible (interface utilisateur) comme sur la partie technique (serveur, base de données), en veillan...",
+    "video": "/Assets/video/formations/dev-web-mobile.mp4"
+  },
+  "stats": [
+    {
+      "label": "Certification",
+      "value": "Titre professionnel Développeur Web & Web Mobile Niveau RNCP à préciser"
+    }
+  ],
+  "presentation": {
+    "titre": "Le métier",
+    "paragraphes": "Le Développeur Web & Web Mobile conçoit et développe des applications accessibles via un navigateur ou un terminal mobile. Il travaille sur la partie visible (interface utilisateur) comme sur la partie technique (serveur, base de données), en veillant à la performance, à la sécurité et à l’expérience utilisateur. Il collabore avec des chefs de projet, designers et autres développeurs dans des environnements agiles ou classiques."
+  },
+  "debouches": {
+    "titre": "Les métiers visés",
+    "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
+    "postes": [
+      {
+        "titre": "Développeur Web",
+        "salaire": "Selon expérience"
+      },
+      {
+        "titre": "Développeur Web Mobile",
+        "salaire": "Selon expérience"
+      },
+      {
+        "titre": "Intégrateur Web",
+        "salaire": "Selon expérience"
+      },
+      {
+        "titre": "Développeur Front-end / Back-end",
+        "salaire": "Selon expérience"
+      },
+      {
+        "titre": "Développeur Full Stack junior",
+        "salaire": "Selon expérience"
+      }
+    ],
+    "secteurs": "Formation certifiante · Développement Web & Mobile"
+  },
+  "programme": {
+    "dureeTotale": "Programme complet – voir brochure pour les détails",
+    "modules": [
+      {
+        "id": 1,
+        "title": "(aperçu – contenu détaillé dans la brochure)",
+        "description": "Module 1 de la formation.",
+        "duration": "À définir"
+      },
+      {
+        "id": 2,
+        "title": "Environnement de travail HTML / CSS Notions d’ergonomie et d’accessibilité",
+        "description": "Module 2 de la formation.",
+        "duration": "À définir"
+      },
+      {
+        "id": 3,
+        "title": "JavaScript Interfaces interactives Responsive design",
+        "description": "Module 3 de la formation.",
+        "duration": "À définir"
+      },
+      {
+        "id": 4,
+        "title": "Logique serveur Bases de données Sécurisation des échanges",
+        "description": "Module 4 de la formation.",
+        "duration": "À définir"
+      },
+      {
+        "id": 5,
+        "title": "Applications mobiles Adaptation multi-supports Optimisation des performances",
+        "description": "Module 5 de la formation.",
+        "duration": "À définir"
+      },
+      {
+        "id": 6,
+        "title": "Mise en situation réelle Travail en équipe Présentation de projet",
+        "description": "Module 6 de la formation.",
+        "duration": "À définir"
+      }
+    ]
+  },
+  "infosPratiques": {
+    "modalites": {
+      "titre": "Modalités d'apprentissage",
+      "points": [
+        "Dossier de candidature",
+        "Entretien de positionnement",
+        "Validation du projet professionnel",
+        "Financement : CPF",
+        "Financement : Financement entreprise",
+        "Financement : Dispositifs selon statut (salarié, demandeur d’emploi)"
+      ]
+    },
+    "prerequis": {
+      "titre": "Public concerné & Prérequis",
+      "points": [
+        "Personnes en reconversion professionnelle",
+        "Salariés souhaitant évoluer dans le numérique",
+        "Demandeurs d’emploi",
+        "Jeunes adultes attirés par les métiers du web et du mobile"
+      ]
+    }
+  },
+  "competences": [
+    "Maîtrise des langages du web (HTML, CSS, JavaScript)",
+    "Développement front-end et back-end",
+    "Gestion des bases de données",
+    "Utilisation de frameworks et outils modernes",
+    "Méthodologie de projet et travail en équipe",
+    "Mise en production et maintenance applicative"
+  ],
+  "ctaFinal": {
+    "titre": "Prêt à devenir Développeur Web & Mobile ?",
+    "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
+    "boutons": [
+      {
+        "label": "S'inscrire maintenant",
+        "url": "/contact"
+      }
+    ]
+  }
+}

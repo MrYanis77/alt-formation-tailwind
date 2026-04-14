@@ -127,9 +127,6 @@ export default function FormationDetail() {
               <h2 className="text-[#1E2F47] text-2xl md:text-[32px] font-extrabold mb-3 uppercase tracking-wider">
                 Programme de la formation
               </h2>
-              <p className="text-orange font-bold text-sm uppercase tracking-widest">
-                {data.programme.dureeTotale}
-              </p>
             </div>
             <div className="space-y-4">
               {data.programme.modules?.map((module, idx) => (

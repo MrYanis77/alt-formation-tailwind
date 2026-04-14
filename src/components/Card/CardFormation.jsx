@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function CardFormation({
   title,
@@ -51,15 +52,13 @@ export default function CardFormation({
           ))}
         </ul>
 
-        {/* Bouton transformé en lien */}
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
+        {/* Bouton transformé en lien interne React */}
+        <Link
+          to={href}
           className="btn-orange self-start text-sm py-2.5 px-6 no-underline inline-block transition-transform duration-300 hover:scale-105"
         >
           En savoir plus
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
 import Hero from '../components/Hero/Hero';
 import CardFormation from '../components/Card/CardFormation'; // Import du nouveau composant
@@ -52,6 +53,7 @@ export default function FormationsPage() {
                     image={item.imageUrl || "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800"} // Image dynamique
                     points={item.features}
                     variant={isDarkSection ? "navy" : "white"} // Respect de l'alternance des visuels
+                    href={item.href}
                   />
                 ))}
               </div>
@@ -61,6 +63,7 @@ export default function FormationsPage() {
       </main>
 
       {/* ===== CTA FINAL ===== */}
+
       <CallToAction
         variant="light"
         title="Besoin d'un conseil personnalisé ?"
@@ -68,6 +71,8 @@ export default function FormationsPage() {
         buttonText="Être rappelé gratuitement"
         onButtonClick={() => window.location.href = 'tel:0123456789'}
       />
-    </div>
+
+
+    </div >
   );
 }
