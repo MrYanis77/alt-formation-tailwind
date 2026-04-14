@@ -68,7 +68,7 @@ export default function FormationsPage() {
         variant="light"
         title="Besoin d'un conseil personnalisé ?"
         subtitle="Nos conseillers sont à votre écoute pour vous orienter vers la formation la plus adaptée à votre profil et vos financements."
-        buttonText="Être rappelé gratuitement"
+        buttonText="PRENDRE RENDEZ-VOUS"
         onButtonClick={() => window.location.href = 'tel:0123456789'}
       />
 

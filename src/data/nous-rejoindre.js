@@ -48,7 +48,7 @@ export const dataNousRejoindre = {
         hero: {
             titre: "Devenez Intervenant Expert",
             sousTitre: "Partagez votre savoir-faire et formez les talents de demain.",
-            video: "https://assets.mixkit.co/videos/preview/mixkit-group-of-designers-working-on-a-project-43277-large.mp4",
+            video: "public/Assets/video/intervenant.mp4",
         },
         pourquoiNousRejoindre: {
             titre: "Transmettez votre expertise",

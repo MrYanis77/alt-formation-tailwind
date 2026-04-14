@@ -4,7 +4,7 @@ import formationData from './json/formation.json';
  * Mapping explicite des images locales par ID de formation.
  * Les fichiers se trouvent dans /public/Assets/images/
  */
-const imageMap = {
+export const imageMap = {
   // ── Cybersécurité & Réseaux ─────────────────────────────────────────────
   'formations-administrateur-dinfrastructures-securisees-ais': '/Assets/images/expert_cyber.jpg',
   'formations-technicien-superieur-systemes-et-reseaux': '/Assets/images/Terchnicien_reseau.jpg',
