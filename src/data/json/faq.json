@@ -1,8 +1,8 @@
 [
     {
         "hero": {
-            "titre": "Devenez Assistant Commercial",
-            "sousTitre": "L’Assistant Commercial joue un rôle central dans le bon fonctionnement de l’activité commerciale. Véritable interface entre les clients, les équipes de vente et les services internes, il ou elle assure le suivi administratif des ventes, la rela...",
+            "titre": "Foire Aux Questions",
+            "sousTitre": "Trouvez rapidement les réponses à vos questions sur nos formations, financements et services.",
             "video": "/Assets/video/formations/administration.mp4"
         }
     },
@@ -17,6 +17,30 @@
             {
                 "q": "Proposez-vous un accompagnement pour trouver un emploi après la formation ?",
                 "a": "Oui, nous intégrons un module de 'Coaching Emploi' dans nos parcours, et nous mettons en relation nos apprenants avec notre réseau d'entreprises partenaires, notamment via nos solutions de recrutement."
+            },
+            {
+                "q": "Dans quels domaines proposez-vous des formations ?",
+                "a": "ALT-RH & Formations couvre quatre grands domaines : le Numérique & Cybersécurité (développeur web, DevOps, administrateur systèmes et réseaux...), les Ressources Humaines & Tertiaire (assistante RH, commerciale, administrative...), la Comptabilité & Gestion, ainsi que les formations en Intelligence Artificielle."
+            },
+            {
+                "q": "Vos formations sont-elles diplômantes ?",
+                "a": "La grande majorité de nos formations préparent à des Titres Professionnels (TP) reconnus par l'État et enregistrés au Répertoire National des Certifications Professionnelles (RNCP). Ces certifications attestent d'un niveau de qualification allant du Niveau 4 (équivalent Bac) au Niveau 6 (équivalent Bac+3/4)."
+            },
+            {
+                "q": "Quelle est la durée moyenne d'une formation ?",
+                "a": "La durée varie selon le parcours et le niveau de qualification visé. Elle peut aller de quelques semaines pour des formations courtes jusqu'à 12 à 18 mois pour des parcours complets en alternance menant à un Titre Professionnel de niveau 5 ou 6."
+            },
+            {
+                "q": "Puis-je suivre une formation en alternance ?",
+                "a": "Oui, l'alternance est l'un de nos formats phares. Nous vous aidons à trouver une entreprise d'accueil et vous accompagnons tout au long de votre contrat d'apprentissage ou de professionnalisation. La formation se déroule en combinant périodes en entreprise et périodes en centre de formation."
+            },
+            {
+                "q": "Proposez-vous des formations en ligne (e-learning) ?",
+                "a": "Absolument. Notre plateforme e-learning vous donne accès aux cours à distance, à votre propre rythme, depuis n'importe quel appareil connecté. Certains parcours sont entièrement en distanciel, d'autres combinent e-learning et sessions de regroupement en présentiel."
+            },
+            {
+                "q": "Y a-t-il un test d'entrée pour accéder à vos formations ?",
+                "a": "Selon le niveau de la formation visée, un test de positionnement ou un entretien de motivation peut être organisé. Cela nous permet de vérifier que le parcours correspond bien à votre profil et à votre projet professionnel, et d'adapter l'accompagnement si nécessaire."
             }
         ]
     },
@@ -26,15 +50,35 @@
         "questions": [
             {
                 "q": "Vos formations sont-elles éligibles au CPF ?",
-                "a": "Oui, la majorité de nos formations certifiantes sont éligibles au Compte Personnel de Formation (CPF). Vous pouvez utiliser vos droits directement sur la plateforme officielle."
+                "a": "Oui, la majorité de nos formations certifiantes sont éligibles au Compte Personnel de Formation (CPF). Vous pouvez utiliser vos droits directement sur la plateforme officielle moncompteformation.gouv.fr. Chaque salarié accumule jusqu'à 500€/an (800€ pour les moins qualifiés), dans la limite de 5 000€."
             },
             {
                 "q": "Comment faire financer ma formation si je suis demandeur d'emploi ?",
-                "a": "En tant que demandeur d'emploi, vous pouvez solliciter France Travail (anciennement Pôle Emploi) pour une prise en charge (AIF, POEI). Nos conseillers vous accompagnent dans le montage de votre dossier."
+                "a": "En tant que demandeur d'emploi, vous pouvez solliciter France Travail (anciennement Pôle Emploi) pour une prise en charge via l'AIF (Aide Individuelle à la Formation) ou l'AFPR/POE (formation préalable au recrutement). Nos conseillers vous accompagnent dans le montage de votre dossier."
             },
             {
                 "q": "Une entreprise peut-elle financer la formation de ses collaborateurs ?",
-                "a": "Absolument. Alt-RH & Formations est certifié Qualiopi, ce qui permet aux entreprises de faire financer la montée en compétences de leurs salariés via leur OPCO (Opérateurs de Compétences)."
+                "a": "Absolument. ALT-RH & Formations est certifié Qualiopi, ce qui permet aux entreprises de faire financer la montée en compétences de leurs salariés via leur OPCO (Opérateurs de Compétences). Nous gérons toutes les démarches administratives pour vous."
+            },
+            {
+                "q": "Qu'est-ce qu'un OPCO et comment fonctionne-t-il ?",
+                "a": "Un OPCO (Opérateur de Compétences) est un organisme agréé par l'État qui finance et accompagne la formation professionnelle des salariés. Selon le secteur d'activité de l'entreprise, l'OPCO compétent peut prendre en charge tout ou partie de la formation via le Plan de Développement des Compétences, la Pro-A, ou un contrat d'alternance."
+            },
+            {
+                "q": "Est-il possible de payer la formation en plusieurs fois ?",
+                "a": "Oui, pour les personnes finançant tout ou partie de leur formation sur fonds propres, nous proposons des facilités de paiement en plusieurs fois sans frais. Contactez nos conseillers pour connaître les modalités adaptées à votre situation."
+            },
+            {
+                "q": "Je suis travailleur indépendant, puis-je financer ma formation ?",
+                "a": "Tout à fait. Les travailleurs indépendants disposent d'un Fonds d'Assurance Formation (FAF) adapté à leur secteur (FIF PL, AGEFICE, etc.) qui peut financer leurs formations. Votre CPF est également alimenté chaque année pour vos projets de montée en compétences."
+            },
+            {
+                "q": "Y a-t-il des aides spécifiques pour les personnes en situation de handicap ?",
+                "a": "Oui, l'Agefiph (Association de Gestion du Fonds pour l'Insertion Professionnelle des Personnes Handicapées) propose des aides financières complémentaires pour faciliter l'accès à la formation. Nous adaptons également nos supports et nos modalités pédagogiques pour répondre aux besoins de chacun."
+            },
+            {
+                "q": "Mon Conseil Régional peut-il financer ma formation ?",
+                "a": "Oui, certaines régions proposent des aides spécifiques à la formation professionnelle, notamment dans le cadre de programmes de reconversion ou de retour à l'emploi. Les montants et conditions varient selon votre région de résidence. Nos conseillers peuvent vous orienter vers les dispositifs disponibles dans votre territoire."
             }
         ]
     },
@@ -48,7 +92,15 @@
             },
             {
                 "q": "Quels sont les avantages à rejoindre vos équipes en tant que collaborateur ?",
-                "a": "Rejoindre Alt-RH & Formations, c'est intégrer une structure dynamique avec des perspectives d'évolution, une mutuelle avantageuse, des possibilités de télétravail et un engagement fort pour la qualité de vie au travail."
+                "a": "Rejoindre ALT-RH & Formations, c'est intégrer une structure dynamique avec des perspectives d'évolution, une mutuelle avantageuse, des possibilités de télétravail et un engagement fort pour la qualité de vie au travail."
+            },
+            {
+                "q": "Recrutez-vous des formateurs indépendants (freelance) ?",
+                "a": "Oui, nous collaborons avec des formateurs experts, aussi bien en statut salarié qu'en statut indépendant (auto-entrepreneur, consultant...). Si vous avez une expertise reconnue dans un domaine que nous enseignons, n'hésitez pas à nous soumettre votre profil via notre page 'Nous rejoindre'."
+            },
+            {
+                "q": "Dans quels domaines cherchez-vous des formateurs en priorité ?",
+                "a": "Nos besoins prioritaires se situent dans les domaines du numérique (développement web, cybersécurité, DevOps, intelligence artificielle, systèmes et réseaux), des ressources humaines et de la gestion comptable. La liste de nos besoins est mise à jour régulièrement sur la page 'Nous rejoindre'."
             }
         ]
     },
@@ -58,11 +110,53 @@
         "questions": [
             {
                 "q": "Êtes-vous un organisme certifié ?",
-                "a": "Oui, Alt-RH & Formations est certifié Qualiopi au titre des actions de formation. Vous pouvez télécharger notre certificat directement depuis le pied de page (footer) de notre site internet."
+                "a": "Oui, ALT-RH & Formations est certifié Qualiopi au titre des actions de formation. Cette certification, délivrée après audit par un organisme accrédité, garantit la qualité de nos processus pédagogiques et de notre accompagnement. Vous pouvez télécharger notre certificat directement depuis le pied de page de notre site."
             },
             {
                 "q": "Quelles solutions proposez-vous aux entreprises ?",
-                "a": "Nous accompagnons les entreprises sur deux axes majeurs : la formation sur-mesure de leurs collaborateurs (montée en compétences sur l'IA, la cybersécurité...) et des solutions de recrutement pour dénicher les meilleurs talents."
+                "a": "Nous accompagnons les entreprises sur deux axes majeurs : la formation sur-mesure de leurs collaborateurs (montée en compétences sur l'IA, la cybersécurité, le numérique...) et des solutions de recrutement pour identifier et intégrer les meilleurs talents."
+            },
+            {
+                "q": "Où sont situés vos locaux ?",
+                "a": "Notre siège est situé au 3 rue du Cochet, 77700 Bailly-Romainvilliers (Seine-et-Marne). Nous sommes également accessibles à distance via nos formations en ligne. Pour toute question, vous pouvez nous contacter du lundi au vendredi de 9h à 18h."
+            },
+            {
+                "q": "Quels sont vos horaires d'ouverture ?",
+                "a": "Nos équipes sont disponibles du lundi au vendredi, de 9h00 à 18h00. Le week-end, nos locaux sont fermés. En dehors de ces horaires, vous pouvez nous laisser un message via notre formulaire de contact et nous vous répondrons dès le premier jour ouvrable."
+            },
+            {
+                "q": "Proposez-vous des formations sur-mesure pour les entreprises ?",
+                "a": "Oui, nous concevons des programmes de formation entièrement adaptés aux besoins spécifiques de votre entreprise. Que ce soit pour une équipe entière ou des collaborateurs ciblés, nous analysons vos besoins, définissons les objectifs pédagogiques et assurons un suivi post-formation. Contactez-nous pour un devis personnalisé."
+            },
+            {
+                "q": "Quelle est la différence entre ALT-RH et ALT Formations ?",
+                "a": "ALT-RH & Formations est le nom commercial global de notre structure. Les deux entités sont liées : ALT-RH désigne le pôle conseil et gestion des ressources humaines (recrutement, bilan de compétences, coaching carrière), tandis que ALT Formations désigne le pôle pédagogique de l'organisme, centré sur la délivrance des formations certifiantes."
+            }
+        ]
+    },
+    {
+        "id": "bilan",
+        "categorie": "Bilan de Compétences & Coaching",
+        "questions": [
+            {
+                "q": "Qu'est-ce qu'un bilan de compétences et à qui s'adresse-t-il ?",
+                "a": "Le bilan de compétences est un dispositif permettant d'analyser vos compétences professionnelles et personnelles, vos aptitudes et vos motivations afin de définir un projet professionnel réaliste. Il s'adresse à tout actif (salarié, demandeur d'emploi, indépendant) souhaitant évoluer, se reconvertir ou simplement faire le point sur sa carrière."
+            },
+            {
+                "q": "Le bilan de compétences est-il finançable ?",
+                "a": "Oui, le bilan de compétences est éligible au CPF (Compte Personnel de Formation). Dans certains cas, il peut également être pris en charge par l'OPCO de votre entreprise ou par France Travail si vous êtes demandeur d'emploi. Nos conseillers vous aident à identifier la solution la plus adaptée."
+            },
+            {
+                "q": "En quoi consiste votre accompagnement en coaching emploi ?",
+                "a": "Notre coaching emploi comprend un accompagnement personnalisé pour optimiser votre recherche d'emploi : rédaction de CV et de lettre de motivation, préparation aux entretiens, développement de votre personal branding et mise en réseau grâce à notre réseau d'entreprises partenaires."
+            },
+            {
+                "q": "Combien de temps dure un bilan de compétences ?",
+                "a": "Un bilan de compétences dure en moyenne 24 heures, réparties sur plusieurs semaines (généralement 2 à 3 mois). Ces heures sont réparties en entretiens individuels avec un conseiller, en exercices de réflexion personnelle, et en une phase de conclusion avec remise d'un document de synthèse."
+            },
+            {
+                "q": "Puis-je faire un bilan de compétences à distance ?",
+                "a": "Oui, nous proposons le bilan de compétences en format distanciel via visioconférence. Toutes les phases du bilan (entretiens, exercices, restitution) peuvent se dérouler à distance, ce qui vous permet de bénéficier de cet accompagnement quel que soit votre lieu de résidence."
             }
         ]
     }

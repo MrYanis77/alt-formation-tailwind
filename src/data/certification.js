@@ -77,5 +77,13 @@ export const certifications = [
     niveau: "4",
     category: "Relation Client",
     lien: "https://www.francecompetences.fr/recherche/rncp/35304/"
+  },
+  {
+    id: 10,
+    nom: "Administrateur Système DevOps",
+    rncp: "36061",
+    niveau: "6",
+    category: "Systèmes & Réseaux",
+    lien: "https://www.francecompetences.fr/recherche/rncp/36061/"
   }
 ];
