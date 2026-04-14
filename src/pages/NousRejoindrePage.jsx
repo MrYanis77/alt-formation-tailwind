@@ -4,10 +4,11 @@ import InfoGrid from '../components/Infos/InfoGrid';
 import DetailHeader from '../components/Card/CardJob';
 import AdvantageCard from '../components/Card/AdvantageCard';
 import Breadcrumb from '../components/Breadcrumb';
+import CallToAction from '../components/CallToAction';
+import FormulaireCandidature from '../components/Form/FormulaireCandidature'; // Ajout de l'import
 
 // Import unique des données fusionnées
 import { dataNousRejoindre } from '../data/nous-rejoindre';
-import CallToAction from '../components/CallToAction';
 
 // Icônes SVG
 const Heart = (props) => (
@@ -38,19 +39,19 @@ export default function NousRejoindre() {
       <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'Nous rejoindre' }]} />
 
       {/* TOGGLE CATEGORIES */}
-      <section className="py-10 bg-gray-50 border-b border-border">
-        <div className="max-w-[1100px] mx-auto text-center px-6">
-          <div className="flex bg-white p-1.5 rounded-full shadow-sm w-fit mx-auto border border-gray-200">
+      <section className="py-6 bg-gray-50 border-b border-border">
+        <div className="max-w-[1000px] mx-auto text-center px-6">
+          <div className="flex bg-white p-1 rounded-full shadow-sm w-fit mx-auto border border-gray-200">
             <button
               onClick={() => setView('collaborateur')}
-              className={`px-8 md:px-10 py-3 rounded-full font-bold transition-all duration-300 cursor-pointer ${view === 'collaborateur' ? 'bg-orange text-white shadow-md' : 'text-gray-500 hover:text-navy'
+              className={`px-6 md:px-8 py-2 text-sm rounded-full font-bold transition-all duration-300 cursor-pointer ${view === 'collaborateur' ? 'bg-orange text-white shadow-md' : 'text-gray-500 hover:text-navy'
                 }`}
             >
               Collaborateur
             </button>
             <button
               onClick={() => setView('formateur')}
-              className={`px-8 md:px-10 py-3 rounded-full font-bold transition-all duration-300 cursor-pointer ${view === 'formateur' ? 'bg-[#1E2F47] text-white shadow-md' : 'text-gray-500 hover:text-navy'
+              className={`px-6 md:px-8 py-2 text-sm rounded-full font-bold transition-all duration-300 cursor-pointer ${view === 'formateur' ? 'bg-[#1E2F47] text-white shadow-md' : 'text-gray-500 hover:text-navy'
                 }`}
             >
               Formateur
@@ -60,16 +61,16 @@ export default function NousRejoindre() {
       </section>
 
       {/* 2. POURQUOI NOUS REJOINDRE */}
-      <section className="py-[70px] px-6 bg-white">
-        <div className="max-w-[1100px] mx-auto text-center">
-          <h2 className="text-[#1E2F47] text-2xl md:text-[32px] font-extrabold mb-6 uppercase tracking-wider">
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-[1000px] mx-auto text-center">
+          <h2 className="text-[#1E2F47] text-xl md:text-2xl font-extrabold mb-4 uppercase tracking-wider">
             {currentData.pourquoiNousRejoindre.titre}
           </h2>
-          <p className="text-muted text-[15px] max-w-[750px] mx-auto mb-16 leading-relaxed">
+          <p className="text-muted text-sm max-w-[700px] mx-auto mb-10 leading-relaxed">
             {currentData.pourquoiNousRejoindre.sousTitre}
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {currentData.pourquoiNousRejoindre.valeurs.map((valeur) => {
               const icons = { 1: Heart, 2: TrendingUp, 3: Target };
               const IconComponent = icons[valeur.id] || Target;
@@ -88,13 +89,13 @@ export default function NousRejoindre() {
       </section>
 
       {/* 3. NOS AVANTAGES */}
-      <section className="py-[70px] px-6 bg-gray-50 border-y border-border">
-        <div className="max-w-[1100px] mx-auto">
-          <h2 className="text-[#1E2F47] text-2xl md:text-[32px] font-extrabold text-center mb-12 uppercase tracking-wider">
+      <section className="py-12 px-6 bg-gray-50 border-y border-border">
+        <div className="max-w-[1000px] mx-auto">
+          <h2 className="text-[#1E2F47] text-xl md:text-2xl font-extrabold text-center mb-8 uppercase tracking-wider">
             Nos avantages
           </h2>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {currentData.avantages.map((avantage, index) => (
               <AdvantageCard
                 key={avantage.id}
@@ -108,16 +109,16 @@ export default function NousRejoindre() {
       </section>
 
       {/* 4. OFFRES OUVERTES */}
-      <section className="py-[70px] px-6 bg-white">
-        <div className="max-w-[900px] mx-auto">
-          <div className="mb-10 text-center md:text-left">
-            <h2 className="text-2xl md:text-[32px] font-extrabold text-[#1E2F47] mb-2 uppercase">
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-[800px] mx-auto">
+          <div className="mb-8 text-center md:text-left flex flex-col md:flex-row md:items-center justify-between gap-2">
+            <h2 className="text-xl md:text-2xl font-extrabold text-[#1E2F47] uppercase">
               {currentData.offres.titre}
             </h2>
-            <p className="text-orange font-bold">{currentData.offres.compteur}</p>
+            <p className="text-orange font-bold text-sm bg-orange/10 px-4 py-1.5 rounded-full">{currentData.offres.compteur}</p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-3">
             {currentData.offres.list.map((offre) => (
               <DetailHeader
                 key={offre.id}
@@ -132,26 +133,26 @@ export default function NousRejoindre() {
       </section>
 
       {/* 5. SECTION ÉQUIPE */}
-      <section className="py-[70px] px-6 bg-gray-50 border-t border-border">
-        <div className="max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-12 px-6 bg-gray-50 border-t border-border">
+        <div className="max-w-[1000px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div>
-            <h2 className="text-[32px] font-extrabold text-[#1E2F47] mb-6 leading-tight uppercase">
+            <h2 className="text-xl md:text-2xl font-extrabold text-[#1E2F47] mb-4 leading-tight uppercase">
               {currentData.sectionEquipe.titre}
             </h2>
-            <div className="space-y-4 mb-10">
-              <p className="text-muted text-[15px] leading-relaxed">{currentData.sectionEquipe.paragraphe1}</p>
-              <p className="text-muted text-[15px] leading-relaxed">{currentData.sectionEquipe.paragraphe2}</p>
+            <div className="space-y-3 mb-8">
+              <p className="text-muted text-sm leading-relaxed">{currentData.sectionEquipe.paragraphe1}</p>
+              <p className="text-muted text-sm leading-relaxed">{currentData.sectionEquipe.paragraphe2}</p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3">
               {currentData.sectionEquipe.stats.map((stat, idx) => (
-                <div key={idx} className="flex-1 bg-white p-6 rounded-2xl border border-border shadow-sm text-center">
-                  <div className="text-3xl font-extrabold text-orange mb-1">{stat.valeur}</div>
-                  <div className="text-navy font-bold text-sm uppercase tracking-wider">{stat.label}</div>
+                <div key={idx} className="flex-1 bg-white p-4 rounded-xl border border-border shadow-sm text-center">
+                  <div className="text-2xl font-extrabold text-orange mb-1">{stat.valeur}</div>
+                  <div className="text-navy font-bold text-xs uppercase tracking-wider">{stat.label}</div>
                 </div>
               ))}
             </div>
           </div>
-          <div className="rounded-[24px] overflow-hidden h-[400px] shadow-lg border-4 border-white">
+          <div className="rounded-[20px] overflow-hidden h-[300px] shadow-md border-4 border-white">
             <img
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
               alt="Team ALT FORMATIONS"
@@ -161,13 +162,16 @@ export default function NousRejoindre() {
         </div>
       </section>
 
-      {/* 6. CTA FINAL */}
+      {/* 6. FORMULAIRE DE CANDIDATURE */}
+      <FormulaireCandidature type={view} />
+
+      {/* 7. CTA FINAL */}
       <CallToAction
         variante="sombre"
-        titre="Prêt(e) à nous rejoindre ?"
-        sousTitre="Envoyez-nous votre candidature et faites partie de l'aventure ALT FORMATIONS."
-        texteBouton="Postuler maintenant"
-        lienBouton="/contact"
+        titre="Besoin de plus d'informations ?"
+        sousTitre="Consultez notre FAQ ou contactez-nous directement pour toute question sur le processus de recrutement."
+        texteBouton="Voir la F.A.Q"
+        lienBouton="/faq"
       />
     </div>
   );

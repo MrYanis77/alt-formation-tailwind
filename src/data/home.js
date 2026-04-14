@@ -106,21 +106,21 @@ export const services = [
  * Logos partenaires avec liens vers leurs sites officiels.
  */
 export const partenaires = [
-  { nom: 'agefiph', logo: '/Assets/partenaires/agefiph.png', url: 'https://www.agefiph.fr/' },
-  { nom: 'akto', logo: '/Assets/partenaires/akto.png', url: 'https://www.akto.fr/' },
-  { nom: 'bnp-paribas', logo: '/Assets/partenaires/bnp-paribas.png', url: 'https://mabanque.bnpparibas/' },
-  { nom: 'cic', logo: '/Assets/partenaires/cic.png', url: 'https://www.cic.fr/' },
-  { nom: 'credit-agricole', logo: '/Assets/partenaires/credit-agricole.png', url: 'https://www.credit-agricole.fr/' },
-  { nom: 'edf', logo: '/Assets/partenaires/edf.png', url: 'https://www.edf.fr/' },
-  { nom: 'france-compétence', logo: '/Assets/partenaires/france-competence.png', url: 'https://www.francecompetences.fr/' },
-  { nom: 'france-travail', logo: '/Assets/partenaires/france-travail.png', url: 'https://www.francetravail.fr/' },
-  { nom: 'région ile de france', logo: '/Assets/partenaires/idf.png', url: 'https://www.iledefrance.fr/' },
-  { nom: 'microsoft', logo: '/Assets/partenaires/microsoft.png', url: 'https://www.microsoft.com/' },
-  { nom: 'orange', logo: '/Assets/partenaires/orange.png', url: 'https://www.orange.fr/' },
-  { nom: 'pdf', logo: '/Assets/partenaires/pdf.png', url: 'https://adobe.com/pdf' },
-  { nom: 'pennylane', logo: '/Assets/partenaires/pennylane.png', url: 'https://www.pennylane.com/' },
-  { nom: 'uniformation', logo: '/Assets/partenaires/uniformation.png', url: 'https://www.uniformation.fr/' },
-  { nom: 'verisure', logo: '/Assets/partenaires/verisure.png', url: 'https://www.verisure.fr/' },
+  { nom: 'agefiph', logo: '/Assets/partenaires/agefiph.png' },
+  { nom: 'akto', logo: '/Assets/partenaires/akto.png' },
+  { nom: 'bnp-paribas', logo: '/Assets/partenaires/bnp-paribas.png' },
+  { nom: 'cic', logo: '/Assets/partenaires/cic.png' },
+  { nom: 'credit-agricole', logo: '/Assets/partenaires/credit-agricole.png' },
+  { nom: 'edf', logo: '/Assets/partenaires/edf.png' },
+  { nom: 'france-compétence', logo: '/Assets/partenaires/france-compétence.png' },
+  { nom: 'france-travail', logo: '/Assets/partenaires/france-travail.png' },
+  { nom: 'région ile de france', logo: '/Assets/partenaires/idf.png' },
+  { nom: 'microsoft', logo: '/Assets/partenaires/microsoft.png' },
+  { nom: 'orange', logo: '/Assets/partenaires/orange.png' },
+  { nom: 'pennylane', logo: '/Assets/partenaires/pennylane.png' },
+  { nom: 'uniformation', logo: '/Assets/partenaires/uniformation.png' },
+  { nom: 'verisure', logo: '/Assets/partenaires/verisure.png' },
+  { nom: 'veolia', logo: '/Assets/partenaires/veolia.png' },
 ];
 
 /**

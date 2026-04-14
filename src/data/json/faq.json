@@ -1,0 +1,69 @@
+[
+    {
+        "hero": {
+            "titre": "Devenez Assistant Commercial",
+            "sousTitre": "L’Assistant Commercial joue un rôle central dans le bon fonctionnement de l’activité commerciale. Véritable interface entre les clients, les équipes de vente et les services internes, il ou elle assure le suivi administratif des ventes, la rela...",
+            "video": "/Assets/video/formations/administration.mp4"
+        }
+    },
+    {
+        "id": "formations",
+        "categorie": "Nos Formations",
+        "questions": [
+            {
+                "q": "Quels sont les formats d'apprentissage proposés ?",
+                "a": "Nous proposons plusieurs modalités pour s'adapter à vos besoins : en présentiel dans nos locaux, en distanciel (classes virtuelles), et en e-learning pour apprendre à votre propre rythme. Vous pouvez même évaluer le format qui vous correspond le mieux grâce à notre test de positionnement dans le Bilan de Compétences."
+            },
+            {
+                "q": "Proposez-vous un accompagnement pour trouver un emploi après la formation ?",
+                "a": "Oui, nous intégrons un module de 'Coaching Emploi' dans nos parcours, et nous mettons en relation nos apprenants avec notre réseau d'entreprises partenaires, notamment via nos solutions de recrutement."
+            }
+        ]
+    },
+    {
+        "id": "financement",
+        "categorie": "Financement & Prise en charge",
+        "questions": [
+            {
+                "q": "Vos formations sont-elles éligibles au CPF ?",
+                "a": "Oui, la majorité de nos formations certifiantes sont éligibles au Compte Personnel de Formation (CPF). Vous pouvez utiliser vos droits directement sur la plateforme officielle."
+            },
+            {
+                "q": "Comment faire financer ma formation si je suis demandeur d'emploi ?",
+                "a": "En tant que demandeur d'emploi, vous pouvez solliciter France Travail (anciennement Pôle Emploi) pour une prise en charge (AIF, POEI). Nos conseillers vous accompagnent dans le montage de votre dossier."
+            },
+            {
+                "q": "Une entreprise peut-elle financer la formation de ses collaborateurs ?",
+                "a": "Absolument. Alt-RH & Formations est certifié Qualiopi, ce qui permet aux entreprises de faire financer la montée en compétences de leurs salariés via leur OPCO (Opérateurs de Compétences)."
+            }
+        ]
+    },
+    {
+        "id": "recrutement",
+        "categorie": "Nous rejoindre (Formateur & Collaborateur)",
+        "questions": [
+            {
+                "q": "Comment postuler pour devenir formateur chez Alt-RH & Formations ?",
+                "a": "Vous pouvez vous rendre sur la page 'Nous rejoindre' et sélectionner le profil 'Formateur'. Un formulaire dédié vous permettra de nous envoyer votre CV et de détailler vos domaines d'expertise (IA, Cybersécurité, Réseaux, etc.)."
+            },
+            {
+                "q": "Quels sont les avantages à rejoindre vos équipes en tant que collaborateur ?",
+                "a": "Rejoindre Alt-RH & Formations, c'est intégrer une structure dynamique avec des perspectives d'évolution, une mutuelle avantageuse, des possibilités de télétravail et un engagement fort pour la qualité de vie au travail."
+            }
+        ]
+    },
+    {
+        "id": "entreprise",
+        "categorie": "L'Entreprise : Alt-RH & Formations",
+        "questions": [
+            {
+                "q": "Êtes-vous un organisme certifié ?",
+                "a": "Oui, Alt-RH & Formations est certifié Qualiopi au titre des actions de formation. Vous pouvez télécharger notre certificat directement depuis le pied de page (footer) de notre site internet."
+            },
+            {
+                "q": "Quelles solutions proposez-vous aux entreprises ?",
+                "a": "Nous accompagnons les entreprises sur deux axes majeurs : la formation sur-mesure de leurs collaborateurs (montée en compétences sur l'IA, la cybersécurité...) et des solutions de recrutement pour dénicher les meilleurs talents."
+            }
+        ]
+    }
+]

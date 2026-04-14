@@ -122,3 +122,26 @@ export const autresSolutions = {
     },
   ],
 };
+
+export const questionsOrientees = {
+  titre: "Quel financement est fait pour vous ?",
+  description: "Sélectionnez votre situation actuelle pour découvrir les dispositifs les plus adaptés à votre profil.",
+  items: [
+    {
+      q: "Je suis salarié(e) en poste",
+      a: "Vous pouvez mobiliser votre CPF en toute autonomie. Si la formation répond à un besoin de l'entreprise, sollicitez le Plan de Développement des Compétences via votre OPCO."
+    },
+    {
+      q: "Je suis demandeur d'emploi",
+      a: "Votre CPF est utilisable. De plus, France Travail (Pôle Emploi) peut financer tout ou partie de votre formation via l'AIF ou une action préalable au recrutement (AFPR/POE)."
+    },
+    {
+      q: "Je suis employeur / RH",
+      a: "Votre OPCO est votre interlocuteur privilégié. Il permet de financer les contrats d'alternance, de bénéficier d'aides au tutorat et de financer les formations collectives."
+    },
+    {
+      q: "Je suis travailleur indépendant",
+      a: "Vous dépendez d'un Fonds d'Assurance Formation (FAF) défini selon votre secteur (FIF PL, AGEFICE...). Votre CPF est également alimenté chaque année pour vos projets."
+    }
+  ]
+};

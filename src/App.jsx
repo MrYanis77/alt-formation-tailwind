@@ -29,7 +29,7 @@ import PolitiqueCookies from './pages/PolitiqueCookies';
 import BilansCarriere from './pages/BilansCarriere';
 import Coaching from './pages/CoachingPage';
 import RessourcesIAPages from './pages/RessourcesIAPages';
-
+import FaqPage from './pages/FaqPage';
 
 function ComingSoon({ title }) {
   return (
@@ -85,6 +85,7 @@ export default function App() {
           <Route path="/coaching-emploi" element={<Coaching />} />
           <Route path="/ressources-ia" element={<RessourcesIAPages />} />
           <Route path="/nous-rejoindre" element={<NousRejoindre />} />
+          <Route path="/faq" element={<FaqPage />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/politique-de-confidentialite" element={<PolitiqueConfidentialite />} />
           <Route path="/conditions-generales" element={<PolitiqueCookies />} />

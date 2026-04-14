@@ -116,7 +116,7 @@ export const navlinks = [
   {
     label: "Ressources",
     submenu: [
-      
+
       {
         label: "Fiches métier",
         href: "/ressources-ia",
@@ -153,9 +153,7 @@ export const navlinks = [
   { label: "Nous rejoindre", href: "/nous-rejoindre" },
   { label: "Nos Campus", href: "/campus" },
   { label: "Contact", href: "/contact" },
-<<<<<<< HEAD
-=======
   { label: "F.A.Q", href: "/faq" },
-  
->>>>>>> ff5ae3a8e63f364aecccae0a1079a72f0cffd195
+
+
 ];

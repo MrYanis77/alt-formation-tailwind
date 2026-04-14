@@ -175,8 +175,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SECTION 4 : VIDÉO */}
-      <VideoSection title="Découvrez ALT FORMATIONS en vidéo" />
+      {/* SECTION 4 : VIDÉO
+      <VideoSection title="Découvrez ALT FORMATIONS en vidéo" /> */}
 
       {/* SECTION 5 : TRUST SECTION (LOGOS PARTENAIRES CLIQUABLES) */}
       <section className="py-[70px] bg-white border-t border-border overflow-hidden">
@@ -191,7 +191,6 @@ export default function HomePage() {
             {doublePartenaires.map((partenaire, index) => (
               <a
                 key={index}
-                href={partenaire.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-shrink-0 w-[150px] md:w-[200px] mx-8 md:mx-12 flex items-center justify-center transition-opacity duration-300 opacity-80 hover:opacity-100 cursor-pointer"
