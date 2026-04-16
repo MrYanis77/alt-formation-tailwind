@@ -11,7 +11,7 @@ export default function Hero({
 }) {
   return (
     <section
-      className="relative min-h-[400px] flex items-center justify-center bg-navy px-6 py-20 text-center overflow-hidden"
+      className="relative min-h-[400px] flex items-center justify-center bg-primary px-6 py-20 text-center overflow-hidden"
       aria-label={`Bandeau ${title}`}
     >
       {/* Rendu de la vidéo en arrière-plan */}
@@ -29,7 +29,7 @@ export default function Hero({
       )}
 
       {/* Overlay éclairci (passé de /40 à /20) */}
-      <div className="absolute inset-0 bg-[#0A192F]/20 z-0"></div>
+      <div className="absolute inset-0 bg-primary/20 z-0"></div>
 
       {/* Contenu textuel */}
       <div className="relative z-10 max-w-4xl mx-auto">

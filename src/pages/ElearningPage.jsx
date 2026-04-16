@@ -29,10 +29,10 @@ export default function ElearningPage() {
       {/* ===== SECTION PLATEFORME (Image 9ab569) ===== */}
       <main className="py-20 px-6 max-w-[1100px] mx-auto" id="main-content">
         <div className="text-center mb-16">
-          <h2 className="font-heading font-extrabold text-3xl text-dark uppercase tracking-tight">
+          <h2 className="font-heading font-extrabold text-3xl text-content-dark uppercase tracking-tight">
             Notre plateforme e-learning
           </h2>
-          <div className="w-20 h-1 bg-orange mx-auto mt-4 rounded-full"></div>
+          <div className="w-20 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
         </div>
         
         {/* On utilise CardGrid avec 2 colonnes pour le look 2x2 de la maquette */}
@@ -45,15 +45,15 @@ export default function ElearningPage() {
       {/* ===== SECTION CTA ===== */}
       <section className="py-24 px-6 bg-gray-50 text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-6 text-navy">
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-6 text-primary">
             Prêt à démarrer votre apprentissage ?
           </h2>
-          <p className="text-muted text-lg mb-10 leading-relaxed font-body">
+          <p className="text-content-muted text-lg mb-10 leading-relaxed font-body">
             Rejoignez des milliers d'étudiants et accédez immédiatement à nos modules certifiants.
           </p>
           <a 
             href="/connexion" 
-            className="inline-block bg-orange hover:bg-orange-dark text-white font-heading font-bold py-4 px-12 rounded-default transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-orange/20 no-underline uppercase tracking-wider text-sm"
+            className="inline-block bg-accent hover:bg-accent-dark text-white font-heading font-bold py-4 px-12 rounded-sm transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-accent/20 no-underline uppercase tracking-wider text-sm"
           >
             Accéder à la plateforme
           </a>

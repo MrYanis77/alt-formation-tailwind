@@ -26,18 +26,18 @@ export default function AproposPage() {
         <div className="max-w-[1100px] mx-auto px-6 flex flex-col gap-16 pb-24">
 
           {/* ======== BLOC 2 : NOS VALEURS ======== */}
-          <section className="bg-[#fcfcfc] border border-orange/30 rounded-3xl p-10 md:p-16 shadow-sm">
-            <h2 className="font-heading text-[32px] font-black text-navy mb-12 text-center uppercase tracking-tight">
+          <section className="bg-surface-alt border border-accent/30 rounded-3xl p-10 md:p-16 shadow-sm">
+            <h2 className="font-heading text-h1 font-black text-primary mb-12 text-center uppercase tracking-tight">
               {nosValeurs.titre}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               {nosValeurs.items.map((valeur, idx) => (
                 <div key={idx} className="flex flex-col items-center text-center group">
-                  <div className="w-12 h-1 bg-orange mb-6 rounded-full transition-all group-hover:w-20" />
-                  <h4 className="font-heading text-[20px] font-bold text-navy mb-4 uppercase">
+                  <div className="w-12 h-1 bg-accent mb-6 rounded-full transition-all group-hover:w-20" />
+                  <h4 className="font-heading text-[20px] font-bold text-primary mb-4 uppercase">
                     {valeur.nom}
                   </h4>
-                  <p className="text-[15px] text-muted leading-relaxed">
+                  <p className="text-medium text-content-muted leading-relaxed">
                     {valeur.description}
                   </p>
                 </div>
@@ -48,20 +48,20 @@ export default function AproposPage() {
           {/* ======== BLOC 3 : CERTIFICATIONS & AGREMENTS ======== */}
           <section className="bg-white border border-gray-100 rounded-3xl p-10 md:p-16 shadow-sm">
             <div className="flex items-center mb-10">
-              <div className="w-[6px] h-8 bg-orange rounded-full mr-4"></div>
-              <h2 className="font-heading text-[28px] font-black text-navy uppercase tracking-tight">
+              <div className="w-[6px] h-8 bg-accent rounded-full mr-4"></div>
+              <h2 className="font-heading text-h2 font-black text-primary uppercase tracking-tight">
                 {certificationsAgrements.titre}
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
               {certificationsAgrements.items.map((cert, idx) => (
                 <div key={idx} className="flex items-start gap-5 p-4 rounded-xl hover:bg-gray-50 transition-colors">
-                  <span className="text-orange font-bold text-2xl leading-none">•</span>
+                  <span className="text-accent font-bold text-2xl leading-none">•</span>
                   <div>
-                    <h4 className="font-heading text-[17px] font-bold text-navy mb-2 uppercase">
+                    <h4 className="font-heading text-[17px] font-bold text-primary mb-2 uppercase">
                       {cert.nom}
                     </h4>
-                    <p className="text-[14px] text-muted leading-relaxed">
+                    <p className="text-sm text-content-muted leading-relaxed">
                       {cert.description}
                     </p>
                   </div>

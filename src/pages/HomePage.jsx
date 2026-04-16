@@ -41,7 +41,7 @@ export default function HomePage() {
     <div className="bg-white antialiased">
 
       {/* SECTION 1 : HERO CAROUSEL */}
-      <section className="relative h-[600px] md:h-[550px] bg-navy overflow-hidden flex items-center group">
+      <section className="relative h-[600px] md:h-[550px] bg-primary overflow-hidden flex items-center group">
         {/* Animation de fond */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -73,7 +73,7 @@ export default function HomePage() {
           </motion.div>
         </AnimatePresence>
 
-        <div className="absolute inset-0 z-10 bg-gradient-to-r from-navy/80 via-navy/30 to-transparent" />
+        <div className="absolute inset-0 z-10 bg-gradient-to-r from-primary/80 via-primary/30 to-transparent" />
 
         <div className="container mx-auto relative z-20 px-6 md:px-[60px]">
           <AnimatePresence mode="wait">
@@ -111,7 +111,7 @@ export default function HomePage() {
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`h-1.5 rounded-full transition-all duration-500 ${index === currentSlide ? 'w-10 bg-orange' : 'w-4 bg-white/30 hover:bg-white/60'
+              className={`h-1.5 rounded-full transition-all duration-500 ${index === currentSlide ? 'w-10 bg-accent' : 'w-4 bg-white/30 hover:bg-white/60'
                 }`}
               aria-label={`Slide ${index + 1}`}
             />
@@ -123,12 +123,12 @@ export default function HomePage() {
       <StatsSection stats={stats} />
 
       {/* SECTION PRÉSENTATION : Professionnels et engagés */}
-      <section className="py-20 px-6 max-w-[1000px] mx-auto text-center">
-        <h2 className="font-heading text-2xl md:text-[32px] font-extrabold text-navy uppercase tracking-wider mb-8">
+      <section className="py-20 px-6 max-w-container-lg mx-auto text-center">
+        <h2 className="font-heading text-2xl md:text-h1 font-extrabold text-primary uppercase tracking-wider mb-8">
           {presentation.titre}
         </h2>
-        <div className="space-y-6 text-muted text-[16px] md:text-lg font-body leading-relaxed">
-          <p className="font-bold text-orange text-xl mb-8">
+        <div className="space-y-6 text-content-muted text-base md:text-lg font-body leading-relaxed">
+          <p className="font-bold text-accent text-xl mb-8">
             {presentation.accroche}
           </p>
           <p>
@@ -137,25 +137,25 @@ export default function HomePage() {
           <p>
             {presentation.paragraphe2}
           </p>
-          <div className="bg-gray-50 p-8 rounded-2xl mx-auto my-8 max-w-[800px] border border-gray-100 shadow-sm text-left">
+          <div className="bg-gray-50 p-8 rounded-2xl mx-auto my-8 max-w-container-md border border-gray-100 shadow-sm text-left">
             <p className="mb-4">
-              <strong className="text-navy font-bold">{presentation.mission.label} </strong>
+              <strong className="text-primary font-bold">{presentation.mission.label} </strong>
               {presentation.mission.texte}
             </p>
             <p>
-              <strong className="text-navy font-bold">{presentation.objectif.label} </strong>
+              <strong className="text-primary font-bold">{presentation.objectif.label} </strong>
               {presentation.objectif.texte}
             </p>
           </div>
-          <p className="font-bold text-navy text-[18px] md:text-xl pt-4">
+          <p className="font-bold text-primary text-[18px] md:text-xl pt-4">
             {presentation.conclusion}
           </p>
         </div>
       </section>
 
       {/* SECTION 3 : NOS SERVICES / FORMATIONS */}
-      <section className="pb-[80px] pt-10 px-6 md:px-[60px] max-w-[1200px] mx-auto">
-        <h2 className="font-heading text-2xl md:text-[32px] font-extrabold text-navy text-center mb-[50px] uppercase tracking-wider">
+      <section className="pb-[80px] pt-10 px-6 md:px-[60px] max-w-container-xl mx-auto">
+        <h2 className="font-heading text-2xl md:text-h1 font-extrabold text-primary text-center mb-[50px] uppercase tracking-wider">
           Nos Formations & Services
         </h2>
 
@@ -177,7 +177,7 @@ export default function HomePage() {
       {/* SECTION 5 : TRUST SECTION (LOGOS PARTENAIRES CLIQUABLES) */}
       <section className="py-[70px] bg-white border-t border-border overflow-hidden">
         <div className="max-w-[1100px] mx-auto px-6 mb-12">
-          <h2 className="font-heading text-2xl md:text-[32px] font-extrabold text-[#1E2F47] text-center uppercase tracking-wider">
+          <h2 className="font-heading text-2xl md:text-h1 font-extrabold text-primary-light text-center uppercase tracking-wider">
             Nos Partenaires
           </h2>
         </div>
@@ -205,7 +205,7 @@ export default function HomePage() {
       {/* SECTION 6 : TÉMOIGNAGES AVIS GOOGLE (DÉFILEMENT INFINI) */}
       <section className="py-[70px] bg-slate-50 border-t border-border overflow-hidden">
         <div className="max-w-[1100px] mx-auto px-6 mb-12">
-          <h2 className="font-heading text-2xl md:text-[32px] font-extrabold text-navy text-center uppercase tracking-wider">
+          <h2 className="font-heading text-2xl md:text-h1 font-extrabold text-primary text-center uppercase tracking-wider">
             Ce que disent nos apprenants
           </h2>
         </div>
@@ -225,25 +225,25 @@ export default function HomePage() {
                     <img src={t.avatar} alt={t.author} className="w-full h-full object-cover" />
                   </div>
                   <div className="flex flex-col">
-                    <h3 className="font-bold text-gray-900 text-[15px] leading-tight">{t.author}</h3>
-                    <span className="text-[13px] text-gray-500">{t.role}</span>
+                    <h3 className="font-bold text-gray-900 text-medium leading-tight">{t.author}</h3>
+                    <span className="text-small text-gray-500">{t.role}</span>
                   </div>
                 </div>
 
                 {/* Étoiles et Date */}
                 <div className="flex items-center gap-2 mt-1">
-                  <div className="flex text-[#fbbc04]">
+                  <div className="flex text-star">
                     {[...Array(5)].map((_, i) => (
                       <svg key={i} className={`w-[18px] h-[18px] ${i < t.rating ? 'fill-current' : 'fill-gray-300'}`} viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     ))}
                   </div>
-                  <span className="text-[13px] text-gray-500">{t.date}</span>
+                  <span className="text-small text-gray-500">{t.date}</span>
                 </div>
 
                 {/* Texte de l'avis */}
-                <p className="text-[#3c4043] text-[14px] leading-relaxed mt-2 font-body">
+                <p className="text-content-muted text-sm leading-relaxed mt-2 font-body">
                   {t.quote}
                 </p>
               </article>
@@ -258,10 +258,10 @@ export default function HomePage() {
       {/* SECTION 8 : CALL TO ACTION FINAL */}
       <section className="py-24 px-6 bg-slate-50 text-center border-t border-border">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-heading text-[28px] md:text-[33px] font-extrabold text-navy mb-6 uppercase tracking-tight">
+          <h2 className="font-heading text-h2 md:text-[33px] font-extrabold text-primary mb-6 uppercase tracking-tight">
             Prêt à transformer votre carrière ?
           </h2>
-          <p className="text-muted text-[16px] mb-10 leading-relaxed font-body max-w-2xl mx-auto">
+          <p className="text-content-muted text-base mb-10 leading-relaxed font-body max-w-2xl mx-auto">
             Rejoignez une communauté de talents et bénéficiez d'un accompagnement sur mesure pour réussir votre insertion professionnelle.
           </p>
           <a

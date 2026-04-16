@@ -83,38 +83,38 @@ export default function ContactForm({ variant = "section", title }) {
   const resetStatus = () => setStatus('idle');
 
   const FormWrapper = isSection ? "section" : "div";
-  const wrapperClass = isSection ? "bg-dark py-[60px] px-10 text-center" : "w-full";
+  const wrapperClass = isSection ? "bg-content-dark py-[60px] px-10 text-center" : "w-full";
   const containerClass = isSection ? "max-w-[600px] mx-auto" : "w-full";
 
   const getInputClass = (hasError) => {
     let base = isSection
-      ? "w-full p-[12px_14px] border rounded-[3px] bg-white font-body text-[13px] text-dark outline-none focus:border-orange transition-colors placeholder:text-[#aaa] "
-      : "w-full p-3 border rounded-lg focus:outline-none focus:border-orange focus:ring-1 focus:ring-orange transition-all ";
+      ? "w-full p-[12px_14px] border rounded-[3px] bg-white font-body text-small text-content-dark outline-none focus:border-accent transition-colors placeholder:text-content-muted "
+      : "w-full p-3 border rounded-lg focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all ";
 
     return base + (hasError ? "border-red-500 bg-red-50/50 " : (isSection ? "border-transparent" : "border-gray-200"));
   };
 
   const buttonClass = isSection
-    ? "bg-orange hover:bg-orange-dark text-white p-[14px] rounded-default font-heading text-sm font-bold cursor-pointer transition-colors duration-200 uppercase tracking-wide border-none flex items-center justify-center gap-2 mt-2 disabled:opacity-75 disabled:cursor-not-allowed w-full"
-    : "w-full bg-orange hover:bg-orange-dark text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-orange/20 flex items-center justify-center gap-2 hover:-translate-y-0.5 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none mt-4";
+    ? "bg-accent hover:bg-accent-dark text-white p-[14px] rounded-sm font-heading text-sm font-bold cursor-pointer transition-colors duration-200 uppercase tracking-wide border-none flex items-center justify-center gap-2 mt-2 disabled:opacity-75 disabled:cursor-not-allowed w-full"
+    : "w-full bg-accent hover:bg-accent-dark text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-accent/20 flex items-center justify-center gap-2 hover:-translate-y-0.5 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none mt-4";
 
   return (
     <FormWrapper className={wrapperClass} id={isSection ? "contact" : undefined}>
       {(title || isSection) && (
-        <h2 className={isSection ? "font-heading text-[26px] font-extrabold text-white mb-[30px] uppercase tracking-wider" : "text-navy font-bold text-[24px] mb-8"}>
+        <h2 className={isSection ? "font-heading text-[26px] font-extrabold text-white mb-[30px] uppercase tracking-wider" : "text-primary font-bold text-[24px] mb-8"}>
           {title || "Contactez-nous"}
         </h2>
       )}
 
       <div className={containerClass}>
         {status === 'success' && (
-          <div className={isSection ? "bg-green-100/10 border border-[#6fcf97]/30 p-5 rounded-md mb-6 transition-all flex flex-col items-center gap-2" : "bg-green-50 border border-green-200 text-green-700 p-6 sm:p-10 rounded-xl flex flex-col items-center justify-center text-center gap-4 transition-all"}>
-            <svg className={isSection ? "w-8 h-8 text-[#6fcf97] mb-1" : "w-16 h-16 text-green-500"} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <div className={isSection ? "bg-green-100/10 border border-success/30 p-5 rounded-md mb-6 transition-all flex flex-col items-center gap-2" : "bg-green-50 border border-green-200 text-green-700 p-6 sm:p-10 rounded-xl flex flex-col items-center justify-center text-center gap-4 transition-all"}>
+            <svg className={isSection ? "w-8 h-8 text-success mb-1" : "w-16 h-16 text-green-500"} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
               <polyline points="22 4 12 14.01 9 11.01"></polyline>
             </svg>
             {isSection ? (
-              <p className="text-[#6fcf97] font-semibold text-sm" role="alert">
+              <p className="text-success font-semibold text-sm" role="alert">
                 ✓ Votre message a bien été envoyé ! Nous vous répondrons dans les plus brefs délais.<br />
               </p>
             ) : (
@@ -123,7 +123,7 @@ export default function ContactForm({ variant = "section", title }) {
                 <p className="text-green-600 mt-2">Nous reviendrons vers vous rapidement.</p>
               </div>
             )}
-            <button onClick={resetStatus} className={isSection ? "mt-2 text-xs text-[#6fcf97] underline hover:text-white transition" : "mt-6 px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition shadow-sm"}>
+            <button onClick={resetStatus} className={isSection ? "mt-2 text-xs text-success underline hover:text-white transition" : "mt-6 px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition shadow-sm"}>
               Nouveau message
             </button>
           </div>
@@ -138,7 +138,7 @@ export default function ContactForm({ variant = "section", title }) {
                 <line x1="12" y1="16" x2="12.01" y2="16"></line>
               </svg>
             )}
-            <p className={isSection ? "text-[#eb5757] font-semibold mb-6 text-sm bg-red-100/10 border border-red-500/30 p-3 rounded" : "text-[15px] font-medium"} role="alert">
+            <p className={isSection ? "text-red-500 font-semibold mb-6 text-sm bg-red-100/10 border border-red-500/30 p-3 rounded" : "text-medium font-medium"} role="alert">
               {serverError}
             </p>
           </div>
@@ -152,28 +152,28 @@ export default function ContactForm({ variant = "section", title }) {
             </div>
 
             <div className="flex flex-col gap-1">
-              {!isSection && <label className="text-[14px] font-medium text-navy">Nom *</label>}
+              {!isSection && <label className="text-sm font-medium text-primary">Nom *</label>}
               <input type="text" placeholder={isSection ? "Nom *" : ""} className={getInputClass(errors.nom)} disabled={status === 'loading'}
                 {...register('nom')} />
               {errors.nom && <span className="text-xs text-red-500 font-semibold">{errors.nom.message}</span>}
             </div>
 
             <div className="flex flex-col gap-1">
-              {!isSection && <label className="text-[14px] font-medium text-navy">Prénom *</label>}
+              {!isSection && <label className="text-sm font-medium text-primary">Prénom *</label>}
               <input type="text" placeholder={isSection ? "Prénom *" : ""} className={getInputClass(errors.prenom)} disabled={status === 'loading'}
                 {...register('prenom')} />
               {errors.prenom && <span className="text-xs text-red-500 font-semibold">{errors.prenom.message}</span>}
             </div>
 
             <div className="flex flex-col gap-1 md:col-span-2">
-              {!isSection && <label className="text-[14px] font-medium text-navy">Email *</label>}
+              {!isSection && <label className="text-sm font-medium text-primary">Email *</label>}
               <input type="email" placeholder={isSection ? "Email *" : ""} className={getInputClass(errors.email)} disabled={status === 'loading'}
                 {...register('email')} />
               {errors.email && <span className="text-xs text-red-500 font-semibold">{errors.email.message}</span>}
             </div>
 
             <div className="flex flex-col gap-1 md:col-span-2">
-              {!isSection && <label className="text-[14px] font-medium text-navy">Téléphone</label>}
+              {!isSection && <label className="text-sm font-medium text-primary">Téléphone</label>}
               <input type="tel" placeholder={isSection ? "Téléphone" : ""} className={getInputClass(errors.telephone)} disabled={status === 'loading'}
                 {...register('telephone')} />
               {errors.telephone && <span className="text-xs text-red-500 font-semibold">{errors.telephone.message}</span>}
@@ -181,7 +181,7 @@ export default function ContactForm({ variant = "section", title }) {
 
             {!isSection && (
               <div className="flex flex-col gap-1 md:col-span-2">
-                <label className="text-[14px] font-medium text-navy">Sujet *</label>
+                <label className="text-sm font-medium text-primary">Sujet *</label>
                 <input type="text" className={getInputClass(errors.sujet)} disabled={status === 'loading'}
                   {...register('sujet')} />
                 {errors.sujet && <span className="text-xs text-red-500 font-semibold">{errors.sujet.message}</span>}
@@ -189,7 +189,7 @@ export default function ContactForm({ variant = "section", title }) {
             )}
 
             <div className="flex flex-col gap-1 md:col-span-2">
-              {!isSection && <label className="text-[14px] font-medium text-navy">Message *</label>}
+              {!isSection && <label className="text-sm font-medium text-primary">Message *</label>}
               <textarea placeholder={isSection ? "Votre message *" : ""} className={getInputClass(errors.message) + (isSection ? " h-[120px]" : " h-[160px]") + " resize-none"} disabled={status === 'loading'}
                 {...register('message')} />
               {errors.message && <span className="text-xs text-red-500 font-semibold">{errors.message.message}</span>}

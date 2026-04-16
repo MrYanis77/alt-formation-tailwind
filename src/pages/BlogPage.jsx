@@ -44,41 +44,41 @@ export default function BlogPage() {
 
         {/* ======== PAGINATION (image_a607d7.png) ======== */}
         <div className="flex justify-center items-center gap-2 mb-20">
-          <button className="px-4 py-2 border border-gray-200 rounded-lg text-navy text-[14px] hover:bg-gray-50">
+          <button className="px-4 py-2 border border-gray-200 rounded-lg text-primary text-sm hover:bg-gray-50">
             {paginationData.prevLabel}
           </button>
           {[1, 2, 3].map((num) => (
             <button
               key={num}
-              className={`w-10 h-10 rounded-lg flex items-center justify-center font-bold text-[14px]
-                ${num === paginationData.currentPage ? 'bg-orange text-white' : 'border border-gray-200 text-navy hover:bg-gray-50'}`}
+              className={`w-10 h-10 rounded-lg flex items-center justify-center font-bold text-sm
+                ${num === paginationData.currentPage ? 'bg-accent text-white' : 'border border-gray-200 text-primary hover:bg-gray-50'}`}
             >
               {num}
             </button>
           ))}
-          <button className="px-4 py-2 border border-gray-200 rounded-lg text-navy text-[14px] hover:bg-gray-50">
+          <button className="px-4 py-2 border border-gray-200 rounded-lg text-primary text-sm hover:bg-gray-50">
             {paginationData.nextLabel}
           </button>
         </div>
 
         {/* ======== NEWSLETTER (image_a607e5.png) ======== */}
-        <section className="bg-[#fcfcfc] border border-gray-100 rounded-3xl p-10 md:p-16 text-center">
-          <h2 className="font-heading text-[28px] md:text-[32px] font-bold text-navy mb-4">
+        <section className="bg-surface-alt border border-gray-100 rounded-3xl p-10 md:p-16 text-center">
+          <h2 className="font-heading text-h2 md:text-h1 font-bold text-primary mb-4">
             {newsletterData.title}
           </h2>
-          <p className="text-[#666] text-[16px] mb-10 max-w-xl mx-auto leading-relaxed">
+          <p className="text-content-muted text-base mb-10 max-w-xl mx-auto leading-relaxed">
             {newsletterData.subtitle}
           </p>
           <form className="flex flex-col md:flex-row max-w-2xl mx-auto gap-4" onSubmit={(e) => e.preventDefault()}>
             <input
               type="email"
               placeholder={newsletterData.placeholder}
-              className="flex-1 bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-orange transition-colors text-[15px]"
+              className="flex-1 bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-accent transition-colors text-medium"
               required
             />
             <button
               type="submit"
-              className="bg-orange hover:bg-orange-dark text-white px-10 py-4 rounded-xl font-bold text-[16px] transition-all shadow-lg shadow-orange/20"
+              className="bg-accent hover:bg-accent-dark text-white px-10 py-4 rounded-xl font-bold text-base transition-all shadow-lg shadow-accent/20"
             >
               {newsletterData.buttonText}
             </button>

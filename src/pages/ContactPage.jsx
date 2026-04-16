@@ -27,17 +27,17 @@ export default function ContactPage() {
 
         {/* Colonne Gauche : Infos & Horaires */}
         <div className="w-full md:w-1/3">
-          <h2 className="text-navy font-bold text-[24px] mb-8">{coordonnees.titre}</h2>
+          <h2 className="text-primary font-bold text-[24px] mb-8">{coordonnees.titre}</h2>
 
           <div className="flex flex-col gap-8 mb-12">
             {coordonnees.items.map((item, index) => (
               <div key={index} className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-orange/10 flex items-center justify-center text-orange shrink-0">
+                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent shrink-0">
                   {item.icon}
                 </div>
                 <div>
-                  <p className="font-bold text-navy text-[16px]">{item.type}</p>
-                  <p className="text-[#555] text-[15px]">{item.valeur}</p>
+                  <p className="font-bold text-primary text-base">{item.type}</p>
+                  <p className="text-content-muted text-medium">{item.valeur}</p>
                 </div>
               </div>
             ))}
@@ -45,10 +45,10 @@ export default function ContactPage() {
 
           <hr className="border-gray-100 mb-8" />
 
-          <h3 className="text-navy font-bold text-[20px] mb-6">{horaires.titre}</h3>
+          <h3 className="text-primary font-bold text-[20px] mb-6">{horaires.titre}</h3>
           <ul className="space-y-3">
             {horaires.jours.map((item, index) => (
-              <li key={index} className="text-[15px] text-[#555]">
+              <li key={index} className="text-medium text-content-muted">
                 <span className="font-medium">{item.label} :</span> {item.heures}
               </li>
             ))}

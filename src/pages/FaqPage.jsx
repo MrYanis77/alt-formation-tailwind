@@ -30,13 +30,13 @@ export default function FaqPage() {
             <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'FAQ' }]} />
 
             {/* CONTENU PRINCIPAL FAQ */}
-            <main className="max-w-[1000px] mx-auto py-12 px-6" id="main-content">
+            <main className="max-w-container-lg mx-auto py-12 px-6" id="main-content">
 
                 <div className="text-center mb-12">
-                    <h2 className="font-heading text-xl md:text-2xl font-extrabold text-navy uppercase tracking-wider mb-4">
+                    <h2 className="font-heading text-xl md:text-2xl font-extrabold text-primary uppercase tracking-wider mb-4">
                         Comment pouvons-nous vous aider ?
                     </h2>
-                    <p className="text-muted text-sm leading-relaxed">
+                    <p className="text-content-muted text-sm leading-relaxed">
                         Parcourez nos catégories pour trouver rapidement la réponse que vous cherchez.
                     </p>
                 </div>

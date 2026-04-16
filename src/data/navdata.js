@@ -75,21 +75,20 @@ export const navlinks = [
     href: "/formations",
     submenu: [
       {
-        label: "Présentiel",
-        href: "/alternance",
+        label: "Formation continue",
+        href: "/e-learning",
       },
       {
         label: "E-learning",
-        href: "/e-learning",
         submenu: [
           {
             label: "Formations Numériques",
-            href: "/formations?categorie=numerique",
+            href: "/formations#numerique",
             submenu: getSubMenu('numerique')
           },
           {
             label: "Formations Gestion/RH",
-            href: "/formations?categorie=rh",
+            href: "/formations#gestion-rh",
             submenu: getSubMenu('rh')
           }
         ],

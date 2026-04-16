@@ -17,13 +17,13 @@ export default function  TexteSection ({ data, imageRight = true }) {
 
   return (
     <section className="py-20 bg-white">
-      <div className="max-w-[1200px] mx-auto px-6">
+      <div className="max-w-container-xl mx-auto px-6">
         <div className={`grid grid-cols-1 ${hasImage ? 'lg:grid-cols-2' : ''} gap-16 items-center`}>
           
           {/* Colonne Texte */}
           <div className={`${hasImage && !imageRight ? 'lg:order-last' : ''}`}>
             {/* Titre : Très gras, Navy, taille imposante */}
-            <h2 className="font-heading text-[36px] md:text-[44px] font-black text-navy mb-10 leading-tight tracking-tight">
+            <h2 className="font-heading text-[36px] md:text-[44px] font-black text-primary mb-10 leading-tight tracking-tight">
               {titre}
             </h2>
 
@@ -32,7 +32,7 @@ export default function  TexteSection ({ data, imageRight = true }) {
               {(Array.isArray(contenu) ? contenu : [contenu]).filter(Boolean).map((paragraphe, index) => (
                 <p 
                   key={index} 
-                  className="text-[17px] md:text-[18px] text-muted leading-relaxed font-body"
+                  className="text-[17px] md:text-[18px] text-content-muted leading-relaxed font-body"
                 >
                   {paragraphe}
                 </p>
@@ -43,7 +43,7 @@ export default function  TexteSection ({ data, imageRight = true }) {
           {/* Colonne Image : Arrondis et ombre douce */}
           {hasImage && (
             <div className="relative">
-              <div className="rounded-[24px] overflow-hidden shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
+              <div className="rounded-card overflow-hidden shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
                 <img 
                   src={image} 
                   alt={titre} 

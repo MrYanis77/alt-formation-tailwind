@@ -20,8 +20,8 @@ const CallToAction = ({
 
     return (
         <section className={`relative py-12 px-6 text-center border-t overflow-hidden ${estSombre
-            ? "bg-[#002845] text-white border-navy/10"
-            : "bg-[#F9FAFB] text-navy border-gray-100"
+            ? "bg-primary text-white border-primary/10"
+            : "bg-surface-soft text-primary border-gray-100"
             }`}>
 
             {/* Décoration d'arrière-plan optionnelle pour la version sombre */}
@@ -49,7 +49,7 @@ const CallToAction = ({
                     {/* Bouton Principal (Orange) - Paddings réduits */}
                     <Link
                         to={lienBouton}
-                        className={`w-full sm:w-auto inline-block bg-[#f29242] text-white px-8 py-3 rounded-lg font-heading font-bold transition-all duration-300 shadow-md hover:shadow-orange/20 hover:-translate-y-1 uppercase tracking-widest text-xs ${estSombre ? "hover:bg-white hover:text-[#f29242]" : "hover:bg-[#e67e22]"
+                        className={`w-full sm:w-auto inline-block bg-accent text-white px-8 py-3 rounded-lg font-heading font-bold transition-all duration-300 shadow-md hover:shadow-accent/20 hover:-translate-y-1 uppercase tracking-widest text-xs ${estSombre ? "hover:bg-white hover:text-accent" : "hover:bg-accent-dark"
                             }`}
                     >
                         {texteBouton}
@@ -60,8 +60,8 @@ const CallToAction = ({
                         <Link
                             to={lienBoutonSecondaire}
                             className={`w-full sm:w-auto inline-block px-8 py-3 rounded-lg font-heading font-bold transition-all duration-300 hover:-translate-y-1 uppercase tracking-widest text-xs border-2 ${estSombre
-                                ? "bg-transparent border-white/70 text-white hover:bg-white hover:text-[#002845]"
-                                : "bg-transparent border-navy/20 text-navy hover:border-navy hover:bg-navy hover:text-white"
+                                ? "bg-transparent border-white/70 text-white hover:bg-white hover:text-primary"
+                                : "bg-transparent border-primary/20 text-primary hover:border-primary hover:bg-primary hover:text-white"
                                 }`}
                         >
                             {texteBoutonSecondaire}

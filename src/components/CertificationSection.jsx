@@ -4,18 +4,18 @@ export default function CertificationSection({ data }) {
     if (!data) return null;
 
     return (
-        <section className="py-16 bg-navy relative overflow-hidden border-y-4 border-orange">
+        <section className="py-16 bg-primary relative overflow-hidden border-y-4 border-accent">
             {/* Lueur subtile en fond pour le côté "Premium" */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-full bg-white opacity-5 blur-[100px] pointer-events-none"></div>
 
-            <div className="max-w-[1200px] mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
+            <div className="max-w-container-xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
 
                 {/* Partie Texte */}
                 <div className="text-center md:text-left flex-1">
                     <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-white uppercase tracking-wider mb-4">
                         {data.titre}
                     </h2>
-                    <p className="text-white/80 font-body text-[16px] max-w-2xl leading-relaxed mx-auto md:mx-0">
+                    <p className="text-white/80 font-body text-base max-w-2xl leading-relaxed mx-auto md:mx-0">
                         {data.description}
                     </p>
                 </div>

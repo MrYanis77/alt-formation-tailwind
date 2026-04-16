@@ -3,7 +3,8 @@
 
 export const hero = {
   titre: "Nos Campus",
-  sousTitre: "Votre partenaire formation depuis 2015",
+  sousTitre: "Retrouvez-nous dans toute l'Île-de-France. Des infrastructures modernes au service de votre réussite.",
+  video: "/Assets/video/campus.mp4"
 };
 
 export const campus = [

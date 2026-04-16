@@ -4,12 +4,12 @@ import Hero from '../components/Hero/Hero';
 import CardDesc from '../components/Card/CardDesc';
 import CallToAction from '../components/CallToAction';
 
-// N'oubliez pas d'importer 'questionsOrientees'
+// Importation des données
 import { hero, cpf, opco, poleEmploi, autresSolutions, questionsOrientees } from '../data/financement';
 
 export default function FinancementsPage() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-surface min-h-screen">
       <Hero
         title={hero.titre}
         subtitle={hero.sousTitre}
@@ -19,31 +19,33 @@ export default function FinancementsPage() {
         items={[{ label: 'Accueil', to: '/' }, { label: 'Financements' }]}
       />
 
-      <main className="py-12 px-6 max-w-[1100px] mx-auto flex flex-col gap-10" id="main-content">
+      {/* Utilisation de la variable CSS max-w-container-xl */}
+      <main className="py-20 px-6 max-w-container-xl mx-auto flex flex-col gap-12" id="main-content">
 
-        {/* --- NOUVELLE SECTION : QUESTIONS ORIENTÉES --- */}
-        <section className="bg-slate-50 p-8 rounded-3xl border border-gray-100 shadow-sm">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-[#1E2F47] uppercase tracking-wider mb-3">
+        {/* --- SECTION : QUESTIONS ORIENTÉES --- */}
+        <section className="bg-surface-soft p-8 md:p-12 rounded-section border border-border shadow-sm">
+          <div className="text-center mb-10">
+            <h2 className="font-heading text-h2 md:text-h1 font-extrabold text-primary uppercase tracking-wide mb-4">
               {questionsOrientees.titre}
             </h2>
-            <p className="text-muted text-sm md:text-base max-w-2xl mx-auto">
+            <div className="w-20 h-1.5 bg-accent mx-auto rounded-full mb-6"></div>
+            <p className="text-content-muted text-base max-w-2xl mx-auto">
               {questionsOrientees.description}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {questionsOrientees.items.map((item, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-xl border border-gray-200 hover:border-orange hover:shadow-md transition-all duration-300 group">
-                <div className="flex items-center gap-4 mb-3">
-                  <div className="flex-shrink-0 w-10 h-10 bg-orange/10 text-orange rounded-full flex items-center justify-center font-bold text-lg group-hover:bg-orange group-hover:text-white transition-colors">
+              <div key={idx} className="bg-surface p-8 rounded-card border border-border hover:border-accent hover:shadow-md transition-all duration-300 group">
+                <div className="flex items-center gap-5 mb-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-accent/10 text-accent rounded-full flex items-center justify-center font-bold text-xl group-hover:bg-accent group-hover:text-white transition-colors">
                     ?
                   </div>
-                  <h3 className="font-bold text-[#1E2F47] text-lg group-hover:text-orange transition-colors">
+                  <h3 className="font-heading font-bold text-primary text-xl group-hover:text-accent transition-colors">
                     {item.q}
                   </h3>
                 </div>
-                <p className="text-sm text-slate-600 leading-relaxed md:pl-14">
+                <p className="text-medium text-content-muted leading-relaxed md:pl-17">
                   {item.a}
                 </p>
               </div>
@@ -57,6 +59,7 @@ export default function FinancementsPage() {
           title={cpf.titre}
           description={cpf.description}
           highlight={true}
+          image={cpf.image} // Remplacé dynamiquement !
           columns={[
             { label: cpf.howTo.label, items: cpf.howTo.items },
             { label: cpf.amount.label, text: cpf.amount.description }
@@ -68,6 +71,7 @@ export default function FinancementsPage() {
         <CardDesc
           title={opco.titre}
           description={opco.description}
+          image={opco.image} // Remplacé dynamiquement !
           columns={opco.columns}
         />
 
@@ -75,12 +79,14 @@ export default function FinancementsPage() {
         <CardDesc
           title={poleEmploi.titre}
           description={poleEmploi.description}
+          image={poleEmploi.image} // Remplacé dynamiquement !
           columns={poleEmploi.columns}
         />
 
         {/* SECTION AUTRES */}
         <CardDesc
           title={autresSolutions.titre}
+          image={autresSolutions.image} // Remplacé dynamiquement !
           columns={autresSolutions.columns}
         />
 

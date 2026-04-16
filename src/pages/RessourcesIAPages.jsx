@@ -15,10 +15,10 @@ const Icons = {
 export default function RessourcesIA() {
     const data = dataRessources.ressourcesIA;
 
-    if (!data) return <div className="text-center py-20 font-heading text-navy">Chargement des données...</div>;
+    if (!data) return <div className="text-center py-20 font-heading text-primary">Chargement des données...</div>;
 
     return (
-        <div className="bg-[#F8FAFC] min-h-screen antialiased">
+        <div className="bg-surface-soft min-h-screen antialiased">
 
             {/* HERO SECTION */}
             <Hero
@@ -36,10 +36,10 @@ export default function RessourcesIA() {
             {/* INTRO SECTION */}
             <section className="py-20 bg-white">
                 <div className="max-w-[850px] mx-auto px-6 text-center">
-                    <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-navy mb-6">
+                    <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary mb-6">
                         {data.intro.titre}
                     </h2>
-                    <div className="w-20 h-1.5 bg-orange mx-auto mb-8 rounded-full"></div>
+                    <div className="w-20 h-1.5 bg-accent mx-auto mb-8 rounded-full"></div>
                     <p className="text-lg text-slate-600 leading-relaxed font-body">
                         {data.intro.description}
                     </p>
@@ -47,8 +47,8 @@ export default function RessourcesIA() {
             </section>
 
             {/* CATÉGORIES D'OUTILS */}
-            <section className="py-20 bg-[#F8FAFC]">
-                <div className="max-w-[1200px] mx-auto px-6 space-y-24">
+            <section className="py-20 bg-surface-soft">
+                <div className="max-w-container-xl mx-auto px-6 space-y-24">
                     {data.categories.map((cat, index) => {
                         const IconComponent = Icons[cat.icon] || Icons.Zap;
 
@@ -56,10 +56,10 @@ export default function RessourcesIA() {
                             <div key={index} className="scroll-mt-20">
                                 {/* Header de catégorie */}
                                 <div className="flex items-center gap-5 mb-12 border-b border-slate-200 pb-6">
-                                    <div className="w-14 h-14 rounded-2xl bg-navy text-white flex items-center justify-center shadow-lg transform -rotate-3">
+                                    <div className="w-14 h-14 rounded-2xl bg-primary text-white flex items-center justify-center shadow-lg transform -rotate-3">
                                         <IconComponent />
                                     </div>
-                                    <h3 className="font-heading text-2xl md:text-3xl font-black text-navy uppercase tracking-tighter">
+                                    <h3 className="font-heading text-2xl md:text-3xl font-black text-primary uppercase tracking-tighter">
                                         {cat.titre}
                                     </h3>
                                 </div>
@@ -75,10 +75,17 @@ export default function RessourcesIA() {
                                             className="group flex flex-col bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 relative overflow-hidden"
                                         >
                                             <div className="flex justify-between items-start mb-6">
-                                                <h4 className="font-heading text-xl font-bold text-navy group-hover:text-orange transition-colors duration-300">
-                                                    {outil.nom}
-                                                </h4>
-                                                <span className="shrink-0 inline-block px-3 py-1 bg-navy/5 text-navy text-[10px] font-black uppercase rounded-md border border-navy/10 group-hover:bg-orange group-hover:text-white group-hover:border-orange transition-all duration-300">
+                                                <div className="flex items-center gap-3">
+                                                    {outil.logo && (
+                                                        <div className="flex-shrink-0 w-10 h-10 rounded-xl overflow-hidden border border-slate-100 shadow-sm bg-white flex items-center justify-center">
+                                                            <img src={outil.logo} alt={outil.nom} className="w-7 h-7 object-contain" />
+                                                        </div>
+                                                    )}
+                                                    <h4 className="font-heading text-xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                                                        {outil.nom}
+                                                    </h4>
+                                                </div>
+                                                <span className="shrink-0 inline-block px-3 py-1 bg-primary/5 text-primary text-micro font-black uppercase rounded-md border border-primary/10 group-hover:bg-accent group-hover:text-white group-hover:border-accent transition-all duration-300">
                                                     {outil.tag}
                                                 </span>
                                             </div>
@@ -87,12 +94,12 @@ export default function RessourcesIA() {
                                                 {outil.description}
                                             </p>
 
-                                            <div className="flex items-center gap-2 text-xs font-black text-navy uppercase tracking-widest group-hover:text-orange transition-colors">
+                                            <div className="flex items-center gap-2 text-xs font-black text-primary uppercase tracking-widest group-hover:text-accent transition-colors">
                                                 Explorer l'IA <Icons.ExternalLink />
                                             </div>
 
                                             {/* Accent visuel au survol */}
-                                            <div className="absolute top-0 left-0 w-1 h-0 bg-orange group-hover:h-full transition-all duration-500"></div>
+                                            <div className="absolute top-0 left-0 w-1 h-0 bg-accent group-hover:h-full transition-all duration-500"></div>
                                         </a>
                                     ))}
                                 </div>
@@ -103,19 +110,19 @@ export default function RessourcesIA() {
             </section>
 
             {/* MINI-GLOSSAIRE */}
-            <section className="py-24 bg-navy">
+            <section className="py-24 bg-primary">
                 <div className="max-w-[1100px] mx-auto px-6">
                     <div className="text-center mb-20">
                         <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-tight">
                             {data.glossaire.titre}
                         </h2>
-                        <div className="w-12 h-1 bg-orange mx-auto mt-4"></div>
+                        <div className="w-12 h-1 bg-accent mx-auto mt-4"></div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                         {data.glossaire.termes.map((item, idx) => (
-                            <div key={idx} className="bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:border-orange/50 transition-colors">
-                                <h4 className="font-heading text-lg font-bold text-orange mb-4 italic">
+                            <div key={idx} className="bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:border-accent/50 transition-colors">
+                                <h4 className="font-heading text-lg font-bold text-accent mb-4 italic">
                                     # {item.terme}
                                 </h4>
                                 <p className="text-sm text-slate-300 leading-relaxed font-body">

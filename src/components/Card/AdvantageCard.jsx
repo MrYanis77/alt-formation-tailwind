@@ -13,8 +13,8 @@ export default function AdvantageCard({ label, iconeName, index }) {
 
   return (
     <div className={`
-      ${isNavy ? 'bg-[#1E2F47]' : 'bg-[#D9934A]'} 
-      rounded-[20px] p-8 flex flex-col items-center justify-center text-center 
+      ${isNavy ? 'bg-primary-light' : 'bg-accent-dark'} 
+      rounded-card p-8 flex flex-col items-center justify-center text-center 
       h-full min-h-[200px] transition-transform hover:scale-105 duration-300 shadow-md
     `}>
       <div className="text-white mb-4">

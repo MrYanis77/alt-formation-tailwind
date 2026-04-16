@@ -20,7 +20,7 @@ export default function CardGrid({ services, cols = 3, variant = "default" }) {
           return (
             <article 
               key={service.titre} 
-              className="flex flex-col overflow-hidden rounded-default border border-border bg-white shadow-sm hover:shadow-md transition-all duration-300"
+              className="flex flex-col overflow-hidden rounded-sm border border-border bg-white shadow-sm hover:shadow-md transition-all duration-300"
             >
               {/* Image de la formation */}
               <div className="h-48 overflow-hidden">
@@ -32,21 +32,21 @@ export default function CardGrid({ services, cols = 3, variant = "default" }) {
               </div>
 
               {/* Contenu textuel avec fond conditionnel */}
-              <div className={`p-6 flex flex-col flex-grow ${isNavy ? 'bg-navy text-white' : 'bg-white text-dark'}`}>
+              <div className={`p-6 flex flex-col flex-grow ${isNavy ? 'bg-primary text-white' : 'bg-white text-content-dark'}`}>
                 <h3 className="font-heading font-bold text-[17px] mb-4 leading-tight">
                   {service.titre}
                 </h3>
                 
                 <ul className="flex flex-col gap-2.5 mb-6 flex-grow">
                   {service.items.map((item) => (
-                    <li key={item} className="relative pl-5 text-[13px] leading-snug font-body">
-                      <span className="absolute left-0 text-orange font-bold">•</span>
-                      <span className={isNavy ? 'text-white/80' : 'text-muted'}>{item}</span>
+                    <li key={item} className="relative pl-5 text-small leading-snug font-body">
+                      <span className="absolute left-0 text-accent font-bold">•</span>
+                      <span className={isNavy ? 'text-white/80' : 'text-content-muted'}>{item}</span>
                     </li>
                   ))}
                 </ul>
 
-                <button className="btn-orange self-start text-[13px] py-2 px-6 uppercase tracking-wider">
+                <button className="btn-orange self-start text-small py-2 px-6 uppercase tracking-wider">
                   En savoir plus
                 </button>
               </div>
@@ -60,11 +60,11 @@ export default function CardGrid({ services, cols = 3, variant = "default" }) {
             key={service.titre} 
             className="flex flex-col p-8 border border-border rounded-lg bg-white shadow-sm hover:shadow-md transition-all duration-300 border-t-4 hover:border-t-orange"
           >
-            <h3 className="font-heading font-bold text-[16px] text-navy mb-4 uppercase tracking-wide">
+            <h3 className="font-heading font-bold text-base text-primary mb-4 uppercase tracking-wide">
               {service.titre}
             </h3>
             {service.description && (
-              <p className="text-[13px] text-muted mb-4 leading-relaxed font-body">
+              <p className="text-small text-content-muted mb-4 leading-relaxed font-body">
                 {service.description}
               </p>
             )}
@@ -72,7 +72,7 @@ export default function CardGrid({ services, cols = 3, variant = "default" }) {
               {service.items.map((item) => (
                 <li 
                   key={item} 
-                  className="relative pl-5 text-[13px] text-[#555] leading-relaxed font-body before:content-['•'] before:absolute before:left-0 before:text-orange before:font-bold"
+                  className="relative pl-5 text-small text-content-muted leading-relaxed font-body before:content-['•'] before:absolute before:left-0 before:text-accent before:font-bold"
                 >
                   {item}
                 </li>

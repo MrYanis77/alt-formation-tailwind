@@ -19,8 +19,8 @@ export default function Faq({ data }) {
                     {/* Header de la Catégorie (Optionnel si vous n'avez pas de catégorie) */}
                     {category.categorie && (
                         <div className="flex items-center mb-6">
-                            <div className="w-[5px] h-7 bg-orange rounded-full mr-4"></div>
-                            <h3 className="font-heading text-lg md:text-xl font-[800] text-navy uppercase tracking-tight">
+                            <div className="w-[5px] h-7 bg-accent rounded-full mr-4"></div>
+                            <h3 className="font-heading text-lg md:text-xl font-extrabold text-primary uppercase tracking-tight">
                                 {category.categorie}
                             </h3>
                         </div>
@@ -35,18 +35,18 @@ export default function Faq({ data }) {
                             return (
                                 <div
                                     key={qIndex}
-                                    className={`border rounded-xl transition-all duration-300 ${isOpen ? 'border-orange bg-orange/5 shadow-sm' : 'border-gray-200 bg-white hover:border-gray-300'}`}
+                                    className={`border rounded-xl transition-all duration-300 ${isOpen ? 'border-accent bg-accent/5 shadow-sm' : 'border-gray-200 bg-white hover:border-gray-300'}`}
                                 >
                                     <button
                                         onClick={() => toggleQuestion(questionId)}
                                         className="w-full text-left px-5 py-4 flex items-center justify-between focus:outline-none cursor-pointer"
                                         aria-expanded={isOpen}
                                     >
-                                        <span className={`font-bold text-sm pr-4 ${isOpen ? 'text-orange' : 'text-navy'}`}>
+                                        <span className={`font-bold text-sm pr-4 ${isOpen ? 'text-accent' : 'text-primary'}`}>
                                             {item.q}
                                         </span>
 
-                                        <span className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300 ${isOpen ? 'bg-orange text-white rotate-180' : 'bg-gray-100 text-gray-500'}`}>
+                                        <span className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300 ${isOpen ? 'bg-accent text-white rotate-180' : 'bg-gray-100 text-gray-500'}`}>
                                             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 {isOpen ? (
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />

@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 // Pages
 import HomePage from './pages/HomePage';
 import FormationsPage from './pages/FormationsPage';
+
 import ElearningPage from './pages/ElearningPage';
 import AlternancePage from './pages/AlternancePage';
 import FinancementPage from './pages/FinancementPage';
@@ -29,12 +30,13 @@ import PolitiqueCookies from './pages/PolitiqueCookies';
 import RessourcesIAPages from './pages/RessourcesIAPages';
 import FaqPage from './pages/FaqPage';
 import GestionCarriere from './pages/GestionCarriere';
+import CoachingPage from './pages/CoachingPage';
 
 function ComingSoon({ title }) {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4 font-heading text-navy">
+    <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4 font-heading text-primary">
       <h1 className="text-3xl font-extrabold">{title}</h1>
-      <p className="text-muted font-body">Page en cours de construction — en attente du screenshot.</p>
+      <p className="text-content-muted font-body">Page en cours de construction — en attente du screenshot.</p>
     </div>
   );
 }
@@ -65,6 +67,7 @@ export default function App() {
           <Route path="/accueil" element={<HomePage />} />
 
           <Route path="/formations" element={<FormationsPage />} />
+
           <Route path="/alternance" element={<AlternancePage />} />
           <Route path="/e-learning" element={<ElearningPage />} />
           <Route path="/financements" element={<FinancementPage />} />
@@ -81,6 +84,7 @@ export default function App() {
           <Route path="/campus" element={<CampusPage />} />
           <Route path="/certification" element={<CertificationPage />} />
           <Route path="/gestion-carrieres" element={<GestionCarriere />} />
+          <Route path="/coaching-emploi" element={<CoachingPage />} />
           <Route path="/ressources-ia" element={<RessourcesIAPages />} />
           <Route path="/nous-rejoindre" element={<NousRejoindre />} />
           <Route path="/faq" element={<FaqPage />} />

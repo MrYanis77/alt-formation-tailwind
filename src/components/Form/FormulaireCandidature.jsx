@@ -69,13 +69,13 @@ export default function FormulaireCandidature({ type }) {
 
     return (
         <section className="py-16 px-6 bg-white" id="postuler">
-            <div className="max-w-[800px] mx-auto bg-gray-50 p-8 md:p-10 rounded-2xl border border-gray-100 shadow-sm">
+            <div className="max-w-container-md mx-auto bg-gray-50 p-8 md:p-10 rounded-2xl border border-gray-100 shadow-sm">
 
                 <div className="text-center mb-8">
-                    <h2 className="text-2xl md:text-3xl font-extrabold text-[#1E2F47] uppercase tracking-wider mb-2">
+                    <h2 className="text-2xl md:text-3xl font-extrabold text-primary-light uppercase tracking-wider mb-2">
                         Postuler en tant que {isFormateur ? 'Formateur' : 'Collaborateur'}
                     </h2>
-                    <p className="text-muted text-sm">
+                    <p className="text-content-muted text-sm">
                         Remplissez ce formulaire pour nous envoyer votre profil. Notre équipe vous recontactera rapidement.
                     </p>
                 </div>
@@ -83,45 +83,45 @@ export default function FormulaireCandidature({ type }) {
                 <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label htmlFor="prenom" className="block text-sm font-bold text-navy mb-2">Prénom *</label>
+                            <label htmlFor="prenom" className="block text-sm font-bold text-primary mb-2">Prénom *</label>
                             <input type="text" id="prenom" name="prenom" required value={formData.prenom} onChange={handleChange}
-                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition-all"
+                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all"
                                 placeholder="Jean" />
                         </div>
                         <div>
-                            <label htmlFor="nom" className="block text-sm font-bold text-navy mb-2">Nom *</label>
+                            <label htmlFor="nom" className="block text-sm font-bold text-primary mb-2">Nom *</label>
                             <input type="text" id="nom" name="nom" required value={formData.nom} onChange={handleChange}
-                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition-all"
+                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all"
                                 placeholder="Dupont" />
                         </div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label htmlFor="email" className="block text-sm font-bold text-navy mb-2">Email *</label>
+                            <label htmlFor="email" className="block text-sm font-bold text-primary mb-2">Email *</label>
                             <input type="email" id="email" name="email" required value={formData.email} onChange={handleChange}
-                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition-all"
+                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all"
                                 placeholder="jean.dupont@email.com" />
                         </div>
                         <div>
-                            <label htmlFor="telephone" className="block text-sm font-bold text-navy mb-2">Téléphone *</label>
+                            <label htmlFor="telephone" className="block text-sm font-bold text-primary mb-2">Téléphone *</label>
                             <input type="tel" id="telephone" name="telephone" required value={formData.telephone} onChange={handleChange}
-                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition-all"
+                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all"
                                 placeholder="06 12 34 56 78" />
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor="specificField" className="block text-sm font-bold text-navy mb-2">
+                        <label htmlFor="specificField" className="block text-sm font-bold text-primary mb-2">
                             {isFormateur ? "Domaines d'expertise *" : "Type de contrat recherché *"}
                         </label>
                         {isFormateur ? (
                             <input type="text" id="specificField" name="specificField" required value={formData.specificField} onChange={handleChange}
-                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition-all"
+                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all"
                                 placeholder="Ex: Cybersécurité, Intelligence Artificielle, RH..." />
                         ) : (
                             <select id="specificField" name="specificField" required value={formData.specificField} onChange={handleChange}
-                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition-all bg-white">
+                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all bg-white">
                                 <option value="" disabled>Sélectionnez une option</option>
                                 <option value="cdi">CDI</option>
                                 <option value="cdd">CDD</option>
@@ -132,20 +132,20 @@ export default function FormulaireCandidature({ type }) {
                     </div>
 
                     <div>
-                        <label className="block text-sm font-bold text-navy mb-2">Curriculum Vitae (CV) *</label>
+                        <label className="block text-sm font-bold text-primary mb-2">Curriculum Vitae (CV) *</label>
                         <input type="file" accept=".pdf,.doc,.docx" required
-                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition-all bg-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-orange/10 file:text-orange hover:file:bg-orange/20" />
+                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all bg-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-accent/10 file:text-accent hover:file:bg-accent/20" />
                     </div>
 
                     <div>
-                        <label htmlFor="message" className="block text-sm font-bold text-navy mb-2">Lettre de motivation / Message</label>
+                        <label htmlFor="message" className="block text-sm font-bold text-primary mb-2">Lettre de motivation / Message</label>
                         <textarea id="message" name="message" rows="4" value={formData.message} onChange={handleChange}
-                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition-all resize-none"
+                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all resize-none"
                             placeholder="Expliquez-nous pourquoi vous souhaitez nous rejoindre..."></textarea>
                     </div>
 
                     <div className="pt-4 text-center">
-                        <button type="submit" className="bg-orange text-white px-10 py-4 rounded-lg font-bold uppercase tracking-widest text-sm shadow-md hover:shadow-orange/20 hover:-translate-y-1 transition-all duration-300 w-full md:w-auto">
+                        <button type="submit" className="bg-accent text-white px-10 py-4 rounded-lg font-bold uppercase tracking-widest text-sm shadow-md hover:shadow-accent/20 hover:-translate-y-1 transition-all duration-300 w-full md:w-auto">
                             Envoyer ma candidature
                         </button>
                     </div>

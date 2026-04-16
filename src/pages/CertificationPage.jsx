@@ -38,15 +38,15 @@ export default function CertificationPage() {
       />
 
       <section className="pb-20 px-6">
-        <div className="max-w-[1200px] mx-auto">
+        <div className="max-w-container-xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* On utilise filteredCertifs au lieu de certifications */}
             {filteredCertifs.map((certif) => (
               <CardFormation
                 key={certif.id}
                 title={certif.nom}
-                image="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80"
-                href={certif.lien}
+                image={certif.imageUrl || "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80"}
+                href={certif.lienFranceCompetence}
                 points={[
                   `Code RNCP : ${certif.rncp}`,
                   `Niveau : ${certif.niveau}`,
