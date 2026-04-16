@@ -70,7 +70,7 @@ export const services = [
   {
     titre: 'Formations certifiantes',
     href: '/formations',
-    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800',
+    image: '/Assets/images/certification.jpg',
     items: [
       'Titres RNCP reconnus par l\'État',
       'Parcours personnalisés selon vos objectifs',
@@ -81,7 +81,7 @@ export const services = [
   {
     titre: 'Alternance & emploi',
     href: '/alternance',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800',
+    image: '/Assets/images/emploi.jpg',
     items: [
       'Réseau d\'entreprises partenaires actif',
       'Aide au placement en entreprise',
@@ -92,7 +92,7 @@ export const services = [
   {
     titre: 'Solutions entreprises',
     href: '/entreprises',
-    image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800',
+    image: '/Assets/images/entreprise.jpg',
     items: [
       'Formation sur-mesure pour vos équipes',
       'Audit de compétences et accompagnement RH',
@@ -191,7 +191,7 @@ export const certifications = {
   badges: [
     {
       nom: "Qualiopi",
-      image: "Assets/images/qualiopi.png"
+      image: "/Assets/images/qualiopi.png"
     }
     // Vous pouvez ajouter d'autres badges ici (RNCP, etc.)
   ]

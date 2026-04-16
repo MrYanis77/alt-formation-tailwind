@@ -1,9 +1,9 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import formationsData from '../data/json/formation.json';
 import { formationsArray } from '../data/navdata'; // Importation centralisée avec les catégories sécurisées
 import { allFormations } from '../data/index'; // Importation des 4 formations originelles spécifiques
 import { imageMap } from '../data/formations';
+import { certifications } from '../data/certification';
 
 // Importation des composants standards
 import Hero from '../components/Hero/Hero';
@@ -20,6 +20,10 @@ export default function FormationDetail() {
   // 1. Cherche dans les 4 pages métiers "Premium" (via FormationsPage) 
   // 2. Ou sinon, cherche dans le JSON (via le Mega Menu)
   const data = allFormations[id] || formationsArray.find(f => f.id === id);
+
+  // Chercher la certification correspondante
+  const certif = certifications.find(c => c.href === `/formation/${id}`);
+  const franceCompetenceLink = certif?.lienFranceCompetence;
 
   // 1. Validation & Sécurité
   if (!data) {
@@ -122,16 +126,25 @@ export default function FormationDetail() {
 
       {/* 5. PROGRAMME */}
       {data.programme && (
-        <section className="py-[70px] px-6 bg-white">
-          <div className="max-w-[900px] mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-primary-light text-2xl md:text-h1 font-extrabold mb-3 uppercase tracking-wider">
+        <section className="py-20 px-6 bg-surface-soft">
+          <div className="max-w-container-lg mx-auto">
+            <div className="text-center mb-14">
+              <span className="inline-block text-accent font-bold text-xs uppercase tracking-[0.2em] mb-3">Parcours pédagogique</span>
+              <h2 className="text-primary text-2xl md:text-h1 font-extrabold uppercase tracking-wider">
                 Programme de la formation
               </h2>
+              {data.programme.dureeTotale && (
+                <p className="text-content-muted text-sm mt-3 max-w-xl mx-auto">{data.programme.dureeTotale}</p>
+              )}
             </div>
-            <div className="space-y-4">
+            <div className="max-w-[700px] mx-auto">
               {data.programme.modules?.map((module, idx) => (
-                <CardModule key={module.id || idx} module={module} />
+                <CardModule
+                  key={module.id || idx}
+                  module={module}
+                  index={idx}
+                  isLast={idx === data.programme.modules.length - 1}
+                />
               ))}
             </div>
           </div>
@@ -240,6 +253,11 @@ export default function FormationDetail() {
                 <Link to="/contact" className="btn-orange px-10 py-4 text-sm shadow-xl hover:-translate-y-1 transition-all no-underline inline-block">
                   {data.ctaFinal.boutons[0].label}
                 </Link>
+              )}
+              {franceCompetenceLink && (
+                <a href={franceCompetenceLink} target="_blank" rel="noopener noreferrer" className="bg-white text-primary px-10 py-4 rounded-sm font-bold text-sm hover:bg-gray-100 transition-all border-2 border-primary no-underline inline-block">
+                  Fiche France Compétences
+                </a>
               )}
               <Link to="/formations" className="bg-white text-primary px-10 py-4 rounded-sm font-bold text-sm hover:bg-gray-100 transition-all no-underline inline-block">
                 Toutes les formations

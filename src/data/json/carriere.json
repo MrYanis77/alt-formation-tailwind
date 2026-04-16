@@ -3,7 +3,7 @@
         "hero": {
             "titre": "Gestion de Carrière & Bilan",
             "sousTitre": "Faites le point sur vos compétences et définissez sereinement votre avenir professionnel avec notre équipe.",
-            "video": "/Assets/video/contact.mp4"
+            "video": "/Assets/video/carriere.mp4"
         },
         "titre": "Gestion de Carrière",
         "url": "https://alt-formations.com/gestion-de-carriere/",
@@ -81,25 +81,25 @@
         },
         "testsExterieurs": {
             "titre": "Tests & Outils en ligne gratuits",
-            "intro": "En complément de nos accompagnements, voici une sélection de tests extérieurs fiables pour débuter votre réflexion professionnelle.",
+            "intro": "En complément de nos accompagnements, voici une sélection de tests extérieurs officiels et fiables pour débuter votre réflexion professionnelle.",
             "tests": [
                 {
                     "nom": "Test de Personnalité (MBTI)",
-                    "description": "Le fameux test '16Personalities' pour comprendre votre manière d'interagir avec le monde et vos préférences en milieu de travail.",
+                    "description": "Le célèbre test gratuit '16Personalities' pour comprendre votre mode de fonctionnement, vos forces et vos préférences en milieu professionnel.",
                     "lien": "https://www.16personalities.com/fr/test-de-personnalite",
                     "labelLien": "Passer le test (10 min)"
                 },
                 {
-                    "nom": "Évaluation Soft Skills (APEC)",
-                    "description": "Un outil de l'APEC permettant d'évaluer vos atouts comportementaux et relationnels très prisés par les recruteurs aujourd'hui.",
-                    "lien": "https://www.apec.fr/candidat/faire-le-point/evaluez-vos-atouts-et-vos-soft-skills.html",
-                    "labelLien": "Faire l'évaluation"
+                    "nom": "L'Emploi Store (France Travail)",
+                    "description": "Une sélection de tests et d'applications officiels gratuits pour évaluer vos compétences, explorer des métiers et affiner votre projet d'évolution.",
+                    "lien": "https://www.emploi-store.fr/portail/centresdinteret/choisirUnMetier",
+                    "labelLien": "Découvrir les outils"
                 },
                 {
-                    "nom": "Test d'Intérêts Professionnels",
-                    "description": "Le test d'orientation de l'Onisep pour identifier les secteurs d'activité qui correspondent réellement à ce que vous aimez faire.",
-                    "lien": "https://www.onisep.fr/Decouvrir-les-metiers/Test-d-orientation",
-                    "labelLien": "Découvrir ses intérêts"
+                    "nom": "Diagoriente (Plateforme d'État)",
+                    "description": "Un service public soutenu par France Travail pour identifier rapidement vos compétences transversales et explorer des pistes de reconversion adaptées.",
+                    "lien": "https://diagoriente.beta.gouv.fr/",
+                    "labelLien": "Évaluer mes compétences"
                 }
             ]
         },

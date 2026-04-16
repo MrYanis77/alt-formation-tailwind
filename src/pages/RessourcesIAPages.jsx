@@ -75,9 +75,16 @@ export default function RessourcesIA() {
                                             className="group flex flex-col bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 relative overflow-hidden"
                                         >
                                             <div className="flex justify-between items-start mb-6">
-                                                <h4 className="font-heading text-xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
-                                                    {outil.nom}
-                                                </h4>
+                                                <div className="flex items-center gap-3">
+                                                    {outil.logo && (
+                                                        <div className="flex-shrink-0 w-10 h-10 rounded-xl overflow-hidden border border-slate-100 shadow-sm bg-white flex items-center justify-center">
+                                                            <img src={outil.logo} alt={outil.nom} className="w-7 h-7 object-contain" />
+                                                        </div>
+                                                    )}
+                                                    <h4 className="font-heading text-xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                                                        {outil.nom}
+                                                    </h4>
+                                                </div>
                                                 <span className="shrink-0 inline-block px-3 py-1 bg-primary/5 text-primary text-micro font-black uppercase rounded-md border border-primary/10 group-hover:bg-accent group-hover:text-white group-hover:border-accent transition-all duration-300">
                                                     {outil.tag}
                                                 </span>

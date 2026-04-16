@@ -45,8 +45,8 @@ export default function CertificationPage() {
               <CardFormation
                 key={certif.id}
                 title={certif.nom}
-                image="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80"
-                href={certif.lien}
+                image={certif.imageUrl || "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80"}
+                href={certif.lienFranceCompetence}
                 points={[
                   `Code RNCP : ${certif.rncp}`,
                   `Niveau : ${certif.niveau}`,

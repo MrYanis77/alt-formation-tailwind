@@ -10,7 +10,8 @@ export default function CardFormation({
     "Plateforme e-learning accessible 24/7"
   ],
   variant = "white",
-  href = "#" // Nouvelle prop pour le lien
+  href = "#", // Nouvelle prop pour le lien
+  hideButton = false // Masquer le bouton (utilisé pour les campus cards)
 }) {
   const isNavy = variant === "navy";
 
@@ -53,12 +54,14 @@ export default function CardFormation({
         </ul>
 
         {/* Bouton transformé en lien interne React */}
-        <Link
-          to={href}
-          className="btn-orange self-start text-sm py-2.5 px-6 no-underline inline-block transition-transform duration-300 hover:scale-105"
-        >
-          En savoir plus
-        </Link>
+        {!hideButton && (
+          <Link
+            to={href}
+            className="btn-orange self-start text-sm py-2.5 px-6 no-underline inline-block transition-transform duration-300 hover:scale-105"
+          >
+            En savoir plus
+          </Link>
+        )}
       </div>
     </div>
   );

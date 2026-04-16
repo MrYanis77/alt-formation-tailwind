@@ -3,30 +3,25 @@
  *
  * Regroupe toutes les solutions de financement disponibles,
  * organisées par dispositif :
- *   - CPF (Compte Personnel de Formation)
- *   - OPCO (Opérateurs de Compétences)
- *   - Pôle Emploi / France Travail
- *   - Autres solutions
+ * - CPF (Compte Personnel de Formation)
+ * - OPCO (Opérateurs de Compétences)
+ * - Pôle Emploi / France Travail
+ * - Autres solutions
  */
-
-/**
- * Dispositif CPF
- * Structuré en 2 colonnes : comment ça marche + montant disponible
- * @type {Object}
- */
-
 
 export const hero = {
   titre: "Financements",
   sousTitre: "Plusieurs solutions de financement pour rendre votre formation accessible",
-  video: "public/Assets/video/financement.mp4",
+  video: "/Assets/video/financement.mp4",
 };
 
+/**
+ * Dispositif CPF
+ */
 export const cpf = {
   titre: 'Compte Personnel de Formation (CPF)',
-  description:
-    'Utilisez vos droits à la formation accumulés tout au long de votre carrière. Toutes nos formations certifiantes sont éligibles au CPF.',
-  /** Colonne gauche */
+  description: 'Utilisez vos droits à la formation accumulés tout au long de votre carrière. Toutes nos formations certifiantes sont éligibles au CPF.',
+  image: '/Assets/images/Logo/cpf.png', // <-- Ajout de l'image ici
   howTo: {
     label: 'Comment ça marche ?',
     items: [
@@ -36,11 +31,9 @@ export const cpf = {
       'Nous gérons le reste avec votre compte CPF',
     ],
   },
-  /** Colonne droite */
   amount: {
     label: 'Montant disponible',
-    description:
-      "Chaque année, vous accumulez jusqu'à 500€ (800€ pour les moins qualifiés), dans la limite de 5000€",
+    description: "Chaque année, vous accumulez jusqu'à 500€ (800€ pour les moins qualifiés), dans la limite de 5000€",
     cta: 'Vérifier mon solde CPF',
     ctaHref: 'https://www.moncompteformation.gouv.fr',
   },
@@ -48,13 +41,11 @@ export const cpf = {
 
 /**
  * Dispositif OPCO
- * Structuré en 3 colonnes : salariés / entreprises / accompagnement
- * @type {Object}
  */
 export const opco = {
   titre: 'Financement OPCO',
-  description:
-    'Les Opérateurs de Compétences (OPCO) financent les formations des salariés et des entreprises.',
+  description: 'Les Opérateurs de Compétences (OPCO) financent les formations des salariés et des entreprises.',
+  image: '/Assets/images/Logo/opco.png', // <-- Ajout de l'image ici
   columns: [
     {
       label: 'Pour les salariés',
@@ -82,12 +73,11 @@ export const opco = {
 
 /**
  * Dispositif Pôle Emploi / France Travail
- * Structuré en 2 colonnes : AIF + AFPR/POE
- * @type {Object}
  */
 export const poleEmploi = {
   titre: 'Pôle Emploi (France Travail)',
   description: 'Plusieurs dispositifs sont disponibles pour les demandeurs emploi.',
+  image: '/Assets/images/Logo/france-travail.jpg', // <-- Ajout de l'image ici
   columns: [
     {
       label: 'AIF - Aide Individuelle à la Formation',
@@ -102,8 +92,6 @@ export const poleEmploi = {
 
 /**
  * Autres solutions de financement
- * Structuré en 3 colonnes
- * @type {Object}
  */
 export const autresSolutions = {
   titre: 'Autres solutions',

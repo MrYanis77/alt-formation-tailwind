@@ -20,7 +20,9 @@ export const certifications = [
     rncp: "37674",
     niveau: "5",
     category: "Digital & Web",
-    lien: "https://www.francecompetences.fr/recherche/rncp/37674/"
+    href: "/formation/formations-developpeur-web-mobile",
+    lienFranceCompetence: "https://www.francecompetences.fr/recherche/rncp/37674/",
+    imageUrl: "/Assets/images/concepteur_web.jpg"
   },
   {
     id: 2,
@@ -28,7 +30,9 @@ export const certifications = [
     rncp: "37625",
     niveau: "6",
     category: "Digital & Web",
-    lien: "https://www.francecompetences.fr/recherche/rncp/37625/"
+    href: "/formation/formations-concepteur-developpeur-dapplications",
+    lienFranceCompetence: "https://www.francecompetences.fr/recherche/rncp/37625/",
+    imageUrl: "/Assets/images/concepteur_app.jpg"
   },
   {
     id: 3,
@@ -36,7 +40,9 @@ export const certifications = [
     rncp: "37682",
     niveau: "5",
     category: "Systèmes & Réseaux",
-    lien: "https://www.francecompetences.fr/recherche/rncp/37682/"
+    href: "/formation/formations-technicien-superieur-systemes-et-reseaux",
+    lienFranceCompetence: "https://www.francecompetences.fr/recherche/rncp/37682/",
+    imageUrl: "/Assets/images/Terchnicien_reseau.jpg"
   },
   {
     id: 4,
@@ -44,7 +50,9 @@ export const certifications = [
     rncp: "37682", // Note: vérifiez si le code RNCP est identique au id:3 par erreur dans vos data
     niveau: "6",
     category: "Digital & Web",
-    lien: "https://www.francecompetences.fr/recherche/rncp/37682/"
+    href: "/formation/formations-community-manager",
+    lienFranceCompetence: "https://www.francecompetences.fr/recherche/rncp/37682/",
+    imageUrl: "/Assets/images/designer_app_mobile.jpg"
   },
   {
     id: 5,
@@ -52,7 +60,9 @@ export const certifications = [
     rncp: "36612",
     niveau: "5",
     category: "RH & Gestion",
-    lien: "https://www.francecompetences.fr/recherche/rncp/36612/"
+    href: "/formation/formations-assistante-ressources-humaines",
+    lienFranceCompetence: "https://www.francecompetences.fr/recherche/rncp/36612/",
+    imageUrl: "/Assets/images/responsable_rh.jpg"
   },
   {
     id: 6,
@@ -60,7 +70,9 @@ export const certifications = [
     rncp: "37948",
     niveau: "5",
     category: "RH & Gestion",
-    lien: "https://www.francecompetences.fr/recherche/rncp/37948/"
+    href: "/formation/gestionnaire-comptable-fiscal",
+    lienFranceCompetence: "https://www.francecompetences.fr/recherche/rncp/37948/",
+    imageUrl: "/Assets/images/comptable_1.jpg"
   },
   {
     id: 7,
@@ -68,7 +80,9 @@ export const certifications = [
     rncp: "36434",
     niveau: "4",
     category: "RH & Gestion",
-    lien: "https://www.francecompetences.fr/recherche/rncp/36434/"
+    href: "/formation/formations-secretaire-comptable",
+    lienFranceCompetence: "https://www.francecompetences.fr/recherche/rncp/36434/",
+    imageUrl: "/Assets/images/secretaire_1.jpg"
   },
   {
     id: 9,
@@ -76,7 +90,9 @@ export const certifications = [
     rncp: "35304",
     niveau: "4",
     category: "Relation Client",
-    lien: "https://www.francecompetences.fr/recherche/rncp/35304/"
+    href: "/formation/formations-conseillerere-relation-client-a-distance",
+    lienFranceCompetence: "https://www.francecompetences.fr/recherche/rncp/35304/",
+    imageUrl: "/Assets/images/secretaire_2.jpg"
   },
   {
     id: 10,
@@ -84,6 +100,8 @@ export const certifications = [
     rncp: "36061",
     niveau: "6",
     category: "Systèmes & Réseaux",
-    lien: "https://www.francecompetences.fr/recherche/rncp/36061/"
+    href: "/formation/administrateursysteme-devops",
+    lienFranceCompetence: "https://www.francecompetences.fr/recherche/rncp/36061/",
+    imageUrl: "/Assets/images/devops.jpg"
   }
 ];

@@ -17,18 +17,24 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-[100] w-full bg-primary px-6 lg:px-10 flex items-center justify-between h-[70px]">
 
-      {/* Logo - Taille réduite */}
+      {/* Logo - Design épuré, sans fond, avec ombre blanche */}
       <Link to="/" className="flex-shrink-0 no-underline flex items-center gap-3 group">
+
+        {/* L'image n'a plus de fond (bg), juste l'ombre blanche (drop-shadow) */}
         <img
-          src="/Assets/logo-altrh.png"
+          src="/Assets/logo.png"
           alt="Logo ALT Formations"
-          // Hauteur réduite (h-8 sur mobile, h-10 sur desktop)
-          className="h-8 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105 [filter:drop-shadow(0_0_8px_rgba(255,255,255,0.8))]"
-        />
-        {/* Texte réduit (text-base md:text-lg) */}
-        <span className="text-white font-heading font-extrabold text-base md:text-lg tracking-widest uppercase drop-shadow-md transition-colors duration-300 group-hover:text-accent">
-          ALT RH & FORMATIONS
-        </span>
+          className="h-10 md:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105 mix-blend-lighten" />
+        {/* Texte restructuré sur deux niveaux (avec une très légère ombre pour la lisibilité) */}
+        <div className="flex flex-col justify-center drop-shadow-[0_0_4px_rgba(255,255,255,0.3)]">
+          <span className="text-white font-heading font-extrabold text-base md:text-lg leading-none tracking-wide transition-colors duration-300 group-hover:text-accent">
+            ALT <span className="text-accent group-hover:text-white transition-colors duration-300">RH</span>
+          </span>
+          <span className="text-white/70 font-body text-micro uppercase tracking-[0.2em] mt-1">
+            & Formations
+          </span>
+        </div>
+
       </Link>
 
       {/* Menu Desktop */}

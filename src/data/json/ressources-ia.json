@@ -19,19 +19,22 @@
                         "nom": "Claude 3.7 / 4 (Anthropic)",
                         "description": "Le leader actuel pour la rédaction naturelle, le codage complexe et le raisonnement nuancé sans 'hallucinations'.",
                         "tag": "Meilleur Raisonnement",
-                        "lien": "https://claude.ai/"
+                        "lien": "https://claude.ai/",
+                        "logo": "https://www.google.com/s2/favicons?domain=claude.ai&sz=256"
                     },
                     {
                         "nom": "Gemini 3 Flash (Google)",
                         "description": "L'IA la plus rapide et polyvalente, capable d'analyser des heures de vidéo ou des milliers de lignes de code d'un coup.",
                         "tag": "Multimodalité",
-                        "lien": "https://gemini.google.com/"
+                        "lien": "https://gemini.google.com/",
+                        "logo": "https://www.google.com/s2/favicons?domain=gemini.google.com&sz=256"
                     },
                     {
                         "nom": "GPT-o1 / GPT-5 (OpenAI)",
                         "description": "L'expert pour résoudre des problèmes mathématiques et logiques nécessitant un temps de réflexion approfondi.",
                         "tag": "Logique Pure",
-                        "lien": "https://chat.openai.com/"
+                        "lien": "https://chat.openai.com/",
+                        "logo": "https://www.google.com/s2/favicons?domain=chatgpt.com&sz=256"
                     }
                 ]
             },
@@ -44,19 +47,22 @@
                         "nom": "Midjourney v7",
                         "description": "Toujours la référence pour la qualité artistique et le photoréalisme chirurgical des images.",
                         "tag": "Premium Design",
-                        "lien": "https://www.midjourney.com/"
+                        "lien": "https://www.midjourney.com/",
+                        "logo": "https://www.google.com/s2/favicons?domain=midjourney.com&sz=256"
                     },
                     {
                         "nom": "Sora / Veo 2",
                         "description": "Génération de vidéos ultra-réalistes jusqu'à 2 minutes à partir d'un simple texte. Révolutionnaire pour le marketing.",
                         "tag": "Vidéo IA",
-                        "lien": "https://openai.com/sora"
+                        "lien": "https://openai.com/sora",
+                        "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=256"
                     },
                     {
                         "nom": "Canva Magic Studio",
                         "description": "La meilleure intégration d'IA pour les non-designers : retouche, extension d'image et mise en page automatique.",
                         "tag": "Accessible",
-                        "lien": "https://www.canva.com/"
+                        "lien": "https://www.canva.com/",
+                        "logo": "https://www.google.com/s2/favicons?domain=canva.com&sz=256"
                     }
                 ]
             },
@@ -69,19 +75,22 @@
                         "nom": "Perplexity AI",
                         "description": "Le remplaçant de Google Search. Une IA qui cite ses sources en temps réel pour une recherche fiable.",
                         "tag": "Recherche",
-                        "lien": "https://www.perplexity.ai/"
+                        "lien": "https://www.perplexity.ai/",
+                        "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=256"
                     },
                     {
                         "nom": "Microsoft Copilot",
                         "description": "L'intégration parfaite dans Excel, Word et Outlook pour automatiser vos rapports et emails.",
                         "tag": "Bureautique",
-                        "lien": "https://copilot.microsoft.com/"
+                        "lien": "https://copilot.microsoft.com/",
+                        "logo": "https://www.google.com/s2/favicons?domain=copilot.microsoft.com&sz=256"
                     },
                     {
                         "nom": "Cursor",
                         "description": "L'éditeur de code qui écrit des applications entières à votre place. Indispensable pour les développeurs.",
                         "tag": "Code",
-                        "lien": "https://cursor.com/"
+                        "lien": "https://cursor.com/",
+                        "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=256"
                     }
                 ]
             }

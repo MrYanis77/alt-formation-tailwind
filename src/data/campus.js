@@ -3,14 +3,15 @@
 
 export const hero = {
   titre: "Nos Campus",
-  sousTitre: "Votre partenaire formation depuis 2015",
+  sousTitre: "Retrouvez-nous dans toute l'Île-de-France. Des infrastructures modernes au service de votre réussite.",
+  video: "/Assets/video/campus.mp4"
 };
 
 export const campus = [
   {
     id: "montevrain",
     nom: "Montévrain",
-    adresse: "77144 Montévrain",
+    adresse: "Regus Neos Building, 77144 Montévrain",
     mail: "formations@alt-rh.com", // <-- Numéro ajouté
     image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800",
     mapLink: "https://maps.app.goo.gl/2BL4KnpHoajwjoNK6"
@@ -18,7 +19,7 @@ export const campus = [
   {
     id: "noisiel",
     nom: "Noisiel",
-    adresse: "77186 Noisiel",
+    adresse: "6 Rue de la Mare Blanche, 77186 Noisiel",
     mail: "formations@alt-rh.com", // <-- Numéro ajouté
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800",
     mapLink: "https://maps.app.goo.gl/BMGk5inFgGBsmPfR9"
@@ -26,7 +27,7 @@ export const campus = [
   {
     id: "trappes",
     nom: "Trappes",
-    adresse: "78190 Trappes",
+    adresse: "5 Av. Pavlov, 78190 Trappes",
     mail: "formations@alt-rh.com", // <-- Numéro ajouté
     image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=800",
     mapLink: "https://maps.app.goo.gl/vucXNTwuTX8imwZW6"
@@ -34,7 +35,7 @@ export const campus = [
   {
     id: "cergy",
     nom: "Cergy",
-    adresse: "95000 Cergy-Pontoise",
+    adresse: "20 Rue Lavoisier, 95300 Pontoise",
     mail: "formations@alt-rh.com", // <-- Numéro ajouté
     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800",
     mapLink: "https://maps.app.goo.gl/Hv1W1LhuEoZdSPYA6"
@@ -42,7 +43,7 @@ export const campus = [
   {
     id: "asnieres",
     nom: "Asnières",
-    adresse: "92600 Asnières-sur-Seine",
+    adresse: "25 Rue des Bas, 92600 Asnières-sur-Seine",
     mail: "formations@alt-rh.com", // <-- Numéro ajouté
     image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=800",
     mapLink: "https://maps.app.goo.gl/Aqqjh2qA8h6Vtpju6"
@@ -50,7 +51,7 @@ export const campus = [
   {
     id: "créteil",
     nom: "Créteil",
-    adresse: "94000 Créteil",
+    adresse: "70 Av. du Général de Gaulle, 94000 Créteil",
     mail: "formations@alt-rh.com", // <-- Numéro ajouté
     image: "https://images.unsplash.com/photo-1606836576983-8b458e75221d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     mapLink: "https://maps.app.goo.gl/UKee2Ddq3YoHxQKu8"
@@ -58,7 +59,7 @@ export const campus = [
   {
     id: "melun",
     nom: "Melun",
-    adresse: "77000 Melun",
+    adresse: "11 Rue Benjamin Franklin, 77000 La Rochette",
     mail: "formations@alt-rh.com", // <-- Numéro ajouté
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800",
     mapLink: "https://maps.app.goo.gl/KYYBpf2ydsfFRRYS9"
@@ -66,7 +67,7 @@ export const campus = [
   {
     id: "paris-la-defense",
     nom: "Paris La Défense",
-    adresse: "Quartier d'affaires - Puteaux",
+    adresse: "Tour Égée, 9/11 allée de l'arche, 92400 Courbevoie",
     mail: "formations@alt-rh.com", // <-- Numéro ajouté
     image: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&q=80&w=800",
     mapLink: "https://maps.app.goo.gl/k9roCdPP5f8ZapFx8"

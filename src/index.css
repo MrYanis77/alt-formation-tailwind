@@ -56,7 +56,7 @@
      - rounded-btn, rounded-card, rounded-section
      Oubliez les "rounded-[24px]" ou "rounded-[32px] !
   */
-  --radius-sm: 4px;
+  --radius-sm: 6px;
   /* Arrondis minimes (badges, petits boutons) */
   --radius-btn: 8px;
   /* Pour les boutons standard supplémentaires */
