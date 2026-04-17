@@ -3,113 +3,58 @@
 @theme {
   /* ========================================================
      🎨 1. COULEURS SÉMANTIQUES (Ne plus utiliser d'hex en dur !)
-     ========================================================
-     Comment les utiliser :
-     - bg-primary, text-primary, border-primary
-     - hover:bg-primary-light, text-accent-dark, etc.
-  */
-
-  /* L'Identité Visuelle Principale (Bleus) */
+     ======================================================== */
   --color-primary: #002845;
-  /* Remplace les rgb(0,40,69) et #002D4C */
   --color-primary-light: #1E2F47;
-  /* Variante légèrement plus claire pour certaines sections */
   --color-primary-alt: #2b6cb0;
-  /* Variante historique navy-light */
-
-  /* L'Axe d'Interaction et d'Attention (Oranges) */
   --color-accent: #F39233;
-  /* Remplace vos multiples oranges #F39233 et #F29244 */
   --color-accent-dark: #cf5f1a;
-  /* Utilisé pour les hovers des boutons oranges */
-
-  /* Les Surfaces et Fonds de Page (Gris/Bleutés très clairs) */
   --color-surface: #ffffff;
   --color-surface-soft: #F8FAFC;
-  /* Remplace [bg-gray-50], [f5f7fa], [bg-slate-50] */
   --color-surface-alt: #fcfcfc;
-  /* Variante pour des cartes ou footers très discrets */
   --color-footer: #363131;
-  /* Fond de pied de page */
-
-  /* Les Textes et Typographies */
   --color-content: #333333;
-  /* Texte de contenu standard */
   --color-content-dark: #1a1a1a;
-  /* Titres noirs très contrastés */
   --color-content-muted: #666666;
-  /* Textes secondaires, remplace #aaa, #555 */
-
-  /* Utilitaires Supplémentaires */
   --color-success: #4ADE80;
-  /* Remplace les verts en dur de validation */
   --color-star: #fbbc04;
-  /* Remplace les couleurs d'étoiles Google */
   --color-border: #e5e5e5;
-  /* Couleur des bordures grises discrètes */
-
 
   /* ========================================================
      📐 2. ARRONDIS ET BORDURES (BORDER-RADIUS)
-     ========================================================
-     Comment les utiliser :
-     - rounded-btn, rounded-card, rounded-section
-     Oubliez les "rounded-[24px]" ou "rounded-[32px] !
-  */
+     ======================================================== */
   --radius-sm: 6px;
-  /* Arrondis minimes (badges, petits boutons) */
   --radius-btn: 8px;
-  /* Pour les boutons standard supplémentaires */
   --radius-card: 24px;
-  /* Utilisé massivement pour vos cartes (ex: rounded-[24px], rounded-[20px] unifiés) */
   --radius-section: 32px;
-  /* Pour des conteneurs complets / blocs FAQ */
   --radius-hero: 40px;
-  /* Pour les boîtes massives ou hero headers (ex: Mentions légales) */
-
 
   /* ========================================================
      🅰️ 3. TYPOGRAPHIES (POLICES & TAILLES & GRAISSES)
-     ========================================================
-     Comment les utiliser :
-     - font-heading, font-body
-     - text-micro, text-tiny, text-small
-  */
-
-  /* Familles de Polices (Déjà importées via index.html) */
+     ======================================================== */
   --font-heading: "Montserrat", sans-serif;
   --font-body: "Open Sans", sans-serif;
 
-  /* Constantes de texte pour remplacer les text-[10px], text-[13px]... */
-  /* Rappel : tailwind fournit déjà text-xs (12px), text-sm (14px), text-base (16px) */
   --text-micro: 10px;
   --text-tiny: 11px;
   --text-small: 13px;
   --text-medium: 15px;
-  /* Pour quelques éléments de menus ou listes (#15px) */
-  --text-h1: 32px;
-  /* Pour unifier vos md:text-[32px] */
-  --text-h2: 28px;
-  /* Pour unifier vos md:text-[28px] */
 
+  /* NOUVEAU : Tailles spécifiques pour la Navbar */
+  --text-nav: 15px;
+  --text-nav-lg: 17px;
+
+  --text-h1: 32px;
+  --text-h2: 28px;
 
   /* ========================================================
      📏 4. CONTENEURS ET ESPACEMENTS MAXIMAUX
-     ========================================================
-     Comment les utiliser :
-     - max-w-container-lg, w-container-md, etc.
-     (Ces variables s'injectent dans les largeurs et marges)
-  */
+     ======================================================== */
   --spacing-container-sm: 550px;
-  /* Ex: formulaires de connexion / modales */
   --spacing-container-md: 800px;
-  /* Ex: Pages politiques, Règlements (800 à 900px unifiés) */
   --spacing-container-lg: 1000px;
-  /* Ex: Nous rejoindre, Homepage sections */
   --spacing-container-xl: 1200px;
-  /* Ex: Ressources IA, Grilles Campus */
   --spacing-container-2xl: 1400px;
-  /* Layouts massifs */
 }
 
 /* ==========================================================
@@ -130,8 +75,6 @@
 }
 
 @layer components {
-
-  /* Bouton réutilisable : il tire parti de nos nouvelles couleurs ! */
   .btn-orange {
     @apply bg-accent hover:bg-accent-dark text-white px-5 py-2 rounded-sm font-extrabold transition-all duration-200 cursor-pointer border-none;
   }
