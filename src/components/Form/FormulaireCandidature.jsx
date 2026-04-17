@@ -140,7 +140,7 @@ export default function FormulaireCandidature({ type }) {
 
     return (
         <section className="py-16 px-6 bg-white" id="postuler">
-            <div className="max-w-container-md mx-auto bg-gray-50 p-8 md:p-10 rounded-2xl border border-gray-100 shadow-sm">
+            <div className="max-w-container-2xl mx-auto bg-gray-50 p-8 md:p-12 rounded-section border border-border shadow-sm">
 
                 <div className="text-center mb-8">
                     <h2 className="text-2xl md:text-3xl font-extrabold text-primary-light uppercase tracking-wider mb-2">

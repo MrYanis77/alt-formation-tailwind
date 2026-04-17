@@ -43,7 +43,7 @@ export default function CarrierePage() {
 
             {/* --- SECTION CHOIX DU PARCOURS --- */}
             <section className="py-24">
-                <div className="max-w-container-xl mx-auto px-6">
+                <div className="max-w-container-3xl mx-auto px-6">
 
                     {/* En-tête de section */}
                     <div className="text-center mb-16">

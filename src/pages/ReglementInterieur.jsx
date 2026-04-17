@@ -10,7 +10,7 @@ export default function ReglementInterieur() {
     <div className="bg-white min-h-screen font-body text-content-muted antialiased">
       <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'Règlement Intérieur' }]} />
 
-      <main className="py-20 px-6 max-w-[900px] mx-auto">
+      <main className="py-20 px-6 max-w-container-2xl mx-auto">
         
         {/* LISTE DES ARTICLES INTÉGRAUX */}
         <div className="space-y-16">

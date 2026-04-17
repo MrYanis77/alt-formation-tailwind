@@ -129,7 +129,7 @@ export const partenaires = [
 export const temoignages = [
   {
     avatar: "https://ui-avatars.com/api/?name=Souf+Man&background=000&color=0cf",
-    author: "Souf Man",
+    author: "Souf M",
     role: "Local Guide · 32 avis · 10 photos",
     date: "Modifié il y a un an",
     rating: 5,
@@ -137,7 +137,7 @@ export const temoignages = [
   },
   {
     avatar: "https://ui-avatars.com/api/?name=Aude+Havette&background=7B1FA2&color=fff",
-    author: "Aude Havette",
+    author: "Aude H",
     role: "1 avis",
     date: "il y a 2 ans",
     rating: 5,
@@ -161,7 +161,7 @@ export const temoignages = [
   },
   {
     avatar: "https://ui-avatars.com/api/?name=Youssef+al+maizi&background=E91E63&color=fff",
-    author: "Youssef al maizi",
+    author: "Youssef A",
     role: "1 avis",
     date: "il y a 3 ans",
     rating: 5,
@@ -169,7 +169,7 @@ export const temoignages = [
   },
   {
     avatar: "https://ui-avatars.com/api/?name=Amine+Hkn&background=1976D2&color=fff",
-    author: "Amine Hkn",
+    author: "Amine H",
     role: "Local Guide · 18 avis · 3 photos",
     date: "il y a 3 ans",
     rating: 5,
@@ -177,7 +177,7 @@ export const temoignages = [
   },
   {
     avatar: "https://ui-avatars.com/api/?name=mohemad+belqas&background=00838F&color=fff",
-    author: "mohemad belqas",
+    author: "mohemad b",
     role: "1 avis",
     date: "il y a 3 ans",
     rating: 5,
@@ -186,7 +186,7 @@ export const temoignages = [
 ];
 
 export const certifications = {
-  titre: "Organisme certifié & reconnu",
+  titre: "Organisme certifié",
   description: "La qualité de nos formations est certifiée. Nous répondons aux exigences les plus strictes pour vous garantir une montée en compétences d'excellence, éligible aux dispositifs de financement (CPF, OPCO, France Travail).",
   badges: [
     {

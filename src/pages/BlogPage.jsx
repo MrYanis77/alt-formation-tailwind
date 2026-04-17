@@ -26,7 +26,7 @@ export default function BlogPage() {
         items={[{ label: 'Accueil', to: '/' }, { label: 'Actualités' }]}
       />
 
-      <main className="max-w-[1100px] mx-auto px-6 py-[60px]">
+      <main className="max-w-container-3xl mx-auto px-6 py-[60px]">
 
         {/* ======== SECTION FILTRES ======== */}
         <FiltreCat

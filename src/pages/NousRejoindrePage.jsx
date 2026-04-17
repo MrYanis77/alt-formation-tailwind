@@ -5,7 +5,7 @@ import DetailHeader from '../components/Card/CardJob';
 import AdvantageCard from '../components/Card/AdvantageCard';
 import Breadcrumb from '../components/Breadcrumb';
 import CallToAction from '../components/CallToAction';
-import FormulaireCandidature from '../components/Form/FormulaireCandidature'; // Ajout de l'import
+import FormulaireCandidature from '../components/Form/FormulaireCandidature';
 
 // Import unique des données fusionnées
 import { dataNousRejoindre } from '../data/nous-rejoindre';
@@ -28,7 +28,7 @@ export default function NousRejoindre() {
   const currentData = dataNousRejoindre[view];
 
   return (
-    <div className="bg-white min-h-screen antialiased">
+    <div className="bg-surface min-h-screen antialiased">
       {/* 1. HERO avec Vidéo dynamique */}
       <Hero
         title={currentData.hero.titre}
@@ -39,19 +39,19 @@ export default function NousRejoindre() {
       <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'Nous rejoindre' }]} />
 
       {/* TOGGLE CATEGORIES */}
-      <section className="py-6 bg-gray-50 border-b border-border">
-        <div className="max-w-container-lg mx-auto text-center px-6">
-          <div className="flex bg-white p-1 rounded-full shadow-sm w-fit mx-auto border border-gray-200">
+      <section className="py-8 bg-surface-soft border-b border-border">
+        <div className="max-w-container-3xl mx-auto text-center px-6">
+          <div className="flex bg-white p-1.5 rounded-full shadow-sm w-fit mx-auto border border-border">
             <button
               onClick={() => setView('collaborateur')}
-              className={`px-6 md:px-8 py-2 text-sm rounded-full font-bold transition-all duration-300 cursor-pointer ${view === 'collaborateur' ? 'bg-accent text-white shadow-md' : 'text-gray-500 hover:text-primary'
+              className={`px-8 md:px-10 py-3 text-base md:text-nav rounded-full font-bold transition-all duration-300 cursor-pointer ${view === 'collaborateur' ? 'bg-accent text-white shadow-md' : 'text-content-muted hover:text-primary'
                 }`}
             >
               Collaborateurs
             </button>
             <button
               onClick={() => setView('formateur')}
-              className={`px-6 md:px-8 py-2 text-sm rounded-full font-bold transition-all duration-300 cursor-pointer ${view === 'formateur' ? 'bg-primary-light text-white shadow-md' : 'text-gray-500 hover:text-primary'
+              className={`px-8 md:px-10 py-3 text-base md:text-nav rounded-full font-bold transition-all duration-300 cursor-pointer ${view === 'formateur' ? 'bg-primary text-white shadow-md' : 'text-content-muted hover:text-primary'
                 }`}
             >
               Formateurs
@@ -61,16 +61,16 @@ export default function NousRejoindre() {
       </section>
 
       {/* 2. POURQUOI NOUS REJOINDRE */}
-      <section className="py-12 px-6 bg-white">
-        <div className="max-w-container-lg mx-auto text-center">
-          <h2 className="text-primary-light text-xl md:text-2xl font-extrabold mb-4 uppercase tracking-wider">
+      <section className="py-20 px-6 bg-surface">
+        <div className="max-w-container-3xl mx-auto text-center">
+          <h2 className="text-primary text-h2 md:text-h1 font-extrabold mb-6 uppercase tracking-wider">
             {currentData.pourquoiNousRejoindre.titre}
           </h2>
-          <p className="text-content-muted text-sm max-w-[700px] mx-auto mb-10 leading-relaxed">
+          <p className="text-content-muted text-lg max-w-3xl mx-auto mb-16 leading-relaxed">
             {currentData.pourquoiNousRejoindre.sousTitre}
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {currentData.pourquoiNousRejoindre.valeurs.map((valeur) => {
               const icons = { 1: Heart, 2: TrendingUp, 3: Target };
               const IconComponent = icons[valeur.id] || Target;
@@ -89,13 +89,13 @@ export default function NousRejoindre() {
       </section>
 
       {/* 3. NOS AVANTAGES */}
-      <section className="py-12 px-6 bg-gray-50 border-y border-border">
-        <div className="max-w-container-lg mx-auto">
-          <h2 className="text-primary-light text-xl md:text-2xl font-extrabold text-center mb-8 uppercase tracking-wider">
+      <section className="py-20 px-6 bg-surface-soft border-y border-border">
+        <div className="max-w-container-3xl mx-auto text-center">
+          <h2 className="text-primary text-h2 md:text-h1 font-extrabold text-center mb-12 uppercase tracking-wider">
             Nos avantages
           </h2>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {currentData.avantages.map((avantage, index) => (
               <AdvantageCard
                 key={avantage.id}
@@ -109,16 +109,21 @@ export default function NousRejoindre() {
       </section>
 
       {/* 4. OFFRES OUVERTES */}
-      <section className="py-12 px-6 bg-white">
-        <div className="max-w-container-md mx-auto">
-          <div className="mb-8 text-center md:text-left flex flex-col md:flex-row md:items-center justify-between gap-2">
-            <h2 className="text-xl md:text-2xl font-extrabold text-primary-light uppercase">
+      <section className="py-20 px-6 bg-surface">
+        <div className="max-w-container-2xl mx-auto">
+          <div className="mb-12 text-center md:text-left flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-border pb-6">
+            <h2 className="text-h2 md:text-h1 font-extrabold text-primary uppercase tracking-wider">
               {currentData.offres.titre}
             </h2>
-            <p className="text-accent font-bold text-sm bg-accent/10 px-4 py-1.5 rounded-full">{currentData.offres.compteur}</p>
+            <div className="inline-flex items-center gap-3">
+              <span className="text-content-muted font-bold text-lg">Postes disponibles :</span>
+              <span className="text-accent font-extrabold text-xl bg-accent/10 px-5 py-2 rounded-full">
+                {currentData.offres.compteur}
+              </span>
+            </div>
           </div>
 
-          <div className="space-y-3">
+          <div className="space-y-4">
             {currentData.offres.list.map((offre) => (
               <DetailHeader
                 key={offre.id}
@@ -133,30 +138,34 @@ export default function NousRejoindre() {
       </section>
 
       {/* 5. SECTION ÉQUIPE */}
-      <section className="py-12 px-6 bg-gray-50 border-t border-border">
-        <div className="max-w-container-lg mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <section className="py-20 px-6 bg-surface-soft border-t border-border">
+        <div className="max-w-container-3xl mx-auto grid grid-cols-1 xl:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-xl md:text-2xl font-extrabold text-primary-light mb-4 leading-tight uppercase">
+            <h2 className="text-h2 md:text-h1 font-extrabold text-primary mb-8 leading-tight uppercase tracking-wider">
               {currentData.sectionEquipe.titre}
             </h2>
-            <div className="space-y-3 mb-8">
-              <p className="text-content-muted text-sm leading-relaxed">{currentData.sectionEquipe.paragraphe1}</p>
-              <p className="text-content-muted text-sm leading-relaxed">{currentData.sectionEquipe.paragraphe2}</p>
+            <div className="space-y-6 mb-12">
+              <p className="text-content-muted text-lg leading-relaxed">
+                {currentData.sectionEquipe.paragraphe1}
+              </p>
+              <p className="text-content-muted text-lg leading-relaxed">
+                {currentData.sectionEquipe.paragraphe2}
+              </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-6">
               {currentData.sectionEquipe.stats.map((stat, idx) => (
-                <div key={idx} className="flex-1 bg-white p-4 rounded-xl border border-border shadow-sm text-center">
-                  <div className="text-2xl font-extrabold text-accent mb-1">{stat.valeur}</div>
-                  <div className="text-primary font-bold text-xs uppercase tracking-wider">{stat.label}</div>
+                <div key={idx} className="flex-1 bg-white p-6 rounded-card border border-border shadow-sm text-center transform transition-transform hover:-translate-y-1 hover:shadow-md">
+                  <div className="text-4xl font-extrabold text-accent mb-2">{stat.valeur}</div>
+                  <div className="text-primary font-bold text-sm md:text-nav uppercase tracking-widest">{stat.label}</div>
                 </div>
               ))}
             </div>
           </div>
-          <div className="rounded-card overflow-hidden h-[300px] shadow-md border-4 border-white">
+          <div className="rounded-section overflow-hidden h-[400px] xl:h-[500px] shadow-lg border-8 border-white group">
             <img
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
               alt="Team ALT FORMATIONS"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
           </div>
         </div>

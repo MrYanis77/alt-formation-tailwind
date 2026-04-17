@@ -75,7 +75,7 @@ export default function FormationDetail() {
       {/* 4. DÉBOUCHÉS */}
       {data.debouches && (
         <section className="py-[70px] px-6 bg-primary">
-          <div className="max-w-[1100px] mx-auto">
+          <div className="max-w-container-3xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-white text-2xl md:text-h1 font-extrabold mb-4 uppercase tracking-wider">
                 {data.debouches.titre}
@@ -125,7 +125,7 @@ export default function FormationDetail() {
       {/* 5. PROGRAMME */}
       {data.programme && (
         <section className="py-20 px-6 bg-surface-soft">
-          <div className="max-w-container-lg mx-auto">
+          <div className="max-w-container-2xl mx-auto">
             <div className="text-center mb-14">
               <span className="inline-block text-accent font-bold text-xs uppercase tracking-[0.2em] mb-3">Parcours pédagogique</span>
               <h2 className="text-primary text-2xl md:text-h1 font-extrabold uppercase tracking-wider">
@@ -152,7 +152,7 @@ export default function FormationDetail() {
       {/* 6. INFOS PRATIQUES */}
       {data.infosPratiques && (
         <section className="py-[70px] px-6 bg-gray-50 border-y border-border">
-          <div className="max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="max-w-container-3xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
             <InfoGrid
               titre={data.infosPratiques.modalites?.titre || "Modalités"}
               icon={Target}
@@ -188,7 +188,7 @@ export default function FormationDetail() {
       {/* 7. COMPÉTENCES */}
       {data.competences && (
         <section className="py-[70px] px-6 bg-white">
-          <div className="max-w-[1100px] mx-auto">
+          <div className="max-w-container-3xl mx-auto">
             <h2 className="text-primary-light text-2xl md:text-h1 font-extrabold text-center mb-12 uppercase tracking-wider">
               Compétences développées
             </h2>
@@ -209,7 +209,7 @@ export default function FormationDetail() {
       {/* 8. FORMATIONS SUGGÉRÉES */}
       {suggestedFormations.length > 0 && (
         <section className="py-[70px] px-6 bg-gray-100">
-          <div className="max-w-[1100px] mx-auto">
+          <div className="max-w-container-3xl mx-auto">
             <h2 className="text-primary-light text-2xl md:text-h2 font-extrabold mb-8 uppercase tracking-wider text-center">
               Formations suggérées
             </h2>
@@ -243,7 +243,7 @@ export default function FormationDetail() {
       {/* 9. CTA FINAL */}
       {data.ctaFinal && (
         <section className="py-20 px-6 bg-primary text-center text-white">
-          <div className="max-w-[700px] mx-auto">
+          <div className="max-w-container-xl mx-auto">
             <h2 className="text-2xl md:text-[34px] font-extrabold mb-4 uppercase">
               {data.ctaFinal.titre}
             </h2>

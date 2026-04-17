@@ -20,14 +20,10 @@ export default function Navbar() {
       {/* Logo */}
       <Link to="/" className="flex-shrink-0 no-underline flex items-center gap-3 group">
         <img
-          src="/Assets/logo.png"
+          src="/Assets/logo-ALT.jpg"
           alt="Logo ALT Formations"
-          className="h-10 md:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105 mix-blend-lighten" />
-        <div className="flex flex-col justify-center drop-shadow-[0_0_4px_rgba(255,255,255,0.3)] min-w-max">
-          <span className="text-white font-heading font-extrabold text-sm md:text-base xl:text-lg leading-none tracking-wide transition-colors duration-300 group-hover:text-accent">
-            ALT <span className="text-accent group-hover:text-white transition-colors duration-300">FORMATIONS</span>
-          </span>
-        </div>
+          className="h-10 md:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105 mix-blend-lighten"
+        />
       </Link>
 
       {/* Menu Desktop */}

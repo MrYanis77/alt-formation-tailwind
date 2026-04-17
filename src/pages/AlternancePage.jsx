@@ -25,7 +25,7 @@ export default function AlternancePage() {
 
       {/* ===== SECTION AVANTAGES (Image 9a35a3) ===== */}
       <section className="py-20 px-6 bg-white">
-        <div className="max-w-[1100px] mx-auto">
+        <div className="max-w-container-3xl mx-auto">
           <h2 className="font-heading font-extrabold text-2xl text-primary text-center mb-16 uppercase tracking-wider">
             Pourquoi l'alternance ?
           </h2>
@@ -44,7 +44,7 @@ export default function AlternancePage() {
 
       {/* ===== SECTION CATALOGUE RNCP (Image 9a35c1) ===== */}
       <section className="py-20 px-6 bg-surface-soft border-y border-border">
-        <div className="max-w-[900px] mx-auto">
+        <div className="max-w-container-xl mx-auto">
           <div className="flex items-center mb-10 group">
             <div className="w-[6px] h-10 bg-accent rounded-full mr-4 transition-transform group-hover:scale-y-110"></div>
             <h2 className="font-heading font-extrabold text-2xl text-primary uppercase tracking-tight">
@@ -68,7 +68,7 @@ export default function AlternancePage() {
 
       {/* ===== SECTION ÉTAPES (Image 9a35de) ===== */}
       <section className="py-24 px-6 bg-white">
-        <div className="max-w-container-lg mx-auto">
+        <div className="max-w-container-3xl mx-auto">
           <h2 className="font-heading font-extrabold text-2xl text-primary text-center mb-20 uppercase tracking-wider">
             Comment intégrer nos formations ?
           </h2>

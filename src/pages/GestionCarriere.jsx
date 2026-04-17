@@ -53,7 +53,7 @@ export default function GestionCarriere() {
 
             {/* --- BLOC : LE BILAN DE COMPÉTENCES --- */}
             <section className="pt-16 pb-20 bg-gray-50 border-t border-gray-200">
-                <div className="max-w-container-xl mx-auto px-6">
+                <div className="max-w-container-3xl mx-auto px-6">
 
                     <div className="text-center mb-12">
                         <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary uppercase tracking-wide">
@@ -110,7 +110,7 @@ export default function GestionCarriere() {
 
             {/* --- POURQUOI CHOISIR --- */}
             <section className="py-24 bg-white border-t border-gray-100">
-                <div className="max-w-container-xl mx-auto px-6">
+                <div className="max-w-container-3xl mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary uppercase tracking-wide mb-6">
                             {globalData.pourquoiChoisir.titre}
@@ -135,7 +135,7 @@ export default function GestionCarriere() {
 
             {/* --- TESTS EXTÉRIEURS --- */}
             <section className="py-24 bg-gray-50 border-t border-gray-100">
-                <div className="max-w-container-xl mx-auto px-6">
+                <div className="max-w-container-3xl mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary uppercase tracking-wide mb-6">
                             {globalData.testsExterieurs.titre}

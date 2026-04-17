@@ -23,12 +23,11 @@ export default function ContactPage() {
       />
 
       {/* 3. MAIN CONTENT (Infos + Formulaire) */}
-      <main className="max-w-[1100px] mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row gap-16">
+      <main className="max-w-container-3xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row gap-16">
 
         {/* Colonne Gauche : Infos & Horaires */}
         <div className="w-full md:w-1/3">
           <h2 className="text-primary font-bold text-[24px] mb-8">{coordonnees.titre}</h2>
-
           <div className="flex flex-col gap-8 mb-12">
             {coordonnees.items.map((item, index) => (
               <div key={index} className="flex items-start gap-4">
@@ -37,11 +36,15 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-bold text-primary text-base">{item.type}</p>
-                  <p className="text-content-muted text-medium">{item.valeur}</p>
+                  {/* L'ajout de whitespace-pre-line permet de gérer le retour à la ligne proprement */}
+                  <p className="text-content-muted text-medium whitespace-pre-line">
+                    {item.valeur}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
+
 
           <hr className="border-gray-100 mb-8" />
 

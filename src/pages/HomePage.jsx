@@ -123,7 +123,7 @@ export default function HomePage() {
       <StatsSection stats={stats} />
 
       {/* SECTION PRÉSENTATION : Professionnels et engagés */}
-      <section className="py-20 px-6 max-w-container-lg mx-auto text-center">
+      <section className="py-20 px-6 max-w-container-2xl mx-auto text-center">
         <h2 className="font-heading text-2xl md:text-h1 font-extrabold text-primary uppercase tracking-wider mb-8">
           {presentation.titre}
         </h2>
@@ -137,7 +137,7 @@ export default function HomePage() {
           <p>
             {presentation.paragraphe2}
           </p>
-          <div className="bg-gray-50 p-8 rounded-2xl mx-auto my-8 max-w-container-md border border-gray-100 shadow-sm text-left">
+          <div className="bg-gray-50 p-8 rounded-2xl mx-auto my-8 max-w-container-lg border border-gray-100 shadow-sm text-left">
             <p className="mb-4">
               <strong className="text-primary font-bold">{presentation.mission.label} </strong>
               {presentation.mission.texte}
@@ -154,7 +154,7 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 3 : NOS SERVICES / FORMATIONS */}
-      <section className="pb-[80px] pt-10 px-6 md:px-[60px] max-w-container-xl mx-auto">
+      <section className="pb-[80px] pt-10 px-6 md:px-[60px] max-w-container-3xl mx-auto">
         <h2 className="font-heading text-2xl md:text-h1 font-extrabold text-primary text-center mb-[50px] uppercase tracking-wider">
           Nos Formations & Services
         </h2>
@@ -176,7 +176,7 @@ export default function HomePage() {
 
       {/* SECTION 5 : TRUST SECTION (LOGOS PARTENAIRES CLIQUABLES) */}
       <section className="py-[70px] bg-white border-t border-border overflow-hidden">
-        <div className="max-w-[1100px] mx-auto px-6 mb-12">
+        <div className="max-w-container-2xl mx-auto px-6 mb-12">
           <h2 className="font-heading text-2xl md:text-h1 font-extrabold text-primary-light text-center uppercase tracking-wider">
             Nos Partenaires
           </h2>
@@ -206,7 +206,7 @@ export default function HomePage() {
 
       {/* SECTION 6 : TÉMOIGNAGES AVIS GOOGLE (DÉFILEMENT INFINI) */}
       <section className="py-[70px] bg-slate-50 border-t border-border overflow-hidden">
-        <div className="max-w-[1100px] mx-auto px-6 mb-12">
+        <div className="max-w-container-2xl mx-auto px-6 mb-12">
           <h2 className="font-heading text-2xl md:text-h1 font-extrabold text-primary text-center uppercase tracking-wider">
             Ce que disent nos apprenants
           </h2>
@@ -259,7 +259,7 @@ export default function HomePage() {
 
       {/* SECTION 8 : CALL TO ACTION FINAL */}
       <section className="py-24 px-6 bg-slate-50 text-center border-t border-border">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-container-xl mx-auto">
           <h2 className="font-heading text-h2 md:text-[33px] font-extrabold text-primary mb-6 uppercase tracking-tight">
             Prêt à transformer votre carrière ?
           </h2>

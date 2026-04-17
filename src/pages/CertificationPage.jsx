@@ -38,7 +38,7 @@ export default function CertificationPage() {
       />
 
       <section className="pb-20 px-6">
-        <div className="max-w-container-xl mx-auto">
+        <div className="max-w-container-3xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* On utilise filteredCertifs au lieu de certifications */}
             {filteredCertifs.map((certif) => (

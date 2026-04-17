@@ -61,6 +61,26 @@ export default function Footer() {
               <li><Link to="/politique-de-confidentialite" className="text-gray-300 text-sm hover:text-white transition-colors">Politique de confidentialité</Link></li>
               <li><Link to="/conditions-generales" className="text-gray-300 text-sm hover:text-white transition-colors">Conditions générales</Link></li>
             </ul>
+
+            {/* Logo Qualiopi et Certificat PDF */}
+            <div className="mt-8 pt-6 border-t border-[#4a4545] flex flex-col items-start gap-4">
+              <div className="bg-white p-2 rounded-xl shadow-md inline-block">
+                <img
+                  src="/Assets/images/qualiopi.png"
+                  alt="Certification Qualiopi"
+                  className="h-20 w-auto object-contain block"
+                />
+              </div>
+              <a
+                href="/Assets/documents/CERTIFICATION QUALIOPI ALT RH CONSULTING.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-accent text-xs font-bold hover:underline"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Télécharger le certificat PDF
+              </a>
+            </div>
           </div>
         </div>
 

@@ -10,7 +10,7 @@ export default function MentionsLegales() {
     <div className="bg-white min-h-screen font-body text-content-muted antialiased">
       <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'Mentions Légales' }]} />
 
-      <main className="py-20 px-6 max-w-[900px] mx-auto">
+      <main className="py-20 px-6 max-w-container-2xl mx-auto">
         
         {/* BLOC ÉDITEUR - PRÉSENTATION OFFICIELLE */}
         <div className="mb-24 p-10 border-2 border-accent/20 rounded-hero bg-accent/5 relative overflow-hidden">

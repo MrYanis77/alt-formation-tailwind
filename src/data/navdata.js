@@ -77,7 +77,7 @@ export const navlinks = [
     href: "/formations",
     submenu: [
       {
-        label: "Formation continue",
+        label: "Formations Diplômantes",
         href: "/formations",
         submenu: [
           {

@@ -77,7 +77,7 @@ export default function FormationsPage() {
 
       {/* ===== SÉLECTEUR DE THÈMES ===== */}
       <section className="pt-16 pb-20 bg-surface-soft border-b border-border">
-        <div className="max-w-container-xl mx-auto px-6">
+        <div className="max-w-container-3xl mx-auto px-6">
 
           {/* En-tête inspiré de GestionCarriere */}
           <div className="text-center mb-16">
@@ -145,7 +145,7 @@ export default function FormationsPage() {
 
             {/* Header de section du thème */}
             <div className="px-6 mb-8 text-center">
-              <div className="max-w-container-xl mx-auto flex flex-col items-center justify-center">
+              <div className="max-w-container-3xl mx-auto flex flex-col items-center justify-center">
                 <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center text-accent mb-6">
                   {theme.icon}
                 </div>
@@ -161,7 +161,7 @@ export default function FormationsPage() {
               const isDark = cIdx % 2 !== 0;
               return (
                 <div key={category.id} id={category.id} className={`py-16 px-6 ${isDark ? 'bg-surface-soft border-t border-b border-gray-100' : 'bg-white'}`}>
-                  <div className="max-w-container-xl mx-auto">
+                  <div className="max-w-container-3xl mx-auto">
 
                     <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4 border-b border-gray-200 pb-4">
                       <div>
@@ -169,7 +169,6 @@ export default function FormationsPage() {
                           {category.label}
                         </h3>
                       </div>
-                      {/* Le compteur de programmes a été supprimé ici */}
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

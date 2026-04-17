@@ -27,7 +27,7 @@ export default function EntreprisePage() {
         items={[{ label: 'Accueil', to: '/' }, { label: 'Entreprise' }]}
       />
 
-      <main className="py-[60px] px-6 max-w-[1100px] mx-auto flex flex-col gap-12" id="main-content">
+      <main className="py-[60px] px-6 max-w-container-3xl mx-auto flex flex-col gap-12" id="main-content">
 
         {/* ======== 1. FORMATION SUR-MESURE ======== */}
         <CardDesc

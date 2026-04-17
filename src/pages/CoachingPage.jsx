@@ -52,7 +52,7 @@ export default function CoachingPage() {
             {/* ========================================== */}
             {data.methode && (
                 <section className="py-24 bg-gray-50 border-t border-gray-200">
-                    <div className="max-w-container-xl mx-auto px-6">
+                    <div className="max-w-container-3xl mx-auto px-6">
                         <div className="text-center mb-16">
                             <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary uppercase tracking-wide mb-4">
                                 {data.methode.titre}
@@ -89,7 +89,7 @@ export default function CoachingPage() {
             {/* ========================================== */}
             {(data.coachingIndividuel || data.coachingEquipe) && (
                 <section className="py-24 bg-white border-t border-gray-200">
-                    <div className="max-w-container-xl mx-auto px-6">
+                    <div className="max-w-container-3xl mx-auto px-6">
                         <div className="text-center mb-16">
                             <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary uppercase tracking-wide">
                                 Nos formules d'accompagnement
@@ -140,7 +140,7 @@ export default function CoachingPage() {
             {/* ========================================== */}
             {data.pourquoiChoisir?.avantages && (
                 <section className="py-24 bg-gray-50 border-t border-gray-100">
-                    <div className="max-w-container-xl mx-auto px-6">
+                    <div className="max-w-container-3xl mx-auto px-6">
                         <div className="text-center mb-16">
                             <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary uppercase tracking-wide mb-6">
                                 {data.pourquoiChoisir.titre}

@@ -19,7 +19,7 @@ export default function AproposPage() {
         {/* Ce composant gère l'image de manière conditionnelle et applique la barre orange */}
         <TexteSection data={notreHistoire} imageRight={true} />
 
-        <div className="max-w-[1100px] mx-auto px-6 flex flex-col gap-16 pb-24">
+        <div className="max-w-container-3xl mx-auto px-6 flex flex-col gap-16 pb-24">
 
           {/* ======== BLOC 2 : NOS VALEURS ======== */}
           <section className="bg-surface-alt border border-accent/30 rounded-3xl p-10 md:p-16 shadow-sm">

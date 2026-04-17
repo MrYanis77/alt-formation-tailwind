@@ -35,7 +35,7 @@ export default function RessourcesIA() {
 
             {/* INTRO SECTION */}
             <section className="py-20 bg-white">
-                <div className="max-w-[850px] mx-auto px-6 text-center">
+                <div className="max-w-container-xl mx-auto px-6 text-center">
                     <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary mb-6">
                         {data.intro.titre}
                     </h2>
@@ -48,7 +48,7 @@ export default function RessourcesIA() {
 
             {/* CATÉGORIES D'OUTILS */}
             <section className="py-20 bg-surface-soft">
-                <div className="max-w-container-xl mx-auto px-6 space-y-24">
+                <div className="max-w-container-3xl mx-auto px-6 space-y-24">
                     {data.categories.map((cat, index) => {
                         const IconComponent = Icons[cat.icon] || Icons.Zap;
 
@@ -111,7 +111,7 @@ export default function RessourcesIA() {
 
             {/* MINI-GLOSSAIRE */}
             <section className="py-24 bg-primary">
-                <div className="max-w-[1100px] mx-auto px-6">
+                <div className="max-w-container-3xl mx-auto px-6">
                     <div className="text-center mb-20">
                         <h2 className="font-heading text-3xl md:text-4xl font-black text-white uppercase tracking-tight">
                             {data.glossaire.titre}

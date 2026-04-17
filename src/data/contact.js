@@ -5,11 +5,10 @@
 export const hero = {
   titre: "Contactez-nous",
   sousTitre: "Notre équipe est à votre écoute pour répondre à toutes vos questions",
-  video: "public/Assets/video/contact.mp4",
+  video: "/Assets/video/contact.mp4",
 };
 
 export const contactData = {
-  // Section Coordonnées
   coordonnees: {
     titre: "Nos coordonnées",
     items: [
@@ -25,7 +24,8 @@ export const contactData = {
       },
       {
         type: "Adresse",
-        valeur: "3 rue du cochet 77700 Baily-Romainvilliers",
+        // Utilisation de \n pour marquer le saut de ligne
+        valeur: "3 rue du cochet, 77700 Bailly-Romainvilliers\n2-4 boulevard Michaël Faraday, 77700 Serris",
         icon: "📍"
       }
     ]

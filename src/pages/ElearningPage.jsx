@@ -27,7 +27,7 @@ export default function ElearningPage() {
       <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'E-learning' }]} />
 
       {/* ===== SECTION PLATEFORME (Image 9ab569) ===== */}
-      <main className="py-20 px-6 max-w-[1100px] mx-auto" id="main-content">
+      <main className="py-20 px-6 max-w-container-3xl mx-auto" id="main-content">
         <div className="text-center mb-16">
           <h2 className="font-heading font-extrabold text-3xl text-content-dark uppercase tracking-tight">
             Notre plateforme e-learning
