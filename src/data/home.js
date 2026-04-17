@@ -91,7 +91,7 @@ export const services = [
   },
   {
     titre: 'Solutions entreprises',
-    href: '/entreprises',
+    href: '/carriere',
     image: '/Assets/images/entreprise.jpg',
     items: [
       'Formation sur-mesure pour vos équipes',

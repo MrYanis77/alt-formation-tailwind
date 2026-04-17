@@ -32,6 +32,9 @@ const FaqPage = lazy(() => import('./pages/FaqPage'));
 const GestionCarriere = lazy(() => import('./pages/GestionCarriere'));
 const CoachingPage = lazy(() => import('./pages/CoachingPage'));
 
+// --- NOUVELLE PAGE AJOUTÉE ICI ---
+const CarrierePage = lazy(() => import('./pages/CarrierePage'));
+
 function ComingSoon({ title }) {
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4 font-heading text-primary">
@@ -75,15 +78,19 @@ export default function App() {
             <Route path="/formation/:id" element={<FormationDetail />} />
             <Route path="/campus" element={<CampusPage />} />
             <Route path="/certification" element={<CertificationPage />} />
+
+            {/* --- NOUVELLE ROUTE AJOUTÉE ICI --- */}
+            <Route path="/carriere" element={<CarrierePage />} />
             <Route path="/gestion-carrieres" element={<GestionCarriere />} />
             <Route path="/coaching-emploi" element={<CoachingPage />} />
+
             <Route path="/ressources-ia" element={<RessourcesIAPages />} />
             <Route path="/nous-rejoindre" element={<NousRejoindre />} />
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
             <Route path="/politique-de-confidentialite" element={<PolitiqueConfidentialite />} />
             <Route path="/conditions-generales" element={<PolitiqueCookies />} />
-            
+
             {/* 404 */}
             <Route path="*" element={<ComingSoon title="Page introuvable" />} />
           </Routes>

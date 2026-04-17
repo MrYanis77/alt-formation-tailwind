@@ -102,6 +102,7 @@ export const navlinks = [
   { label: "Financements", href: "/financements" },
   {
     label: "Carrières",
+    href: "/carriere",
     submenu: [
       {
         label: "Gestion de carrières",
