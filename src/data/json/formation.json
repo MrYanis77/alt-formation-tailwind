@@ -2,7 +2,7 @@
     "formations-administrateur-dinfrastructures-securisees-ais": {
         "hero": {
             "titre": "Devenez Administrateur d’infrastructures sécurisées",
-            "sousTitre": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôl...",
+            "sousTitre": "Concevez, administrez et sécurisez les infrastructures informatiques des entreprises.",
             "video": "/assets/video/formations/admin-infra.mp4"
         },
         "stats": [
@@ -134,7 +134,7 @@
     "formations-developpeur-web-mobile": {
         "hero": {
             "titre": "Devenez Développeur Web & Mobile",
-            "sousTitre": "Le Développeur Web & Web Mobile conçoit et développe des applications accessibles via un navigateur ou un terminal mobile. Il travaille sur la partie visible (interface utilisateur) comme sur la partie technique (serveur, base de données), en veillan...",
+            "sousTitre": "Concevez des applications web et mobiles performantes, du front-end au back-end.",
             "video": "/assets/video/formations/dev-web-mobile.mp4"
         },
         "stats": [
@@ -259,7 +259,7 @@
     "formations-developpeur-dapplications-multimedia": {
         "hero": {
             "titre": "Devenez Développeur d’applications multimédia",
-            "sousTitre": "Développeur d’Applications Multimédia : un métier créatif et technique Le Développeur d’Applications Multimédia conçoit des applications interactives intégrant différents médias (graphisme, animation, son, vidéo). Il intervient sur des projets variés...",
+            "sousTitre": "Créez des applications interactives alliant graphisme, animation, son et vidéo.",
             "video": "/assets/video/formations/dev-app.mp4"
         },
         "stats": [
@@ -377,7 +377,7 @@
     "formations-concepteur-developpeur-dapplications": {
         "hero": {
             "titre": "Devenez Concepteur Développeur d’Applications",
-            "sousTitre": "Le Concepteur Développeur d’Applications conçoit et développe des applications logicielles complètes répondant à des besoins métiers spécifiques. Il intervient sur l’analyse des besoins, la conception technique, le développement, les tests et la main...",
+            "sousTitre": "Concevez et développez des applications logicielles complètes, de l'analyse des besoins à la mise en production.",
             "video": "/assets/video/formations/dev-app.mp4"
         },
         "stats": [
@@ -544,7 +544,7 @@
     "formations-technicien-superieur-systemes-et-reseaux": {
         "hero": {
             "titre": "Devenez Technicien supérieur systèmes et réseaux",
-            "sousTitre": "Le Technicien Supérieur Systèmes et Réseaux assure l’installation, la configuration et la maintenance des infrastructures informatiques d’une organisation. Il veille à la disponibilité des systèmes, à la sécurité des réseaux et accompagne les utilisa...",
+            "sousTitre": "Installez, configurez et maintenez les infrastructures informatiques des organisations.",
             "video": "/assets/video/formations/technicien-sr.mp4"
         },
         "stats": [
@@ -711,7 +711,7 @@
     "formations-lead-developpeur-web": {
         "hero": {
             "titre": "Devenez Lead Développeur Web",
-            "sousTitre": "Le Lead Développeur Web conçoit, développe et supervise des applications web complexes. Il coordonne les équipes techniques, définit les choix d’architecture, veille à la qualité du code et assure la mise en production des projets. Il joue un rôle cl...",
+            "sousTitre": "Pilotez des projets web complexes, coordonnez vos équipes et définissez les choix d'architecture.",
             "video": "/assets/video/formations/dev-app.mp4"
         },
         "stats": [
@@ -877,7 +877,7 @@
     "formations-community-manager": {
         "hero": {
             "titre": "Devenez Community Manager",
-            "sousTitre": "Le Community Manager est en charge de la gestion et de l’animation des communautés en ligne d’une entreprise ou d’une marque. Il crée des contenus adaptés, planifie les publications, interagit avec les internautes et veille à l’e-réputation de l’orga...",
+            "sousTitre": "Animez les communautés en ligne, créez du contenu engageant et développez l'e-réputation des marques.",
             "video": "/assets/video/formations/manager.mp4"
         },
         "stats": [
@@ -992,7 +992,7 @@
     "formations-assistante-ressources-humaines": {
         "hero": {
             "titre": "Devenez Assistant Ressources Humaines",
-            "sousTitre": "Véritable trait d'union entre la direction et les salariés, l'Assistant Ressources Humaines participe activement à la gestion administrative du personnel, au recrutement, à la formation et contribue au bon climat social de l'entreprise.",
+            "sousTitre": "Gérez l'administration du personnel, participez au recrutement et contribuez au bon climat social de l'entreprise.",
             "video": "/assets/video/formations/rh.mp4"
         },
         "stats": [
@@ -1106,7 +1106,7 @@
     "formations-assistante-administratifve": {
         "hero": {
             "titre": "Devenez Assistant Administratif",
-            "sousTitre": "L'Assistant Administratif est le pilier de l'organisation d'un service ou d'une entreprise. Il ou elle gère l'accueil, le traitement du courrier, la saisie des documents et assure le suivi administratif courant.",
+            "sousTitre": "Gérez l'accueil, le courrier et l'administration courante pour assurer le bon fonctionnement des services.",
             "video": "/assets/video/formations/administration.mp4"
         },
         "stats": [
@@ -1217,7 +1217,7 @@
     "formations-assistante-commerciale": {
         "hero": {
             "titre": "Devenez Assistant Commercial",
-            "sousTitre": "L’Assistant Commercial joue un rôle central dans le bon fonctionnement de l’activité commerciale. Véritable interface entre les clients, les équipes de vente et les services internes, il ou elle assure le suivi administratif des ventes, la rela...",
+            "sousTitre": "Assurez le suivi commercial en tant qu'interface clé entre clients, commerciaux et services internes.",
             "video": "/assets/video/formations/administration.mp4"
         },
         "stats": [
@@ -1332,7 +1332,7 @@
     "formations-secretaire-comptable": {
         "hero": {
             "titre": "Devenez Secrétaire Comptable",
-            "sousTitre": "Le métier de Secrétaire Comptable combine la polyvalence du secrétariat et la rigueur de la comptabilité. Vous assurez le suivi administratif, la facturation, les devis et la tenue de la comptabilité courante.",
+            "sousTitre": "Combinez polyvalence administrative et rigueur comptable pour gérer facturation et comptabilité en entreprise.",
             "video": "/assets/video/formations/comptable.mp4"
         },
         "stats": [
@@ -1443,7 +1443,7 @@
     "formations-conseillerere-relation-client-a-distance": {
         "hero": {
             "titre": "Devenez Conseiller Relation Client à Distance",
-            "sousTitre": "Le Conseiller Relation Client à Distance est la voix de l'entreprise. Il assure l'accueil, le conseil, la vente ou l'assistance par téléphone, e-mail ou tchat, en veillant à la satisfaction du client.",
+            "sousTitre": "Assurez l'accueil, le conseil et l'assistance à distance pour garantir la satisfaction client.",
             "video": "/assets/video/contact.mp4"
         },
         "stats": [
@@ -1554,7 +1554,7 @@
     "administrateur-reseaux-netops": {
         "hero": {
             "titre": "Devenez administrateur Réseaux NetOps",
-            "sousTitre": "La formation Administrateur Réseaux NetOps prépare aux métiers de l’administration et de l’automatisation des infrastructures réseau modernes. Elle permet d’acquérir les compétences nécessaires pour configurer, superviser et sécuriser des rése...",
+            "sousTitre": "Configurez, supervisez et automatisez les infrastructures réseau modernes avec les outils NetOps.",
             "video": "/assets/video/formations/admin-infra.mp4"
         },
         "stats": [
@@ -1658,7 +1658,7 @@
     "administrateursysteme-devops": {
         "hero": {
             "titre": "Devenez Administrateur système DevOps",
-            "sousTitre": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôl...",
+            "sousTitre": "Concevez, administrez et sécurisez les infrastructures informatiques des entreprises.",
             "video": "/assets/video/formations/technicien-sr.mp4"
         },
         "stats": [
@@ -1790,7 +1790,7 @@
     "technicien-reseaux-cybersecurite": {
         "hero": {
             "titre": "Devenez Technicien réseaux cybersécurité",
-            "sousTitre": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôl...",
+            "sousTitre": "Concevez, administrez et sécurisez les infrastructures informatiques des entreprises.",
             "video": "/assets/video/formations/cyber.mp4"
         },
         "stats": [
@@ -1922,7 +1922,7 @@
     "formation-intelligence-artificielle": {
         "hero": {
             "titre": "Faites votre Formation en IA",
-            "sousTitre": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôl...",
+            "sousTitre": "Maîtrisez les fondamentaux de l'intelligence artificielle et ses applications dans le monde professionnel.",
             "video": "/assets/video/formations/dev-web-mobile.mp4"
         },
         "stats": [
@@ -2054,7 +2054,7 @@
     "gestionnaire-comptable-fiscal": {
         "hero": {
             "titre": "Devenez Gestionnaire comptable et fiscal",
-            "sousTitre": "Le Gestionnaire comptable et fiscal est responsable de la tenue de la comptabilité jusqu'à l'élaboration de la liasse fiscale. Il produit les états financiers et réalise des tableaux de bord.",
+            "sousTitre": "Tenez la comptabilité jusqu'à la liasse fiscale et produisez les états financiers de l'entreprise.",
             "video": "/assets/video/formations/comptable.mp4"
         },
         "stats": [
@@ -2165,7 +2165,7 @@
     "formations-comptable-assistant": {
         "hero": {
             "titre": "Devenez Comptable assistant",
-            "sousTitre": "Le Comptable assistant recueille, contrôle et comptabilise l'ensemble des documents commerciaux, sociaux et financiers de l'entreprise. Il réalise les déclarations courantes.",
+            "sousTitre": "Comptabilisez les documents financiers et réalisez les déclarations courantes de l'entreprise.",
             "video": "/assets/video/formations/comptable.mp4"
         },
         "stats": [
@@ -2277,7 +2277,7 @@
         "categorie": "numerique",
         "hero": {
             "titre": "Devenez Concepteur Designer UI",
-            "sousTitre": "Le concepteur designer UI conçoit et réalise des interfaces numériques en combinant créativité graphique et compréhension des besoins utilisateurs. Il imagine l'univers visuel, crée des maquettes et définit l'expérience utilisateur (UX/UI).",
+            "sousTitre": "Créez des interfaces numériques alliant créativité graphique et expérience utilisateur (UX/UI).",
             "video": "/assets/video/formations/dev-app.mp4"
         },
         "stats": [
@@ -2400,7 +2400,7 @@
     "formations-assistante-de-direction": {
         "hero": {
             "titre": "Devenez Assistant(e) de Direction",
-            "sousTitre": "L'Assistant(e) de Direction est le bras droit incontournable du dirigeant. Il ou elle coordonne l'activité, gère les informations stratégiques et facilite la prise de décision au sein de l'entreprise.",
+            "sousTitre": "Coordonnez l'activité et facilitez la prise de décision en tant que bras droit du dirigeant.",
             "video": "/assets/video/formations/administration.mp4"
         },
         "stats": [
@@ -2512,7 +2512,7 @@
         "categorie": "numerique",
         "hero": {
             "titre": "Programmer et automatiser des tâches avec Python",
-            "sousTitre": "La programmation Python s’impose aujourd’hui comme un outil incontournable dans de nombreux domaines : automatisation, analyse de données, développement web ou encore scripts pour les opérations IT.",
+            "sousTitre": "Maîtrisez Python pour automatiser des tâches, analyser des données et développer des applications.",
             "video": "/assets/video/formations/dev-app.mp4"
         },
         "stats": [
@@ -2673,7 +2673,7 @@
         "categorie": "Développement Web / Informatique",
         "hero": {
             "titre": "Responsive Web Design",
-            "sousTitre": "Offrez aux visiteurs l’expérience utilisateur la plus confortable et ergonomique possible sur tous les supports (ordinateur, mobile, tablette, TV).",
+            "sousTitre": "Concevez des expériences utilisateur ergonomiques et accessibles sur tous les supports numériques.",
             "video": "/assets/video/formations/dev-web-mobile.mp4",
             "ch iffre_cle": "37,4 millions de Français naviguent chaque jour sur le web avec leur smartphone !"
         },
@@ -2893,7 +2893,7 @@
         "categorie": "Développement Web / Informatique",
         "hero": {
             "titre": "Formation PHP",
-            "sousTitre": "Apprenez à créer des applications dynamiques, des applications web, un site web vitrine ou encore e-commerce avec le langage de programmation PHP.",
+            "sousTitre": "Créez des sites web dynamiques, vitrines et e-commerce avec le langage de programmation PHP.",
             "video": "/assets/video/formations/dev-app.mp4",
             "chiffre_cle": "79 % de tous les sites web utilisent le langage PHP"
         },
@@ -3095,7 +3095,7 @@
         "categorie": "Développement Web / Informatique",
         "hero": {
             "titre": "Initiation à la Cybersécurité",
-            "sousTitre": "Identifiez les pièges dans l’espace numérique pour vous en protéger au travail ou à titre personnel.",
+            "sousTitre": "Identifiez les cybermenaces et protégez-vous efficacement dans l'espace numérique.",
             "video": "/assets/video/formations/cyber.mp4",
             "chiffre_cle": "5,6 millions de données personnelles sont piratées ou perdues chaque année, soit 65 par seconde !"
         },
@@ -3263,7 +3263,7 @@
         "categorie": "Développement Web / Informatique",
         "hero": {
             "titre": "Executive Mastère Ingénierie Avancée du Logiciel",
-            "sousTitre": "Pilotez des projets de développement complexes en intégrant les enjeux de performance, de qualité logicielle et de collaboration agile.",
+            "sousTitre": "Pilotez des projets logiciels complexes avec performance, qualité et méthodologie agile.",
             "video": "/assets/video/formations/dev-app.mp4",
             "certification": "Titre Certifié Manager de l’ingénierie numérique de niveau 7 (Bac+5) reconnu par l'État"
         },
@@ -3456,7 +3456,7 @@
         "categorie": "Développement Web / Informatique",
         "hero": {
             "titre": "Implémenter une politique de Cybersécurité",
-            "sousTitre": "Maîtrisez les concepts liés à l'organisation et à la mise en place d'une cybersécurité efficace en entreprise pour faire face aux menaces numériques.",
+            "sousTitre": "Mettez en place une politique de cybersécurité efficace pour protéger votre entreprise des menaces numériques.",
             "video": "/assets/video/formations/cyber.mp4",
             "chiffre_cle": "En France, 9 entreprises sur 10 sont touchées par des attaques ou tentatives d’attaques. 43% d’entre elles sont des PME, or seulement 17% disposent de moyens de défense."
         },
@@ -3632,7 +3632,7 @@
         "categorie": "Développement Web / Informatique",
         "hero": {
             "titre": "Configuration et administration d’équipements réseaux CISCO",
-            "sousTitre": "Apprenez à configurer les équipements Cisco et à mettre en œuvre les principaux services réseaux pour administrer efficacement les infrastructures de votre entreprise.",
+            "sousTitre": "Configurez les équipements Cisco et administrez les services réseaux de votre organisation.",
             "video": "/assets/video/formations/infra-reseau.mp4",
             "chiffre_cle": "Plus de la moitié des entreprises font confiance aux solutions CISCO pour leur matériel informatique et réseau."
         },

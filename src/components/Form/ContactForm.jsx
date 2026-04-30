@@ -1,9 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../../context/AuthContext';
 
 // Detecte un payload HTML/JS evident (script, iframe, on=...) sans bloquer
 // la ponctuation francaise (apostrophes, guillemets, accents).
@@ -30,7 +29,6 @@ const buildContactSchema = (requireSujet) => z.object({
 
 export default function ContactForm({ variant = 'section', title }) {
   const isSection = variant === 'section';
-  const { user } = useAuth();
 
   const [status, setStatus] = useState('idle'); // idle | loading | success | error
   const [serverError, setServerError] = useState('');
@@ -42,7 +40,6 @@ export default function ContactForm({ variant = 'section', title }) {
     register,
     handleSubmit,
     reset,
-    setValue,
     formState: { errors },
   } = useForm({
     resolver: zodResolver(buildContactSchema(!isSection)),
@@ -56,15 +53,6 @@ export default function ContactForm({ variant = 'section', title }) {
       honeypot: '',
     },
   });
-
-  useEffect(() => {
-    if (user) {
-      setValue('nom', user.nom || '');
-      setValue('prenom', user.prenom || '');
-      setValue('email', user.email || '');
-      if (user.telephone) setValue('telephone', user.telephone);
-    }
-  }, [user, setValue]);
 
   const onSubmit = async (data) => {
     setServerError('');
@@ -149,15 +137,9 @@ export default function ContactForm({ variant = 'section', title }) {
               </div>
             </div>
 
-            {user ? (
-              <div className="bg-blue-50 border border-blue-200 text-blue-800 p-4 rounded-lg text-sm mb-4">
-                Vous pouvez suivre la conversation depuis votre <Link to="/mon-espace" className="font-bold underline">espace personnel</Link>.
+            <div className="bg-amber-50 border border-amber-200 text-amber-800 p-4 rounded-lg text-sm mb-4">
+                <strong>Astuce :</strong> Notre équipe vous répondra dans les plus brefs délais.
               </div>
-            ) : (
-              <div className="bg-amber-50 border border-amber-200 text-amber-800 p-4 rounded-lg text-sm mb-4">
-                <strong>Astuce :</strong> <Link to="/connexion" className="font-bold underline">connectez-vous</Link> pour suivre la réponse de l'équipe et discuter en direct.
-              </div>
-            )}
 
             <button type="button" onClick={resetStatus} className="px-5 py-2.5 border border-gray-300 text-content-dark hover:bg-gray-50 font-medium rounded-lg transition text-sm">
               Envoyer un autre message

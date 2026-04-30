@@ -111,6 +111,12 @@
       "Personnaliser le rootfs et intégrer des bibliothèques natives",
       "Packager et intégrer des applications Android (.apk)"
     ],
+    "metiersVises": [
+      "Développeur embarqué / BSP",
+      "Ingénieur logiciel embarqué",
+      "Architecte systèmes embarqués",
+      "Développeur Android (système)"
+    ],
     "ctaFinal": {
       "titre": "Prêt à maîtriser Android embarqué ?",
       "sousTitre": "Formation disponible sur demande. Contactez-nous pour planifier une session adaptée à vos besoins et à votre équipe.",
@@ -214,6 +220,12 @@
       "titre": "Test d’intrusion des serveurs et des applications Web",
       "incluse": true
     },
+    "metiersVises": [
+      "Pentesteur / Testeur d'intrusion Web",
+      "Consultant en cybersécurité",
+      "Administrateur systèmes & réseaux",
+      "Développeur sécurité (DevSecOps)"
+    ],
     "ctaFinal": {
       "titre": "Prêt à sécuriser vos applications Web ?",
       "sousTitre": "De nombreuses sessions disponibles. Inscrivez-vous dès maintenant ou demandez un programme sur mesure pour votre équipe.",
@@ -321,6 +333,12 @@
       "titre": "Audit sécurité d'applications mobiles Android – Introduction",
       "incluse": true
     },
+    "metiersVises": [
+      "Auditeur sécurité mobile",
+      "Pentesteur mobile (Android)",
+      "Consultant en cybersécurité",
+      "Analyste sécurité applicative"
+    ],
     "ctaFinal": {
       "titre": "Prêt à maîtriser l'audit sécurité Android ?",
       "sousTitre": "De nombreuses sessions disponibles tout au long de l'année. Inscrivez-vous à la date qui vous convient ou contactez-nous pour une formation sur mesure.",
@@ -476,6 +494,12 @@
       "titre": "Préparation Offensive Security Exploit Developer (OSED)",
       "incluse": true
     },
+    "metiersVises": [
+      "Chercheur en vulnérabilités (Vulnerability Researcher)",
+      "Développeur d'exploits",
+      "Pentesteur offensif avancé",
+      "Analyste en sécurité offensive (Red Team)"
+    ],
     "ctaFinal": {
       "titre": "Prêt à maîtriser le développement d'exploits ?",
       "sousTitre": "De nombreuses sessions disponibles tout au long de l'année. Inscrivez-vous à la date qui vous convient ou contactez-nous pour une formation sur mesure.",
@@ -768,6 +792,12 @@
       "titre": "PECB CERTIFIED Lead Cloud Security Manager",
       "incluse": true
     },
+    "metiersVises": [
+      "Cloud Security Manager",
+      "Responsable sécurité du SI (RSSI)",
+      "Consultant en sécurité cloud",
+      "Manager cybersécurité / Directeur IT"
+    ],
     "ctaFinal": {
       "titre": "Prêt à certifier votre expertise Cloud Security ?",
       "sousTitre": "De nombreuses sessions disponibles tout au long de l'année. Inscrivez-vous à la date qui vous convient ou contactez-nous pour une formation sur mesure.",
@@ -887,6 +917,12 @@
       "titre": "Certification DiGiTT",
       "incluse": true
     },
+    "metiersVises": [
+      "Data Analyst / Data Scientist Marketing",
+      "Responsable marketing digital",
+      "Chef de projet Data",
+      "Directeur commercial ou CRM"
+    ],
     "ctaFinal": {
       "titre": "Prêt à transformer votre stratégie marketing avec le Big Data ?",
       "sousTitre": "Formation disponible sur demande. Contactez-nous pour concevoir un programme personnalisé adapté à vos objectifs.",
@@ -1022,6 +1058,12 @@
       "titre": "Certification possible : OCJA (Oracle Certified Associate, Java SE Programmer) – 808 & 805",
       "incluse": false
     },
+    "metiersVises": [
+      "Développeur Java / Back-end",
+      "Ingénieur logiciel",
+      "Développeur d'applications d'entreprise",
+      "Développeur Java EE / Spring"
+    ],
     "ctaFinal": {
       "titre": "Prêt à démarrer la programmation Java ?",
       "sousTitre": "Formation disponible sur demande. Contactez-nous pour concevoir un programme personnalisé adapté à vos objectifs et à votre équipe.",
@@ -1143,6 +1185,12 @@
       "titre": "Formation non certifiante",
       "incluse": false
     },
+    "metiersVises": [
+      "Manager d'équipe / Responsable hiérarchique",
+      "Chef de projet",
+      "Responsable RH ou formation",
+      "Team Leader / Coordinateur"
+    ],
     "ctaFinal": {
       "titre": "Prêt à faire évoluer votre posture managériale ?",
       "sousTitre": "Formation disponible sur demande. Contactez-nous pour concevoir un programme personnalisé adapté à vos objectifs et à votre équipe.",
@@ -1264,6 +1312,12 @@
       "titre": "Formation non certifiante",
       "incluse": false
     },
+    "metiersVises": [
+      "Responsable RSE / Développement durable",
+      "Chargé de mission RSE",
+      "Manager QHSE",
+      "Consultant en développement durable"
+    ],
     "ctaFinal": {
       "titre": "Prêt à faire de la RSE un levier de performance ?",
       "sousTitre": "Formation disponible sur demande. Contactez-nous pour concevoir un programme personnalisé adapté à votre entreprise et à vos équipes.",
@@ -1393,6 +1447,12 @@
       "titre": "Formation non certifiante",
       "incluse": false
     },
+    "metiersVises": [
+      "Chef de projet / Directeur de programme",
+      "Coordinateur de projet",
+      "Consultant en management de projet",
+      "PMO (Project Management Officer)"
+    ],
     "ctaFinal": {
       "titre": "Prêt à professionnaliser votre gestion de projet ?",
       "sousTitre": "Formation disponible sur demande. Contactez-nous pour concevoir un programme personnalisé adapté à vos objectifs et à vos équipes.",
@@ -1510,6 +1570,12 @@
       "titre": "Formation non certifiante",
       "incluse": false
     },
+    "metiersVises": [
+      "Manager Agile",
+      "Scrum Master / Coach Agile",
+      "Responsable d'équipe en transformation",
+      "Chef de projet en environnement Agile"
+    ],
     "ctaFinal": {
       "titre": "Prêt à insuffler l'Agilité dans votre management ?",
       "sousTitre": "Formation disponible sur demande. Contactez-nous pour concevoir un programme personnalisé adapté à vos objectifs et à votre équipe.",
@@ -1606,6 +1672,12 @@
       "titre": "Formation non certifiante",
       "incluse": false
     },
+    "metiersVises": [
+      "Manager / Directeur d'équipe",
+      "Leader & Coach managérial",
+      "Responsable de Business Unit",
+      "Cadre dirigeant en transformation"
+    ],
     "ctaFinal": {
       "titre": "Prêt à passer au Management 3.0 ?",
       "sousTitre": "Formation disponible sur demande. Contactez-nous pour concevoir un programme personnalisé adapté à vos objectifs et à vos équipes.",
@@ -1737,6 +1809,12 @@
       "titre": "Certificat de réalisation VISIPLUS academy",
       "incluse": true
     },
+    "metiersVises": [
+      "Ingénieur DevOps",
+      "Développeur back-end / full-stack DevOps",
+      "Administrateur systèmes & infrastructure",
+      "Ingénieur CI/CD"
+    ],
     "ctaFinal": {
       "titre": "Prêt à maîtriser le déploiement continu avec Docker ?",
       "sousTitre": "Entrées ouvertes toute l'année. Contactez nos conseillers pour élaborer votre dossier de financement et démarrer votre formation.",
@@ -1867,6 +1945,12 @@
       "titre": "Certificat de réalisation VISIPLUS academy (Capitalisable pour le Titre RNCP Niv. 5)",
       "incluse": true
     },
+    "metiersVises": [
+      "Administrateur systèmes Windows",
+      "Technicien systèmes & réseaux",
+      "Ingénieur infrastructure IT",
+      "Administrateur réseau & sécurité"
+    ],
     "ctaFinal": {
       "titre": "Prêt à maîtriser l'administration sous Windows Server ?",
       "sousTitre": "Entrées ouvertes toute l'année. Contactez nos conseillers pour élaborer votre dossier de financement et démarrer votre formation.",

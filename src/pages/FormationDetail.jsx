@@ -10,7 +10,7 @@ import StatsBar from '../components/Stats/StatsBar';
 import TexteSection from '../components/Textes/TexteSection';
 import CardModule from '../components/Card/CardModule';
 import InfoGrid from '../components/Infos/InfoGrid';
-import { Target, CheckCircle, GraduationCap } from "lucide-react";
+import { Target, CheckCircle, GraduationCap, Briefcase } from "lucide-react";
 import Breadcrumb from '../components/Breadcrumb';
 
 export default function FormationDetail() {
@@ -155,6 +155,41 @@ export default function FormationDetail() {
                     <CheckCircle className="w-5 h-5 text-accent group-hover:text-white" />
                   </div>
                   <span className="text-primary font-bold text-medium">{competence}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* MÉTIERS VISÉS — formations courtes */}
+      {data.metiersVises && data.metiersVises.length > 0 && (
+        <section className="py-[70px] px-6 bg-primary">
+          <div className="max-w-container-3xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-white font-bold text-xs uppercase tracking-widest mb-6">
+                <Briefcase className="w-4 h-4" />
+                Après la formation
+              </div>
+              <h2 className="text-white text-2xl md:text-h1 font-extrabold mb-4 uppercase tracking-wider">
+                Métiers visés
+              </h2>
+              <p className="text-white/70 text-sm max-w-[600px] mx-auto">
+                Cette formation vous ouvre les portes des postes suivants.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {data.metiersVises.map((metier, idx) => (
+                <div
+                  key={idx}
+                  className="bg-white/10 border border-white/20 rounded-xl px-6 py-5 flex items-center gap-4 hover:bg-white/20 transition-colors"
+                >
+                  <div className="bg-accent/20 rounded-lg p-2 shrink-0">
+                    <Briefcase className="w-5 h-5 text-accent" />
+                  </div>
+                  <span className="text-white font-semibold text-sm leading-snug">
+                    {metier}
+                  </span>
                 </div>
               ))}
             </div>

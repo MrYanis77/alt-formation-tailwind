@@ -149,15 +149,6 @@ function FormationsMegaMenu({ onMouseEnter, onMouseLeave, onClose }) {
                         loading="lazy"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                       />
-                      {f.video && (
-                        <div className="absolute inset-0 flex items-center justify-center bg-black/25">
-                          <div className="bg-white/95 rounded-full p-0.5 shadow-sm">
-                            <svg className="w-2.5 h-2.5 text-accent fill-current ml-0.5" viewBox="0 0 24 24">
-                              <path d="M8 5v14l11-7z" />
-                            </svg>
-                          </div>
-                        </div>
-                      )}
                     </div>
                     <span className="text-[11px] font-semibold text-primary group-hover:text-accent transition-colors line-clamp-2 leading-snug flex-1">
                       {f.label}
@@ -252,86 +243,139 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-[100] w-full bg-primary relative">
-      <div className="max-w-[1400px] mx-auto px-4 xl:px-8 flex items-center justify-between h-[80px]">
+      {/* Padding gauche/droite : px-4 xl:px-8 */}
+      {/* Logo à gauche, liens centrés sur la barre, actions à droite. Écart logo ↔ zone centrale ↔ actions : gap-* ci-dessous (à modifier) */}
+      <div className="relative w-full px-4 xl:px-8 flex items-center justify-between h-[80px] gap-14 xl:gap-16 2xl:gap-20">
 
         {/* Logo */}
-        <Link to="/" className="flex-shrink-0 no-underline group flex items-center">
+        <Link
+          to="/"
+          className="relative z-[101] flex-shrink-0 no-underline group flex items-center"
+        >
           <img
-            src="/assets/ogo-2.png"
+
+            src="/assets/logo-2.png"
             alt="Logo Alt Formations"
             className="h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
           />
         </Link>
 
-        {/* ── Menu Desktop ── */}
-        <div className="hidden xl:flex items-center gap-2 2xl:gap-6">
-          {navlinks.map((item) => {
-            if (item.submenu) {
+        {/* Liens centrés (milieu de la navbar) — espacement entre chaque lien : gap-2 / 2xl:gap-6 */}
+        <div className="pointer-events-none absolute inset-0 hidden xl:flex items-center justify-center z-[100]">
+          <div className="pointer-events-auto flex items-center gap-2 2xl:gap-6">
+            {navlinks.map((item) => {
+              if (item.submenu) {
+                return (
+                  <div
+                    key={item.label}
+                    className="self-stretch flex items-center"
+                    onMouseEnter={() => openMega(item.label)}
+                    onMouseLeave={scheduleMegaClose}
+                  >
+                    {item.href ? (
+                      <Link
+                        to={item.href}
+                        className={`text-nav 2xl:text-nav-lg font-semibold transition-colors duration-200 no-underline font-heading flex items-center gap-1 ${
+                          item.href !== "/" && location.pathname.startsWith(item.href)
+                            ? "text-accent"
+                            : "text-gray-300 hover:text-white"
+                        }`}
+                      >
+                        {item.label}
+                        <svg
+                          className={`w-3.5 h-3.5 fill-current opacity-50 transition-transform duration-200 ${
+                            activeMegaLabel === item.label ? "rotate-180" : ""
+                          }`}
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                        </svg>
+                      </Link>
+                    ) : (
+                      <button
+                        type="button"
+                        className={`text-nav 2xl:text-nav-lg font-semibold transition-colors duration-200 font-heading flex items-center gap-1 bg-transparent border-0 cursor-pointer p-0 ${
+                          activeMegaLabel === item.label
+                            ? "text-accent"
+                            : "text-gray-300 hover:text-white"
+                        }`}
+                      >
+                        {item.label}
+                        <svg
+                          className={`w-3.5 h-3.5 fill-current opacity-50 transition-transform duration-200 ${
+                            activeMegaLabel === item.label ? "rotate-180" : ""
+                          }`}
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                        </svg>
+                      </button>
+                    )}
+                  </div>
+                );
+              }
+
               return (
-                <div
-                  key={item.label}
-                  className="self-stretch flex items-center"
-                  onMouseEnter={() => openMega(item.label)}
-                  onMouseLeave={scheduleMegaClose}
-                >
-                  {item.href ? (
-                    <Link
-                      to={item.href}
-                      className={`text-nav 2xl:text-nav-lg font-semibold transition-colors duration-200 no-underline font-heading flex items-center gap-1 ${
-                        item.href !== "/" && location.pathname.startsWith(item.href)
-                          ? "text-accent"
-                          : "text-gray-300 hover:text-white"
-                      }`}
-                    >
-                      {item.label}
-                      <svg
-                        className={`w-3.5 h-3.5 fill-current opacity-50 transition-transform duration-200 ${
-                          activeMegaLabel === item.label ? "rotate-180" : ""
-                        }`}
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
-                      </svg>
-                    </Link>
-                  ) : (
-                    <button
-                      type="button"
-                      className={`text-nav 2xl:text-nav-lg font-semibold transition-colors duration-200 font-heading flex items-center gap-1 bg-transparent border-0 cursor-pointer p-0 ${
-                        activeMegaLabel === item.label
-                          ? "text-accent"
-                          : "text-gray-300 hover:text-white"
-                      }`}
-                    >
-                      {item.label}
-                      <svg
-                        className={`w-3.5 h-3.5 fill-current opacity-50 transition-transform duration-200 ${
-                          activeMegaLabel === item.label ? "rotate-180" : ""
-                        }`}
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
-                      </svg>
-                    </button>
-                  )}
+                <div key={item.label} className="py-[25px]">
+                  <Link
+                    to={item.href}
+                    className={`text-nav 2xl:text-nav-lg font-semibold transition-colors duration-200 no-underline font-heading flex items-center gap-1 ${
+                      item.href !== "/" && location.pathname.startsWith(item.href)
+                        ? "text-accent"
+                        : "text-gray-300 hover:text-white"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
                 </div>
               );
-            }
+            })}
+          </div>
+        </div>
 
-            return (
-              <div key={item.label} className="py-[25px]">
-                <Link
-                  to={item.href}
-                  className={`text-nav 2xl:text-nav-lg font-semibold transition-colors duration-200 no-underline font-heading flex items-center gap-1 ${
-                    item.href !== "/" && location.pathname.startsWith(item.href)
-                      ? "text-accent"
-                      : "text-gray-300 hover:text-white"
-                  }`}
+        {/* Actions + burger */}
+        <div className="relative z-[101] flex items-center gap-3 shrink-0">
+            {/* Auth desktop commenté
+            {user ? (
+              <div className="hidden sm:flex items-center gap-2">
+                {isAdmin ? (
+                  <Link
+                    to="/admin"
+                    className="text-xs sm:text-sm font-bold text-primary bg-accent hover:bg-accent-dark hover:text-white px-3 py-2 rounded-lg no-underline transition-colors"
+                  >
+                    Admin · {user.prenom}
+                  </Link>
+                ) : (
+                  <Link
+                    to="/mon-espace"
+                    className="text-xs sm:text-sm font-bold text-primary bg-white hover:bg-gray-100 px-3 py-2 rounded-lg no-underline transition-colors"
+                  >
+                    {user.prenom}
+                  </Link>
+                )}
+                <button
+                  onClick={handleLogout}
+                  className="text-xs sm:text-sm font-bold text-white hover:text-accent px-2 py-2 transition-colors"
                 >
-                  {item.label}
-                </Link>
+                  Déconnexion
+                </button>
               </div>
-            );
-          })}
+            ) : (
+              <Link to="/connexion" className="hidden sm:block btn-orange text-sm py-2.5 px-5 no-underline">
+                Se connecter
+              </Link>
+            )}
+            */}
+
+            <button className="xl:hidden text-white p-2" onClick={() => setIsOpen(!isOpen)}>
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {isOpen ? (
+                  <path d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path d="M4 6h16M4 12h16m-7 6h7" />
+                )}
+              </svg>
+            </button>
         </div>
 
         {activeMegaLabel === "Formations" && (
@@ -348,51 +392,6 @@ export default function Navbar() {
             onMouseLeave={scheduleMegaClose}
           />
         )}
-
-        {/* ── Actions desktop ── */}
-        <div className="flex items-center gap-3">
-          {/* Auth desktop commenté
-          {user ? (
-            <div className="hidden sm:flex items-center gap-2">
-              {isAdmin ? (
-                <Link
-                  to="/admin"
-                  className="text-xs sm:text-sm font-bold text-primary bg-accent hover:bg-accent-dark hover:text-white px-3 py-2 rounded-lg no-underline transition-colors"
-                >
-                  Admin · {user.prenom}
-                </Link>
-              ) : (
-                <Link
-                  to="/mon-espace"
-                  className="text-xs sm:text-sm font-bold text-primary bg-white hover:bg-gray-100 px-3 py-2 rounded-lg no-underline transition-colors"
-                >
-                  {user.prenom}
-                </Link>
-              )}
-              <button
-                onClick={handleLogout}
-                className="text-xs sm:text-sm font-bold text-white hover:text-accent px-2 py-2 transition-colors"
-              >
-                Déconnexion
-              </button>
-            </div>
-          ) : (
-            <Link to="/connexion" className="hidden sm:block btn-orange text-sm py-2.5 px-5 no-underline">
-              Se connecter
-            </Link>
-          )}
-          */}
-
-          <button className="xl:hidden text-white p-2" onClick={() => setIsOpen(!isOpen)}>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              {isOpen ? (
-                <path d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path d="M4 6h16M4 12h16m-7 6h7" />
-              )}
-            </svg>
-          </button>
-        </div>
 
         {/* ── Menu Mobile ── */}
         <div
