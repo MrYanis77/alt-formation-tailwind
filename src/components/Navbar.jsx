@@ -13,6 +13,8 @@ function FormationsMegaMenu({ onMouseEnter, onMouseLeave, onClose }) {
   const allCats =
     activeTab === "diplomantes"
       ? megaMenuFormations.diplomantes
+      : activeTab === "certifiantes"
+      ? megaMenuFormations.certifiantes
       : megaMenuFormations.elearning;
 
   const currentCat = allCats.find((c) => c.id === hoveredCatId) || allCats[0];
@@ -22,6 +24,8 @@ function FormationsMegaMenu({ onMouseEnter, onMouseLeave, onClose }) {
     const cats =
       tab === "diplomantes"
         ? megaMenuFormations.diplomantes
+        : tab === "certifiantes"
+        ? megaMenuFormations.certifiantes
         : megaMenuFormations.elearning;
     setHoveredCatId(cats[0]?.id);
   };
@@ -38,7 +42,7 @@ function FormationsMegaMenu({ onMouseEnter, onMouseLeave, onClose }) {
         {/* ── LEFT SIDEBAR ── */}
         <div className="w-72 bg-[#f8f9fb] border-r border-gray-100 flex flex-col shrink-0">
 
-          {/* Tabs Diplômantes / E-Learning */}
+          {/* Tabs Diplômantes / Certifiantes / E-Learning */}
           <div className="p-4 border-b border-gray-100 shrink-0">
             <div className="flex gap-1 bg-gray-200/80 rounded-xl p-1">
               <button
@@ -50,6 +54,16 @@ function FormationsMegaMenu({ onMouseEnter, onMouseLeave, onClose }) {
                 }`}
               >
                 Diplômantes
+              </button>
+              <button
+                onClick={() => handleTabChange("certifiantes")}
+                className={`flex-1 text-[11px] font-bold py-2 rounded-lg transition-all ${
+                  activeTab === "certifiantes"
+                    ? "bg-white text-primary shadow-sm"
+                    : "text-gray-500 hover:text-gray-700"
+                }`}
+              >
+                Certifiantes
               </button>
               <button
                 onClick={() => handleTabChange("elearning")}
@@ -85,13 +99,15 @@ function FormationsMegaMenu({ onMouseEnter, onMouseLeave, onClose }) {
           {/* CTA bas */}
           <div className="p-4 border-t border-gray-100 shrink-0">
             <Link
-              to={activeTab === "diplomantes" ? "/formations" : "/formations-courtes"}
+              to={activeTab === "diplomantes" ? "/formations" : activeTab === "certifiantes" ? "/formations-certifiantes" : "/formations-courtes"}
               onClick={onClose}
               className="flex items-center justify-between w-full px-4 py-3 bg-primary text-white rounded-xl text-xs font-bold no-underline hover:bg-primary/90 transition-colors"
             >
               <span>
                 {activeTab === "diplomantes"
                   ? "Toutes les formations"
+                  : activeTab === "certifiantes"
+                  ? "Toutes les certifiantes"
                   : "Tout le catalogue E-Learning"}
               </span>
               <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -458,6 +474,28 @@ export default function Navbar() {
                           Formations Diplômantes
                         </p>
                         {megaMenuFormations.diplomantes.map((cat) => (
+                          <Link
+                            key={cat.id}
+                            to={cat.href}
+                            onClick={() => setIsOpen(false)}
+                            className="flex items-center gap-3 text-gray-300 text-base font-semibold no-underline hover:text-white"
+                          >
+                            <img src={cat.image} alt="" className="w-8 h-8 object-cover rounded-md shrink-0" />
+                            {cat.label}
+                          </Link>
+                        ))}
+
+                        <p className="text-xs font-extrabold text-accent uppercase tracking-widest mt-2">
+                          Formations Certifiantes
+                        </p>
+                        <Link
+                          to="/formations-certifiantes"
+                          onClick={() => setIsOpen(false)}
+                          className="text-gray-300 text-base font-semibold no-underline hover:text-white"
+                        >
+                          Voir toutes les certifiantes →
+                        </Link>
+                        {megaMenuFormations.certifiantes.map((cat) => (
                           <Link
                             key={cat.id}
                             to={cat.href}

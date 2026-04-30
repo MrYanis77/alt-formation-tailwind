@@ -105,7 +105,28 @@ export default function FormationDetail() {
         </section>
       )}
 
-      {/* 6. INFOS PRATIQUES */}
+      {/* 6. COMPÉTENCES */}
+      {data.competences && (
+        <section className="py-[70px] px-6 bg-white">
+          <div className="max-w-container-3xl mx-auto">
+            <h2 className="text-primary-light text-2xl md:text-h1 font-extrabold text-center mb-12 uppercase tracking-wider">
+              Compétences développées
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {data.competences.map((competence, idx) => (
+                <div key={idx} className="flex items-center gap-4 bg-gray-50 border border-border p-5 rounded-xl hover:shadow-md transition-all group">
+                  <div className="bg-white p-2 rounded-lg shadow-sm group-hover:bg-accent transition-colors">
+                    <CheckCircle className="w-5 h-5 text-accent group-hover:text-white" />
+                  </div>
+                  <span className="text-primary font-bold text-medium">{competence}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 7. INFOS PRATIQUES */}
       {data.infosPratiques && (
         <section className="py-[70px] px-6 bg-gray-50 border-y border-border">
           <div className="max-w-container-3xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -137,27 +158,6 @@ export default function FormationDetail() {
                 </ul>
               }
             />
-          </div>
-        </section>
-      )}
-
-      {/* 7. COMPÉTENCES */}
-      {data.competences && (
-        <section className="py-[70px] px-6 bg-white">
-          <div className="max-w-container-3xl mx-auto">
-            <h2 className="text-primary-light text-2xl md:text-h1 font-extrabold text-center mb-12 uppercase tracking-wider">
-              Compétences développées
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {data.competences.map((competence, idx) => (
-                <div key={idx} className="flex items-center gap-4 bg-gray-50 border border-border p-5 rounded-xl hover:shadow-md transition-all group">
-                  <div className="bg-white p-2 rounded-lg shadow-sm group-hover:bg-accent transition-colors">
-                    <CheckCircle className="w-5 h-5 text-accent group-hover:text-white" />
-                  </div>
-                  <span className="text-primary font-bold text-medium">{competence}</span>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
       )}

@@ -1,5 +1,6 @@
 import formationData from './json/formation.json';
 import formationCortesData from './json/formation-courtes.json';
+import formationsCertifiantesData from './json/formations-certifiantes.json';
 
 /**
  * Mapping explicite des images locales par ID de formation.
@@ -66,6 +67,7 @@ const mapIdToItem = (id) => {
   return {
     titre: data.hero.titre.replace(/^Devenez\s+/i, '').replace(/^Faites votre Formation en\s+/i, ''),
     features: (data.competences || []).slice(0, 3),
+    competences: data.competences || [],
     imageUrl: imageMap[id] || data.hero.image || FALLBACK_IMAGE,
     href: `/formation/${id}`
   };
@@ -78,6 +80,20 @@ const mapCourteIdToItem = (id) => {
   return {
     titre: data.hero.titre,
     features: (data.competences || []).slice(0, 3),
+    competences: data.competences || [],
+    imageUrl: imageMap[id] || FALLBACK_IMAGE,
+    href: `/formation/${id}`
+  };
+};
+
+// Fonction d'aide pour les formations certifiantes
+const mapCertifianteIdToItem = (id) => {
+  const data = formationsCertifiantesData[id];
+  if (!data) return null;
+  return {
+    titre: data.hero.titre,
+    features: (data.competences || []).slice(0, 3),
+    competences: data.competences || [],
     imageUrl: imageMap[id] || FALLBACK_IMAGE,
     href: `/formation/${id}`
   };
@@ -192,3 +208,37 @@ export const catalogueCourtes = (() => {
     items,
   }));
 })();
+
+const categoriesCertifiantes = {
+  'devops': {
+    label: 'DevOps',
+    description: 'Formations certifiantes DevOps, méthodes agiles et organisation.',
+  },
+  'devsecops': {
+    label: 'DevSecOps',
+    description: 'Sécurité intégrée au cycle DevOps, pratiques et outils DevSecOps.',
+  },
+};
+
+export const catalogueCertifiantes = (() => {
+  const grouped = {};
+  Object.entries(formationsCertifiantesData).forEach(([id, data]) => {
+    const cat = data.categorie || 'autre';
+    if (!grouped[cat]) grouped[cat] = [];
+    const item = mapCertifianteIdToItem(id);
+    if (item) grouped[cat].push(item);
+  });
+
+  return Object.entries(grouped).map(([id, items]) => ({
+    id,
+    label: categoriesCertifiantes[id]?.label || id,
+    description: categoriesCertifiantes[id]?.description || '',
+    items,
+  }));
+})();
+
+export const heroCertifiantes = {
+  titre: "Formations Certifiantes",
+  sousTitre: "Des formations pratiques et certifiées pour booster vos compétences professionnelles.",
+  video: "/assets/video/formation.mp4",
+};

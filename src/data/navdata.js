@@ -1,5 +1,6 @@
 import formationsData from './json/formation.json';
 import formationsCortesData from './json/formation-courtes.json';
+import formationsCertifiantesData from './json/formations-certifiantes.json';
 import { imageMap } from './formations';
 
 // Mapping local en sécurité au cas où le fichier JSON est écrasé sans les catégories
@@ -112,8 +113,12 @@ export const formationsCortesArray = Object.entries(formationsCortesData).map(([
   formatEntry(id, data)
 );
 
-// Fusion des formations longues et courtes dans un tableau unique
-export const formationsArray = [...longFormationsArray, ...formationsCortesArray];
+export const formationsCertifiantesArray = Object.entries(formationsCertifiantesData).map(([id, data]) =>
+  formatEntry(id, data)
+);
+
+// Fusion de toutes les formations dans un tableau unique
+export const formationsArray = [...longFormationsArray, ...formationsCortesArray, ...formationsCertifiantesArray];
 
 // Filtrage pour récupérer chaque groupe et générer le sous-sous-menu
 const getSubMenu = (categoryKey) => {
@@ -173,6 +178,14 @@ export const navlinks = [
         ],
       },
       {
+        label: "Formations Certifiantes",
+        href: "/formations-certifiantes",
+        submenu: formationsCertifiantesArray.map(f => ({
+          label: f.hero?.titre || f.titre || f.id,
+          href: `/formation/${f.id}`
+        })),
+      },
+      {
         label: "E-Learning",
         href: "/formations-courtes",
         submenu: getFormationsCortesSubMenu(),
@@ -181,7 +194,8 @@ export const navlinks = [
   },
   { label: "Certifications", href: "/certification" },
   { label: "Financements", href: "/financements" },
-  { label: "Carrières", href: "/carrieres" },
+  { label: "F.A.Q", href: "/faq" },
+  { label: "Bilan de Compétences", href: "/bilan-de-competences" },
   {
     label: "Ressources",
     submenu: [
@@ -191,12 +205,17 @@ export const navlinks = [
         image: "/assets/images/analyste_data.jpg",
         description: "Fiches pratiques, outils IA et ressources pédagogiques gratuites.",
       },
+      {
+        label: "Gestion de Carrières",
+        href: "/carrieres",
+        image: "/assets/images/emploi.jpg",
+        description: "Gestion de carrière, coaching emploi et accompagnement professionnel.",
+      },
     ],
   },
-  { label: "Nous rejoindre", href: "/nous-rejoindre" },
   { label: "Nos Campus", href: "/campus" },
   { label: "Contact", href: "/contact" },
-  { label: "F.A.Q", href: "/faq" },
+  { label: "Nous rejoindre", href: "/nous-rejoindre" },
 ];
 
 // ── Mega Menu Formations ───────────────────────────────────────────────────────
@@ -211,6 +230,8 @@ const categoryImages = {
   'cybersecurite':                 '/assets/images/pentester.jpg',
   'management':                    '/assets/images/entreprise.jpg',
   'devops-devsecops':              '/assets/images/Datacenter.jpg',
+  'devops':                        '/assets/images/devops.jpg',
+  'devsecops':                     '/assets/images/Datacenter.jpg',
   'informatique-systemes-reseaux': '/assets/images/Terchnicien_reseau.jpg',
   'systemes-embarques-iot':        '/assets/images/admin_system.jpg',
 };
@@ -220,6 +241,8 @@ const cortesLabels = {
   'digital-developpement':         'Développement & Big Data',
   'management':                    'Management',
   'devops-devsecops':              'DevOps / DevSecOps',
+  'devops':                        'DevOps',
+  'devsecops':                     'DevSecOps',
   'informatique-systemes-reseaux': 'Informatique & Systèmes',
   'systemes-embarques-iot':        'Systèmes Embarqués & IOT',
 };
@@ -262,6 +285,29 @@ const buildElearningCategories = () => {
   return Object.values(grouped);
 };
 
+const buildCertifiantesCategories = () => {
+  const grouped = {};
+  formationsCertifiantesArray.forEach(f => {
+    const cat = f.categorie || 'autre';
+    if (!grouped[cat]) {
+      grouped[cat] = {
+        id:         cat,
+        label:      cortesLabels[cat] || cat,
+        href:       `/formations-certifiantes#${cat}`,
+        image:      categoryImages[cat] || FALLBACK_IMG,
+        formations: [],
+      };
+    }
+    grouped[cat].formations.push({
+      label: f.hero?.titre || f.id,
+      href:  `/formation/${f.id}`,
+      image: imageMap[f.id] || categoryImages[f.categorie] || FALLBACK_IMG,
+      video: f.hero?.video || null,
+    });
+  });
+  return Object.values(grouped);
+};
+
 export const megaMenuFormations = {
   diplomantes: [
     buildMegaCategory('cybersecurite-reseaux',  'Cybersécurité & Réseaux',  '/formations#cybersecurite-reseaux'),
@@ -270,5 +316,6 @@ export const megaMenuFormations = {
     buildMegaCategory('ressources-humaines',    'Ressources Humaines',      '/formations#ressources-humaines'),
     buildMegaCategory('comptabilite-gestion',   'Comptabilité & Gestion',   '/formations#comptabilite-gestion'),
   ],
+  certifiantes: buildCertifiantesCategories(),
   elearning: buildElearningCategories(),
 };

@@ -44,63 +44,34 @@ function ContenuCarriere({ data }) {
                 </div>
             </div>
 
-            {/* Bilan de compétences */}
+            {/* Accompagnement en gestion de carrière */}
             <div className="bg-gray-50 rounded-2xl p-10 border border-gray-100">
                 <div className="text-center mb-10">
                     <h3 className="font-heading text-2xl md:text-3xl font-extrabold text-primary uppercase tracking-wide">
-                        {data.bilanDeCompetences.titre}
+                        {data.accompagnement.titre}
                     </h3>
                     <div className="w-16 h-1.5 bg-accent mx-auto mt-4 rounded-full mb-6"></div>
                     <p className="text-content-muted font-body leading-relaxed max-w-2xl mx-auto">
-                        {data.bilanDeCompetences.description}
+                        {data.accompagnement.description}
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12">
-                    {/* Objectifs */}
-                    <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
-                        <h4 className="font-heading text-xl font-bold text-primary mb-6">Objectifs de la démarche</h4>
-                        <ul className="space-y-4">
-                            {data.bilanDeCompetences.objectifs.map((obj, idx) => (
-                                <li key={idx} className="flex items-start gap-3 text-content-muted font-body">
-                                    <CheckIcon /><span>{obj}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    {/* Bilan individuel */}
-                    <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
-                        <h4 className="font-heading text-xl font-bold text-primary mb-4">{data.bilanIndividuel.titre}</h4>
-                        <p className="text-content-muted font-body text-sm mb-6">{data.bilanIndividuel.intro}</p>
-                        <ul className="space-y-3">
-                            {data.bilanIndividuel.benefices.map((item, idx) => (
-                                <li key={idx} className="flex items-start gap-3 text-content font-medium font-body text-sm">
-                                    <CheckIcon /><span>{item}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </div>
-
-                {/* Les 3 phases */}
-                <h4 className="font-heading text-xl font-bold text-primary uppercase tracking-wide text-center mb-8">
-                    Les 3 phases de l'accompagnement
-                </h4>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {data.bilanDeCompetences.lesTroisPhases.map((etape, idx) => (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    {data.accompagnement.etapes.map((etape, idx) => (
                         <div key={idx} className="group p-8 rounded-2xl bg-white border border-gray-200 hover:bg-accent transition-colors duration-300 flex flex-col shadow-sm">
                             <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
-                                <span className="font-heading text-lg font-bold text-accent">0{idx + 1}</span>
+                                <span className="font-heading text-lg font-bold text-accent">{etape.numero}</span>
                             </div>
                             <h5 className="font-heading text-[17px] font-bold text-primary mb-3 group-hover:text-white transition-colors duration-300">
-                                {etape.phase}
+                                {etape.titre}
                             </h5>
                             <p className="text-sm text-content-muted font-body leading-relaxed group-hover:text-white/90 transition-colors duration-300">
-                                {etape.details}
+                                {etape.description}
                             </p>
                         </div>
                     ))}
                 </div>
+
             </div>
 
             {/* Pourquoi choisir */}
@@ -124,35 +95,6 @@ function ContenuCarriere({ data }) {
                 </div>
             </div>
 
-            {/* Tests extérieurs */}
-            <div className="bg-gray-50 rounded-2xl p-10 border border-gray-100">
-                <div className="text-center mb-10">
-                    <h3 className="font-heading text-2xl md:text-3xl font-extrabold text-primary uppercase tracking-wide mb-4">
-                        {data.testsExterieurs.titre}
-                    </h3>
-                    <p className="text-content-muted font-body max-w-2xl mx-auto">{data.testsExterieurs.intro}</p>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {data.testsExterieurs.tests.map((test, idx) => (
-                        <div key={idx} className="bg-white rounded-xl p-7 border border-gray-100 flex flex-col hover:shadow-lg transition-all duration-300">
-                            <div className="w-11 h-11 bg-primary rounded-lg flex items-center justify-center mb-5">
-                                <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                                </svg>
-                            </div>
-                            <h5 className="font-heading text-lg font-bold text-primary mb-2">{test.nom}</h5>
-                            <p className="text-content-muted font-body text-sm leading-relaxed mb-6 flex-grow">{test.description}</p>
-                            <a href={test.lien} target="_blank" rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 text-accent font-bold font-heading hover:text-primary transition-colors text-sm mt-auto">
-                                {test.labelLien}
-                                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                </svg>
-                            </a>
-                        </div>
-                    ))}
-                </div>
-            </div>
         </div>
     );
 }

@@ -1,0 +1,251 @@
+{
+  "dasa-devops-fundamentals": {
+    "categorie": "devops",
+    "type": "certifiante",
+    "hero": {
+      "titre": "DASA DevOps Fundamentals",
+      "sousTitre": "Appréhendez les concepts-clés de DevOps, maîtrisez les processus de prestation de services et préparez la certification officielle DASA.",
+      "video": "/assets/video/formations/dev-web-mobile.mp4"
+    },
+    "stats": [
+      { "label": "Durée", "value": "3 jours" },
+      { "label": "Modalité", "value": "Présentiel" },
+      { "label": "Public visé", "value": "Professionnels IT" },
+      { "label": "Tarif", "value": "2 200 €" }
+    ],
+    "presentation": {
+      "titre": "DASA DevOps Fundamentals",
+      "paragraphes": [
+        "Cette formation vous permet d'appréhender les concepts-clés et les principes de DevOps dans un cadre officiel certifiant reconnu par la DevOps Agile Skills Association (DASA).",
+        "Vous comprendrez le processus de prestation de services, les modèles organisationnels DevOps et les enjeux de la transformation numérique au sein des équipes IT.",
+        "À l'issue de la formation, vous maîtriserez les concepts d'automatisation des tests, de l'infrastructure, de l'approvisionnement et du déploiement continu, et serez prêt(e) à passer l'examen de certification DASA DevOps Fundamentals."
+      ]
+    },
+    "objectifs": [
+      "Appréhender les concepts-clés et les principes de DevOps",
+      "Comprendre le processus de prestation de services",
+      "Maîtriser les concepts de l'automatisation des tests, de l'infrastructure, de l'approvisionnement et du déploiement",
+      "Préparer et réussir la certification DASA DevOps Fundamentals"
+    ],
+    "programme": {
+      "dureeTotale": "3 jours — Formation présentielle intensive avec ateliers et examen blanc",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Introduction à DevOps",
+          "duree": "0,5 jour",
+          "description": "Histoire, émergence, fondamentaux et avantages. Transformation numérique et DevOps. Les clés d'une analyse de rentabilité. Domaines de compétences, de connaissances et cadre de compétences. DevOps Agile Skills Association (DASA)."
+        },
+        {
+          "id": 2,
+          "titre": "Culture DevOps",
+          "duree": "0,5 jour",
+          "description": "Organisation autour d'un concept d'équipes. Aspects culturels d'une équipe. Mentalité et qualité de service à la source. Éléments clés : équipes motivées, gestion visuelle, amélioration continue, résolution de problèmes, mentalité Kaizen. Leadership dans un environnement DevOps. Leadership et rétroaction. Mise en place d'une culture DevOps. Changement culturel."
+        },
+        {
+          "id": 3,
+          "titre": "Organisation DevOps",
+          "duree": "0,5 jour",
+          "description": "Modèles organisationnels. Impacts. Alignement du modèle organisationnel avec l'IT. Importance des versions hybrides DevOps. Équipes autonomes. Loi Conway et architecture des organisations. Architecture et conception pour DevOps. Relation complexité/qualité. Micro Services Architecture (MSA). Architecture pour la résilience systémique. Gouvernance DevOps."
+        },
+        {
+          "id": 4,
+          "titre": "Processus",
+          "duree": "0,5 jour",
+          "description": "Bases de processus. DevOps par rapport à ITSM. Avantages de l'agile. Agile et Scrum. Fondamentaux du Lean. Les huit types de gaspillage. Cartographie de flux de valeur. Optimisation de la valeur commerciale et analyse de métier. Rôle d'un produit viable minimal dans un processus Agile. Rôle des tranches dans la cartographie des besoins."
+        },
+        {
+          "id": 5,
+          "titre": "Automatisation",
+          "duree": "0,5 jour",
+          "description": "Automatisation pour la livraison de logiciels. Automatisation de la livraison continue : définition, objectifs, avantages. Automatisation de la distribution continue. Impacts. DevOps versus livraison continue. Émergence du Cloud et impacts dans les organisations DevOps. Approvisionnement automatisé. Appliquer les concepts de Cloud dans une organisation."
+        },
+        {
+          "id": 6,
+          "titre": "Mesure et amélioration",
+          "duree": "0,5 jour",
+          "description": "Besoin de mesure et de rétroaction. Choisir les bonnes métriques. Bonnes pratiques (MTTR). Les cinq principaux indicateurs de la performance IT. Surveillance et enregistrement. Surveillance optimisée pour DevOps. Culture de rétroaction."
+        },
+        {
+          "id": 7,
+          "titre": "Conclusion et passage de l'examen",
+          "duree": "0,5 jour",
+          "description": "Examen blanc et révisions. Passage de l'examen de certification DASA DevOps Fundamentals."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation & Progression",
+      "description": "Un dispositif complet d'évaluation tout au long de la formation pour mesurer vos progrès.",
+      "etapes": [
+        "Avant la formation : questionnaire d'objectifs personnels et d'auto-évaluation des thématiques abordées.",
+        "Pendant la formation : observations personnalisées du formateur avec conseils sur les points forts et points de vigilance.",
+        "En fin de formation : QCM et/ou ateliers pratiques pour évaluer vos nouvelles compétences et votre progression.",
+        "Questionnaire de satisfaction à chaud à l'issue de la session.",
+        "Questionnaire d'auto-évaluation à froid proposé 6 à 9 mois après la formation pour mesurer les bénéfices acquis."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 3 jours",
+          "Format : Présentiel",
+          "Tarif standard : 2 200 €",
+          "Prix avec certification : 2 200 €",
+          "Référence : Num_devop_02",
+          "Public visé : Professionnels impliqués dans le développement et la fourniture de services informatiques",
+          "Disponible en Inter-Entreprise et Intra-Entreprise",
+          "Formation disponible sur demande"
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Aucune connaissance particulière requise.",
+          "La connaissance fondamentale des principes Agile, Scrum, Lean et ITSM est bénéfique."
+        ]
+      }
+    },
+    "methodologie": "Cette formation repose sur une combinaison de constructions participatives, de mises en perspectives par des apports théoriques et méthodologiques, et de mises en situation (simulation et jeux de rôle) permettant de mettre en évidence les difficultés et de découvrir progressivement les méthodes et techniques appropriées.",
+    "certification": "DASA DevOps Fundamentals",
+    "competences": [
+      "Appréhender les concepts-clés et principes de DevOps",
+      "Comprendre la culture et l'organisation DevOps",
+      "Maîtriser les processus Agile, Scrum et Lean appliqués à DevOps",
+      "Mettre en œuvre l'automatisation de la livraison continue",
+      "Mesurer et améliorer la performance IT",
+      "Passer l'examen de certification DASA DevOps Fundamentals"
+    ],
+    "metiersVises": [
+      "Développeur / Ingénieur logiciel",
+      "Administrateur systèmes & réseaux",
+      "Chef de projet IT",
+      "Architecte solutions",
+      "Responsable IT / DSI"
+    ],
+    "ctaFinal": {
+      "titre": "Prêt à obtenir votre certification DevOps ?",
+      "sousTitre": "Formation disponible sur demande en Inter ou Intra-Entreprise. Contactez-nous pour planifier une session adaptée à vos besoins.",
+      "boutons": [
+        { "label": "NOUS CONTACTER" }
+      ]
+    }
+  },
+
+  "devops-methode-organisation": {
+    "categorie": "devops",
+    "type": "certifiante",
+    "hero": {
+      "titre": "DevOps, méthode et organisation",
+      "sousTitre": "Découvrez les fondements du mouvement DevOps, maîtrisez la chaîne de déploiement continu et développez le culte de la mesure en équipe.",
+      "video": "/assets/video/formations/dev-web-mobile.mp4"
+    },
+    "stats": [
+      { "label": "Durée", "value": "2 jours" },
+      { "label": "Modalité", "value": "Présentiel" },
+      { "label": "Public visé", "value": "Professionnels IT" },
+      { "label": "Tarif", "value": "1 800 €" }
+    ],
+    "presentation": {
+      "titre": "DevOps, méthode et organisation",
+      "paragraphes": [
+        "Cette formation vous permet de découvrir l'origine du mouvement DevOps et d'accompagner culturellement l'évolution vers une organisation DevOps au sein de votre équipe.",
+        "Vous maîtriserez la chaîne de déploiement continu : les bons réflexes, les outils essentiels et les rituels collaboratifs qui font la force des équipes DevOps performantes.",
+        "À travers des ateliers ludinnovants et des travaux pratiques concrets, vous développerez le culte de la mesure, identifierez les étapes clés pour mettre en œuvre la démarche et repartirez avec un plan d'action opérationnel."
+      ]
+    },
+    "objectifs": [
+      "Faire découvrir l'origine du mouvement DevOps",
+      "Accompagner culturellement l'évolution vers le DevOps",
+      "Maîtriser la chaîne de déploiement continu : les bons réflexes, les outils, les rituels collaboratifs",
+      "Développer le culte de la mesure et mettre en œuvre les bonnes pratiques",
+      "Identifier les principales étapes pour mettre en œuvre la démarche"
+    ],
+    "programme": {
+      "dureeTotale": "2 jours — Ateliers collaboratifs et travaux pratiques sur chaque module",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "DevOps : les fondamentaux",
+          "duree": "0,5 jour",
+          "description": "Les mutations engendrées par la (r)évolution digitale. Les nouveaux challenges. Les solutions : les Méthodes Agiles et DevOps. Leur positionnement parmi les frameworks et normes de la production de services IT. Les fondements du mouvement DevOps."
+        },
+        {
+          "id": 2,
+          "titre": "Culture/Partage : de la coordination à l'intelligence collective",
+          "duree": "0,5 jour",
+          "description": "Accompagner l'évolution. Constituer des équipes pluridisciplinaires, mettre en place l'apprentissage continu. Stades de maturité d'une équipe. Adapter la gouvernance : passer d'une structure mécanique à une structure innovante. L'engagement de tous, le vrai défi pour les managers. Faire évoluer les postures. TP : ateliers collaboratifs pour mettre en pratique l'auto-gouvernance, établir les bases d'une communication efficace et développer l'intelligence collective."
+        },
+        {
+          "id": 3,
+          "titre": "Automatisation : dégager de la valeur sur la chaîne de production logicielle",
+          "duree": "0,5 jour",
+          "description": "Les choix d'architecture. La gestion des exigences produit et les outils associés. La gestion des environnements, de version, la livraison continue, l'automatisation des tests et le déploiement continu. Le passage à l'échelle. TP : définir un 'Backlog DevOps' permettant de construire une chaîne de déploiement continu, priorisation et définition du plan d'itérations."
+        },
+        {
+          "id": 4,
+          "titre": "Mesure : collecter du feedback et s'améliorer en continu",
+          "duree": "0,5 jour",
+          "description": "Définitions essentielles et exemples de métriques. Les différentes sources de données. Les étapes clés à considérer. Focus sur l'approche Lean Start Up. La surveillance continue et les outils associés. Le dashboard DevOps comme support au management visuel. TP : définition des métriques, spécification du Dashboard d'équipe, mise à jour du Backlog DevOps."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation & Progression",
+      "description": "Un dispositif complet d'évaluation tout au long de la formation pour mesurer vos progrès.",
+      "etapes": [
+        "Avant la formation : questionnaire d'objectifs personnels et d'auto-évaluation des thématiques abordées.",
+        "Pendant la formation : observations personnalisées du formateur avec conseils sur les points forts et points de vigilance.",
+        "En fin de formation : QCM et/ou ateliers pratiques pour évaluer vos nouvelles compétences et votre progression.",
+        "Questionnaire de satisfaction à chaud à l'issue de la session.",
+        "Questionnaire d'auto-évaluation à froid proposé 6 à 9 mois après la formation pour mesurer les bénéfices acquis."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 2 jours",
+          "Format : Présentiel",
+          "Tarif standard : 1 800 €",
+          "Référence : Num_devop_01",
+          "Public visé : Toute personne voulant faire carrière en DevOps",
+          "Disponible en Inter-Entreprise et Intra-Entreprise",
+          "Formation disponible sur demande"
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Connaissance des services IT.",
+          "Capacité de communiquer."
+        ]
+      }
+    },
+    "methodologie": "Cette formation repose sur une combinaison de constructions participatives, de mises en perspectives par des apports théoriques et méthodologiques, et de mises en situation (simulation et jeux de rôle) permettant de mettre en évidence les difficultés et de découvrir progressivement les méthodes et techniques appropriées.",
+    "certification": "Formation non certifiante",
+    "competences": [
+      "Comprendre les fondements et l'histoire du mouvement DevOps",
+      "Constituer et animer des équipes pluridisciplinaires DevOps",
+      "Mettre en place une chaîne de déploiement continu",
+      "Automatiser les tests, la livraison et le déploiement",
+      "Mesurer la performance IT et piloter par les données",
+      "Construire un Backlog DevOps et un Dashboard d'équipe"
+    ],
+    "metiersVises": [
+      "Développeur / Ingénieur logiciel",
+      "Chef de projet IT",
+      "Scrum Master / Coach Agile",
+      "Responsable IT / DSI",
+      "Toute personne impliquée dans une transformation DevOps"
+    ],
+    "ctaFinal": {
+      "titre": "Prêt à transformer votre organisation en DevOps ?",
+      "sousTitre": "Formation disponible sur demande en Inter ou Intra-Entreprise. Contactez-nous pour planifier une session adaptée à vos besoins.",
+      "boutons": [
+        { "label": "NOUS CONTACTER" }
+      ]
+    }
+  }
+}
