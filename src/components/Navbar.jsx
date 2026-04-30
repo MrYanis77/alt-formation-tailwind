@@ -254,7 +254,7 @@ export default function Navbar() {
         >
           <img
 
-            src="/assets/logo-2.png"
+            src="/assets/ogo-2.png"
             alt="Logo Alt Formations"
             className="h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
           />
