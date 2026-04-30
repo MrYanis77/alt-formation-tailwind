@@ -12,21 +12,21 @@ export const parcours = {
     titreSection: "Quel est votre objectif aujourd'hui ?",
     descriptionSection: "Sélectionnez le parcours qui correspond le mieux à votre situation actuelle pour découvrir comment nous pouvons vous aider.",
 
-    // Carte 1 : Gestion de Carrière / Bilan de compétences
+    // Carte 1 : Gestion de Carrière
     gestionCarriere: {
-        titre: "Gestion de Carrière & Bilan",
+        titre: "Gestion de Carrière",
         tagline: "Faites le point et donnez une nouvelle direction à votre vie professionnelle.",
         description: "Un accompagnement en profondeur pour analyser vos compétences, définir vos envies et construire un projet professionnel qui vous ressemble vraiment.",
-        icon: "compass", // Référence pour l'icône SVG dans le composant
+        icon: "compass",
         benefices: [
             "Faire un bilan complet de vos compétences",
             "Définir un projet de reconversion",
             "Retrouver du sens dans votre travail",
             "Préparer une évolution en interne"
         ],
-        ctaLabel: "Découvrir le bilan",
+        ctaLabel: "Découvrir la gestion de carrière",
         ctaUrl: "/gestion-carrieres",
-        couleur: "primary" // Pour le style de la carte
+        couleur: "primary"
     },
 
     // Carte 2 : Coaching Emploi

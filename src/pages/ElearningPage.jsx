@@ -53,7 +53,7 @@ export default function ElearningPage() {
       <Breadcrumb
         items={[
           { label: 'Accueil', to: '/' },
-          { label: 'E-Learning & Formations Courtes' },
+          { label: 'E-Learning' },
         ]}
       />
   

@@ -181,23 +181,7 @@ export const navlinks = [
   },
   { label: "Certifications", href: "/certification" },
   { label: "Financements", href: "/financements" },
-  {
-    label: "Carrières",
-    submenu: [
-      {
-        label: "Gestion de carrières",
-        href: "/gestion-carrieres",
-        image: "/assets/images/emploi.jpg",
-        description: "Bilan de compétences, orientation et évolution professionnelle.",
-      },
-      {
-        label: "Coaching emploi",
-        href: "/coaching-emploi",
-        image: "/assets/images/responsable_rh.jpg",
-        description: "Accompagnement personnalisé pour décrocher votre poste idéal.",
-      },
-    ],
-  },
+  { label: "Carrières", href: "/carrieres" },
   {
     label: "Ressources",
     submenu: [

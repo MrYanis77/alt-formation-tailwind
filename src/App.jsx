@@ -31,9 +31,6 @@ const ReglementInterieur = lazy(() => import('./pages/ReglementInterieur'));
 const PolitiqueCookies = lazy(() => import('./pages/PolitiqueCookies'));
 const RessourcesIAPages = lazy(() => import('./pages/RessourcesIAPages'));
 const FaqPage = lazy(() => import('./pages/FaqPage'));
-const GestionCarriere = lazy(() => import('./pages/GestionCarriere'));
-const CoachingPage = lazy(() => import('./pages/CoachingPage'));
-
 const CarrierePage = lazy(() => import('./pages/CarrierePage'));
 
 // const UserDashboard = lazy(() => import('./pages/UserDashboard'));
@@ -78,9 +75,10 @@ function AppShell() {
             <Route path="/campus" element={<CampusPage />} />
             <Route path="/certification" element={<CertificationPage />} />
 
-            <Route path="/carriere" element={<CarrierePage />} />
-            <Route path="/gestion-carrieres" element={<GestionCarriere />} />
-            <Route path="/coaching-emploi" element={<CoachingPage />} />
+            <Route path="/carrieres" element={<CarrierePage />} />
+            <Route path="/carriere" element={<Navigate to="/carrieres" replace />} />
+            <Route path="/gestion-carrieres" element={<Navigate to="/carrieres" replace />} />
+            <Route path="/coaching-emploi" element={<Navigate to="/carrieres" replace />} />
 
             <Route path="/ressources-ia" element={<RessourcesIAPages />} />
             <Route path="/nous-rejoindre" element={<NousRejoindre />} />

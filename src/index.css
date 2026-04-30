@@ -102,4 +102,13 @@
   .btn-orange {
     @apply bg-accent hover:bg-accent-dark text-white px-5 py-2 rounded-sm font-extrabold transition-all duration-200 cursor-pointer border-none;
   }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.35s ease-out both;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
