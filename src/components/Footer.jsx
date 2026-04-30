@@ -8,31 +8,28 @@ export default function Footer() {
       <footer className="bg-footer px-10 pt-10 pb-5 border-t-4 border-accent">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-[30px]">
 
-          {/* Colonne 1 : Nos Parcours */}
+          {/* Colonne 1 : Formations */}
           <div className="flex flex-col">
             <h4 className="font-heading font-bold text-small text-accent mb-[14px] uppercase tracking-wider">
-              Nos Parcours
+              Formations
             </h4>
             <ul className="list-none p-0 m-0 space-y-2">
               <li><Link to="/formations" className="text-gray-300 text-sm hover:text-white transition-colors">Toutes nos formations</Link></li>
-              <li><Link to="/formations#numerique" className="text-gray-300 text-sm hover:text-white transition-colors">Filière Numérique</Link></li>
-              <li><Link to="/formations#gestion-rh" className="text-gray-300 text-sm hover:text-white transition-colors">Filière Gestion & RH</Link></li>
+              <li><Link to="/e-learning" className="text-gray-300 text-sm hover:text-white transition-colors">E-Learning</Link></li>
               <li><Link to="/certification" className="text-gray-300 text-sm hover:text-white transition-colors">Certifications</Link></li>
+              <li><Link to="/financements" className="text-gray-300 text-sm hover:text-white transition-colors">Financements</Link></li>
             </ul>
           </div>
 
-          {/* Colonne 2 : Solutions & Accompagnement */}
+          {/* Colonne 2 : Carrières & Ressources */}
           <div className="flex flex-col">
             <h4 className="font-heading font-bold text-small text-accent mb-[14px] uppercase tracking-wider">
-              Accompagnement
+              Carrières & Ressources
             </h4>
             <ul className="list-none p-0 m-0 space-y-2">
-              <li><Link to="/alternance" className="text-gray-300 text-sm hover:text-white transition-colors">Alternance</Link></li>
-              <li><Link to="/e-learning" className="text-gray-300 text-sm hover:text-white transition-colors">E-learning</Link></li>
-              <li><Link to="/financements" className="text-gray-300 text-sm hover:text-white transition-colors">Financements</Link></li>
-              <li><Link to="/entreprise" className="text-gray-300 text-sm hover:text-white transition-colors">Solutions Entreprises</Link></li>
-              <li><Link to="/coaching-emploi" className="text-gray-300 text-sm hover:text-white transition-colors">Coaching Emploi</Link></li>
-              <li><Link to="/gestion-carrieres" className="text-gray-300 text-sm hover:text-white transition-colors">Gestion des Carrières</Link></li>
+              <li><Link to="/carrieres" className="text-gray-300 text-sm hover:text-white transition-colors">Gestion de Carrière</Link></li>
+              <li><Link to="/carrieres" className="text-gray-300 text-sm hover:text-white transition-colors">Coaching Emploi</Link></li>
+              <li><Link to="/ressources-ia" className="text-gray-300 text-sm hover:text-white transition-colors">IA & Ressources numériques</Link></li>
             </ul>
           </div>
 
@@ -42,12 +39,10 @@ export default function Footer() {
               Alt Formations
             </h4>
             <ul className="list-none p-0 m-0 space-y-2">
-              <li><Link to="/a-propos" className="text-gray-300 text-sm hover:text-white transition-colors">À propos</Link></li>
-              <li><Link to="/campus" className="text-gray-300 text-sm hover:text-white transition-colors">Nos Campus</Link></li>
               <li><Link to="/nous-rejoindre" className="text-gray-300 text-sm hover:text-white transition-colors">Nous rejoindre</Link></li>
-              <li><Link to="/faq" className="text-gray-300 text-sm hover:text-white transition-colors">F.A.Q.</Link></li>
-              <li><Link to="/ressources-ia" className="text-gray-300 text-sm hover:text-white transition-colors">Ressources IA</Link></li>
+              <li><Link to="/campus" className="text-gray-300 text-sm hover:text-white transition-colors">Nos Campus</Link></li>
               <li><Link to="/contact" className="text-gray-300 text-sm hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="/faq" className="text-gray-300 text-sm hover:text-white transition-colors">F.A.Q.</Link></li>
             </ul>
           </div>
 
