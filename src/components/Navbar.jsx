@@ -257,7 +257,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex-shrink-0 no-underline group flex items-center">
           <img
-            src="/assets/Logo-2.png"
+            src="/assets/ogo-2.png"
             alt="Logo Alt Formations"
             className="h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
           />
