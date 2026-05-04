@@ -266,7 +266,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           to="/"
-          className="relative z-[101] flex-shrink-0 no-underline group flex items-center"
+          className={`relative z-[101] flex-shrink-0 no-underline group flex items-center transition-opacity duration-200 ${isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
         >
           <img
 
@@ -383,15 +383,13 @@ export default function Navbar() {
             )}
             */}
 
-            <button className="xl:hidden text-white p-2" onClick={() => setIsOpen(!isOpen)}>
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {isOpen ? (
-                  <path d="M6 18L18 6M6 6l12 12" />
-                ) : (
+            {!isOpen && (
+              <button className="xl:hidden text-white p-2" onClick={() => setIsOpen(true)}>
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path d="M4 6h16M4 12h16m-7 6h7" />
-                )}
-              </svg>
-            </button>
+                </svg>
+              </button>
+            )}
         </div>
 
         {activeMegaLabel === "Formations" && (
@@ -415,8 +413,7 @@ export default function Navbar() {
             isOpen ? "translate-y-0" : "-translate-y-full"
           } flex flex-col overflow-y-auto`}
         >
-          <div className="flex items-center justify-between px-6 min-h-[70px] border-b border-white/10 shrink-0">
-            <span className="text-white font-heading font-extrabold text-lg tracking-widest uppercase">Menu</span>
+          <div className="flex items-center justify-end px-6 min-h-[70px] border-b border-white/10 shrink-0">
             <button
               onClick={() => setIsOpen(false)}
               className="flex items-center gap-2 text-gray-300 hover:text-white bg-white/5 px-3 py-2 rounded-lg transition-colors"
