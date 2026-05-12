@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ========================================================
+     🎨 1. COULEURS SÉMANTIQUES (Ne plus utiliser d'hex en dur !)
+     ======================================================== */
+  --color-primary: #002845;
+  --color-primary-light: #1E2F47;
+  --color-primary-alt: #2b6cb0;
+  --color-accent: #F39233;
+  --color-accent-dark: #cf5f1a;
+  --color-surface: #ffffff;
+  --color-surface-soft: #F8FAFC;
+  --color-surface-alt: #fcfcfc;
+  --color-footer: #363131;
+  --color-content: #333333;
+  --color-content-dark: #1a1a1a;
+  --color-content-muted: #666666;
+  --color-success: #4ADE80;
+  --color-star: #fbbc04;
+  --color-border: #e5e5e5;
+
+  /* ========================================================
+     📐 2. ARRONDIS ET BORDURES (BORDER-RADIUS)
+     ======================================================== */
+  --radius-sm: 6px;
+  --radius-btn: 8px;
+  --radius-card: 24px;
+  --radius-section: 32px;
+  --radius-hero: 40px;
+
+  /* ========================================================
+     🅰️ 3. TYPOGRAPHIES (POLICES & TAILLES & GRAISSES)
+     ======================================================== */
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+
+  --text-micro: 10px;
+  --text-tiny: 11px;
+  --text-small: 13px;
+  --text-medium: 15px;
+
+  /* NOUVEAU : Tailles spécifiques pour la Navbar */
+  --text-nav: 15px;
+  --text-nav-lg: 17px;
+
+  --text-h1: 32px;
+  --text-h2: 28px;
+
+  /* ========================================================
+     📏 4. CONTENEURS ET ESPACEMENTS MAXIMAUX
+     ======================================================== */
+  --spacing-container-sm: 550px;
+  --spacing-container-md: 800px;
+  --spacing-container-lg: 1000px;
+  --spacing-container-xl: 1200px;
+  --spacing-container-2xl: 1400px;
+  --spacing-container-3xl: 1600px;
+}
+
+/* ==========================================================
+   🛠️ 5. COUCHES DE BASE ET COMPOSANTS GLOBAUX
+   ========================================================== */
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  .dark {
+    color-scheme: dark;
+    --color-primary: #0d1726;
+    --color-primary-light: #162235;
+    --color-primary-alt: #355f93;
+    --color-accent: #f39233;
+    --color-accent-dark: #cf5f1a;
+    --color-surface: #0f172a;
+    --color-surface-soft: #111827;
+    --color-surface-alt: #1f2937;
+    --color-footer: #0b1220;
+    --color-content: #e5e7eb;
+    --color-content-dark: #f3f4f6;
+    --color-content-muted: #94a3b8;
+    --color-border: #334155;
+  }
+
+  body {
+    @apply font-body text-content bg-surface antialiased transition-colors duration-300;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .btn-orange {
+    @apply bg-accent hover:bg-accent-dark text-white px-5 py-2 rounded-sm font-extrabold transition-all duration-200 cursor-pointer border-none;
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.35s ease-out both;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

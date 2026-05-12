@@ -1,0 +1,3445 @@
+{
+  "dasa-devops-fundamentals": {
+    "categorie": "devops",
+    "type": "certifiante",
+    "hero": {
+      "titre": "DASA DevOps Fundamentals",
+      "sousTitre": "Avec Alt Formation, renforcez votre culture DevOps et préparez la certification DASA : articulation entre équipes, livraison continue et indicateurs utiles au terrain.",
+      "video": "/assets/video/formations/dev_equipe.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "3 jours"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "Professionnels IT"
+      },
+      {
+        "label": "Tarif",
+        "value": "2 170 €"
+      }
+    ],
+    "presentation": {
+      "titre": "DASA DevOps Fundamentals",
+      "image": "/assets/images/devops.jpg",
+      "paragraphes": [
+        "Chez Alt Formation, ce parcours certifiant s’inscrit dans une logique d’accompagnement : comprendre les fondamentaux DevOps et les relier à vos enjeux de delivery, sans jargon superflu.",
+        "Nous travaillons la compréhension des flux de valeur, des rôles et des pratiques qui sécurisent la transformation numérique côté équipes IT.",
+        "À l’issue de la session, vous disposerez de repères concrets pour l’automatisation des tests, l’infrastructure et le déploiement continu, et pour aborder l’examen DASA DevOps Fundamentals sereinement."
+      ]
+    },
+    "objectifs": [
+      "S’approprier les concepts et principes structurants du DevOps",
+      "Relier prestation de services, organisation et indicateurs",
+      "Identifier les leviers d’automatisation et de livraison continue pertinents pour votre SI",
+      "Préparer l’examen DASA DevOps Fundamentals dans de bonnes conditions"
+    ],
+    "programme": {
+      "dureeTotale": "3 jours — Formation présentielle intensive avec ateliers et examen blanc",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Introduction à DevOps",
+          "duree": "0,5 jour",
+          "description": "Histoire, émergence, fondamentaux et avantages. Transformation numérique et DevOps. Les clés d'une analyse de rentabilité. Domaines de compétences, de connaissances et cadre de compétences. DevOps Agile Skills Association (DASA)."
+        },
+        {
+          "id": 2,
+          "titre": "Culture DevOps",
+          "duree": "0,5 jour",
+          "description": "Organisation autour d'un concept d'équipes. Aspects culturels d'une équipe. Mentalité et qualité de service à la source. Éléments clés : équipes motivées, gestion visuelle, amélioration continue, résolution de problèmes, mentalité Kaizen. Leadership dans un environnement DevOps. Leadership et rétroaction. Mise en place d'une culture DevOps. Changement culturel."
+        },
+        {
+          "id": 3,
+          "titre": "Organisation DevOps",
+          "duree": "0,5 jour",
+          "description": "Modèles organisationnels. Impacts. Alignement du modèle organisationnel avec l'IT. Importance des versions hybrides DevOps. Équipes autonomes. Loi Conway et architecture des organisations. Architecture et conception pour DevOps. Relation complexité/qualité. Micro Services Architecture (MSA). Architecture pour la résilience systémique. Gouvernance DevOps."
+        },
+        {
+          "id": 4,
+          "titre": "Processus",
+          "duree": "0,5 jour",
+          "description": "Bases de processus. DevOps par rapport à ITSM. Avantages de l'agile. Agile et Scrum. Fondamentaux du Lean. Les huit types de gaspillage. Cartographie de flux de valeur. Optimisation de la valeur commerciale et analyse de métier. Rôle d'un produit viable minimal dans un processus Agile. Rôle des tranches dans la cartographie des besoins."
+        },
+        {
+          "id": 5,
+          "titre": "Automatisation",
+          "duree": "0,5 jour",
+          "description": "Automatisation pour la livraison de logiciels. Automatisation de la livraison continue : définition, objectifs, avantages. Automatisation de la distribution continue. Impacts. DevOps versus livraison continue. Émergence du Cloud et impacts dans les organisations DevOps. Approvisionnement automatisé. Appliquer les concepts de Cloud dans une organisation."
+        },
+        {
+          "id": 6,
+          "titre": "Mesure et amélioration",
+          "duree": "0,5 jour",
+          "description": "Besoin de mesure et de rétroaction. Choisir les bonnes métriques. Bonnes pratiques (MTTR). Les cinq principaux indicateurs de la performance IT. Surveillance et enregistrement. Surveillance optimisée pour DevOps. Culture de rétroaction."
+        },
+        {
+          "id": 7,
+          "titre": "Conclusion et passage de l'examen",
+          "duree": "0,5 jour",
+          "description": "Examen blanc et révisions. Passage de l'examen de certification DASA DevOps Fundamentals."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation & Progression",
+      "description": "Alt Formation met en place un suivi clair : objectifs personnels en amont, retours du formateur pendant le parcours, évaluations en fin de module et regard sur la satisfaction.",
+      "etapes": [
+        "Avant la session : cadrage de vos objectifs et auto-positionnement sur les thématiques.",
+        "Pendant la session : points de reprise avec le formateur sur forces et axes de progrès.",
+        "En fin de parcours : validation par QCM et/ou ateliers selon le dispositif retenu.",
+        "Questionnaire de satisfaction à chaud.",
+        "À distance dans le temps : possibilité de bilan à froid pour mesurer l’impact en entreprise."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 3 jours",
+          "Format : Présentiel",
+          "Tarif standard : 2 170 €",
+          "Prix avec certification : 2 170 €",
+          "Public visé : Professionnels impliqués dans le développement et la fourniture de services informatiques",
+          "Disponible en Inter-Entreprise et Intra-Entreprise",
+          "Formation disponible sur demande",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Aucune connaissance particulière requise.",
+          "La connaissance fondamentale des principes Agile, Scrum, Lean et ITSM est bénéfique."
+        ]
+      }
+    },
+    "methodologie": "Alt Formation alterne apports structurants, échanges sur vos cas et mises en situation pour ancrer les pratiques DevOps dans votre contexte quotidien.",
+    "certification": "DASA DevOps Fundamentals",
+    "competences": [
+      "Expliquer les principes et enjeux culturels du DevOps",
+      "Lire une organisation et ses flux de valeur côté delivery",
+      "Positionner Agile, Scrum et Lean dans une démarche outillée",
+      "Identifier des actions d’automatisation de la chaîne de livraison",
+      "Choisir des pistes de mesure pour piloter la performance IT",
+      "Entrer dans la préparation à l’examen DASA DevOps Fundamentals"
+    ],
+    "metiersVises": [
+      "Développeur / Ingénieur logiciel",
+      "Administrateur systèmes & réseaux",
+      "Chef de projet IT",
+      "Architecte solutions",
+      "Responsable IT / DSI"
+    ],
+    "ctaFinal": {
+      "titre": "Prêt à obtenir votre certification DevOps ?",
+      "sousTitre": "Un conseiller Alt Formation vous aide à caler les dates et le format (inter / intra). Réponse sous 48 h ouvrées en général.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "devops-methode-organisation": {
+    "categorie": "devops",
+    "type": "certifiante",
+    "hero": {
+      "titre": "DevOps, méthode et organisation",
+      "sousTitre": "Alt Formation vous propose un parcours pour relier culture d’équipe, chaîne de déploiement et culture de la mesure, avec des ateliers directement exploitables.",
+      "video": "/assets/video/formations/dev_equipe.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "2 jours"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "Professionnels IT"
+      },
+      {
+        "label": "Tarif",
+        "value": "1 770 €"
+      }
+    ],
+    "presentation": {
+      "titre": "DevOps, méthode et organisation",
+      "image": "/assets/images/devops.jpg",
+      "paragraphes": [
+        "Nous partons des racines du mouvement DevOps pour éclairer les angles culturels d’une équipe qui livre plus souvent et plus sereinement.",
+        "Vous travaillerez la chaîne de déploiement continu : réflexes, outillages simples et rituels qui tiennent sur la durée.",
+        "Des ateliers et TP vous aident à poser un premier plan d’action compatible avec votre organisation."
+      ]
+    },
+    "objectifs": [
+      "Situer l’historique et les leviers du mouvement DevOps",
+      "Définir les transitions culturelles utiles dans une équipe IT",
+      "Structurer une vision de la livraison continue adaptée à votre contexte",
+      "Donner du sens aux métriques et aux boucles de feedback",
+      "Prioriser des étapes réalistes pour avancer après la formation"
+    ],
+    "programme": {
+      "dureeTotale": "2 jours — Ateliers collaboratifs et travaux pratiques sur chaque module",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "DevOps : les fondamentaux",
+          "duree": "0,5 jour",
+          "description": "Les mutations engendrées par la (r)évolution digitale. Les nouveaux challenges. Les solutions : les Méthodes Agiles et DevOps. Leur positionnement parmi les frameworks et normes de la production de services IT. Les fondements du mouvement DevOps."
+        },
+        {
+          "id": 2,
+          "titre": "Culture/Partage : de la coordination à l'intelligence collective",
+          "duree": "0,5 jour",
+          "description": "Accompagner l'évolution. Constituer des équipes pluridisciplinaires, mettre en place l'apprentissage continu. Stades de maturité d'une équipe. Adapter la gouvernance : passer d'une structure mécanique à une structure innovante. L'engagement de tous, le vrai défi pour les managers. Faire évoluer les postures. TP : ateliers collaboratifs pour mettre en pratique l'auto-gouvernance, établir les bases d'une communication efficace et développer l'intelligence collective."
+        },
+        {
+          "id": 3,
+          "titre": "Automatisation : dégager de la valeur sur la chaîne de production logicielle",
+          "duree": "0,5 jour",
+          "description": "Les choix d'architecture. La gestion des exigences produit et les outils associés. La gestion des environnements, de version, la livraison continue, l'automatisation des tests et le déploiement continu. Le passage à l'échelle. TP : définir un 'Backlog DevOps' permettant de construire une chaîne de déploiement continu, priorisation et définition du plan d'itérations."
+        },
+        {
+          "id": 4,
+          "titre": "Mesure : collecter du feedback et s'améliorer en continu",
+          "duree": "0,5 jour",
+          "description": "Définitions essentielles et exemples de métriques. Les différentes sources de données. Les étapes clés à considérer. Focus sur l'approche Lean Start Up. La surveillance continue et les outils associés. Le dashboard DevOps comme support au management visuel. TP : définition des métriques, spécification du Dashboard d'équipe, mise à jour du Backlog DevOps."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation & Progression",
+      "description": "Alt Formation met en place un suivi clair : objectifs personnels en amont, retours du formateur pendant le parcours, évaluations en fin de module et regard sur la satisfaction.",
+      "etapes": [
+        "Avant la session : cadrage de vos objectifs et auto-positionnement sur les thématiques.",
+        "Pendant la session : points de reprise avec le formateur sur forces et axes de progrès.",
+        "En fin de parcours : validation par QCM et/ou ateliers selon le dispositif retenu.",
+        "Questionnaire de satisfaction à chaud.",
+        "À distance dans le temps : possibilité de bilan à froid pour mesurer l’impact en entreprise."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 2 jours",
+          "Format : Présentiel",
+          "Tarif standard : 1 770 €",
+          "Public visé : Toute personne voulant faire carrière en DevOps",
+          "Disponible en Inter-Entreprise et Intra-Entreprise",
+          "Formation disponible sur demande",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Connaissance des services IT.",
+          "Capacité de communiquer."
+        ]
+      }
+    },
+    "methodologie": "Alt Formation alterne apports structurants, échanges sur vos cas et mises en situation pour ancrer les pratiques DevOps dans votre contexte quotidien.",
+    "certification": "Formation non certifiante",
+    "competences": [
+      "Expliquer l’évolution du mouvement DevOps et ses fondations",
+      "Profiter des ateliers pour tester des modes de collaboration",
+      "Esquisser une chaîne de déploiement adaptée à votre SI",
+      "Assembler tests, livraison et déploiement dans une vision cohérente",
+      "Utiliser des métriques pour décider et ajuster",
+      "Sortir avec un backlog DevOps et une vision tableau de bord"
+    ],
+    "metiersVises": [
+      "Développeur / Ingénieur logiciel",
+      "Chef de projet IT",
+      "Scrum Master / Coach Agile",
+      "Responsable IT / DSI",
+      "Toute personne impliquée dans une transformation DevOps"
+    ],
+    "ctaFinal": {
+      "titre": "Prêt à transformer votre organisation en DevOps ?",
+      "sousTitre": "Un conseiller Alt Formation vous aide à caler les dates et le format (inter / intra). Réponse sous 48 h ouvrées en général.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "iso-iec-27035-incident-management-foundation": {
+    "categorie": "cybersecurite-reseaux",
+    "type": "certifiante",
+    "hero": {
+      "titre": "ISO/IEC 27035 — Information Security Incident Management — Foundation",
+      "sousTitre": "Alt Formation vous accompagne sur la gestion d’incidents ISO/IEC 27035 et la préparation au niveau Foundation PECB, en classe virtuelle pilotée.",
+      "video": "/assets/video/formations/cyber.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "14 h (2 jours)"
+      },
+      {
+        "label": "Modalité",
+        "value": "Classe virtuelle"
+      },
+      {
+        "label": "Public",
+        "value": "Toute personne concernée par la gestion d'incidents SI"
+      },
+      {
+        "label": "Tarif Inter",
+        "value": "712 € HT / pers."
+      }
+    ],
+    "presentation": {
+      "titre": "Gestion des incidents de sécurité de l'information",
+      "image": "/assets/images/analyst_soc.jpg",
+      "paragraphes": [
+        "Le parcours donne des repères opérationnels pour prévenir, détecter et traiter les incidents de sécurité de l’information, en cohérence avec un SMSI et la famille ISO/IEC 27000.",
+        "Vous structurez les rôles, le plan de réponse et les échanges internes / externes, du signalement jusqu’aux retours d’expérience.",
+        "La session est animée à distance en synchrone, avec quiz et exercices intégrés ; Alt Formation vous aide à préparer l’examen PECB ISO/IEC 27035 Foundation et à choisir vos dates.",
+        "Les financements possibles (CPF, plan de développement des compétences, etc.) dépendent de votre situation : nos équipes vous orientent sur les démarches, sans promesse d’éligibilité avant analyse de dossier."
+      ]
+    },
+    "objectifs": [
+      "Construire un plan de gestion des incidents aligné sur ISO/IEC 27035",
+      "Relier incidents, SMSI et exigences de la norme",
+      "Comparer ISO/IEC 27035 aux autres référentiels utiles",
+      "Mettre en œuvre une démarche processus pour traiter les incidents de sécurité de l’information"
+    ],
+    "programme": {
+      "dureeTotale": "14 heures sur 2 jours — Classe virtuelle, quiz et exercices intégrés, préparation au schéma de certification PECB ISO/IEC 27035",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Jour 1 — Introduction et ISO/IEC 27035 (vue d'ensemble)",
+          "duree": "7 h",
+          "description": "Sections 1 à 9 : objectifs et déroulé de la formation ; famille ISO/IEC 27000 et série 27035 ; concepts CID, événements vs incidents, vulnérabilités et menaces ; objectifs et bonnes pratiques de gestion des incidents ; politiques et procédures ; gestion des risques (contexte, analyse, traitement, surveillance) ; plan de gestion des incidents et revue des processus ; équipe de gestion des incidents et coordinateur ; relations internes/externes et communication."
+        },
+        {
+          "id": 2,
+          "titre": "Section 1 — Objectifs et structure de la formation (0h20)",
+          "duree": "20 min",
+          "description": "Introduction, informations générales, objectifs d'apprentissage, approche pédagogique, examen et certification, présentation de PECB."
+        },
+        {
+          "id": 3,
+          "titre": "Section 2 — Normes et cadres réglementaires (0h40)",
+          "duree": "40 min",
+          "description": "Rôle de l'ISO ; famille ISO/IEC 27000 ; série ISO/IEC 27035 et articulation 27035-1, 27035-2, 27035-3 ; autres normes et réglementations connexes. Activité : quiz."
+        },
+        {
+          "id": 4,
+          "titre": "Section 3 — Concepts fondamentaux de la gestion des incidents (1h)",
+          "duree": "1 h",
+          "description": "Sécurité de l'information, triade CID, vulnérabilité et menace, risques, événements et incidents, gestion des incidents, plan de réponse, vie privée, classification des contrôles. Activité : quiz."
+        },
+        {
+          "id": 5,
+          "titre": "Section 4 — Gestion des incidents de sécurité de l'information (0h50)",
+          "duree": "50 min",
+          "description": "Objectifs, bonnes pratiques, lien avec le SMSI, approche structurée de gestion des incidents. Activité : quiz."
+        },
+        {
+          "id": 6,
+          "titre": "Section 5 — Politiques et procédures (0h40)",
+          "duree": "40 min",
+          "description": "Politiques, plans et processus ; politique de gestion des incidents ; rédaction et communication. Activité : quiz."
+        },
+        {
+          "id": 7,
+          "titre": "Section 6 — Gestion des risques (1h10)",
+          "duree": "1 h 10",
+          "description": "Contexte, identification, analyse, évaluation et hiérarchisation des risques ; traitement, plan de traitement, concertation, rapports, surveillance et revue. Activité : quiz."
+        },
+        {
+          "id": 8,
+          "titre": "Section 7 — Plan de gestion des incidents (1h)",
+          "duree": "1 h",
+          "description": "Contenu du plan, rôles et responsabilités, revue des processus documentés. Activité : quiz et exercice 1."
+        },
+        {
+          "id": 9,
+          "titre": "Section 8 — Équipe de gestion des incidents (0h40)",
+          "duree": "40 min",
+          "description": "Constitution de l'équipe, rôles, coordinateur d'incidents, compétences et structure de l'équipe de réponse. Activité : quiz."
+        },
+        {
+          "id": 10,
+          "titre": "Section 9 — Relations internes et externes (0h40)",
+          "duree": "40 min",
+          "description": "Relations avec les directions et parties externes, partage d'informations avec des tiers, communication interne et externe. Activité : quiz."
+        },
+        {
+          "id": 11,
+          "titre": "Jour 2 — Processus de gestion des incidents et certification",
+          "duree": "7 h",
+          "description": "Sections 10 à 20 : sensibilisation et formation ; tests et préparation ; surveillance réseau et systèmes ; détection et classification ; collecte de preuves et rapport ; évaluation et priorisation ; résolution ; contention, éradication et reprise ; retours d'expérience ; surveillance et indicateurs ; clôture et schéma de certification PECB."
+        },
+        {
+          "id": 12,
+          "titre": "Section 10 — Sensibilisation et formation (0h40)",
+          "duree": "40 min",
+          "description": "Programmes de sensibilisation, développement des compétences et évaluation. Activité : quiz."
+        },
+        {
+          "id": 13,
+          "titre": "Section 11 — Tests (0h50)",
+          "duree": "50 min",
+          "description": "Tests des systèmes, techniques, étapes, préparation documentaire, activités post-tests. Activité : quiz."
+        },
+        {
+          "id": 14,
+          "titre": "Section 12 — Surveillance des systèmes et réseaux (0h50)",
+          "duree": "50 min",
+          "description": "Capacités de surveillance, surveillance réseau et systèmes, ISCM, indicateurs et évaluation des performances. Activité : quiz."
+        },
+        {
+          "id": 15,
+          "titre": "Section 13 — Détection et alerte (0h50)",
+          "duree": "50 min",
+          "description": "Mécanismes de détection, méthodologie attaquants, signes d'incident, classification et niveaux. Activité : quiz."
+        },
+        {
+          "id": 16,
+          "titre": "Section 14 — Collecte et rapport des événements (0h50)",
+          "duree": "50 min",
+          "description": "Sources d'information, collecte de preuves, signalement, analyse, documentation des impacts, rapport. Activité : quiz."
+        },
+        {
+          "id": 17,
+          "titre": "Section 15 — Évaluation des événements (0h40)",
+          "duree": "40 min",
+          "description": "Évaluation et décision, priorisation des incidents. Activité : quiz."
+        },
+        {
+          "id": 18,
+          "titre": "Section 16 — Résolution des incidents (0h30)",
+          "duree": "30 min",
+          "description": "Rôles pendant la phase de réponse, réponse aux incidents. Activité : quiz."
+        },
+        {
+          "id": 19,
+          "titre": "Section 17 — Contention, éradication et reprise (0h50)",
+          "duree": "50 min",
+          "description": "Stratégie de confinement, isolement, indicateurs de compromission, preuves, sauvegardes. Activité : quiz et exercice 2."
+        },
+        {
+          "id": 20,
+          "titre": "Section 18 — Retours d'expérience (0h30)",
+          "duree": "30 min",
+          "description": "Axes d'amélioration du plan et de l'équipe IMT, contrôles SI et revue de direction. Activité : quiz."
+        },
+        {
+          "id": 21,
+          "titre": "Section 19 — Surveillance, mesure et analyse (0h40)",
+          "duree": "40 min",
+          "description": "Objectifs de mesure, indicateurs de performance pour la gestion des incidents, fréquence et reporting. Activité : quiz."
+        },
+        {
+          "id": 22,
+          "titre": "Section 20 — Clôture et certification PECB (0h20)",
+          "duree": "20 min",
+          "description": "Schéma et processus de certification PECB ISO/IEC 27035."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation",
+      "description": "Évaluation en cohérence avec le référentiel certifiant : auto-positionnement, attestations et préparation à l’épreuve PECB.",
+      "etapes": [
+        "Questionnaires d’auto-évaluation pour cadrer vos acquis.",
+        "Attestation de compétences et attestation de fin de parcours selon le déroulé.",
+        "Accompagnement vers l’examen PECB ISO/IEC 27035 Foundation."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 14 heures sur 2 jours",
+          "Format : classe virtuelle (distanciel synchrone, visioconférence)",
+          "Inter-entreprises : 712 € HT / personne (certification obligatoire incluse)",
+          "Intra-entreprise : 3 970 € HT / groupe (minimum 4 stagiaires, certification incluse)",
+          "Référence indicative : ISO/IEC 27035 Foundation — préparation PECB",
+          "Sessions : calendrier inter ou intra communiqué lors de votre prise de contact avec Alt Formation",
+          "Les dispositifs mobilisables varient selon les profils — nous examinons votre dossier au cas par cas.",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Aucun prérequis technique obligatoire pour suivre la formation Foundation.",
+          "Une première exposition aux concepts de sécurité de l'information ou au SMSI (ISO/IEC 27001) facilite la montée en charge."
+        ]
+      }
+    },
+    "methodologie": "Alt Formation propose une classe virtuelle synchrone : apports courts, quiz fréquents et préparation progressive à l’épreuve, avec un rythme proche d’une salle.",
+    "certification": "PECB ISO/IEC 27035 Foundation",
+    "competences": [
+      "Poser les bases d’une réponse structurée aux incidents SI",
+      "Relier ISO/IEC 27035 aux autres documents ISO/IEC 27000",
+      "Enchaîner détection, analyse, traitement et revue post-incident",
+      "Rédiger et faire vivre un plan de réponse coordonnée",
+      "Organiser la communication avec les parties prenantes",
+      "Aborder l’examen PECB ISO/IEC 27035 Foundation avec des repères clairs"
+    ],
+    "metiersVises": [
+      "Responsable sécurité des systèmes d'information (RSSI)",
+      "Analyste SOC / réponse aux incidents",
+      "Consultant cybersécurité / SMSI",
+      "Administrateur sécurité",
+      "Managers et directions soumis aux exigences de résilience SI"
+    ],
+    "ctaFinal": {
+      "titre": "Certifiez-vous en gestion d'incidents ISO/IEC 27035",
+      "sousTitre": "Inter, intra ou calendrier classe virtuelle : écrivez à Alt Formation ou passez par la page contact — prise en charge rapide des demandes.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "sql-langage-bases-donnees-relationnelles-certifiante": {
+    "categorie": "digital-developpement",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Langage SQL — Exploiter une base de données relationnelle (certifiante)",
+      "sousTitre": "Renforcez vos fondamentaux SGBDR et requêtes SQL sur les moteurs courants, avec un rythme adapté et un accompagnement Alt Formation jusqu’à la certification RS7205.",
+      "video": "/assets/video/formations/informatique.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "20 h"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel / distanciel / téléprésentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "Dev, DBA, architectes, exploitants SI"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "1 760 € HT (Inter)"
+      }
+    ],
+    "presentation": {
+      "titre": "Exploitation avancée du SQL",
+      "image": "/assets/images/analyste_data.jpg",
+      "paragraphes": [
+        "Chez Alt Formation, ce parcours certifiant ancre le SQL sur vos usages métier : modèle relationnel, algèbre portée en requêtes, sélections complexes et mises à jour contrôlées.",
+        "Vous travaillez sur un environnement SQL pertinent pour la session (MySQL, Oracle, PostgreSQL ou SQL Server), avec une progression nette sur jointures, sous-requêtes, vues, CTE et fonctions de fenêtrage.",
+        "La pédagogie mêle apports ciblés, démonstrations et travaux guidés. Elle vise la certification RS7205 (Répertoire Spécifique France Compétences) ; en financement CPF, le passage à l’examen peut être requis selon les règles du dispositif.",
+        "Nous proposons inter, intra, présentiel ou distanciel depuis nos dispositifs à Bailly-Romainvilliers et Serris : un conseiller vous aide à choisir le format et à monter votre dossier."
+      ]
+    },
+    "objectifs": [
+      "Décrypter les concepts SGBDR et l’algèbre relationnelle derrière vos requêtes SQL",
+      "S’appuyer sur un environnement SQL en confiance pour vos futurs scripts",
+      "Produire des extractions fiables et des mises à jour conformes au modèle",
+      "Manipuler les données avec INSERT, UPDATE, DELETE ou TRUNCATE selon le besoin",
+      "Relier plusieurs tables par jointures et agrégations pertinentes",
+      "Utiliser fonctions courantes et fonctions de fenêtrage pour des analyses avancées"
+    ],
+    "programme": {
+      "dureeTotale": "20 heures — Équilibre théorie / démonstrations / exercices ; préparation à la certification RS7205",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Généralités sur les bases relationnelles",
+          "duree": "2 h",
+          "description": "Modèle client/serveur ; structure d'une base (base, schéma, tables) ; panorama des principaux SGBDR."
+        },
+        {
+          "id": 2,
+          "titre": "Présentation du langage SQL",
+          "duree": "1 h",
+          "description": "Le langage SQL ; types d'instructions DDL, DML, DCL ; éléments de syntaxe ; lien avec l'algèbre relationnelle."
+        },
+        {
+          "id": 3,
+          "titre": "Manipulation des données",
+          "duree": "4 h",
+          "description": "Insertions (INSERT), modifications (UPDATE), suppressions (DELETE/TRUNCATE) ; clause RETURNING ou OUTPUT selon le SGBDR utilisé."
+        },
+        {
+          "id": 4,
+          "titre": "Interrogation des données (SELECT, agrégations, sous-requêtes)",
+          "duree": "3 h",
+          "description": "Structure de SELECT ; alias ; WHERE ; LIKE, SIMILAR TO, IS NULL, IN ; agrégats ; GROUP BY, HAVING, ORDER BY ; LIMIT ; OFFSET/FETCH selon moteur. Sous-requêtes simples et corrélées ; EXISTS ; vues ; CTE (WITH) ; UNION, INTERSECT ; EXCEPT/MINUS selon SGBDR ; fonctions sur chaînes et dates ; tables temporaires selon environnement."
+        },
+        {
+          "id": 5,
+          "titre": "Jointures et requêtes multi-tables",
+          "duree": "8 h",
+          "description": "Produit cartésien ; jointures internes ; jointure naturelle ; ON ; USING ; équi-jointure ; auto-jointure ; jointures externes gauche, droite et complète selon le SGBDR utilisé."
+        },
+        {
+          "id": 6,
+          "titre": "Fonctions de fenêtrage",
+          "duree": "2 h",
+          "description": "Intérêt analytique ; principales fonctions ; OVER() ; ORDER BY et PARTITION BY ; ROW/RANGE BETWEEN selon le SGBDR."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation des acquis",
+      "description": "Alt Formation assure un suivi continu : vous savez où vous en êtes avant l’examen de certification.",
+      "etapes": [
+        "Auto-évaluation en amont et en fin de parcours pour cadrer la progression.",
+        "Retours du formateur (non évalué → acquis) via QCM, exercices, quiz et mises en situation.",
+        "Préparation aux modalités de certification RS7205 lorsque vous vous engagez sur ce parcours ; rappel des obligations CPF si elles s’appliquent.",
+        "Feuille de présence, questionnaire de satisfaction et attestation de fin de formation."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 20 heures",
+          "Tarif indicatif Inter : 1 760 € HT à distance (contactez-nous pour présentiel et intra-entreprise)",
+          "Effectifs : sessions de 1 à 12 stagiaires (effectif moyen favorable au suivi individualisé)",
+          "Modalités possibles : présentiel en salle, salle immersive / téléprésentiel, ou formation à distance en immersion synchrone",
+          "Support : poste de travail adapté, supports et manuel numérique ou papier selon session",
+          "Inscriptions : jusqu'à 48 h avant le début en général ; financement CPF : délai légal minimum entre proposition et démarrage à respecter (11 jours ouvrés)",
+          "Sessions indicatives : juin, septembre, octobre, décembre — à distance ou en présentiel (villes sur demande)",
+          "CPF et certification RS7205 : dates d’examen et formalités détaillées avec votre interlocuteur Alt Formation",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Maîtriser l'outil informatique.",
+          "Savoir exploiter et organiser des données dans l'entreprise."
+        ]
+      }
+    },
+    "methodologie": "Alt Formation privilégie une dynamique active : le formateur alterne apports courts, démonstrations et exercices guidés en petit groupe, avec un expert présent pendant toute la durée du parcours.",
+    "certification": "Langage SQL — exploiter une base de données relationnelle (référence RS7205 — Répertoire Spécifique France Compétences)",
+    "competences": [
+      "Identifier les concepts des SGBDR et les fondements relationnels du SQL",
+      "Naviguer dans un environnement SQL et produire des scripts lisibles",
+      "Écrire des requêtes de lecture et des ordres de mise à jour fiables",
+      "Combiner tables par jointures et agrégations adaptées",
+      "Exploiter sous-requêtes, vues et CTE pour structurer les traitements",
+      "Utiliser les fonctions de fenêtrage pour des analyses avancées",
+      "Consolider les bonnes pratiques avant la certification RS7205"
+    ],
+    "metiersVises": [
+      "Développeur applicatif",
+      "Architecte logiciel / données",
+      "Administrateur de bases de données",
+      "Exploitant / équipe production SI",
+      "Chef de projet technique",
+      "Analyste métier ou décisionnel amené à interroger des bases"
+    ],
+    "ctaFinal": {
+      "titre": "Réservez votre formation SQL certifiante",
+      "sousTitre": "Inter ou intra, présentiel ou distanciel : nos équipes à Bailly-Romainvilliers et Serris vous proposent un créneau adapté et vous aident sur le financement et la certification.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "docker-concevoir-deployer-applications-certifiante": {
+    "categorie": "devops",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Docker — Concevoir, tester et déployer des applications (certifiante)",
+      "sousTitre": "Prenez en main Docker avec Alt Formation : images, conteneurs, Dockerfiles, réseaux, volumes, Compose et Swarm pour déployer vos applications proprement tout en gardant la sécurité à l’œil.",
+      "video": "/assets/video/formations/dev.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "21 h"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel / distanciel / téléprésentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "Admin, exploitation, dev, architectes"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "1 770 € HT (Inter)"
+      }
+    ],
+    "presentation": {
+      "titre": "Conteneurisation et déploiement avec Docker",
+      "image": "/assets/images/devops.jpg",
+      "paragraphes": [
+        "Ce parcours certifiant vous accompagne pas à pas sur Docker, de l’installation à la mise en production : Linux, Windows ou macOS, cycle de vie des images et des conteneurs, réseaux, volumes, Compose puis Swarm lorsque vous montez en charge.",
+        "Vous sécurisez vos Dockerfiles, vos registres (dont CI de build d’images) et vos stacks multi-services avec des retours d’expérience concrets.",
+        "À l’issue du parcours, vous savez placer Docker dans votre paysage technique, livrer des environnements reproductibles et identifier limites, risques et premiers durcissements utiles.",
+        "La formation prépare à la certification RS6425 (Répertoire Spécifique France Compétences). Le financement CPF et l’obligation éventuelle de passer l’examen dépendent de votre dossier : nos conseillers vous le rappellent clairement avant le démarrage. Dates inter ou intra sur simple demande auprès d’Alt Formation."
+      ]
+    },
+    "objectifs": [
+      "Cadrer le positionnement de Docker et des conteneurs dans vos projets",
+      "Mettre en œuvre Docker et son écosystème pour livrer vite sans perdre le contrôle",
+      "Piloter la CLI pour créer, surveiller et dépanner des conteneurs",
+      "Assurer l’exploitation de conteneurs dans des scénarios proches du terrain",
+      "Relever les risques Docker et choisir des contremesures adaptées"
+    ],
+    "programme": {
+      "dureeTotale": "21 heures — Alternance théorie, démonstrations et travaux pratiques ; préparation à la certification RS6425",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Introduction à Docker",
+          "duree": "2 h",
+          "description": "Historique et intérêt des conteneurs ; architecture Docker ; installation sur Linux, Windows et macOS. Travaux pratiques : installation sous Windows (conteneurs Linux) et sous Linux."
+        },
+        {
+          "id": 2,
+          "titre": "Docker en production — conteneurs et images",
+          "duree": "3 h 30",
+          "description": "Manipuler les conteneurs et les images ; récupération et exécution d'applications. Travaux pratiques : déployer une application Web avec Docker."
+        },
+        {
+          "id": 3,
+          "titre": "Conception de conteneur",
+          "duree": "3 h 30",
+          "description": "Écriture et bonnes pratiques de Dockerfile ; registres et Docker Hub ; builds automatisés. Travaux pratiques : créer un Dockerfile et publier une image."
+        },
+        {
+          "id": 4,
+          "titre": "Exploitation réseau et stockage",
+          "duree": "3 h 30",
+          "description": "Configuration réseau Docker ; volumes persistants ; mise en production d'un conteneur. Travaux pratiques : création et gestion de réseaux et de volumes."
+        },
+        {
+          "id": 5,
+          "titre": "Docker Compose — applications multi-conteneurs",
+          "duree": "3 h 30",
+          "description": "Présentation de Compose ; liaison et orchestration légère de services. Travaux pratiques : composer une application multi-conteneurs."
+        },
+        {
+          "id": 6,
+          "titre": "Orchestration avec Docker Swarm",
+          "duree": "3 h 30",
+          "description": "Concepts Swarm ; constitution d'un cluster ; déploiement et scalabilité ; mises à jour rolling ; gestion des nœuds (ajout, mise à jour, suppression). Travaux pratiques : mise en place d'un cluster et déploiement d'applications."
+        },
+        {
+          "id": 7,
+          "titre": "Pour aller plus loin — sécurité et outillage",
+          "duree": "1 h 30",
+          "description": "Vue d'ensemble d'un outil de gestion graphique ; sécuriser Docker et les données ; introduction à l'API Docker. Travaux pratiques : durcissement de base d'un conteneur et des données ; prise en main d'un outil graphique."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation des acquis",
+      "description": "Nous suivons votre progression de bout en bout pour que la certification RS6425 reste un objectif réaliste.",
+      "etapes": [
+        "Auto-évaluation en début et en fin de parcours pour objectiver vos progrès.",
+        "Retour du formateur (non évalué à acquis) via QCM, TPs, quiz et mises en situation.",
+        "Préparation à l’examen ; rappel des obligations CPF lorsqu’elles s’appliquent au parcours retenu.",
+        "Feuille de présence, questionnement qualitatif de clôture, attestation de fin de formation."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 21 heures",
+          "Tarif indicatif Inter : 1 770 € HT à distance (devis pour présentiel et intra-entreprise)",
+          "Effectifs : 1 à 12 stagiaires par session (effectif moyen orienté accompagnement personnalisé)",
+          "Formats : présentiel en salle, salle immersive / téléprésentiel, ou distanciel synchrone immersif",
+          "Supports : poste adapté, cours et manuel numérique ou papier selon session",
+          "Inscriptions : jusqu'à 48 h avant le démarrage en général ; financement CPF : délai légal d'au moins 11 jours ouvrés entre proposition et début",
+          "Sessions indicatives : juin, octobre, décembre — à distance ou villes partenaires sur demande",
+          "Certification RS6425 : calendrier d’examen et formalités précisés lors de votre inscription avec Alt Formation",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Exploiter un système Linux ou Windows.",
+          "Connaître les bases des réseaux TCP/IP.",
+          "Utiliser la ligne de commande et les scripts Shell sous Linux."
+        ]
+      }
+    },
+    "methodologie": "Chez Alt Formation, l’accent est mis sur la pratique : apports courts, démonstrations réalistes et ateliers seul ou en groupe, avec un expert présent du premier au dernier jour.",
+    "certification": "Concevoir, tester et déployer des applications avec Docker (référence RS6425 — Répertoire Spécifique France Compétences)",
+    "competences": [
+      "Expliquer le rôle de Docker et des conteneurs dans la chaîne de livraison",
+      "Installer et configurer Docker sur les environnements courants",
+      "Créer, exécuter et administrer des conteneurs et des images",
+      "Rédiger des Dockerfiles et exploiter un registre d'images",
+      "Configurer réseaux et volumes pour la production",
+      "Orchestrer des stacks avec Compose et un cluster Swarm",
+      "Repérer les risques et appliquer des mesures de sécurité de base",
+      "Préparer la certification RS6425"
+    ],
+    "metiersVises": [
+      "Administrateur systèmes et réseaux",
+      "Responsable exploitation / production",
+      "Chef de projet IT",
+      "Développeur",
+      "Architecte technique",
+      "Toute personne amenée à industrialiser le déploiement applicatif"
+    ],
+    "ctaFinal": {
+      "titre": "Planifiez votre formation Docker certifiante",
+      "sousTitre": "Calendrier inter ou intra, présentiel ou distanciel : un interlocuteur Alt Formation vous répond sur les sessions et les aides au financement.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "cybersecurite-exhaustive-menaces-architectures-certifiante": {
+    "categorie": "cybersecurite-reseaux",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Cybersécurité — Menaces, risques et architectures défensives",
+      "sousTitre": "Chez Alt Formation, reliez menaces actuelles, architectures défensives et pilotage SSI : attaquants et TTPs, IoT/ICS, risques, gouvernance, SOC, Threat Intelligence et défense en profondeur.",
+      "video": "/assets/video/formations/cyber.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "21 h"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel / distanciel / téléprésentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "DSI, admins SI, ingénieurs réseaux"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "2 360 € HT (Inter)"
+      }
+    ],
+    "presentation": {
+      "titre": "Une approche exhaustive de la cybersécurité",
+      "image": "/assets/images/expert_cyber.jpg",
+      "paragraphes": [
+        "Parcours structuré pour comprendre comment les menaces se matérialisent, quelles erreurs de conception coûtent cher et quels leviers réduisent réellement votre surface d’exposition.",
+        "Du panorama offensif aux réseaux industriels et objets connectés, en passant par risques, PSSI et gouvernance, vous reliez technique, organisation et cadres utiles à la DSI.",
+        "Threat Intelligence, SOC et architectures défensives (segmentation, firewalls, IDS, honeypots, VPN, PKI, durcissement poste, chiffrement) sont abordés avec des mises en situation type cyber-range lorsque le dispositif le permet.",
+        "Sessions en présentiel ou à distance ; financements étudiés au cas par cas. Alt Formation assure le suivi administratif depuis vos sites de proximité en Seine-et-Marne."
+      ]
+    },
+    "objectifs": [
+      "Décrire les étapes types d’une attaque et les comportements adverses récurrents",
+      "Connaître les TTPs fréquemment observées sur le terrain",
+      "Repérer les vulnérabilités majeures d’une architecture et de ses briques",
+      "Réduire la surface d’attaque en combinant détection et mécanismes de déception",
+      "Aligner une politique de sécurité sur le risque métier réel",
+      "Exploiter la Threat Intelligence sans se noyer dans les flux",
+      "Expliciter les principes de défense en profondeur applicables à votre SI"
+    ],
+    "programme": {
+      "dureeTotale": "21 heures — Théorie, démonstrations, exercices et cas pratiques (dont cyber-range lorsque prévu)",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Introduction et enjeux de sécurité",
+          "duree": "2 h",
+          "description": "Cyberattaques et menaces ; écosystème des attaquants ; Cyber Kill Chain, TTPs, DDoS ; compétences et moyens nécessaires pour se défendre."
+        },
+        {
+          "id": 2,
+          "titre": "Réseaux industriels et IoT",
+          "duree": "2 h",
+          "description": "Domaines et usages industriels ; vulnérabilités, vecteurs d'attaque et risques spécifiques."
+        },
+        {
+          "id": 3,
+          "titre": "Principes généraux de sécurité",
+          "duree": "4 h",
+          "description": "Protection de l'information ; services et critères de sécurité ; axes et méthodes pour aborder la SSI."
+        },
+        {
+          "id": 4,
+          "titre": "Analyse et gestion des risques",
+          "duree": "2 h",
+          "description": "Vue normative ISO 27005 / ISO 27001 ; méthode EBIOS pour structurer l'analyse et le traitement du risque."
+        },
+        {
+          "id": 5,
+          "titre": "Gouvernance de la SSI",
+          "duree": "3 h",
+          "description": "Politique de sécurité (PSSI), veille sécurité, tableaux de bord ; cadres LPM, NIS, OIV, rapport Bockel ; qualifications ANSSI (PDIS, PRIS)."
+        },
+        {
+          "id": 6,
+          "titre": "Threat anticipation et audits",
+          "duree": "3 h",
+          "description": "Choix et préparation d'audits (PASSI), démarche d'audit ; exercice type cyber-range Red Team / Blue Team selon configuration de session."
+        },
+        {
+          "id": 7,
+          "titre": "SOC et Threat Intelligence",
+          "duree": "2 h",
+          "description": "Services SOC modernes ; détection, corrélation et incidents ; identification d'attaques et partage d'IOC."
+        },
+        {
+          "id": 8,
+          "titre": "Architectures de sécurité",
+          "duree": "3 h",
+          "description": "Défense en profondeur ; cloisonnement ; routage ; pare-feu réseau et applicatif ; diode et passerelles unidirectionnelles ; IDS et honeypots ; proxy et reverse-proxy ; VPN IPsec et SSL ; durcissement du poste (EDR, antivirus, firewall local) ; authentification forte ; cryptographie et PKI."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation des acquis",
+      "description": "Un fil conducteur de suivi vous permet de valider chaque grande familie de compétences avant la clôture.",
+      "etapes": [
+        "Auto-évaluation en début et fin de session.",
+        "Retours du formateur sur quatre niveaux d’acquisition via QCM, exercices, quiz et cas.",
+        "Préparation aux éventuelles suites certifiantes prévues dans votre parcours (modalités communiquées à l’inscription).",
+        "Feuille de présence, bilan qualitatif, attestation de fin de formation."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 21 heures",
+          "Tarif indicatif Inter : 2 360 € HT à distance (devis présentiel et intra)",
+          "Effectifs : 1 à 12 stagiaires par session",
+          "Formats : présentiel, salle immersive / téléprésentiel, ou distanciel synchrone immersif",
+          "Supports : poste adapté, cours et manuel numérique ou papier",
+          "Inscriptions : jusqu'à 48 h avant le début ; CPF : délai légal d'au moins 11 jours ouvrés entre proposition et démarrage",
+          "Sessions indicatives : mai, septembre, décembre — à distance ou villes partenaires ; certaines dates peuvent être annoncées comme garanties selon calendrier",
+          "Certification / examen : selon le financement retenu, Alt Formation vous indique les étapes officielles et les délais à respecter avant le démarrage",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Appréhender le protocole TCP/IP et les fondamentaux réseau.",
+          "Connaître les systèmes d'exploitation courants (Windows et/ou Linux)."
+        ]
+      }
+    },
+    "methodologie": "Alt Formation alterne apports, démonstrations et exercices sur cas réels, en individuel ou en petit groupe, pour que chaque notion trouve vite un débouché opérationnel.",
+    "certification": "Parcours certifiant : l’intitulé exact et le référentiel France Compétences associé vous sont communiqués par Alt Formation lors de la réservation, selon la session retenue.",
+    "competences": [
+      "Cartographier une attaque et les comportements adverses usuels",
+      "Analyser une architecture pour en déduire les vulnérabilités critiques",
+      "Concevoir et faire évoluer une politique de sécurité alignée sur les risques",
+      "Exploiter les flux Threat Intelligence et les capacités d'un SOC",
+      "Choisir et combiner des briques d'architecture défensive adaptées",
+      "Relier exigences réglementaires et cadres nationaux aux mesures opérationnelles"
+    ],
+    "metiersVises": [
+      "Responsable informatique / DSI adjoint",
+      "Responsable sécurité du SI",
+      "Administrateur systèmes et réseaux",
+      "Ingénieur réseau ou sécurité",
+      "Chef de projet sécurité",
+      "Toute personne en charge d'un système d'information d'entreprise"
+    ],
+    "ctaFinal": {
+      "titre": "Sécurisez votre SI avec une vision globale",
+      "sousTitre": "Sessions mai / septembre / décembre (indicatif) ou intra sur mesure : contactez Alt Formation pour caler votre date et votre dispositif de financement.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "istqb-testeur-certifie-niveau-fondation-ihmisen": {
+    "categorie": "digital-developpement",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Certification ISTQB — Testeur certifié niveau Fondation",
+      "sousTitre": "Accompagnez la certification ISTQB niveau Fondation avec Alt Formation : principes des tests, techniques structurées et préparation à l’épreuve officielle, en présentiel ou en classe virtuelle.",
+      "video": "/assets/video/formations/dev-app.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "21 h"
+      },
+      {
+        "label": "Modalités",
+        "value": "Classe virtuelle / Présentiel"
+      },
+      {
+        "label": "Tarif Inter",
+        "value": "970,02 € HT / pers. + 235 € HT cert."
+      }
+    ],
+    "presentation": {
+      "titre": "ISTQB niveau Fondation — Tests logiciels",
+      "image": "/assets/images/concepteur_app.jpg",
+      "paragraphes": [
+        "Ce parcours certifiant vous donne les repères ISTQB Foundation pour structurer vos campagnes de test : vocabulaire, niveaux, techniques et pilotage quotidien.",
+        "Testeurs, QA, MOA ou chefs de projet y trouvent un socle commun, y compris lorsque vous formalisez déjà de l’expérience terrain.",
+        "Sessions synchrones en présentiel ou à distance ; inter-entreprises ou intra lorsque vous regroupez vos équipes.",
+        "Pour le CPF ou autres dispositifs, nos conseillers Alt Formation vous expliquent les obligations (dont examen lorsque le financement l’exige) avant validation du dossier."
+      ]
+    },
+    "objectifs": [
+      "Lire et utiliser les principes fondamentaux des tests ISTQB",
+      "Cartographier les activités de test sur un cycle de développement",
+      "Exploiter les revues et analyses statiques comme levier qualité",
+      "Enchaîner analyse, conception et exécution de tests de façon traçable",
+      "Tirer parti des indicateurs de pilotage d’une campagne de tests",
+      "Cerner le rôle des outils et leurs limites",
+      "Aborder l’examen de certification ISTQB Fondation en connaissance de cause"
+    ],
+    "programme": {
+      "dureeTotale": "21 heures sur 3 jours — Classe virtuelle ou présentiel ; révisions QCM ; préparation et passage de l’examen officiel ISTQB Fondation",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Jour 1 — Fondamentaux, cycle de vie et tests statiques",
+          "duree": "7 h",
+          "description": "Accueil et déroulement. Fondamentaux : enjeux, vocabulaire, objectifs, test vs débogage, 7 principes, processus, psychologie, code éthique ; révisions QCM. Cycle de vie logiciel : modèles (V, itératif…), niveaux de test, approches et types, régression ; révisions QCM. Techniques statiques : revues, revue formelle, analyse statique et outils ; révisions QCM."
+        },
+        {
+          "id": 2,
+          "titre": "Jour 2 — Techniques de conception de tests",
+          "duree": "7 h",
+          "description": "Quiz de rappel du jour 1. Conception : conditions et cas de test, traçabilité, catégories de techniques. Boîte noire : équivalence, limites, décision, états… Boîte blanche : couverture chemins, branches, décisions, conditions. Techniques basées sur l’expérience et sélection des techniques. Révisions QCM."
+        },
+        {
+          "id": 3,
+          "titre": "Jour 3 — Gestion, outils et examen ISTQB Fondation",
+          "duree": "7 h",
+          "description": "Gestion des tests : organisation, plan, estimation, suivi, configuration, risques, incidents ; révisions QCM. Outils : gestion, statique, spécification, exécution, performance, bénéfices/risques, introduction en organisation. Bloc certification : révision syllabus, simulations QCM et cas, gestion du temps, passage de l’examen officiel. Conclusion."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation",
+      "description": "Alt Formation assure un suivi sur trois jours : vous validez les blocs du syllabus avant l’épreuve officielle.",
+      "etapes": [
+        "Contrôles de connaissances types QCM et cas guidés pour consolider chaque jour.",
+        "Restitution des attentes d’examen (gestion du temps, lecture des énoncés).",
+        "Passage de la certification ISTQB Fondation selon le créneau convenu avec le certificateur."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 21 heures",
+          "Formats : classe virtuelle, présentiel ; Inter ou Intra",
+          "Inter : 970,02 € HT / personne + certification obligatoire 235 € HT / personne",
+          "Intra : 3 970,02 € HT / groupe + certification obligatoire 235 € HT / personne — 4 stagiaires minimum",
+          "Sessions inter ou intra : calendrier communiqué lors de votre échange avec Alt Formation",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Une connaissance de base des processus de développement logiciel et des tests manuels est recommandée."
+        ]
+      }
+    },
+    "methodologie": "Trois jours rythmés : apports sur le syllabus ISTQB, QCM et cas toute la journée, temps dédié aux simulations puis à l’examen officiel lorsque celui-ci est planifié en fin de parcours.",
+    "certification": "ISTQB — Testeur certifié niveau Fondation (Foundation Level)",
+    "competences": [
+      "Décrypter les principes et le vocabulaire des tests logiciels",
+      "Positionner les activités de test selon les cycles et méthodes utilisés en entreprise",
+      "Animer ou contribuer aux revues et analyses statiques",
+      "Structurer conditions, cas et données de tests (boîte noire, blanche, heuristiques)",
+      "Piloter plan, risques, incidents et reporting de campagne",
+      "Identifier quand et comment mobiliser un outil de test",
+      "Viser la réussite de l’examen ISTQB Fondation"
+    ],
+    "metiersVises": [
+      "Testeur logiciel",
+      "Ingénieur qualité / QA",
+      "Analyste de tests",
+      "Chef de projet",
+      "Responsable qualité"
+    ],
+    "ctaFinal": {
+      "titre": "Certifiez-vous ISTQB niveau Fondation",
+      "sousTitre": "Sessions inter ou intra, modalités d’examen et devis : 01 60 43 94 32 ou formations@altrh.com — réponse rapide en semaine (9h00 – 18h00).",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "istqb-testeur-agile-fondation-ib-cegos": {
+    "categorie": "digital-developpement",
+    "type": "certifiante",
+    "hero": {
+      "titre": "ISTQB — Extension Fondation Testeur Agile",
+      "sousTitre": "Avec Alt Formation, préparez l’extension ISTQB Testeur Agile : pratiques de test en contexte Agile, techniques, outils et épreuve officielle (présentiel ou classe virtuelle).",
+      "video": "/assets/video/formations/dev-app.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "21 h"
+      },
+      {
+        "label": "Modalités",
+        "value": "Classe virtuelle / Présentiel"
+      },
+      {
+        "label": "Tarif Inter",
+        "value": "960 € HT / pers. + 330 € HT cert."
+      }
+    ],
+    "presentation": {
+      "titre": "Tests logiciels — ISTQB Testeur Agile",
+      "image": "/assets/images/concepteur_app.jpg",
+      "paragraphes": [
+        "Ce parcours certifiant prépare l’extension ISTQB Fondation « Testeur Agile » : enchaîner user stories, itérations et stratégie de test sans perdre la rigueur.",
+        "Il s’adresse aux testeurs, QA, analystes et chefs de projet qui sécurisent la qualité dans des équipes déjà tournées vers l’Agile.",
+        "Alt Formation dispense la session en présentiel ou en distanciel synchrone ; les calendriers inter sont communiqués à l’inscription.",
+        "Les aides mobilisables (CPF, plans entreprise, etc.) sont précisées dossier par dossier ; aucune promesse d’éligibilité avant analyse."
+      ]
+    },
+    "objectifs": [
+      "Relier les pratiques de développement Agile aux enjeux de test",
+      "Comparer principes, rituels et cadres courants d’un projet Agile",
+      "Mettre en œuvre méthodes et techniques de test adaptées à l’itération",
+      "Préparer et réussir l’examen ISTQB Testeur Agile"
+    ],
+    "programme": {
+      "dureeTotale": "21 heures sur 3 jours — Exposés, travaux dirigés, examen blanc officiel ISTQB commenté et préparation / passage de l’examen (1 h, 40 questions QCM, 65 % requis)",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Jour 1 — Développement logiciel Agile (1 et 2)",
+          "duree": "7 h",
+          "description": "Manifeste Agile et développements logiciels Agile ; approche d’équipe intégrée ; feedback au plus tôt et fréquent. Approches de développement Agile ; rédaction collaborative de user stories ; rétrospectives ; intégration continue ; planification de release et d’itérations."
+        },
+        {
+          "id": 2,
+          "titre": "Jour 2 — Principes / pratiques / processus et méthodes de test Agile (1)",
+          "duree": "7 h",
+          "description": "Différences de tests entre approches traditionnelles et Agile ; statuts du test dans les projets Agile ; rôles et compétences du testeur en équipe Agile. Méthodes de test Agile ; évaluation des risques qualité ; estimation de l’effort de test."
+        },
+        {
+          "id": 3,
+          "titre": "Jour 3 — Techniques, outils et certification ISTQB Testeur Agile",
+          "duree": "7 h",
+          "description": "Techniques de test dans les projets Agile ; outils pour les projets Agile. Conseils et révisions ; examen blanc officiel ISTQB avec correction commentée ; passage de la certification « ISTQB Testeur Agile » (dernier jour de la formation ou ultérieurement en ligne) : 1 h, QCM 40 questions, 65 % minimum."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation",
+      "description": "Un suivi pédagogique sur trois jours puis passage à l’épreuve officielle lorsque vous validez le calendrier avec Alt Formation.",
+      "etapes": [
+        "Attestation de fin de formation après la session présentielle ou distancielle.",
+        "Examen ISTQB Testeur Agile : 1 h, 40 QCM, 65 % de réussite requise pour la certification."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 21 heures (3 jours)",
+          "Formats : classe virtuelle, présentiel — Inter ou Intra",
+          "Inter : 960 € HT / personne + certification obligatoire 330 € HT / personne",
+          "Intra : 4 620 € HT / groupe + certification obligatoire 330 € HT / personne — 4 stagiaires minimum",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Certification ISTQB niveau Fondation (obligatoire).",
+          "Expérience préalable en tests logiciels et connaissance des principes Agiles fortement recommandées."
+        ]
+      }
+    },
+    "methodologie": "Pédagogie active en français : apports, ateliers sur user stories, QCM et examen blanc officiel corrigé commenté avant la certification en salle ou en ligne.",
+    "certification": "ISTQB — Extension Fondation Testeur Agile (Agile Tester)",
+    "competences": [
+      "Faire vivre le test dans une équipe Agile (manifeste, feedback continu)",
+      "Adapter stratégies, risques et estimation entre mode classique et mode itératif",
+      "Contribuer aux ateliers (user stories, critères d’acceptation, rétrospectives)",
+      "Sélectionner techniques et outils de test pertinents pour le sprint",
+      "Préparer sereinement l’épreuve ISTQB Testeur Agile"
+    ],
+    "metiersVises": [
+      "Testeur logiciel",
+      "Ingénieur qualité",
+      "Analyste de tests",
+      "Chef de projet en mode Agile"
+    ],
+    "ctaFinal": {
+      "titre": "Certifiez-vous ISTQB Testeur Agile",
+      "sousTitre": "Choisissez une session visio ou salle, ou un intra sur mesure : contactez Alt Formation au 01 60 43 94 32 ou formations@altrh.com.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "istqb-tests-acceptation-fondation-m2i": {
+    "categorie": "digital-developpement",
+    "type": "certifiante",
+    "hero": {
+      "titre": "ISTQB — Extension Fondation Tests d’acceptation",
+      "sousTitre": "Structurer tests d’acceptation (ATDD, BDD, BPMN, exigences non fonctionnelles) et viser la certification ISTQB Extension « Tests d’acceptation » avec Alt Formation, en classe virtuelle synchrone.",
+      "video": "/assets/video/formations/dev-app.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "14 h (2 jours)"
+      },
+      {
+        "label": "Modalité",
+        "value": "Classe virtuelle"
+      },
+      {
+        "label": "Tarif Inter",
+        "value": "642 € HT / pers. + 315 € HT cert."
+      }
+    ],
+    "presentation": {
+      "titre": "Tests logiciels — ISTQB Acceptance Testing",
+      "image": "/assets/images/concepteur_app.jpg",
+      "paragraphes": [
+        "Ce parcours certifiant prépare l’extension ISTQB « Tests d’acceptation » : relier besoins métiers, exigences et preuves de conformité utilisateur.",
+        "Public : équipes test/QA, MOA et analystes métiers qui sécurisent l’aval de projet.",
+        "Alt Formation anime la session en classe virtuelle interactive : même exigence de présence qu’en salle, avec des travaux guidés en direct.",
+        "Sessions inter régulières ; possibilité intra pour regrouper vos équipes sur vos créneaux (minimum de participants communiqué lors du devis).",
+        "Les financements sont étudiés dossier par dossier avec un interlocuteur Alt Formation."
+      ]
+    },
+    "objectifs": [
+      "Relier besoins métiers, exigences et jeux de tests d’acceptation",
+      "Utiliser des familles de tests d’acceptation (exploratoire, bêta, etc.)",
+      "Modéliser un processus (BPMN, DMN) pour en dériver des tests",
+      "Couvrir les exigences non fonctionnelles en phase d’acceptation",
+      "Organiser la collaboration entre métiers, QA et MOA",
+      "Réussir l’examen ISTQB Tests d’acceptation"
+    ],
+    "programme": {
+      "dureeTotale": "14 heures sur 2 jours — Travaux pratiques, QCM corrigés en groupe, examen blanc commenté et préparation à l’épreuve officielle",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Jour 1 — Fondations, critères d’acceptation et modélisation métier",
+          "duree": "7 h",
+          "description": "Introduction : relations besoins métier, analyse métier et tests d’acceptation ; critères d’acceptation ; conception ; approches fondées sur l’expérience. Travaux pratiques : tests d’acceptation ATDD et BDD, tests exploratoires ; QCM (5 questions) et correction en groupe. Après-midi : modélisation des processus et règles métier (BPMN, DMN) ; tests d’acceptation à partir des modèles ; TP création de processus en BPMN ; QCM et correction."
+        },
+        {
+          "id": 2,
+          "titre": "Jour 2 — Exigences non fonctionnelles, collaboration et certification",
+          "duree": "7 h",
+          "description": "Tests d’acceptation pour exigences non fonctionnelles : qualité à l’usage, facilité d’utilisation et expérience utilisateur, performance, sécurité ; QCM et correction. Tests d’acceptation en collaboration : activités et outillage ; TP sur métriques de gestion des tests ; QCM et correction. Après-midi : dispositif d’examen (présentiel ou à distance) ; examen blanc complet avec correction commentée ; conseils pour réussir un QCM. Examen de certification : 40 questions en français, 65 % de bonnes réponses minimum (26/40), durée 1 h ; temps additionnel possible sous conditions (français non langue maternelle, RQTH). Passage possible sur tablette ou papier en fin de présentiel, ou à distance à date choisie si formation à distance ou souhait du candidat."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation",
+      "description": "Progression vérifiée en continu puis certification officielle ISTQB.",
+      "etapes": [
+        "Contrôles interactifs (questions orales/écrites, QCM, mises en situation).",
+        "Examen blanc commenté puis certification : 40 questions en 1 h, 65 % minimum de bonnes réponses."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 14 heures (2 jours)",
+          "Format : classe virtuelle — Inter ou Intra",
+          "Inter : 642 € HT / personne + certification obligatoire 315 € HT / personne",
+          "Intra : 3 040 € HT / groupe + certification obligatoire 315 € HT / personne — 4 stagiaires minimum",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Certification ISTQB niveau Fondation (obligatoire).",
+          "Expérience ou sensibilisation aux processus de validation fonctionnelle fortement recommandée."
+        ]
+      }
+    },
+    "methodologie": "Atelier collaboratif sur deux jours : théorie courte, TP (ATDD, BDD, BPMN), QCM corrigés collectivement et examen blanc avant la certification.",
+    "certification": "ISTQB — Extension Fondation Tests d’acceptation (Acceptance Testing)",
+    "competences": [
+      "Traduire besoins et exigences en scénarios d’acceptation traçables",
+      "Structurer critères et données pour sécuriser la recette",
+      "Combiner exploration, bêta et rituels collaboratifs type ATDD/BDD",
+      "Exploiter BPMN et DMN pour nourrir la conception de tests",
+      "Intégrer performance, UX ou sécurité dans la phase d’acceptation",
+      "Réussir l’examen ISTQB Tests d’acceptation"
+    ],
+    "metiersVises": [
+      "Testeur / ingénieur test",
+      "Responsable qualité",
+      "Maîtrise d’ouvrage (MOA)",
+      "Analyste métier"
+    ],
+    "ctaFinal": {
+      "titre": "Certifiez-vous ISTQB Tests d’acceptation",
+      "sousTitre": "Devis, dates de classe virtuelle ou intra : écrivez à formations@altrh.com ou appelez le 01 60 43 94 32.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "piloter-animer-securite-informatique-sysdream": {
+    "categorie": "cybersecurite-reseaux",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Piloter et animer la sécurité informatique",
+      "sousTitre": "Avec Alt Formation, parcours certifiant long format (217 h) : stratégie cyber, ISO 27001/27005, EBIOS Risk Manager, réseaux et Linux durcis, réponse à incident et sensibilisation — 100 % classe virtuelle et travaux pratiques immersifs.",
+      "video": "/assets/video/formations/infra-reseau.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "217 h"
+      },
+      {
+        "label": "Modalité",
+        "value": "100 % classe virtuelle"
+      },
+      {
+        "label": "Tarif Inter",
+        "value": "15 377 € HT / pers. + 370 € HT cert."
+      }
+    ],
+    "presentation": {
+      "titre": "Cybersécurité — Certification de compétences",
+      "image": "/assets/images/expert_cyber.jpg",
+      "paragraphes": [
+        "Ce parcours certifiant vise la maîtrise opérationnelle du pilotage cyber en entreprise : analyse du risque, SMSI ISO 27001/27002, ISO 27005, EBIOS Risk Manager, durcissement réseaux et systèmes, réponse à incident et montée en puissance de la sensibilisation.",
+        "Il s’adresse aux profils IT (techniciens, support, DSI) titulaires d’un niveau 5 ou 6 lorsque la cybersécurité n’est pas encore leur cœur de métier.",
+        "La pédagogie combine apports, démonstrations, retours d’expérience et travaux pratiques sur une plateforme immersive (scénarios type ransomware, phishing, etc.).",
+        "Le format est 100 % classe virtuelle pour permettre une montée en charge progressive sans vous éloigner durablement de vos missions.",
+        "Alt Formation coordonne inscriptions, financements éventuels et calendrier ; les engagements intra sont chiffrés au plus près de vos effectifs."
+      ]
+    },
+    "objectifs": [
+      "Bâtir une stratégie cyber à partir d’une analyse de risque structurée",
+      "Durcir réseaux, protocoles, terminaux et serveurs Linux",
+      "Piloter le déploiement et le suivi d’une stratégie cyber transverse"
+    ],
+    "programme": {
+      "dureeTotale": "217 heures — 7 axes ; évaluation continue ; dossier professionnel et soutenance devant jury",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Axe 1 — Fondamentaux sécurité des systèmes et des réseaux (35 h)",
+          "duree": "5 jours",
+          "description": "Sécurisation des réseaux (21 h) : attaques sur protocoles et équipements, démonstrations et contre-mesures ; attaques couche 2 et commutateurs ; cibles routeurs et VPN ; pare-feu, IDS/IPS, proxy, etc. Sécurisation Linux (14 h) : durcissement, noyau, droits, mots de passe, protections contre dépassements de tampon, bonnes pratiques des services courants, isolation, automatisation et déploiement de configuration."
+        },
+        {
+          "id": 2,
+          "titre": "Axe 2 — Réglementation cybersécurité (7 h)",
+          "duree": "1 jour",
+          "description": "Enjeux de conformité et cybercriminalité ; RGPD (principes, DPO, sanctions) ; articulation ISO 27001, 27005 et RGPD ; panorama NIS2, DORA, obligations OIV/OSE ; travaux pratiques : évaluation de conformité, plans d’atténuation."
+        },
+        {
+          "id": 3,
+          "titre": "Axe 3 — Pilotage d’un plan d’action cybersécurité / SMSI (70 h)",
+          "duree": "10 jours",
+          "description": "Management d’un ISMS selon ISO 27001 et contrôles ISO 27002 ; alignement sur ISO 10006, 27003, 27004, 27005. Derniers jours (14 h) : cybersécurité dans la conception et le management de projets — cartographie des risques, security by design, gouvernance, validation des acquis (QCM) ; TP : maturité, tableaux de bord, plan stratégique."
+        },
+        {
+          "id": 4,
+          "titre": "Axe 4 — Analyse et évaluation des risques (42 h)",
+          "duree": "6 jours",
+          "description": "Gestion des risques pour la sécurité de l’information avec ISO/IEC 27005 et méthode EBIOS Risk Manager (ANSSI) ; exercices et cas pour évaluation et suivi du risque dans le cycle de vie ; mise en perspective avec ISO/IEC 27001."
+        },
+        {
+          "id": 5,
+          "titre": "Axe 5 — Optimisation et coordination des réponses à incidents (14 h)",
+          "duree": "2 jours",
+          "description": "Introduction à la gestion d’incidents de sécurité ; organisation de la réponse ; cadre de gouvernance et normes ; processus opérationnels ; communication et facteurs humains ; mise en pratique sur cas d’usage."
+        },
+        {
+          "id": 6,
+          "titre": "Axe 6 — Mise en œuvre d’actions de contrôle (21 h)",
+          "duree": "3 jours",
+          "description": "Design, déploiement et gestion des contrôles de sécurité ; types et objectifs des contrôles ; cadres d’assurance ; processus de gestion d’audit."
+        },
+        {
+          "id": 7,
+          "titre": "Axe 7 — Sensibilisation et formation des équipes (28 h)",
+          "duree": "4 jours",
+          "description": "Stratégie de formation et de sensibilisation cyber pour utilisateurs finaux ; place dans la stratégie cyber globale ; actions possibles ; plan d’action adapté aux risques ; pilotage et mesure d’impact."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation des acquis",
+      "description": "Alt Formation s’appuie sur une progression continue puis une validation finale type jury professionnel.",
+      "etapes": [
+        "Quiz, travaux pratiques et cas tout au long des sept axes.",
+        "Constitution d’un dossier professionnel individuel.",
+        "Soutenance orale : présentation du dossier et échanges avec le jury.",
+        "Travaux pratiques guidés sur environnements immersifs fournis dans le cadre du parcours."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Volume : 217 heures (7 axes)",
+          "Déroulé : 100 % classe virtuelle — créneaux communiqués à l’inscription (éventuel mélange synchrone / asynchrone selon modules)",
+          "Inter : 15 377 € HT / personne + certification obligatoire 370 € HT / personne",
+          "Intra : 75 920 € HT / groupe + certification obligatoire 370 € HT / personne — 4 stagiaires minimum",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Justifier d’un diplôme ou d’une certification de niveau 5 (ex. : BTS SIO, BTS SN, BUT Informatique, DUT informatique, LP métiers de l’informatique, titres professionnels, CQP dont CQP Administrateur systèmes et réseaux, etc.)",
+          "OU justifier d’une expérience au sein de la DSI d’une entreprise ou d’une ESN (Entreprise de services du numérique)"
+        ]
+      }
+    },
+    "methodologie": "Sept axes complémentaires : théorie, démonstrations, retours terrain et travaux pratiques sur plateforme immersive ; vous consolidez chaque étape avant la soutenance finale.",
+    "certification": "Parcours certifiant « Piloter et animer la sécurité informatique » — organisme et modalités d’examen communiqués par Alt Formation selon votre inscription.",
+    "competences": [
+      "Esquisser une stratégie cyber ancrée dans l’analyse de risque",
+      "Coordonner durcissement réseau et serveurs selon vos contraintes",
+      "Déployer un SMSI ISO 27001/27002 et suivre les plans d’action",
+      "Mettre à profit ISO 27005 et EBIOS Risk Manager dans vos arbitrages",
+      "Structurer réponse à incident et communication interne",
+      "Concevoir et déployer des dispositifs de contrôle, cadres d’assurance et démarches d’audit",
+      "Former et sensibiliser les équipes avec une vision mesurable",
+      "Capitaliser les acquis dans un dossier et une soutenance de validation"
+    ],
+    "metiersVises": [
+      "Technicien / ingénieur systèmes et réseaux",
+      "Technicien support en ESN",
+      "Référent cybersécurité en DSI",
+      "Futur pilote RSSI / responsable sécurité SI (selon expérience)",
+      "Consultant en sécurité des systèmes d’information"
+    ],
+    "ctaFinal": {
+      "titre": "Engagez un parcours long en cybersécurité",
+      "sousTitre": "Montant, certification, planning intra ou inter : nos conseillers Alt Formation répondent au 01 60 43 94 32 ou via formations@altrh.com.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "html5-css3-javascript-certifiante-eni": {
+    "categorie": "digital-developpement",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Développement Web — HTML5, CSS3 et JavaScript",
+      "sousTitre": "Applications web réactives : intégration HTML/CSS, JavaScript, DOM, services REST et WebSocket — parcours pratique Alt Formation préparant à la certification Éditions ENI.",
+      "video": "/assets/video/formations/dev-web-mobile.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "35 h"
+      },
+      {
+        "label": "Modalités",
+        "value": "Présentiel / téléprésentiel / distanciel"
+      },
+      {
+        "label": "Groupe",
+        "value": "1 à 12 stagiaires"
+      }
+    ],
+    "presentation": {
+      "titre": "HTML5, CSS3, JavaScript — intégration et front-end",
+      "image": "/assets/images/concepteur_web.jpg",
+      "paragraphes": [
+        "Parcours certifiant pour concevoir des applications web modernes : HTML5, CSS3 (responsive, Flexbox), formulaires, JavaScript côté navigateur, consommation d’API REST et usage de WebSocket.",
+        "Public : intégrateurs et développeurs front. Alt Formation alterne apports, démonstrations et travaux pratiques ; chaque stagiaire dispose d’un poste adapté et de supports numériques ou papier.",
+        "Formats possibles : présentiel à Bailly-Romainvilliers ou Serris, salle immersive (formateur à distance) ou distanciel synchrone depuis votre lieu de travail.",
+        "Le parcours prépare la certification Éditions ENI « Créer et mettre en forme des pages web (HTML5 et CSS3) ». L’examen reste volontaire hors obligation contractuelle ; un travail personnel complémentaire renforce les chances de réussite.",
+        "CPF : respect du délai légal d’au moins 11 jours ouvrés entre la proposition commerciale et le démarrage. Inscriptions en général jusqu’à 48 h avant la session. Accessibilité aux personnes en situation de handicap prise en charge sur demande. Intra entreprise chiffré au cas par cas."
+      ]
+    },
+    "objectifs": [
+      "Construire des pages Web en HTML5",
+      "Habiller et mettre en forme des pages Web avec CSS3",
+      "Créer des formulaires avancés et des tableaux de données",
+      "Créer des menus de navigation",
+      "Utiliser les techniques CSS de positionnement et dimensionnement pour adapter la présentation aux différents appareils (smartphone, tablette, PC)",
+      "Parcourir et modifier la structure d’une page en JavaScript",
+      "Gérer des événements utilisateur",
+      "Intégrer des appels à des services Web REST et WebSockets en JavaScript"
+    ],
+    "programme": {
+      "dureeTotale": "35 heures — dont TP sur fil rouge (pages liées, formulaires, tableaux, responsive, API distante, WebSocket)",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Introduction",
+          "duree": "2 h",
+          "description": "Création de contenus pour le Web ; HTML, CSS, JavaScript ; organisation d’un site ; navigateurs et compatibilité HTML5/CSS3 ; outils de production."
+        },
+        {
+          "id": 2,
+          "titre": "Notions fondamentales HTML5",
+          "duree": "3 h",
+          "description": "Syntaxe XML, balises, attributs et événements, structure du document, entête ; TP : structure de page, contenus (titres, listes, images), liens de navigation."
+        },
+        {
+          "id": 3,
+          "titre": "CSS — bases",
+          "duree": "3 h",
+          "description": "Feuilles de style, sélecteurs simples et CSS3, héritage, cascades, couleurs, unités (px, in, %, em) ; TP : feuille de style et application multi-pages."
+        },
+        {
+          "id": 4,
+          "titre": "Intégration et mise en forme de contenus",
+          "duree": "3 h",
+          "description": "Texte, paragraphes, listes, espaces, inline/bloc, dimensions, marges, bordures et fonds ; TP : mise en forme texte et mise en page."
+        },
+        {
+          "id": 5,
+          "titre": "Structure fluide et positionnement",
+          "duree": "2 h",
+          "description": "Conteneurs HTML5 (nav, section, main, header, footer), unités avancées (% vh vw calc), positionnements relatif/absolu, habillage ; TP : bandeau d’en-tête."
+        },
+        {
+          "id": 6,
+          "titre": "Tableaux de données",
+          "duree": "1 h",
+          "description": "Table, lignes et cellules, mise en forme ; TP : tableau HTML et habillage CSS."
+        },
+        {
+          "id": 7,
+          "titre": "Formulaires HTML5",
+          "duree": "1 h",
+          "description": "Form, fieldset, label, input, listes de valeurs, output/progress/meter, validation et boutons ; TP : formulaire structuré et stylé."
+        },
+        {
+          "id": 8,
+          "titre": "Responsive Web Design",
+          "duree": "2 h",
+          "description": "Principes, mobile first, media queries, résolutions et viewport ; TP : pages responsive (structure fixe et fluide)."
+        },
+        {
+          "id": 9,
+          "titre": "Positionnement Flexbox",
+          "duree": "2 h",
+          "description": "Axes, alignement, flex-grow/shrink, ordre ; TP : mise en page fluide en Flexbox."
+        },
+        {
+          "id": 10,
+          "titre": "Fondamentaux JavaScript",
+          "duree": "4 h",
+          "description": "Fonctions, tableaux, objets, fonctions anonymes et encapsulation, prototype, apports ES6 ; TP : fichiers JS intégrés aux pages."
+        },
+        {
+          "id": 11,
+          "titre": "Interaction avec le DOM",
+          "duree": "4 h",
+          "description": "querySelector / querySelectorAll, parcours et modification du DOM, addEventListener ; TP : objets métiers via formulaire, affichage dans un tableau HTML."
+        },
+        {
+          "id": 12,
+          "titre": "Requêtes AJAX — XMLHttpRequest",
+          "duree": "2 h",
+          "description": "API REST, XMLHttpRequest, JSON, événement progress ; TP : données distantes avec XHR."
+        },
+        {
+          "id": 13,
+          "titre": "Fetch API et Promise",
+          "duree": "3 h",
+          "description": "Requêtes fetch, promesses, synchronisation ; TP : données distantes avec Fetch."
+        },
+        {
+          "id": 14,
+          "titre": "Communication temps réel — WebSocket",
+          "duree": "3 h",
+          "description": "Ouverture/fermeture, émission et réception de messages ; TP : partie cliente d’une communication bidirectionnelle."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation des acquis",
+      "description": "Alt Formation assure un suivi de progression et vous prépare, si vous le souhaitez, à la certification Éditions ENI.",
+      "etapes": [
+        "Auto-évaluation en début et fin de parcours.",
+        "Retour du formateur (non évalué → acquis) via QCM, TP, quiz, cas ou mises en situation.",
+        "Feuille de présence demi-journées ; questionnaire de fin analysé par l’équipe pédagogique ; attestation.",
+        "Certification Éditions ENI « Créer et mettre en forme des pages web (HTML5 et CSS3) » : examen pour candidats volontaires ; travail personnel recommandé en complément du temps encadré."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée indicative : 35 heures",
+          "Effectifs : 1 à 12 personnes (souvent 5 à 6 en moyenne)",
+          "Inscriptions : jusqu’à 48 h avant le début en général ; CPF : 11 jours ouvrés minimum entre proposition et démarrage",
+          "Intra-entreprise : sur devis",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Savoir mettre en œuvre l’algorithmique dans un langage de programmation",
+          "OU avoir suivi la formation T410-010 « Algorithmique — Initiation à la programmation » ou équivalent"
+        ]
+      }
+    },
+    "methodologie": "Expert présent tout au long du parcours ; alternance de théorie, démonstrations et ateliers sur vos propres implémentations.",
+    "certification": "Créer et mettre en forme des pages web (HTML5 et CSS3) — Editions ENI",
+    "competences": [
+      "Structurer et produire des pages et sites en HTML5 sémantique",
+      "Styliser et agencer des interfaces avec CSS3 (dont Flexbox et techniques avancées)",
+      "Concevoir des formulaires et tableaux accessibles et cohérents",
+      "Adapter les mises en page au multi-écran (Responsive Web Design, media queries)",
+      "Manipulation du DOM et gestion d’événements en JavaScript",
+      "Consommer des API REST (XHR, Fetch, JSON) et des WebSockets",
+      "Finaliser la préparation à la certification ENI HTML5/CSS3 si vous vous engagez sur l’examen"
+    ],
+    "metiersVises": [
+      "Concepteur développeur Web",
+      "Intégrateur Web",
+      "Développeur front-end"
+    ],
+    "ctaFinal": {
+      "titre": "Planifiez votre formation Web certifiante",
+      "sousTitre": "Inter, intra ou financement : un conseiller Alt Formation vous répond au 01 60 43 94 32 ou via formations@altrh.com.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "python-oriente-objet-certifiante-eni": {
+    "categorie": "digital-developpement",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Python — Programmation orientée objet (certifiante)",
+      "sousTitre": "Renforcez Python orienté objet avec PyCharm : modules, classes, exceptions, tests et interfaces Tkinter — chemin Alt Formation vers la certification RS6701 délivrée par les Éditions ENI.",
+      "video": "/assets/video/formations/dev-app.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "35 h"
+      },
+      {
+        "label": "Modalités",
+        "value": "Présentiel / téléprésentiel / distanciel"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "2 820 € HT"
+      }
+    ],
+    "presentation": {
+      "titre": "Python objet — certification France Compétences RS6701",
+      "image": "/assets/images/concepteur_app.jpg",
+      "paragraphes": [
+        "Parcours certifiant centré sur Python objet : installation, environnements virtuels, syntaxe, modules, classes (encapsulation, héritage, polymorphisme), exceptions, tests unittest, automatisation avec la bibliothèque standard et interfaces Tkinter.",
+        "Fil rouge pédagogique : jeux sur nombres aléatoires, calculs de dates, hiérarchie de comptes bancaires testée et sérialisée, puis IHM de consultation.",
+        "Public : développeurs et chefs de projet techniques. Alt Formation propose présentiel sur site, salle immersive ou distanciel synchrone ; groupes de 1 à 12 personnes pour garder le lien avec le formateur.",
+        "Une certification « Langage Python » (Éditions ENI) inscrite au Répertoire Spécifique France Compétences (référence RS6701 depuis le 19/07/2024). En financement CPF, passage de l’examen obligatoire ; les modalités officielles sont celles du certificateur.",
+        "Calendrier inter indicatif et lieux (distanciel ou villes partenaires) : précisés lors de votre demande auprès d’Alt Formation. Intra entreprise sur devis."
+      ]
+    },
+    "objectifs": [
+      "Décrire la philosophie de Python et identifier ses domaines d’application",
+      "Mettre en place un environnement de développement",
+      "Utiliser les éléments de base du langage",
+      "Définir et utiliser des fonctions et des modules pour la structuration des programmes",
+      "Concevoir des classes en respectant les bonnes pratiques de la programmation objet",
+      "Mettre en œuvre l’héritage",
+      "Réaliser et exécuter des scripts en utilisant les fonctionnalités de la bibliothèque standard",
+      "Concevoir des interfaces graphiques",
+      "Réaliser des tests pour valider le bon fonctionnement du code"
+    ],
+    "programme": {
+      "dureeTotale": "35 heures — alternance cours, démonstrations et travaux pratiques",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Introduction au langage Python",
+          "duree": "1 h",
+          "description": "Présentation et historique ; installation de la distribution ; PyCharm ; environnements virtuels ; documentation officielle."
+        },
+        {
+          "id": 2,
+          "titre": "Éléments de base du langage",
+          "duree": "2 h 30",
+          "description": "Structure d’un programme, variables et typage dynamique, opérateurs, E/S, contrôles de flux, collections (list, tuple, dict) ; TP : nombre aléatoire à deviner."
+        },
+        {
+          "id": 3,
+          "titre": "Fonctions, modules et packages",
+          "duree": "3 h 30",
+          "description": "Fonctions, retours multiples, *args, paramètres nommés et optionnels, modules, import, packages ; TP : jour de Noël pour une année donnée."
+        },
+        {
+          "id": 4,
+          "titre": "Programmation orientée objet",
+          "duree": "7 h",
+          "description": "Classes, attributs, propriétés, méthodes, constructeurs/destructeurs, encapsulation, instanciation, membres de classe, héritage, polymorphisme, méthodes magiques ; TP : Compte et CompteEpargne."
+        },
+        {
+          "id": 5,
+          "titre": "Gestion des exceptions",
+          "duree": "3 h 30",
+          "description": "Exceptions, levée, try/except, finalisation, classes d’exception personnalisées ; TP : intégration dans Compte."
+        },
+        {
+          "id": 6,
+          "titre": "Tests unitaires",
+          "duree": "3 h 30",
+          "description": "unittest, TestCase, assertions, exécution et lecture des résultats ; TP : tests sur Compte et CompteEpargne."
+        },
+        {
+          "id": 7,
+          "titre": "Scripts et bibliothèque standard",
+          "duree": "7 h",
+          "description": "sys et os, commandes système, dates, expressions régulières, fichiers texte ; TP : persistance d’objets Compte dans un fichier."
+        },
+        {
+          "id": 8,
+          "titre": "Interfaces graphiques avec Tkinter",
+          "duree": "7 h",
+          "description": "Principes, widgets, menus, placement, événements ; TP : IHM pour l’application bancaire."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation des acquis",
+      "description": "Suivi Alt Formation et préparation à la certification RS6701 lorsque celle-ci fait partie de votre parcours.",
+      "etapes": [
+        "Auto-évaluation en début et fin de session.",
+        "Retour du formateur (non évalué à acquis) via QCM, TP, quiz, cas ou mises en situation.",
+        "Feuille de présence ; questionnaire de fin analysé par l’équipe pédagogique ; attestation.",
+        "Examen RS6701 pour les parcours concernés ; rappel de l’obligation d’examen en CPF ; travail personnel complémentaire recommandé."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 35 heures",
+          "Lieux types : distanciel ou villes partenaires — détail communiqué à l’inscription",
+          "Inscriptions : jusqu’à 48 h avant le début en général ; CPF : 11 jours ouvrés minimum entre proposition commerciale et démarrage",
+          "Intra-entreprise : sur devis",
+          "Accessibilité : signalez vos besoins à Alt Formation pour étude préalable",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Programmer dans un langage structuré.",
+          "Avoir suivi la formation TACNUM1-1A « Conception et programmation objet » ou posséder des connaissances et compétences équivalentes."
+        ]
+      }
+    },
+    "methodologie": "Expert présent pendant toute la durée : cours ciblés, démonstrations et TP sur le fil rouge, seul ou en petit groupe.",
+    "certification": "Langage Python — Editions ENI, référence RS6701 (Répertoire Spécifique France Compétences, depuis le 19/07/2024)",
+    "competences": [
+      "Configurer Python et PyCharm avec environnements virtuels",
+      "Maîtriser la syntaxe de base et les collections Python",
+      "Structurer une application en fonctions, modules et packages",
+      "Modéliser des domaines métier en POO (classes, héritage, polymorphisme)",
+      "Appliquer une gestion d’exceptions propre et des tests unittest",
+      "Automatiser avec la bibliothèque standard (OS, regexp, fichiers, dates)",
+      "Créer des IHM avec Tkinter",
+      "Préparer et passer la certification RS6701 selon le calendrier du certificateur"
+    ],
+    "metiersVises": [
+      "Développeur",
+      "Ingénieur logiciel",
+      "Chef de projet technique"
+    ],
+    "ctaFinal": {
+      "titre": "Réservez votre session Python certifiante",
+      "sousTitre": "Inter, intra ou financement CPF : écrivez à formations@altrh.com ou composez le 01 60 43 94 32 — nos bureaux de Bailly-Romainvilliers et Serris traitent les demandes sous 48 h ouvrées en moyenne.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "developper-culture-digitale": {
+    "categorie": "digital-developpement",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Développer la culture digitale",
+      "sousTitre": "Journée présentielle pour étudiants et professionnels : cadrer la révolution digitale, les usages, l’impact économique et les métiers du numérique, avec un vocabulaire commun et des mises en situation.",
+      "video": "/assets/video/formations/informatique.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "1 jour (5 h à 7 h)"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel"
+      },
+      {
+        "label": "Public",
+        "value": "Étudiants, tout public"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "1 000 € HT (inter)"
+      }
+    ],
+    "presentation": {
+      "titre": "Culture digitale : enjeux, usages et transformation",
+      "image": "/assets/images/designer_app_mobile.jpg",
+      "paragraphes": [
+        "Cette formation d’une journée vous donne des repères solides sur la culture digitale, son impact sur l’économie et les organisations, et les grands courants technologiques (web, réseaux sociaux, collaboration, IoT, IA, données…).",
+        "Vous partirez avec un socle de vocabulaire partagé et une meilleure lecture des métiers et des enjeux (transformation du travail, réglementation, réputation numérique).",
+        "Alt Formation propose l’Inter-entreprise et l’intra sur mesure ; les dates s’organisent avec nos équipes de Bailly-Romainvilliers et Serris. Référence catalogue : NUM_DIGIT_06."
+      ]
+    },
+    "objectifs": [
+      "Définir la culture digitale et son impact sur l’économie",
+      "Identifier les nouveaux usages et comportements face au digital",
+      "Comprendre la transformation des métiers et des organisations",
+      "Partager un vocabulaire commun autour du digital et des technologies du Web",
+      "Identifier les outils du digital et leurs valeurs ajoutées"
+    ],
+    "programme": {
+      "dureeTotale": "1 jour — Constructions participatives, apports, quiz, études de cas et jeux de rôle",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Appréhender la révolution digitale",
+          "duree": "≈ 2 h",
+          "description": "Digital : définition, chiffres clés et cibles. Web et principaux acteurs (GAFA, autres grandes plateformes). Médias sociaux (Twitter, Facebook…). Picture marketing : Instagram, Pinterest… Messageries instantanées : Messenger, WhatsApp, Snapchat… Outils collaboratifs : forums, blogs, wikis, cloud. Grandes tendances : impression 3D, réalité virtuelle, IA, IoT, Big Data, machine learning… Exercice : quiz sur tendances, définitions et chiffres du digital."
+        },
+        {
+          "id": 2,
+          "titre": "Ses pratiques et l’impact du digital sur le travail et l’économie",
+          "duree": "≈ 2 h",
+          "description": "Faire le point : où en suis-je avec le digital ? E-business et business digital : crowdfunding, marketplaces, social commerce, French Tech et exemples d’entreprises. Marketing produit : buzz, canaux, inbound marketing, brand content, social brand. E-réputation, économie du partage, employee advocacy. Réglementation et risques : protection des données, neutralité d’Internet… Étude de cas : transformation digitale d’une entreprise. Vidéos sur le digital et la culture d’entreprise."
+        },
+        {
+          "id": 3,
+          "titre": "Identifier les grands métiers du digital",
+          "duree": "≈ 1 h 30",
+          "description": "Panorama : chef digital / CDO, growth hackers (ex. Dropbox…), lead generation manager, traffic manager, Chief Happiness Officer, community manager, social media manager, data scientist, architecte Big Data, chef de produit web et mobile, développeur d’applications mobiles, brand content manager, UX designer, RSSI, DPO… Exercice : jeu « Qui est-ce ? » sur les métiers du digital."
+        },
+        {
+          "id": 4,
+          "titre": "Digitaliser les modes de travail et d’apprentissage",
+          "duree": "≈ 2 h",
+          "description": "Transformation du système d’information : cloud, BYOD, dématérialisation. Aménagement et espaces de travail : télétravail, bureau partagé, nomadisation, fab lab, hackathon… Formation : LMS, e-learning, serious game, mobile learning. Outils de partage : réseaux sociaux, cloud, mobile, tablette. Management et accompagnement. Sécurité et réglementation : droit à la déconnexion, charte d’utilisation des outils. Étude de cas : accompagner des collaborateurs dans la digitalisation."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation de la formation et de votre progression",
+      "description": "Dispositif en plusieurs temps pour cadrer vos objectifs, suivre votre progression et mesurer l’impact dans la durée.",
+      "etapes": [
+        "Avant la formation : questionnaire pour exprimer vos objectifs personnels et estimer votre niveau sur les thématiques abordées.",
+        "Pendant la formation : observation de vos pratiques par le formateur et conseils personnalisés (points forts et axes de vigilance).",
+        "En fin de formation : questionnaire (QCM et/ou ateliers et exercices pratiques) pour valider les compétences et la progression vers vos objectifs ; questionnaire de satisfaction.",
+        "À froid (6 à 9 mois après) : auto-évaluation proposée pour mesurer les bénéfices, les efforts restants et votre satisfaction."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 1 jour — volume pédagogique équivalent 5 h à 7 h selon effectif et rythme",
+          "Format : présentiel — inter-entreprise ou intra sur demande",
+          "Tarif indicatif inter : 1 000 € HT (devis intra sur mesure)",
+          "Référence : NUM_DIGIT_06",
+          "Aucune session fixe à date : formation sur demande — nous consulter pour calendrier",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Inscriptions et programme personnalisé : nos conseillers vous répondent sous 48 h ouvrées en moyenne."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Aucune connaissance particulière requise."
+        ]
+      }
+    },
+    "methodologie": "Combinaison de constructions participatives, d’apports théoriques et méthodologiques, et de mises en situation (simulations, jeux de rôle) pour faire émerger les difficultés et découvrir les méthodes adaptées.",
+    "certification": "Attestation de fin de formation — Référence NUM_DIGIT_06",
+    "competences": [
+      "Définir la culture digitale et en situer les effets macroéconomiques",
+      "Repérer les usages et comportements liés aux grands services numériques",
+      "Lire les évolutions des métiers et des organisations sous l’angle digital",
+      "Utiliser un vocabulaire commun Web, médias sociaux et outils collaboratifs",
+      "Cartographier des outils digitaux et leur valeur ajoutée dans un contexte donné",
+      "Mobiliser des bases de capacité managériale et d’aisance à l’oral pour partager la vision digitale"
+    ],
+    "metiersVises": [
+      "Étudiant·e en reconversion ou en complément de cursus",
+      "Collaborateur·rice en transition vers des projets digitaux",
+      "Futur community manager, chef de produit web ou rôles transverses numérique",
+      "Manager ou encadrant·e devant fédérer une culture digitale en équipe"
+    ],
+    "ctaFinal": {
+      "titre": "Demander une formation culture digitale",
+      "sousTitre": "Inter ou intra, dates à construire avec vous : contactez Alt Formation pour une proposition adaptée à vos objectifs.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "csharp-dotnet-visual-studio": {
+    "categorie": "digital-developpement",
+    "type": "certifiante",
+    "hero": {
+      "titre": "C# — Développer en .NET avec Visual Studio",
+      "sousTitre": "Cinq jours présentiels pour maîtriser la plateforme .NET, la syntaxe C#, la POO et Visual Studio, jusqu’aux applications desktop, web et accès aux données.",
+      "video": "/assets/video/formations/dev-app.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "5 jours"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "Développeurs, étudiants"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "3 000 € HT (inter)"
+      }
+    ],
+    "presentation": {
+      "titre": ".NET, C# et Visual Studio — du CLR aux applications",
+      "image": "/assets/images/concepteur_app.jpg",
+      "paragraphes": [
+        "Parcours certifiant pour développeurs qui veulent produire des applications .NET professionnelles avec Visual Studio : compréhension de la plateforme, langage C# (y compris évolutions récentes), POO, bibliothèques de base, LINQ et aperçu des stacks WPF, ASP.NET MVC et services.",
+        "La progression alterne apports, démonstrations et travaux pratiques guidés (algorithmes, classes, exceptions, collections, mini-projets).",
+        "Inter-entreprise ou intra sur demande ; planning construit avec Alt Formation (Bailly-Romainvilliers / Serris). Référence catalogue : NUM_DEV_21."
+      ]
+    },
+    "objectifs": [
+      "Découvrir les principales technologies du framework .NET",
+      "Maîtriser la syntaxe du langage C#",
+      "Mettre en œuvre la programmation orientée objet avec C#",
+      "Utiliser l’environnement de développement intégré Visual Studio"
+    ],
+    "programme": {
+      "dureeTotale": "5 jours — Alternance cours, démonstrations et travaux pratiques sur Visual Studio",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "La plateforme .NET",
+          "duree": "1 jour",
+          "description": "Principes et architecture .NET ; CLR, BCL, CLS (support multilingue). Panorama des types d’applications multicibles. Structure d’une application : espaces de noms. Outils et IDE. CIL : langage intermédiaire, compilation JIT. Assemblies, métadonnées, déploiement ; assemblies privées et partagées, signature, GAC. .NET Core, open source et multiplateforme. TP : premier programme C# minimal, exécution managée, utilisation de Visual Studio pour l’écriture et le débogage."
+        },
+        {
+          "id": 2,
+          "titre": "Syntaxe C# : données, expressions, instructions",
+          "duree": "1 jour",
+          "description": "Variables, expressions, constantes, opérateurs, types anonymes et dynamiques. Common Type System, System.Object, transtypage, types valeur vs référence. Tableaux, structures de contrôle. Nouveautés C# 6 (opérateur null-conditionnel, propriétés automatiques, expression-bodied members…). Nouveautés C# 7 (out var, tuples, pattern matching, retour par référence…). TP : programmes C# illustrant des algorithmes classiques."
+        },
+        {
+          "id": 3,
+          "titre": "Exceptions et introduction à la POO",
+          "duree": "≈ 0,5 jour",
+          "description": "Philosophie des exceptions ; throw ; traitement centralisé des erreurs. TP : gestion d’erreurs de saisie. Rappels POO : classes et objets, champs, méthodes, propriétés, héritage, polymorphisme, interfaces (héritage multiple)."
+        },
+        {
+          "id": 4,
+          "titre": "Classes, objets et mécanismes avancés en C#",
+          "duree": "1,5 jour",
+          "description": "Définition de classes et objets ; visibilité ; espaces de noms ; constructeurs, destructeur ; Garbage Collector ; surcharge (constructeurs, méthodes, opérateurs) ; dérivation et polymorphisme ; interfaces ; attributs et métadonnées ; régions, classes partielles ; génériques ; délégués, covariance, contravariance, événements ; propriétés, indexeurs, énumérateurs à la manière du framework ; documentation. TP : classes de base, dérivation, interface, polymorphisme."
+        },
+        {
+          "id": 5,
+          "titre": "Classes de base du framework .NET",
+          "duree": "0,5 jour",
+          "description": "Notion de framework ; hiérarchie de classes. Dates et durées. Chaînes : StringBuilder, expressions régulières. Classes utiles : fichiers, Math, Random, etc. Collections, dictionnaires, tables de hachage ; collections génériques ; introduction à LINQ to Objects. TP : expressions régulières, table de hachage ; rendre une collection interrogable en LINQ."
+        },
+        {
+          "id": 6,
+          "titre": "Types d’applications .NET et données",
+          "duree": "0,5 jour",
+          "description": "Bibliothèques de classes réutilisables. Principes et exemple WPF. Principes et exemple ASP.NET MVC (contrôleur, page Razor, données). Services web ASP.NET. Introduction accès données : ADO.NET ou Entity Framework et LINQ. TP : formulaire Windows interrogeant une base ; démonstrations MVC et service web simple."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation de la formation et de votre progression",
+      "description": "Même dispositif qu’accoutumé : objectifs, suivi en cours, validation finale et bilan à froid.",
+      "etapes": [
+        "Avant la formation : questionnaire d’objectifs et d’auto-positionnement sur les thématiques du programme.",
+        "Pendant la formation : observation des pratiques et retours personnalisés du formateur.",
+        "En fin de formation : QCM et/ou ateliers et exercices pratiques ; questionnaire de satisfaction.",
+        "À froid (6 à 9 mois) : auto-évaluation proposée sur les bénéfices et la satisfaction."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 5 jours présentiel",
+          "Inter-entreprise ou intra-entreprise sur devis",
+          "Tarif indicatif inter : 3 000 € HT",
+          "Référence : NUM_DEV_21",
+          "Sessions : sur demande (aucun calendrier fixe) — contact pour proposer des dates",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Demande de formation sur mesure : réponse sous 48 h ouvrées en moyenne."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Bonnes connaissances en programmation.",
+          "Bases des concepts objet.",
+          "Expérience en développement avec un langage de type C/C++ ou Java."
+        ]
+      }
+    },
+    "methodologie": "Combinaison de constructions participatives, d’apports théoriques et méthodologiques, et de mises en situation (simulations, exercices) pour progresser pas à pas vers des applications .NET réalistes.",
+    "certification": "Attestation de fin de formation — Référence NUM_DEV_21",
+    "competences": [
+      "Expliquer le rôle du CLR, des assemblies et du déploiement .NET",
+      "Produire du code C# structuré (syntaxe, types, exceptions, bonnes pratiques)",
+      "Modéliser et implémenter des classes, relations, interfaces et événements en C#",
+      "Exploiter les API de base (.NET) : chaînes, collections, LINQ to Objects",
+      "Esquisser des applications WPF, web MVC et services à partir d’exemples guidés",
+      "Travailler de façon rigoureuse et consciencieuse sur des TPs encadrés sous Visual Studio"
+    ],
+    "metiersVises": [
+      "Développeur .NET / C#",
+      "Développeur full-stack orienté Microsoft",
+      "Étudiant·e en informatique visant l’entreprise .NET",
+      "Technicien·ne ou intégrateur·rice cherchant à passer à la plateforme .NET"
+    ],
+    "ctaFinal": {
+      "titre": "Planifiez votre formation C# et .NET",
+      "sousTitre": "Devis, intra ou session inter : nos équipes vous aident à monter le créneau et le format adaptés.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "conception-orientee-objet": {
+    "categorie": "digital-developpement",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Conception orientée objet",
+      "sousTitre": "Quatre jours présentiels pour passer d’une logique fonctionnelle à une conception objet : principes, UML, traduction vers le code, frameworks, composants et design patterns.",
+      "video": "/assets/video/formations/dev-app.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "4 jours"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "Développeurs, chefs de projet"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "2 400 € HT (inter)"
+      }
+    ],
+    "presentation": {
+      "titre": "Objet, UML, implémentation et patrons de conception",
+      "image": "/assets/images/concepteur_app.jpg",
+      "paragraphes": [
+        "La formation pose les fondations de la pensée objet : modularité, réutilisabilité, évolutivité, bibliothèques de composants, puis la modélisation UML (classes, séquences) et les critères de bonne structuration.",
+        "Vous verrez comment aller du modèle à l’implémentation (langages et bases), les enjeux du distribué et les grandes plateformes (.NET, Jakarta EE), puis les frameworks, composants et design patterns comme levier de réutilisation d’expérience.",
+        "Inter ou intra sur demande ; planning avec Alt Formation. Référence catalogue : NUM_DEV_01."
+      ]
+    },
+    "objectifs": [
+      "Comprendre les principes et les spécificités de la conception par objets",
+      "Passer d’une approche fonctionnelle à une approche objet",
+      "Modéliser un logiciel objet à l’aide de la notation UML",
+      "Traduire le modèle UML dans un langage objet",
+      "Décrire les approches par frameworks et par composants",
+      "Savoir mettre en œuvre des design patterns"
+    ],
+    "programme": {
+      "dureeTotale": "4 jours — Apports, ateliers, modélisation et mises en situation",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Pourquoi l’approche objet ?",
+          "duree": "0,5 jour",
+          "description": "Intérêt des technologies objet. Défis : modularité (plug-ins), réutilisabilité, évolutivité, bibliothèques de composants. Comment l’objet y répond. État d’esprit pour aborder un problème objet. Croisement avec d’autres domaines de l’informatique et d’autres disciplines."
+        },
+        {
+          "id": 2,
+          "titre": "Concepts de base et interactions",
+          "duree": "0,5 jour",
+          "description": "Dualité données / procédure. Classes : structure et comportement ; instances. Méthodes et messages : envoi, interprétation. Héritage ; typage des variables dans les langages fortement typés (ex. C++, Java)."
+        },
+        {
+          "id": 3,
+          "titre": "UML : diagrammes et outillage",
+          "duree": "0,5 jour",
+          "description": "Diagrammes de classes, diagrammes de séquence et usage en conception. Outils de modélisation du marché : prise en main d’un modeleur."
+        },
+        {
+          "id": 4,
+          "titre": "Principes et démarche de conception objet",
+          "duree": "1 jour",
+          "description": "Réification : que mettre sous forme d’objet ? Critères et pièges. Modularité et découpage de domaines. Structuration de classes : abstraction, classification. Encapsulation, autonomie, analyse des communications dans les systèmes complexes. Bonnes hiérarchies : critères et erreurs fréquentes. Démarche : spirale, incrémental, identification des entités et des interactions. Réutilisation et évolutivité. Concevoir objet ≠ seulement utiliser un outil : erreurs à éviter."
+        },
+        {
+          "id": 5,
+          "titre": "De la conception à l’implémentation et au distribué",
+          "duree": "1 jour",
+          "description": "Traduire diagrammes de classes UML vers des langages et des bases de données. Mise en œuvre d’applications objet. Importance du distribué ; modèles client-serveur. Panorama .NET et plateforme Java / Jakarta EE : forces et limites. Bibliothèques de classes, langages et assemblage de composants."
+        },
+        {
+          "id": 6,
+          "titre": "Frameworks, composants et design patterns",
+          "duree": "0,5 jour",
+          "description": "Cycle de vie, évolution et maintenance ; intérêt des frameworks et composants. Concevoir rapidement à partir d’artefacts réutilisables : intégration, construction de frameworks, transformation d’une application existante. Grandes familles de frameworks et modèles de composants. Design patterns : typologies, exemples, avantages et limites ; mise en pratique."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation de la formation et de votre progression",
+      "description": "Parcours d’évaluation aligné sur les autres formations certifiantes Alt Formation.",
+      "etapes": [
+        "Avant : questionnaire d’objectifs et d’auto-positionnement.",
+        "Pendant : observation et conseils personnalisés du formateur.",
+        "Fin : QCM et/ou ateliers pratiques ; questionnaire de satisfaction.",
+        "À froid (6 à 9 mois) : auto-évaluation sur bénéfices et satisfaction."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 4 jours présentiel",
+          "Inter-entreprise ou intra sur devis",
+          "Tarif indicatif inter : 2 400 € HT",
+          "Référence : NUM_DEV_01",
+          "Sessions sur demande — calendrier communiqué à l’inscription",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Demande sur mesure : réponse sous 48 h ouvrées en moyenne."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Connaissances de base en conception d’applications et en développement logiciel."
+        ]
+      }
+    },
+    "methodologie": "Constructions participatives, apports théoriques et méthodologiques, simulations et jeux de rôle pour faire émerger les difficultés et ancrer les bonnes pratiques.",
+    "certification": "Attestation de fin de formation — Référence NUM_DEV_01",
+    "competences": [
+      "Formuler les enjeux modularité, réutilisation et évolutivité en conception objet",
+      "Structurer un problème avec classes, instances, messages et héritage",
+      "Produire des diagrammes UML pertinents (classes, séquences) avec un outil",
+      "Appliquer réification, encapsulation et découpage de domaines",
+      "Esquisser une traduction modèle → implémentation et situer .NET vs écosystème Java EE / Jakarta EE",
+      "Qualifier une approche frameworks / composants et reconnaître des situations adaptées aux design patterns"
+    ],
+    "metiersVises": [
+      "Développeur·se concevant ou codant en paradigme objet",
+      "Chef·fe de projet technique ou fonctionnel orienté delivery logiciel",
+      "Architecte logiciel en devenir",
+      "Étudiant·e préparant des rôles conception / développement"
+    ],
+    "ctaFinal": {
+      "titre": "Demander la formation Conception orientée objet",
+      "sousTitre": "Dates inter ou intra : contactez Alt Formation pour une proposition alignée sur vos enjeux.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "rssi-gouvernance-cybersecurite": {
+    "categorie": "cybersecurite-reseaux",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Maîtriser le rôle de RSSI et piloter la gouvernance cybersécurité",
+      "sousTitre": "Trois jours présentiels pour cadrer votre fonction de RSSI : SMSI ISO/IEC 27001, analyse de risques (EBIOS RM, ISO/IEC 27005), culture ANSSI et stratégie alignée métier et réglementation.",
+      "video": "/assets/video/formations/cyber.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "3 jours"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "RSSI, DSI, consultants SSI"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "2 800 € HT (inter, certification incluse)"
+      }
+    ],
+    "presentation": {
+      "titre": "Gouvernance SSI, risques et stratégie",
+      "image": "/assets/images/expert_cyber.jpg",
+      "paragraphes": [
+        "Cette session certifiante aide les futurs ou actuels responsables sécurité à structurer la gouvernance du SI : cadrage ISO/IEC 27001, analyse et traitement du risque avec EBIOS RM et ISO/IEC 27005, et intégration des recommandations et référentiels utiles (dont logique ANSSI).",
+        "Vous travaillerez l’articulation entre vision métier, exigences réglementaires et plan d’action opérationnel pour une stratégie cybersécurité durable.",
+        "Alt Formation propose l’inter-entreprise sur calendrier régulier et l’intra sur devis (Île-de-France et distanciel selon session). Inscription : 01 60 43 94 32 / formations@altrh.com."
+      ]
+    },
+    "objectifs": [
+      "Assumer efficacement le rôle de RSSI dans la gouvernance SSI de l’organisation",
+      "Structurer un SMSI selon l’ISO/IEC 27001 et piloter sa mise en œuvre",
+      "Appliquer les méthodes d’analyse de risques via EBIOS RM et ISO/IEC 27005",
+      "Intégrer les bonnes pratiques de l’ANSSI pour renforcer la posture SSI",
+      "Définir une stratégie cybersécurité en phase avec les enjeux métier et réglementaires"
+    ],
+    "programme": {
+      "dureeTotale": "3 jours — Un jour par grand thème, équilibre apports et ateliers",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Jour 1 — Gouvernance SSI et ISO/IEC 27001",
+          "duree": "1 jour",
+          "description": "Rôle du RSSI et panorama de la gouvernance SSI. Principes et structure d’un SMSI aligné sur ISO/IEC 27001 : contexte, leadership, planification, support, exploitation, évaluation et amélioration. Exigences clés, documentation et indicateurs. Mise en perspective avec le cycle PDCA et les interactions avec les métiers, la DSI et la direction."
+        },
+        {
+          "id": 2,
+          "titre": "Jour 2 — Analyse de risques et audit (EBIOS RM, ISO/IEC 27005)",
+          "duree": "1 jour",
+          "description": "ISO/IEC 27005 : principes de gestion du risque SSI. Méthode EBIOS Risk Manager : ateliers, scénarios, évaluation et traitement du risque. Préparation à l’expression du besoin en sécurité et au suivi du plan de traitement. Rappels sur la démarche d’audit interne ou tiers et la lecture des écarts dans un SMSI."
+        },
+        {
+          "id": 3,
+          "titre": "Jour 3 — Stratégie SSI, réglementation et acteurs",
+          "duree": "1 jour",
+          "description": "Alignement stratégique cybersécurité / métier : objectifs, budget, feuille de route. Panorama réglementaire et normatif utile au RSSI (NIS2, RGPD en lien avec SSI, obligations sectorielles selon contexte). Lectures ANSSI et bonnes pratiques pour durcir la posture. Coordination avec RSSI-adjoint, DPO, SOC, prestataires et comités de direction ; communication et sensibilisation."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation des acquis",
+      "description": "Validation des compétences tout au long des trois jours et en clôture.",
+      "etapes": [
+        "Avant la session : questionnaire d’objectifs et de positionnement.",
+        "Pendant : retours du formateur sur vos pratiques et cas issus de votre contexte.",
+        "En fin de formation : QCM et/ou ateliers pratiques ; questionnaire de satisfaction.",
+        "À froid : possibilité d’auto-évaluation quelques mois après pour mesurer l’impact en organisation."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 3 jours présentiel (inter ou intra sur demande)",
+          "Tarif indicatif inter : 2 800 € HT — certification incluse au même montant",
+          "Calendrier inter : sessions en général sur trois jours ouvrés consécutifs (exemples 2026 : 26–28 mai ; 1–3 juin ; 8–10 juin ; 22–24 juin ; 29 juin – 1er juil. ; puis rotation hebdomadaire juil.–déc. 2026 ; 2027 : janv.–mai). La liste exacte, les salles et les fuseaux sont confirmés à l’inscription.",
+          "Places limitées par session — réservation recommandée 3 semaines à l’avance",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Formation sur mesure possible pour votre équipe (intra) : même référentiel pédagogique, dates et lieu à définir."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Expérience en informatique ou participation à des missions SSI."
+        ]
+      }
+    },
+    "methodologie": "Combinaison d’apports structurants, d’études de cas et d’ateliers participatifs pour traduire les référentiels dans votre contexte (organisation, secteur, maturité).",
+    "certification": "Maîtriser le rôle de RSSI et piloter efficacement la gouvernance de la cybersécurité — attestation de fin de formation",
+    "competences": [
+      "Positionner le RSSI dans la gouvernance SI et auprès de la direction",
+      "Esquisser ou faire évoluer un SMSI conforme aux attentes ISO/IEC 27001",
+      "Conduire une analyse de risques structurée (EBIOS RM, ISO/IEC 27005)",
+      "Relier exigences réglementaires et mesures de durcissement (dont logique ANSSI)",
+      "Formaliser une stratégie et une feuille de route cybersécurité alignées sur le métier"
+    ],
+    "metiersVises": [
+      "Futur ou actuel RSSI / responsable cybersécurité",
+      "Ingénieur·e sécurité du SI",
+      "Directeur·rice des systèmes d’information (vision RSSI)",
+      "Consultant·e en cybersécurité / SSI"
+    ],
+    "ctaFinal": {
+      "titre": "Réservez votre session RSSI — gouvernance SSI",
+      "sousTitre": "Choisissez une date dans le calendrier inter ou demandez un intra : nos conseillers sécurisent votre inscription et votre financement.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "cloud-technology-associate-cta": {
+    "categorie": "cybersecurite-reseaux",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Cloud Technology Associate (CTA) — Fondamentaux du cloud et de la virtualisation",
+      "sousTitre": "Trois jours en présentiel visant la certification CTA : modèles et référentiels (NIST, ISO, Gartner), virtualisation, panorama technologique, sécurité et gouvernance, mise en œuvre, Cloud Service Management et passage d’examen.",
+      "video": "/assets/video/formations/infra-reseau.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "3 jours"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "DSI, architectes IT, chefs de projet IT"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "2 500 € HT (inter, certification CTA incluse)"
+      }
+    ],
+    "presentation": {
+      "titre": "Préparation à la certification Cloud Technology Associate",
+      "image": "/assets/images/Datacenter.jpg",
+      "paragraphes": [
+        "Cette formation pose les bases du cloud computing et de la virtualisation pour décideurs et cadres techniques : repères ISO, Gartner et NIST, modèles de service et de déploiement, enjeux de sécurité, conformité et gouvernance du SI.",
+        "Vous progresserez jusqu’aux sujets de mise en œuvre (architectures, migration, rôle des fournisseurs) et aux principes de Cloud Service Management, avant un examen blanc commenté et le passage de la certification CTA.",
+        "Sessions inter-entreprise ou intra sur devis ; aucun calendrier inter fixe pour le moment — dates sur demande. Référence catalogue : NUM_Cloud_07. Contact : 01 60 43 94 32 — formations@altrh.com."
+      ]
+    },
+    "objectifs": [
+      "Identifier les concepts du cloud computing et de la virtualisation",
+      "Évaluer les différents types de cloud et les technologies associées",
+      "Comprendre la valeur ajoutée du cloud pour les métiers et l’IT",
+      "Définir les besoins en sécurité, les risques et les mesures d’atténuation",
+      "Préciser les impacts du cloud sur la gouvernance du SI et mieux accompagner la transition"
+    ],
+    "programme": {
+      "dureeTotale": "3 jours — Apports, ateliers participatifs et préparation à l’examen CTA",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Jour 1 — Cloud computing et virtualisation : fondamentaux",
+          "duree": "1 jour",
+          "description": "Cloud et virtualisation : concepts et principaux défis techniques. Applications cloud et introduction aux modèles de service. Limites de l’informatique traditionnelle. Définitions selon ISO, Gartner et NIST ; avantages, limites et évolutions illustrées par des cas concrets. Caractéristiques des modèles de services et de déploiement ; taxonomie NIST. Introduction à la virtualisation comme socle du cloud : historique, concepts, défis, avantages et limites ; rôle et types d’hyperviseurs ; panorama du marché ; virtualisation serveur, stockage, réseau et poste de travail."
+        },
+        {
+          "id": 2,
+          "titre": "Jour 2 — Panorama technologique, sécurité et gouvernance",
+          "duree": "1 jour",
+          "description": "Vue d’ensemble des usages : BYOD (concepts, atouts et limites), MDM et EMM, NFV et lien avec le SDN, bases de la Big Data et de la data analytics, IoT (principes et concepts essentiels), mise en perspective métiers / IT. Puis sécurité, risques et conformité : terminologie, gestion du risque, conformité et audits, impacts des modèles de service et de déploiement sur la gouvernance (vision DSI), vecteurs d’attaque courants et mesures de contrôle."
+        },
+        {
+          "id": 3,
+          "titre": "Jour 3 — Mise en œuvre, CSM et certification CTA",
+          "duree": "1 jour",
+          "description": "Matin : mise en œuvre du cloud (étapes, architectures, rôle des fournisseurs, approches de migration), puis Cloud Service Management (principes, cycle de vie, acteurs, support, configuration, portabilité, interopérabilité, familles de produits). Après-midi : examen blanc avec correction commentée et passage de l’examen CTA selon le dispositif du certificateur."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation de la formation et de votre progression",
+      "description": "Un dispositif en quatre temps pour cadrer vos objectifs, suivre votre montée en compétences et mesurer la satisfaction et l’impact dans le temps.",
+      "etapes": [
+        "Avant la formation : questionnaire pour exprimer vos objectifs personnels et évaluer votre niveau sur les thèmes du programme.",
+        "Pendant la formation : le formateur observe vos pratiques et vous oriente sur vos points forts et les axes de vigilance.",
+        "En fin de formation : QCM et/ou ateliers et exercices pratiques pour mesurer les acquis ; questionnaire de satisfaction ; passage de la certification CTA.",
+        "6 à 9 mois après : questionnaire d’auto-évaluation à froid sur les bénéfices, les efforts restants et la satisfaction vis-à-vis de la formation."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 3 jours présentiel",
+          "Inter-entreprise ou intra sur devis",
+          "Tarif indicatif inter : 2 500 € HT — certification CTA incluse au même montant",
+          "Aucune session inter fixe pour le moment : dates organisées sur demande — nous contacter pour monter une session",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Formation sur mesure possible pour votre équipe (intra) : programme ajustable à vos objectifs."
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Connaissances de base des architectures techniques et du management du SI",
+          "Expérience des technologies Web d’au moins six mois"
+        ]
+      }
+    },
+    "methodologie": "Combinaison de constructions participatives, d’apports théoriques et méthodologiques, et de mises en situation (simulations, jeux de rôle) pour mettre en évidence les difficultés et découvrir progressivement les méthodes adaptées.",
+    "certification": "Certification Cloud Technology Associate (CTA) — référence NUM_Cloud_07",
+    "competences": [
+      "Nommer et situer les briques du cloud et de la virtualisation dans un paysage SI",
+      "Comparer offres, modèles de service et de déploiement et technologies associées",
+      "Expliquer la valeur du cloud pour les métiers comme pour les fonctions IT",
+      "Formuler besoins sécurité, risques résiduels et leviers d’atténuation",
+      "Relier cloud et gouvernance du SI pour préparer ou piloter une transition",
+      "Travailler avec rigueur et exigence sur les contenus de préparation à la CTA"
+    ],
+    "metiersVises": [
+      "Directeur·rice des systèmes d’information (DSI)",
+      "Architecte IT",
+      "Chef·fe de projet IT",
+      "Tout profil souhaitant des bases solides sur le cloud computing"
+    ],
+    "ctaFinal": {
+      "titre": "Demander la formation Cloud Technology Associate (CTA)",
+      "sousTitre": "Inter ou intra sur mesure : nous vous proposons des dates et un devis adaptés — réponse personnalisée sous peu.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "cisco-ccna-fondamentaux": {
+    "categorie": "cybersecurite-reseaux",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Cisco CCNA — Les fondamentaux des réseaux",
+      "sousTitre": "Cinq jours en présentiel : du modèle OSI à la configuration de commutateurs et routeurs Cisco (IOS, VLAN, routage statique, sécurisation), introduction IPv6 et préparation à l’examen de certification 200-301.",
+      "video": "/assets/video/formations/infra-reseau.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "5 jours"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "Techniciens et administrateurs systèmes et réseaux"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "3 500 € HT (inter, certification incluse)"
+      }
+    ],
+    "presentation": {
+      "titre": "Implémentation et administration des solutions Cisco (piste CCNA)",
+      "image": "/assets/images/Terchnicien_reseau.jpg",
+      "paragraphes": [
+        "La formation couvre les fondamentaux des réseaux (classification, OSI, TCP/IP, LAN), la prise en main de l’IOS Cisco et de la CLI, Ethernet et commutation, puis l’adressage IP, le routage statique, les listes d’accès et l’accès Internet.",
+        "Les journées suivants abordent les réseaux LAN de taille moyenne : spanning tree, VLAN et trunk, routage inter-VLAN, DHCP sur équipement Cisco, introduction aux protocoles de routage dynamique et aux technologies WAN, puis la sécurisation des équipements et une introduction à IPv6.",
+        "Ateliers pratiques sur commutateurs et routeurs tout au long du parcours. Sessions inter ou intra sur devis ; aucun calendrier inter fixe pour le moment. Référence catalogue : Num_Netw_05. Contact : 01 60 43 94 32 — formations@altrh.com."
+      ]
+    },
+    "objectifs": [
+      "Comprendre les mécanismes intervenant dans les communications réseaux",
+      "Construire des réseaux LAN simples",
+      "Configurer les commutateurs Cisco pour la mise en place d’un réseau LAN simple"
+    ],
+    "programme": {
+      "dureeTotale": "5 jours — Cours, travaux pratiques sur équipements Cisco et préparation à l’examen 200-301",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Concepts des réseaux",
+          "duree": "1 jour",
+          "description": "Panorama des réseaux et classification des types de réseaux. Modèle de référence OSI. Famille TCP/IP et réseaux LAN."
+        },
+        {
+          "id": 2,
+          "titre": "Création d’un réseau simple",
+          "duree": "1 jour",
+          "description": "Fonctions des réseaux et modèle de communications hôte à hôte. Introduction aux LAN. IOS Cisco et interface en ligne de commande (CLI). Démarrage d’un commutateur. Ethernet et commutation ; dépannage des problèmes de commutation liés aux médias. Travaux pratiques : mettre en œuvre un réseau, utiliser l’IOS et un switch, vérifier le fonctionnement, maîtriser la CLI."
+        },
+        {
+          "id": 3,
+          "titre": "Établissement de la connectivité interne",
+          "duree": "1 jour",
+          "description": "Couche Internet du modèle TCP/IP. Adressage IP et sous-réseaux. Couche transport (TCP/IP). Fonctions de routage. Configuration d’un routeur Cisco. Processus de délivrance des paquets. Routage statique. Gestion du trafic avec des access-lists. Accès à Internet. Travaux pratiques : routage, gestion du trafic, routeur Cisco, routage statique."
+        },
+        {
+          "id": 4,
+          "titre": "Création d’un réseau de taille moyenne",
+          "duree": "1 jour",
+          "description": "Spanning tree. VLAN et trunk ; routage inter-VLAN. Utiliser un périphérique Cisco comme serveur DHCP. Introduction aux protocoles de routage dynamique et aux technologies WAN. Travaux pratiques : VLAN et trunk, serveur DHCP sur équipement Cisco."
+        },
+        {
+          "id": 5,
+          "titre": "Sécurité des périphériques et introduction IPv6",
+          "duree": "1 jour",
+          "description": "Sécurisation des accès administratifs, durcissement (« device hardening »), journalisation des messages système, gestion des équipements Cisco. Travaux pratiques sur la journalisation. Puis bases IPv6, fonctionnement, configuration de routes statiques IPv6. Rappels pour la préparation à l’examen 200-301."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation de la formation et de votre progression",
+      "description": "Évaluation alignée sur le parcours standard des formations certifiantes Alt Formation, avant, pendant et après la session.",
+      "etapes": [
+        "Avant : questionnaire d’objectifs personnels et d’auto-positionnement sur les thématiques du programme.",
+        "Pendant : observation de vos pratiques par le formateur et conseils personnalisés (points forts et axes de vigilance).",
+        "En fin de formation : QCM et/ou ateliers et exercices pratiques ; questionnaire de satisfaction ; préparation à l’examen de certification.",
+        "6 à 9 mois après : auto-évaluation à froid sur bénéfices, effort résiduel et satisfaction."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 5 jours présentiel",
+          "Inter-entreprise ou intra sur devis",
+          "Tarif indicatif inter : 3 500 € HT — prix avec certification : même montant (préparation examen 200-301)",
+          "Aucune session inter fixe pour le moment : dates sur demande",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Formation sur mesure possible pour votre équipe (intra)"
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Bonnes connaissances du domaine des réseaux"
+        ]
+      }
+    },
+    "methodologie": "Combinaison de constructions participatives, d’apports théoriques et méthodologiques, et de mises en situation (simulations, jeux de rôle) pour faire émerger les difficultés et ancrer les bonnes pratiques sur équipements Cisco.",
+    "certification": "CCD — Cisco CCNA, implémentation et administration des solutions Cisco ; préparation et objectif de réussite à l’examen 200-301 — réf. Num_Netw_05",
+    "competences": [
+      "Expliquer les principes de communication selon OSI et TCP/IP sur un LAN",
+      "Mettre en service un petit LAN avec switch Cisco (IOS, CLI, Ethernet)",
+      "Adresser en IPv4, mettre en œuvre le routage statique et des ACL de base",
+      "Déployer VLAN, trunk, routage inter-VLAN et DHCP sur équipement Cisco",
+      "Appliquer les premiers réflexes de durcissement et de supervision des équipements",
+      "Configurer des routes statiques IPv6 et intégrer les bases dans une préparation 200-301",
+      "Travailler avec rigueur et méthode sur les scénarios de lab"
+    ],
+    "metiersVises": [
+      "Technicien·ne systèmes et réseaux",
+      "Administrateur·rice réseau",
+      "Profil IT en montée en compétences vers des rôles Cisco / réseau d’entreprise"
+    ],
+    "ctaFinal": {
+      "titre": "Demander la formation Cisco CCNA — fondamentaux",
+      "sousTitre": "Planning inter ou intra sur mesure : nos conseillers vous répondent pour dates, devis et inscription.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "professional-cloud-solution-architect-pcsa": {
+    "categorie": "cybersecurite-reseaux",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Professional Cloud Solution Architect (PCSA) — Architecture cloud certifiante EXIN",
+      "sousTitre": "Deux jours en présentiel pour cadrer l’impact du cloud sur l’architecture d’entreprise, les modèles XaaS, les cycles de vie et la transition — puis préparation et passage de l’examen PCSA.",
+      "video": "/assets/video/formations/infra-reseau.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "2 jours"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "Architectes IT, resp. SI, DSI, consultants SI"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "2 700 € HT (inter, certification PCSA incluse)"
+      }
+    ],
+    "presentation": {
+      "titre": "Fondamentaux cloud, architecture d’entreprise et certification PCSA",
+      "image": "/assets/images/Datacenter.jpg",
+      "paragraphes": [
+        "Cette session relie histoire et enjeux du cloud aux cadres d’architecture (SOA, architecture d’entreprise), aux risques, à la sécurité et aux aspects juridiques, puis aux vues IaaS, PaaS et SaaS et aux familles XaaS.",
+        "Vous travaillerez les cycles de vie des services cloud, la transition et la transformation des métiers, les perspectives côté métier et fournisseur, l’écosystème (dont lien IoT / IoE) et la définition d’une cible : spécifications, business case et roadmap, avant un examen blanc et la certification PCSA EXIN.",
+        "Inter ou intra sur devis ; aucun calendrier inter fixe actuellement. Référence catalogue : NUM_Cloud_08. Contact : 01 60 43 94 32 — formations@altrh.com."
+      ]
+    },
+    "objectifs": [
+      "Découvrir les fondamentaux du cloud et leur impact sur l’architecture des entreprises",
+      "Savoir utiliser l’infrastructure, les plateformes et les applications « as a service »",
+      "Évaluer l’impact du cloud sur la gestion des services informatiques de l’entreprise",
+      "Évaluer une architecture cloud computing",
+      "Structurer une démarche de migration vers un environnement cloud"
+    ],
+    "programme": {
+      "dureeTotale": "2 jours — Apports, ateliers et préparation à l’examen PCSA (EXIN)",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Jour 1 — Historique du cloud et de ses impacts",
+          "duree": "0,5 jour",
+          "description": "Émergence du cloud et passage de la virtualisation au cloud ; impacts pour les entreprises. Modèles liés au cloud (SOA, architecture d’entreprise). Nouvelles opportunités et modèles informatiques. Risque, sécurité et problématiques juridiques inhérents au cloud."
+        },
+        {
+          "id": 2,
+          "titre": "Jour 1 — Ingénierie et architecture du cloud computing",
+          "duree": "0,5 jour",
+          "description": "Évolution des technologies ayant permis le cloud. Implications technologiques du modèle « as a service ». Systèmes d’ingénierie dans l’architecture des solutions cloud. Virtualisation versus cloud ; perspectives consommateurs et fournisseurs. Vues d’architecture et métadonnées pour IaaS, PaaS et SaaS ; panorama des offres XaaS."
+        },
+        {
+          "id": 3,
+          "titre": "Jour 2 — Cycles de vie, transition et mise en œuvre",
+          "duree": "Matinée",
+          "description": "Concepts et cycles de vie des services cloud : identification et application des phases ; caractéristiques des étapes ; critères d’architecture pour sélection et livraison d’un service cloud. Transition vers le cloud : enjeux, transformation des métiers, stratégies pour réduire les freins à l’adoption. Perspectives métier d’une architecture de solution cloud, regard fournisseur et étapes clés de configuration d’un environnement cloud. Écosystème : IoT et IoE, langage de conception des écosystèmes cloud."
+        },
+        {
+          "id": 4,
+          "titre": "Jour 2 — Cibler la solution, business case et certification PCSA",
+          "duree": "Après-midi",
+          "description": "Définir les spécifications d’une solution d’architecture cloud ; construire un business case ; esquisser une roadmap de mise en œuvre. Examen blanc et révisions. Passage de l’examen PCSA EXIN (organisation selon dispositif certificateur et session)."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation de la formation et de votre progression",
+      "description": "Dispositif en quatre temps pour objectifs, suivi, acquis et satisfaction dans la durée.",
+      "etapes": [
+        "Avant : questionnaire d’objectifs personnels et de positionnement sur les thèmes du programme.",
+        "Pendant : observation de vos pratiques et conseils personnalisés du formateur.",
+        "En fin de formation : QCM et/ou ateliers pratiques ; satisfaction ; préparation et passage de la certification PCSA.",
+        "6 à 9 mois après : questionnaire d’auto-évaluation à froid (bénéfices, efforts restants, satisfaction)."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 2 jours présentiel",
+          "Inter-entreprise ou intra sur devis",
+          "Tarif indicatif inter : 2 700 € HT — certification PCSA incluse au même montant",
+          "Aucune session inter fixe pour le moment : dates sur demande",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Formation sur mesure possible pour votre équipe (intra)"
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Connaissances cloud de base souhaitables, ou équivalent aux contenus du parcours « Cloud Technology Associate (CTA) » (réf. NUM_Cloud_07) ou du stage « Cloud Computing, synthèse » (réf. AAS)"
+        ]
+      }
+    },
+    "methodologie": "Combinaison de constructions participatives, d’apports théoriques et méthodologiques, et de mises en situation (simulations, jeux de rôle) pour faire émerger les difficultés et progresser vers les méthodes adaptées.",
+    "certification": "Professional Cloud Solution Architect (PCSA) — EXIN — réf. NUM_Cloud_08",
+    "competences": [
+      "Relier évolution du cloud et virtualisation aux enjeux d’architecture d’entreprise",
+      "Exploiter les modèles IaaS, PaaS, SaaS et XaaS dans une analyse « as a service »",
+      "Analyser l’impact du cloud sur la gestion du service IT et les cycles de vie",
+      "Esquisser l’évaluation d’une architecture cloud et les axes d’une migration",
+      "Structurer spécifications, business case et roadmap pour une solution cloud",
+      "Préparer et passer l’examen PCSA avec rigueur et méthode"
+    ],
+    "metiersVises": [
+      "Architecte IT",
+      "Responsable des systèmes d’information",
+      "Directeur·rice des systèmes d’information (DSI)",
+      "Consultant·e en stratégie SI / cloud"
+    ],
+    "ctaFinal": {
+      "titre": "Demander la formation PCSA — Professional Cloud Solution Architect",
+      "sousTitre": "Inter ou intra sur mesure : devis et dates avec Alt Formation.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "cybersecurite-audit-android-introduction": {
+    "categorie": "cybersecurite-reseaux",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Cybersécurité : Audit sécurité d’applications mobiles Android – Introduction",
+      "sousTitre": "Deux jours en présentiel pour maîtriser les bases des audits de sécurité avancés sur applications Android : tests d’intrusion mobiles, analyse statique, analyse réseau et dynamique.",
+      "video": "/assets/video/formations/cyber.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "2 jours"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "Consultants sécu., admins, développeurs"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "1 056 € HT (inter, certification incluse)"
+      }
+    ],
+    "presentation": {
+      "titre": "Introduction à l’audit sécurité des applications Android",
+      "image": "/assets/images/analyst_soc.jpg",
+      "paragraphes": [
+        "Cette formation certifiante pose les fondations pour des audits mobiles avancés : mise en œuvre d’un dispositif de tests d’intrusion ciblant Android, lecture du code et de la surface d’attaque (analyse statique), puis observation du comportement applicatif et des flux (analyse réseau et dynamique).",
+        "Les travaux pratiques alternent avec des apports méthodologiques pour que vous repartiez avec des réflexes opérationnels.",
+        "Alt Formation propose l’inter-entreprise (calendrier communiqué à l’inscription) et l’intra sur devis. Contact : 01 60 43 94 32 — formations@altrh.com."
+      ]
+    },
+    "objectifs": [
+      "Comprendre les enjeux et le déroulement d’un audit de sécurité sur application Android",
+      "Mettre en place et exploiter un environnement de tests d’intrusion mobiles (concepts, outillage, analyse statique)",
+      "Analyser les communications et le comportement dynamique d’une application Android dans un scénario d’audit"
+    ],
+    "programme": {
+      "dureeTotale": "2 jours — Présentiel, travaux pratiques",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Jour 1 : Tests d’intrusion mobiles",
+          "duree": "1 jour",
+          "description": "Concepts et mise en place des tests d’intrusion mobiles ; analyse statique des applications Android."
+        },
+        {
+          "id": 2,
+          "titre": "Jour 2 : Analyse réseau et analyse dynamique",
+          "duree": "1 jour",
+          "description": "Analyse réseau des applications Android ; analyse dynamique et prolongements utiles à l’audit."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation de la formation et de votre progression",
+      "description": "Parcours d’évaluation aligné sur les autres formations certifiantes Alt Formation.",
+      "etapes": [
+        "Avant : questionnaire d’objectifs personnels et de positionnement sur les thèmes du programme.",
+        "Pendant : observation de vos pratiques par le formateur et conseils personnalisés (points forts et axes de vigilance).",
+        "En fin de formation : QCM et/ou ateliers et exercices pratiques ; questionnaire de satisfaction.",
+        "6 à 9 mois après : auto-évaluation à froid sur bénéfices, suites possibles et satisfaction."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 2 jours présentiel — inter-entreprise ou intra sur devis",
+          "Tarif indicatif inter : 1 056 € HT — certification « Audit sécurité d’applications mobiles Android – Introduction » incluse au même montant",
+          "Public : consultants en sécurité, administrateurs système ou réseau, développeurs",
+          "Calendrier inter : sessions en présentiel sur l’année — dates et lieux confirmés à l’inscription",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Formation sur mesure possible pour votre équipe (intra)"
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Aucun prérequis nécessaire pour participer à cette formation"
+        ]
+      }
+    },
+    "methodologie": "Combinaison de constructions participatives, d’apports théoriques et de mises en situation pratiques sur scénarios Android.",
+    "certification": "Audit sécurité d’applications mobiles Android – Introduction (certification incluse au tarif indiqué)",
+    "competences": [
+      "Mettre en place un environnement de tests d’intrusion mobiles adapté au contexte Android",
+      "Réaliser une analyse statique d’applications Android",
+      "Analyser les flux et comportements réseau des applications mobiles",
+      "Conduire une analyse dynamique ciblée sur les scénarios d’audit",
+      "Repérer et qualifier des vulnérabilités courantes sur applications Android"
+    ],
+    "metiersVises": [
+      "Consultant·e en cybersécurité",
+      "Administrateur·rice système ou réseau",
+      "Développeur·se",
+      "Auditeur·rice sécurité mobile / pentesteur·rice Android"
+    ],
+    "ctaFinal": {
+      "titre": "Réserver l’audit sécurité Android – Introduction",
+      "sousTitre": "Choisissez une session inter ou demandez un intra : nos conseillers vous répondent pour dates, devis et financement.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "devsecops-engineering-dsoe": {
+    "categorie": "devops",
+    "type": "certifiante",
+    "hero": {
+      "titre": "DevSecOps Engineering (DSOE)",
+      "sousTitre": "Deux jours en présentiel pour intégrer la sécurité dans la culture et les pipelines DevOps, puis préparer la certification DevSecOps Engineering.",
+      "video": "/assets/video/formations/dev_equipe.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "2 jours"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "Profils IT, sécurité, agilité (Scrum)"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "2 000 € HT (inter, certification incluse)"
+      }
+    ],
+    "presentation": {
+      "titre": "Sécurité intégrée à la livraison continue",
+      "image": "/assets/images/devops.jpg",
+      "paragraphes": [
+        "Le parcours relie vocabulaire et principes DevSecOps à la culture d’entreprise : stratégie, sciences de la donnée appliquées au risque, équipes rouges et bleues, et implémentation concrète dans les flux CI/CD.",
+        "Vous aborderez l’hygiène de sécurité, l’IAM, la sécurité applicative (AST, menaces, automatisation), la sécurité opérationnelle, la GRC et la conformité dans un contexte DevOps, puis journalisation, détection et réponse.",
+        "Inter ou intra sur devis ; aucune session inter figée pour le moment. Référence : NUM_DEVSEC_02. Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com."
+      ]
+    },
+    "objectifs": [
+      "Maîtriser les objectifs, avantages, concepts et vocabulaire DevSecOps",
+      "Comparer les pratiques de sécurité en contexte DevOps aux autres approches de sécurité",
+      "Décliner des stratégies de sécurité alignées sur les enjeux d’entreprise",
+      "Comprendre et mettre en œuvre les principes issus des sciences de la sécurité et des données",
+      "Exploiter les apports des équipes rouges et bleues dans une démarche structurante",
+      "Intégrer la sécurité dans les flux de travail et pipelines de livraison continue",
+      "Positionner les rôles DevSecOps dans la culture et l’organisation DevOps"
+    ],
+    "programme": {
+      "dureeTotale": "2 jours — Apports, exercices guidés et préparation à la certification DSOE",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Jour 1 — Fondations, culture et stratégie",
+          "duree": "1 jour",
+          "description": "Introduction : objectifs, déroulé, exercice de schématisation de pipeline CI/CD. Pourquoi DevSecOps : terminologie, enjeux, trois façons d’articuler sécurité et DevOps, principes. Culture et management : incitation, résilience, culture organisationnelle, générativité (Erickson, Westrum, LaLoux) ; exercice d’influence culturelle. Stratégie et risques : niveau de sécurité « suffisant », modélisation de la menace, contexte, risque à grande vitesse ; exercice « mesurer le succès ». Sécurité générale : éviter la case à cocher, hygiène, architecture, identité fédérée, journaux."
+        },
+        {
+          "id": 2,
+          "titre": "Jour 2 — IAM, applicatif, opérations, GRC et examen",
+          "duree": "1 jour",
+          "description": "IAM : concepts, mise en œuvre, automatisation, pièges courants ; exercice IAM. Sécurité applicative : AST, techniques et priorisation, gestion des problèmes, menaces, automatisation. Sécurité opérationnelle ; exercice d’intégration de contrôles dans le pipeline CI/CD. GRC et audit : fondamentaux, politiques et policy-as-code, shift left, mythes sur la séparation des tâches ; exercice conformité. Journalisation, surveillance, réponse, menace et partage d’informations. Préparation certification DSOE : critères d’examen, pondération, lexique, exemples d’épreuve."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation de la formation et de votre progression",
+      "description": "Dispositif standard des formations certifiantes Alt Formation, du positionnement initial au bilan à froid.",
+      "etapes": [
+        "Avant : questionnaire d’objectifs personnels et de positionnement sur les thématiques.",
+        "Pendant : observation par le formateur et conseils personnalisés (forces et axes de vigilance).",
+        "En fin de formation : QCM et/ou ateliers pratiques ; questionnaire de satisfaction.",
+        "6 à 9 mois après : auto-évaluation à froid sur bénéfices, efforts restants et satisfaction."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 2 jours présentiel",
+          "Inter-entreprise ou intra sur devis",
+          "Tarif indicatif inter : 2 000 € HT — certification DevSecOps Engineering (DSOE) incluse au même montant",
+          "Aucune session inter fixe pour le moment : dates sur demande",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Formation sur mesure possible pour votre équipe (intra)"
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Connaissance des services IT en général, notamment de la sécurité et des méthodologies agiles (Scrum)"
+        ]
+      }
+    },
+    "methodologie": "Combinaison de constructions participatives, d’apports théoriques et méthodologiques, et de mises en situation (simulations, jeux de rôle) pour faire émerger les difficultés et ancrer les bonnes pratiques.",
+    "certification": "Certification DevSecOps Engineering (DSOE) — réf. NUM_DEVSEC_02",
+    "competences": [
+      "Expliquer le vocabulaire, les avantages et les principes clés DevSecOps",
+      "Comparer sécurité « native » DevOps et autres approches de sécurité",
+      "Esquisser des stratégies de sécurité alignées business et relire les décisions avec des apports data",
+      "Structurer le jeu d’équipes rouges / bleues dans une organisation",
+      "Brancher contrôles et tests de sécurité sur une chaîne CI/CD",
+      "Articuler rôles DevSecOps, culture et organisation DevOps",
+      "Appliquer rigueur et méthode dans les ateliers et la préparation à la certification DSOE"
+    ],
+    "metiersVises": [
+      "Ingénieur·e DevOps / DevSecOps",
+      "Responsable sécurité applicative ou produit",
+      "Scrum Master / coach agile impliqué dans la qualité et la sécurité",
+      "Architecte ou chef·fe de projet livrant en mode agile"
+    ],
+    "ctaFinal": {
+      "titre": "Demander la formation DevSecOps Engineering (DSOE)",
+      "sousTitre": "Planning inter ou intra sur mesure : nos conseillers montent votre dossier et vous proposent des dates.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "programmation-objet-cpp": {
+    "categorie": "digital-developpement",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Programmation orientée objet en C++",
+      "sousTitre": "Cinq jours en présentiel pour maîtriser la syntaxe C++, l’approche objet, les templates, la STL et les apports majeurs du C++11, avec une étude de cas fil rouge.",
+      "video": "/assets/video/formations/dev-app.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "5 jours"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "Développeurs, ingénieurs, chefs de projet techniques"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "3 000 € HT (inter)"
+      }
+    ],
+    "presentation": {
+      "titre": "Du C++ procédural aux objets, templates et STL",
+      "image": "/assets/images/concepteur_app.jpg",
+      "paragraphes": [
+        "La formation enchaîne la syntaxe et les spécificités C++ (par rapport au C), puis l’approche orientée objet avec prise en main de l’outil de développement et des travaux pratiques structurés autour d’une étude de cas.",
+        "Vous explorerez classes, héritage et polymorphisme, exceptions, surcharge d’opérateurs, modèles (templates), entrées/sorties et aperçu de la STL, tout en intégrant les constructions clés du C++11 (auto, constructeurs de déplacement et de copie, délégation, boucle sur intervalles, etc.).",
+        "Une conclusion aborde le cycle de vie logiciel, les interactions avec d’autres environnements et une lecture critique de l’écosystème C++. Inter ou intra sur devis. Référence catalogue : NUM_DEV_13. Contact : 01 60 43 94 32 — formations@altrh.com."
+      ]
+    },
+    "objectifs": [
+      "Maîtriser la syntaxe du langage C++",
+      "Mettre en œuvre les concepts de la conception orientée objet",
+      "Utiliser les outils de développement associés au langage C++",
+      "Maîtriser les ajouts majeurs de la norme C++11 utiles au quotidien"
+    ],
+    "programme": {
+      "dureeTotale": "5 jours — Cours, étude de cas fil rouge et travaux pratiques",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Jour 1 — Syntaxe C++ et environnement",
+          "duree": "1 jour",
+          "description": "Différences C / C++ : données, initialisation, types ; expressions, références, casts ; opérateurs (::, new, delete) ; fonctions (passage et retour par référence, défauts, inline, surcharge) ; intégration de code C ; types constants ; espaces de noms ; auto (C++11). Travaux pratiques : prise en main de l’IDE et premier programme."
+        },
+        {
+          "id": 2,
+          "titre": "Jour 2 — Approche objet et amorçage des classes",
+          "duree": "1 jour",
+          "description": "Principes objet ; C++ et l’objet ; introduction aux méthodologies objet et à UML (statique, dynamique, coopération, scénarios). Classes : champs, méthodes, constructeurs, contrôle d’accès, autoréférence, statiques, friend ; tableaux dynamiques d’objets ; conception de classes ; constructeurs de copie et de déplacement, délégation (C++11) ; introduction pile / tas / gestion mémoire. Travaux pratiques : étude de cas fil rouge."
+        },
+        {
+          "id": 3,
+          "titre": "Jour 3 — Héritage, polymorphisme et factorisation",
+          "duree": "1 jour",
+          "description": "Dérivation : syntaxe, constructeurs, contrôle d’accès ; fonctions virtuelles et polymorphisme ; classes abstraites et interfaces/héritage multiple ; factorisation du code. Travaux pratiques : hiérarchie de classes et polymorphisme sur l’étude de cas."
+        },
+        {
+          "id": 4,
+          "titre": "Jour 4 — Exceptions, surcharge d’opérateurs et modèles",
+          "duree": "1 jour",
+          "description": "Exceptions : try/catch, hiérarchie et bonnes pratiques ; surcharge d’opérateurs (binaires, [], (), conversion, gestion mémoire, << >>). Modèles de classe et de fonction : principes, surcharge, spécialisations ; lien avec opérateurs et dérivation ; apports C++11 en appui. Travaux pratiques : exceptions, opérateurs et templates."
+        },
+        {
+          "id": 5,
+          "titre": "Jour 5 — I/O, STL et conclusion",
+          "duree": "1 jour",
+          "description": "Entrées/sorties : streams et hiérarchie de classes ; aperçu STL : objectifs, conteneurs, itérateurs, boucle sur intervalle (C++11). Conclusion : tests, intégration, mise en production ; interactions avec d’autres environnements ; analyse critique et évolution de C++."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation de la formation et de votre progression",
+      "description": "Évaluation structurée comme sur les autres parcours certifiants Alt Formation.",
+      "etapes": [
+        "Avant : questionnaire d’objectifs personnels et de positionnement sur les thèmes du programme.",
+        "Pendant : observation de vos pratiques et retours personnalisés du formateur.",
+        "En fin de formation : QCM et/ou ateliers pratiques ; questionnaire de satisfaction.",
+        "6 à 9 mois après : auto-évaluation à froid sur bénéfices, suites de progression et satisfaction."
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 5 jours présentiel",
+          "Inter-entreprise ou intra sur devis",
+          "Tarif indicatif inter : 3 000 € HT",
+          "Aucune session inter fixe pour le moment : dates sur demande",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Formation sur mesure possible pour votre équipe (intra)"
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Bonnes connaissances d’un langage de type C, Java, C#, VB.NET ou PHP"
+        ]
+      }
+    },
+    "methodologie": "Combinaison de constructions participatives, d’apports théoriques et méthodologiques, et de mises en situation pratiques (dont étude de cas) pour ancrer la syntaxe, l’objet et les outils.",
+    "certification": "Attestation de fin de formation — réf. NUM_DEV_13",
+    "competences": [
+      "Lire et écrire du C++ idiomatique en distinguant les apports par rapport au C",
+      "Structurer une conception par classes, hiérarchies et interfaces avec polymorphisme",
+      "Exploiter un environnement de développement C++ courant sur des livrables TP",
+      "Mettre en œuvre les constructions C++11 abordées (auto, constructeurs, parcours, etc.)",
+      "Utiliser exceptions, surcharge d’opérateurs et templates dans des cas représentatifs",
+      "Navigager dans les I/O par streams et comprendre les bases de la STL",
+      "Travailler avec rigueur et exigence sur l’étude de cas tout au long du parcours"
+    ],
+    "metiersVises": [
+      "Développeur·se / ingénieur·e logiciel",
+      "Chef·fe de projet technique proche du développement",
+      "Profil souhaitant industrialiser ou consolider des compétences C++ orienté objet"
+    ],
+    "ctaFinal": {
+      "titre": "Demander la formation Programmation objet en C++",
+      "sousTitre": "Inter ou intra : devis et dates avec Alt Formation.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "cybersecurite-c-dfe-certified-digital-forensics-examiner": {
+    "categorie": "cybersecurite-reseaux",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Cybersécurité — C-DFE : Certified Digital Forensics Examiner",
+      "sousTitre": "Cinq jours en présentiel pour maîtriser les standards de criminalistique numérique, les bonnes pratiques et préparer l’examen Mile2 C-DFE (Certified Digital Forensics Examiner).",
+      "video": "/assets/video/formations/cyber.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "5 jours"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "Admins virtualisation, sécu. cloud, DSI, auditeurs cloud"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "2 399,20 € HT (inter, certification incluse)"
+      }
+    ],
+    "presentation": {
+      "titre": "Standards de criminalistique numérique et préparation C-DFE",
+      "image": "/assets/images/expert_cyber.jpg",
+      "paragraphes": [
+        "À l’issue du parcours, les participants sont en mesure d’instaurer des standards professionnels reconnus en criminalistique numérique, alignés sur les meilleures pratiques et politiques du secteur, et de se présenter sereinement à l’examen C-DFE.",
+        "Le programme couvre incidents, théorie et processus d’enquête, acquisitions et analyse sur disques et systèmes (Windows, Linux, macOS), preuves numériques, laboratoire, eDiscovery, mobile, gestion d’incident et restitution.",
+        "Inter-entreprise selon calendrier Mile2 / Alt Formation, ou intra sur devis. Contact : 01 60 43 94 32 — formations@altrh.com."
+      ]
+    },
+    "objectifs": [
+      "Établir des standards de criminalistique numérique acceptés par l’industrie et des politiques alignées sur les bonnes pratiques actuelles",
+      "Préparer efficacement l’examen Mile2 Certified Digital Forensics Examiner (C-DFE)"
+    ],
+    "programme": {
+      "dureeTotale": "5 jours — Présentiel, parcours couvrant 19 modules Mile2",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Jour 1 — Incidents, démarche, outils et stockages (modules 1 à 5)",
+          "duree": "1 jour",
+          "description": "Incidents de criminalistique informatique ; théorie de l’investigation ; processus d’investigation ; outils d’acquisition et d’analyse numérique ; disques et stockages."
+        },
+        {
+          "id": 2,
+          "titre": "Jour 2 — Acquisitions et criminalistique systèmes (modules 6 à 9)",
+          "duree": "1 jour",
+          "description": "Acquisitions à chaud (live) ; criminalistique Windows ; criminalistique Linux ; criminalistique macOS."
+        },
+        {
+          "id": 3,
+          "titre": "Jour 3 — Preuves, protocoles et laboratoire (modules 10 à 13)",
+          "duree": "1 jour",
+          "description": "Protocoles d’examen criminalistique ; protocoles sur la preuve numérique ; présentation de la preuve numérique ; protocoles du laboratoire criminalistique."
+        },
+        {
+          "id": 4,
+          "titre": "Jour 4 — Artefacts, recherche et eDiscovery (modules 14 à 16)",
+          "duree": "1 jour",
+          "description": "Récupération d’artefacts spécialisés ; chaînes de recherche avancées et signatures de fichiers ; eDiscovery et ESI."
+        },
+        {
+          "id": 5,
+          "titre": "Jour 5 — Mobile, incidents et rapports (modules 17 à 19)",
+          "duree": "1 jour",
+          "description": "Criminalistique mobile ; gestion d’incidents ; reporting et restitution."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Objectifs et évaluation",
+      "description": "L’évaluation est cohérente avec la préparation à la certification C-DFE : acquisition des référentiels Mile2, mise en pratique et positionnement avant passage de l’examen.",
+      "etapes": [
+        "Positionnement sur les objectifs personnels et le socle criminalistique avant la session",
+        "Mises en situation et travaux pratiques tout au long des 5 jours",
+        "Bilan de fin de parcours et préparation ciblée à l’épreuve C-DFE",
+        "Questionnaire de satisfaction et pistes de consolidation après la formation"
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 5 jours présentiel — inter-entreprise ou intra sur devis",
+          "Tarif indicatif inter : 2 399,20 € HT — certification C-DFE incluse au même montant",
+          "Calendrier inter indicatif (France, présentiel) : 8–12 juin, 15–19 juin, 22–26 juin, 29 juin – 3 juil., 6–10 juil., 20–24 juil., 27–31 juil., 3–7 août, 10–14 août, 17–21 août, 24–28 août, 7–11 sept., 14–18 sept., 21–25 sept., 28 sept. – 2 oct., 5–9 oct., 12–16 oct., 19–23 oct., 26–30 oct., 2–6 nov., 16–20 nov., 23–27 nov., 30 nov. – 4 déc., 7–11 déc., 14–18 déc. 2026 ; 12–16 janv., 19–23 janv., 26–30 janv., 2–6 févr., 9–13 févr., 16–20 févr., 23–27 févr., 2–6 mars, 9–13 mars, 16–20 mars, 23–27 mars, 13–17 avr., 20–24 avr., 18–22 mai 2027. Dates et lieux définitifs à l’inscription",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Formation sur mesure possible pour votre équipe (intra)"
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Au minimum 1 an d’expérience en environnement informatique",
+          "Avoir suivi la formation Mile2 C)SP (Certified Security Principles) ou équivalent communiqué par l’organisme",
+          "Mile2 Foundational Course Pack (pack de cours fondamentaux Mile2)"
+        ]
+      }
+    },
+    "methodologie": "Apports sur les référentiels et standards, démonstrations et travaux pratiques pour ancrer les protocoles d’acquisition, d’analyse et de présentation des preuves numériques.",
+    "certification": "C-DFE : Certified Digital Forensics Examiner — Mile2 — certification incluse au tarif inter indiqué",
+    "competences": [
+      "Cadrer des investigations criminalistiques selon des standards industriels et des politiques à jour",
+      "Conduire acquisitions et analyses sur disques, environnements Windows, Linux et macOS",
+      "Structurer chaîne de preuve, protocoles de laboratoire et restitution aux parties prenantes",
+      "Exploiter les volets eDiscovery, ESI et criminalistique mobile dans une démarche globale",
+      "Documenter et gérer un incident avec des livrables adaptés à la certification C-DFE"
+    ],
+    "metiersVises": [
+      "Administrateur·rice virtualisation",
+      "Responsable sécurité cloud (Cloud Security Officer)",
+      "Directeur·rice des systèmes d’information (DSI / CIO)",
+      "Auditeur·rice virtualisation et cloud",
+      "Responsable conformité virtualisation et cloud"
+    ],
+    "ctaFinal": {
+      "titre": "Réserver la formation C-DFE — Certified Digital Forensics Examiner",
+      "sousTitre": "Choisissez une session inter ou demandez un intra : devis, financement et inscription avec Alt Formation.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "cybersecurite-isc2-cissp": {
+    "categorie": "cybersecurite-reseaux",
+    "type": "certifiante",
+    "hero": {
+      "titre": "Cybersécurité — CISSP : Certified Information Systems Security Professional (ISC2)",
+      "sousTitre": "Cinq jours en présentiel pour couvrir les 8 domaines du référentiel CISSP et préparer l’examen (ISC)² Certified Information Systems Security Professional.",
+      "video": "/assets/video/formations/cyber.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "5 jours"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "Consultants sécu., architectes, CISO, DSI"
+      },
+      {
+        "label": "Tarif indicatif",
+        "value": "3 120 € HT (inter, certification incluse)"
+      }
+    ],
+    "presentation": {
+      "titre": "Les 8 domaines CISSP et alignement sécurité / métier",
+      "image": "/assets/images/expert_cyber.jpg",
+      "paragraphes": [
+        "La formation relie les concepts IT et sécurité aux enjeux opérationnels : protection des actifs sur leur cycle de vie, conception et supervision de systèmes, réseaux et applications avec une exigence de confidentialité, intégrité et disponibilité (CIA).",
+        "Vous aborderez l’architecture et les principes de sécurité, la cryptographie, la sécurité physique, les réseaux (y compris une lecture en couches du modèle OSI 1 à 7), le contrôle d’accès, les stratégies de test et d’audit, les opérations de sécurité et le développement sécurisé — socle reconnu pour viser la certification CISSP.",
+        "Inter-entreprise selon calendrier, ou intra sur devis. Contact : 01 60 43 94 32 — formations@altrh.com."
+      ]
+    },
+    "objectifs": [
+      "Appliquer les concepts fondamentaux des domaines information technology et sécurité",
+      "Aligner les objectifs opérationnels de l’organisation avec les fonctions et mises en œuvre sécurité",
+      "Identifier comment protéger les actifs de l’organisation tout au long de leur cycle de vie",
+      "Maîtriser les principes, structures et standards pour concevoir, déployer, superviser et sécuriser systèmes d’exploitation, équipements, réseaux et applications (CIA)",
+      "Appliquer les principes de sécurité pour choisir des mitigations pertinentes selon l’architecture et les types de systèmes d’information",
+      "Expliquer le rôle de la cryptographie et des services de sécurité à l’ère numérique",
+      "Évaluer la sécurité physique et les exigences de sécurité de l’information",
+      "Évaluer la communication et la sécurité réseau au regard des besoins information security",
+      "S’appuyer sur concepts et architectures (dont modèle OSI couches 1 à 7) pour répondre aux besoins de sécurité",
+      "Déterminer des modèles de contrôle d’accès adaptés aux exigences métier",
+      "Mettre en œuvre des contrôles d’accès physique et logique",
+      "Différencier les approches de conception et validation des stratégies de test et d’audit",
+      "Appliquer contrôles et contre-mesures pour soutenir la performance opérationnelle",
+      "Évaluer les risques des systèmes d’information pour les activités de l’organisation"
+    ],
+    "programme": {
+      "dureeTotale": "5 jours — Présentiel, les 8 domaines du référentiel CISSP",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Domaine 1 — Security and Risk Management",
+          "duree": "Intégré au parcours 5 jours",
+          "description": "Gouvernance, gestion du risque, conformité et cadre sécurité de l’organisation (équivalent sécurité et gestion des risques au sens CISSP)."
+        },
+        {
+          "id": 2,
+          "titre": "Domaine 2 — Asset Security",
+          "duree": "Intégré au parcours 5 jours",
+          "description": "Classification, propriété, cycle de vie et protection des actifs informationnels."
+        },
+        {
+          "id": 3,
+          "titre": "Domaine 3 — Security Architecture and Engineering",
+          "duree": "Intégré au parcours 5 jours",
+          "description": "Principes de conception, modèles, vulnérabilités courantes et mitigation dans l’ingénierie sécurité."
+        },
+        {
+          "id": 4,
+          "titre": "Domaine 4 — Communication and Network Security",
+          "duree": "Intégré au parcours 5 jours",
+          "description": "Architectures réseau, protocoles, segments et contrôles pour sécuriser les communications (aligné OSI couches 1 à 7 selon besoins)."
+        },
+        {
+          "id": 5,
+          "titre": "Domaine 5 — Identity and Access Management (IAM)",
+          "duree": "Intégré au parcours 5 jours",
+          "description": "Modèles d’accès, gestion des identités, SSO, fédération et contrôles logiques."
+        },
+        {
+          "id": 6,
+          "titre": "Domaine 6 — Security Assessment and Testing",
+          "duree": "Intégré au parcours 5 jours",
+          "description": "Évaluation, audits, tests de sécurité et validation des dispositifs de contrôle."
+        },
+        {
+          "id": 7,
+          "titre": "Domaine 7 — Security Operations",
+          "duree": "Intégré au parcours 5 jours",
+          "description": "Exploitation sécurité, détection, réponse à incident, PRA/PCA et bonnes pratiques opérationnelles."
+        },
+        {
+          "id": 8,
+          "titre": "Domaine 8 — Software Development Security",
+          "duree": "Intégré au parcours 5 jours",
+          "description": "Cycle de vie du développement, menaces applicatives et intégration de la sécurité dans le logiciel."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Objectifs et évaluation",
+      "description": "Parcours aligné sur la préparation à l’examen CISSP : acquisition du référentiel (ISC)², exercices et positionnement.",
+      "etapes": [
+        "Avant : cadrage des objectifs personnels et du niveau sur les 8 domaines",
+        "Pendant : apports, études de cas et questions types inspirées de l’examen",
+        "En fin de session : bilan des acquis et axes de révision pour l’épreuve CISSP",
+        "Questionnaire de satisfaction et pistes de consolidation après la formation"
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 5 jours présentiel — inter-entreprise ou intra sur devis",
+          "Tarif indicatif inter : 3 120 € HT — certification ISC2 CISSP incluse au même montant",
+          "Calendrier inter indicatif (France, présentiel) : 1–5 juin, 8–12 juin, 15–19 juin, 22–26 juin, 29 juin – 3 juil., 6–10 juil., 20–24 juil., 27–31 juil., 3–7 août, 10–14 août, 17–21 août, 24–28 août, 7–11 sept., 14–18 sept., 21–25 sept., 5–9 oct., 12–16 oct., 19–23 oct., 26–30 oct., 2–6 nov., 16–20 nov., 23–27 nov., 30 nov. – 4 déc., 7–11 déc., 14–18 déc. 2026 ; 26–30 janv., 9–13 févr., 16–20 févr., 23–27 févr., 9–13 mars, 16–20 mars, 30 mars – 3 avr., 13–17 avr., 20–24 avr., 18–22 mai 2027. Dates et lieux définitifs à l’inscription",
+          "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
+          "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+          "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
+          "Formation sur mesure possible pour votre équipe (intra)"
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Notions solides de réseaux et de systèmes d’exploitation, ainsi qu’en sécurité de l’information",
+          "Notions d’audit et de continuité d’activité (business continuity)"
+        ]
+      }
+    },
+    "methodologie": "Cours magistral structuré par domaines CISSP, illustrations sur cas d’usage et travaux dirigés pour préparer l’examen.",
+    "certification": "CISSP — Certified Information Systems Security Professional — (ISC)² — certification incluse au tarif inter indiqué",
+    "competences": [
+      "Structurer gouvernance sécurité, risques et alignement avec les objectifs métier",
+      "Protéger et classer les actifs sur l’ensemble du cycle de vie",
+      "Concevoir et évaluer des architectures, réseaux et contrôles au prisme CIA",
+      "Mettre en œuvre IAM, évaluation, tests et opérations de sécurité de façon cohérente",
+      "Intégrer la sécurité dans le développement logiciel et préparer l’examen CISSP avec méthode"
+    ],
+    "metiersVises": [
+      "Consultant·e en cybersécurité",
+      "Responsable sécurité",
+      "Directeur·rice ou manager IT",
+      "Auditeur·rice sécurité",
+      "Architecte sécurité",
+      "Analyste sécurité",
+      "Ingénieur·e systèmes de sécurité",
+      "Chief Information Security Officer (CISO)",
+      "Directeur·rice sécurité",
+      "Architecte réseau"
+    ],
+    "ctaFinal": {
+      "titre": "Réserver la formation CISSP — Certified Information Systems Security Professional",
+      "sousTitre": "Choisissez une session inter ou demandez un intra : devis, financement et inscription avec Alt Formation.",
+      "boutons": [
+        {
+          "label": "NOUS CONTACTER",
+          "url": "/contact"
+        }
+      ]
+    }
+  }
+}

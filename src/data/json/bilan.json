@@ -1,0 +1,93 @@
+{
+    "bilanDeCompetences": {
+        "hero": {
+            "titre": "Bilan de Compétences",
+            "sousTitre": "Analysez vos compétences, clarifiez vos motivations et construisez un projet professionnel solide avec l'accompagnement d'Alt Formations.",
+            "video": "/assets/video/bilan.mp4"
+        },
+        "titre": "Bilan de Compétences",
+        "image": "/assets/images/emploi.jpg",
+        "tagline": "Faites le point sur votre parcours et définissez sereinement votre avenir professionnel.",
+        "description": "Le bilan de compétences est une démarche officielle et structurée qui permet d'analyser vos compétences professionnelles et personnelles, vos aptitudes et vos motivations afin de définir un projet professionnel ou un projet de formation adapté à votre situation.",
+        "contenu": {
+            "titre": "Le Bilan de Compétences",
+            "description": "Le bilan de compétences permet d'analyser ses compétences professionnelles et personnelles, ses aptitudes et ses motivations afin de définir un projet professionnel ou un projet de formation.",
+            "objectifs": [
+                "Analyser son parcours professionnel pour identifier ses savoir-faire.",
+                "Mieux connaître ses motivations et ses centres d'intérêt.",
+                "Identifier ses ressources et ses axes de développement.",
+                "Définir un projet professionnel réaliste et réalisable."
+            ],
+            "lesTroisPhases": [
+                {
+                    "phase": "Phase Préliminaire",
+                    "details": "Confirmer l'engagement dans la démarche, définir les besoins et présenter les méthodes de travail."
+                },
+                {
+                    "phase": "Phase d'Investigation",
+                    "details": "Analyser le parcours, identifier les compétences, les motivations et explorer les pistes d'évolution."
+                },
+                {
+                    "phase": "Phase de Conclusion",
+                    "details": "Recenser les facteurs de réussite, définir les étapes du projet et remettre un document de synthèse."
+                }
+            ]
+        },
+        "pourquoiChoisir": {
+            "titre": "Pourquoi réaliser un bilan de compétences ?",
+            "intro": "Choisir Alt Formations, c'est bénéficier d'un accompagnement certifié, confidentiel et orienté résultats pour construire un avenir professionnel qui vous ressemble.",
+            "avantages": [
+                {
+                    "titre": "Clarifier son projet professionnel",
+                    "description": "Identifier un projet réaliste et cohérent avec vos compétences, vos valeurs et le marché de l'emploi."
+                },
+                {
+                    "titre": "Valoriser ses compétences",
+                    "description": "Prendre conscience de vos savoir-faire acquis et les mettre en avant auprès des recruteurs."
+                },
+                {
+                    "titre": "Préparer une reconversion",
+                    "description": "Obtenir des clés concrètes pour changer de voie en toute sérénité et avec méthode."
+                },
+                {
+                    "titre": "Accéder à une formation adaptée",
+                    "description": "Identifier la formation la plus pertinente pour atteindre vos objectifs et évoluer dans votre carrière."
+                }
+            ]
+        },
+        "testsExterieurs": {
+            "titre": "Tests & Outils en ligne gratuits",
+            "intro": "En complément de notre accompagnement, voici une sélection de tests officiels et fiables pour amorcer votre réflexion sur vos compétences.",
+            "tests": [
+                {
+                    "nom": "Test de Personnalité (MBTI)",
+                    "description": "Le célèbre test gratuit '16Personalities' pour comprendre votre mode de fonctionnement, vos forces et vos préférences en milieu professionnel.",
+                    "lien": "https://www.16personalities.com/fr/test-de-personnalite",
+                    "labelLien": "Passer le test (10 min)"
+                },
+                {
+                    "nom": "L'Emploi Store (France Travail)",
+                    "description": "Une sélection de tests et d'applications officiels gratuits pour évaluer vos compétences, explorer des métiers et affiner votre projet d'évolution.",
+                    "lien": "https://www.emploi-store.fr/portail/centresdinteret/choisirUnMetier",
+                    "labelLien": "Découvrir les outils"
+                },
+                {
+                    "nom": "Diagoriente (Plateforme d'État)",
+                    "description": "Un service public soutenu par France Travail pour identifier rapidement vos compétences transversales et explorer des pistes de reconversion adaptées.",
+                    "lien": "https://diagoriente.beta.gouv.fr/",
+                    "labelLien": "Évaluer mes compétences"
+                }
+            ]
+        },
+        "cta": [
+            {
+                "label": "Demander un bilan",
+                "url": "/contact"
+            },
+            {
+                "label": "En savoir plus",
+                "url": "/contact"
+            }
+        ]
+    }
+}
