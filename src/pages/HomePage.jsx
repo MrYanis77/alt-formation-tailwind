@@ -13,6 +13,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import SEOHead from '../components/SEO/SEOHead';
 
 import HeroSlide from '../components/Hero/HeroSlide';
 import StatsSection from '../components/Stats/StatsSection';
@@ -28,7 +29,7 @@ export default function HomePage() {
 
   const doublePartenaires = [...partenaires, ...partenaires];
   // On quadruple le tableau pour s'assurer que le défilement couvre les très grands écrans
-  const scrollingTemoignages = [...temoignages, ...temoignages, ...temoignages, ...temoignages];
+  const scrollingTemoignages = [...temoignages, ...temoignages];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -39,6 +40,11 @@ export default function HomePage() {
 
   return (
     <div className="bg-white antialiased">
+      <SEOHead
+        title="Organisme de formation Qualiopi — Numérique, IA, Cybersécurité, RH"
+        description="Alt RH & formations : organisme de formation certifié Qualiopi. Formations diplômantes, certifiantes et e-learning en cybersécurité, développement web, IA et ressources humaines. CPF, OPCO, France Travail."
+        canonical="https://alt-rh.com/accueil"
+      />
 
       {/* SECTION 1 : HERO CAROUSEL */}
       <section className="relative h-[600px] md:h-[550px] bg-primary overflow-hidden flex items-center group">

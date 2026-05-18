@@ -1,10 +1,11 @@
-import React, { useState, useCallback } from 'react'; // Ajout de useState
-import { certifications, hero, categories } from '../data/certification'; // Import des catégories
+import React, { useState, useCallback } from 'react';
+import { certifications, hero, categories } from '../data/certification';
 import CardFormation from '../components/Card/CardFormation';
 import Breadcrumb from '../components/Breadcrumb';
 import Hero from '../components/Hero/Hero';
-import FiltreCat from '../components/Items/FiltreCat'; // Import de votre nouveau composant
+import FiltreCat from '../components/Items/FiltreCat';
 import CallToAction from '../components/CallToAction';
+import SEOHead from '../components/SEO/SEOHead';
 
 export default function CertificationPage() {
   const [activeCategory, setActiveCategory] = useState("Tous");
@@ -35,6 +36,11 @@ export default function CertificationPage() {
 
   return (
     <div className="bg-white min-h-screen">
+      <SEOHead
+        title="Certifications professionnelles — Cybersécurité, DevOps, Développement"
+        description="Préparez vos certifications professionnelles avec Alt RH & formations : CISSP, CCNA, AWS, Azure, ISTQB, DevSecOps et bien plus. Formations certifiantes finançables CPF et OPCO."
+        canonical="https://alt-rh.com/certification"
+      />
 
       <Hero
         title={hero.titre}

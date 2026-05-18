@@ -3,12 +3,18 @@ import Breadcrumb from '../components/Breadcrumb';
 import Hero from '../components/Hero/Hero';
 import { hero, contactData } from '../data/contact';
 import ContactForm from '../components/Form/ContactForm';
+import SEOHead from '../components/SEO/SEOHead';
 
 export default function ContactPage() {
   const { coordonnees, horaires, formulaire } = contactData;
 
   return (
     <div className="bg-white min-h-screen">
+      <SEOHead
+        title="Contact — Prendre rendez-vous"
+        description="Contactez Alt RH & formations pour toute question sur nos formations diplômantes, certifiantes ou e-learning. Nos conseillers vous répondent du lundi au vendredi."
+        canonical="https://alt-rh.com/contact"
+      />
 
       {/* 2. HERO SECTION */}
       <Hero

@@ -1,4 +1,5 @@
 import React from 'react';
+import SEOHead from '../components/SEO/SEOHead';
 import { useParams, Link } from 'react-router-dom';
 import { formationsArray } from '../data/navdata';
 import { imageMap } from '../data/formations';
@@ -53,6 +54,11 @@ export default function FormationDetail() {
 
   return (
     <div className="bg-white min-h-screen antialiased text-left">
+      <SEOHead
+        title={data.hero?.titre || data.titre}
+        description={`Découvrez la formation ${data.hero?.titre || data.titre} chez Alt RH & formations. ${data.hero?.sousTitre || 'Formation professionnelle certifiée Qualiopi. Financement CPF, OPCO, France Travail.'}`}
+        canonical={`https://alt-rh.com/formation/${id}`}
+      />
       <Hero
         title={data.hero?.titre || data.titre}
         subtitle={
