@@ -69,7 +69,11 @@ export default function FormulaireCandidature({ type }) {
                 attachment: attachment
             };
 
+<<<<<<< HEAD
             const response = await fetch('/api/send-candidature.php', {
+=======
+            const response = await fetch('/api/rejoindre', {
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)
@@ -92,7 +96,11 @@ export default function FormulaireCandidature({ type }) {
         // Titre de l'entreprise
         doc.setTextColor(255, 255, 255);
         doc.setFontSize(22);
+<<<<<<< HEAD
         doc.text("ALT FORMATIONS", 20, 25);
+=======
+        doc.text("NEXYTAL", 20, 25);
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 
         // Titre du document
         doc.setTextColor(0, 0, 0);

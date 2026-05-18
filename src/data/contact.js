@@ -14,12 +14,20 @@ export const contactData = {
     items: [
       {
         type: "Téléphone",
+<<<<<<< HEAD
         valeur: "01 60 43 94 30",
+=======
+        valeur: "01 23 45 67 89",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         icon: "📞"
       },
       {
         type: "Email",
+<<<<<<< HEAD
         valeur: "formations@alt-rh.com",
+=======
+        valeur: "contact@alt-formations.com",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         icon: "✉️"
       },
       {
@@ -35,6 +43,11 @@ export const contactData = {
     titre: "Horaires d'ouverture",
     jours: [
       { label: "Lundi - Vendredi", heures: "9h00 - 18h00" },
+<<<<<<< HEAD
+=======
+      { label: "Samedi", heures: "Fermé" },
+      { label: "Dimanche", heures: "Fermé" }
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
     ]
   },
   // Formulaire de message

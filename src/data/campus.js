@@ -9,6 +9,7 @@ export const hero = {
 
 export const campus = [
   {
+<<<<<<< HEAD
     id: "paris-la-defense",
     nom: "Paris La Défense",
     adresse: "Tour Égée, 9/11 allée de l'arche, 92400 Courbevoie",
@@ -17,12 +18,18 @@ export const campus = [
     mapLink: "https://maps.app.goo.gl/k9roCdPP5f8ZapFx8",
   },
   {
+=======
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
     id: "montevrain",
     nom: "Montévrain",
     adresse: "Regus Neos Building, 77144 Montévrain",
     mail: "formations@altformations.fr",
     image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800",
+<<<<<<< HEAD
     mapLink: "https://maps.app.goo.gl/2BL4KnpHoajwjoNK6",
+=======
+    mapLink: "https://maps.app.goo.gl/2BL4KnpHoajwjoNK6"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   },
   {
     id: "noisiel",
@@ -30,7 +37,11 @@ export const campus = [
     adresse: "6 Rue de la Mare Blanche, 77186 Noisiel",
     mail: "formations@altformations.fr",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800",
+<<<<<<< HEAD
     mapLink: "https://maps.app.goo.gl/BMGk5inFgGBsmPfR9",
+=======
+    mapLink: "https://maps.app.goo.gl/BMGk5inFgGBsmPfR9"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   },
   {
     id: "trappes",
@@ -38,7 +49,11 @@ export const campus = [
     adresse: "5 Av. Pavlov, 78190 Trappes",
     mail: "formations@altformations.fr",
     image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=800",
+<<<<<<< HEAD
     mapLink: "https://maps.app.goo.gl/vucXNTwuTX8imwZW6",
+=======
+    mapLink: "https://maps.app.goo.gl/vucXNTwuTX8imwZW6"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   },
   {
     id: "cergy",
@@ -46,7 +61,11 @@ export const campus = [
     adresse: "20 Rue Lavoisier, 95300 Pontoise",
     mail: "formations@altformations.fr",
     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800",
+<<<<<<< HEAD
     mapLink: "https://maps.app.goo.gl/Hv1W1LhuEoZdSPYA6",
+=======
+    mapLink: "https://maps.app.goo.gl/Hv1W1LhuEoZdSPYA6"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   },
   {
     id: "asnieres",
@@ -54,7 +73,11 @@ export const campus = [
     adresse: "25 Rue des Bas, 92600 Asnières-sur-Seine",
     mail: "formations@altformations.fr",
     image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=800",
+<<<<<<< HEAD
     mapLink: "https://maps.app.goo.gl/Aqqjh2qA8h6Vtpju6",
+=======
+    mapLink: "https://maps.app.goo.gl/Aqqjh2qA8h6Vtpju6"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   },
   {
     id: "créteil",
@@ -62,7 +85,11 @@ export const campus = [
     adresse: "70 Av. du Général de Gaulle, 94000 Créteil",
     mail: "formations@altformations.fr",
     image: "https://images.unsplash.com/photo-1606836576983-8b458e75221d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+<<<<<<< HEAD
     mapLink: "https://maps.app.goo.gl/UKee2Ddq3YoHxQKu8",
+=======
+    mapLink: "https://maps.app.goo.gl/UKee2Ddq3YoHxQKu8"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   },
   {
     id: "melun",
@@ -70,7 +97,22 @@ export const campus = [
     adresse: "11 Rue Benjamin Franklin, 77000 La Rochette",
     mail: "formations@altformations.fr",
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800",
+<<<<<<< HEAD
     mapLink: "https://maps.app.goo.gl/KYYBpf2ydsfFRRYS9",
   },
  
 ];
+=======
+    mapLink: "https://maps.app.goo.gl/KYYBpf2ydsfFRRYS9"
+  },
+  {
+    id: "paris-la-defense",
+    nom: "Paris La Défense",
+    adresse: "Tour Égée, 9/11 allée de l'arche, 92400 Courbevoie",
+    mail: "formations@altformations.fr",
+    image: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&q=80&w=800",
+    mapLink: "https://maps.app.goo.gl/k9roCdPP5f8ZapFx8"
+  }
+];
+
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03

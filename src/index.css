@@ -109,6 +109,7 @@
 }
 
 @keyframes fadeIn {
+<<<<<<< HEAD
   from {
     opacity: 0;
     transform: translateY(16px);
@@ -118,4 +119,8 @@
     opacity: 1;
     transform: translateY(0);
   }
+=======
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 }

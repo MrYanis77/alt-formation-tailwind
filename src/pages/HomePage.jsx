@@ -47,7 +47,11 @@ export default function HomePage() {
           <motion.div
             key={`bg-${currentSlide}`}
             initial={{ opacity: 0, scale: 1.1 }}
+<<<<<<< HEAD
             animate={{ opacity: 1, scale: 1 }}
+=======
+            animate={{ opacity: 0.9, scale: 1 }}
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             exit={{ opacity: 0 }}
             transition={{ duration: 0.8 }}
             className="absolute inset-0 z-0"
@@ -73,6 +77,11 @@ export default function HomePage() {
           </motion.div>
         </AnimatePresence>
 
+<<<<<<< HEAD
+=======
+        <div className="absolute inset-0 z-10 bg-gradient-to-r from-primary/80 via-primary/30 to-transparent" />
+
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         <div className="container mx-auto relative z-20 px-6 md:px-[60px]">
           <AnimatePresence mode="wait">
             <motion.div
@@ -120,7 +129,11 @@ export default function HomePage() {
       {/* SECTION 2 : STATS */}
       <StatsSection stats={stats} />
 
+<<<<<<< HEAD
        {/* SECTION PRÉSENTATION : Professionnels et engagés */}
+=======
+      {/* SECTION PRÉSENTATION : Professionnels et engagés */}
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       <section className="py-20 px-6 max-w-container-2xl mx-auto text-center">
         <h2 className="font-heading text-2xl md:text-h1 font-extrabold text-primary uppercase tracking-wider mb-8">
           {presentation.titre}
@@ -149,7 +162,11 @@ export default function HomePage() {
             {presentation.conclusion}
           </p>
         </div>
+<<<<<<< HEAD
       </section> 
+=======
+      </section>
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 
       {/* SECTION 3 : NOS SERVICES / FORMATIONS */}
       <section className="pb-[80px] pt-10 px-6 md:px-[60px] max-w-container-3xl mx-auto">
@@ -162,9 +179,15 @@ export default function HomePage() {
               key={index}
               title={service.titre}
               image={service.image || "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600"}
+<<<<<<< HEAD
               variant={service.theme || "white"}
               href={service.href || "#"}
               items={service.items}
+=======
+              points={service.items}
+              variant={service.theme || "white"}
+              href={service.href || "#"}
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             />
           ))}
         </div>

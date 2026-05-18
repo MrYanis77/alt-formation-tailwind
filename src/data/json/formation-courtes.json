@@ -14,11 +14,22 @@
       },
       {
         "label": "Modalité",
+<<<<<<< HEAD
         "value": "E-learning"
+=======
+        "value": "Présentiel"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "label": "Public visé",
         "value": "Développeurs & Architectes"
+<<<<<<< HEAD
+=======
+      },
+      {
+        "label": "Tarif",
+        "value": "2 600 €"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       }
     ],
     "presentation": {
@@ -81,7 +92,12 @@
         "titre": "Modalités pratiques",
         "points": [
           "Durée : 4 jours",
+<<<<<<< HEAD
           "Format : E-learning",
+=======
+          "Format : Présentiel",
+          "Tarif standard : 2 600 €",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           "Référence : Num_emb_02",
           "Public visé : Étudiants, Architectes, Développeurs",
           "Méthodes : présentations + travaux pratiques",
@@ -137,11 +153,22 @@
       },
       {
         "label": "Modalité",
+<<<<<<< HEAD
         "value": "E-learning"
+=======
+        "value": "Présentiel"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "label": "Public visé",
         "value": "Consultants, Admins & Développeurs"
+<<<<<<< HEAD
+=======
+      },
+      {
+        "label": "Tarif",
+        "value": "1 056 €"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       }
     ],
     "presentation": {
@@ -174,7 +201,13 @@
         "titre": "Modalités pratiques",
         "points": [
           "Durée : 2 jours",
+<<<<<<< HEAD
           "Format : E-learning",
+=======
+          "Format : Présentiel",
+          "Tarif standard : 1 056 €",
+          "Prix avec certification : 1 056 €",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           "Public visé : Consultants en sécurité, Administrateurs système/réseau, Développeurs",
           "Modalité : Inter-Entreprise et Intra-Entreprise"
         ]
@@ -228,6 +261,122 @@
       ]
     }
   },
+<<<<<<< HEAD
+=======
+  "cybersecurite-audit-android-introduction": {
+    "categorie": "cybersecurite",
+    "type": "courte",
+    "hero": {
+      "titre": "Cybersécurité : Audit sécurité d'applications mobiles Android – Introduction",
+      "sousTitre": "Maîtrisez les bases nécessaires pour la réalisation d'audits de sécurité avancés sur les applications Android.",
+      "video": "/assets/video/formations/cyber.mp4"
+    },
+    "stats": [
+      {
+        "label": "Durée",
+        "value": "2 jours"
+      },
+      {
+        "label": "Modalité",
+        "value": "Présentiel"
+      },
+      {
+        "label": "Public visé",
+        "value": "Consultants, Admins, Développeurs"
+      },
+      {
+        "label": "Tarif",
+        "value": "1 056 €"
+      }
+    ],
+    "presentation": {
+      "titre": "Audit sécurité d'applications mobiles Android",
+      "paragraphes": [
+        "Cette formation vous permettra de maîtriser les bases nécessaires pour la réalisation d'audits de sécurité avancés sur les applications Android.",
+        "Vous apprendrez à mettre en place un environnement de tests d'intrusion mobiles, à réaliser des analyses statiques et dynamiques, ainsi qu'à analyser les communications réseau des applications.",
+        "À l'issue de cette formation, vous serez capable de mener des audits de sécurité complets sur des applications Android, en combinant analyse statique, dynamique et réseau."
+      ]
+    },
+    "programme": {
+      "dureeTotale": "2 jours — Formation avec travaux pratiques",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Jour 1 : Tests d'intrusion mobiles",
+          "duree": "1 jour",
+          "description": "Concepts et mise en place des tests d'intrusion mobiles, analyse statique des applications Android."
+        },
+        {
+          "id": 2,
+          "titre": "Jour 2 : Analyses réseau et dynamique",
+          "duree": "1 jour",
+          "description": "Analyse réseau des applications Android, analyse dynamique et techniques avancées d'audit."
+        }
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Modalités pratiques",
+        "points": [
+          "Durée : 2 jours",
+          "Format : Présentiel",
+          "Tarif standard : 1 056 €",
+          "Prix avec certification : 1 056 €",
+          "Public visé : Consultants en sécurité, Administrateurs système ou réseau, Développeurs",
+          "Disponible en inter-entreprise et intra-entreprise",
+          "Formation également disponible sur demande"
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Aucun prérequis nécessaire pour participer à cette formation"
+        ]
+      },
+      "sessions": [
+        {
+          "debut": "2026-05-18",
+          "fin": "2026-05-19",
+          "lieu": "FR"
+        },
+        {
+          "debut": "2026-05-21",
+          "fin": "2026-05-22",
+          "lieu": "FR"
+        }
+      ]
+    },
+    "competences": [
+      "Mettre en place un environnement de tests d'intrusion mobiles",
+      "Réaliser une analyse statique d'applications Android",
+      "Analyser les communications réseau d'applications Android",
+      "Effectuer une analyse dynamique d'applications Android",
+      "Identifier les vulnérabilités de sécurité dans les applications mobiles"
+    ],
+    "certification": {
+      "titre": "Audit sécurité d'applications mobiles Android – Introduction",
+      "incluse": true
+    },
+    "metiersVises": [
+      "Auditeur sécurité mobile",
+      "Pentesteur mobile (Android)",
+      "Consultant en cybersécurité",
+      "Analyste sécurité applicative"
+    ],
+    "ctaFinal": {
+      "titre": "Prêt à maîtriser l'audit sécurité Android ?",
+      "sousTitre": "De nombreuses sessions disponibles tout au long de l'année. Inscrivez-vous à la date qui vous convient ou contactez-nous pour une formation sur mesure.",
+      "boutons": [
+        {
+          "label": "S'INSCRIRE"
+        },
+        {
+          "label": "DEMANDER UNE FORMATION"
+        }
+      ]
+    }
+  },
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   "cybersecurite-preparation-osed": {
     "categorie": "cybersecurite",
     "type": "courte",
@@ -243,11 +392,22 @@
       },
       {
         "label": "Modalité",
+<<<<<<< HEAD
         "value": "E-learning"
+=======
+        "value": "Présentiel"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "label": "Public visé",
         "value": "Pentesters & Chercheurs en sécurité"
+<<<<<<< HEAD
+=======
+      },
+      {
+        "label": "Tarif",
+        "value": "1 720 €"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       }
     ],
     "presentation": {
@@ -322,7 +482,13 @@
         "titre": "Modalités pratiques",
         "points": [
           "Durée : 5 jours",
+<<<<<<< HEAD
           "Format : E-learning",
+=======
+          "Format : Présentiel",
+          "Tarif standard : 1 720 €",
+          "Prix avec certification : 1 720 €",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           "Public visé : Professionnels de la cybersécurité, Pentesters, Chercheurs en sécurité, Développeurs",
           "Disponible en inter-entreprise et intra-entreprise",
           "Formation également disponible sur demande"
@@ -398,11 +564,22 @@
       },
       {
         "label": "Modalité",
+<<<<<<< HEAD
         "value": "E-learning"
+=======
+        "value": "Présentiel"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "label": "Public visé",
         "value": "Professionnels Cloud, Managers & Consultants"
+<<<<<<< HEAD
+=======
+      },
+      {
+        "label": "Tarif",
+        "value": "2 700 €"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       }
     ],
     "presentation": {
@@ -453,7 +630,13 @@
         "titre": "Modalités pratiques",
         "points": [
           "Durée : 5 jours",
+<<<<<<< HEAD
           "Format : E-learning",
+=======
+          "Format : Présentiel",
+          "Tarif standard : 2 700 €",
+          "Prix avec certification : 2 700 €",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           "Public visé : Professionnels de la sécurité, Managers, Consultants, Experts techniques, Conseillers experts en sécurité du cloud",
           "Modalité : Inter-Entreprise et Intra-Entreprise"
         ]
@@ -690,11 +873,22 @@
       },
       {
         "label": "Modalité",
+<<<<<<< HEAD
         "value": "E-learning"
+=======
+        "value": "Présentiel"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "label": "Public visé",
         "value": "Responsables webmarketing, Managers & Dirigeants"
+<<<<<<< HEAD
+=======
+      },
+      {
+        "label": "Tarif",
+        "value": "1 500 €"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       }
     ],
     "presentation": {
@@ -739,7 +933,12 @@
         "titre": "Modalités pratiques",
         "points": [
           "Durée : 2 jours",
+<<<<<<< HEAD
           "Format : E-learning",
+=======
+          "Format : Présentiel",
+          "Tarif standard : 1 500 €",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           "Référence : NUM_DIGIT_10",
           "Public visé : Responsables webmarketing/digitaux, dirigeants, managers, PME, directeurs commerciaux, responsables de la relation client, étudiants",
           "Financement : Éligible CPF (certification DiGiTT), cofinancement entreprise ou Pôle Emploi possible",
@@ -807,11 +1006,22 @@
       },
       {
         "label": "Modalité",
+<<<<<<< HEAD
         "value": "E-learning"
+=======
+        "value": "Présentiel"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "label": "Public visé",
         "value": "Tout public & Étudiants"
+<<<<<<< HEAD
+=======
+      },
+      {
+        "label": "Tarif",
+        "value": "2 200 €"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       }
     ],
     "presentation": {
@@ -874,7 +1084,12 @@
         "titre": "Modalités pratiques",
         "points": [
           "Durée : 5 jours",
+<<<<<<< HEAD
           "Format : E-learning",
+=======
+          "Format : Présentiel",
+          "Tarif standard : 2 200 €",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           "Référence : NUM_DEV_27",
           "Public visé : Tout public voulant découvrir la programmation JAVA, étudiants",
           "Méthodes : Constructions participatives, apports théoriques, simulations, jeux de rôle",
@@ -943,11 +1158,22 @@
       },
       {
         "label": "Modalité",
+<<<<<<< HEAD
         "value": "E-learning"
+=======
+        "value": "Présentiel"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "label": "Public visé",
         "value": "Managers & Étudiants"
+<<<<<<< HEAD
+=======
+      },
+      {
+        "label": "Tarif",
+        "value": "2 100 €"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       }
     ],
     "presentation": {
@@ -998,7 +1224,12 @@
         "titre": "Modalités pratiques",
         "points": [
           "Durée : 3 jours",
+<<<<<<< HEAD
           "Format : E-learning",
+=======
+          "Format : Présentiel",
+          "Tarif standard : 2 100 €",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           "Référence : NUM_mngt_15",
           "Public visé : Toute personne en situation d'encadrement, étudiants",
           "Méthodes : Constructions participatives, simulations, jeux de rôle",
@@ -1065,11 +1296,22 @@
       },
       {
         "label": "Modalité",
+<<<<<<< HEAD
         "value": "E-learning"
+=======
+        "value": "Présentiel"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "label": "Public visé",
         "value": "Dirigeants, cadres & managers"
+<<<<<<< HEAD
+=======
+      },
+      {
+        "label": "Tarif",
+        "value": "2 100 €"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       }
     ],
     "presentation": {
@@ -1120,7 +1362,12 @@
         "titre": "Modalités pratiques",
         "points": [
           "Durée : 3 jours",
+<<<<<<< HEAD
           "Format : E-learning",
+=======
+          "Format : Présentiel",
+          "Tarif standard : 2 100 €",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           "Référence : NUM_mngt_19",
           "Public visé : Dirigeants, cadres, managers, agents encadrant, étudiants",
           "Méthodes : Constructions participatives, simulations, jeux de rôle",
@@ -1187,11 +1434,22 @@
       },
       {
         "label": "Modalité",
+<<<<<<< HEAD
         "value": "E-learning"
+=======
+        "value": "Présentiel"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "label": "Public visé",
         "value": "Chefs de projet & Étudiants"
+<<<<<<< HEAD
+=======
+      },
+      {
+        "label": "Tarif",
+        "value": "6 500 €"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       }
     ],
     "presentation": {
@@ -1248,7 +1506,12 @@
         "titre": "Modalités pratiques",
         "points": [
           "Durée : 10 jours",
+<<<<<<< HEAD
           "Format : E-learning",
+=======
+          "Format : Présentiel",
+          "Tarif standard : 6 500 €",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           "Référence : NUM_mngt_17",
           "Public visé : Chefs de projet débutants ou confirmés, toute personne en charge d'un projet, étudiants",
           "Méthodes : Constructions participatives, simulations, jeux de rôle",
@@ -1317,11 +1580,22 @@
       },
       {
         "label": "Modalité",
+<<<<<<< HEAD
         "value": "E-learning"
+=======
+        "value": "Présentiel"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "label": "Public visé",
         "value": "Managers & Étudiants"
+<<<<<<< HEAD
+=======
+      },
+      {
+        "label": "Tarif",
+        "value": "2 250 €"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       }
     ],
     "presentation": {
@@ -1366,7 +1640,12 @@
         "titre": "Modalités pratiques",
         "points": [
           "Durée : 2 jours",
+<<<<<<< HEAD
           "Format : E-learning",
+=======
+          "Format : Présentiel",
+          "Tarif standard : 2 250 €",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           "Référence : NUM_mngt_13",
           "Public visé : Managers souhaitant développer l’agilité dans l’équipe, étudiants",
           "Modalité : Inter-Entreprise et Intra-Entreprise",
@@ -1435,11 +1714,22 @@
       },
       {
         "label": "Modalité",
+<<<<<<< HEAD
         "value": "E-learning"
+=======
+        "value": "Présentiel"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "label": "Public visé",
         "value": "Managers & Hauts potentiels"
+<<<<<<< HEAD
+=======
+      },
+      {
+        "label": "Tarif",
+        "value": "0 €"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       }
     ],
     "presentation": {
@@ -1466,7 +1756,12 @@
         "titre": "Modalités pratiques",
         "points": [
           "Durée : 2 jours",
+<<<<<<< HEAD
           "Format : E-learning",
+=======
+          "Format : Présentiel",
+          "Tarif standard : 0 € (Veuillez nous consulter pour les modalités de tarification exactes)",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           "Référence : NUM_mngt_11",
           "Public visé : Managers, hauts potentiels, étudiants",
           "Méthodes : Constructions participatives, apports théoriques, simulations, jeux de rôle",
@@ -1537,6 +1832,13 @@
       {
         "label": "Public visé",
         "value": "Professionnels du développement"
+<<<<<<< HEAD
+=======
+      },
+      {
+        "label": "Tarif",
+        "value": "900 €"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       }
     ],
     "presentation": {
@@ -1594,6 +1896,10 @@
         "points": [
           "Durée estimée : 15 heures (cycle d'environ 1 mois)",
           "Format : 100% en ligne (Plateforme Digital Learning)",
+<<<<<<< HEAD
+=======
+          "Tarif standard : 900 € (Jusqu'à 100% finançable selon profil)",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           "Public visé : Tout professionnel du développement souhaitant acquérir des compétences en DevOps",
           "Suivi pédagogique : Accompagnement individuel synchrone et asynchrone par une équipe d'experts",
           "Matériel requis : Ordinateur, connexion Internet (casque audio recommandé)",
@@ -1672,6 +1978,13 @@
       {
         "label": "Public visé",
         "value": "Techniciens & Futurs administrateurs"
+<<<<<<< HEAD
+=======
+      },
+      {
+        "label": "Tarif",
+        "value": "900 €"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       }
     ],
     "presentation": {
@@ -1723,6 +2036,10 @@
         "points": [
           "Durée estimée : 15 heures (cycle d'environ 1 mois)",
           "Format : 100% en ligne (Plateforme Digital Learning)",
+<<<<<<< HEAD
+=======
+          "Tarif standard : 900 € (Jusqu'à 100% finançable selon profil)",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           "Public visé : Techniciens systèmes réseau, techniciens informatiques, futurs administrateurs",
           "Suivi pédagogique : Accompagnement individuel synchrone et asynchrone par une équipe d'experts",
           "Matériel requis : Ordinateur, connexion Internet (casque audio recommandé)",
@@ -1783,4 +2100,8 @@
       ]
     }
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03

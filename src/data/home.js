@@ -11,6 +11,19 @@
  */
 export const slides = [
   {
+<<<<<<< HEAD
+=======
+    id: 1,
+    badge: 'Cybersécurité',
+    title: 'Devenez Technicien\nRéseaux & Cybersécurité',
+    subtitle: 'Protégez les systèmes contre les menaces',
+    desc: 'Analysez et neutralisez les cybermenaces, gérez les accès et renforcez la sécurité des infrastructures réseau des entreprises.',
+    cta: 'Découvrir la formation',
+    ctaTo: '/formation/technicien-reseaux-cybersecurite',
+    video: '/assets/video/formations/cyber.mp4'
+  },
+  {
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
     id: 2,
     badge: "Développement d'Applications",
     title: "Devenez Développeur\nd'Applications Multimédia",
@@ -31,6 +44,7 @@ export const slides = [
     video: '/assets/video/formations/technicien-sr.mp4'
   },
   {
+<<<<<<< HEAD
     id: 1,
     badge: 'Cybersécurité',
     title: 'Devenez Technicien\nRéseaux & Cybersécurité',
@@ -41,6 +55,8 @@ export const slides = [
     video: '/assets/video/formations/cyber.mp4'
   },
   {
+=======
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
     id: 4,
     badge: 'Ressources Humaines',
     title: 'Devenez Assistant\nRessources Humaines',
@@ -117,7 +133,11 @@ export const slides = [
  */
 export const stats = [
   { value: '+5000', label: 'Stagiaires formés' },
+<<<<<<< HEAD
   { value: '+180', label: 'Experts formateurs' },
+=======
+  { value: '+40', label: 'Experts formateurs' },
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   { value: '95%', label: 'Taux de satisfaction' },
   { value: '+150', label: 'Formations disponibles' },
 ];
@@ -128,12 +148,21 @@ export const stats = [
  */
 export const services = [
   {
+<<<<<<< HEAD
     titre: 'Formations diplômantes et certifiantes',
     href: '/formations',
     image: '/assets/images/certification.jpg',
     items: [
       'Titres RNCP reconnus par l\'État (niveaux 4 à 6)',
       'Formations certifiantes dispensées dans un organisme certifié Qualiopi',
+=======
+    titre: 'Formations Diplômantes',
+    href: '/formations',
+    image: '/assets/images/certification.jpg',
+    theme: 'navy',
+    items: [
+      'Titres RNCP reconnus par l\'État (niveaux 4 à 6)',
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       'Parcours de 6 à 18 mois, présentiel ou alternance',
       'Cybersécurité, Dev Web, IA, RH, Comptabilité',
       'Financement CPF, OPCO, France Travail',
@@ -141,7 +170,11 @@ export const services = [
   },
   {
     titre: 'Formations Courtes · E-Learning',
+<<<<<<< HEAD
     href: '/formations?type=elearning',
+=======
+    href: '/formations-courtes',
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
     image: '/assets/images/analyste_data.jpg',
     items: [
       'Modules intensifs de quelques jours à quelques semaines',

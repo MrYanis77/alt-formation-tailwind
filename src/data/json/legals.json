@@ -9,8 +9,13 @@
       "tva": "FR39811698919",
       "rcs": "811 698 919 R.C.S. Meaux",
       "telephone": "(+33) 1 60 43 94 30",
+<<<<<<< HEAD
       "email": "contact@alt-formations.com",
       "siteWeb": "www.alt-rh.com",
+=======
+      "email": "contact@altformations.fr",
+      "siteWeb": "www.altformations.fr",
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       "codeActivite": "formation continue et alternance (70.22Z)",
       "siegeSocial": "3 rue du cochet, 77700 Bailly-Romainvilliers",
       "directeurPublication": "Alexandre TSHIBANGU"
@@ -37,7 +42,11 @@
       {
         "num": 1,
         "titre": "Droit d’auteurs et droits de reproductions",
+<<<<<<< HEAD
         "contenu": "Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du site www.alt-rh.com, sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil."
+=======
+        "contenu": "Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du site www.altformations.fr, sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil."
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "num": 2,
@@ -47,12 +56,20 @@
       {
         "num": 3,
         "titre": "Décharge et responsabilité",
+<<<<<<< HEAD
         "contenu": "Certaines informations et données disponibles sur le site alt-rh.com sont produites par des tiers : la société Alt Formations s’engage à faire ses meilleurs efforts pour en garantir un caractère fiable, pertinent, exact et exhaustif, mais ne saurait être tenue pour responsable des erreurs, d’une absence de disponibilité des informations et/ou de la présence de virus sur son site. La teneur de tout retour d’information vers alt-rh.com sera réputée être non confidentielle et libre de droit. Sauf accord préalable explicite, la société Alt Formations pourra utiliser librement les idées, concepts, le savoir-faire ou les techniques contenus dans cette communication à toutes fins utiles, sans restriction, pour reproduire et divulguer toute information à des tiers. Le contenu des pages du site est présenté à titre informatif seulement et ne constitue pas une offre de vente ou un démarchage en vue de proposer des produits et services précis de Alt Formations. Alt Formations, et tous tiers impliqués dans la création de ce site, ne donnent aucune garantie, explicite ou implicite, et n’assument aucune responsabilité relative à l’utilisation de la présente publication en ligne. A ce titre, they ne peuvent être redevables à un utilisateur ou une autre partie, des dommages directs ou indirects, spéciaux, particuliers ou accessoires découlant de l’utilisation de ce site ou d’un autre site relié par un hyperlien."
+=======
+        "contenu": "Certaines informations et données disponibles sur le site altformations.fr sont produites par des tiers : la société Alt Formations s’engage à faire ses meilleurs efforts pour en garantir un caractère fiable, pertinent, exact et exhaustif, mais ne saurait être tenue pour responsable des erreurs, d’une absence de disponibilité des informations et/ou de la présence de virus sur son site. La teneur de tout retour d’information vers altformations.fr sera réputée être non confidentielle et libre de droit. Sauf accord préalable explicite, la société Alt Formations pourra utiliser librement les idées, concepts, le savoir-faire ou les techniques contenus dans cette communication à toutes fins utiles, sans restriction, pour reproduire et divulguer toute information à des tiers. Le contenu des pages du site est présenté à titre informatif seulement et ne constitue pas une offre de vente ou un démarchage en vue de proposer des produits et services précis de Alt Formations. Alt Formations, et tous tiers impliqués dans la création de ce site, ne donnent aucune garantie, explicite ou implicite, et n’assument aucune responsabilité relative à l’utilisation de la présente publication en ligne. A ce titre, ils ne peuvent être redevables à un utilisateur ou une autre partie, des dommages directs ou indirects, spéciaux, particuliers ou accessoires découlant de l’utilisation de ce site ou d’un autre site relié par un hyperlien."
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "num": 4,
         "titre": "Politique de cookies",
+<<<<<<< HEAD
         "contenu": "Comme de nombreux sites Internet, nous pouvons créer des cookies sur votre ordinateur et y accéder. Les cookies sont de petites quantités d’informations stockées dans des fichiers au sein même du navigateur de votre ordinateur. Plus spécifiquement, le site alt-rh.com utilise la solution Google Analytics pour mesurer et mieux connaître l’audience du site et de ses diverses sections (fréquence et parcours des visites, nombre de pages vues et répartition de l’audience sur le site, sources des visites, navigateur utilisé…), nous aidant ainsi à améliorer l’expérience utilisateur."
+=======
+        "contenu": "Comme de nombreux sites Internet, nous pouvons créer des cookies sur votre ordinateur et y accéder. Les cookies sont de petites quantités d’informations stockées dans des fichiers au sein même du navigateur de votre ordinateur. Plus spécifiquement, le site altformations.fr utilise la solution Google Analytics pour mesurer et mieux connaître l’audience du site et de ses diverses sections (fréquence et parcours des visites, nombre de pages vues et répartition de l’audience sur le site, sources des visites, navigateur utilisé…), nous aidant ainsi à améliorer l’expérience utilisateur."
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "num": 5,
@@ -62,7 +79,11 @@
       {
         "num": 6,
         "titre": "Loi applicable et tribunaux compétents",
+<<<<<<< HEAD
         "contenu": "Le Site www.alt-rh.com est soumis à la loi française. Les tribunaux français seront seuls compétents en cas de litige. Tous les litiges auxquels l’application des présentes conditions pourraient donner lieu, concernant tant leur validité, leur interprétation, leur exécution, leur résiliation, leurs conséquences et leurs suites et qui n’auraient pu être résolues entre les parties seront soumis aux tribunaux compétents dans les conditions de droit commun. En cas de contestation judiciaire, le litige sera de la compétence exclusive des tribunaux français compétents pour un différend opposant la Société à un non professionnel."
+=======
+        "contenu": "Le Site www.altformations.fr est soumis à la loi française. Les tribunaux français seront seuls compétents en cas de litige. Tous les litiges auxquels l’application des présentes conditions pourraient donner lieu, concernant tant leur validité, leur interprétation, leur exécution, leur résiliation, leurs conséquences et leurs suites et qui n’auraient pu être résolues entre les parties seront soumis aux tribunaux compétents dans les conditions de droit commun. En cas de contestation judiciaire, le litige sera de la compétence exclusive des tribunaux français compétents pour un différend opposant la Société à un non professionnel."
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       }
     ]
   },
@@ -70,7 +91,11 @@
     "articles": [
       {
         "titre": "Qui sommes-nous ?",
+<<<<<<< HEAD
         "contenu": "L’adresse de notre site est : https:/alt-rh.com"
+=======
+        "contenu": "L’adresse de notre site est : https://altformations.fr"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "titre": "Commentaires",
@@ -117,7 +142,11 @@
       {
         "id": 1,
         "titre": "1. Introduction",
+<<<<<<< HEAD
         "contenu": "Notre site web, https://alt-rh.com (ci-après : « le site web ») utilise des cookies et autres technologies liées (par simplification, toutes ces technologies sont désignées par le terme « cookies »). Des cookies sont également placés par des tierces parties que nous avons engagées. Dans le document ci-dessous, nous vous informons de l’utilisation des cookies sur notre site web."
+=======
+        "contenu": "Notre site web, https://altformations.fr (ci-après : « le site web ») utilise des cookies et autres technologies liées (par simplification, toutes ces technologies sont désignées par le terme « cookies »). Des cookies sont également placés par des tierces parties que nous avons engagées. Dans le document ci-dessous, nous vous informons de l’utilisation des cookies sur notre site web."
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       },
       {
         "id": 2,
@@ -162,7 +191,11 @@
       {
         "id": 10,
         "titre": "10. Coordonnées",
+<<<<<<< HEAD
         "contenu": "Alt Formations\n3 rue du cochet, 77700 Bailly-Romainvilliers, France\nSite web : https://alt-rh.com\nE-mail : contact@alt-rh.com\nNuméro de téléphone : 0160439430\nCette politique de cookies a été synchronisée avec cookiedatabase.org le 27 mars 2026."
+=======
+        "contenu": "Alt Formations\n3 rue du cochet, 77700 Bailly-Romainvilliers, France\nSite web : https://altformations.fr\nE-mail : contact@altformations.fr\nNuméro de téléphone : 0160439430\nCette politique de cookies a été synchronisée avec cookiedatabase.org le 27 mars 2026."
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       }
     ]
   },

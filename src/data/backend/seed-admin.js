@@ -3,7 +3,11 @@
  * Usage : node src/data/backend/seed-admin.js
  *
  * Variables d'environnement (toutes optionnelles) :
+<<<<<<< HEAD
  *   ADMIN_EMAIL    (defaut: admin@alt-rh.com)
+=======
+ *   ADMIN_EMAIL    (defaut: admin@altformations.fr)
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
  *   ADMIN_PASSWORD (defaut: Admin1234!)
  *   ADMIN_PRENOM   (defaut: Admin)
  *   ADMIN_NOM      (defaut: Alt Formations)
@@ -17,7 +21,11 @@ import { query } from './db.js';
 dotenv.config();
 
 async function main() {
+<<<<<<< HEAD
   const email = (process.env.ADMIN_EMAIL || 'admin@alt-rh.com').toLowerCase();
+=======
+  const email = (process.env.ADMIN_EMAIL || 'admin@altformations.fr').toLowerCase();
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   const password = process.env.ADMIN_PASSWORD || 'Admin1234!';
   const prenom = process.env.ADMIN_PRENOM || 'Admin';
   const nom = process.env.ADMIN_NOM || 'Alt Formations';

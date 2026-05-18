@@ -63,8 +63,14 @@ export default function ContactForm({ variant = 'section', title }) {
         ? data.sujet.trim()
         : `Demande de contact – ${data.prenom} ${data.nom}`;
 
+<<<<<<< HEAD
       const res = await fetch('/api/send-mail.php', {
         method: 'POST',
+=======
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        credentials: 'include',
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           nom: data.nom,
@@ -82,6 +88,10 @@ export default function ContactForm({ variant = 'section', title }) {
         throw new Error(json.error || "Erreur lors de l'envoi");
       }
 
+<<<<<<< HEAD
+=======
+      setContactId(json.contactId);
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       setStatus('success');
       reset();
     } catch (err) {

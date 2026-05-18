@@ -15,7 +15,11 @@ export default function Footer() {
             </h4>
             <ul className="list-none p-0 m-0 space-y-2">
               <li><Link to="/formations" className="text-gray-300 text-sm hover:text-white transition-colors">Toutes nos formations</Link></li>
+<<<<<<< HEAD
               <li><Link to="/formations?type=elearning" className="text-gray-300 text-sm hover:text-white transition-colors">E-Learning</Link></li>
+=======
+              <li><Link to="/e-learning" className="text-gray-300 text-sm hover:text-white transition-colors">E-Learning</Link></li>
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
               <li><Link to="/certification" className="text-gray-300 text-sm hover:text-white transition-colors">Certifications</Link></li>
               <li><Link to="/financements" className="text-gray-300 text-sm hover:text-white transition-colors">Financements</Link></li>
             </ul>
@@ -67,7 +71,11 @@ export default function Footer() {
                 />
               </div>
               <a
+<<<<<<< HEAD
                 href="/assets/documents/CERTIFICATION QUALIOPI ALT FORMATIONS.pdf"
+=======
+                href="/assets/documents/CERTIFICATION QUALIOPI NEXYTAL.pdf"
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-accent text-xs font-bold hover:underline"
@@ -94,10 +102,17 @@ export default function Footer() {
             <a href="https://www.instagram.com/altformations/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-all">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </a>
+<<<<<<< HEAD
             {/* LinkedIn
             <a href="https://www.linkedin.com/company/altformations/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-all">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
             </a> */}
+=======
+            {/* LinkedIn */}
+            <a href="https://www.linkedin.com/company/altformations/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-all">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           </div>
         </div>
       </footer>

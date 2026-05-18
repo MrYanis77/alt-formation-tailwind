@@ -4,6 +4,7 @@ import React, { useState } from 'react';
  * CardModule.jsx — Design timeline vertical moderne
  * Section Programme de formation
  */
+<<<<<<< HEAD
 const CardModule = ({ module, index, isLast, density = 'default' }) => {
   const [isOpen, setIsOpen] = useState(false);
   const compact = density === 'compact';
@@ -16,14 +17,26 @@ const CardModule = ({ module, index, isLast, density = 'default' }) => {
 
   return (
     <div className={`flex ${gapClass} group`}>
+=======
+const CardModule = ({ module, index, isLast }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="flex gap-6 group">
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 
       {/* Timeline verticale (fil + pastille) */}
       <div className="flex flex-col items-center">
         {/* Pastille numérotée */}
         <button
+<<<<<<< HEAD
           type="button"
           onClick={() => setIsOpen(!isOpen)}
           className={`relative z-10 flex-shrink-0 ${btnSize} rounded-full flex items-center justify-center font-heading font-black cursor-pointer border-2 transition-all duration-300
+=======
+          onClick={() => setIsOpen(!isOpen)}
+          className={`relative z-10 flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-heading font-black text-lg cursor-pointer border-2 transition-all duration-300
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             ${isOpen
               ? 'bg-accent border-accent text-white shadow-lg shadow-accent/30 scale-110'
               : 'bg-white border-primary/20 text-primary group-hover:border-accent group-hover:text-accent'
@@ -33,14 +46,23 @@ const CardModule = ({ module, index, isLast, density = 'default' }) => {
         </button>
         {/* Fil connecteur */}
         {!isLast && (
+<<<<<<< HEAD
           <div className={`w-0.5 flex-1 ${connectorMin} transition-colors duration-300 ${isOpen ? 'bg-accent/40' : 'bg-primary/10 group-hover:bg-accent/20'}`} />
+=======
+          <div className={`w-0.5 flex-1 min-h-[24px] transition-colors duration-300 ${isOpen ? 'bg-accent/40' : 'bg-primary/10 group-hover:bg-accent/20'}`} />
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         )}
       </div>
 
       {/* Contenu du module */}
+<<<<<<< HEAD
       <div className={`flex-1 ${contentPb} transition-all duration-300`}>
         <button
           type="button"
+=======
+      <div className={`flex-1 pb-8 transition-all duration-300 ${!isLast ? '' : ''}`}>
+        <button
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           onClick={() => setIsOpen(!isOpen)}
           className="w-full text-left cursor-pointer bg-transparent border-none p-0 flex items-center justify-between gap-4"
         >

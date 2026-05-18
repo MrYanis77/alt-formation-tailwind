@@ -72,4 +72,8 @@ export default function Faq({ data }) {
             ))}
         </div>
     );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03

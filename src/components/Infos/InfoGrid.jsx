@@ -8,12 +8,17 @@
  * - description (string) : Le corps de texte de la carte.
  * - icon (LucideIcon) : Le composant icône à rendre (ex: Wallet, Briefcase).
  * - variant (string) : "orange" (par défaut) ou "navy" pour changer la couleur de fond de l'icône.
+<<<<<<< HEAD
  * * Styles : Utilise les variables CSS globales (--color-orange, --color-muted, etc.)
+=======
+ * * Styles : Utilise les variables CSS globales (--color-orange, --color-muted, etc.) 
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
  * via les classes Tailwind configurées.
  */
 
 import React from 'react';
 
+<<<<<<< HEAD
 export default function InfoGrid({
   titre,
   description,
@@ -28,10 +33,23 @@ export default function InfoGrid({
         <div
           className={`${iconBg} rounded-full flex items-center justify-center shadow-sm text-white w-20 h-20 mb-8`}
         >
+=======
+export default function InfoGrid({ titre, description, icon: Icon, variant = "orange" }) {
+  // Détermination de la couleur de fond de l'icône via les classes personnalisées
+  const iconBg = variant === "orange" ? "bg-accent" : "bg-primary";
+
+  return (
+    <div className="bg-white border border-border rounded-card p-10 flex flex-col items-center text-center w-full shadow-sm hover:shadow-md transition-all h-full">
+      
+      {/* Conteneur de l'icône circulaire */}
+      {Icon && (
+        <div className={`${iconBg} w-20 h-20 rounded-full flex items-center justify-center mb-8 shadow-sm text-white`}>
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
           <Icon size={32} strokeWidth={2} />
         </div>
       )}
 
+<<<<<<< HEAD
       <h3 className="text-accent font-heading font-extrabold leading-tight uppercase text-2xl mb-5">
         {titre}
       </h3>
@@ -42,3 +60,17 @@ export default function InfoGrid({
     </div>
   );
 }
+=======
+      {/* Titre stylisé en majuscules */}
+      <h3 className="text-accent font-heading font-extrabold text-2xl mb-5 leading-tight uppercase">
+        {titre}
+      </h3>
+
+      {/* Texte de description avec interlignage fluide */}
+      <p className="text-content-muted font-body text-base leading-relaxed">
+        {description}
+      </p>
+    </div>
+  );
+}
+>>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
