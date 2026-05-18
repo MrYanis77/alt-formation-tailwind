@@ -69,7 +69,7 @@ export default function FormulaireCandidature({ type }) {
                 attachment: attachment
             };
 
-            const response = await fetch('/api/rejoindre', {
+            const response = await fetch('/api/send-candidature.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)

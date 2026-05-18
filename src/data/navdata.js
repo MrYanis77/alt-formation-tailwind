@@ -376,7 +376,6 @@ export const navlinks = [
   },
   { label: "Certifications", href: "/certification" },
   { label: "Financements", href: "/financements" },
-  { label: "F.A.Q", href: "/faq" },
   { label: "Bilan de Compétences", href: "/bilan-de-competences" },
   {
     label: "Ressources",
@@ -396,6 +395,7 @@ export const navlinks = [
     ],
   },
   { label: "Nos Campus", href: "/campus" },
+  { label: "F.A.Q", href: "/faq" },
   { label: "Contact", href: "/contact" },
   { label: "Nous rejoindre", href: "/nous-rejoindre" },
 ];

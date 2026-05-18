@@ -14,7 +14,6 @@ import faqRoutes from './routes/faq.js';
 import chatRoutes from './routes/chat.js';
 import adminRoutes from './routes/admin.js';
 import visitRoutes from './routes/visit.js';
-import rejoindreRoutes from './routes/rejoindre.js';
 
 dotenv.config();
 
@@ -47,9 +46,7 @@ app.use(
   })
 );
 
-// --- Body parsers : petites limites par défaut, 10mb seulement pour /rejoindre ---
-app.use('/api/rejoindre', express.json({ limit: '10mb' }));
-app.use('/api/rejoindre', express.urlencoded({ limit: '10mb', extended: true }));
+// --- Body parsers ---
 app.use(express.json({ limit: '64kb' }));
 app.use(express.urlencoded({ limit: '64kb', extended: true }));
 app.use(cookieParser());
@@ -89,7 +86,6 @@ const chatLimiter = rateLimit({
 
 app.use('/api/auth/', authLimiter);
 app.use('/api/contact', formLimiter);
-app.use('/api/rejoindre', formLimiter);
 app.use('/api/visit', visitLimiter);
 app.use('/api/chat/messages', chatLimiter);
 app.use('/api/faq/requests', chatLimiter);
@@ -104,7 +100,6 @@ app.use('/api/faq', faqRoutes);
 app.use('/api/chat', chatRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/visit', visitRoutes);
-app.use('/api/rejoindre', rejoindreRoutes);
 
 app.get('/api/health', (_req, res) => res.json({ ok: true }));
 

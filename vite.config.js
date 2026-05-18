@@ -17,11 +17,17 @@ export default defineConfig({
   ],
   server: {
     proxy: {
-      // Toutes les requêtes commençant par /api seront relayées vers votre serveur Express
+      // Les requêtes /api/*.php sont relayées vers le serveur PHP local (port 8000)
+      // En production sur OVH, Apache sert ces fichiers directement.
+      '^/api/.*\\.php$': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+      },
+      // Les autres routes /api (auth, chat, faq, admin, visit) restent sur Express
       '/api': {
         target: 'http://localhost:3000',
         changeOrigin: true,
-      }
+      },
     }
   }
 })

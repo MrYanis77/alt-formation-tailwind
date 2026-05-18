@@ -300,8 +300,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-[100] w-full bg-primary relative">
       {/* Padding gauche/droite : px-4 xl:px-8 */}
-      {/* Logo à gauche, liens centrés sur la barre, actions à droite. Écart logo ↔ zone centrale ↔ actions : gap-* ci-dessous (à modifier) */}
-      <div className="relative w-full px-4 xl:px-8 flex items-center justify-between h-[80px] gap-14 xl:gap-16 2xl:gap-20">
+      <div className="relative w-full px-4 xl:px-8 flex items-center justify-between h-[80px] gap-6 xl:gap-8">
 
         {/* Logo */}
         <Link
@@ -309,16 +308,15 @@ export default function Navbar() {
           className={`relative z-[101] flex-shrink-0 no-underline group flex items-center transition-opacity duration-200 ${isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
         >
           <img
-
-            src="/assets/Logo-2.png"
+            src="/assets/logo-altrh.png"
             alt="Logo Alt Formations"
-            className="h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            className="h-11 md:h-[52px] w-auto max-h-[52px] object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_0_6px_rgba(255,255,255,0.95)] drop-shadow-[0_0_14px_rgba(255,255,255,0.35)]"
           />
         </Link>
 
-        {/* Liens centrés (milieu de la navbar) — espacement entre chaque lien : gap-2 / 2xl:gap-6 */}
+        {/* Liens centrés — léger décalage vers la gauche pour rapprocher du logo */}
         <div className="pointer-events-none absolute inset-0 hidden xl:flex items-center justify-center z-[100]">
-          <div className="pointer-events-auto flex items-center gap-2 2xl:gap-6">
+          <div className="pointer-events-auto flex items-center gap-2 2xl:gap-6 -translate-x-14 2xl:-translate-x-20">
             {navlinks.map((item) => {
               if (item.submenu) {
                 return (
@@ -431,27 +429,28 @@ export default function Navbar() {
             </button>
           )}
         </div>
+      </div>
 
-        {activeMegaLabel === "Formations" && (
-          <FormationsMegaMenu
-            onMouseEnter={() => openMega("Formations")}
-            onMouseLeave={scheduleMegaClose}
-            onClose={() => setActiveMegaLabel(null)}
-          />
-        )}
-        {activeMegaLabel && activeMegaLabel !== "Formations" && (
-          <GenericMegaMenu
-            item={navlinks.find((n) => n.label === activeMegaLabel)}
-            onMouseEnter={() => openMega(activeMegaLabel)}
-            onMouseLeave={scheduleMegaClose}
-          />
-        )}
+      {activeMegaLabel === "Formations" && (
+        <FormationsMegaMenu
+          onMouseEnter={() => openMega("Formations")}
+          onMouseLeave={scheduleMegaClose}
+          onClose={() => setActiveMegaLabel(null)}
+        />
+      )}
+      {activeMegaLabel && activeMegaLabel !== "Formations" && (
+        <GenericMegaMenu
+          item={navlinks.find((n) => n.label === activeMegaLabel)}
+          onMouseEnter={() => openMega(activeMegaLabel)}
+          onMouseLeave={scheduleMegaClose}
+        />
+      )}
 
-        {/* ── Menu Mobile ── */}
-        <div
-          className={`fixed inset-0 bg-primary z-[90] transition-transform duration-300 xl:hidden ${isOpen ? "translate-y-0" : "-translate-y-full"
-            } flex flex-col overflow-y-auto`}
-        >
+      {/* ── Menu Mobile ── */}
+      <div
+        className={`fixed inset-0 bg-primary z-[90] transition-transform duration-300 xl:hidden ${isOpen ? "translate-y-0" : "-translate-y-full"
+          } flex flex-col overflow-y-auto`}
+      >
           <div className="flex items-center justify-end px-6 min-h-[70px] border-b border-white/10 shrink-0">
             <button
               onClick={() => setIsOpen(false)}
@@ -628,7 +627,6 @@ export default function Navbar() {
             */}
           </div>
         </div>
-      </div>
     </nav>
   );
 }

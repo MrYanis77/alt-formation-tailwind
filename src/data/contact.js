@@ -14,7 +14,7 @@ export const contactData = {
     items: [
       {
         type: "Téléphone",
-        valeur: "01 60 43 94 32",
+        valeur: "01 60 43 94 30",
         icon: "📞"
       },
       {
