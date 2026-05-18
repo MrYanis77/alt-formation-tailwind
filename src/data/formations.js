@@ -161,7 +161,7 @@ export const catalogue = [
   },
   {
     id: 'ia-data',
-    label: 'Intelligence Artificielle',
+    label: 'IA, Data & DevOps',
     items: [
       'formation-intelligence-artificielle',
       'formation-python-tosa'
@@ -169,19 +169,13 @@ export const catalogue = [
   },
   {
     id: 'ressources-humaines',
-    label: 'Ressources Humaines',
+    label: 'Ressources humaines & Comptabilité / Gestion',
     items: [
       'formations-assistante-ressources-humaines',
       'formations-assistante-de-direction',
       'formations-assistante-administratifve',
       'formations-assistante-commerciale',
       'formations-conseillerere-relation-client-a-distance',
-    ].map(mapIdToItem).filter(Boolean),
-  },
-  {
-    id: 'comptabilite-gestion',
-    label: 'Comptabilité & Gestion',
-    items: [
       'formations-community-manager',
       'formations-secretaire-comptable',
       'gestionnaire-comptable-fiscal',
@@ -286,8 +280,8 @@ function dedupeCatalogueItemsByHref(items) {
 
 /**
  * Catalogue /formations unifié : mêmes domaines que les diplômantes, fusionnés avec
- * les certifiantes lorsque l'id de catégorie est identique ; sinon les domaines
- * certifiants seuls (ex. devops) suivent dans l'ordre du JSON.
+ * les certifiantes lorsque l'id de catégorie est identique ; IA/Data absorbe les certifiantes DevOps ;
+ * les domaines certifiants seuls suivent dans l'ordre du JSON.
  */
 export const catalogueDiplomesCertifiantsFusionne = (() => {
   const certById = Object.fromEntries(catalogueCertifiantes.map((c) => [c.id, c]));
@@ -295,26 +289,35 @@ export const catalogueDiplomesCertifiantsFusionne = (() => {
   const rows = [];
 
   for (const d of catalogue) {
-    const c = certById[d.id];
     const dItems = withFormationTypeBadge(d.items, 'Diplômante');
-    if (c) {
-      mergedCertIds.add(c.id);
-      const cItems = withFormationTypeBadge(c.items, 'Certifiante');
-      const descParts = [d.description, c.description].filter(Boolean);
-      rows.push({
-        id: d.id,
-        label: d.label,
-        description: descParts.join(' ').trim(),
-        items: dedupeCatalogueItemsByHref([...dItems, ...cItems]),
-      });
+    const certBuckets = [];
+
+    if (d.id === 'ia-data') {
+      if (certById['ia-data']) {
+        mergedCertIds.add('ia-data');
+        certBuckets.push(certById['ia-data']);
+      }
+      if (certById.devops) {
+        mergedCertIds.add('devops');
+        certBuckets.push(certById.devops);
+      }
     } else {
-      rows.push({
-        id: d.id,
-        label: d.label,
-        description: d.description || '',
-        items: dItems,
-      });
+      const c = certById[d.id];
+      if (c) {
+        mergedCertIds.add(c.id);
+        certBuckets.push(c);
+      }
     }
+
+    const descParts = [d.description, ...certBuckets.map((b) => b.description)].filter(Boolean);
+    const allCertItems = certBuckets.flatMap((b) => withFormationTypeBadge(b.items, 'Certifiante'));
+
+    rows.push({
+      id: d.id,
+      label: d.label,
+      description: descParts.join(' ').trim(),
+      items: dedupeCatalogueItemsByHref([...dItems, ...allCertItems]),
+    });
   }
 
   for (const c of catalogueCertifiantes) {

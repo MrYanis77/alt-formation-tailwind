@@ -130,6 +130,15 @@ const getSubMenu = (categoryKey) => {
     }));
 };
 
+const getSubMenuMulti = (categoryKeys) => {
+  return formationsArray
+    .filter((f) => categoryKeys.includes(f.categorie) && f.type === 'longue')
+    .map((f) => ({
+      label: f.hero?.titre || f.titre || f.id,
+      href: `/formation/${f.id}`,
+    }));
+};
+
 // Sous-menu des formations courtes (E-Learning)
 const getFormationsCortesSubMenu = () => {
   return formationsCortesArray.map(f => ({
@@ -182,6 +191,25 @@ const buildMegaCategory = (categoryKey, label, href, { onlyLong = false } = {}) 
     })),
 });
 
+/** Plusieurs clés `categorie` (ex. RH + compta) — id de ligne = première clé pour ancres / fusion certifiantes. */
+const buildMegaCategoryMulti = (categoryKeys, label, href, { onlyLong = false } = {}) => {
+  const rowId = categoryKeys[0];
+  return {
+    id: rowId,
+    label,
+    href,
+    image: categoryImages[rowId] || FALLBACK_IMG,
+    formations: formationsArray
+      .filter((f) => categoryKeys.includes(f.categorie) && (!onlyLong || f.type === 'longue'))
+      .map((f) => ({
+        label: f.hero?.titre || f.titre || f.id,
+        href: `/formation/${f.id}`,
+        image: imageMap[f.id] || categoryImages[f.categorie] || categoryImages[rowId] || FALLBACK_IMG,
+        video: f.hero?.video || null,
+      })),
+  };
+};
+
 const buildElearningCategories = () => {
   const grouped = {};
   formationsCortesArray.forEach(f => {
@@ -205,28 +233,31 @@ const buildElearningCategories = () => {
   return Object.values(grouped);
 };
 
-const buildCertifiantesCategories = () => {
+const buildCertifiantesCategoriesRaw = () => {
   const grouped = {};
-  formationsCertifiantesArray.forEach(f => {
+  formationsCertifiantesArray.forEach((f) => {
     const cat = f.categorie || 'autre';
     if (!grouped[cat]) {
       grouped[cat] = {
-        id:         cat,
-        label:      cortesLabels[cat] || cat,
-        href:       `/formations#certifiantes-${cat}`,
-        image:      categoryImages[cat] || FALLBACK_IMG,
+        id: cat,
+        label: cortesLabels[cat] || cat,
+        href: `/formations#certifiantes-${cat}`,
+        image: categoryImages[cat] || FALLBACK_IMG,
         formations: [],
       };
     }
     grouped[cat].formations.push({
       label: f.hero?.titre || f.id,
-      href:  `/formation/${f.id}`,
+      href: `/formation/${f.id}`,
       image: imageMap[f.id] || categoryImages[f.categorie] || FALLBACK_IMG,
       video: f.hero?.video || null,
     });
   });
   return Object.values(grouped);
 };
+
+const buildCertifiantesCategories = () =>
+  buildCertifiantesCategoriesRaw().filter((g) => g.id !== 'devops');
 
 const getCertifiantesNavSubmenu = () => {
   const grouped = {};
@@ -244,16 +275,17 @@ const getCertifiantesNavSubmenu = () => {
       href: `/formation/${f.id}`,
     });
   });
-  return Object.values(grouped);
+  return Object.entries(grouped)
+    .filter(([cat]) => cat !== 'devops')
+    .map(([, v]) => v);
 };
 
 export const megaMenuFormations = {
   diplomantes: [
     buildMegaCategory('cybersecurite-reseaux',  'Cybersécurité, Réseaux & Infrastructure',  '/formations#diplomantes-cybersecurite-reseaux', { onlyLong: true }),
     buildMegaCategory('digital-developpement',  'Développement Web',        '/formations#diplomantes-digital-developpement', { onlyLong: true }),
-    buildMegaCategory('ia-data',                'IA & Data',                '/formations#diplomantes-ia-data', { onlyLong: true }),
-    buildMegaCategory('ressources-humaines',    'Ressources Humaines',      '/formations#diplomantes-ressources-humaines', { onlyLong: true }),
-    buildMegaCategory('comptabilite-gestion',   'Comptabilité & Gestion',   '/formations#diplomantes-comptabilite-gestion', { onlyLong: true }),
+    buildMegaCategory('ia-data',                'IA, Data & DevOps',       '/formations#diplomantes-ia-data', { onlyLong: true }),
+    buildMegaCategoryMulti(['ressources-humaines', 'comptabilite-gestion'], 'Ressources humaines & Comptabilité / Gestion', '/formations#diplomantes-ressources-humaines', { onlyLong: true }),
   ],
   certifiantes: buildCertifiantesCategories(),
   elearning: buildElearningCategories(),
@@ -268,36 +300,45 @@ function dedupeMegaFormations(list) {
   });
 }
 
-/** Lignes du méga-menu combiné : une seule entrée par id quand diplômantes et certifiantes partagent la même clé de catégorie. */
+/** Lignes du méga-menu combiné : une seule entrée par id quand diplômantes et certifiantes partagent la même clé ; IA/Data fusionne aussi les certifiantes DevOps. */
 export const megaMenuCombinedDiplCertRows = (() => {
   const diplomantes = megaMenuFormations.diplomantes;
-  const certifiantes = megaMenuFormations.certifiantes;
+  const certifiantes = buildCertifiantesCategoriesRaw();
   const certById = Object.fromEntries(certifiantes.map((c) => [c.id, c]));
   const mergedCertIds = new Set();
 
   const rows = [];
   for (const d of diplomantes) {
-    const c = certById[d.id];
-    if (c) {
-      mergedCertIds.add(c.id);
-      rows.push({
-        id: d.id,
-        label: d.label,
-        href: d.href,
-        image: d.image,
-        formations: dedupeMegaFormations([...d.formations, ...c.formations]),
-        kind: "merged",
-      });
+    const certBuckets = [];
+    if (d.id === 'ia-data') {
+      if (certById['ia-data']) {
+        mergedCertIds.add('ia-data');
+        certBuckets.push(certById['ia-data']);
+      }
+      if (certById.devops) {
+        mergedCertIds.add('devops');
+        certBuckets.push(certById.devops);
+      }
     } else {
-      rows.push({
-        id: d.id,
-        label: d.label,
-        href: d.href,
-        image: d.image,
-        formations: d.formations,
-        kind: "diplomantes",
-      });
+      const c = certById[d.id];
+      if (c) {
+        mergedCertIds.add(c.id);
+        certBuckets.push(c);
+      }
     }
+
+    const extra = certBuckets.flatMap((c) => c.formations);
+    const mergedFormations = dedupeMegaFormations([...d.formations, ...extra]);
+    const kind = certBuckets.length ? 'merged' : 'diplomantes';
+
+    rows.push({
+      id: d.id,
+      label: d.label,
+      href: d.href,
+      image: d.image,
+      formations: mergedFormations,
+      kind,
+    });
   }
   for (const c of certifiantes) {
     if (mergedCertIds.has(c.id)) continue;
@@ -325,19 +366,14 @@ const DIPLOMANTES_NAV_SUBMENU = [
     submenu: getSubMenu('digital-developpement'),
   },
   {
-    label: "IA & Data",
+    label: "IA, Data & DevOps",
     href: "/formations#diplomantes-ia-data",
     submenu: getSubMenu('ia-data'),
   },
   {
-    label: "Ressources Humaines",
+    label: "RH & Comptabilité / Gestion",
     href: "/formations#diplomantes-ressources-humaines",
-    submenu: getSubMenu('ressources-humaines'),
-  },
-  {
-    label: "Gestion & Compta",
-    href: "/formations#diplomantes-comptabilite-gestion",
-    submenu: getSubMenu('comptabilite-gestion'),
+    submenu: getSubMenuMulti(['ressources-humaines', 'comptabilite-gestion']),
   },
 ];
 

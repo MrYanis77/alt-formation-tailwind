@@ -83,6 +83,11 @@ export default function CatalogueFormationsBlock({
       }
     }
 
+    if (idPrefix === 'catalogue') {
+      if (effective === 'catalogue-comptabilite-gestion') effective = 'catalogue-ressources-humaines';
+      if (effective === 'catalogue-devops') effective = 'catalogue-ia-data';
+    }
+
     if (effective === idPrefix) {
       setActiveCategory('all');
       setTimeout(() => {
