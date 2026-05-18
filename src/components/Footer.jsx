@@ -55,6 +55,7 @@ export default function Footer() {
               <li><Link to="/mentions-legales" className="text-gray-300 text-sm hover:text-white transition-colors">Mentions légales</Link></li>
               <li><Link to="/politique-de-confidentialite" className="text-gray-300 text-sm hover:text-white transition-colors">Politique de confidentialité</Link></li>
               <li><Link to="/conditions-generales" className="text-gray-300 text-sm hover:text-white transition-colors">Conditions générales</Link></li>
+              <li><Link to="/reglement-interieur" className="text-gray-300 text-sm hover:text-white transition-colors">Règlement intérieur</Link></li>
             </ul>
 
             {/* Logo Qualiopi et Certificat PDF */}
@@ -81,8 +82,8 @@ export default function Footer() {
 
         {/* Copyright & Réseaux Sociaux */}
         <div className="border-t border-[#4a4545] pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-gray-400 text-sm">
-            &copy; {currentYear} Alt Formations. Tous droits réservés.
+          <div className="text-gray-400 text-sm text-center md:text-left">
+            <span>&copy; {currentYear} <strong className="text-gray-300">Alt RH &amp; formations</strong> &mdash; alt-rh.com. Tous droits réservés.</span>
           </div>
 
           <div className="flex items-center gap-6">
