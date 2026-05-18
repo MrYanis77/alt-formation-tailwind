@@ -5,6 +5,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import PageLoader from './components/Items/PageLoader';
+import PageShell from './components/PageShell';
 // import RequireAuth from './components/RequireAuth';
 // import ChatWidget from './components/Chat/ChatWidget';
 // import { AuthProvider } from './context/AuthContext';
@@ -81,33 +82,38 @@ function AppShell() {
           <Routes>
             <Route path="/" element={<Navigate to="/accueil" replace />} />
 
-            <Route path="/accueil" element={<HomePage />} />
-            <Route path="/formations" element={<FormationsPage />} />
-            <Route path="/alternance" element={<AlternancePage />} />
             <Route path="/e-learning" element={<RedirectFormationCatalogTab tab="elearning" />} />
             <Route path="/formations-courtes" element={<RedirectFormationCatalogTab tab="elearning" />} />
             <Route path="/formations-certifiantes" element={<RedirectFormationCatalogTab tab="certifiantes" />} />
-            <Route path="/financements" element={<FinancementPage />} />
-            <Route path="/entreprise" element={<EntreprisePage />} />
 
-            <Route path="/a-propos" element={<AproposPage />} />
-            <Route path="/blog" element={<BlogPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            {/* <Route path="/inscription" element={<InscriptionPage />} /> */}
-            {/* <Route path="/connexion" element={<ConnexionPage />} /> */}
-            <Route path="/formation/:id" element={<FormationDetail />} />
-            <Route path="/campus" element={<CampusPage />} />
-            <Route path="/certification" element={<CertificationPage />} />
-
-            <Route path="/carrieres" element={<CarrierePage />} />
             <Route path="/carriere" element={<Navigate to="/carrieres" replace />} />
             <Route path="/gestion-carrieres" element={<Navigate to="/carrieres" replace />} />
             <Route path="/coaching-emploi" element={<Navigate to="/carrieres" replace />} />
 
-            <Route path="/bilan-de-competences" element={<BilanDeCompetencePage />} />
+            <Route element={<PageShell />}>
+              <Route path="/accueil" element={<HomePage />} />
+              <Route path="/formations" element={<FormationsPage />} />
+              <Route path="/alternance" element={<AlternancePage />} />
+              <Route path="/financements" element={<FinancementPage />} />
+              <Route path="/entreprise" element={<EntreprisePage />} />
 
-            <Route path="/ressources-ia" element={<RessourcesIAPages />} />
-            <Route path="/nous-rejoindre" element={<NousRejoindre />} />
+              <Route path="/a-propos" element={<AproposPage />} />
+              <Route path="/blog" element={<BlogPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              {/* <Route path="/inscription" element={<InscriptionPage />} /> */}
+              {/* <Route path="/connexion" element={<ConnexionPage />} /> */}
+              <Route path="/formation/:id" element={<FormationDetail />} />
+              <Route path="/campus" element={<CampusPage />} />
+              <Route path="/certification" element={<CertificationPage />} />
+
+              <Route path="/carrieres" element={<CarrierePage />} />
+
+              <Route path="/bilan-de-competences" element={<BilanDeCompetencePage />} />
+
+              <Route path="/ressources-ia" element={<RessourcesIAPages />} />
+              <Route path="/nous-rejoindre" element={<NousRejoindre />} />
+            </Route>
+
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
             <Route path="/politique-de-confidentialite" element={<PolitiqueConfidentialite />} />

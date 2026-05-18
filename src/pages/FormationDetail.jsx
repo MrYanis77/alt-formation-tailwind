@@ -11,7 +11,6 @@ import FormationQuickFacts from '../components/Formation/FormationQuickFacts';
 import { Briefcase, CheckCircle, NotebookText } from 'lucide-react';
 import Breadcrumb from '../components/Breadcrumb';
 import CallToAction from '../components/CallToAction';
-import FaqSection from '../components/FaqSection';
 import FormationCertifSection from '../components/FormationCertifSection';
 
 const sectionY = 'py-12 lg:py-16';
@@ -335,8 +334,6 @@ export default function FormationDetail() {
       ) : null}
 
       <FormationCertifSection certif={certif} showFallback={showCertificationFallback} />
-
-      <FaqSection categoryId="formations" maxQuestions={4} />
 
       {data.ctaFinal ? (
         <CallToAction

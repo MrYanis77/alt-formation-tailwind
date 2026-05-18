@@ -423,6 +423,12 @@ export const navlinks = [
         description: "Fiches pratiques, outils IA et ressources pédagogiques gratuites.",
       },
       {
+        label: "Blog & actualités",
+        href: "/blog",
+        image: "/images/blog/financement-formation.jpg",
+        description: "Articles, conseils et tendances sur la formation et le digital.",
+      },
+      {
         label: "Gestion de Carrières",
         href: "/carrieres",
         image: "/assets/images/emploi.jpg",

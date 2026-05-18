@@ -159,6 +159,146 @@
                 "a": "Oui, nous proposons le bilan de compétences en format distanciel via visioconférence. Toutes les phases du bilan (entretiens, exercices, restitution) peuvent se dérouler à distance, ce qui vous permet de bénéficier de cet accompagnement quel que soit votre lieu de résidence."
             }
         ]
+    },
+    {
+        "id": "alternance",
+        "categorie": "Alternance",
+        "questions": [
+            {
+                "q": "Quelle différence entre apprentissage et professionnalisation ?",
+                "a": "Le contrat d'apprentissage s'adresse en général aux jeunes jusqu'à 29 ans (avec prolongations possibles selon les cas) et alterne centre et entreprise avec un maître d'apprentissage. Le contrat de professionnalisation vise plutôt les adultes en reclassement ou reconversion. Les deux permettent de préparer un titre professionnel tout en étant rémunéré."
+            },
+            {
+                "q": "Comment trouver une entreprise pour mon alternance ?",
+                "a": "Nos équipes vous orientent : conseils pour votre recherche, mise en avant de profils auprès de partenaires recruteurs et préparation aux entretiens. Vous restez acteur de votre candidature, mais vous n'êtes pas seul dans les démarches."
+            },
+            {
+                "q": "Quel est le rythme entre l'entreprise et le centre ?",
+                "a": "Le rythme dépend du programme et du contrat : souvent une à plusieurs semaines en entreprise puis des blocs en formation, ou un schéma défini par semaine. Il est défini dans la convention et harmonisé avec votre employeur pour respecter le référentiel de formation."
+            },
+            {
+                "q": "Suis-je rémunéré en alternance ?",
+                "a": "Oui, un salaire légal minimum s'applique selon votre âge et votre année de contrat ; certaines entreprises versent au-delà du minimum. La formation est financée par l'employeur et les dispositifs publics selon le cas."
+            },
+            {
+                "q": "Puis-je commencer une alternance en cours d'année ?",
+                "a": "Les entrées peuvent être organisées selon les sessions et les besoins des entreprises partenaires. Contactez-nous pour connaître le calendrier des rentrées et les créneaux encore disponibles pour votre métier visé."
+            }
+        ]
+    },
+    {
+        "id": "blog",
+        "categorie": "Blog",
+        "questions": [
+            {
+                "q": "À quoi sert le blog Alt Formations ?",
+                "a": "Il rassemble articles et actualités sur la formation professionnelle, les métiers du numérique et du tertiaire, les financements et les tendances (dont l'intelligence artificielle). L'objectif est d'éclairer votre projet avant même de vous inscrire."
+            },
+            {
+                "q": "À quelle fréquence publiez-vous du contenu ?",
+                "a": "Nous enrichissons régulièrement le blog avec des dossiers, témoignages et conseils pratiques. Abonnez-vous aux canaux indiqués sur le site ou consultez cette page pour les dernières publications."
+            },
+            {
+                "q": "Puis-je proposer un sujet ou une collaboration ?",
+                "a": "Les demandes de partenariat éditorial ou de mise en avant peuvent être envoyées via notre formulaire de contact en précisant votre projet et votre secteur. Notre équipe étudie les propositions en lien avec nos valeurs et nos publics."
+            },
+            {
+                "q": "Les articles remplacent-ils une séance d'information ?",
+                "a": "Non : ils complètent une veille utile mais ne substituent pas un échange personnalisé sur votre éligibilité, vos financements ou le détail d'un parcours. Prenez rendez-vous avec un conseiller pour un diagnostic adapté à votre situation."
+            }
+        ]
+    },
+    {
+        "id": "contact",
+        "categorie": "Contact",
+        "questions": [
+            {
+                "q": "Quels sont vos horaires pour vous joindre ?",
+                "a": "Nos équipes répondent du lundi au vendredi, de 9h00 à 18h00. En dehors de ces créneaux, utilisez le formulaire de contact : nous revenons vers vous dès le premier jour ouvrable."
+            },
+            {
+                "q": "Quel délai de réponse après un message ?",
+                "a": "En période normale, nous visons un retour sous 24 à 48 heures ouvrées selon la complexité de votre demande (financement, entreprise, inscription). Les pics d'activité peuvent allonger légèrement ce délai ; indiquez votre urgence dans votre message."
+            },
+            {
+                "q": "Quels canaux utiliser selon ma demande ?",
+                "a": "Le formulaire centralise les demandes individuelles et professionnelles ; précisez votre besoin (information formation, financement, entreprise, alternance). Pour un rendez-vous téléphonique, laissez vos disponibilités — un conseiller vous rappelle."
+            },
+            {
+                "q": "Mes données du formulaire sont-elles protégées ?",
+                "a": "Les informations que vous envoyez servent uniquement à traiter votre demande dans le respect du RGPD. Pour plus de détail sur la conservation et vos droits, consultez notre politique de confidentialité."
+            }
+        ]
+    },
+    {
+        "id": "campus",
+        "categorie": "Campus & Lieux",
+        "questions": [
+            {
+                "q": "Où se déroulent les cours en présentiel ?",
+                "a": "Les sessions en présentiel peuvent avoir lieu sur notre site principal ou dans des espaces partenaires selon la formation et la promotion. La convocation ou la fiche programme précise l'adresse à jour pour votre groupe."
+            },
+            {
+                "q": "Comment accéder au campus depuis les transports ?",
+                "a": "Les informations d'accès (parkings, transports en commun, navettes si applicable) sont communiquées lors de votre inscription ou sur demande auprès de l'équipe administrative. Notre siège est à Bailly-Romainvilliers ; vérifiez l'adresse exacte de votre session."
+            },
+            {
+                "q": "Quels équipements sont disponibles sur place ?",
+                "a": "Les salles sont équipées pour la formation numérique (postes, réseau, vidéoprojection selon les modules). Pour les besoins spécifiques (handicap, matériel personnel), contactez-nous avant la rentrée pour adapter l'aménagement."
+            },
+            {
+                "q": "Puis-je visiter les locaux avant de m'inscrire ?",
+                "a": "Des visites ou journées portes ouvertes peuvent être organisées selon le calendrier. Écrivez-nous via la page contact en indiquant la formation qui vous intéresse pour être informé des prochaines dates."
+            }
+        ]
+    },
+    {
+        "id": "certification",
+        "categorie": "Certification & Diplômes",
+        "questions": [
+            {
+                "q": "Qu'est-ce que le RNCP ?",
+                "a": "Le Répertoire National des Certifications Professionnelles recense les certifications reconnues par l'État (dont les Titres Professionnels). Une inscription au RNCP garantit la valeur professionnelle du diplôme délivré à l'issue de votre parcours."
+            },
+            {
+                "q": "Un Titre Professionnel équivaut à quel niveau ?",
+                "a": "Les niveaux vont typiquement du Niveau 4 (type bac) au Niveau 6 (bac+3/4) selon le référentiel du titre visé. Le niveau figure sur votre certification et facilite la poursuite d'études ou la mobilité professionnelle."
+            },
+            {
+                "q": "Alt Formations est-il certifié Qualiopi ?",
+                "a": "Oui, nous sommes certifiés Qualiopi au titre des actions de formation : c'est une exigence pour certaines prises en charge (CPF, OPCO, etc.) et un gage de qualité sur nos processus."
+            },
+            {
+                "q": "Comment vérifier qu'une formation prépare bien à un titre RNCP ?",
+                "a": "La fiche formation mentionne le code RNCP et les blocs de compétences couverts. Vous pouvez croiser ces informations sur France Compétences ; nos conseillers peuvent vous expliquer les débouchés associés au titre."
+            },
+            {
+                "q": "La certification est-elle la même en présentiel et à distance ?",
+                "a": "Le diplôme ou titre délivré est identique lorsque le même référentiel et les mêmes modalités d'évaluation sont respectés. Le format (présentiel, distanciel ou mixte) ne change pas la reconnaissance de la certification."
+            }
+        ]
+    },
+    {
+        "id": "ia",
+        "categorie": "Ressources & Formations IA",
+        "questions": [
+            {
+                "q": "À qui s'adressent les ressources sur l'intelligence artificielle ?",
+                "a": "À tout public curieux ou en reconversion : salariés, candidats à une formation, chefs de projet ou managers souhaitant comprendre les usages de l'IA en entreprise sans jargon inutile."
+            },
+            {
+                "q": "Les contenus remplacent-ils une formation certifiante ?",
+                "a": "Les ressources complètent votre veille ; pour une certification reconnue ou un métier de la data et de l'IA, orientez-vous vers nos parcours certifiants listés dans le catalogue formations."
+            },
+            {
+                "q": "Sous quel format sont disponibles les ressources ?",
+                "a": "Selon les publications : articles, fiches pratiques, liens vers outils ou événements. L'objectif est un accès rapide et actionnable, avec des pistes pour aller plus loin avec un conseiller si besoin."
+            },
+            {
+                "q": "Puis-je être orienté vers une formation IA après lecture ?",
+                "a": "Oui : utilisez le formulaire de contact ou demandez un rendez-vous pour un positionnement sur nos parcours numériques et IA, les prérequis et les financements possibles."
+            }
+        ]
     }
 ]
 
