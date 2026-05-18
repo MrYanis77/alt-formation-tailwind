@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { useState, useMemo, useCallback } from 'react';
-=======
-import { useState, useMemo } from 'react';
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 import { Link, useLocation } from 'react-router-dom';
 import Hero from '../components/Hero/Hero';
 import Breadcrumb from '../components/Breadcrumb';
@@ -19,19 +15,12 @@ const FALLBACK_IMG = 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?
  * Props :
  * - hero        : { titre, sousTitre, video }
  * - breadcrumb  : string (label du dernier fil d'Ariane)
-<<<<<<< HEAD
  * - catalogue   : Array<{ id, label, description, items: [{ titre, imageUrl, href, typeBadge? }] }>
  * - categoryIcons : Record<string, ReactNode> (optionnel)
  * - cta         : { titre, sousTitre, bouton, lien } (optionnel)
  * - crossLinks  : Array<{ label, to }> (optionnel — liens vers les autres types de formations)
  * - afterBreadcrumbSlot : ReactNode (optionnel — ex. onglets catalogue)
  * - cardTypeBadge : string (optionnel — pastille commune sur chaque carte)
-=======
- * - catalogue   : Array<{ id, label, description, items: [{ titre, features, imageUrl, href }] }>
- * - categoryIcons : Record<string, ReactNode> (optionnel)
- * - cta         : { titre, sousTitre, bouton, lien } (optionnel)
- * - crossLinks  : Array<{ label, to }> (optionnel — liens vers les autres types de formations)
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
  */
 export default function CatalogueFormationsPage({
   hero,
@@ -40,17 +29,13 @@ export default function CatalogueFormationsPage({
   categoryIcons = {},
   cta,
   crossLinks = [],
-<<<<<<< HEAD
   afterBreadcrumbSlot = null,
   cardTypeBadge,
-=======
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeCategory, setActiveCategory] = useState('all');
   const location = useLocation();
 
-<<<<<<< HEAD
   const scrollToCatalogueHeading = useCallback((categoryId) => {
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
@@ -71,8 +56,6 @@ export default function CatalogueFormationsPage({
     [scrollToCatalogueHeading]
   );
 
-=======
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   // Scroll vers l'ancre si présente dans l'URL
   useMemo(() => {
     if (location.hash) {
@@ -114,11 +97,8 @@ export default function CatalogueFormationsPage({
       {/* ── BREADCRUMB ── */}
       <Breadcrumb items={[{ label: 'Accueil', to: '/accueil' }, { label: breadcrumb }]} />
 
-<<<<<<< HEAD
       {afterBreadcrumbSlot}
 
-=======
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       {/* ── FILTRE & RECHERCHE ── */}
       <FiltreCat
         categories={catalogue.map(cat => ({
@@ -127,11 +107,7 @@ export default function CatalogueFormationsPage({
           icon: categoryIcons[cat.id] || <Filter className="w-3.5 h-3.5" />,
         }))}
         activeCat={activeCategory}
-<<<<<<< HEAD
         setActiveCat={handleFilterCategoryChange}
-=======
-        setActiveCat={setActiveCategory}
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         allValue="all"
         allLabel="Tous les domaines"
         sectionLabel="Domaines"
@@ -140,7 +116,6 @@ export default function CatalogueFormationsPage({
         searchPlaceholder="Rechercher une formation…"
       />
 
-<<<<<<< HEAD
       {/* ── CATALOGUE (ancre pour scroll depuis les filtres) ── */}
       <div id="catalogue-formations-root" className="space-y-4 py-12 scroll-mt-[280px]">
         {visibleCatalogue.length > 0 ? (
@@ -152,16 +127,6 @@ export default function CatalogueFormationsPage({
                 id={cat.id}
                 className="max-w-container-3xl mx-auto px-6 mb-10 scroll-mt-[280px]"
               >
-=======
-      {/* ── CATALOGUE ── */}
-      <div className="space-y-4 py-12">
-        {visibleCatalogue.length > 0 ? (
-          visibleCatalogue.map(cat => (
-            <section key={cat.id} id={cat.id} className="scroll-mt-[180px] animate-fade-in">
-
-              {/* Header catégorie */}
-              <div className="max-w-container-3xl mx-auto px-6 mb-10">
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent">
                     {categoryIcons[cat.id] || <Filter className="w-6 h-6" />}
@@ -181,26 +146,16 @@ export default function CatalogueFormationsPage({
               {/* Grille formations */}
               <div className="px-6">
                 <div className="max-w-container-3xl mx-auto">
-<<<<<<< HEAD
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-=======
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     {cat.items.map((item, idx) => (
                       <CardFormation
                         key={idx}
                         title={item.titre}
                         image={item.imageUrl || FALLBACK_IMG}
-<<<<<<< HEAD
                         variant="white"
                         href={item.href}
                         typeBadge={item.typeBadge || cardTypeBadge}
                         compact
-=======
-                        points={item.features}
-                        variant="white"
-                        href={item.href}
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                       />
                     ))}
                   </div>
@@ -217,16 +172,12 @@ export default function CatalogueFormationsPage({
             <h3 className="text-xl font-bold text-primary mb-2">Aucune formation trouvée</h3>
             <p className="text-content-muted">Essayez d'ajuster vos critères de recherche.</p>
             <button
-<<<<<<< HEAD
               type="button"
               onClick={() => {
                 setSearchTerm('');
                 setActiveCategory('all');
                 scrollToCatalogueHeading('all');
               }}
-=======
-              onClick={() => { setSearchTerm(''); setActiveCategory('all'); }}
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
               className="mt-6 text-accent font-bold hover:underline"
             >
               Réinitialiser les filtres

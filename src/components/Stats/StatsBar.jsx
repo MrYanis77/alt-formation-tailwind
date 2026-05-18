@@ -43,19 +43,12 @@ export default function StatsBar({ stats }) {
           {stats.map((stat, idx) => (
             <div
               key={idx}
-<<<<<<< HEAD
               className="flex items-center group transition-all duration-300 hover:bg-white/5 gap-5 px-8 py-7"
             >
               {/* Icône avec cercle accent */}
               <div
                 className="flex-shrink-0 rounded-full bg-accent/15 flex items-center justify-center text-accent group-hover:bg-accent/25 transition-colors duration-300 w-14 h-14"
               >
-=======
-              className="flex items-center gap-5 px-8 py-7 group transition-all duration-300 hover:bg-white/5"
-            >
-              {/* Icône avec cercle accent */}
-              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-accent/15 flex items-center justify-center text-accent group-hover:bg-accent/25 transition-colors duration-300">
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                 {iconMap[stat.icon]}
               </div>
 
@@ -74,8 +67,4 @@ export default function StatsBar({ stats }) {
       </div>
     </div>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03

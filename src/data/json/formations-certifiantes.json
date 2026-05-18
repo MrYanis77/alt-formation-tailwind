@@ -4,7 +4,6 @@
     "type": "certifiante",
     "hero": {
       "titre": "DASA DevOps Fundamentals",
-<<<<<<< HEAD
       "sousTitre": "Avec Alt Formation, renforcez votre culture DevOps et préparez la certification DASA : articulation entre équipes, livraison continue et indicateurs utiles au terrain.",
       "video": "/assets/video/formations/dev_equipe.mp4"
     },
@@ -40,30 +39,6 @@
       "Relier prestation de services, organisation et indicateurs",
       "Identifier les leviers d’automatisation et de livraison continue pertinents pour votre SI",
       "Préparer l’examen DASA DevOps Fundamentals dans de bonnes conditions"
-=======
-      "sousTitre": "Appréhendez les concepts-clés de DevOps, maîtrisez les processus de prestation de services et préparez la certification officielle DASA.",
-      "video": "/assets/video/formations/dev-web-mobile.mp4"
-    },
-    "stats": [
-      { "label": "Durée", "value": "3 jours" },
-      { "label": "Modalité", "value": "Présentiel" },
-      { "label": "Public visé", "value": "Professionnels IT" },
-      { "label": "Tarif", "value": "2 200 €" }
-    ],
-    "presentation": {
-      "titre": "DASA DevOps Fundamentals",
-      "paragraphes": [
-        "Cette formation vous permet d'appréhender les concepts-clés et les principes de DevOps dans un cadre officiel certifiant reconnu par la DevOps Agile Skills Association (DASA).",
-        "Vous comprendrez le processus de prestation de services, les modèles organisationnels DevOps et les enjeux de la transformation numérique au sein des équipes IT.",
-        "À l'issue de la formation, vous maîtriserez les concepts d'automatisation des tests, de l'infrastructure, de l'approvisionnement et du déploiement continu, et serez prêt(e) à passer l'examen de certification DASA DevOps Fundamentals."
-      ]
-    },
-    "objectifs": [
-      "Appréhender les concepts-clés et les principes de DevOps",
-      "Comprendre le processus de prestation de services",
-      "Maîtriser les concepts de l'automatisation des tests, de l'infrastructure, de l'approvisionnement et du déploiement",
-      "Préparer et réussir la certification DASA DevOps Fundamentals"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
     ],
     "programme": {
       "dureeTotale": "3 jours — Formation présentielle intensive avec ateliers et examen blanc",
@@ -114,7 +89,6 @@
     },
     "evaluation": {
       "titre": "Évaluation & Progression",
-<<<<<<< HEAD
       "description": "Alt Formation met en place un suivi clair : objectifs personnels en amont, retours du formateur pendant le parcours, évaluations en fin de module et regard sur la satisfaction.",
       "etapes": [
         "Avant la session : cadrage de vos objectifs et auto-positionnement sur les thématiques.",
@@ -122,15 +96,6 @@
         "En fin de parcours : validation par QCM et/ou ateliers selon le dispositif retenu.",
         "Questionnaire de satisfaction à chaud.",
         "À distance dans le temps : possibilité de bilan à froid pour mesurer l’impact en entreprise."
-=======
-      "description": "Un dispositif complet d'évaluation tout au long de la formation pour mesurer vos progrès.",
-      "etapes": [
-        "Avant la formation : questionnaire d'objectifs personnels et d'auto-évaluation des thématiques abordées.",
-        "Pendant la formation : observations personnalisées du formateur avec conseils sur les points forts et points de vigilance.",
-        "En fin de formation : QCM et/ou ateliers pratiques pour évaluer vos nouvelles compétences et votre progression.",
-        "Questionnaire de satisfaction à chaud à l'issue de la session.",
-        "Questionnaire d'auto-évaluation à froid proposé 6 à 9 mois après la formation pour mesurer les bénéfices acquis."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       ]
     },
     "infosPratiques": {
@@ -139,7 +104,6 @@
         "points": [
           "Durée : 3 jours",
           "Format : Présentiel",
-<<<<<<< HEAD
           "Tarif standard : 2 170 €",
           "Prix avec certification : 2 170 €",
           "Public visé : Professionnels impliqués dans le développement et la fourniture de services informatiques",
@@ -149,14 +113,6 @@
           "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
           "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
           "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
-=======
-          "Tarif standard : 2 200 €",
-          "Prix avec certification : 2 200 €",
-          "Référence : Num_devop_02",
-          "Public visé : Professionnels impliqués dans le développement et la fourniture de services informatiques",
-          "Disponible en Inter-Entreprise et Intra-Entreprise",
-          "Formation disponible sur demande"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         ]
       },
       "prerequis": {
@@ -167,7 +123,6 @@
         ]
       }
     },
-<<<<<<< HEAD
     "methodologie": "Alt Formation alterne apports structurants, échanges sur vos cas et mises en situation pour ancrer les pratiques DevOps dans votre contexte quotidien.",
     "certification": "DASA DevOps Fundamentals",
     "competences": [
@@ -177,17 +132,6 @@
       "Identifier des actions d’automatisation de la chaîne de livraison",
       "Choisir des pistes de mesure pour piloter la performance IT",
       "Entrer dans la préparation à l’examen DASA DevOps Fundamentals"
-=======
-    "methodologie": "Cette formation repose sur une combinaison de constructions participatives, de mises en perspectives par des apports théoriques et méthodologiques, et de mises en situation (simulation et jeux de rôle) permettant de mettre en évidence les difficultés et de découvrir progressivement les méthodes et techniques appropriées.",
-    "certification": "DASA DevOps Fundamentals",
-    "competences": [
-      "Appréhender les concepts-clés et principes de DevOps",
-      "Comprendre la culture et l'organisation DevOps",
-      "Maîtriser les processus Agile, Scrum et Lean appliqués à DevOps",
-      "Mettre en œuvre l'automatisation de la livraison continue",
-      "Mesurer et améliorer la performance IT",
-      "Passer l'examen de certification DASA DevOps Fundamentals"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
     ],
     "metiersVises": [
       "Développeur / Ingénieur logiciel",
@@ -198,7 +142,6 @@
     ],
     "ctaFinal": {
       "titre": "Prêt à obtenir votre certification DevOps ?",
-<<<<<<< HEAD
       "sousTitre": "Un conseiller Alt Formation vous aide à caler les dates et le format (inter / intra). Réponse sous 48 h ouvrées en général.",
       "boutons": [
         {
@@ -208,21 +151,11 @@
       ]
     }
   },
-=======
-      "sousTitre": "Formation disponible sur demande en Inter ou Intra-Entreprise. Contactez-nous pour planifier une session adaptée à vos besoins.",
-      "boutons": [
-        { "label": "NOUS CONTACTER" }
-      ]
-    }
-  },
-
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   "devops-methode-organisation": {
     "categorie": "devops",
     "type": "certifiante",
     "hero": {
       "titre": "DevOps, méthode et organisation",
-<<<<<<< HEAD
       "sousTitre": "Alt Formation vous propose un parcours pour relier culture d’équipe, chaîne de déploiement et culture de la mesure, avec des ateliers directement exploitables.",
       "video": "/assets/video/formations/dev_equipe.mp4"
     },
@@ -259,31 +192,6 @@
       "Structurer une vision de la livraison continue adaptée à votre contexte",
       "Donner du sens aux métriques et aux boucles de feedback",
       "Prioriser des étapes réalistes pour avancer après la formation"
-=======
-      "sousTitre": "Découvrez les fondements du mouvement DevOps, maîtrisez la chaîne de déploiement continu et développez le culte de la mesure en équipe.",
-      "video": "/assets/video/formations/dev-web-mobile.mp4"
-    },
-    "stats": [
-      { "label": "Durée", "value": "2 jours" },
-      { "label": "Modalité", "value": "Présentiel" },
-      { "label": "Public visé", "value": "Professionnels IT" },
-      { "label": "Tarif", "value": "1 800 €" }
-    ],
-    "presentation": {
-      "titre": "DevOps, méthode et organisation",
-      "paragraphes": [
-        "Cette formation vous permet de découvrir l'origine du mouvement DevOps et d'accompagner culturellement l'évolution vers une organisation DevOps au sein de votre équipe.",
-        "Vous maîtriserez la chaîne de déploiement continu : les bons réflexes, les outils essentiels et les rituels collaboratifs qui font la force des équipes DevOps performantes.",
-        "À travers des ateliers ludinnovants et des travaux pratiques concrets, vous développerez le culte de la mesure, identifierez les étapes clés pour mettre en œuvre la démarche et repartirez avec un plan d'action opérationnel."
-      ]
-    },
-    "objectifs": [
-      "Faire découvrir l'origine du mouvement DevOps",
-      "Accompagner culturellement l'évolution vers le DevOps",
-      "Maîtriser la chaîne de déploiement continu : les bons réflexes, les outils, les rituels collaboratifs",
-      "Développer le culte de la mesure et mettre en œuvre les bonnes pratiques",
-      "Identifier les principales étapes pour mettre en œuvre la démarche"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
     ],
     "programme": {
       "dureeTotale": "2 jours — Ateliers collaboratifs et travaux pratiques sur chaque module",
@@ -316,7 +224,6 @@
     },
     "evaluation": {
       "titre": "Évaluation & Progression",
-<<<<<<< HEAD
       "description": "Alt Formation met en place un suivi clair : objectifs personnels en amont, retours du formateur pendant le parcours, évaluations en fin de module et regard sur la satisfaction.",
       "etapes": [
         "Avant la session : cadrage de vos objectifs et auto-positionnement sur les thématiques.",
@@ -324,15 +231,6 @@
         "En fin de parcours : validation par QCM et/ou ateliers selon le dispositif retenu.",
         "Questionnaire de satisfaction à chaud.",
         "À distance dans le temps : possibilité de bilan à froid pour mesurer l’impact en entreprise."
-=======
-      "description": "Un dispositif complet d'évaluation tout au long de la formation pour mesurer vos progrès.",
-      "etapes": [
-        "Avant la formation : questionnaire d'objectifs personnels et d'auto-évaluation des thématiques abordées.",
-        "Pendant la formation : observations personnalisées du formateur avec conseils sur les points forts et points de vigilance.",
-        "En fin de formation : QCM et/ou ateliers pratiques pour évaluer vos nouvelles compétences et votre progression.",
-        "Questionnaire de satisfaction à chaud à l'issue de la session.",
-        "Questionnaire d'auto-évaluation à froid proposé 6 à 9 mois après la formation pour mesurer les bénéfices acquis."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       ]
     },
     "infosPratiques": {
@@ -341,7 +239,6 @@
         "points": [
           "Durée : 2 jours",
           "Format : Présentiel",
-<<<<<<< HEAD
           "Tarif standard : 1 770 €",
           "Public visé : Toute personne voulant faire carrière en DevOps",
           "Disponible en Inter-Entreprise et Intra-Entreprise",
@@ -350,13 +247,6 @@
           "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
           "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
           "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
-=======
-          "Tarif standard : 1 800 €",
-          "Référence : Num_devop_01",
-          "Public visé : Toute personne voulant faire carrière en DevOps",
-          "Disponible en Inter-Entreprise et Intra-Entreprise",
-          "Formation disponible sur demande"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         ]
       },
       "prerequis": {
@@ -367,7 +257,6 @@
         ]
       }
     },
-<<<<<<< HEAD
     "methodologie": "Alt Formation alterne apports structurants, échanges sur vos cas et mises en situation pour ancrer les pratiques DevOps dans votre contexte quotidien.",
     "certification": "Formation non certifiante",
     "competences": [
@@ -377,17 +266,6 @@
       "Assembler tests, livraison et déploiement dans une vision cohérente",
       "Utiliser des métriques pour décider et ajuster",
       "Sortir avec un backlog DevOps et une vision tableau de bord"
-=======
-    "methodologie": "Cette formation repose sur une combinaison de constructions participatives, de mises en perspectives par des apports théoriques et méthodologiques, et de mises en situation (simulation et jeux de rôle) permettant de mettre en évidence les difficultés et de découvrir progressivement les méthodes et techniques appropriées.",
-    "certification": "Formation non certifiante",
-    "competences": [
-      "Comprendre les fondements et l'histoire du mouvement DevOps",
-      "Constituer et animer des équipes pluridisciplinaires DevOps",
-      "Mettre en place une chaîne de déploiement continu",
-      "Automatiser les tests, la livraison et le déploiement",
-      "Mesurer la performance IT et piloter par les données",
-      "Construire un Backlog DevOps et un Dashboard d'équipe"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
     ],
     "metiersVises": [
       "Développeur / Ingénieur logiciel",
@@ -398,7 +276,6 @@
     ],
     "ctaFinal": {
       "titre": "Prêt à transformer votre organisation en DevOps ?",
-<<<<<<< HEAD
       "sousTitre": "Un conseiller Alt Formation vous aide à caler les dates et le format (inter / intra). Réponse sous 48 h ouvrées en général.",
       "boutons": [
         {
@@ -3562,11 +3439,6 @@
           "label": "NOUS CONTACTER",
           "url": "/contact"
         }
-=======
-      "sousTitre": "Formation disponible sur demande en Inter ou Intra-Entreprise. Contactez-nous pour planifier une session adaptée à vos besoins.",
-      "boutons": [
-        { "label": "NOUS CONTACTER" }
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       ]
     }
   }

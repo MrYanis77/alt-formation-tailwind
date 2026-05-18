@@ -7,11 +7,7 @@ import formationsCertifiantesData from './json/formations-certifiantes.json';
  * Les fichiers se trouvent dans /public/assets/images/
  */
 export const imageMap = {
-<<<<<<< HEAD
   // ── Cybersécurité, Réseaux & Infrastructure ───────────────────────────────
-=======
-  // ── Cybersécurité & Réseaux ─────────────────────────────────────────────
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   'formations-administrateur-dinfrastructures-securisees-ais': '/assets/images/expert_cyber.jpg',
   'formations-technicien-superieur-systemes-et-reseaux': '/assets/images/Terchnicien_reseau.jpg',
   'administrateur-reseaux-netops': '/assets/images/Datacenter.jpg',
@@ -47,10 +43,6 @@ export const imageMap = {
   // ── E-Learning / Formations Courtes ─────────────────────────────────────
   'systemes-embarques-iot-android':                    '/assets/images/concepteur_app.jpg',
   'cybersecurite-pentest-web-serveurs':                '/assets/images/pentester.jpg',
-<<<<<<< HEAD
-=======
-  'cybersecurite-audit-android-introduction':          '/assets/images/analyst_soc.jpg',
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   'cybersecurite-preparation-osed':                    '/assets/images/expert_cyber.jpg',
   'cybersecurite-pecb-lead-cloud-security-manager':    '/assets/images/Datacenter.jpg',
   'digital-developpement-big-data-strategie-marketing':'/assets/images/analyste_data.jpg',
@@ -62,7 +54,6 @@ export const imageMap = {
   'management-management-3-0':                         '/assets/images/certification.jpg',
   'devops-devenez-devops-avec-docker':                 '/assets/images/devops.jpg',
   'informatique-administration-windows-server':        '/assets/images/admin_system.jpg',
-<<<<<<< HEAD
   'istqb-testeur-certifie-niveau-fondation-ihmisen':     '/assets/images/concepteur_app.jpg',
   'istqb-testeur-agile-fondation-ib-cegos':             '/assets/images/concepteur_app.jpg',
   'istqb-tests-acceptation-fondation-m2i':               '/assets/images/concepteur_app.jpg',
@@ -89,8 +80,6 @@ export const imageMap = {
   'cybersecurite-isc2-cissp': '/assets/images/expert_cyber.jpg',
   'devsecops-engineering-dsoe': '/assets/images/devops.jpg',
   'programmation-objet-cpp': '/assets/images/concepteur_app.jpg',
-=======
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 };
 
 // Fallback si un ID n'est pas encore dans le mapping
@@ -130,11 +119,7 @@ const mapCertifianteIdToItem = (id) => {
     titre: data.hero.titre,
     features: (data.competences || []).slice(0, 3),
     competences: data.competences || [],
-<<<<<<< HEAD
     imageUrl: data.presentation?.image || imageMap[id] || FALLBACK_IMAGE,
-=======
-    imageUrl: imageMap[id] || FALLBACK_IMAGE,
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
     href: `/formation/${id}`
   };
 };
@@ -148,11 +133,7 @@ export const hero = {
 export const catalogue = [
   {
     id: 'cybersecurite-reseaux',
-<<<<<<< HEAD
     label: 'Cybersécurité, Réseaux & Infrastructure',
-=======
-    label: 'Cybersécurité & Réseaux',
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
     items: [
       'formations-administrateur-dinfrastructures-securisees-ais',
       'formations-technicien-superieur-systemes-et-reseaux',
@@ -180,11 +161,7 @@ export const catalogue = [
   },
   {
     id: 'ia-data',
-<<<<<<< HEAD
     label: 'IA, Data & DevOps',
-=======
-    label: 'Intelligence Artificielle',
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
     items: [
       'formation-intelligence-artificielle',
       'formation-python-tosa'
@@ -192,26 +169,13 @@ export const catalogue = [
   },
   {
     id: 'ressources-humaines',
-<<<<<<< HEAD
     label: 'Ressources humaines & Comptabilité / Gestion',
-=======
-    label: 'Ressources Humaines',
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
     items: [
       'formations-assistante-ressources-humaines',
       'formations-assistante-de-direction',
       'formations-assistante-administratifve',
       'formations-assistante-commerciale',
       'formations-conseillerere-relation-client-a-distance',
-<<<<<<< HEAD
-=======
-    ].map(mapIdToItem).filter(Boolean),
-  },
-  {
-    id: 'comptabilite-gestion',
-    label: 'Comptabilité & Gestion',
-    items: [
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       'formations-community-manager',
       'formations-secretaire-comptable',
       'gestionnaire-comptable-fiscal',
@@ -265,13 +229,10 @@ export const catalogueCourtes = (() => {
 })();
 
 const categoriesCertifiantes = {
-<<<<<<< HEAD
   'cybersecurite-reseaux': {
     label: 'Cybersécurité, Réseaux & Infrastructure',
     description: 'Cybersécurité, conformité, réseaux, cloud et virtualisation certifiants.',
   },
-=======
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   'devops': {
     label: 'DevOps',
     description: 'Formations certifiantes DevOps, méthodes agiles et organisation.',
@@ -280,14 +241,11 @@ const categoriesCertifiantes = {
     label: 'DevSecOps',
     description: 'Sécurité intégrée au cycle DevOps, pratiques et outils DevSecOps.',
   },
-<<<<<<< HEAD
   'digital-developpement': {
     label: 'Développement & Big Data',
     description:
       'SQL, langages, développement logiciel, ISTQB et qualité logicielle certifiants.',
   },
-=======
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 };
 
 export const catalogueCertifiantes = (() => {
@@ -307,7 +265,6 @@ export const catalogueCertifiantes = (() => {
   }));
 })();
 
-<<<<<<< HEAD
 function withFormationTypeBadge(items, badge) {
   return items.map((item) => ({ ...item, typeBadge: badge }));
 }
@@ -376,8 +333,6 @@ export const catalogueDiplomesCertifiantsFusionne = (() => {
   return rows;
 })();
 
-=======
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 export const heroCertifiantes = {
   titre: "Formations Certifiantes",
   sousTitre: "Des formations pratiques et certifiées pour booster vos compétences professionnelles.",

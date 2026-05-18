@@ -25,28 +25,17 @@ IP_HASH_SALT=change-moi-pour-un-secret-aleatoire-long
 # CORS : liste séparée par des virgules d'origines autorisées
 # (en dev, par défaut http://localhost:5173 et http://127.0.0.1:5173)
 # En prod, indiquez explicitement le domaine du frontend, ex.:
-<<<<<<< HEAD
 # CORS_ORIGINS=https://www.alt-rh.com,https://alt-rh.com
-=======
-# CORS_ORIGINS=https://www.altformations.fr,https://altformations.fr
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 CORS_ORIGINS=
 
 # Email (Resend) - obligatoire pour l'envoi des emails
 RESEND_API_KEY=ta_cle_resend
 # Adresse expéditrice : utiliser un domaine vérifié sur Resend en production
 RESEND_FROM=onboarding@resend.dev
-<<<<<<< HEAD
 EMAIL_DESTINATAIRE=contact@alt-rh.com
 
 # Compte admin par défaut (utilisé par seed:admin)
 ADMIN_EMAIL=admin@alt-rh.com
-=======
-EMAIL_DESTINATAIRE=contact@altformations.fr
-
-# Compte admin par défaut (utilisé par seed:admin)
-ADMIN_EMAIL=admin@altformations.fr
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 ADMIN_PASSWORD=Admin1234!
 ADMIN_PRENOM=Admin
 ADMIN_NOM=Alt Formations

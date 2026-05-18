@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React, { useState, useCallback } from 'react'; // Ajout de useState
-=======
-import React, { useState } from 'react'; // Ajout de useState
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 import { certifications, hero, categories } from '../data/certification'; // Import des catégories
 import CardFormation from '../components/Card/CardFormation';
 import Breadcrumb from '../components/Breadcrumb';
@@ -13,7 +9,6 @@ import CallToAction from '../components/CallToAction';
 export default function CertificationPage() {
   const [activeCategory, setActiveCategory] = useState("Tous");
 
-<<<<<<< HEAD
   const scrollToCertificationGrid = useCallback(() => {
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
@@ -33,8 +28,6 @@ export default function CertificationPage() {
     [scrollToCertificationGrid]
   );
 
-=======
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   // Logique de filtrage
   const filteredCertifs = activeCategory === "Tous"
     ? certifications
@@ -60,17 +53,10 @@ export default function CertificationPage() {
       <FiltreCat
         categories={categories}
         activeCat={activeCategory}
-<<<<<<< HEAD
         setActiveCat={handleFilterCategoryChange}
       />
 
       <section id="catalogue-certifications-root" className="pb-20 px-6 scroll-mt-[280px]">
-=======
-        setActiveCat={setActiveCategory}
-      />
-
-      <section className="pb-20 px-6">
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         <div className="max-w-container-3xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* On utilise filteredCertifs au lieu de certifications */}
@@ -80,15 +66,6 @@ export default function CertificationPage() {
                 title={certif.nom}
                 image={certif.imageUrl || "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80"}
                 href={certif.lienFranceCompetence}
-<<<<<<< HEAD
-=======
-                points={[
-                  `Code RNCP : ${certif.rncp}`,
-                  `Niveau : ${certif.niveau}`,
-                  "Éligible au compte CPF",
-                  "Formation reconnue par l'État"
-                ]}
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
               />
             ))}
           </div>

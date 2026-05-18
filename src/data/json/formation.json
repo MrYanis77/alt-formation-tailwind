@@ -1,11 +1,7 @@
 {
     "formations-administrateur-dinfrastructures-securisees-ais": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Administrateur·rice d’infrastructures sécurisées",
-=======
-            "titre": "Devenez Administrateur d’infrastructures sécurisées",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Concevez, administrez et sécurisez les infrastructures informatiques des entreprises.",
             "video": "/assets/video/formations/admin-infra.mp4"
         },
@@ -25,18 +21,13 @@
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "L’Administrateur·rice d’infrastructures sécurisées est un pilier stratégique du système d’information. Il·elle conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection. Son rôle est central : il·elle intervient aussi bien sur les serveurs, les réseaux, les systèmes que sur les enjeux de cybersécurité, en veillant à la continuité d’activité et à la protection des données. 👉 C’est un métier à forte responsabilité, recherché par les entreprises confrontées à des enjeux croissants de sécurité informatique."
-=======
-            "paragraphes": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôle est central : il intervient aussi bien sur les serveurs, les réseaux, les systèmes que sur les enjeux de cybersécurité , en veillant à la continuité d’activité et à la protection des données. 👉 C’est un métier à forte responsabilité, recherché par les entreprises confrontées à des enjeux croissants de sécurité informatique."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Administrateur·rice systèmes et réseaux",
                     "salaire": "Selon expérience"
                 },
@@ -54,25 +45,6 @@
                 },
                 {
                     "titre": "Administrateur·rice cloud junior",
-=======
-                    "titre": "Administrateur systèmes et réseaux",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Administrateur d’infrastructures sécurisées",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Technicien systèmes & réseaux confirmé",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Technicien sécurité informatique",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Administrateur cloud junior",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "Selon expérience"
                 }
             ],
@@ -134,11 +106,7 @@
                 "titre": "Public concerné & Prérequis",
                 "points": [
                     "Personnes en reconversion vers les métiers de l’IT.",
-<<<<<<< HEAD
                     "Technicien·ne·s souhaitant monter en compétences.",
-=======
-                    "Techniciens souhaitant monter en compétences.",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "Profils attirés par les systèmes, réseaux et la sécurité.",
                     "Motivation, rigueur et intérêt pour l’informatique requis."
                 ]
@@ -153,11 +121,7 @@
             "Documentation technique et bonnes pratiques IT."
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Administrateur·rice d’infrastructures sécurisées ?",
-=======
-            "titre": "Prêt à devenir Administrateur d’infrastructures sécurisées ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -169,38 +133,25 @@
     },
     "formations-developpeur-web-mobile": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Développeur·euse Web & Mobile",
-=======
-            "titre": "Devenez Développeur Web & Mobile",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Concevez des applications web et mobiles performantes, du front-end au back-end.",
             "video": "/assets/video/formations/dev-web-mobile.mp4"
         },
         "stats": [
             {
                 "label": "Certification",
-<<<<<<< HEAD
                 "value": "Titre professionnel Développeur·euse Web & Web Mobile Niveau RNCP à préciser"
-=======
-                "value": "Titre professionnel Développeur Web & Web Mobile Niveau RNCP à préciser"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             }
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "Le·la Développeur·euse Web & Web Mobile conçoit et développe des applications accessibles via un navigateur ou un terminal mobile. Il·elle travaille sur la partie visible (interface utilisateur) comme sur la partie technique (serveur, base de données), en veillant à la performance, à la sécurité et à l’expérience utilisateur. Il·elle collabore avec des chef·fe·s de projet, designers et autres développeur·euse·s dans des environnements agiles ou classiques."
-=======
-            "paragraphes": "Le Développeur Web & Web Mobile conçoit et développe des applications accessibles via un navigateur ou un terminal mobile. Il travaille sur la partie visible (interface utilisateur) comme sur la partie technique (serveur, base de données), en veillant à la performance, à la sécurité et à l’expérience utilisateur. Il collabore avec des chefs de projet, designers et autres développeurs dans des environnements agiles ou classiques."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Développeur·euse Web",
                     "salaire": "Selon expérience"
                 },
@@ -218,25 +169,6 @@
                 },
                 {
                     "titre": "Développeur·euse Full Stack junior",
-=======
-                    "titre": "Développeur Web",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Développeur Web Mobile",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Intégrateur Web",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Développeur Front-end / Back-end",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Développeur Full Stack junior",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "Selon expérience"
                 }
             ],
@@ -299,15 +231,9 @@
                 "titre": "Public concerné & Prérequis",
                 "points": [
                     "Personnes en reconversion professionnelle",
-<<<<<<< HEAD
                     "Salarié·e·s souhaitant évoluer dans le numérique",
                     "Demandeur·euse·s d’emploi",
                     "Jeunes adultes attiré·e·s par les métiers du web et du mobile"
-=======
-                    "Salariés souhaitant évoluer dans le numérique",
-                    "Demandeurs d’emploi",
-                    "Jeunes adultes attirés par les métiers du web et du mobile"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                 ]
             }
         },
@@ -320,11 +246,7 @@
             "Mise en production et maintenance applicative"
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Développeur·euse Web & Mobile ?",
-=======
-            "titre": "Prêt à devenir Développeur Web & Mobile ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -336,11 +258,7 @@
     },
     "formations-developpeur-dapplications-multimedia": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Développeur·euse d’applications multimédia",
-=======
-            "titre": "Devenez Développeur d’applications multimédia",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Créez des applications interactives alliant graphisme, animation, son et vidéo.",
             "video": "/assets/video/formations/dev-app.mp4"
         },
@@ -351,27 +269,18 @@
             },
             {
                 "label": "Certification",
-<<<<<<< HEAD
                 "value": "Titre professionnel Développeur·euse d’Applications Niveau RNCP à préciser"
-=======
-                "value": "Titre professionnel Développeur d’Applications Niveau RNCP à préciser"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             }
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "Développeur·euse d’Applications Multimédia : un métier créatif et technique. Le·la Développeur·euse d’Applications Multimédia conçoit des applications interactives intégrant différents médias (graphisme, animation, son, vidéo). Il·elle intervient sur des projets variés : applications web, mobiles, interfaces interactives, supports numériques ou expériences immersives. Il·elle travaille en collaboration avec des designers, chef·fe·s de projet et équipes techniques afin de proposer des solutions performantes, ergonomiques et innovantes."
-=======
-            "paragraphes": "Développeur d’Applications Multimédia : un métier créatif et technique Le Développeur d’Applications Multimédia conçoit des applications interactives intégrant différents médias (graphisme, animation, son, vidéo). Il intervient sur des projets variés : applications web, mobiles, interfaces interactives, supports numériques ou expériences immersives. Il travaille en collaboration avec des designers, chefs de projet et équipes techniques afin de proposer des solutions performantes, ergonomiques et innovantes."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Développeur·euse d’applications multimédia",
                     "salaire": "Selon expérience"
                 },
@@ -389,25 +298,6 @@
                 },
                 {
                     "titre": "Chargé·e de projets numériques interactifs",
-=======
-                    "titre": "Développeur d’applications multimédia",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Développeur front-end",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Intégrateur multimédia",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Développeur web ou mobile orienté UX",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Chargé de projets numériques interactifs",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "Selon expérience"
                 }
             ],
@@ -446,13 +336,8 @@
             "modalites": {
                 "titre": "Modalités d'apprentissage",
                 "points": [
-<<<<<<< HEAD
                     "Demandeur·euse·s d’emploi",
                     "Salarié·e·s en reconversion ou évolution professionnelle",
-=======
-                    "Demandeurs d’emploi",
-                    "Salariés en reconversion ou évolution professionnelle",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "Jeunes adultes souhaitant accéder aux métiers du numérique",
                     "Toute personne intéressée par le développement multimédia",
                     "Financement : CPF",
@@ -463,13 +348,8 @@
             "prerequis": {
                 "titre": "Public concerné & Prérequis",
                 "points": [
-<<<<<<< HEAD
                     "Demandeur·euse·s d’emploi",
                     "Salarié·e·s en reconversion ou évolution professionnelle",
-=======
-                    "Demandeurs d’emploi",
-                    "Salariés en reconversion ou évolution professionnelle",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "Jeunes adultes souhaitant accéder aux métiers du numérique",
                     "Toute personne intéressée par le développement multimédia"
                 ]
@@ -484,11 +364,7 @@
             "Tests, maintenance et optimisation des applications"
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Développeur·euse d’applications multimédia ?",
-=======
-            "titre": "Prêt à devenir Développeur d’applications multimédia ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -500,38 +376,25 @@
     },
     "formations-concepteur-developpeur-dapplications": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Concepteur·rice Développeur·euse d’Applications",
-=======
-            "titre": "Devenez Concepteur Développeur d’Applications",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Concevez et développez des applications logicielles complètes, de l'analyse des besoins à la mise en production.",
             "video": "/assets/video/formations/dev-app.mp4"
         },
         "stats": [
             {
                 "label": "Certification",
-<<<<<<< HEAD
                 "value": "Titre professionnel Concepteur·rice Développeur·euse d’Applications"
-=======
-                "value": "Titre professionnel Concepteur Développeur d’Applications"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             }
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "Le·la Concepteur·rice Développeur·euse d’Applications conçoit et développe des applications logicielles complètes répondant à des besoins métiers spécifiques. Il·elle intervient sur l’analyse des besoins, la conception technique, le développement, les tests et la maintenance des solutions applicatives. Il·elle travaille en collaboration avec des chef·fe·s de projet, développeur·euse·s, designers et équipes métiers, dans des environnements agiles ou classiques."
-=======
-            "paragraphes": "Le Concepteur Développeur d’Applications conçoit et développe des applications logicielles complètes répondant à des besoins métiers spécifiques. Il intervient sur l’analyse des besoins, la conception technique, le développement, les tests et la maintenance des solutions applicatives. Il travaille en collaboration avec des chefs de projet, développeurs, designers et équipes métiers, dans des environnements agiles ou classiques."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Concepteur·rice Développeur·euse d’Applications",
                     "salaire": "Selon expérience"
                 },
@@ -553,29 +416,6 @@
                 }
             ],
             "secteurs": "Concepteur·rice Développeur·euse d’Applications"
-=======
-                    "titre": "Concepteur Développeur d’Applications",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Développeur d’applications",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Développeur back-end / full stack",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Analyste programmeur",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Développeur logiciel",
-                    "salaire": "Selon expérience"
-                }
-            ],
-            "secteurs": "Concepteur Développeur d’Applications"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "programme": {
             "dureeTotale": "Programme complet – voir brochure pour les détails",
@@ -676,13 +516,8 @@
             "prerequis": {
                 "titre": "Public concerné & Prérequis",
                 "points": [
-<<<<<<< HEAD
                     "Demandeur·euse·s d’emploi",
                     "Salarié·e·s en reconversion ou évolution professionnelle",
-=======
-                    "Demandeurs d’emploi",
-                    "Salariés en reconversion ou évolution professionnelle",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "Personnes souhaitant accéder aux métiers du développement applicatif"
                 ]
             }
@@ -696,11 +531,7 @@
             "Travail en équipe projet"
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Concepteur·rice Développeur·euse d’Applications ?",
-=======
-            "titre": "Prêt à devenir Concepteur Développeur d’Applications ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -712,38 +543,25 @@
     },
     "formations-technicien-superieur-systemes-et-reseaux": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Technicien·ne supérieur·e systèmes et réseaux",
-=======
-            "titre": "Devenez Technicien supérieur systèmes et réseaux",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Installez, configurez et maintenez les infrastructures informatiques des organisations.",
             "video": "/assets/video/formations/technicien-sr.mp4"
         },
         "stats": [
             {
                 "label": "Certification",
-<<<<<<< HEAD
                 "value": "Titre professionnel Technicien·ne Supérieur·e Systèmes et Réseaux Certification reconnue par l’État Niveau RNCP"
-=======
-                "value": "Titre professionnel Technicien Supérieur Systèmes et Réseaux Certification reconnue par l’État Niveau RNCP"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             }
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "Le·la Technicien·ne Supérieur·e Systèmes et Réseaux assure l’installation, la configuration et la maintenance des infrastructures informatiques d’une organisation. Il·elle veille à la disponibilité des systèmes, à la sécurité des réseaux et accompagne les utilisateurs dans leur usage quotidien des outils numériques. Il·elle travaille en lien avec les équipes informatiques, les prestataires et les utilisateurs finaux."
-=======
-            "paragraphes": "Le Technicien Supérieur Systèmes et Réseaux assure l’installation, la configuration et la maintenance des infrastructures informatiques d’une organisation. Il veille à la disponibilité des systèmes, à la sécurité des réseaux et accompagne les utilisateurs dans leur usage quotidien des outils numériques. Il travaille en lien avec les équipes informatiques, les prestataires et les utilisateurs finaux."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Technicien·ne systèmes et réseaux",
                     "salaire": "Selon expérience"
                 },
@@ -761,25 +579,6 @@
                 },
                 {
                     "titre": "Assistant·e administrateur·rice IT",
-=======
-                    "titre": "Technicien systèmes et réseaux",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Administrateur systèmes junior",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Technicien support informatique",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Technicien réseau",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Assistant administrateur IT",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "Selon expérience"
                 }
             ],
@@ -884,13 +683,8 @@
             "prerequis": {
                 "titre": "Public concerné & Prérequis",
                 "points": [
-<<<<<<< HEAD
                     "Demandeur·euse·s d’emploi",
                     "Salarié·e·s en reconversion ou évolution professionnelle",
-=======
-                    "Demandeurs d’emploi",
-                    "Salariés en reconversion ou évolution professionnelle",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "Personnes souhaitant accéder aux métiers des systèmes et réseaux"
                 ]
             }
@@ -904,11 +698,7 @@
             "Documentation et procédures IT"
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Technicien·ne supérieur·e systèmes et réseaux ?",
-=======
-            "titre": "Prêt à devenir Technicien supérieur systèmes et réseaux ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -920,11 +710,7 @@
     },
     "formations-lead-developpeur-web": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Lead Développeur·euse Web",
-=======
-            "titre": "Devenez Lead Développeur Web",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Pilotez des projets web complexes, coordonnez vos équipes et définissez les choix d'architecture.",
             "video": "/assets/video/formations/dev-app.mp4"
         },
@@ -935,27 +721,18 @@
             },
             {
                 "label": "Certification",
-<<<<<<< HEAD
                 "value": "Titre professionnel Lead Développeur·euse Web"
-=======
-                "value": "Titre professionnel Lead Développeur Web"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             }
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "Le·la Lead Développeur·euse Web conçoit, développe et supervise des applications web complexes. Il·elle coordonne les équipes techniques, définit les choix d’architecture, veille à la qualité du code et assure la mise en production des projets. Il·elle joue un rôle clé entre les équipes techniques, les chef·fe·s de projet et les clients, en garantissant le respect des délais, des performances et des standards de développement."
-=======
-            "paragraphes": "Le Lead Développeur Web conçoit, développe et supervise des applications web complexes. Il coordonne les équipes techniques, définit les choix d’architecture, veille à la qualité du code et assure la mise en production des projets. Il joue un rôle clé entre les équipes techniques, les chefs de projet et les clients, en garantissant le respect des délais, des performances et des standards de développement."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Lead Développeur·euse Web",
                     "salaire": "Selon expérience"
                 },
@@ -965,17 +742,6 @@
                 },
                 {
                     "titre": "Chef·fe de projet technique",
-=======
-                    "titre": "Lead Développeur Web",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Développeur Web senior",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Chef de projet technique",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "Selon expérience"
                 },
                 {
@@ -1074,11 +840,7 @@
                 "points": [
                     "Personnes souhaitant évoluer vers des fonctions techniques avancées",
                     "Profils attirés par le développement web et la gestion de projet",
-<<<<<<< HEAD
                     "Candidat·e·s en reconversion ou en évolution professionnelle",
-=======
-                    "Candidats en reconversion ou en évolution professionnelle",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "Financement : Alternance",
                     "Financement : Financements selon situation (à étudier)"
                 ]
@@ -1088,11 +850,7 @@
                 "points": [
                     "Personnes souhaitant évoluer vers des fonctions techniques avancées",
                     "Profils attirés par le développement web et la gestion de projet",
-<<<<<<< HEAD
                     "Candidat·e·s en reconversion ou en évolution professionnelle"
-=======
-                    "Candidats en reconversion ou en évolution professionnelle"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                 ]
             }
         },
@@ -1106,11 +864,7 @@
             "Respect des normes de sécurité et de performance"
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Lead Développeur·euse Web ?",
-=======
-            "titre": "Prêt à devenir Lead Développeur Web ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -1142,11 +896,7 @@
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "Ce métier central vous permet d'intervenir sur la gestion administrative, le développement des talents et la stratégie des ressources humaines au sein de l'entreprise. Vous serez l'interlocuteur·rice clé entre la direction et les collaborateur·rice·s, garantissant un environnement de travail épanouissant et conforme à la législation."
-=======
-            "paragraphes": "Ce métier central vous permet d'intervenir sur la gestion administrative, le développement des talents et la stratégie des ressources humaines au sein de l'entreprise. Vous serez l'interlocuteur clé entre la direction et les collaborateurs, garantissant un environnement de travail épanouissant et conforme à la législation."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
@@ -1157,11 +907,7 @@
                     "salaire": "24K€ - 35K€ brut/an"
                 },
                 {
-<<<<<<< HEAD
                     "titre": "Assistant·e de direction / RH",
-=======
-                    "titre": "Assistant de direction / RH",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "22K€ - 30K€ brut/an"
                 }
             ],
@@ -1233,11 +979,7 @@
             "Préparation et gestion des éléments de paie"
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Community Manager ?",
-=======
-            "titre": "Prêt à devenir Community Manager ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -1249,11 +991,7 @@
     },
     "formations-assistante-ressources-humaines": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Assistant·e Ressources Humaines",
-=======
-            "titre": "Devenez Assistant Ressources Humaines",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Gérez l'administration du personnel, participez au recrutement et contribuez au bon climat social de l'entreprise.",
             "video": "/assets/video/formations/rh.mp4"
         },
@@ -1273,18 +1011,13 @@
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "L'Assistant·e Ressources Humaines gère les dossiers administratifs du personnel, de l'embauche jusqu'au départ du ou de la salarié·e. Il ou elle prépare les éléments fixes et variables de la paie, participe aux processus de recrutement et aide au déploiement du plan de développement des compétences. 👉 C'est un métier polyvalent et humain, indispensable au bon fonctionnement de toute entreprise ou structure."
-=======
-            "paragraphes": "L'Assistant Ressources Humaines gère les dossiers administratifs du personnel, de l'embauche jusqu'au départ du salarié. Il ou elle prépare les éléments fixes et variables de la paie, participe aux processus de recrutement et aide au déploiement du plan de développement des compétences. 👉 C'est un métier polyvalent et humain, indispensable au bon fonctionnement de toute entreprise ou structure."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine des RH.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Assistant·e Ressources Humaines",
                     "salaire": "Selon expérience"
                 },
@@ -1298,21 +1031,6 @@
                 },
                 {
                     "titre": "Assistant·e formation",
-=======
-                    "titre": "Assistant Ressources Humaines",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Assistant de gestion du personnel",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Chargé de recrutement junior",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Assistant formation",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "Selon expérience"
                 }
             ],
@@ -1324,11 +1042,7 @@
                 {
                     "id": 1,
                     "title": "Administration du personnel",
-<<<<<<< HEAD
                     "description": "Gérer les contrats, les absences, les congés et les dossiers salarié·e·s.",
-=======
-                    "description": "Gérer les contrats, les absences, les congés et les dossiers salariés.",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "duration": "Module 1"
                 },
                 {
@@ -1379,11 +1093,7 @@
             "Assurer la communication interne RH."
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Assistant·e Ressources Humaines ?",
-=======
-            "titre": "Prêt à devenir Assistant Ressources Humaines ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -1395,11 +1105,7 @@
     },
     "formations-assistante-administratifve": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Assistant·e Administratif·ve",
-=======
-            "titre": "Devenez Assistant Administratif",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Gérez l'accueil, le courrier et l'administration courante pour assurer le bon fonctionnement des services.",
             "video": "/assets/video/formations/administration.mp4"
         },
@@ -1419,30 +1125,18 @@
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "Ce métier central vous permet d'intervenir sur la gestion administrative, le développement des talents et la stratégie des ressources humaines au sein de l'entreprise. Vous serez l'interlocuteur·rice clé entre la direction et les collaborateur·rice·s, garantissant un environnement de travail épanouissant et conforme à la législation."
-=======
-            "paragraphes": "Ce métier central vous permet d'intervenir sur la gestion administrative, le développement des talents et la stratégie des ressources humaines au sein de l'entreprise. Vous serez l'interlocuteur clé entre la direction et les collaborateurs, garantissant un environnement de travail épanouissant et conforme à la législation."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine administratif.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Assistant·e Administratif·ve",
                     "salaire": "24K€ - 35K€ brut/an"
                 },
                 {
                     "titre": "Assistant·e de direction / RH",
-=======
-                    "titre": "Assistant Administratif",
-                    "salaire": "24K€ - 35K€ brut/an"
-                },
-                {
-                    "titre": "Assistant de direction / RH",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "22K€ - 30K€ brut/an"
                 }
             ],
@@ -1510,11 +1204,7 @@
             "Préparation et gestion des éléments de paie"
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Assistant·e Administratif·ve ?",
-=======
-            "titre": "Prêt à devenir Assistant Administratif ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -1526,11 +1216,7 @@
     },
     "formations-assistante-commerciale": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Assistant·e Commercial·e",
-=======
-            "titre": "Devenez Assistant Commercial",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Assurez le suivi commercial en tant qu'interface clé entre clients, commerciaux et services internes.",
             "video": "/assets/video/formations/administration.mp4"
         },
@@ -1550,30 +1236,18 @@
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "Ce métier central vous permet d'intervenir sur la gestion administrative, le développement des talents et la stratégie des ressources humaines au sein de l'entreprise. Vous serez l'interlocuteur·rice clé entre la direction et les collaborateur·rice·s, garantissant un environnement de travail épanouissant et conforme à la législation."
-=======
-            "paragraphes": "Ce métier central vous permet d'intervenir sur la gestion administrative, le développement des talents et la stratégie des ressources humaines au sein de l'entreprise. Vous serez l'interlocuteur clé entre la direction et les collaborateurs, garantissant un environnement de travail épanouissant et conforme à la législation."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Assistant·e Commercial·e",
                     "salaire": "24K€ - 35K€ brut/an"
                 },
                 {
                     "titre": "Assistant·e de direction / RH",
-=======
-                    "titre": "Assistant Commercial",
-                    "salaire": "24K€ - 35K€ brut/an"
-                },
-                {
-                    "titre": "Assistant de direction / RH",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "22K€ - 30K€ brut/an"
                 }
             ],
@@ -1645,11 +1319,7 @@
             "Préparation et gestion des éléments de paie"
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Assistant·e Commercial·e ?",
-=======
-            "titre": "Prêt à devenir Assistant Commercial ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -1692,11 +1362,7 @@
                     "salaire": "26K€ - 38K€ brut/an"
                 },
                 {
-<<<<<<< HEAD
                     "titre": "Assistant·e de direction / COMPTABILITE",
-=======
-                    "titre": "Assistant de direction / COMPTABILITE",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "22K€ - 30K€ brut/an"
                 }
             ],
@@ -1764,11 +1430,7 @@
             "Utilisation des ERP et logiciels comptables"
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Secrétaire Comptable ?",
-=======
-            "titre": "Prêt à devenir Secrétaire Comptable ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -1780,11 +1442,7 @@
     },
     "formations-conseillerere-relation-client-a-distance": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Conseiller·ère Relation Client à Distance",
-=======
-            "titre": "Devenez Conseiller Relation Client à Distance",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Assurez l'accueil, le conseil et l'assistance à distance pour garantir la satisfaction client.",
             "video": "/assets/video/contact.mp4"
         },
@@ -1804,30 +1462,18 @@
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "Ce métier central vous permet d'intervenir sur la gestion administrative, le développement des talents et la stratégie des ressources humaines au sein de l'entreprise. Vous serez l'interlocuteur·rice clé entre la direction et les collaborateur·rice·s, garantissant un environnement de travail épanouissant et conforme à la législation."
-=======
-            "paragraphes": "Ce métier central vous permet d'intervenir sur la gestion administrative, le développement des talents et la stratégie des ressources humaines au sein de l'entreprise. Vous serez l'interlocuteur clé entre la direction et les collaborateurs, garantissant un environnement de travail épanouissant et conforme à la législation."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler en centre de relation client ou en entreprise.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Conseiller·ère Relation Client à Distance",
                     "salaire": "24K€ - 35K€ brut/an"
                 },
                 {
                     "titre": "Assistant·e de direction / RH",
-=======
-                    "titre": "Conseiller Relation Client à Distance",
-                    "salaire": "24K€ - 35K€ brut/an"
-                },
-                {
-                    "titre": "Assistant de direction / RH",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "22K€ - 30K€ brut/an"
                 }
             ],
@@ -1895,11 +1541,7 @@
             "Préparation et gestion des éléments de paie"
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Conseiller·ère Relation Client ?",
-=======
-            "titre": "Prêt à devenir Conseiller Relation Client ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -1911,11 +1553,7 @@
     },
     "administrateur-reseaux-netops": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Administrateur·rice Réseaux NetOps",
-=======
-            "titre": "Devenez administrateur Réseaux NetOps",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Configurez, supervisez et automatisez les infrastructures réseau modernes avec les outils NetOps.",
             "video": "/assets/video/formations/admin-infra.mp4"
         },
@@ -1926,27 +1564,18 @@
             },
             {
                 "label": "Certification",
-<<<<<<< HEAD
                 "value": "Titre professionnel Administrateur·rice Réseaux NetOps Certification inscrite au RNCP 36163 Niveau 6 – équivalent Bac +3 / Bac +4"
-=======
-                "value": "Titre professionnel Administrateur Réseaux NetOps Certification inscrite au RNCP 36163 Niveau 6 – équivalent Bac +3 / Bac +4"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             }
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "La formation Administrateur·rice Réseaux NetOps prépare aux métiers de l’administration et de l’automatisation des infrastructures réseau modernes. Elle permet d’acquérir les compétences nécessaires pour configurer, supervisez et sécurisez des réseaux informatiques complexes, qu’ils soient déployés en entreprise, dans un datacenter ou dans le cloud. Ce parcours mène à l’obtention d’un Titre Professionnel de niveau 6 (équivalent Bac +3/4) reconnu par l’État et inscrit au Répertoire National des Certifications Professionnelles (RNCP 36163). Les apprenant·e·s développent une expertise dans l’administration réseau, l’automatisation des infrastructures et la supervision des systèmes afin d’assurer la continuité, la sécurité et la performance des réseaux informatiques."
-=======
-            "paragraphes": "La formation Administrateur Réseaux NetOps prépare aux métiers de l’administration et de l’automatisation des infrastructures réseau modernes. Elle permet d’acquérir les compétences nécessaires pour configurer, superviser et sécuriser des réseaux informatiques complexes , qu’ils soient déployés en entreprise, dans un datacenter ou dans le cloud. Ce parcours mène à l’obtention d’un Titre Professionnel de niveau 6 (équivalent Bac +3/4) reconnu par l’État et inscrit au Répertoire National des Certifications Professionnelles (RNCP 36163) . Les apprenants développent une expertise dans l’administration réseau, l’automatisation des infrastructures et la supervision des systèmes afin d’assurer la continuity, la sécurité et la performance des réseaux informatiques ."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Administrateur·rice réseaux",
                     "salaire": "Selon expérience"
                 },
@@ -1968,29 +1597,6 @@
                 },
                 {
                     "titre": "Consultant·e infrastructures IT",
-=======
-                    "titre": "Administrateur réseaux",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Administrateur systèmes et réseaux",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Ingénieur NetOps",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Administrateur infrastructures cloud",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Ingénieur réseaux datacenter",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Consultant infrastructures IT",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "Selon expérience"
                 }
             ],
@@ -2011,13 +1617,8 @@
             "modalites": {
                 "titre": "Modalités d'apprentissage",
                 "points": [
-<<<<<<< HEAD
                     "Demandeur·euse·s d’emploi",
                     "Salarié·e·s en reconversion ou évolution professionnelle",
-=======
-                    "Demandeurs d’emploi",
-                    "Salariés en reconversion ou évolution professionnelle",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "Jeunes souhaitant accéder aux métiers du numérique",
                     "Toute personne intéressée par les métiers des réseaux informatiques",
                     "Financement : CPF",
@@ -2029,13 +1630,8 @@
             "prerequis": {
                 "titre": "Public concerné & Prérequis",
                 "points": [
-<<<<<<< HEAD
                     "Demandeur·euse·s d’emploi",
                     "Salarié·e·s en reconversion ou évolution professionnelle",
-=======
-                    "Demandeurs d’emploi",
-                    "Salariés en reconversion ou évolution professionnelle",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "Jeunes souhaitant accéder aux métiers du numérique",
                     "Toute personne souhaitant se spécialiser dans l’administration réseau"
                 ]
@@ -2049,11 +1645,7 @@
             "Diagnostic et résolution d’incidents réseau"
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Administrateur·rice Réseaux NetOps ?",
-=======
-            "titre": "Prêt à devenir administrateur Réseaux NetOps ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -2065,11 +1657,7 @@
     },
     "administrateursysteme-devops": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Administrateur·rice système DevOps",
-=======
-            "titre": "Devenez Administrateur système DevOps",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Concevez, administrez et sécurisez les infrastructures informatiques des entreprises.",
             "video": "/assets/video/formations/technicien-sr.mp4"
         },
@@ -2089,18 +1677,13 @@
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "L’Administrateur·rice d’infrastructures sécurisées est un pilier stratégique du système d’information. Il·elle conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection. Son rôle est central : il·elle intervient aussi bien sur les serveurs, les réseaux, les systèmes que sur les enjeux de cybersécurité, en veillant à la continuité d’activité et à la protection des données. 👉 C’est un métier à forte responsabilité, recherché par les entreprises confrontées à des enjeux croissants de sécurité informatique."
-=======
-            "paragraphes": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôle est central : il intervient aussi bien sur les serveurs, les réseaux, les systèmes que sur les enjeux de cybersécurité , en veillant à la continuité d’activité et à la protection des données. 👉 C’est un métier à forte responsabilité, recherché par les entreprises confrontées à des enjeux croissants de sécurité informatique."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Administrateur·rice systèmes et réseaux",
                     "salaire": "Selon expérience"
                 },
@@ -2118,25 +1701,6 @@
                 },
                 {
                     "titre": "Administrateur·rice cloud junior",
-=======
-                    "titre": "Administrateur systèmes et réseaux",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Administrateur d’infrastructures sécurisées",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Technicien systèmes & réseaux confirmé",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Technicien sécurité informatique",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Administrateur cloud junior",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "Selon expérience"
                 }
             ],
@@ -2198,11 +1762,7 @@
                 "titre": "Public concerné & Prérequis",
                 "points": [
                     "Personnes en reconversion vers les métiers de l’IT.",
-<<<<<<< HEAD
                     "Technicien·ne·s souhaitant monter en compétences.",
-=======
-                    "Techniciens souhaitant monter en compétences.",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "Profils attirés par les systèmes, réseaux et la sécurité.",
                     "Motivation, rigueur et intérêt pour l’informatique requis."
                 ]
@@ -2217,11 +1777,7 @@
             "Documentation technique et bonnes pratiques IT."
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Administrateur·rice système DevOps ?",
-=======
-            "titre": "Prêt à devenir Administrateur système DevOps ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -2233,11 +1789,7 @@
     },
     "technicien-reseaux-cybersecurite": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Technicien·ne réseaux cybersécurité",
-=======
-            "titre": "Devenez Technicien réseaux cybersécurité",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Concevez, administrez et sécurisez les infrastructures informatiques des entreprises.",
             "video": "/assets/video/formations/cyber.mp4"
         },
@@ -2257,18 +1809,13 @@
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "L’Administrateur·rice d’infrastructures sécurisées est un pilier stratégique du système d’information. Il·elle conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection. Son rôle est central : il·elle intervient aussi bien sur les serveurs, les réseaux, les systèmes que sur les enjeux de cybersécurité, en veillant à la continuité d’activité et à la protection des données. 👉 C’est un métier à forte responsabilité, recherché par les entreprises confrontées à des enjeux croissants de sécurité informatique."
-=======
-            "paragraphes": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôle est central : il intervient aussi bien sur les serveurs, les réseaux, les systèmes que sur les enjeux de cybersécurité , en veillant à la continuité d’activité et à la protection des données. 👉 C’est un métier à forte responsabilité, recherché par les entreprises confrontées à des enjeux croissants de sécurité informatique."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Administrateur·rice systèmes et réseaux",
                     "salaire": "Selon expérience"
                 },
@@ -2286,25 +1833,6 @@
                 },
                 {
                     "titre": "Administrateur·rice cloud junior",
-=======
-                    "titre": "Administrateur systèmes et réseaux",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Administrateur d’infrastructures sécurisées",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Technicien systèmes & réseaux confirmé",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Technicien sécurité informatique",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Administrateur cloud junior",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "Selon expérience"
                 }
             ],
@@ -2366,11 +1894,7 @@
                 "titre": "Public concerné & Prérequis",
                 "points": [
                     "Personnes en reconversion vers les métiers de l’IT.",
-<<<<<<< HEAD
                     "Technicien·ne·s souhaitant monter en compétences.",
-=======
-                    "Techniciens souhaitant monter en compétences.",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "Profils attirés par les systèmes, réseaux et la sécurité.",
                     "Motivation, rigueur et intérêt pour l’informatique requis."
                 ]
@@ -2385,11 +1909,7 @@
             "Documentation technique et bonnes pratiques IT."
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Technicien·ne réseaux cybersécurité ?",
-=======
-            "titre": "Prêt à devenir Technicien réseaux cybersécurité ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -2421,18 +1941,13 @@
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "L’Administrateur·rice d’infrastructures sécurisées est un pilier stratégique du système d’information. Il·elle conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection. Son rôle est central : il·elle intervient aussi bien sur les serveurs, les réseaux, les systèmes que sur les enjeux de cybersécurité, en veillant à la continuité d’activité et à la protection des données. 👉 C’est un métier à forte responsabilité, recherché par les entreprises confrontées à des enjeux croissants de sécurité informatique."
-=======
-            "paragraphes": "L’Administrateur d’infrastructures sécurisées est un pilier stratégique du système d’information . Il conçoit, administre et sécurise les infrastructures informatiques afin de garantir leur disponibilité, leur performance et leur protection . Son rôle est central : il intervient aussi bien sur les serveurs, les réseaux, les systèmes que sur les enjeux de cybersécurité , en veillant à la continuité d’activité et à la protection des données. 👉 C’est un métier à forte responsabilité, recherché par les entreprises confrontées à des enjeux croissants de sécurité informatique."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Administrateur·rice systèmes et réseaux",
                     "salaire": "Selon expérience"
                 },
@@ -2450,25 +1965,6 @@
                 },
                 {
                     "titre": "Administrateur·rice cloud junior",
-=======
-                    "titre": "Administrateur systèmes et réseaux",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Administrateur d’infrastructures sécurisées",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Technicien systèmes & réseaux confirmé",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Technicien sécurité informatique",
-                    "salaire": "Selon expérience"
-                },
-                {
-                    "titre": "Administrateur cloud junior",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "Selon expérience"
                 }
             ],
@@ -2503,11 +1999,7 @@
                 },
                 {
                     "id": 5,
-<<<<<<< HEAD
                     "title": "Supervision, maintenance et continuité de service",
-=======
-                    "title": "Supervision, maintenance et continuity de service",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "description": "Module 5 de la formation.",
                     "duration": "À définir"
                 },
@@ -2534,11 +2026,7 @@
                 "titre": "Public concerné & Prérequis",
                 "points": [
                     "Personnes en reconversion vers les métiers de l’IT.",
-<<<<<<< HEAD
                     "Technicien·ne·s souhaitant monter en compétences.",
-=======
-                    "Techniciens souhaitant monter en compétences.",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "Profils attirés par les systèmes, réseaux et la sécurité.",
                     "Motivation, rigueur et intérêt pour l’informatique requis."
                 ]
@@ -2553,11 +2041,7 @@
             "Documentation technique et bonnes pratiques IT."
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à vous former à l’IA ?",
-=======
-            "titre": "Prêt à devenir Formation en IA ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -2569,11 +2053,7 @@
     },
     "gestionnaire-comptable-fiscal": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Gestionnaire comptable et fiscal·e",
-=======
-            "titre": "Devenez Gestionnaire comptable et fiscal",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Tenez la comptabilité jusqu'à la liasse fiscale et produisez les états financiers de l'entreprise.",
             "video": "/assets/video/formations/comptable.mp4"
         },
@@ -2600,19 +2080,11 @@
             "sousTitre": "Après cette formation, vous pourrez postuler en cabinet d'expertise ou en entreprise.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Gestionnaire comptable et fiscal·e",
                     "salaire": "26K€ - 38K€ brut/an"
                 },
                 {
                     "titre": "Assistant·e de direction / COMPTABILITE",
-=======
-                    "titre": "Gestionnaire comptable et fiscal",
-                    "salaire": "26K€ - 38K€ brut/an"
-                },
-                {
-                    "titre": "Assistant de direction / COMPTABILITE",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "22K€ - 30K€ brut/an"
                 }
             ],
@@ -2680,11 +2152,7 @@
             "Utilisation des ERP et logiciels comptables"
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Gestionnaire Comptable ?",
-=======
-            "titre": "Prêt à devenir Gestionnaire Comptable ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -2696,11 +2164,7 @@
     },
     "formations-comptable-assistant": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Comptable Assistant·e",
-=======
-            "titre": "Devenez Comptable assistant",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Comptabilisez les documents financiers et réalisez les déclarations courantes de l'entreprise.",
             "video": "/assets/video/formations/comptable.mp4"
         },
@@ -2727,19 +2191,11 @@
             "sousTitre": "Après cette formation, vous pourrez postuler dans divers environnements comptables.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Comptable Assistant·e",
                     "salaire": "26K€ - 38K€ brut/an"
                 },
                 {
                     "titre": "Assistant·e de direction / COMPTABILITE",
-=======
-                    "titre": "Comptable assistant",
-                    "salaire": "26K€ - 38K€ brut/an"
-                },
-                {
-                    "titre": "Assistant de direction / COMPTABILITE",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "22K€ - 30K€ brut/an"
                 }
             ],
@@ -2807,11 +2263,7 @@
             "Utilisation des ERP et logiciels comptables"
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Comptable Assistant·e ?",
-=======
-            "titre": "Prêt à devenir Comptable assistant ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -2824,11 +2276,7 @@
     "formations-concepteur-designer-ui": {
         "categorie": "numerique",
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Concepteur·rice Designer UI",
-=======
-            "titre": "Devenez Concepteur Designer UI",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Créez des interfaces numériques alliant créativité graphique et expérience utilisateur (UX/UI).",
             "video": "/assets/video/formations/dev-app.mp4"
         },
@@ -2851,22 +2299,14 @@
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "Le·la concepteur·rice designer UI conçoit et réalise des interfaces numériques (sites web, applications, supports digitaux) en combinant créativité graphique et compréhension des besoins utilisateurs. À partir d'un brief, d'un cahier des charges ou d'une demande client, il·elle analyse les attentes, imagine l'univers visuel, crée des maquettes et définit l'expérience utilisateur (UX/UI). Il·elle conçoit des chartes graphiques, produit des visuels et développe des prototypes interactifs. Il·elle intègre les contenus à l'aide d'outils professionnels, de langages web et de CMS, veille à la cohérence visuelle et à la compatibilité sur tous les supports. Il·elle optimise également l'expérience utilisateur en testant ses réalisations et en analysant les comportements des utilisateurs. 👉 Un métier créatif et technique, au cœur de la transformation digitale des entreprises."
-=======
-            "paragraphes": "Le concepteur designer UI conçoit et réalise des interfaces numériques (sites web, applications, supports digitaux) en combinant créativité graphique et compréhension des besoins utilisateurs. À partir d'un brief, d'un cahier des charges ou d'une demande client, il analyse les attentes, imagine l'univers visuel, crée des maquettes et définit l'expérience utilisateur (UX/UI). Il conçoit des chartes graphiques, produit des visuels et développe des prototypes interactifs. Il intègre les contenus à l'aide d'outils professionnels, de langages web et de CMS, veille à la cohérence visuelle et à la compatibilité sur tous les supports. Il optimise également l'expérience utilisateur en testant ses réalisations et en analysant les comportements des utilisateurs. 👉 Un métier créatif et technique, au cœur de la transformation digitale des entreprises."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler à des postes variés dans le domaine du design numérique.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Concepteur·rice Designer UI",
-=======
-                    "titre": "Concepteur Designer UI",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "32 000 – 35 000 € brut/an (junior)"
                 },
                 {
@@ -2878,11 +2318,7 @@
                     "salaire": "Selon expérience"
                 },
                 {
-<<<<<<< HEAD
                     "titre": "Intégrateur·rice Web",
-=======
-                    "titre": "Intégrateur Web",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "Selon expérience"
                 },
                 {
@@ -2890,11 +2326,7 @@
                     "salaire": "Selon expérience"
                 },
                 {
-<<<<<<< HEAD
                     "titre": "Expert·e UI Designer",
-=======
-                    "titre": "Expert UI Designer",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "+ 50 000 € brut/an"
                 }
             ],
@@ -2955,11 +2387,7 @@
             "Veille technologique et créative."
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Concepteur·rice Designer UI ?",
-=======
-            "titre": "Prêt à devenir Concepteur Designer UI ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Contactez-nous pour en savoir plus sur les prochaines sessions et les modalités de financement.",
             "boutons": [
                 {
@@ -2971,11 +2399,7 @@
     },
     "formations-assistante-de-direction": {
         "hero": {
-<<<<<<< HEAD
             "titre": "Devenez Assistant·e de Direction",
-=======
-            "titre": "Devenez Assistant(e) de Direction",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Coordonnez l'activité et facilitez la prise de décision en tant que bras droit du dirigeant.",
             "video": "/assets/video/formations/administration.mp4"
         },
@@ -2995,22 +2419,14 @@
         ],
         "presentation": {
             "titre": "Le métier",
-<<<<<<< HEAD
             "paragraphes": "L'Assistant·e de Direction est le·la collaborateur·rice direct·e d'un ou plusieurs dirigeant·e·s. Il·elle centralise les informations, organise les plannings, prépare les réunions et assure le suivi des dossiers confidentiels. Il·elle est le lien privilégié entre la direction, les équipes internes et les partenaires extérieurs. C'est un métier qui exige une excellente communication, une maîtrise parfaite des outils bureautiques et une grande capacité d'adaptation."
-=======
-            "paragraphes": "L'Assistant(e) de Direction est la collaboratrice directe d'un ou plusieurs dirigeants. Elle centralise les informations, organise les plannings, prépare les réunions et assure le suivi des dossiers confidentiels. Elle est le lien privilégié entre la direction, les équipes internes et les partenaires extérieurs. C'est un métier qui exige une excellente communication, une maîtrise parfaite des outils bureautiques et une grande capacité d'adaptation."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "debouches": {
             "titre": "Les métiers visés",
             "sousTitre": "Après cette formation, vous pourrez postuler à des postes clés de l'assistanat.",
             "postes": [
                 {
-<<<<<<< HEAD
                     "titre": "Assistant·e de Direction",
-=======
-                    "titre": "Assistant(e) de Direction",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "Selon expérience"
                 },
                 {
@@ -3018,11 +2434,7 @@
                     "salaire": "Selon expérience"
                 },
                 {
-<<<<<<< HEAD
                     "titre": "Attaché·e de Direction",
-=======
-                    "titre": "Attaché(e) de Direction",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "salaire": "Selon expérience"
                 }
             ],
@@ -3071,11 +2483,7 @@
             "prerequis": {
                 "titre": "Public concerné & Prérequis",
                 "points": [
-<<<<<<< HEAD
                     "Tout Public (salarié·e·s, demandeur·euse·s d'emploi, individuels et handicapé·e·s).",
-=======
-                    "Tout Public (salariés, demandeurs d'emploi, individuels et handicapés).",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                     "Connaissances de l'outil informatique et du français obligatoire.",
                     "Connaissances en anglais niveau intermédiaire fortement conseillées.",
                     "Locaux accessibles aux personnes handicapées (Franconville, face à l'Hôtel de Ville)."
@@ -3090,11 +2498,7 @@
             "Maîtrise des outils collaboratifs (Zoom, Pack Office...)."
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à devenir Assistant·e de Direction ?",
-=======
-            "titre": "Prêt(e) à devenir Assistant(e) de Direction ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Nos conseillers sont à votre écoute pour vous aider à monter votre dossier (CPF, France Travail, etc.).",
             "boutons": [
                 {
@@ -3131,13 +2535,8 @@
         "presentation": {
             "titre": "Présentation du cycle de formation",
             "paragraphes": [
-<<<<<<< HEAD
                 "Ce cycle de formation vous guide pas à pas dans l’apprentissage de la syntaxe de base du langage, la manipulation des structures de données, l’application de la programmation orientée objet et l’utilisation des modules et packages pour structurer vos projets. Vous êtes également formé·e à l’optimisation du code afin de garantir des scripts performants et maintenables.",
                 "Conçu pour les professionnel·le·s en reconversion ou en évolution de carrière, ce programme vous permet de développer des compétences immédiatement opérationnelles, tout en vous donnant l’opportunité de valider la certification TOSA.",
-=======
-                "Ce cycle de formation vous guide pas à pas dans l’apprentissage de la syntaxe de base du langage, la manipulation des structures de données, l’application de la programmation orientée objet et l’utilisation des modules et packages pour structurer vos projets. Vous êtes également formé(e) à l’optimisation du code afin de garantir des scripts performants et maintenables.",
-                "Conçu pour les professionnels en reconversion ou en évolution de carrière, ce programme vous permet de développer des compétences immédiatement opérationnelles, tout en vous donnant l’opportunité de valider la certification TOSA.",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                 "Le saviez-vous ? Python est aujourd’hui le langage de programmation le plus enseigné dans les universités à travers le monde. Il est aussi régulièrement classé numéro 1 dans les classements des langages les plus populaires, notamment grâce à sa simplicité et sa polyvalence."
             ]
         },
@@ -3152,11 +2551,7 @@
         },
         "pour_qui": {
             "titre": "Pour qui ?",
-<<<<<<< HEAD
             "description": "Ce cycle s’adresse aux professionnel·le·s souhaitant acquérir des compétences solides en programmation Python, qu’il s’agisse de profils techniques débutants, de professionnel·le·s de la donnée, ou de métiers souhaitant automatiser des tâches ou développer des outils internes."
-=======
-            "description": "Ce cycle s’adresse aux professionnels souhaitant acquérir des compétences solides en programmation Python, qu’il s’agisse de profils techniques débutants, de professionnels de la donnée, ou de métiers souhaitant automatiser des tâches ou développer des outils internes."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "programme": {
             "dureeTotale": "30 heures (estimées)",
@@ -3238,7 +2633,6 @@
             },
             {
                 "titre": "Suivi personnalisé",
-<<<<<<< HEAD
                 "description": "Accompagnement par des expert·e·s de l'élaboration du dossier à la certification."
             },
             {
@@ -3255,35 +2649,13 @@
             }
         ],
         "accueil_psh": "VISIPLUS accompagne les participant·e·s en situation de handicap. Un livret d'accueil dédié est disponible en téléchargement.",
-=======
-                "description": "Accompagnement par des experts de l'élaboration du dossier à la certification."
-            },
-            {
-                "titre": "Communauté active",
-                "description": "Échanges quotidiens avec vos pairs et formateurs."
-            },
-            {
-                "titre": "Employabilité renforcée",
-                "description": "Formations conçues par des professionnels pour les besoins du marché."
-            },
-            {
-                "titre": "Réseau Alumni",
-                "description": "Accès à un cercle de plus de 20 000 diplômés."
-            }
-        ],
-        "accueil_psh": "VISIPLUS accompagne les participants en situation de handicap. Un livret d'accueil dédié est disponible en téléchargement.",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         "competences": [
             "Maîtrise de la syntaxe Python",
             "Automatisation de tâches",
             "Analyse de données de base"
         ],
         "ctaFinal": {
-<<<<<<< HEAD
             "titre": "Prêt·e à maîtriser Python ?",
-=======
-            "titre": "Prêt à maîtriser Python ?",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "sousTitre": "Recevez une documentation complète ou contactez un conseiller pour étudier votre financement.",
             "boutons": [
                 {
@@ -3303,11 +2675,7 @@
             "titre": "Responsive Web Design",
             "sousTitre": "Concevez des expériences utilisateur ergonomiques et accessibles sur tous les supports numériques.",
             "video": "/assets/video/formations/dev-web-mobile.mp4",
-<<<<<<< HEAD
             "chiffre_cle": "37,4 millions de Français naviguent chaque jour sur le web avec leur smartphone !"
-=======
-            "ch iffre_cle": "37,4 millions de Français naviguent chaque jour sur le web avec leur smartphone !"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "stats": [
             {
@@ -3354,21 +2722,12 @@
             "public_cible": [
                 "Webmasters",
                 "Webdesigners",
-<<<<<<< HEAD
                 "Chef·fe·s de projets web",
                 "Chef·fe·s de produits",
                 "Responsables communication",
                 "Responsables Web Marketing",
                 "Infographistes",
                 "Tout·e professionnel·le souhaitant acquérir les bonnes pratiques du RWD"
-=======
-                "Chefs de projets web",
-                "Chefs de produits",
-                "Responsables communication",
-                "Responsables Web Marketing",
-                "Infographistes",
-                "Tout professionnel souhaitant acquérir les bonnes pratiques du RWD"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             ]
         },
         "programme": {
@@ -3469,11 +2828,7 @@
                 "Exercice de mise en pratique professionnelle"
             ],
             "materiel": "Ordinateur, connexion Internet stable, casque audio recommandé.",
-<<<<<<< HEAD
             "accueil_psh": "Accompagnement spécifique pour les participant·e·s en situation de handicap (Livret PSH disponible)."
-=======
-            "accueil_psh": "Accompagnement spécifique pour les participants en situation de handicap (Livret PSH disponible)."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "financement": {
             "titre": "Financer sa formation",
@@ -3483,13 +2838,8 @@
             "titre": "Web Designer / UX Designer",
             "niveau": "Titre certifié de niveau 6 reconnu par l'État",
             "debouches": [
-<<<<<<< HEAD
                 "Développeur·euse web",
                 "Intégrateur·rice web",
-=======
-                "Développeur web",
-                "Intégrateur web",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                 "Webdesigner",
                 "Webmaster"
             ]
@@ -3502,11 +2852,7 @@
             },
             {
                 "auteur": "Laetitia G.",
-<<<<<<< HEAD
                 "poste": "Graphiste intégrateur·rice",
-=======
-                "poste": "Graphiste intégrateur",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                 "commentaire": "Formateur très professionnel."
             },
             {
@@ -3522,19 +2868,11 @@
             },
             {
                 "titre": "Suivi personnalisé",
-<<<<<<< HEAD
                 "desc": "Accompagnement par des expert·e·s à chaque étape."
             },
             {
                 "titre": "Communauté et Alumni",
                 "desc": "Réseau de 20 000 diplômé·e·s pour networker."
-=======
-                "desc": "Accompagnement par des experts à chaque étape."
-            },
-            {
-                "titre": "Communauté et Alumni",
-                "desc": "Réseau de 20 000 diplômés pour networker."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             },
             {
                 "titre": "Employabilité",
@@ -3578,11 +2916,7 @@
         ],
         "presentation": {
             "titre": "Présentation de la formation",
-<<<<<<< HEAD
             "description": "Le langage de programmation PHP permet de générer dynamiquement des pages Web, notamment en lien avec une base de données. Très populaire en raison de sa nature open-source et de ses multi fonctionnalités, il dispose d’une forte communauté et d’une grande part de marché. C’est par exemple avec PHP qu’est écrit le très connu CMS WordPress. Le PHP est un langage assez simple pour les débutant·e·s, et les programmeur·euse·s professionnel·le·s peuvent également l’utiliser pour des fonctions plus avancées.",
-=======
-            "description": "Le langage de programmation PHP permet de générer dynamiquement des pages Web, notamment en lien avec une base de données. Très populaire en raison de sa nature open-source et de ses multi fonctionnalités, il dispose d’une forte communauté et d’une grande part de marché. C’est par exemple avec PHP qu’est écrit le très connu CMS WordPress. Le PHP est un langage assez simple pour les débutants, et les programmeurs professionnels peuvent également l’utiliser pour des fonctions plus avancées.",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "pourquoi": {
                 "titre": "Pourquoi réaliser une Formation PHP ?",
                 "points": [
@@ -3606,19 +2940,11 @@
             "titre": "Pour qui ?",
             "public_cible": [
                 "Toute personne souhaitant acquérir des compétences en communication digitale",
-<<<<<<< HEAD
                 "Développeur·euse web",
                 "Webdesigner",
                 "Graphiste web",
                 "Directeur·rice Artistique Web",
                 "Chef·fe·s de projets web",
-=======
-                "Développeur web",
-                "Webdesigner",
-                "Graphiste web",
-                "Directeur Artistique Web",
-                "Chefs de projets web",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                 "Webmaster"
             ]
         },
@@ -3703,11 +3029,7 @@
             ]
         },
         "infosPratiques": {
-<<<<<<< HEAD
             "prerequis": "Aucun prérequis, ce module s’adresse à tou·te·s.",
-=======
-            "prerequis": "Aucun prérequis, ce module s’adresse à tous.",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "modalites_acces": {
                 "positionnement": "Entretien obligatoire avec un conseiller formation (étude du profil et du projet du participant).",
                 "entree": "Les dates d’entrée en formation sont ouvertes tout au long de l’année.",
@@ -3718,11 +3040,7 @@
                 "Exercice de mise en pratique professionnelle"
             ],
             "materiel": "Ordinateur et connexion Internet (un casque audio est également recommandé).",
-<<<<<<< HEAD
             "accueil_psh": "VISIPLUS accompagne les participant·e·s en situation de handicap (étude de la situation, adaptations possibles, livret d’accueil disponible)."
-=======
-            "accueil_psh": "VISIPLUS accompagne les participants en situation de handicap (étude de la situation, adaptations possibles, livret d’accueil disponible)."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "financement": {
             "titre": "Financer sa formation en Développement Web / Informatique",
@@ -3733,15 +3051,9 @@
             "description": "La formation PHP fait partie du cycle long de formation (diplômante) Web Designer/UX Designer.",
             "niveau": "Titre Certifié Web Designer / UX Designer",
             "debouches": [
-<<<<<<< HEAD
                 "Chef·fe de projet web",
                 "Graphiste web",
                 "Intégrateur·rice web",
-=======
-                "Chef de projet web",
-                "Graphiste web",
-                "Intégrateur web",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                 "Responsable communication",
                 "Webdesigner",
                 "Webmaster"
@@ -3754,7 +3066,6 @@
             },
             {
                 "titre": "Un suivi personnalisé",
-<<<<<<< HEAD
                 "desc": "Conseiller·ère·s formation, coordinateur·rice·s pédagogiques, formateur·rice·s, mentor·e·s individuel·le·s à votre disposition."
             },
             {
@@ -3768,21 +3079,6 @@
             {
                 "titre": "Un réseau d’Alumni pour échanger",
                 "desc": "Cercle Alumni de plus de 20 000 diplômé·e·s pour élargir votre réseau professionnel."
-=======
-                "desc": "Conseillers formation, coordinateurs pédagogiques, formateurs, mentors individuels à votre disposition."
-            },
-            {
-                "titre": "Le soutien de toute une communauté",
-                "desc": "Echangez au quotidien avec vos pairs, vos formateurs et toute notre équipe pédagogique."
-            },
-            {
-                "titre": "Votre employabilité renforcée",
-                "desc": "Des formations conçues spécifiquement pour des professionnels, par des professionnels experts."
-            },
-            {
-                "titre": "Un réseau d’Alumni pour échanger",
-                "desc": "Cercle Alumni de plus de 20 000 diplômés pour élargir votre réseau professionnel."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             }
         ],
         "competences": [
@@ -3914,11 +3210,7 @@
             ]
         },
         "infosPratiques": {
-<<<<<<< HEAD
             "prerequis": "Aucun prérequis, ce module s’adresse à tou·te·s.",
-=======
-            "prerequis": "Aucun prérequis, ce module s’adresse à tous.",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "modalites_acces": {
                 "positionnement": "Entretien obligatoire avec un conseiller formation (étude du profil et du projet du participant).",
                 "entree": "Les dates d’entrée en formation sont ouvertes tout au long de l’année.",
@@ -3929,11 +3221,7 @@
                 "Exercice de mise en pratique professionnelle"
             ],
             "materiel": "Ordinateur et connexion Internet (un casque audio est également recommandé).",
-<<<<<<< HEAD
             "accueil_psh": "VISIPLUS accompagne les participant·e·s en situation de handicap (étude de la situation, adaptations possibles, livret d’accueil disponible)."
-=======
-            "accueil_psh": "VISIPLUS accompagne les participants en situation de handicap (étude de la situation, adaptations possibles, livret d’accueil disponible)."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "financement": {
             "titre": "Financer sa formation en Développement Web / Informatique",
@@ -3946,7 +3234,6 @@
             },
             {
                 "titre": "Un suivi personnalisé",
-<<<<<<< HEAD
                 "desc": "Conseiller·ère·s formation, coordinateur·rice·s pédagogiques, formateur·rice·s, mentor·e·s individuel·le·s à votre disposition."
             },
             {
@@ -3960,21 +3247,6 @@
             {
                 "titre": "Un réseau d’Alumni pour échanger",
                 "desc": "Cercle Alumni de plus de 20 000 diplômé·e·s pour élargir votre réseau professionnel."
-=======
-                "desc": "Conseillers formation, coordinateurs pédagogiques, formateurs, mentors individuels à votre disposition."
-            },
-            {
-                "titre": "Le soutien de toute une communauté",
-                "desc": "Echangez au quotidien avec vos pairs, vos formateurs et toute notre équipe pédagogique."
-            },
-            {
-                "titre": "Votre employabilité renforcée",
-                "desc": "Des formations conçues spécifiquement pour des professionnels, par des professionnels experts."
-            },
-            {
-                "titre": "Un réseau d’Alumni pour échanger",
-                "desc": "Cercle Alumni de plus de 20 000 diplômés pour élargir votre réseau professionnel."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             }
         ],
         "competences": [
@@ -4015,13 +3287,8 @@
         "presentation": {
             "titre": "Présentation du cycle de formation",
             "paragraphes": [
-<<<<<<< HEAD
                 "Dans un contexte de transformation numérique accélérée, les entreprises recherchent des professionnel·le·s capables de piloter des projets de développement complexes, en intégrant les enjeux de performance, de qualité logicielle et de collaboration agile.",
                 "Ce cycle de formation vous donne toutes les clés pour analyser les besoins d’un client, concevoir et déployer une architecture technique adaptée, et encadrer efficacement des équipes de développement. Que vous soyez déjà développeur·euse, chef·fe de projet technique ou en reconversion vers des fonctions plus stratégiques, ce programme vous permet de renforcer vos compétences dans des environnements modernes (DevOps, architectures distribuées, cloud computing).",
-=======
-                "Dans un contexte de transformation numérique accélérée, les entreprises recherchent des professionnels capables de piloter des projets de développement complexes, en intégrant les enjeux de performance, de qualité logicielle et de collaboration agile.",
-                "Ce cycle de formation vous donne toutes les clés pour analyser les besoins d’un client, concevoir et déployer une architecture technique adaptée, et encadrer efficacement des équipes de développement. Que vous soyez déjà développeur, chef de projet technique ou en reconversion vers des fonctions plus stratégiques, ce programme vous permet de renforcer vos compétences dans des environnements modernes (DevOps, architectures distribuées, cloud computing).",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                 "Vous serez en mesure de gérer un projet de bout en bout, depuis l’expression du besoin jusqu’à la mise en production continue."
             ],
             "partenaire": {
@@ -4041,11 +3308,7 @@
         "pour_qui": {
             "titre": "Pour qui ?",
             "public_cible": [
-<<<<<<< HEAD
                 "Professionnel·le·s de l’informatique ou du numérique souhaitant accéder à des fonctions à haute responsabilité dans la conception, le développement et le pilotage de projets logiciels complexes."
-=======
-                "Professionnels de l’informatique ou du numérique souhaitant accéder à des fonctions à haute responsabilité dans la conception, le développement et le pilotage de projets logiciels complexes."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             ]
         },
         "debouches": {
@@ -4053,13 +3316,8 @@
             "postes_vises": [
                 "Lead full-stack developer",
                 "Lead web developer",
-<<<<<<< HEAD
                 "Consultant·e ou ingénieur·e DevOps",
                 "Consultant·e architecte technique",
-=======
-                "Consultant ou ingénieur DevOps",
-                "Consultant architecte technique",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
                 "Software engineer"
             ]
         },
@@ -4156,11 +3414,7 @@
                 "validation_partielle": "Une validation partielle du titre par blocs de compétences est possible (RNCP38590BC01, RNCP35584BC01, RNCP38004BC03, RNCP38590BC04, RNCP35584BC02)."
             },
             "materiel": "Ordinateur et connexion Internet (casque audio recommandé).",
-<<<<<<< HEAD
             "accueil_psh": "VISIPLUS accompagne les participant·e·s en situation de handicap (étude de la situation, adaptations, livret d'accueil)."
-=======
-            "accueil_psh": "VISIPLUS accompagne les participants en situation de handicap (étude de la situation, adaptations, livret d'accueil)."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "financement": {
             "titre": "Financer sa formation en Développement Web / Informatique",
@@ -4173,11 +3427,7 @@
             },
             {
                 "titre": "Un suivi personnalisé",
-<<<<<<< HEAD
                 "desc": "Conseiller·ère·s, formateur·rice·s et mentor·e·s individuel·le·s à votre disposition à chaque étape de votre parcours."
-=======
-                "desc": "Conseillers, formateurs et mentors individuels à votre disposition à chaque étape de votre parcours."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             },
             {
                 "titre": "Le soutien de toute une communauté",
@@ -4185,19 +3435,11 @@
             },
             {
                 "titre": "Votre employabilité renforcée",
-<<<<<<< HEAD
                 "desc": "Des formations conçues par des professionnel·le·s expert·e·s pour répondre aux besoins du marché."
             },
             {
                 "titre": "Un réseau d’Alumni pour échanger",
                 "desc": "Cercle Alumni de plus de 20 000 diplômé·e·s pour networker et élargir votre réseau professionnel."
-=======
-                "desc": "Des formations conçues par des professionnels experts pour répondre aux besoins du marché."
-            },
-            {
-                "titre": "Un réseau d’Alumni pour échanger",
-                "desc": "Cercle Alumni de plus de 20 000 diplômés pour networker et élargir votre réseau professionnel."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             }
         ],
         "competences": [
@@ -4237,11 +3479,7 @@
         ],
         "presentation": {
             "titre": "Présentation de la formation",
-<<<<<<< HEAD
             "description": "Une cyberattaque peut avoir des impacts catastrophiques sur une entreprise : vol de données, impacts sur la réputation, pertes financières, etc. Ce quelle que soit la taille de sa structure. Pour autant, il n'existe pas de fatalité : lorsque la simple bonne volonté des employé·e·s ne suffit plus à maintenir un niveau de sécurité adéquat, il est temps de passer à la vitesse supérieure ! Cette formation vous permettra ainsi de maîtriser les concepts liés à l'organisation et à la mise en place d'une cybersécurité efficace en entreprise.",
-=======
-            "description": "Une cyberattaque peut avoir des impacts catastrophiques sur une entreprise : vol de données, impacts sur la réputation, pertes financières, etc. Ce quelle que soit la taille de sa structure. Pour autant, il n'existe pas de fatalité : lorsque la simple bonne volonté des employés ne suffit plus à maintenir un niveau de sécurité adéquat, il est temps de passer à la vitesse supérieure ! Cette formation vous permettra ainsi de maîtriser les concepts liés à l'organisation et à la mise en place d'une cybersécurité efficace en entreprise.",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "pourquoi": {
                 "titre": "Pourquoi réaliser une Formation Implémenter une politique de Cybersécurité ?",
                 "points": [
@@ -4265,19 +3503,11 @@
             "titre": "Pour qui ?",
             "public_cible": [
                 "DSI",
-<<<<<<< HEAD
                 "Administrateur·rice·s Sécurité",
                 "Technicien·ne·s Sécurité",
                 "Analystes Cybersécurité",
                 "Spécialistes et Évaluateur·rice·s Sécurité",
                 "Professionnel·le·s en charge de la sécurité d'un système d'information"
-=======
-                "Administrateurs Sécurité",
-                "Techniciens Sécurité",
-                "Analystes Cybersécurité",
-                "Spécialistes et Évaluateurs Sécurité",
-                "Professionnels en charge de la sécurité d'un système d'information"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             ]
         },
         "programme": {
@@ -4349,11 +3579,7 @@
             ]
         },
         "infosPratiques": {
-<<<<<<< HEAD
             "prerequis": "Aucun prérequis, ce module s’adresse à tou·te·s.",
-=======
-            "prerequis": "Aucun prérequis, ce module s’adresse à tous.",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "modalites_acces": {
                 "positionnement": "Entretien obligatoire avec un conseiller formation (étude du profil et du projet du participant).",
                 "entree": "Les dates d’entrée en formation sont ouvertes tout au long de l’année.",
@@ -4364,11 +3590,7 @@
                 "Exercice de mise en pratique professionnelle"
             ],
             "materiel": "Ordinateur et connexion Internet (un casque audio est également recommandé).",
-<<<<<<< HEAD
             "accueil_psh": "VISIPLUS accompagne les participant·e·s en situation de handicap (étude de la situation, adaptations possibles, livret d’accueil disponible)."
-=======
-            "accueil_psh": "VISIPLUS accompagne les participants en situation de handicap (étude de la situation, adaptations possibles, livret d’accueil disponible)."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "financement": {
             "titre": "Financer sa formation en Développement Web / Informatique",
@@ -4381,7 +3603,6 @@
             },
             {
                 "titre": "Un suivi personnalisé",
-<<<<<<< HEAD
                 "desc": "Conseiller·ère·s formation, coordinateur·rice·s pédagogiques, formateur·rice·s, mentor·e·s individuel·le·s à votre disposition."
             },
             {
@@ -4395,21 +3616,6 @@
             {
                 "titre": "Un réseau d’Alumni pour échanger",
                 "desc": "Cercle Alumni de plus de 20 000 diplômé·e·s pour élargir votre réseau professionnel."
-=======
-                "desc": "Conseillers formation, coordinateurs pédagogiques, formateurs, mentors individuels à votre disposition."
-            },
-            {
-                "titre": "Le soutien de toute une communauté",
-                "desc": "Echangez au quotidien avec vos pairs, vos formateurs et toute notre équipe pédagogique."
-            },
-            {
-                "titre": "Votre employabilité renforcée",
-                "desc": "Des formations conçues spécifiquement pour des professionnels, par des professionnels experts."
-            },
-            {
-                "titre": "Un réseau d’Alumni pour échanger",
-                "desc": "Cercle Alumni de plus de 20 000 diplômés pour élargir votre réseau professionnel."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             }
         ],
         "competences": [
@@ -4449,11 +3655,7 @@
         ],
         "presentation": {
             "titre": "Présentation de la formation",
-<<<<<<< HEAD
             "description": "Cisco est un constructeur informatique de matériel réseau de référence depuis les débuts d’internet. En proposant un grand nombre d’équipements permettant d’équiper informatiquement les entreprises, il s’impose comme un leader du marché de l’administration réseau pour les professionnels. Cette formation permettra aux futur·e·s technicien·ne·s système et réseau d'administrer les équipements réseaux Cisco dans le cadre de leurs missions professionnelles.",
-=======
-            "description": "Cisco est un constructeur informatique de matériel réseau de référence depuis les débuts d’internet. En proposant un grand nombre d’équipements permettant d’équiper informatiquement les entreprises, il s’impose comme un leader du marché de l’administration réseau pour les professionnels. Cette formation permettra aux futurs techniciens système et réseau d'administrer les équipements réseaux Cisco dans le cadre de leurs missions professionnelles.",
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             "pourquoi": {
                 "titre": "Pourquoi réaliser une Formation Configuration et administration d’équipements réseaux CISCO ?",
                 "points": [
@@ -4477,15 +3679,9 @@
         "pour_qui": {
             "titre": "Pour qui ?",
             "public_cible": [
-<<<<<<< HEAD
                 "Futur·e·s technicien·ne·s informatiques",
                 "Technicien·ne·s systèmes et réseaux",
                 "Technicien·ne·s sécurité"
-=======
-                "Futurs techniciens informatiques",
-                "Techniciens systèmes et réseaux",
-                "Techniciens sécurité"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             ]
         },
         "programme": {
@@ -4608,18 +3804,13 @@
                 "Exercice de mise en pratique professionnelle"
             ],
             "materiel": "Ordinateur et connexion Internet (un casque audio est également recommandé).",
-<<<<<<< HEAD
             "accueil_psh": "VISIPLUS accompagne les participant·e·s en situation de handicap (étude de la situation, adaptations possibles, livret d’accueil disponible)."
-=======
-            "accueil_psh": "VISIPLUS accompagne les participants en situation de handicap (étude de la situation, adaptations possibles, livret d’accueil disponible)."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         },
         "financement": {
             "titre": "Financer sa formation en Développement Web / Informatique",
             "description": "Plusieurs dispositifs de financement sont possibles en fonction de votre statut professionnel et peuvent financer jusqu’à 100% votre formation."
         },
         "cycle_associe": {
-<<<<<<< HEAD
             "titre": "Technicien·ne Systèmes, réseaux et sécurité",
             "niveau": "Titre Certifié de niveau 5",
             "description": "Ce module de formation est dispensé dans le cadre du cycle long diplômant \"Technicien·ne Systèmes, réseaux et sécurité\", permettant d'acquérir un large spectre de compétences en hardware, software et notions transversales clés.",
@@ -4630,18 +3821,6 @@
                 "Technicien·ne support utilisateur",
                 "Technicien·ne systèmes et réseaux",
                 "Assistant·e administration systèmes, réseaux"
-=======
-            "titre": "Technicien Systèmes, réseaux et sécurité",
-            "niveau": "Titre Certifié de niveau 5",
-            "description": "Ce module de formation est dispensé dans le cadre du cycle long diplômant \"Technicien Systèmes, réseaux et sécurité\", permettant d'acquérir un large spectre de compétences en hardware, software et notions transversales clés.",
-            "debouches": [
-                "Gestionnaire de parc informatique",
-                "Technicien sécurité informatique",
-                "Technicien informatique et réseaux",
-                "Technicien support utilisateur",
-                "Technicien systèmes et réseaux",
-                "Assistant administration systèmes, réseaux"
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             ]
         },
         "avantages_visiplus": [
@@ -4651,7 +3830,6 @@
             },
             {
                 "titre": "Un suivi personnalisé",
-<<<<<<< HEAD
                 "desc": "Conseiller·ère·s formation, coordinateur·rice·s pédagogiques, formateur·rice·s, mentor·e·s individuel·le·s à votre disposition."
             },
             {
@@ -4665,21 +3843,6 @@
             {
                 "titre": "Un réseau d’Alumni pour échanger",
                 "desc": "Cercle Alumni de plus de 20 000 diplômé·e·s pour élargir votre réseau professionnel."
-=======
-                "desc": "Conseillers formation, coordinateurs pédagogiques, formateurs, mentors individuels à votre disposition."
-            },
-            {
-                "titre": "Le soutien de toute une communauté",
-                "desc": "Echangez au quotidien avec vos pairs, vos formateurs et toute notre équipe pédagogique."
-            },
-            {
-                "titre": "Votre employabilité renforcée",
-                "desc": "Des formations conçues spécifiquement pour des professionnels, par des professionnels experts."
-            },
-            {
-                "titre": "Un réseau d’Alumni pour échanger",
-                "desc": "Cercle Alumni de plus de 20 000 diplômés pour élargir votre réseau professionnel."
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
             }
         ],
         "competences": [

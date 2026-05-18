@@ -120,24 +120,16 @@ export const formationsCertifiantesArray = Object.entries(formationsCertifiantes
 // Fusion de toutes les formations dans un tableau unique
 export const formationsArray = [...longFormationsArray, ...formationsCortesArray, ...formationsCertifiantesArray];
 
-<<<<<<< HEAD
 // Filtrage pour récupérer chaque groupe et générer le sous-sous-menu (diplômantes = parcours longs uniquement)
 const getSubMenu = (categoryKey) => {
   return formationsArray
     .filter(f => f.categorie === categoryKey && f.type === 'longue')
-=======
-// Filtrage pour récupérer chaque groupe et générer le sous-sous-menu
-const getSubMenu = (categoryKey) => {
-  return formationsArray
-    .filter(f => f.categorie === categoryKey)
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
     .map(f => ({
       label: f.hero?.titre || f.titre || f.id,
       href: `/formation/${f.id}`
     }));
 };
 
-<<<<<<< HEAD
 const getSubMenuMulti = (categoryKeys) => {
   return formationsArray
     .filter((f) => categoryKeys.includes(f.categorie) && f.type === 'longue')
@@ -147,8 +139,6 @@ const getSubMenuMulti = (categoryKeys) => {
     }));
 };
 
-=======
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 // Sous-menu des formations courtes (E-Learning)
 const getFormationsCortesSubMenu = () => {
   return formationsCortesArray.map(f => ({
@@ -157,90 +147,6 @@ const getFormationsCortesSubMenu = () => {
   }));
 };
 
-<<<<<<< HEAD
-=======
-/**
- * navlinks — Structure de la navigation principale
- */
-export const navlinks = [
-  {
-    label: "Formations",
-    href: "/formations",
-    submenu: [
-      {
-        label: "Formations Diplômantes",
-        href: "/formations",
-        submenu: [
-          {
-            label: "Cybersécurité",
-            href: "/formations#cybersecurite-reseaux",
-            submenu: getSubMenu('cybersecurite-reseaux')
-          },
-          {
-            label: "Développement Web",
-            href: "/formations#digital-developpement",
-            submenu: getSubMenu('digital-developpement')
-          },
-          {
-            label: "IA & Data",
-            href: "/formations#ia-data",
-            submenu: getSubMenu('ia-data')
-          },
-          {
-            label: "Ressources Humaines",
-            href: "/formations#ressources-humaines",
-            submenu: getSubMenu('ressources-humaines')
-          },
-          {
-            label: "Gestion & Compta",
-            href: "/formations#comptabilite-gestion",
-            submenu: getSubMenu('comptabilite-gestion')
-          }
-        ],
-      },
-      {
-        label: "Formations Certifiantes",
-        href: "/formations-certifiantes",
-        submenu: formationsCertifiantesArray.map(f => ({
-          label: f.hero?.titre || f.titre || f.id,
-          href: `/formation/${f.id}`
-        })),
-      },
-      {
-        label: "E-Learning",
-        href: "/formations-courtes",
-        submenu: getFormationsCortesSubMenu(),
-      },
-    ],
-  },
-  { label: "Certifications", href: "/certification" },
-  { label: "Financements", href: "/financements" },
-  { label: "F.A.Q", href: "/faq" },
-  { label: "Bilan de Compétences", href: "/bilan-de-competences" },
-  {
-    label: "Ressources",
-    submenu: [
-      {
-        label: "IA & Ressources numériques",
-        href: "/ressources-ia",
-        image: "/assets/images/analyste_data.jpg",
-        description: "Fiches pratiques, outils IA et ressources pédagogiques gratuites.",
-      },
-      {
-        label: "Gestion de Carrières",
-        href: "/carrieres",
-        image: "/assets/images/emploi.jpg",
-        description: "Gestion de carrière, coaching emploi et accompagnement professionnel.",
-      },
-    ],
-  },
-  { label: "Nos Campus", href: "/campus" },
-  { label: "Contact", href: "/contact" },
-  { label: "Nous rejoindre", href: "/nous-rejoindre" },
-];
-
-// ── Mega Menu Formations ───────────────────────────────────────────────────────
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 const FALLBACK_IMG = 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=400';
 
 const categoryImages = {
@@ -267,26 +173,16 @@ const cortesLabels = {
   'devsecops':                     'DevSecOps',
   'informatique-systemes-reseaux': 'Informatique & Systèmes',
   'systemes-embarques-iot':        'Systèmes Embarqués & IOT',
-<<<<<<< HEAD
   'cybersecurite-reseaux':         'Cybersécurité, Réseaux & Infrastructure',
 };
 
 const buildMegaCategory = (categoryKey, label, href, { onlyLong = false } = {}) => ({
-=======
-};
-
-const buildMegaCategory = (categoryKey, label, href) => ({
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
   id: categoryKey,
   label,
   href,
   image: categoryImages[categoryKey] || FALLBACK_IMG,
   formations: formationsArray
-<<<<<<< HEAD
     .filter(f => f.categorie === categoryKey && (!onlyLong || f.type === 'longue'))
-=======
-    .filter(f => f.categorie === categoryKey)
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
     .map(f => ({
       label: f.hero?.titre || f.titre || f.id,
       href:  `/formation/${f.id}`,
@@ -295,7 +191,6 @@ const buildMegaCategory = (categoryKey, label, href) => ({
     })),
 });
 
-<<<<<<< HEAD
 /** Plusieurs clés `categorie` (ex. RH + compta) — id de ligne = première clé pour ancres / fusion certifiantes. */
 const buildMegaCategoryMulti = (categoryKeys, label, href, { onlyLong = false } = {}) => {
   const rowId = categoryKeys[0];
@@ -315,8 +210,6 @@ const buildMegaCategoryMulti = (categoryKeys, label, href, { onlyLong = false } 
   };
 };
 
-=======
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 const buildElearningCategories = () => {
   const grouped = {};
   formationsCortesArray.forEach(f => {
@@ -325,11 +218,7 @@ const buildElearningCategories = () => {
       grouped[cat] = {
         id:         cat,
         label:      cortesLabels[cat] || cat,
-<<<<<<< HEAD
         href:       `/formations?type=elearning#${cat}`,
-=======
-        href:       `/formations-courtes#${cat}`,
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         image:      categoryImages[cat] || FALLBACK_IMG,
         formations: [],
       };
@@ -344,7 +233,6 @@ const buildElearningCategories = () => {
   return Object.values(grouped);
 };
 
-<<<<<<< HEAD
 const buildCertifiantesCategoriesRaw = () => {
   const grouped = {};
   formationsCertifiantesArray.forEach((f) => {
@@ -355,28 +243,12 @@ const buildCertifiantesCategoriesRaw = () => {
         label: cortesLabels[cat] || cat,
         href: `/formations#certifiantes-${cat}`,
         image: categoryImages[cat] || FALLBACK_IMG,
-=======
-const buildCertifiantesCategories = () => {
-  const grouped = {};
-  formationsCertifiantesArray.forEach(f => {
-    const cat = f.categorie || 'autre';
-    if (!grouped[cat]) {
-      grouped[cat] = {
-        id:         cat,
-        label:      cortesLabels[cat] || cat,
-        href:       `/formations-certifiantes#${cat}`,
-        image:      categoryImages[cat] || FALLBACK_IMG,
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
         formations: [],
       };
     }
     grouped[cat].formations.push({
       label: f.hero?.titre || f.id,
-<<<<<<< HEAD
       href: `/formation/${f.id}`,
-=======
-      href:  `/formation/${f.id}`,
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       image: imageMap[f.id] || categoryImages[f.categorie] || FALLBACK_IMG,
       video: f.hero?.video || null,
     });
@@ -384,7 +256,6 @@ const buildCertifiantesCategories = () => {
   return Object.values(grouped);
 };
 
-<<<<<<< HEAD
 const buildCertifiantesCategories = () =>
   buildCertifiantesCategoriesRaw().filter((g) => g.id !== 'devops');
 
@@ -564,16 +435,3 @@ export const navlinks = [
   { label: "Contact", href: "/contact" },
   { label: "Nous rejoindre", href: "/nous-rejoindre" },
 ];
-=======
-export const megaMenuFormations = {
-  diplomantes: [
-    buildMegaCategory('cybersecurite-reseaux',  'Cybersécurité & Réseaux',  '/formations#cybersecurite-reseaux'),
-    buildMegaCategory('digital-developpement',  'Développement Web',        '/formations#digital-developpement'),
-    buildMegaCategory('ia-data',                'IA & Data',                '/formations#ia-data'),
-    buildMegaCategory('ressources-humaines',    'Ressources Humaines',      '/formations#ressources-humaines'),
-    buildMegaCategory('comptabilite-gestion',   'Comptabilité & Gestion',   '/formations#comptabilite-gestion'),
-  ],
-  certifiantes: buildCertifiantesCategories(),
-  elearning: buildElearningCategories(),
-};
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03

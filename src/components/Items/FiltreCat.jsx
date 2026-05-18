@@ -14,10 +14,7 @@ import { Search, Filter } from 'lucide-react';
  * searchTerm        string   (optionnel)
  * setSearchTerm     fn       (optionnel)
  * searchPlaceholder string   (défaut : "Rechercher…")
-<<<<<<< HEAD
  * showSearch        bool     (défaut : true) — masquer la zone recherche (ex. recherche gérée au-dessus)
-=======
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
  */
 const FiltreCat = ({
   categories = [],
@@ -29,29 +26,18 @@ const FiltreCat = ({
   searchTerm,
   setSearchTerm,
   searchPlaceholder = 'Rechercher…',
-<<<<<<< HEAD
   showSearch = true,
-=======
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
 }) => {
   const normalizedCats = categories
     .map(cat => (typeof cat === 'string' ? { id: cat, label: cat } : cat))
     .filter(cat => cat.id !== allValue);
 
-<<<<<<< HEAD
   const hasSearch =
     showSearch && searchTerm !== undefined && setSearchTerm !== undefined;
   const displayAllLabel = allLabel ?? allValue;
 
   return (
     <section className="py-5 bg-white/95 backdrop-blur-md border-b border-border sticky top-20 z-30 shadow-[0_4px_24px_-4px_rgba(0,40,69,0.08)]">
-=======
-  const hasSearch = searchTerm !== undefined && setSearchTerm !== undefined;
-  const displayAllLabel = allLabel ?? allValue;
-
-  return (
-    <section className="py-5 bg-white/95 backdrop-blur-md border-b border-border sticky top-[72px] z-30 shadow-[0_4px_24px_-4px_rgba(0,40,69,0.08)]">
->>>>>>> 0a48c2f2e8ddbb4846f055db09011af7079eaa03
       <div className="max-w-container-3xl mx-auto px-6">
 
         {hasSearch && (
