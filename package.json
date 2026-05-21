@@ -11,6 +11,9 @@
     "dev:mail": "concurrently \"npm run dev\" \"npm run php\"",
     "seed:admin": "node src/data/backend/seed-admin.js",
     "build": "vite build",
+    "sync:certification": "node scripts/sync-certification-from-formation.mjs",
+    "inject:certification": "node scripts/inject-certification-officielle.mjs",
+    "move:non-rncp-certifiantes": "node scripts/move-non-rncp-to-certifiantes.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },

@@ -1,6 +1,7 @@
 import formationData from './json/formation.json';
 import formationCortesData from './json/formation-courtes.json';
 import formationsCertifiantesData from './json/formations-certifiantes.json';
+import { inferFormationModalites } from '../utils/formationModalites';
 
 /**
  * Mapping explicite des images locales par ID de formation.
@@ -22,51 +23,68 @@ export const imageMap = {
   'formations-developpeur-dapplications-multimedia': '/assets/images/designer_app_mobile.jpg',
   'formations-concepteur-developpeur-dapplications': '/assets/images/concepteur_app.jpg',
   'formations-concepteur-designer-ui': '/assets/images/designer_app_mobile.jpg',
+  'formations-graphiste': '/assets/images/designer_app_mobile.jpg',
+  'formations-monteur-audiovisuel-analyse-sportive': '/assets/images/designer_app_mobile.jpg',
   'formations-lead-developpeur-web': '/assets/images/analyste_data.jpg',
   'formation-intelligence-artificielle': '/assets/images/analyste_data.jpg',
   'formation-python-tosa': '/assets/images/concepteur_app.jpg',
   'formation-responsive-web-design': '/assets/images/concepteur_web.jpg',
   'formation-php': '/assets/images/admin_system.jpg',
   'executive-mastere-ingenierie-logiciel': '/assets/images/concepteur_app.jpg',
+  'creer-site-internet-html-css-wordpress': '/assets/images/concepteur_web.jpg',
 
   // ── RH, Gestion & Comptabilité ──────────────────────────────────────────
   'formations-community-manager': '/assets/images/designer_app_mobile.jpg',
   'formations-assistante-ressources-humaines': '/assets/images/responsable_rh.jpg',
   'formations-assistante-de-direction': '/assets/images/secretaire_5.png',
   'formations-assistante-administratifve': '/assets/images/secretaire_4.jpg',
+  'formations-charge-accueil-et-gestion-administrative': '/assets/images/secretaire_5.png',
+  'formations-secretaire-assistant-medico-administratif': '/assets/images/secretaire_4.jpg',
   'formations-assistante-commerciale': '/assets/images/secretaire_1.jpg',
+  'formations-conseiller-insertion-professionnelle': '/assets/images/responsable_rh.jpg',
   'formations-conseillerere-relation-client-a-distance': '/assets/images/secretaire_2.jpg',
+  'formations-conseiller-de-vente': '/assets/images/secretaire_1.jpg',
+  'formations-employe-commercial': '/assets/images/secretaire_1.jpg',
+  'formations-assistant-immobilier': '/assets/images/emploi.jpg',
+  'formations-assistant-import-export': '/assets/images/entreprise.jpg',
   'formations-secretaire-comptable': '/assets/images/comptable2.jpg',
   'gestionnaire-comptable-fiscal': '/assets/images/comptable_1.jpg',
+  'formations-gestionnaire-de-paie': '/assets/images/comptable2.jpg',
   'formations-comptable-assistant': '/assets/images/comptable2.jpg',
+  'formations-responsable-etablissement-marchand': '/assets/images/entreprise.jpg',
+  'formations-responsable-petite-moyenne-structure': '/assets/images/entreprise.jpg',
+  'formations-responsable-developpement-des-activites': '/assets/images/entreprise.jpg',
 
   // ── E-Learning / Formations Courtes ─────────────────────────────────────
-  'systemes-embarques-iot-android':                    '/assets/images/concepteur_app.jpg',
-  'cybersecurite-pentest-web-serveurs':                '/assets/images/pentester.jpg',
-  'cybersecurite-preparation-osed':                    '/assets/images/expert_cyber.jpg',
-  'cybersecurite-pecb-lead-cloud-security-manager':    '/assets/images/Datacenter.jpg',
-  'digital-developpement-big-data-strategie-marketing':'/assets/images/analyste_data.jpg',
-  'digital-developpement-java':                        '/assets/images/concepteur_app.jpg',
-  'management-situationnel':                           '/assets/images/responsable_rh.jpg',
-  'management-rse':                                    '/assets/images/entreprise.jpg',
-  'management-reussir-management-projet':              '/assets/images/emploi.jpg',
-  'management-devenir-manager-agile':                  '/assets/images/designer_app_mobile.jpg',
-  'management-management-3-0':                         '/assets/images/certification.jpg',
-  'devops-devenez-devops-avec-docker':                 '/assets/images/devops.jpg',
-  'informatique-administration-windows-server':        '/assets/images/admin_system.jpg',
-  'istqb-testeur-certifie-niveau-fondation-ihmisen':     '/assets/images/concepteur_app.jpg',
-  'istqb-testeur-agile-fondation-ib-cegos':             '/assets/images/concepteur_app.jpg',
-  'istqb-tests-acceptation-fondation-m2i':               '/assets/images/concepteur_app.jpg',
-  'piloter-animer-securite-informatique-sysdream':       '/assets/images/expert_cyber.jpg',
-  'html5-css3-javascript-certifiante-eni':               '/assets/images/concepteur_web.jpg',
-  'python-oriente-objet-certifiante-eni':                 '/assets/images/concepteur_app.jpg',
+  'systemes-embarques-iot-android': '/assets/images/concepteur_app.jpg',
+  'cybersecurite-pentest-web-serveurs': '/assets/images/pentester.jpg',
+  'cybersecurite-preparation-osed': '/assets/images/expert_cyber.jpg',
+  'cybersecurite-pecb-lead-cloud-security-manager': '/assets/images/Datacenter.jpg',
+  'digital-developpement-big-data-strategie-marketing': '/assets/images/analyste_data.jpg',
+  'digital-developpement-java': '/assets/images/concepteur_app.jpg',
+  'management-situationnel': '/assets/images/responsable_rh.jpg',
+  'management-rse': '/assets/images/entreprise.jpg',
+  'management-reussir-management-projet': '/assets/images/emploi.jpg',
+  'management-devenir-manager-agile': '/assets/images/designer_app_mobile.jpg',
+  'management-management-3-0': '/assets/images/certification.jpg',
+  'devops-devenez-devops-avec-docker': '/assets/images/devops.jpg',
+  'informatique-administration-windows-server': '/assets/images/admin_system.jpg',
+  'istqb-testeur-certifie-niveau-fondation-ihmisen': '/assets/images/concepteur_app.jpg',
+  'istqb-testeur-agile-fondation-ib-cegos': '/assets/images/concepteur_app.jpg',
+  'istqb-tests-acceptation-fondation-m2i': '/assets/images/concepteur_app.jpg',
+  'piloter-animer-securite-informatique-sysdream': '/assets/images/expert_cyber.jpg',
+  'html5-css3-javascript-certifiante-eni': '/assets/images/concepteur_web.jpg',
+  'python-oriente-objet-certifiante-eni': '/assets/images/concepteur_app.jpg',
+  'tosa-evaluation-niveau-excel': '/assets/images/comptable_1.jpg',
+  'tosa-powerpoint-basique': '/assets/images/comptable_1.jpg',
+  'tosa-personnaliser-word': '/assets/images/comptable_1.jpg',
 
   // Formations certifiantes (alignées sur formations-certifiantes.json)
-  'dasa-devops-fundamentals':                             '/assets/images/devops.jpg',
-  'devops-methode-organisation':                          '/assets/images/devops.jpg',
-  'iso-iec-27035-incident-management-foundation':        '/assets/images/analyst_soc.jpg',
+  'dasa-devops-fundamentals': '/assets/images/devops.jpg',
+  'devops-methode-organisation': '/assets/images/devops.jpg',
+  'iso-iec-27035-incident-management-foundation': '/assets/images/analyst_soc.jpg',
   'sql-langage-bases-donnees-relationnelles-certifiante': '/assets/images/analyste_data.jpg',
-  'docker-concevoir-deployer-applications-certifiante':   '/assets/images/devops.jpg',
+  'docker-concevoir-deployer-applications-certifiante': '/assets/images/devops.jpg',
   'cybersecurite-exhaustive-menaces-architectures-certifiante': '/assets/images/expert_cyber.jpg',
   'developper-culture-digitale': '/assets/images/designer_app_mobile.jpg',
   'csharp-dotnet-visual-studio': '/assets/images/concepteur_app.jpg',
@@ -80,6 +98,15 @@ export const imageMap = {
   'cybersecurite-isc2-cissp': '/assets/images/expert_cyber.jpg',
   'devsecops-engineering-dsoe': '/assets/images/devops.jpg',
   'programmation-objet-cpp': '/assets/images/concepteur_app.jpg',
+  'microsoft-365-copilot-ai-business-professional': '/assets/images/analyste_data.jpg',
+  'ia-generative-administration-systemes-reseaux': '/assets/images/Terchnicien_reseau.jpg',
+  'ia-generative-maitrise-llm-transformers': '/assets/images/analyste_data.jpg',
+  'chatgpt-openai-api-developpeurs': '/assets/images/concepteur_web.jpg',
+  'api-chatgpt-openai-integration-applications': '/assets/images/concepteur_app.jpg',
+  'ia-generative-communication-webmarketing': '/assets/images/designer_app_mobile.jpg',
+  'machine-learning-fondamentaux-intensif': '/assets/images/analyste_data.jpg',
+  'seminaire-vue-ensemble-ia-ml-deep-learning': '/assets/images/analyste_data.jpg',
+  'deep-learning-traitement-langage-nlp': '/assets/images/analyste_data.jpg',
 };
 
 // Fallback si un ID n'est pas encore dans le mapping
@@ -89,12 +116,16 @@ const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1550751827-4bd374c3f58
 const mapIdToItem = (id) => {
   const data = formationData[id];
   if (!data) return null;
+  const cert = data.certificationOfficielle;
   return {
     titre: data.hero.titre.replace(/^Devenez\s+/i, '').replace(/^Faites votre Formation en\s+/i, ''),
     features: (data.competences || []).slice(0, 3),
     competences: data.competences || [],
     imageUrl: imageMap[id] || data.hero.image || FALLBACK_IMAGE,
-    href: `/formation/${id}`
+    href: `/formation/${id}`,
+    repertoireTitre: cert?.repertoire || null,
+    codeTitre: cert?.code || null,
+    modalites: inferFormationModalites(data),
   };
 };
 
@@ -107,7 +138,8 @@ const mapCourteIdToItem = (id) => {
     features: (data.competences || []).slice(0, 3),
     competences: data.competences || [],
     imageUrl: imageMap[id] || FALLBACK_IMAGE,
-    href: `/formation/${id}`
+    href: `/formation/${id}`,
+    modalites: ['distanciel'],
   };
 };
 
@@ -120,7 +152,8 @@ const mapCertifianteIdToItem = (id) => {
     features: (data.competences || []).slice(0, 3),
     competences: data.competences || [],
     imageUrl: data.presentation?.image || imageMap[id] || FALLBACK_IMAGE,
-    href: `/formation/${id}`
+    href: `/formation/${id}`,
+    modalites: inferFormationModalites(data),
   };
 };
 
@@ -138,48 +171,51 @@ export const catalogue = [
       'formations-administrateur-dinfrastructures-securisees-ais',
       'formations-technicien-superieur-systemes-et-reseaux',
       'administrateur-reseaux-netops',
-      'administrateursysteme-devops',
-      'technicien-reseaux-cybersecurite',
-      'formation-initiation-cybersecurite',
-      'formation-implementer-politique-cybersecurite',
-      'formation-cisco-configuration-administration'
+      'technicien-reseaux-cybersecurite'
     ].map(mapIdToItem).filter(Boolean),
   },
   {
-    id: 'digital-developpement',
-    label: 'Développement Web',
+    id: 'digital-ia-devops',
+    label: 'IA, Data, Web, DevOps',
+    description:
+      'IA, données, développement web et logiciel, et pratiques DevOps : parcours diplômants et certifications professionnelles.',
     items: [
       'formations-developpeur-web-mobile',
       'formations-developpeur-dapplications-multimedia',
       'formations-concepteur-developpeur-dapplications',
       'formations-concepteur-designer-ui',
+      'formations-graphiste',
+      'formations-monteur-audiovisuel-analyse-sportive',
       'formations-lead-developpeur-web',
-      'formation-responsive-web-design',
-      'formation-php',
-      'executive-mastere-ingenierie-logiciel'
-    ].map(mapIdToItem).filter(Boolean),
-  },
-  {
-    id: 'ia-data',
-    label: 'IA, Data & DevOps',
-    items: [
-      'formation-intelligence-artificielle',
-      'formation-python-tosa'
+      'executive-mastere-ingenierie-logiciel',
+      'creer-site-internet-html-css-wordpress',
+      'administrateursysteme-devops'
     ].map(mapIdToItem).filter(Boolean),
   },
   {
     id: 'ressources-humaines',
-    label: 'Ressources humaines & Comptabilité / Gestion',
+    label: 'RH & Comptabilité / Gestion',
     items: [
       'formations-assistante-ressources-humaines',
+      'formations-conseiller-insertion-professionnelle',
       'formations-assistante-de-direction',
       'formations-assistante-administratifve',
+      'formations-charge-accueil-et-gestion-administrative',
+      'formations-secretaire-assistant-medico-administratif',
       'formations-assistante-commerciale',
       'formations-conseillerere-relation-client-a-distance',
       'formations-community-manager',
       'formations-secretaire-comptable',
       'gestionnaire-comptable-fiscal',
-      'formations-comptable-assistant'
+      'formations-gestionnaire-de-paie',
+      'formations-comptable-assistant',
+      'formations-responsable-etablissement-marchand',
+      'formations-responsable-petite-moyenne-structure',
+      'formations-responsable-developpement-des-activites',
+      'formations-conseiller-de-vente',
+      'formations-employe-commercial',
+      'formations-assistant-immobilier',
+      'formations-assistant-import-export'
     ].map(mapIdToItem).filter(Boolean),
   }
 ];
@@ -208,6 +244,10 @@ const categoriesCourtes = {
   'systemes-embarques-iot': {
     label: 'Systèmes Embarqués & IOT',
     description: 'Android embarqué, noyau Linux et périphériques IoT.',
+  },
+  bureautique: {
+    label: 'Bureautique',
+    description: 'Excel, PowerPoint et Word : préparation aux certifications TOSA en E-learning.',
   },
 };
 
@@ -246,6 +286,14 @@ const categoriesCertifiantes = {
     description:
       'SQL, langages, développement logiciel, ISTQB et qualité logicielle certifiants.',
   },
+  bureautique: {
+    label: 'Bureautique',
+    description: 'Excel, certifications TOSA et montée en compétences sur les outils Microsoft Office.',
+  },
+  'ia-data': {
+    label: 'IA, Data & Programmation',
+    description: 'Python, automatisation et certifications éditeur (TOSA, etc.).',
+  },
 };
 
 export const catalogueCertifiantes = (() => {
@@ -280,8 +328,9 @@ function dedupeCatalogueItemsByHref(items) {
 
 /**
  * Catalogue /formations unifié : mêmes domaines que les diplômantes, fusionnés avec
- * les certifiantes lorsque l'id de catégorie est identique ; IA/Data absorbe les certifiantes DevOps ;
- * les domaines certifiants seuls suivent dans l'ordre du JSON.
+ * les certifiantes quand l’id de domaine correspond ; le bloc `digital-ia-devops` regroupe
+ * les certifiantes « développement », « IA / data » et « DevOps » ;
+ * les domaines certifiants seuls suivent dans l’ordre du JSON.
  */
 export const catalogueDiplomesCertifiantsFusionne = (() => {
   const certById = Object.fromEntries(catalogueCertifiantes.map((c) => [c.id, c]));
@@ -292,14 +341,13 @@ export const catalogueDiplomesCertifiantsFusionne = (() => {
     const dItems = withFormationTypeBadge(d.items, 'Diplômante');
     const certBuckets = [];
 
-    if (d.id === 'ia-data') {
-      if (certById['ia-data']) {
-        mergedCertIds.add('ia-data');
-        certBuckets.push(certById['ia-data']);
-      }
-      if (certById.devops) {
-        mergedCertIds.add('devops');
-        certBuckets.push(certById.devops);
+    if (d.id === 'digital-ia-devops') {
+      for (const key of ['digital-developpement', 'ia-data', 'devops']) {
+        const bucket = certById[key];
+        if (bucket) {
+          mergedCertIds.add(key);
+          certBuckets.push(bucket);
+        }
       }
     } else {
       const c = certById[d.id];

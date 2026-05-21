@@ -1782,5 +1782,434 @@
         }
       ]
     }
+  },
+  "tosa-evaluation-niveau-excel": {
+    "categorie": "bureautique",
+    "type": "courte",
+    "hero": {
+      "titre": "Évaluation du niveau Excel — Certification TOSA",
+      "sousTitre": "Avec Alt RH & formations, définissez un parcours personnalisé et préparez la certification TOSA Excel pour valider vos compétences bureautiques.",
+      "video": "/assets/video/formations/administration.mp4"
+    },
+    "stats": [
+      {
+        "label": "Certification",
+        "value": "TOSA Excel (Microsoft Office)"
+      },
+      {
+        "label": "Modalité",
+        "value": "E-learning"
+      },
+      {
+        "label": "Code CPF",
+        "value": "135449"
+      },
+      {
+        "label": "Public",
+        "value": "Développer ou valider un niveau en bureautique"
+      }
+    ],
+    "presentation": {
+      "titre": "Objectifs de la formation",
+      "image": "/assets/images/comptable_1.jpg",
+      "paragraphes": [
+        "Cette formation certifiante commence par une évaluation de votre niveau d'utilisation d'Excel : définition d'objectifs particuliers et élaboration d'un programme de formation personnalisé.",
+        "Vous prendrez vos repères dans l'interface (ruban, barre d'accès rapide, barre d'état), maîtriserez les concepts de base, l'organisation des feuilles et la conception de tableaux professionnels (formules, mise en forme, impression).",
+        "Le test TOSA mesure les compétences sur les logiciels Microsoft Office (Word, Excel, PowerPoint). Les scores obtenus permettent de mesurer les progrès et l'efficacité du parcours. Alt RH & formations vous accompagne sur le financement (CPF éligible) et la préparation aux épreuves."
+      ]
+    },
+    "objectifs": [
+      "Définir des objectifs de formation personnalisés à partir d'un positionnement initial",
+      "Maîtriser l'interface Excel et les fonctions de base",
+      "Organiser feuilles et classeurs, lier des données entre tableaux",
+      "Concevoir, formater et imprimer des tableaux avec formules et mise en forme conditionnelle",
+      "S'entraîner aux épreuves TOSA via tests blancs et mini-tests",
+      "Valider son niveau avec la certification TOSA"
+    ],
+    "programme": {
+      "dureeTotale": "Parcours personnalisé — durée adaptée à votre niveau et à vos objectifs",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Évaluation et cadrage du parcours",
+          "duree": "Phase initiale",
+          "description": "Définition des objectifs particuliers de la formation. Élaboration d'un programme de formation personnalisé selon votre niveau et vos besoins."
+        },
+        {
+          "id": 2,
+          "titre": "Prendre ses repères dans Excel",
+          "duree": "Module 1",
+          "description": "Utiliser le ruban, la barre d'accès rapide et la barre d'état. Enregistrer et modifier un classeur. Découverte de la barre d'outils et de la feuille Excel."
+        },
+        {
+          "id": 3,
+          "titre": "Concepts de base et organisation",
+          "duree": "Module 2",
+          "description": "Identifier les concepts de base. Insérer, déplacer et copier une ou plusieurs feuilles. Modifier plusieurs feuilles simultanément. Lier des données entre tableaux."
+        },
+        {
+          "id": 4,
+          "titre": "Concevoir, présenter et imprimer un tableau",
+          "duree": "Module 3",
+          "description": "Saisir données et formules. Formater cellules (chiffres, texte, titres), modifier les largeurs de colonnes. Définir une mise en forme conditionnelle. Imprimer l'intégralité ou une partie du tableau, titrer et paginer."
+        },
+        {
+          "id": 5,
+          "titre": "Méthodes, entraînement et certification TOSA",
+          "duree": "Module 4",
+          "description": "Apports théoriques, échanges et questions-réponses avec un formateur qualifié. Entraînement aux épreuves TOSA par des tests blancs et mini-tests. Passage de la certification TOSA."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation et certification TOSA",
+      "description": "Le TOSA est un test standardisé qui mesure les compétences en bureautique Microsoft Office. Les scores constituent un outil précieux pour mesurer les progrès et l'efficacité du programme.",
+      "etapes": [
+        "Positionnement initial pour définir le parcours personnalisé",
+        "Évaluations formatives tout au long de la formation",
+        "Tests blancs et mini-tests en conditions proches de l'épreuve",
+        "Passage de la certification TOSA Excel"
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Organisation avec Alt RH & formations",
+        "points": [
+          "Format : E-learning — parcours à distance avec accompagnement pédagogique (classes virtuelles et plateforme)",
+          "Formation certifiante TOSA — programme personnalisé selon votre niveau",
+          "Code CPF : 135449",
+          "Public : développer des compétences en bureautique ou valider un niveau de connaissances",
+          "Organisme certifié Qualiopi — accessible aux personnes en situation de handicap",
+          "Accompagnement au montage du dossier de financement",
+          "Financement demandeur d'emploi : AIF (France Travail), Conseil régional, CPF, AGEFIPH (RQTH)",
+          "Financement salarié : PTP, Démissionnaire, Pro-A, plan de développement, FNE-Formation, CPF",
+          "Financement entreprise : OPCO, alternance (apprentissage / professionnalisation)",
+          "Attention aux délais de montage du dossier — rapprochez-vous d'un conseiller"
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Savoir utiliser un ordinateur sous Windows ou équivalent",
+          "Aucun niveau Excel minimum requis — le parcours est adapté après évaluation",
+          "Motivation pour structurer et valoriser ses compétences bureautiques"
+        ]
+      }
+    },
+    "methodologie": "Apports théoriques, échanges questions-réponses et tours de table avec un formateur qualifié, complétés par des entraînements aux épreuves TOSA (tests blancs et mini-tests).",
+    "certification": "Certification TOSA — évaluation des compétences Excel (écosystème Microsoft Office)",
+    "competences": [
+      "Naviguer dans l'interface Excel et gérer les classeurs",
+      "Organiser feuilles et lier des données entre tableaux",
+      "Créer des tableaux avec formules et mise en forme professionnelle",
+      "Appliquer une mise en forme conditionnelle et préparer des impressions",
+      "Se préparer efficacement à l'épreuve TOSA",
+      "Mesurer et valoriser son niveau de compétences bureautiques"
+    ],
+    "metiersVises": [
+      "Assistant·e administratif·ve",
+      "Secrétaire",
+      "Comptable assistant·e",
+      "Chargé·e de gestion",
+      "Tout professionnel utilisant Excel au quotidien"
+    ],
+    "ctaFinal": {
+      "titre": "Validez votre niveau Excel avec Alt RH & formations",
+      "sousTitre": "Contactez nos conseillers pour un positionnement, un programme personnalisé et le montage de votre financement (CPF, OPCO, France Travail).",
+      "boutons": [
+        {
+          "label": "Contacter Alt RH & formations",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "tosa-powerpoint-basique": {
+    "categorie": "bureautique",
+    "type": "courte",
+    "hero": {
+      "titre": "PowerPoint basique — Certification TOSA",
+      "sousTitre": "Avec Alt RH & formations, créez des présentations professionnelles et préparez la certification TOSA PowerPoint.",
+      "video": "/assets/video/formations/administration.mp4"
+    },
+    "stats": [
+      {
+        "label": "Certification",
+        "value": "TOSA PowerPoint (Microsoft Office)"
+      },
+      {
+        "label": "Modalité",
+        "value": "E-learning"
+      },
+      {
+        "label": "Code CPF",
+        "value": "135449"
+      },
+      {
+        "label": "Public",
+        "value": "Développer ou valider un niveau en bureautique"
+      }
+    ],
+    "presentation": {
+      "titre": "Objectifs de la formation",
+      "image": "/assets/images/comptable_1.jpg",
+      "paragraphes": [
+        "Cette formation certifiante vous permet de concevoir des présentations PowerPoint claires et impactantes : méthode de rédaction, ligne graphique cohérente, enrichissement des diapositives et maîtrise du diaporama.",
+        "Vous apprendrez à structurer votre message, personnaliser thèmes et masques, intégrer visuels, tableaux et graphiques, puis animer et présenter votre diaporama avec assurance.",
+        "Le test TOSA mesure les compétences sur les logiciels Microsoft Office (Word, Excel, PowerPoint). Alt RH & formations vous accompagne sur le financement (CPF éligible) et la préparation aux épreuves."
+      ]
+    },
+    "objectifs": [
+      "Concevoir une présentation en définissant objectifs, résultat attendu et plan",
+      "Définir une ligne graphique cohérente (thèmes, masques, logo, styles)",
+      "Organiser et gérer les diapositives avec le mode Trieuse",
+      "Enrichir les diapositives : médias, tableaux, graphiques, WordArt et mise en page des objets",
+      "Maîtriser transitions, animations et mode présentateur",
+      "S'entraîner et valider son niveau avec la certification TOSA PowerPoint"
+    ],
+    "programme": {
+      "dureeTotale": "Parcours certifiant — durée adaptée à votre niveau et à vos objectifs",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Concevoir une présentation",
+          "duree": "Module 1",
+          "description": "Identifier les points clés d'une présentation réussie. Procéder avec méthode : objectifs, résultat attendu, délai de rédaction. Mettre au point son plan."
+        },
+        {
+          "id": 2,
+          "titre": "Définir la ligne graphique",
+          "duree": "Module 2",
+          "description": "Utiliser les thèmes pour la cohérence visuelle. Modifier couleurs, polices et effets. Exploiter les masques, insérer un logo sur toutes les diapositives. Modifier puces, alignement, interligne. Appliquer un style d'arrière-plan."
+        },
+        {
+          "id": 3,
+          "titre": "Organiser ses diapositives",
+          "duree": "Module 3",
+          "description": "Exploiter le mode Trieuse de diapositives. Supprimer, déplacer, dupliquer ou masquer des diapositives."
+        },
+        {
+          "id": 4,
+          "titre": "Enrichir le contenu de chaque diapositive",
+          "duree": "Module 4",
+          "description": "Choisir une disposition adaptée. Insérer et personnaliser une photo. Construire un tableau, créer un graphique. Ajouter du texte WordArt. Positionner, aligner et répartir les objets. Dissocier, grouper et fusionner des objets."
+        },
+        {
+          "id": 5,
+          "titre": "Diaporama, projection et certification TOSA",
+          "duree": "Module 5",
+          "description": "Appliquer des effets de transition et animer texte et objets. Exécuter le diaporama (navigation, zoom, pointeur laser, pause). Exploiter le mode présentateur. Apports théoriques, échanges avec formateur qualifié, tests blancs et mini-tests TOSA."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation et certification TOSA",
+      "description": "Le TOSA mesure les compétences en bureautique Microsoft Office. Les scores permettent de mesurer les progrès et l'efficacité du programme.",
+      "etapes": [
+        "Positionnement sur les compétences PowerPoint de base",
+        "Évaluations formatives au fil du parcours",
+        "Tests blancs et mini-tests en conditions proches de l'épreuve",
+        "Passage de la certification TOSA PowerPoint"
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Organisation avec Alt RH & formations",
+        "points": [
+          "Format : E-learning — parcours à distance avec accompagnement pédagogique (classes virtuelles et plateforme)",
+          "Formation certifiante TOSA PowerPoint — niveau basique",
+          "Code CPF : 135449",
+          "Public : développer des compétences en bureautique ou valider un niveau de connaissances",
+          "Organisme certifié Qualiopi — accessible aux personnes en situation de handicap",
+          "Accompagnement au montage du dossier de financement",
+          "Financement demandeur d'emploi : AIF (France Travail), Conseil régional, CPF, AGEFIPH (RQTH)",
+          "Financement salarié : PTP, Démissionnaire, Pro-A, plan de développement, FNE-Formation, CPF",
+          "Financement entreprise : OPCO, alternance (apprentissage / professionnalisation)",
+          "Attention aux délais de montage du dossier — rapprochez-vous d'un conseiller"
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Savoir utiliser un ordinateur sous Windows ou équivalent",
+          "Aucun prérequis PowerPoint avancé — niveau basique visé",
+          "Motivation pour créer des présentations professionnelles"
+        ]
+      }
+    },
+    "methodologie": "Apports théoriques, échanges questions-réponses et tours de table avec un formateur qualifié, complétés par des entraînements aux épreuves TOSA (tests blancs et mini-tests).",
+    "certification": "Certification TOSA — évaluation des compétences PowerPoint (écosystème Microsoft Office)",
+    "competences": [
+      "Structurer une présentation avec une méthode claire (objectifs, plan, délais)",
+      "Personnaliser thèmes, masques et ligne graphique",
+      "Organiser les diapositives en mode Trieuse",
+      "Intégrer visuels, tableaux, graphiques et objets mis en page",
+      "Animer et présenter un diaporama en mode présentateur",
+      "Se préparer et réussir la certification TOSA PowerPoint"
+    ],
+    "metiersVises": [
+      "Assistant·e administratif·ve",
+      "Secrétaire",
+      "Chargé·e de communication",
+      "Formateur·rice",
+      "Tout professionnel créant des présentations"
+    ],
+    "ctaFinal": {
+      "titre": "Maîtrisez PowerPoint avec Alt RH & formations",
+      "sousTitre": "Contactez nos conseillers pour votre parcours TOSA et le montage de votre financement (CPF, OPCO, France Travail).",
+      "boutons": [
+        {
+          "label": "Contacter Alt RH & formations",
+          "url": "/contact"
+        }
+      ]
+    }
+  },
+  "tosa-personnaliser-word": {
+    "categorie": "bureautique",
+    "type": "courte",
+    "hero": {
+      "titre": "Personnaliser Word — Certification TOSA",
+      "sousTitre": "Avec Alt RH & formations, maîtrisez Word pour des documents structurés, professionnels et certifiés TOSA.",
+      "video": "/assets/video/formations/administration.mp4"
+    },
+    "stats": [
+      {
+        "label": "Certification",
+        "value": "TOSA Word (Microsoft Office)"
+      },
+      {
+        "label": "Modalité",
+        "value": "E-learning"
+      },
+      {
+        "label": "Code CPF",
+        "value": "135449"
+      },
+      {
+        "label": "Public",
+        "value": "Développer ou valider un niveau en bureautique"
+      }
+    ],
+    "presentation": {
+      "titre": "Objectifs de la formation",
+      "image": "/assets/images/comptable_1.jpg",
+      "paragraphes": [
+        "Cette formation certifiante vous permet de personnaliser et d'automatiser vos documents Word : interface, styles, thèmes, modèles, structure avancée, illustrations et collaboration.",
+        "Vous apprendrez à construire des documents professionnels avec table des matières, numérotation des titres, tableaux, colonnes et suivi des modifications en équipe.",
+        "Le test TOSA mesure les compétences sur Microsoft Office (Word, Excel, PowerPoint). Alt RH & formations vous accompagne sur le financement (CPF éligible) et la préparation aux épreuves."
+      ]
+    },
+    "objectifs": [
+      "Personnaliser l'interface Word et les outils de correction",
+      "Automatiser la mise en forme avec styles, thèmes et modèles",
+      "Construire un document structuré (plan, sommaire, listes hiérarchisées)",
+      "Intégrer illustrations, tableaux, graphiques et SmartArt",
+      "Présenter l'information en tableaux et colonnes",
+      "Collaborer et valider son niveau avec la certification TOSA Word"
+    ],
+    "programme": {
+      "dureeTotale": "Parcours certifiant — durée adaptée à votre niveau et à vos objectifs",
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Personnaliser Word",
+          "duree": "Module 1",
+          "description": "Personnaliser la barre d'accès rapide, le ruban, les raccourcis clavier et la police. Enrichir la correction automatique. Exploiter les outils de traduction."
+        },
+        {
+          "id": 2,
+          "titre": "Automatiser la présentation des documents",
+          "duree": "Module 2",
+          "description": "Repérer les mises en forme répétitives. Créer, appliquer, modifier et enchaîner les styles. Créer un thème. Créer des modèles."
+        },
+        {
+          "id": 3,
+          "titre": "Construire un document structuré",
+          "duree": "Module 3",
+          "description": "Utiliser le mode plan et créer une table des matières. Créer des styles pour listes à puces, numérotées et hiérarchisées. Personnaliser les styles de titres. Numéroter automatiquement les titres et insérer le sommaire."
+        },
+        {
+          "id": 4,
+          "titre": "Intégrer des illustrations",
+          "duree": "Module 4",
+          "description": "Définir l'habillage du texte autour des images. Insérer un tableau, un graphique Excel, un diagramme SmartArt. Maîtriser le positionnement des objets."
+        },
+        {
+          "id": 5,
+          "titre": "Tableaux, colonnes et collaboration",
+          "duree": "Module 5",
+          "description": "Dessiner un tableau (gomme, stylo, fusionner et fractionner). Créer un tableau de mise en page. Présenter le texte en colonnes. Suivre les modifications, insérer des commentaires, partager le document en ligne."
+        },
+        {
+          "id": 6,
+          "titre": "Méthodes, entraînement et certification TOSA",
+          "duree": "Module 6",
+          "description": "Apports théoriques, échanges et questions-réponses avec un formateur qualifié. Entraînement aux épreuves TOSA par tests blancs et mini-tests. Passage de la certification."
+        }
+      ]
+    },
+    "evaluation": {
+      "titre": "Évaluation et certification TOSA",
+      "description": "Le TOSA mesure les compétences en bureautique Microsoft Office. Les scores permettent de mesurer les progrès et l'efficacité du programme.",
+      "etapes": [
+        "Positionnement sur les compétences Word",
+        "Évaluations formatives au fil du parcours",
+        "Tests blancs et mini-tests en conditions proches de l'épreuve",
+        "Passage de la certification TOSA Word"
+      ]
+    },
+    "infosPratiques": {
+      "modalites": {
+        "titre": "Organisation avec Alt RH & formations",
+        "points": [
+          "Format : E-learning — parcours à distance avec accompagnement pédagogique (classes virtuelles et plateforme)",
+          "Formation certifiante TOSA Word — personnalisation et documents structurés",
+          "Code CPF : 135449",
+          "Public : développer des compétences en bureautique ou valider un niveau de connaissances",
+          "Organisme certifié Qualiopi — accessible aux personnes en situation de handicap",
+          "Accompagnement au montage du dossier de financement",
+          "Financement demandeur d'emploi : AIF (France Travail), Conseil régional, CPF, AGEFIPH (RQTH)",
+          "Financement salarié : PTP, Démissionnaire, Pro-A, plan de développement, FNE-Formation, CPF",
+          "Financement entreprise : OPCO, alternance (apprentissage / professionnalisation)",
+          "Attention aux délais de montage du dossier — rapprochez-vous d'un conseiller"
+        ]
+      },
+      "prerequis": {
+        "titre": "Prérequis",
+        "points": [
+          "Savoir utiliser un ordinateur sous Windows ou équivalent",
+          "Notions de base sur un traitement de texte recommandées",
+          "Motivation pour produire des documents professionnels"
+        ]
+      }
+    },
+    "methodologie": "Apports théoriques, échanges questions-réponses et tours de table avec un formateur qualifié, complétés par des entraînements aux épreuves TOSA (tests blancs et mini-tests).",
+    "certification": "Certification TOSA — évaluation des compétences Word (écosystème Microsoft Office)",
+    "competences": [
+      "Personnaliser l'interface et les outils Word (ruban, raccourcis, correction)",
+      "Créer et appliquer styles, thèmes et modèles de documents",
+      "Structurer un document avec plan, titres numérotés et table des matières",
+      "Intégrer images, tableaux, graphiques et SmartArt",
+      "Mettre en page avec tableaux dessinés et colonnes",
+      "Collaborer sur un document partagé et réussir la certification TOSA"
+    ],
+    "metiersVises": [
+      "Assistant·e administratif·ve",
+      "Secrétaire",
+      "Rédacteur·rice",
+      "Chargé·e de gestion",
+      "Tout professionnel produisant des documents Word"
+    ],
+    "ctaFinal": {
+      "titre": "Maîtrisez Word avec Alt RH & formations",
+      "sousTitre": "Contactez nos conseillers pour votre parcours TOSA et le montage de votre financement (CPF, OPCO, France Travail).",
+      "boutons": [
+        {
+          "label": "Contacter Alt RH & formations",
+          "url": "/contact"
+        }
+      ]
+    }
   }
 }

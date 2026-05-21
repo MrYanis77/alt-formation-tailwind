@@ -28,6 +28,7 @@ const NousRejoindre = lazy(() => import('./pages/NousRejoindrePage'));
 const MentionsLegales = lazy(() => import('./pages/MentionsLegales'));
 const PolitiqueConfidentialite = lazy(() => import('./pages/PolitiqueConfidentialite'));
 const ReglementInterieur = lazy(() => import('./pages/ReglementInterieur'));
+const DemarchePage = lazy(() => import('./pages/DemarchePage'));
 const PolitiqueCookies = lazy(() => import('./pages/PolitiqueCookies'));
 const RessourcesIAPages = lazy(() => import('./pages/RessourcesIAPages'));
 const FaqPage = lazy(() => import('./pages/FaqPage'));
@@ -102,6 +103,10 @@ function AppShell() {
               <Route path="/contact" element={<ContactPage />} />
               {/* <Route path="/inscription" element={<InscriptionPage />} /> */}
               {/* <Route path="/connexion" element={<ConnexionPage />} /> */}
+              <Route
+                path="/formation/formation-intelligence-artificielle"
+                element={<Navigate to="/formation/microsoft-365-copilot-ai-business-professional" replace />}
+              />
               <Route path="/formation/:id" element={<FormationDetail />} />
               <Route path="/campus" element={<CampusPage />} />
               <Route path="/certification" element={<CertificationPage />} />
@@ -112,6 +117,11 @@ function AppShell() {
 
               <Route path="/ressources-ia" element={<RessourcesIAPages />} />
               <Route path="/nous-rejoindre" element={<NousRejoindre />} />
+
+              <Route path="/demarche-pedagogique" element={<DemarchePage />} />
+              <Route path="/demarche-qualite" element={<DemarchePage />} />
+              <Route path="/demarche-rse" element={<DemarchePage />} />
+              <Route path="/situation-handicap" element={<DemarchePage />} />
             </Route>
 
             <Route path="/faq" element={<FaqPage />} />

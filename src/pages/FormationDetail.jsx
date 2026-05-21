@@ -4,6 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import { formationsArray } from '../data/navdata';
 import { imageMap } from '../data/formations';
 import { certifications } from '../data/certification';
+import { mapCertificationOfficielleToCertif } from '../utils/mapCertificationOfficielle';
 
 import Hero from '../components/Hero/Hero';
 import TexteSection from '../components/Textes/TexteSection';
@@ -21,7 +22,24 @@ export default function FormationDetail() {
 
   const data = formationsArray.find((f) => f.id === id);
 
-  const certif = certifications.find((c) => c.href === `/formation/${id}`);
+  const certifFromData = data?.certificationOfficielle
+    ? mapCertificationOfficielleToCertif(data.certificationOfficielle, id, {
+        hero: data.hero,
+        categorie: data.categorie,
+        imageUrl: imageMap[id],
+      })
+    : null;
+
+  const certifLegacy = certifications.find((c) => c.href === `/formation/${id}`);
+
+  const certif = certifFromData
+    ? {
+        ...certifLegacy,
+        ...certifFromData,
+        imageUrl: certifFromData.imageUrl || certifLegacy?.imageUrl || imageMap[id],
+        category: certifLegacy?.category || certifFromData.category,
+      }
+    : certifLegacy;
 
   if (!data) {
     return (

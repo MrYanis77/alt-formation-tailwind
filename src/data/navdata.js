@@ -9,30 +9,27 @@ const categoryMap = {
   'formations-administrateur-dinfrastructures-securisees-ais': 'cybersecurite-reseaux',
   'formations-technicien-superieur-systemes-et-reseaux': 'cybersecurite-reseaux',
   'administrateur-reseaux-netops': 'cybersecurite-reseaux',
-  'administrateursysteme-devops': 'cybersecurite-reseaux',
+  'administrateursysteme-devops': 'digital-developpement',
   'technicien-reseaux-cybersecurite': 'cybersecurite-reseaux',
-  'formation-initiation-cybersecurite': 'cybersecurite-reseaux',
-  'formation-implementer-politique-cybersecurite': 'cybersecurite-reseaux',
-  'formation-cisco-configuration-administration': 'cybersecurite-reseaux',
 
   // Développement
   'formations-developpeur-web-mobile': 'digital-developpement',
   'formations-developpeur-dapplications-multimedia': 'digital-developpement',
   'formations-concepteur-developpeur-dapplications': 'digital-developpement',
   'formations-concepteur-designer-ui': 'digital-developpement',
+  'formations-graphiste': 'digital-developpement',
+  'formations-monteur-audiovisuel-analyse-sportive': 'digital-developpement',
   'formations-lead-developpeur-web': 'digital-developpement',
-  'formation-responsive-web-design': 'digital-developpement',
-  'formation-php': 'digital-developpement',
   'executive-mastere-ingenierie-logiciel': 'digital-developpement',
-
-  // IA
-  'formation-intelligence-artificielle': 'ia-data',
-  'formation-python-tosa': 'ia-data',
+  'creer-site-internet-html-css-wordpress': 'digital-developpement',
 
   // RH
   'formations-assistante-ressources-humaines': 'ressources-humaines',
+  'formations-conseiller-insertion-professionnelle': 'ressources-humaines',
   'formations-assistante-de-direction': 'ressources-humaines',
   'formations-assistante-administratifve': 'ressources-humaines',
+  'formations-charge-accueil-et-gestion-administrative': 'ressources-humaines',
+  'formations-secretaire-assistant-medico-administratif': 'ressources-humaines',
   'formations-assistante-commerciale': 'ressources-humaines',
   'formations-conseillerere-relation-client-a-distance': 'ressources-humaines',
 
@@ -40,8 +37,27 @@ const categoryMap = {
   'formations-community-manager': 'comptabilite-gestion',
   'formations-secretaire-comptable': 'comptabilite-gestion',
   'gestionnaire-comptable-fiscal': 'comptabilite-gestion',
-  'formations-comptable-assistant': 'comptabilite-gestion'
+  'formations-comptable-assistant': 'comptabilite-gestion',
+  'formations-responsable-etablissement-marchand': 'comptabilite-gestion',
+  'formations-responsable-petite-moyenne-structure': 'comptabilite-gestion',
+  'formations-responsable-developpement-des-activites': 'comptabilite-gestion',
+  'formations-gestionnaire-de-paie': 'comptabilite-gestion',
+  'formations-assistant-immobilier': 'comptabilite-gestion',
+  'formations-assistant-import-export': 'comptabilite-gestion',
+  'formations-conseiller-de-vente': 'comptabilite-gestion',
+  'formations-employe-commercial': 'comptabilite-gestion'
 };
+
+/**
+ * Identifiant de catégorie méga-menu / certifiante pour une fiche formation (diplômante ou certifiante).
+ */
+export function getFormationCatalogCategory(formationId) {
+  const cert = formationsCertifiantesData[formationId];
+  if (cert?.categorie) return cert.categorie;
+  const long = formationsData[formationId];
+  if (!long) return null;
+  return long.categorie || categoryMap[formationId] || 'autre';
+}
 
 // Conversion du JSON en tableau et ajout dynamique de la catégorie si manquante
 // On fait également correspondre la structure du JSON (anglais) à celle des composants (français)
@@ -151,6 +167,7 @@ const FALLBACK_IMG = 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?
 
 const categoryImages = {
   'cybersecurite-reseaux':         '/assets/images/expert_cyber.jpg',
+  'digital-ia-devops':             '/assets/images/concepteur_web.jpg',
   'digital-developpement':         '/assets/images/concepteur_web.jpg',
   'ia-data':                       '/assets/images/analyste_data.jpg',
   'ressources-humaines':           '/assets/images/responsable_rh.jpg',
@@ -162,10 +179,12 @@ const categoryImages = {
   'devsecops':                     '/assets/images/Datacenter.jpg',
   'informatique-systemes-reseaux': '/assets/images/Terchnicien_reseau.jpg',
   'systemes-embarques-iot':        '/assets/images/admin_system.jpg',
+  'bureautique':                   '/assets/images/comptable_1.jpg',
 };
 
 const cortesLabels = {
   'cybersecurite':                 'Cybersécurité',
+  'digital-ia-devops':             'IA, Data, Web, DevOps',
   'digital-developpement':         'Développement & Big Data',
   'management':                    'Management',
   'devops-devsecops':              'DevOps / DevSecOps',
@@ -174,6 +193,8 @@ const cortesLabels = {
   'informatique-systemes-reseaux': 'Informatique & Systèmes',
   'systemes-embarques-iot':        'Systèmes Embarqués & IOT',
   'cybersecurite-reseaux':         'Cybersécurité, Réseaux & Infrastructure',
+  'bureautique':                   'Bureautique',
+  'ia-data':                       'IA, Data & Programmation',
 };
 
 const buildMegaCategory = (categoryKey, label, href, { onlyLong = false } = {}) => ({
@@ -191,20 +212,20 @@ const buildMegaCategory = (categoryKey, label, href, { onlyLong = false } = {}) 
     })),
 });
 
-/** Plusieurs clés `categorie` (ex. RH + compta) — id de ligne = première clé pour ancres / fusion certifiantes. */
-const buildMegaCategoryMulti = (categoryKeys, label, href, { onlyLong = false } = {}) => {
-  const rowId = categoryKeys[0];
+/** Plusieurs clés `categorie` — id de ligne = `rowId` si fourni, sinon la première clé. */
+const buildMegaCategoryMulti = (categoryKeys, label, href, { onlyLong = false, rowId } = {}) => {
+  const resolvedId = rowId || categoryKeys[0];
   return {
-    id: rowId,
+    id: resolvedId,
     label,
     href,
-    image: categoryImages[rowId] || FALLBACK_IMG,
+    image: categoryImages[resolvedId] || categoryImages[categoryKeys[0]] || FALLBACK_IMG,
     formations: formationsArray
       .filter((f) => categoryKeys.includes(f.categorie) && (!onlyLong || f.type === 'longue'))
       .map((f) => ({
         label: f.hero?.titre || f.titre || f.id,
         href: `/formation/${f.id}`,
-        image: imageMap[f.id] || categoryImages[f.categorie] || categoryImages[rowId] || FALLBACK_IMG,
+        image: imageMap[f.id] || categoryImages[f.categorie] || categoryImages[resolvedId] || FALLBACK_IMG,
         video: f.hero?.video || null,
       })),
   };
@@ -257,7 +278,11 @@ const buildCertifiantesCategoriesRaw = () => {
 };
 
 const buildCertifiantesCategories = () =>
-  buildCertifiantesCategoriesRaw().filter((g) => g.id !== 'devops');
+  buildCertifiantesCategoriesRaw().filter(
+    (g) => !['devops', 'digital-developpement', 'ia-data'].includes(g.id)
+  );
+
+const CERT_MERGE_KEYS = ['digital-developpement', 'ia-data', 'devops'];
 
 const getCertifiantesNavSubmenu = () => {
   const grouped = {};
@@ -275,17 +300,34 @@ const getCertifiantesNavSubmenu = () => {
       href: `/formation/${f.id}`,
     });
   });
-  return Object.entries(grouped)
-    .filter(([cat]) => cat !== 'devops')
+
+  const mergedSubs = CERT_MERGE_KEYS.flatMap((k) => grouped[k]?.submenu || []);
+
+  const rest = Object.entries(grouped)
+    .filter(([cat]) => !CERT_MERGE_KEYS.includes(cat))
     .map(([, v]) => v);
+
+  if (mergedSubs.length === 0) return rest;
+
+  const mergedEntry = {
+    label: cortesLabels['digital-ia-devops'] || 'IA, Data, Web, DevOps',
+    href: '/formations#certifiantes-digital-ia-devops',
+    submenu: dedupeMegaFormations(mergedSubs),
+  };
+
+  return [mergedEntry, ...rest];
 };
 
 export const megaMenuFormations = {
   diplomantes: [
     buildMegaCategory('cybersecurite-reseaux',  'Cybersécurité, Réseaux & Infrastructure',  '/formations#diplomantes-cybersecurite-reseaux', { onlyLong: true }),
-    buildMegaCategory('digital-developpement',  'Développement Web',        '/formations#diplomantes-digital-developpement', { onlyLong: true }),
-    buildMegaCategory('ia-data',                'IA, Data & DevOps',       '/formations#diplomantes-ia-data', { onlyLong: true }),
-    buildMegaCategoryMulti(['ressources-humaines', 'comptabilite-gestion'], 'Ressources humaines & Comptabilité / Gestion', '/formations#diplomantes-ressources-humaines', { onlyLong: true }),
+    buildMegaCategoryMulti(
+      ['digital-developpement', 'ia-data'],
+      'IA, Data, Web, DevOps',
+      '/formations#diplomantes-digital-ia-devops',
+      { onlyLong: true, rowId: 'digital-ia-devops' }
+    ),
+    buildMegaCategoryMulti(['ressources-humaines', 'comptabilite-gestion'], 'RH & Comptabilité / Gestion', '/formations#diplomantes-ressources-humaines', { onlyLong: true }),
   ],
   certifiantes: buildCertifiantesCategories(),
   elearning: buildElearningCategories(),
@@ -300,7 +342,7 @@ function dedupeMegaFormations(list) {
   });
 }
 
-/** Lignes du méga-menu combiné : une seule entrée par id quand diplômantes et certifiantes partagent la même clé ; IA/Data fusionne aussi les certifiantes DevOps. */
+/** Lignes du méga-menu combiné : une seule entrée par id quand diplômantes et certifiantes partagent la même clé ; le domaine digital-ia-devops regroupe dev web, IA/data et DevOps côté certifiantes. */
 export const megaMenuCombinedDiplCertRows = (() => {
   const diplomantes = megaMenuFormations.diplomantes;
   const certifiantes = buildCertifiantesCategoriesRaw();
@@ -310,14 +352,13 @@ export const megaMenuCombinedDiplCertRows = (() => {
   const rows = [];
   for (const d of diplomantes) {
     const certBuckets = [];
-    if (d.id === 'ia-data') {
-      if (certById['ia-data']) {
-        mergedCertIds.add('ia-data');
-        certBuckets.push(certById['ia-data']);
-      }
-      if (certById.devops) {
-        mergedCertIds.add('devops');
-        certBuckets.push(certById.devops);
+    if (d.id === 'digital-ia-devops') {
+      for (const cid of ['digital-developpement', 'ia-data', 'devops']) {
+        const bucket = certById[cid];
+        if (bucket) {
+          mergedCertIds.add(cid);
+          certBuckets.push(bucket);
+        }
       }
     } else {
       const c = certById[d.id];
@@ -361,14 +402,9 @@ const DIPLOMANTES_NAV_SUBMENU = [
     submenu: getSubMenu('cybersecurite-reseaux'),
   },
   {
-    label: "Développement Web",
-    href: "/formations#diplomantes-digital-developpement",
-    submenu: getSubMenu('digital-developpement'),
-  },
-  {
-    label: "IA, Data & DevOps",
-    href: "/formations#diplomantes-ia-data",
-    submenu: getSubMenu('ia-data'),
+    label: "IA, Data, Web, DevOps",
+    href: "/formations#diplomantes-digital-ia-devops",
+    submenu: getSubMenuMulti(['digital-developpement', 'ia-data']),
   },
   {
     label: "RH & Comptabilité / Gestion",

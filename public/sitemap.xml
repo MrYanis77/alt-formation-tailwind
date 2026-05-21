@@ -152,6 +152,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://alt-rh.com/formation/formations-conseiller-de-vente</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://alt-rh.com/formation/formations-secretaire-comptable</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -177,11 +182,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alt-rh.com/formation/formation-intelligence-artificielle</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://alt-rh.com/formation/gestionnaire-comptable-fiscal</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -198,6 +198,16 @@
   </url>
   <url>
     <loc>https://alt-rh.com/formation/formations-assistante-de-direction</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/formations-responsable-petite-moyenne-structure</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/formations-gestionnaire-de-paie</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -233,6 +243,51 @@
   </url>
   <url>
     <loc>https://alt-rh.com/formation/formation-cisco-configuration-administration</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/microsoft-365-copilot-ai-business-professional</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/ia-generative-administration-systemes-reseaux</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/ia-generative-maitrise-llm-transformers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/chatgpt-openai-api-developpeurs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/api-chatgpt-openai-integration-applications</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/ia-generative-communication-webmarketing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/machine-learning-fondamentaux-intensif</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/seminaire-vue-ensemble-ia-ml-deep-learning</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/deep-learning-traitement-langage-nlp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -310,10 +310,10 @@ export default function Navbar() {
           <img
             src="/assets/logo-altrh.png"
             alt="Logo Alt Formations"
-            className="h-11 md:h-[52px] w-auto max-h-[52px] object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_0_6px_rgba(255,255,255,0.95)] drop-shadow-[0_0_14px_rgba(255,255,255,0.35)]"
+            className="h-14 md:h-16 w-auto max-h-16 object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_0_8px_rgba(255,255,255,0.9)] drop-shadow-[0_0_18px_rgba(255,255,255,0.45)]"
           />
         </Link>
-
+        
         {/* Liens centrés — léger décalage vers la gauche pour rapprocher du logo */}
         <div className="pointer-events-none absolute inset-0 hidden xl:flex items-center justify-center z-[100]">
           <div className="pointer-events-auto flex items-center gap-2 2xl:gap-6 -translate-x-14 2xl:-translate-x-20">

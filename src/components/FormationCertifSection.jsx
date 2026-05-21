@@ -1,14 +1,14 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import { Award } from 'lucide-react';
 
-/**
- * Bloc certification RNCP / repli Qualiopi pour les fiches formation.
- * @param {object | null | undefined} certif — Entrée issue de certification.js (href aligné sur la formation), ou rien.
- * @param {boolean} showFallback — Afficher le message court + lien /certification si pas de certif détaillée.
- */
 export default function FormationCertifSection({ certif, showFallback = false }) {
   if (!certif && !showFallback) return null;
+
+  const repertoire = certif?.repertoire || 'RNCP';
+  const isRs = repertoire === 'RS';
+  const sectionTitle = isRs ? 'Certification RS visée' : 'Titre professionnel visé (RNCP)';
+  const codeLabel = `${repertoire} ${certif?.rncp || certif?.code || ''}`.trim();
 
   return (
     <section className="py-12 lg:py-16 px-6 bg-white border-t border-border">
@@ -19,7 +19,7 @@ export default function FormationCertifSection({ certif, showFallback = false })
             Certification
           </div>
           <h2 className="font-heading text-2xl md:text-4xl font-extrabold text-primary uppercase tracking-wider">
-            {certif ? 'Titre professionnel visé (RNCP)' : 'Certifications et qualité'}
+            {certif ? sectionTitle : 'Certifications et qualité'}
           </h2>
         </div>
 
@@ -40,18 +40,23 @@ export default function FormationCertifSection({ certif, showFallback = false })
               </h3>
               <div className="flex flex-wrap gap-2 mb-5">
                 <span className="inline-flex items-center rounded-md bg-primary text-white px-3 py-1.5 text-xs font-bold uppercase tracking-wide">
-                  RNCP {certif.rncp}
+                  {codeLabel}
                 </span>
-                <span className="inline-flex items-center rounded-md bg-white border border-border px-3 py-1.5 text-xs font-bold text-primary">
-                  Niveau {certif.niveau}
-                </span>
-                <span className="inline-flex items-center rounded-md bg-accent/15 text-accent px-3 py-1.5 text-xs font-bold">
-                  {certif.category}
-                </span>
+                {certif.niveau ? (
+                  <span className="inline-flex items-center rounded-md bg-white border border-border px-3 py-1.5 text-xs font-bold text-primary">
+                    Niveau {certif.niveau}
+                  </span>
+                ) : null}
+                {certif.category ? (
+                  <span className="inline-flex items-center rounded-md bg-accent/15 text-accent px-3 py-1.5 text-xs font-bold">
+                    {certif.category}
+                  </span>
+                ) : null}
               </div>
               <p className="text-content-muted text-sm md:text-base leading-relaxed mb-6">
-                Cette formation prépare au titre figurant au Répertoire National des Certifications Professionnelles.
-                Consultez la fiche officielle sur France Compétences.
+                {isRs
+                  ? 'Cette formation prépare à une certification inscrite au Répertoire spécifique (RS). Consultez la fiche officielle sur France Compétences.'
+                  : 'Cette formation prépare au titre figurant au Répertoire National des Certifications Professionnelles. Consultez la fiche officielle sur France Compétences.'}
               </p>
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 mt-auto">
                 <a
@@ -75,7 +80,7 @@ export default function FormationCertifSection({ certif, showFallback = false })
           <div className="max-w-2xl mx-auto text-center rounded-2xl border border-border bg-gray-50 px-8 py-12">
             <p className="text-content-muted text-base leading-relaxed mb-8">
               Alt Formations est certifié Qualiopi et propose des parcours menant à des certifications reconnues.
-              Retrouvez l’ensemble des titres RNCP associés à nos formations sur la page dédiée.
+              Retrouvez l'ensemble des titres RNCP associés à nos formations sur la page dédiée.
             </p>
             <Link to="/certification" className="btn-orange inline-block text-sm py-3 px-8 no-underline uppercase font-bold tracking-wider">
               Découvrir nos certifications

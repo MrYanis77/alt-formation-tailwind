@@ -37,11 +37,11 @@ const FiltreCat = ({
   const displayAllLabel = allLabel ?? allValue;
 
   return (
-    <section className="py-5 bg-white/95 backdrop-blur-md border-b border-border sticky top-20 z-30 shadow-[0_4px_24px_-4px_rgba(0,40,69,0.08)]">
+    <section className="py-6 lg:py-7 bg-white/95 backdrop-blur-md border-b border-border sticky top-20 z-30 shadow-[0_4px_24px_-4px_rgba(0,40,69,0.08)]">
       <div className="max-w-container-3xl mx-auto px-6">
 
         {hasSearch && (
-          <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mb-4">
+          <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mb-5">
             <div className="relative flex-1 sm:max-w-sm group">
               <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
                 <Search className="h-4 w-4 text-content-muted group-focus-within:text-accent transition-colors" />

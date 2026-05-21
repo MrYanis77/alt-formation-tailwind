@@ -4,13 +4,16 @@
  * anciens liens #diplomantes-* / #certifiantes-* toujours pris en charge).
  * E-Learning via ?type=elearning. Redirections : App.jsx (RedirectFormationCatalogTab).
  */
-import { useMemo, useEffect, useState, useCallback } from 'react';
+import { useMemo, useEffect, useCallback } from 'react';
 import { Link, useSearchParams, useLocation, useNavigate } from 'react-router-dom';
 import Hero from '../components/Hero/Hero';
 import Breadcrumb from '../components/Breadcrumb';
 import CallToAction from '../components/CallToAction';
 import CatalogueFormationsPage from '../components/CatalogueFormationsPage';
 import CatalogueFormationsBlock from '../components/CatalogueFormationsBlock';
+import CataloguePlusFiltres from '../components/CataloguePlusFiltres';
+import useCatalogueFiltersSession from '../hooks/useCatalogueFiltersSession';
+import { MODALITE_FILTERS, matchesModaliteFilter } from '../utils/formationModalites';
 import {
   catalogueCourtes,
   catalogueDiplomesCertifiantsFusionne,
@@ -29,10 +32,12 @@ import {
   Shield,
   Monitor,
   Search,
+  FileSpreadsheet,
 } from 'lucide-react';
 
 const categoryIconsDiplomantes = {
   'cybersecurite-reseaux': <HardDrive className="w-6 h-6" />,
+  'digital-ia-devops': <Code className="w-6 h-6" />,
   'digital-developpement': <Code className="w-6 h-6" />,
   'ia-data': <Brain className="w-6 h-6" />,
   'ressources-humaines': <Users className="w-6 h-6" />,
@@ -42,6 +47,7 @@ const categoryIconsDiplomantes = {
 };
 
 const categoryIconsCertifiantes = {
+  'digital-ia-devops': <Code className="w-6 h-6" />,
   devops: <Container className="w-6 h-6" />,
   devsecops: <Container className="w-6 h-6" />,
   'digital-developpement': <Code className="w-6 h-6" />,
@@ -55,28 +61,25 @@ const categoryIconsElearning = {
   'devops-devsecops': <Container className="w-6 h-6" />,
   'informatique-systemes-reseaux': <Monitor className="w-6 h-6" />,
   'systemes-embarques-iot': <Cpu className="w-6 h-6" />,
+  bureautique: <FileSpreadsheet className="w-6 h-6" />,
 };
-
-/** Filtre « type » (partagé) dérivé du hash / param d’URL. */
-function getFormationTypeVisibility(hash, typeQuery) {
-  const h = (hash || '').replace(/^#/, '');
-  if (typeQuery === 'certifiantes') return 'certifiantes';
-  if (!h) return 'all';
-  if (h === 'diplomantes' || h.startsWith('diplomantes-')) return 'diplomantes';
-  if (h === 'certifiantes' || h.startsWith('certifiantes-')) return 'certifiantes';
-  return 'all';
-}
 
 const FORMATION_TYPE_FILTERS = [
   { id: 'all', label: 'Toutes', hint: 'Diplômantes et certifiantes' },
-  { id: 'diplomantes', label: 'Diplômantes', hint: 'Titres RNCP' },
-  { id: 'certifiantes', label: 'Certifiantes', hint: 'Sessions certifiantes' },
+  { id: 'diplomantes', label: 'Diplômantes', hint: 'Parcours longs certifiants' },
+  { id: 'certifiantes', label: 'Certifiantes', hint: 'Sessions certifiantes (éditeurs, TOSA…)' },
+];
+
+const REPERTOIRE_TITRE_FILTERS = [
+  { id: 'all', label: 'Tous les référentiels', hint: 'RNCP, RS et autres' },
+  { id: 'RNCP', label: 'Titres RNCP', hint: 'Répertoire national des certifications professionnelles' },
+  { id: 'RS', label: 'Titres RS', hint: 'Répertoire spécifique (France Compétences)' },
 ];
 
 const COMBINED_HERO = {
   titre: hero.titre,
   sousTitre:
-    'Parcours diplômants (titres RNCP) et formations certifiantes : un catalogue unique par domaine, filtres par type ci-dessous.',
+    'Parcours diplômants (titres RNCP et RS) et formations certifiantes : un catalogue unique par domaine, avec filtres par type et par référentiel.',
   video: hero.video,
 };
 
@@ -95,8 +98,25 @@ export default function FormationsCatalogueHub() {
   const tab = normalizeCatalogType(searchParams.get('type'));
   const isElearning = tab === 'elearning';
 
-  const [sharedSearch, setSharedSearch] = useState('');
-  const formationVisibility = getFormationTypeVisibility(location.hash, searchParams.get('type'));
+  const {
+    sharedSearch,
+    setSharedSearch,
+    repertoireFilter,
+    setRepertoireFilter,
+    activeDomain,
+    setActiveDomain,
+    modaliteFilter,
+    setModaliteFilter,
+    formationVisibility,
+    resetAdvancedFilters,
+    clearAllFilters,
+  } = useCatalogueFiltersSession({
+    enabled: !isElearning,
+    hash: location.hash,
+    typeQuery: searchParams.get('type'),
+    modaliteQuery: searchParams.get('modalite'),
+    navigate,
+  });
 
   const handleTypeFilter = useCallback(
     (mode) => {
@@ -164,21 +184,78 @@ export default function FormationsCatalogueHub() {
   const categoryIconsFusion = { ...categoryIconsDiplomantes, ...categoryIconsCertifiantes };
 
   const mergedCatalogForView = useMemo(() => {
-    const base = catalogueDiplomesCertifiantsFusionne;
-    if (formationVisibility === 'all') return base;
-    const badge = formationVisibility === 'diplomantes' ? 'Diplômante' : 'Certifiante';
-    return base
-      .map((cat) => ({
-        ...cat,
-        items: cat.items.filter((item) => item.typeBadge === badge),
-      }))
-      .filter((cat) => cat.items.length > 0);
-  }, [formationVisibility]);
+    let rows = catalogueDiplomesCertifiantsFusionne;
+
+    if (formationVisibility !== 'all') {
+      const badge = formationVisibility === 'diplomantes' ? 'Diplômante' : 'Certifiante';
+      rows = rows
+        .map((cat) => ({
+          ...cat,
+          items: cat.items.filter((item) => item.typeBadge === badge),
+        }))
+        .filter((cat) => cat.items.length > 0);
+    }
+
+    if (repertoireFilter !== 'all') {
+      rows = rows
+        .map((cat) => ({
+          ...cat,
+          items: cat.items.filter((item) => item.repertoireTitre === repertoireFilter),
+        }))
+        .filter((cat) => cat.items.length > 0);
+    }
+
+    if (modaliteFilter !== 'all') {
+      rows = rows
+        .map((cat) => ({
+          ...cat,
+          items: cat.items.filter((item) => matchesModaliteFilter(item.modalites, modaliteFilter)),
+        }))
+        .filter((cat) => cat.items.length > 0);
+    }
+
+    return rows;
+  }, [formationVisibility, repertoireFilter, modaliteFilter]);
+
+  const domainOptions = useMemo(
+    () => [
+      { id: 'all', label: 'Tous', hint: 'Tous les domaines' },
+      ...mergedCatalogForView.map((cat) => ({
+        id: `catalogue-${cat.id}`,
+        label: cat.label,
+        icon: categoryIconsFusion[cat.id],
+      })),
+    ],
+    [mergedCatalogForView, categoryIconsFusion]
+  );
+
+  useEffect(() => {
+    if (activeDomain === 'all') return;
+    const validIds = mergedCatalogForView.map((cat) => `catalogue-${cat.id}`);
+    if (!validIds.includes(activeDomain)) setActiveDomain('all');
+  }, [mergedCatalogForView, activeDomain]);
+
+  const handleDomainChange = useCallback(
+    (domainId) => {
+      setActiveDomain(domainId);
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          if (domainId === 'all') {
+            document.getElementById('catalogue')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            return;
+          }
+          document.getElementById(domainId)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+    },
+    [setActiveDomain]
+  );
 
   const unifiedFilterBar = (
     <section className="py-5 bg-white/95 backdrop-blur-md border-b border-border sticky top-20 z-30 shadow-[0_4px_24px_-4px_rgba(0,40,69,0.08)]">
       <div className="max-w-container-3xl mx-auto px-6">
         <div className="flex flex-col gap-4">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3">
           <div className="relative flex-1 sm:max-w-md group">
             <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
               <Search className="h-4 w-4 text-content-muted group-focus-within:text-accent transition-colors" />
@@ -207,6 +284,20 @@ export default function FormationsCatalogueHub() {
                 </svg>
               </button>
             ) : null}
+          </div>
+
+            <CataloguePlusFiltres
+              repertoireFilter={repertoireFilter}
+              onRepertoireChange={setRepertoireFilter}
+              repertoireOptions={REPERTOIRE_TITRE_FILTERS}
+              modaliteFilter={modaliteFilter}
+              onModaliteChange={setModaliteFilter}
+              modaliteOptions={MODALITE_FILTERS}
+              activeDomain={activeDomain}
+              onDomainChange={handleDomainChange}
+              domainOptions={domainOptions}
+              onReset={resetAdvancedFilters}
+            />
           </div>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-2">
@@ -241,6 +332,7 @@ export default function FormationsCatalogueHub() {
               })}
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -276,13 +368,17 @@ export default function FormationsCatalogueHub() {
       {unifiedFilterBar}
 
       <CatalogueFormationsBlock
-        key={formationVisibility}
+        key={`${formationVisibility}-${repertoireFilter}-${modaliteFilter}`}
         idPrefix="catalogue"
         catalogue={mergedCatalogForView}
         categoryIcons={categoryIconsFusion}
         legacyDiplCertHashes={true}
         sharedSearchTerm={sharedSearch}
         setSharedSearchTerm={setSharedSearch}
+        activeCategory={activeDomain}
+        onActiveCategoryChange={handleDomainChange}
+        hideDomainFilter
+        onResetAllFilters={clearAllFilters}
       />
 
       <CallToAction

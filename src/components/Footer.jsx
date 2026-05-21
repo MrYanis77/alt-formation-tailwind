@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { demarchesFooterLinks } from '../data/demarches';
 
 const currentYear = new Date().getFullYear();
 
@@ -15,7 +16,9 @@ export default function Footer() {
             </h4>
             <ul className="list-none p-0 m-0 space-y-2">
               <li><Link to="/formations" className="text-gray-300 text-sm hover:text-white transition-colors">Toutes nos formations</Link></li>
-              <li><Link to="/formations?type=elearning" className="text-gray-300 text-sm hover:text-white transition-colors">E-Learning</Link></li>
+              <li><Link to="/formations?modalite=presentiel#catalogue" className="text-gray-300 text-sm hover:text-white transition-colors">Formations en présentiel</Link></li>
+              <li><Link to="/formations?modalite=distanciel#catalogue" className="text-gray-300 text-sm hover:text-white transition-colors">Formations en distanciel</Link></li>
+              <li><Link to="/formations?type=elearning" className="text-gray-300 text-sm hover:text-white transition-colors">Formations en E-Learning</Link></li>
               <li><Link to="/certification" className="text-gray-300 text-sm hover:text-white transition-colors">Certifications</Link></li>
               <li><Link to="/financements" className="text-gray-300 text-sm hover:text-white transition-colors">Financements</Link></li>
             </ul>
@@ -56,6 +59,13 @@ export default function Footer() {
               <li><Link to="/politique-de-confidentialite" className="text-gray-300 text-sm hover:text-white transition-colors">Politique de confidentialité</Link></li>
               <li><Link to="/conditions-generales" className="text-gray-300 text-sm hover:text-white transition-colors">Conditions générales</Link></li>
               <li><Link to="/reglement-interieur" className="text-gray-300 text-sm hover:text-white transition-colors">Règlement intérieur</Link></li>
+              {demarchesFooterLinks.map(({ to, label }) => (
+                <li key={to}>
+                  <Link to={to} className="text-gray-300 text-sm hover:text-white transition-colors">
+                    {label}
+                  </Link>
+                </li>
+              ))}
             </ul>
 
             {/* Logo Qualiopi et Certificat PDF */}

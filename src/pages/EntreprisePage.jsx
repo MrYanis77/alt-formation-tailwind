@@ -34,7 +34,7 @@ export default function EntreprisePage() {
           title={formationSurMesure.titre}
           description={formationSurMesure.description}
           columns={formationSurMesure.columns}
-          isHighlight={true}
+          highlight={true}
         />
 
         {/* ======== 2. SERVICES COMPLÉMENTAIRES (Utilisation de CardGrid) ======== */}

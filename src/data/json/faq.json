@@ -2,303 +2,1068 @@
     {
         "hero": {
             "titre": "Foire Aux Questions",
-            "sousTitre": "Trouvez rapidement les réponses à vos questions sur nos formations, financements et services.",
+            "sousTitre": "Trouvez rapidement les réponses à vos questions sur nos formations, financements, certifications et services Alt RH Formations.",
             "video": "/assets/video/formations/administration.mp4"
         }
     },
     {
         "id": "formations",
-        "categorie": "Nos Formations",
+        "categorie": "Formations professionnelles & continues (généralités)",
         "questions": [
             {
-                "q": "Quels sont les formats d'apprentissage proposés ?",
-                "a": "Nous proposons plusieurs modalités pour s'adapter à vos besoins : en présentiel dans nos locaux, en distanciel (classes virtuelles), et en e-learning pour apprendre à votre propre rythme. Vous pouvez même évaluer le format qui vous correspond le mieux grâce à notre test de positionnement dans le Bilan de Compétences."
+                "q": "Qu'est-ce qu'une formation professionnelle continue ?",
+                "a": "La formation continue s'adresse aux personnes qui sont déjà entrées dans la vie active (salariés, demandeurs d'emploi, indépendants). Elle leur permet d'acquérir de nouvelles compétences, de se reconvertir ou de faire évoluer leur carrière."
             },
             {
-                "q": "Proposez-vous un accompagnement pour trouver un emploi après la formation ?",
-                "a": "Oui, nous intégrons un module de 'Coaching Emploi' dans nos parcours, et nous mettons en relation nos apprenants avec notre réseau d'entreprises partenaires, notamment via nos solutions de recrutement."
+                "q": "Quelle est la différence entre formation initiale et formation continue ?",
+                "a": "La formation initiale s'adresse aux étudiants ou élèves avant leur entrée dans le monde du travail. La formation continue s'adresse aux actifs pour actualiser ou développer leurs compétences tout au long de leur vie."
             },
             {
-                "q": "Dans quels domaines proposez-vous des formations ?",
-                "a": "Alt Formations couvre quatre grands domaines : le Numérique & Cybersécurité (développeur web, DevOps, administrateur systèmes et réseaux...), les Ressources Humaines & Tertiaire (assistante RH, commerciale, administrative...), la Comptabilité & Gestion, ainsi que les formations en Intelligence Artificielle."
+                "q": "Qui peut bénéficier des formations d'Alt RH Formations ?",
+                "a": "Nos formations sont ouvertes à tous les profils d'actifs : salariés du secteur privé ou public, demandeurs d'emploi, indépendants, chefs d'entreprise, ainsi que les jeunes en alternance."
             },
             {
-                "q": "Vos formations sont-elles diplômantes ?",
-                "a": "La grande majorité de nos formations préparent à des Titres Professionnels (TP) reconnus par l'État et enregistrés au Répertoire National des Certifications Professionnelles (RNCP). Ces certifications attestent d'un niveau de qualification allant du Niveau 4 (équivalent Bac) au Niveau 6 (équivalent Bac+3/4)."
+                "q": "Comment s'inscrire à l'une de vos formations ?",
+                "a": "L'inscription se fait directement en ligne via notre site alt-rh.com, par téléphone avec un conseiller, ou directement via votre compte CPF si la formation y est éligible."
             },
             {
-                "q": "Quelle est la durée moyenne d'une formation ?",
-                "a": "La durée varie selon le parcours et le niveau de qualification visé. Elle peut aller de quelques semaines pour des formations courtes jusqu'à 12 à 18 mois pour des parcours complets en alternance menant à un Titre Professionnel de niveau 5 ou 6."
+                "q": "Quels sont les prérequis généraux pour intégrer vos cursus ?",
+                "a": "Les prérequis varient selon chaque formation. Ils sont explicitement détaillés sur chaque fiche programme (niveau d'études, expérience professionnelle ou maîtrise d'outils spécifiques)."
             },
             {
-                "q": "Puis-je suivre une formation en alternance ?",
-                "a": "Oui, l'alternance est l'un de nos formats phares. Nous vous aidons à trouver une entreprise d'accueil et vous accompagnons tout au long de votre contrat d'apprentissage ou de professionnalisation. La formation se déroule en combinant périodes en entreprise et périodes en centre de formation."
+                "q": "Vos formations sont-elles accessibles entièrement à distance (e-learning) ?",
+                "a": "Oui, Alt RH Formations propose une large gamme de formations en e-learning, accessibles 24h/24 et 7j/7 via notre plateforme dédiée."
             },
             {
-                "q": "Proposez-vous des formations en ligne (e-learning) ?",
-                "a": "Absolument. Notre plateforme e-learning vous donne accès aux cours à distance, à votre propre rythme, depuis n'importe quel appareil connecté. Certains parcours sont entièrement en distanciel, d'autres combinent e-learning et sessions de regroupement en présentiel."
+                "q": "Qu'est-ce que le blended learning ou apprentissage mixte ?",
+                "a": "C'est un format qui combine des sessions de formation en ligne autonome (e-learning) et des sessions d'accompagnement ou de cours en présentiel ou en classe virtuelle avec un formateur."
             },
             {
-                "q": "Y a-t-il un test d'entrée pour accéder à vos formations ?",
-                "a": "Selon le niveau de la formation visée, un test de positionnement ou un entretien de motivation peut être organisé. Cela nous permet de vérifier que le parcours correspond bien à votre profil et à votre projet professionnel, et d'adapter l'accompagnement si nécessaire."
-            }
-        ]
-    },
-    {
-        "id": "financement",
-        "categorie": "Financement & Prise en charge",
-        "questions": [
-            {
-                "q": "Vos formations sont-elles éligibles au CPF ?",
-                "a": "Oui, la majorité de nos formations certifiantes sont éligibles au Compte Personnel de Formation (CPF). Vous pouvez utiliser vos droits directement sur la plateforme officielle moncompteformation.gouv.fr. Chaque salarié accumule jusqu'à 500€/an (800€ pour les moins qualifiés), dans la limite de 5 000€."
+                "q": "Quelle est la durée moyenne d'une formation continue ?",
+                "a": "La durée est variable : de quelques heures (pour des modules courts de perfectionnement) à plusieurs mois pour des parcours certifiants complets."
             },
             {
-                "q": "Comment faire financer ma formation si je suis demandeur d'emploi ?",
-                "a": "En tant que demandeur d'emploi, vous pouvez solliciter France Travail (anciennement Pôle Emploi) pour une prise en charge via l'AIF (Aide Individuelle à la Formation) ou l'AFPR/POE (formation préalable au recrutement). Nos conseillers vous accompagnent dans le montage de votre dossier."
+                "q": "Fournissez-vous une attestation de fin de formation ?",
+                "a": "Oui, une attestation de fin de formation mentionnant les objectifs, la nature et la durée de l'action, ainsi que les résultats des évaluations, est obligatoirement remise à chaque stagiaire."
             },
             {
-                "q": "Une entreprise peut-elle financer la formation de ses collaborateurs ?",
-                "a": "Absolument. Alt Formations est certifié Qualiopi, ce qui permet aux entreprises de faire financer la montée en compétences de leurs salariés via leur OPCO (Opérateurs de Compétences). Nous gérons toutes les démarches administratives pour vous."
+                "q": "Comment sont évalués les acquis au cours de la formation ?",
+                "a": "Nous utilisons des évaluations formatives en cours de parcours (quiz, cas pratiques, mises en situation) et une évaluation sommative ou un examen final pour valider la formation."
             },
             {
-                "q": "Qu'est-ce qu'un OPCO et comment fonctionne-t-il ?",
-                "a": "Un OPCO (Opérateur de Compétences) est un organisme agréé par l'État qui finance et accompagne la formation professionnelle des salariés. Selon le secteur d'activité de l'entreprise, l'OPCO compétent peut prendre en charge tout ou partie de la formation via le Plan de Développement des Compétences, la Pro-A, ou un contrat d'alternance."
+                "q": "Peut-on suivre une formation en dehors de son temps de travail ?",
+                "a": "Tout à fait. Les formations à distance (e-learning) ou certaines sessions du soir/week-end permettent de se former sans impacter son activité professionnelle actuelle."
             },
             {
-                "q": "Est-il possible de payer la formation en plusieurs fois ?",
-                "a": "Oui, pour les personnes finançant tout ou partie de leur formation sur fonds propres, nous proposons des facilités de paiement en plusieurs fois sans frais. Contactez nos conseillers pour connaître les modalités adaptées à votre situation."
+                "q": "Quels sont les profils de vos formateurs ?",
+                "a": "Nos formateurs sont tous des professionnels experts de leur domaine, disposant d'une solide expérience terrain et de compétences pédagogiques éprouvées et certifiées."
             },
             {
-                "q": "Je suis travailleur indépendant, puis-je financer ma formation ?",
-                "a": "Tout à fait. Les travailleurs indépendants disposent d'un Fonds d'Assurance Formation (FAF) adapté à leur secteur (FIF PL, AGEFICE, etc.) qui peut financer leurs formations. Votre CPF est également alimenté chaque année pour vos projets de montée en compétences."
+                "q": "Comment assurez-vous la qualité de vos formations ?",
+                "a": "Notre organisme est certifié Qualiopi, ce qui garantit la conformité de nos processus pédagogiques aux exigences réglementaires de l'État français."
             },
             {
-                "q": "Y a-t-il des aides spécifiques pour les personnes en situation de handicap ?",
-                "a": "Oui, l'Agefiph (Association de Gestion du Fonds pour l'Insertion Professionnelle des Personnes Handicapées) propose des aides financières complémentaires pour faciliter l'accès à la formation. Nous adaptons également nos supports et nos modalités pédagogiques pour répondre aux besoins de chacun."
+                "q": "Proposez-vous des formations sur mesure pour les entreprises (intra-entreprise) ?",
+                "a": "Oui, nous concevons des programmes sur mesure adaptés aux besoins spécifiques, aux valeurs et aux objectifs de votre entreprise."
             },
             {
-                "q": "Mon Conseil Régional peut-il financer ma formation ?",
-                "a": "Oui, certaines régions proposent des aides spécifiques à la formation professionnelle, notamment dans le cadre de programmes de reconversion ou de retour à l'emploi. Les montants et conditions varient selon votre région de résidence. Nos conseillers peuvent vous orienter vers les dispositifs disponibles dans votre territoire."
-            }
-        ]
-    },
-    {
-        "id": "recrutement",
-        "categorie": "Nous rejoindre (Formateur & Collaborateur)",
-        "questions": [
-            {
-                "q": "Comment postuler pour devenir formateur chez Alt Formations ?",
-                "a": "Vous pouvez vous rendre sur la page 'Nous rejoindre' et sélectionner le profil 'Formateur'. Un formulaire dédié vous permettra de nous envoyer votre CV et de détailler vos domaines d'expertise (IA, Cybersécurité, Réseaux, etc.)."
+                "q": "Quelle est la différence entre une formation inter-entreprise et intra-entreprise ?",
+                "a": "Une formation inter-entreprise réunit des stagiaires de différentes structures. Une formation intra-entreprise est dédiée exclusivement aux salariés d'une seule et même entreprise."
             },
             {
-                "q": "Quels sont les avantages à rejoindre vos équipes en tant que collaborateur ?",
-                "a": "Rejoindre Alt Formations, c'est intégrer une structure dynamique avec des perspectives d'évolution, une mutuelle avantageuse, des possibilités de télétravail et un engagement fort pour la qualité de vie au travail."
+                "q": "Comment se déroule l'accueil des personnes en situation de handicap ?",
+                "a": "Alt RH Formations dispose d'un référent handicap dédié. Nous adaptons nos modalités pédagogiques et l'accès à nos locaux ou outils numériques pour garantir l'accessibilité de tous."
             },
             {
-                "q": "Recrutez-vous des formateurs indépendants (freelance) ?",
-                "a": "Oui, nous collaborons avec des formateurs experts, aussi bien en statut salarié qu'en statut indépendant (auto-entrepreneur, consultant...). Si vous avez une expertise reconnue dans un domaine que nous enseignons, n'hésitez pas à nous soumettre votre profil via notre page 'Nous rejoindre'."
+                "q": "Quels sont les délais d'accès à vos formations ?",
+                "a": "Le délai moyen est de 15 jours entre la demande de formation et l'entrée effective en stage, sous réserve de la validation du financement."
             },
             {
-                "q": "Dans quels domaines cherchez-vous des formateurs en priorité ?",
-                "a": "Nos besoins prioritaires se situent dans les domaines du numérique (développement web, cybersécurité, DevOps, intelligence artificielle, systèmes et réseaux), des ressources humaines et de la gestion comptable. La liste de nos besoins est mise à jour régulièrement sur la page 'Nous rejoindre'."
-            }
-        ]
-    },
-    {
-        "id": "entreprise",
-        "categorie": "L'Entreprise : Alt Formations",
-        "questions": [
-            {
-                "q": "Êtes-vous un organisme certifié ?",
-                "a": "Oui, Alt Formations est certifié Qualiopi au titre des actions de formation. Cette certification, délivrée après audit par un organisme accrédité, garantit la qualité de nos processus pédagogiques et de notre accompagnement. Vous pouvez télécharger notre certificat directement depuis le pied de page de notre site."
+                "q": "Puis-je annuler ou reporter mon inscription ?",
+                "a": "Oui, l'annulation ou le report est possible selon les conditions générales de vente (CGV) détaillées sur notre site, généralement sans frais jusqu'à 10 jours ouvrés avant le début."
             },
             {
-                "q": "Quelles solutions proposez-vous aux entreprises ?",
-                "a": "Nous accompagnons les entreprises sur deux axes majeurs : la formation sur-mesure de leurs collaborateurs (montée en compétences sur l'IA, la cybersécurité, le numérique...) et des solutions de recrutement pour identifier et intégrer les meilleurs talents."
+                "q": "Comment sont mis à jour vos programmes de formation ?",
+                "a": "Nos programmes font l'objet d'une veille réglementaire, technologique et pédagogique constante pour s'aligner sur les exigences actuelles du marché du travail."
             },
             {
-                "q": "Où sont situés vos locaux ?",
-                "a": "Notre siège est situé au 3 rue du Cochet, 77700 Bailly-Romainvilliers (Seine-et-Marne). Nous sommes également accessibles à distance via nos formations en ligne. Pour toute question, vous pouvez nous contacter du lundi au vendredi de 9h à 18h."
+                "q": "Vos formations mènent-elles à des métiers qui recrutent ?",
+                "a": "Oui, nous orientons en priorité notre catalogue vers des compétences en forte tension (RH, management, digital, commercial, gestion de carrière)."
             },
             {
-                "q": "Quels sont vos horaires d'ouverture ?",
-                "a": "Nos équipes sont disponibles du lundi au vendredi, de 9h00 à 18h00. Le week-end, nos locaux sont fermés. En dehors de ces horaires, vous pouvez nous laisser un message via notre formulaire de contact et nous vous répondrons dès le premier jour ouvrable."
+                "q": "Quel est le taux de satisfaction de vos apprenants ?",
+                "a": "Le taux de satisfaction global d'Alt RH Formations est supérieur à 94%, mis à jour régulièrement sur notre site internet."
             },
             {
-                "q": "Proposez-vous des formations sur-mesure pour les entreprises ?",
-                "a": "Oui, nous concevons des programmes de formation entièrement adaptés aux besoins spécifiques de votre entreprise. Que ce soit pour une équipe entière ou des collaborateurs ciblés, nous analysons vos besoins, définissons les objectifs pédagogiques et assurons un suivi post-formation. Contactez-nous pour un devis personnalisé."
+                "q": "Proposez-vous un accompagnement post-formation ?",
+                "a": "Oui, nous offrons un suivi post-formation (accès à la communauté, sessions de questions-réponses ou ressources complémentaires) pour faciliter l'ancrage des connaissances."
             },
             {
-                "q": "Qui est Alt Formations ?",
-                "a": "Alt Formations est le nom commercial global de notre structure. Notre organisation regroupe deux pôles complémentaires : le pôle conseil et gestion des ressources humaines (recrutement, bilan de compétences, coaching carrière), et le pôle pédagogique centré sur la délivrance de formations certifiantes."
-            }
-        ]
-    },
-    {
-        "id": "bilan",
-        "categorie": "Bilan de Compétences & Coaching",
-        "questions": [
-            {
-                "q": "Qu'est-ce qu'un bilan de compétences et à qui s'adresse-t-il ?",
-                "a": "Le bilan de compétences est un dispositif permettant d'analyser vos compétences professionnelles et personnelles, vos aptitudes et vos motivations afin de définir un projet professionnel réaliste. Il s'adresse à tout actif (salarié, demandeur d'emploi, indépendant) souhaitant évoluer, se reconvertir ou simplement faire le point sur sa carrière."
+                "q": "Les supports de cours sont-ils fournis aux stagiaires ?",
+                "a": "Tous les supports pédagogiques, guides pratiques, fiches de synthèse et accès numériques sont inclus dans le prix de la formation et remis aux stagiaires."
             },
             {
-                "q": "Le bilan de compétences est-il finançable ?",
-                "a": "Oui, le bilan de compétences est éligible au CPF (Compte Personnel de Formation). Dans certains cas, il peut également être pris en charge par l'OPCO de votre entreprise ou par France Travail si vous êtes demandeur d'emploi. Nos conseillers vous aident à identifier la solution la plus adaptée."
+                "q": "Peut-on suivre plusieurs formations en même temps ?",
+                "a": "C'est possible techniquement mais fortement déconseillé afin de garantir une assimilation optimale des compétences et une charge de travail équilibrée."
             },
             {
-                "q": "En quoi consiste votre accompagnement en coaching emploi ?",
-                "a": "Notre coaching emploi comprend un accompagnement personnalisé pour optimiser votre recherche d'emploi : rédaction de CV et de lettre de motivation, préparation aux entretiens, développement de votre personal branding et mise en réseau grâce à notre réseau d'entreprises partenaires."
-            },
-            {
-                "q": "Combien de temps dure un bilan de compétences ?",
-                "a": "Un bilan de compétences dure en moyenne 24 heures, réparties sur plusieurs semaines (généralement 2 à 3 mois). Ces heures sont réparties en entretiens individuels avec un conseiller, en exercices de réflexion personnelle, et en une phase de conclusion avec remise d'un document de synthèse."
-            },
-            {
-                "q": "Puis-je faire un bilan de compétences à distance ?",
-                "a": "Oui, nous proposons le bilan de compétences en format distanciel via visioconférence. Toutes les phases du bilan (entretiens, exercices, restitution) peuvent se dérouler à distance, ce qui vous permet de bénéficier de cet accompagnement quel que soit votre lieu de résidence."
+                "q": "Comment s'organise une journée type de formation en présentiel ?",
+                "a": "Une journée type dure généralement 7 heures, alternant apports théoriques (30%) et ateliers pratiques ou exercices collaboratifs (70%), avec des pauses régulières."
             }
         ]
     },
     {
         "id": "alternance",
-        "categorie": "Alternance",
+        "categorie": "Alternance (apprentissage & professionnalisation)",
         "questions": [
             {
-                "q": "Quelle différence entre apprentissage et professionnalisation ?",
-                "a": "Le contrat d'apprentissage s'adresse en général aux jeunes jusqu'à 29 ans (avec prolongations possibles selon les cas) et alterne centre et entreprise avec un maître d'apprentissage. Le contrat de professionnalisation vise plutôt les adultes en reclassement ou reconversion. Les deux permettent de préparer un titre professionnel tout en étant rémunéré."
+                "q": "Qu'est-ce que l'alternance ?",
+                "a": "L'alternance est un système de formation qui associe des périodes d'apprentissage théorique en centre de formation et des périodes de pratique professionnelle en entreprise."
             },
             {
-                "q": "Comment trouver une entreprise pour mon alternance ?",
-                "a": "Nos équipes vous orientent : conseils pour votre recherche, mise en avant de profils auprès de partenaires recruteurs et préparation aux entretiens. Vous restez acteur de votre candidature, mais vous n'êtes pas seul dans les démarches."
+                "q": "Quelle est la différence entre contrat d'apprentissage et contrat de professionnalisation ?",
+                "a": "L'apprentissage relève de la formation initiale (visant un diplôme d'État ou titre RNCP) tandis que le contrat de professionnalisation relève de la formation continue (visant une qualification professionnelle précise)."
             },
             {
-                "q": "Quel est le rythme entre l'entreprise et le centre ?",
-                "a": "Le rythme dépend du programme et du contrat : souvent une à plusieurs semaines en entreprise puis des blocs en formation, ou un schéma défini par semaine. Il est défini dans la convention et harmonisé avec votre employeur pour respecter le référentiel de formation."
+                "q": "Quel est l'âge limite pour entrer en contrat d'apprentissage ?",
+                "a": "La limite d'âge est généralement de 29 ans révolus, sauf dérogations (travailleur handicapé, création d'entreprise, sportif de haut niveau, etc.) où il n'y a pas de limite."
             },
             {
-                "q": "Suis-je rémunéré en alternance ?",
-                "a": "Oui, un salaire légal minimum s'applique selon votre âge et votre année de contrat ; certaines entreprises versent au-delà du minimum. La formation est financée par l'employeur et les dispositifs publics selon le cas."
+                "q": "Qui peut signer un contrat de professionnalisation ?",
+                "a": "Les jeunes de 16 à 25 ans révolus, les demandeurs d'emploi de 26 ans et plus, ainsi que les bénéficiaires de minima sociaux (RSA, AAH, etc.)."
             },
             {
-                "q": "Puis-je commencer une alternance en cours d'année ?",
-                "a": "Les entrées peuvent être organisées selon les sessions et les besoins des entreprises partenaires. Contactez-nous pour connaître le calendrier des rentrées et les créneaux encore disponibles pour votre métier visé."
+                "q": "Quel est le rythme d'alternance chez Alt RH Formations ?",
+                "a": "Nos rythmes sont adaptés aux besoins des entreprises : par exemple 1 semaine en centre / 3 semaines en entreprise, ou 2 jours en centre / 3 jours en entreprise selon la filière."
+            },
+            {
+                "q": "Comment trouver une entreprise d'accueil pour son alternance ?",
+                "a": "Il convient de cibler les entreprises en lien avec le métier visé, de postuler aux offres dédiées et de solliciter votre réseau. Alt RH Formations vous accompagne également dans cette démarche."
+            },
+            {
+                "q": "Alt RH Formations aide-t-elle les candidats à trouver une entreprise ?",
+                "a": "Oui, notre équipe de chargés de relations entreprises propose des ateliers de coaching (CV, entretien) et partage régulièrement les offres de nos entreprises partenaires."
+            },
+            {
+                "q": "Quel est le statut de l'alternant en entreprise ?",
+                "a": "L'alternant est un salarié à part entière, avec les mêmes droits (tickets restaurants, mutuelle, congés) et devoirs que les autres collaborateurs."
+            },
+            {
+                "q": "Un alternant a-t-il droit aux congés payés ?",
+                "a": "Oui, comme tout salarié, l'alternant bénéficie de 2,5 jours de congés payés par mois de travail effectif, soit 5 semaines par an."
+            },
+            {
+                "q": "Comment est rémunéré un apprenti en 2026 ?",
+                "a": "La rémunération est un pourcentage du SMIC calculé selon l'âge de l'apprenti et sa progression dans le cycle de formation (de 27% à 100% du SMIC)."
+            },
+            {
+                "q": "Quelle est la rémunération en contrat de professionnalisation ?",
+                "a": "Elle varie selon l'âge et le niveau de diplôme initial du salarié, allant de 65% à 100% du SMIC ou du salaire minimum conventionnel."
+            },
+            {
+                "q": "Qui prend en charge le coût de la formation en alternance ?",
+                "a": "Le coût de la formation est intégralement pris en charge par l'OPCO de l'entreprise d'accueil. L'alternant ne paye aucuns frais de scolarité."
+            },
+            {
+                "q": "Qu'est-ce que le maître d'apprentissage ou tuteur ?",
+                "a": "C'est le salarié de l'entreprise désigné pour encadrer l'alternant, transmettre ses compétences, et faire le lien avec Alt RH Formations."
+            },
+            {
+                "q": "Quel est le rôle du tuteur en entreprise ?",
+                "a": "Il guide l'alternant dans ses missions au quotidien, veille à son intégration, évalue sa progression professionnelle et participe aux bilans de suivi."
+            },
+            {
+                "q": "Peut-on rompre un contrat d'alternance ?",
+                "a": "Oui, durant la période d'essai (45 jours de présence en entreprise pour l'apprentissage), la rupture est libre. Au-delà, elle nécessite un accord amiable ou une procédure spécifique."
+            },
+            {
+                "q": "Quelle est la durée de la période d'essai en alternance ?",
+                "a": "Pour un contrat d'apprentissage, elle est de 45 jours consécutifs ou non de formation pratique en entreprise. Pour un contrat de professionnalisation, elle suit le droit commun."
+            },
+            {
+                "q": "L'alternance est-elle ouverte aux personnes en situation de handicap ?",
+                "a": "Oui, avec des aménagements possibles de la durée du contrat, du rythme pédagogique, et des aides financières spécifiques de l'AGEFIPH."
+            },
+            {
+                "q": "Quels sont les avantages de l'alternance pour un employeur ?",
+                "a": "Former un futur collaborateur à ses méthodes, intégrer de nouvelles compétences à moindre coût et bénéficier d'exonérations de charges ou d'aides à l'embauche."
+            },
+            {
+                "q": "Existe-t-il des aides financières pour les entreprises qui recrutent en alternance ?",
+                "a": "Oui, des aides d'État spécifiques ou des primes exceptionnelles sont régulièrement accordées pour soutenir l'embauche de contrats d'apprentissage et de professionnalisation."
+            },
+            {
+                "q": "Comment se déroulent les examens pour les alternants ?",
+                "a": "Ils se déroulent sous forme de contrôle continu tout au long de l'année et/ou d'examens terminaux oraux et écrits devant un jury professionnel."
+            },
+            {
+                "q": "Peut-on faire de l'alternance dans le secteur public ?",
+                "a": "Oui, les administrations publiques (mairies, ministères, hôpitaux) peuvent recruter des apprentis, sous des conditions spécifiques de rémunération."
+            },
+            {
+                "q": "Qu'est-ce que le livret d'apprentissage numérique ?",
+                "a": "C'est un outil en ligne qui permet de suivre la progression de l'alternant, de consigner ses missions et de fluidifier la communication entre le tuteur, l'école et l'apprenant."
+            },
+            {
+                "q": "Peut-on effectuer son alternance en télétravail ?",
+                "a": "Oui, si l'activité s'y prête et que l'entreprise le pratique, à condition que le tuteur puisse assurer l'encadrement à distance de manière rigoureuse."
+            },
+            {
+                "q": "Que se passe-t-il si l'entreprise fait faillite en cours de contrat ?",
+                "a": "Le centre de formation accompagne l'alternant pour lui permettre de poursuivre ses cours tout en l'aidant à retrouver d'urgence une nouvelle entreprise d'accueil."
+            },
+            {
+                "q": "Quel est le taux d'insertion professionnelle après une alternance chez vous ?",
+                "a": "Plus de 82% de nos diplômés en alternance trouvent un emploi stable (CDI ou CDD de plus de 6 mois) dans les 6 mois suivant leur diplôme."
             }
         ]
     },
     {
-        "id": "blog",
-        "categorie": "Blog",
+        "id": "tests-positionnement",
+        "categorie": "Tests de positionnement & évaluations",
         "questions": [
             {
-                "q": "À quoi sert le blog Alt Formations ?",
-                "a": "Il rassemble articles et actualités sur la formation professionnelle, les métiers du numérique et du tertiaire, les financements et les tendances (dont l'intelligence artificielle). L'objectif est d'éclairer votre projet avant même de vous inscrire."
+                "q": "Qu'est-ce qu'un test de positionnement avant formation ?",
+                "a": "C'est une évaluation initiale réalisée en amont de l'entrée en formation pour mesurer vos connaissances actuelles et adapter votre parcours pédagogique."
             },
             {
-                "q": "À quelle fréquence publiez-vous du contenu ?",
-                "a": "Nous enrichissons régulièrement le blog avec des dossiers, témoignages et conseils pratiques. Abonnez-vous aux canaux indiqués sur le site ou consultez cette page pour les dernières publications."
+                "q": "Le test de positionnement est-il obligatoire ?",
+                "a": "Oui, dans le cadre de notre démarche Qualiopi, il est obligatoire afin de valider l'adéquation entre votre profil, vos objectifs et le programme choisi."
             },
             {
-                "q": "Puis-je proposer un sujet ou une collaboration ?",
-                "a": "Les demandes de partenariat éditorial ou de mise en avant peuvent être envoyées via notre formulaire de contact en précisant votre projet et votre secteur. Notre équipe étudie les propositions en lien avec nos valeurs et nos publics."
+                "q": "Sous quelle forme se déroulent ces tests ?",
+                "a": "Il s'agit généralement de questionnaires à choix multiples (QCM), d'études de cas courtes ou d'entretiens techniques individuels menés à distance."
             },
             {
-                "q": "Les articles remplacent-ils une séance d'information ?",
-                "a": "Non : ils complètent une veille utile mais ne substituent pas un échange personnalisé sur votre éligibilité, vos financements ou le détail d'un parcours. Prenez rendez-vous avec un conseiller pour un diagnostic adapté à votre situation."
-            }
-        ]
-    },
-    {
-        "id": "contact",
-        "categorie": "Contact",
-        "questions": [
-            {
-                "q": "Quels sont vos horaires pour vous joindre ?",
-                "a": "Nos équipes répondent du lundi au vendredi, de 9h00 à 18h00. En dehors de ces créneaux, utilisez le formulaire de contact : nous revenons vers vous dès le premier jour ouvrable."
+                "q": "Combien de temps dure un test de positionnement ?",
+                "a": "En moyenne, un test dure entre 20 et 45 minutes selon la complexité des compétences à évaluer."
             },
             {
-                "q": "Quel délai de réponse après un message ?",
-                "a": "En période normale, nous visons un retour sous 24 à 48 heures ouvrées selon la complexité de votre demande (financement, entreprise, inscription). Les pics d'activité peuvent allonger légèrement ce délai ; indiquez votre urgence dans votre message."
+                "q": "Puis-je échouer à un test de positionnement ?",
+                "a": "Non, il ne s'agit pas d'un examen éliminatoire mais d'un outil de diagnostic pour personnaliser au mieux votre futur parcours de formation."
             },
             {
-                "q": "Quels canaux utiliser selon ma demande ?",
-                "a": "Le formulaire centralise les demandes individuelles et professionnelles ; précisez votre besoin (information formation, financement, entreprise, alternance). Pour un rendez-vous téléphonique, laissez vos disponibilités — un conseiller vous rappelle."
+                "q": "Les tests se font-ils sur table ou en ligne ?",
+                "a": "Pour plus de flexibilité, la grande majorité de nos tests de positionnement sont accessibles en ligne via notre plateforme sécurisée."
             },
             {
-                "q": "Mes données du formulaire sont-elles protégées ?",
-                "a": "Les informations que vous envoyez servent uniquement à traiter votre demande dans le respect du RGPD. Pour plus de détail sur la conservation et vos droits, consultez notre politique de confidentialité."
-            }
-        ]
-    },
-    {
-        "id": "campus",
-        "categorie": "Campus & Lieux",
-        "questions": [
-            {
-                "q": "Où se déroulent les cours en présentiel ?",
-                "a": "Les sessions en présentiel peuvent avoir lieu sur notre site principal ou dans des espaces partenaires selon la formation et la promotion. La convocation ou la fiche programme précise l'adresse à jour pour votre groupe."
+                "q": "Quand dois-je passer ce test de positionnement ?",
+                "a": "Il doit être réalisé après la validation de votre projet d'inscription et impérativement avant le premier jour de la formation."
             },
             {
-                "q": "Comment accéder au campus depuis les transports ?",
-                "a": "Les informations d'accès (parkings, transports en commun, navettes si applicable) sont communiquées lors de votre inscription ou sur demande auprès de l'équipe administrative. Notre siège est à Bailly-Romainvilliers ; vérifiez l'adresse exacte de votre session."
+                "q": "Qu'évalue-t-on dans un test de positionnement managérial ?",
+                "a": "Nous évaluons vos postures de communication, votre style de leadership face à des situations concrètes et votre connaissance des outils clés de gestion d'équipe."
             },
             {
-                "q": "Quels équipements sont disponibles sur place ?",
-                "a": "Les salles sont équipées pour la formation numérique (postes, réseau, vidéoprojection selon les modules). Pour les besoins spécifiques (handicap, matériel personnel), contactez-nous avant la rentrée pour adapter l'aménagement."
+                "q": "Les tests de positionnement en langues sont-ils alignés sur le CECRL ?",
+                "a": "Oui, nos tests en langues (anglais, espagnol, allemand) mesurent votre niveau selon la grille européenne de A1 à C2."
             },
             {
-                "q": "Puis-je visiter les locaux avant de m'inscrire ?",
-                "a": "Des visites ou journées portes ouvertes peuvent être organisées selon le calendrier. Écrivez-nous via la page contact en indiquant la formation qui vous intéresse pour être informé des prochaines dates."
+                "q": "Comment sont utilisés les résultats par les formateurs ?",
+                "a": "Les résultats permettent au formateur d'identifier les forces et axes d'amélioration du groupe pour adapter le rythme et insister sur les notions clés."
+            },
+            {
+                "q": "Puis-je avoir accès à mes résultats détaillés ?",
+                "a": "Oui, un compte rendu de votre positionnement initial vous est partagé et commenté par votre conseiller pédagogique."
+            },
+            {
+                "q": "Le test de positionnement peut-il raccourcir ma formation ?",
+                "a": "Oui, si vos compétences initiales sont déjà très avancées sur certains modules, une individualisation peut réduire la durée totale du parcours (allègement de formation)."
+            },
+            {
+                "q": "Qu'est-ce qu'une évaluation formative ?",
+                "a": "C'est une évaluation continue tout au long de la formation (quiz, exercices) servant à mesurer votre progression et à réajuster la pédagogie en temps réel."
+            },
+            {
+                "q": "Qu'est-ce qu'une évaluation sommative ?",
+                "a": "C'est l'évaluation finale qui intervient au terme de la formation pour valider l'acquisition globale des compétences et délivrer le certificat."
+            },
+            {
+                "q": "Quelle est la différence entre évaluation à chaud et à froid ?",
+                "a": "L'évaluation à chaud mesure votre satisfaction immédiate en fin de stage. L'évaluation à froid (à 3 ou 6 mois) mesure l'impact réel de la formation sur votre poste de travail."
+            },
+            {
+                "q": "Les tests de positionnement intègrent-ils des tests de logique ?",
+                "a": "Seulement pour certaines filières techniques ou de gestion de projet qui nécessitent des aptitudes analytiques spécifiques."
+            },
+            {
+                "q": "Comment sont sécurisées les sessions de tests en ligne ?",
+                "a": "Nos tests en ligne utilisent des plateformes chiffrées garantissant la stricte confidentialité de vos réponses et de vos données personnelles."
+            },
+            {
+                "q": "Le niveau informatique est-il testé pour le e-learning ?",
+                "a": "Oui, un rapide test d'aisance numérique est prévu pour s'assurer que vous saurez naviguer sereinement sur notre plateforme d'apprentissage."
+            },
+            {
+                "q": "Que se passe-t-il si mon niveau est jugé insuffisant lors du test ?",
+                "a": "Nous vous proposerons un module de mise à niveau ou une orientation vers une formation plus adaptée à vos bases actuelles."
+            },
+            {
+                "q": "Qui conçoit vos tests de positionnement ?",
+                "a": "Ils sont conçus sur mesure par nos ingénieurs pédagogiques et nos formateurs experts en s'appuyant sur les référentiels de compétences officiels."
+            },
+            {
+                "q": "Puis-je repasser un test de positionnement ?",
+                "a": "Le principe du positionnement étant de mesurer le niveau de départ réel, il ne se passe qu'une seule fois par projet de formation."
+            },
+            {
+                "q": "Quels outils de test utilisez-vous pour les compétences bureautiques ?",
+                "a": "Nous utilisons des outils reconnus comme TOSA ou ENI qui simulent des cas réels directement sur Excel, Word ou PowerPoint."
+            },
+            {
+                "q": "Les tests mesurent-ils aussi les soft skills ?",
+                "a": "Oui, pour les modules de management et de ressources humaines, des questions de mise en situation comportementale sont intégrées."
+            },
+            {
+                "q": "Y a-t-il un entretien oral après le test écrit ?",
+                "a": "Pour la plupart des parcours certifiants, le test en ligne est complété par un entretien de 15 minutes avec un conseiller."
+            },
+            {
+                "q": "Le coût du test de positionnement est-il facturé à part ?",
+                "a": "Non, l'ingénierie de positionnement initial est totalement intégrée dans les frais généraux de la formation."
             }
         ]
     },
     {
         "id": "certification",
-        "categorie": "Certification & Diplômes",
+        "categorie": "Certifications, RNCP, RS & Qualiopi",
         "questions": [
             {
+                "q": "Qu'est-ce que la certification Qualiopi ?",
+                "a": "Qualiopi est la marque unique de certification qualité des prestataires d'actions concourant au développement des compétences, obligatoire pour bénéficier de fonds publics ou mutualisés."
+            },
+            {
+                "q": "Pourquoi est-il important de choisir un organisme certifié Qualiopi ?",
+                "a": "Cela vous garantit le sérieux de l'organisme, la qualité des processus pédagogiques, la transparence de l'information et l'éligibilité aux financements (CPF, OPCO, etc.)."
+            },
+            {
                 "q": "Qu'est-ce que le RNCP ?",
-                "a": "Le Répertoire National des Certifications Professionnelles recense les certifications reconnues par l'État (dont les Titres Professionnels). Une inscription au RNCP garantit la valeur professionnelle du diplôme délivré à l'issue de votre parcours."
+                "a": "Le Répertoire National des Certifications Professionnelles (RNCP) recense les diplômes et titres à visée professionnelle reconnus par l'État, classés par niveaux de qualification."
             },
             {
-                "q": "Un Titre Professionnel équivaut à quel niveau ?",
-                "a": "Les niveaux vont typiquement du Niveau 4 (type bac) au Niveau 6 (bac+3/4) selon le référentiel du titre visé. Le niveau figure sur votre certification et facilite la poursuite d'études ou la mobilité professionnelle."
+                "q": "Qu'est-ce que le RS (Répertoire Spécifique) ?",
+                "a": "Le Répertoire Spécifique (RS) recense les certifications correspondant à des compétences professionnelles complémentaires, des habilitations ou des spécialisations (ex: TOSA, TOEIC)."
             },
             {
-                "q": "Alt Formations est-il certifié Qualiopi ?",
-                "a": "Oui, nous sommes certifiés Qualiopi au titre des actions de formation : c'est une exigence pour certaines prises en charge (CPF, OPCO, etc.) et un gage de qualité sur nos processus."
+                "q": "Quelle est la différence entre un titre RNCP et un diplôme d'État ?",
+                "a": "Tous deux ont la même valeur sur le marché du travail, mais le diplôme d'État est délivré par un ministère (Éducation nationale) tandis que le titre RNCP est délivré par un organisme de formation et validé par France Compétences."
             },
             {
-                "q": "Comment vérifier qu'une formation prépare bien à un titre RNCP ?",
-                "a": "La fiche formation mentionne le code RNCP et les blocs de compétences couverts. Vous pouvez croiser ces informations sur France Compétences ; nos conseillers peuvent vous expliquer les débouchés associés au titre."
+                "q": "Qu'est-ce que France Compétences ?",
+                "a": "C'est l'autorité nationale de régulation et de financement de la formation professionnelle et de l'apprentissage en France, qui valide l'inscription des titres au RNCP et au RS."
             },
             {
-                "q": "La certification est-elle la même en présentiel et à distance ?",
-                "a": "Le diplôme ou titre délivré est identique lorsque le même référentiel et les mêmes modalités d'évaluation sont respectés. Le format (présentiel, distanciel ou mixte) ne change pas la reconnaissance de la certification."
+                "q": "Comment savoir si une formation Alt RH Formations est certifiante ?",
+                "a": "La mention « Certifiante » ainsi que le code RNCP ou RS officiel apparaissent explicitement sur la fiche de la formation et sur notre site."
+            },
+            {
+                "q": "Qu'est-ce qu'un bloc de compétences ?",
+                "a": "C'est une partie homogène et cohérente d'une certification professionnelle. On peut valider un titre RNCP bloc par bloc, à son propre rythme."
+            },
+            {
+                "q": "Peut-on obtenir une certification par capitalisation de blocs ?",
+                "a": "Oui, la validation de l'ensemble des blocs constitutifs d'une certification permet d'obtenir le titre certifiant complet."
+            },
+            {
+                "q": "Quelle est la durée de validité d'une certification professionnelle ?",
+                "a": "Pour le titulaire, la certification est acquise à vie. En revanche, l'enregistrement du titre par France Compétences est renouvelé tous les 3 à 5 ans."
+            },
+            {
+                "q": "Comment se déroule le passage devant le jury de certification ?",
+                "a": "Le candidat présente son dossier de projet ou sa soutenance orale devant un jury composé de professionnels indépendants du secteur visé."
+            },
+            {
+                "q": "Que se passe-t-il si j'échoue à l'examen de certification ?",
+                "a": "En cas d'échec partiel, vous conservez le bénéfice des blocs de compétences validés. Vous pouvez vous réinscrire pour repasser le ou les blocs manquants."
+            },
+            {
+                "q": "Qu'est-ce qu'un certificat de réalisation ?",
+                "a": "C'est le document officiel transmis à la fin de la formation prouvant l'assiduité du stagiaire et la réalisation effective de toutes les étapes de la formation."
+            },
+            {
+                "q": "Qu'est-ce que la VAE (Validation des Acquis de l'Expérience) ?",
+                "a": "C'est un dispositif permettant d'obtenir toute ou partie d'une certification professionnelle grâce à la reconnaissance de son expérience professionnelle d'au moins 1 an."
+            },
+            {
+                "q": "Alt RH Formations accompagne-t-elle les projets de VAE ?",
+                "a": "Oui, nous proposons des parcours d'accompagnement méthodologique à la VAE pour vous aider à rédiger vos livrets et préparer l'oral devant le jury."
+            },
+            {
+                "q": "Les certifications de langues (TOEIC, Bright) sont-elles valables à vie ?",
+                "a": "Non, la plupart des certifications linguistiques ont une validité recommandée de 2 ans, car le niveau de pratique peut évoluer."
+            },
+            {
+                "q": "Qu'est-ce qu'une habilitation professionnelle ?",
+                "a": "C'est une reconnaissance obligatoire pour exercer certaines tâches spécifiques en toute sécurité (ex: habilitation électrique, SST)."
+            },
+            {
+                "q": "Comment vérifier l'authenticité d'une certification ?",
+                "a": "Chaque certification délivrée comporte un numéro d'enregistrement unique vérifiable directement auprès de l'organisme certificateur ou de France Compétences."
+            },
+            {
+                "q": "Qu'est-ce que le niveau de qualification Europe (EQF) ?",
+                "a": "C'est un cadre européen qui permet de faire correspondre les niveaux de diplômes d'un pays à l'autre (ex: Niveau 6 correspond au Bac+3/4)."
+            },
+            {
+                "q": "Peut-on faire une formation certifiante sans passer l'examen ?",
+                "a": "Si vous utilisez le CPF pour financer votre formation, le passage de l'examen de certification est une obligation légale."
+            },
+            {
+                "q": "Qui fixe les modalités d'évaluation d'un titre RNCP ?",
+                "a": "C'est l'organisme certificateur dépositaire du titre auprès de France Compétences qui détermine précisément le référentiel d'évaluation."
+            },
+            {
+                "q": "Quel est l'impact de Qualiopi sur le suivi des stagiaires ?",
+                "a": "Qualiopi impose des processus stricts de suivi des présences, de traitement des réclamations et d'évaluation continue pour protéger les bénéficiaires."
+            },
+            {
+                "q": "Qu'est-ce que la charte d'engagement du CPF ?",
+                "a": "C'est une charte de déontologie signée par les organismes de formation certifiés qui s'engagent à respecter des pratiques commerciales éthiques et transparentes."
+            },
+            {
+                "q": "Une certification professionnelle garantit-elle un emploi ?",
+                "a": "Elle ne le garantit pas juridiquement, mais elle atteste de compétences opérationnelles directement recherchées, ce qui augmente fortement l'employabilité."
+            },
+            {
+                "q": "Quelles sont les certifications en ressources humaines disponibles chez Alt RH Formations ?",
+                "a": "Nous proposons des titres RNCP de Chargé de Recrutement, Responsable RH, ainsi que des certifications RS en gestion de paie et droit social."
             }
         ]
     },
     {
-        "id": "ia",
-        "categorie": "Ressources & Formations IA",
+        "id": "financement-cpf",
+        "categorie": "Financement via le Compte Personnel de Formation (CPF)",
         "questions": [
             {
-                "q": "À qui s'adressent les ressources sur l'intelligence artificielle ?",
-                "a": "À tout public curieux ou en reconversion : salariés, candidats à une formation, chefs de projet ou managers souhaitant comprendre les usages de l'IA en entreprise sans jargon inutile."
+                "q": "Qu'est-ce que le Compte Personnel de Formation (CPF) ?",
+                "a": "C'est un dispositif de financement de la formation professionnelle qui permet à toute personne active d'accumuler des droits à la formation dès son entrée sur le marché du travail."
             },
             {
-                "q": "Les contenus remplacent-ils une formation certifiante ?",
-                "a": "Les ressources complètent votre veille ; pour une certification reconnue ou un métier de la data et de l'IA, orientez-vous vers nos parcours certifiants listés dans le catalogue formations."
+                "q": "Comment est alimenté mon compte CPF ?",
+                "a": "Pour un travail à temps plein ou à mi-temps, le compte est alimenté chaque année à hauteur de 500 € (dans la limite d'un plafond total de 5 000 €)."
             },
             {
-                "q": "Sous quel format sont disponibles les ressources ?",
-                "a": "Selon les publications : articles, fiches pratiques, liens vers outils ou événements. L'objectif est un accès rapide et actionnable, avec des pistes pour aller plus loin avec un conseiller si besoin."
+                "q": "Existe-t-il un CPF spécifique pour les personnes peu qualifiées ?",
+                "a": "Oui, pour les salariés non qualifiés (niveau inférieur au CAP/BEP), l'alimentation est de 800 € par an, avec un plafond relevé à 8 000 €."
             },
             {
-                "q": "Puis-je être orienté vers une formation IA après lecture ?",
-                "a": "Oui : utilisez le formulaire de contact ou demandez un rendez-vous pour un positionnement sur nos parcours numériques et IA, les prérequis et les financements possibles."
+                "q": "Où puis-je consulter le montant de mes droits CPF ?",
+                "a": "Sur le site officiel ou l'application mobile gouvernementale « Mon Compte Formation » (moncompteformation.gouv.fr) en vous connectant via FranceConnect+."
+            },
+            {
+                "q": "Pourquoi faut-il utiliser FranceConnect+ (Identité Numérique La Poste) ?",
+                "a": "C'est une mesure de sécurité obligatoire mise en place par l'État pour sécuriser la connexion et bloquer définitivement les tentatives de fraude au CPF."
+            },
+            {
+                "q": "Toutes vos formations sur alt-rh.com sont-elles éligibles au CPF ?",
+                "a": "Seules nos formations débouchant sur une certification enregistrée au RNCP ou au RS, ainsi que les bilans de compétences, sont éligibles au CPF."
+            },
+            {
+                "q": "Qu'est-ce que le reste à charge CPF mis en place récemment ?",
+                "a": "Depuis mai 2024, un reste à charge obligatoire de 100 € (indexé annuellement) s'applique pour chaque dossier CPF, sauf cas d'exonération spécifiques."
+            },
+            {
+                "q": "Qui est exonéré du reste à charge obligatoire de 100 € ?",
+                "a": "Les demandeurs d'emploi, les salariés dont l'entreprise cofinance le projet, et les bénéficiaires d'un abondement de leur OPCO ou de la branche professionnelle."
+            },
+            {
+                "q": "Qu'est-ce qu'un abondement CPF ?",
+                "a": "C'est un financement complémentaire versé sur votre compte lorsque le coût de la formation choisie dépasse le montant de vos droits CPF disponibles."
+            },
+            {
+                "q": "Mon employeur peut-il m'obliger à utiliser mon CPF ?",
+                "a": "Non, l'utilisation du CPF relève de la seule initiative du salarié. L'employeur ne peut en aucun cas vous imposer d'utiliser vos droits personnels."
+            },
+            {
+                "q": "Puis-je utiliser mon CPF pour une formation pendant mon temps de travail ?",
+                "a": "Oui, mais vous devez impérativement obtenir l'accord préalable de votre employeur sur le calendrier et le contenu de la formation."
+            },
+            {
+                "q": "Quel est le délai pour demander l'accord de mon employeur pour une formation sur le temps de travail ?",
+                "a": "La demande doit être formulée au moins 60 jours avant le début pour une formation de moins de 6 mois, et 120 jours pour une formation de plus de 6 mois."
+            },
+            {
+                "q": "Que se passe-t-il si mon employeur ne répond pas à ma demande de formation CPF ?",
+                "a": "L'absence de réponse de l'employeur dans un délai de 30 jours calendaires vaut acceptation de sa part."
+            },
+            {
+                "q": "Puis-je utiliser mon CPF si je suis demandeur d'emploi ?",
+                "a": "Oui, vos droits CPF acquis lorsque vous étiez salarié restent disponibles et mobilisables tout au long de votre période de recherche d'emploi."
+            },
+            {
+                "q": "Les fonctionnaires ou agents publics ont-ils un CPF en euros ?",
+                "a": "Non, pour les agents publics, le CPF est toujours alimenté en heures de formation (25 heures par an en général) et non en euros."
+            },
+            {
+                "q": "Mes droits CPF peuvent-ils expirer ou être perdus ?",
+                "a": "Non, les droits acquis restent inscrits sur votre compte à vie, même en cas de changement d'entreprise, de chômage ou de reconversion."
+            },
+            {
+                "q": "Que deviennent mes droits CPF au moment du départ à la retraite ?",
+                "a": "Les droits CPF sont gelés lors de la liquidation des droits à la retraite à taux plein et ne peuvent plus être mobilisés, sauf pour des activités de bénévolat (via le CEC)."
+            },
+            {
+                "q": "Puis-je céder mes droits CPF à un proche ou un membre de ma famille ?",
+                "a": "Non, le Compte Personnel de Formation est strictement individuel, incessible et nominatif. Les droits ne peuvent être transférés à un tiers."
+            },
+            {
+                "q": "Que faire si le solde de mon CPF est insuffisant pour financer ma formation chez Alt RH Formations ?",
+                "a": "Vous pouvez compléter le paiement par carte bancaire directement sur la plateforme, ou solliciter une aide financière complémentaire (France Travail, OPCO, employeur)."
+            },
+            {
+                "q": "Quel est le délai de rétractation après avoir validé une inscription CPF ?",
+                "a": "Vous disposez d'un délai de rétractation légal de 11 jours ouvrés après la validation de votre dossier par l'organisme de formation."
+            },
+            {
+                "q": "Est-il possible de financer un permis de conduire avec le CPF ?",
+                "a": "Oui, le CPF permet de financer les permis B, C, D et les extensions, à condition que l'obtention du permis contribue directement à un projet professionnel."
+            },
+            {
+                "q": "Qu'est-ce que le CPF de transition ou Projet de Transition Professionnelle (PTP) ?",
+                "a": "C'est un dispositif spécifique permettant de s'absenter de son poste pour suivre une formation certifiante longue dans le but de se reconvertir, avec maintien de salaire."
+            },
+            {
+                "q": "Qui gère financièrement le dispositif Mon Compte Formation ?",
+                "a": "C'est la Caisse des Dépôts et Consignations (CDC) qui assure la gestion technique et financière globale du dispositif CPF."
+            },
+            {
+                "q": "Puis-je me faire rembourser une formation payée avec mon CPF si je l'annule ?",
+                "a": "Si l'annulation intervient hors délai légal et sans motif de force majeure, les droits CPF sont débités et non remboursés."
+            },
+            {
+                "q": "Comment s'assurer qu'on ne se fait pas arnaquer son compte CPF ?",
+                "a": "Ne donnez jamais vos identifiants de connexion. Alt RH Formations ne fait aucun démarchage agressif par téléphone, SMS ou email."
+            }
+        ]
+    },
+    {
+        "id": "financement-france-travail",
+        "categorie": "Financement via France Travail",
+        "questions": [
+            {
+                "q": "Qu'est-ce que l'AIF (Aide Individuelle à la Formation) ?",
+                "a": "L'AIF est un financement accordé par France Travail pour prendre en charge tout ou partie des frais pédagogiques d'une formation non couverte par d'autres dispositifs."
+            },
+            {
+                "q": "Qui peut prétendre à l'AIF de France Travail ?",
+                "a": "Les demandeurs d'emploi inscrits, qu'ils soient indemnisés ou non, ainsi que les personnes en contrat de sécurisation professionnelle (CSP)."
+            },
+            {
+                "q": "Comment faire une demande d'AIF pour une formation chez Alt RH Formations ?",
+                "a": "Vous devez nous demander un devis numérique personnalisé. Nous le déposons directement sur votre espace Kairos (plateforme France Travail), et vous devez ensuite le valider."
+            },
+            {
+                "q": "Qu'est-ce que la plateforme Kairos ?",
+                "a": "C'est l'outil d'échange de données dématérialisées entre France Travail et les organismes de formation pour gérer les devis, les entrées en formation et l'assiduité."
+            },
+            {
+                "q": "Quel est le délai de traitement d'une demande d'AIF par France Travail ?",
+                "a": "Le délai moyen est de 3 à 4 semaines. Il est recommandé de valider votre devis au moins 15 jours avant la date de début de la formation."
+            },
+            {
+                "q": "Qu'est-ce que la POEI (Préparation Opérationnelle à l'Emploi Individuelle) ?",
+                "a": "C'est un dispositif permettant de financer une formation de mise à niveau d'un candidat pour l'adapter précisément à un poste proposé par une entreprise qui s'engage à l'embaucher."
+            },
+            {
+                "q": "Quelle est la différence entre POEI et POEC ?",
+                "a": "La POEI est individuelle et liée à une offre d'emploi précise d'une entreprise. La POEC est collective, initiée par une branche professionnelle pour répondre à des besoins sectoriels."
+            },
+            {
+                "q": "Puis-je conserver mes allocations chômage (ARE) pendant ma formation ?",
+                "a": "Oui, si la formation est validée par votre conseiller dans le cadre de votre projet personnalisé d'accès à l'emploi (PPAE), l'ARE devient l'AREF (Allocation d'Aide au Retour à l'Emploi Formation)."
+            },
+            {
+                "q": "Qu'est-ce que la RFF (Rémunération de Fin de Formation) ?",
+                "a": "C'est une aide financière qui prend le relais de vos allocations chômage si celles-ci prennent fin pendant que vous terminez une formation qualifiante agréée."
+            },
+            {
+                "q": "Quel est le montant maximal de la RFF en 2026 ?",
+                "a": "Le montant maximum de la RFF est plafonné par l'État aux alentours de 712 € par mois, sous réserve des règles en vigueur."
+            },
+            {
+                "q": "Qu'est-ce que la RFPE (Rémunération des Formations de France Travail) ?",
+                "a": "C'est la rémunération versée par France Travail aux demandeurs d'emploi non indemnisés au titre de l'ARE qui suivent une formation agréée."
+            },
+            {
+                "q": "France Travail peut-il abonder mon compte CPF ?",
+                "a": "Oui, si vos droits CPF sont insuffisants pour couvrir le prix de la formation, vous pouvez solliciter un abondement direct de France Travail depuis la plateforme Mon Compte Formation."
+            },
+            {
+                "q": "Comment obtenir la validation de mon projet de formation par mon conseiller ?",
+                "a": "Vous devez lui présenter un projet solide, cohérent avec votre parcours et démontrer que la formation choisie favorisera concrètement votre retour à l'emploi."
+            },
+            {
+                "q": "Qu'est-ce que le PPAE (Projet Personnel d'Accès à l'Emploi) ?",
+                "a": "C'est le document contractuel de référence élaboré avec votre conseiller France Travail, fixant la nature de vos recherches et les actions d'accompagnement (comme la formation)."
+            },
+            {
+                "q": "Peut-on cumuler une aide de la Région et un financement France Travail ?",
+                "a": "Oui, les cofinancements entre les Conseils régionaux et France Travail sont fréquents et gérés de manière coordonnée pour les dossiers complexes."
+            },
+            {
+                "q": "Quelles sont les obligations d'un stagiaire vis-à-vis de France Travail pendant la formation ?",
+                "a": "L'obligation principale est l'assiduité totale. Toute absence injustifiée peut entraîner la suspension des allocations et l'exclusion du parcours."
+            },
+            {
+                "q": "Comment sont déclarées les absences auprès de France Travail ?",
+                "a": "Alt RH Formations déclare chaque mois vos heures de présence effectives et vos éventuelles absences via la plateforme Kairos."
+            },
+            {
+                "q": "Puis-je suivre une formation à distance tout en restant disponible pour chercher un emploi ?",
+                "a": "Oui, le e-learning offre une souplesse totale qui permet de caler vos temps d'apprentissage en dehors des entretiens de recrutement."
+            },
+            {
+                "q": "Qu'est-ce qu'une formation « conventionnée » par la Région ou France Travail ?",
+                "a": "C'est une formation dont les places ont été achetées en lot par l'institution. Les places sont gratuites pour les demandeurs d'emploi sélectionnés."
+            },
+            {
+                "q": "Est-ce que France Travail prend en charge les frais de transport ou d'hébergement ?",
+                "a": "Oui, sous certaines conditions de ressources et d'éloignement (plus de 60 km aller-retour), vous pouvez bénéficier de l'aide aux frais associés à la formation (aide à la mobilité)."
+            },
+            {
+                "q": "Que se passe-t-il si je trouve un emploi en CDI au milieu de ma formation ?",
+                "a": "Vous pouvez interrompre votre formation pour signer votre contrat de travail, sans pénalité financière. France Travail suspendra alors vos droits de stagiaire."
+            },
+            {
+                "q": "Un travailleur indépendant peut-il solliciter France Travail s'il s'inscrit comme demandeur d'emploi ?",
+                "a": "Oui, s'il remplit les critères d'inscription et qu'il n'a pas de revenus d'activité suffisants, il entre dans le droit commun de l'accompagnement."
+            },
+            {
+                "q": "Le Bilan de compétences peut-il être pris en charge par France Travail ?",
+                "a": "Oui, via l'AIF ou directement par mobilisation de votre CPF, le bilan de compétences est parfaitement finançable pour un demandeur d'emploi."
+            },
+            {
+                "q": "Que se passe-t-il si l'organisme de formation perd sa certification Qualiopi en cours de route ?",
+                "a": "France Travail bloque immédiatement les financements en cours et refuse tout nouveau dossier avec cet organisme."
+            },
+            {
+                "q": "Où trouver les formations d'Alt RH Formations sur le catalogue France Travail ?",
+                "a": "Toutes nos sessions ouvertes sont visibles directement sur le site de France Travail, rubrique « Trouver ma formation » ou via votre espace candidat."
+            }
+        ]
+    },
+    {
+        "id": "financement-opco",
+        "categorie": "Financement via les OPCO & employeurs",
+        "questions": [
+            {
+                "q": "Qu'est-ce qu'un OPCO (Opérateur de Compétences) ?",
+                "a": "C'est un organisme agréé par l'État chargé d'accompagner la formation professionnelle des entreprises, de financer l'alternance et de soutenir les TPE/PME."
+            },
+            {
+                "q": "Combien d'OPCO existe-t-il en France actuellement ?",
+                "a": "Il existe 11 OPCO interprofessionnels, chacun étant sectorisé par branches professionnelles proches (ex: Atlas, Akto, Opco de la Construction)."
+            },
+            {
+                "q": "Quel est l'OPCO compétent pour les métiers du conseil, de l'ingénierie et du numérique ?",
+                "a": "C'est l'OPCO Atlas, qui gère notamment la branche des bureaux d'études techniques, du conseil et du numérique (syntec)."
+            },
+            {
+                "q": "Qu'est-ce que le Plan de Développement des Compétences ?",
+                "a": "C'est le document qui rassemble l'ensemble des actions de formation retenues par l'employeur pour ses salariés au cours de l'année pour adapter leurs compétences."
+            },
+            {
+                "q": "Qui prend en charge les frais de formation dans le cadre du Plan de Développement des Compétences ?",
+                "a": "Pour les entreprises de moins de 50 salariés, l'OPCO prend en charge tout ou partie des coûts. Pour les entreprises de plus de 50 salariés, le plan est financé sur les fonds propres de l'entreprise."
+            },
+            {
+                "q": "Comment une TPE/PME peut-elle soumettre un dossier de financement à son OPCO ?",
+                "a": "L'entreprise doit faire une demande de prise en charge (DPC) en ligne sur le portail de son OPCO, en y joignant le programme et le devis d'Alt RH Formations."
+            },
+            {
+                "q": "Qu'est-ce que le FNE-Formation (Fonds National de l'Emploi) ?",
+                "a": "C'est un dispositif de l'État qui cofinance des formations de salariés d'entreprises confrontées à des mutations technologiques, écologiques ou économiques majeures."
+            },
+            {
+                "q": "Quels sont les taux de prise en charge du FNE-Formation ?",
+                "a": "Selon la taille de l'entreprise et le cadre d'intervention, l'aide de l'État peut couvrir de 50% à 80% des coûts pédagogiques."
+            },
+            {
+                "q": "Un salarié en activité partielle peut-il suivre une formation ?",
+                "a": "Oui, et les formations suivies pendant l'activité partielle peuvent être prises en charge à 100% par l'OPCO via les fonds spécifiques FNE."
+            },
+            {
+                "q": "Qu'est-ce que l'abondement correctif de l'employeur ?",
+                "a": "C'est une pénalité financière de 3 000 € versée sur le CPF d'un salarié si l'entreprise de plus de 50 salariés n'a pas respecté ses obligations d'entretiens professionnels biennaux."
+            },
+            {
+                "q": "Qu'est-ce qu'un accord de branche professionnelle ?",
+                "a": "C'est un accord collectif signé entre les syndicats d'employeurs et de salariés d'un secteur, définissant des priorités et des enveloppes de formation spécifiques."
+            },
+            {
+                "q": "Comment cofinancer une formation avec l'OPCO et le CPF du salarié ?",
+                "a": "L'entreprise formule une demande d'abondement auprès de l'OPCO qui procède au versement complémentaire direct sur le compte CPF du salarié via l'espace EDEF."
+            },
+            {
+                "q": "Qu'est-ce que la plateforme EDEF pour les employeurs ?",
+                "a": "C'est l'Espace des Employeurs et des Financeurs géré par la Caisse des Dépôts, permettant aux entreprises d'attribuer des dotations financières CPF à leurs salariés."
+            },
+            {
+                "q": "Le coût de la rémunération du salarié en formation est-il pris en charge par l'OPCO ?",
+                "a": "Pour les entreprises de moins de 50 salariés, certains OPCO proposent un remboursement forfaitaire des salaires pendant le temps de formation."
+            },
+            {
+                "q": "Qu'est-ce que la Pro-A (Reconversion ou Promotion par l'Alternance) ?",
+                "a": "C'est un dispositif permettant à des salariés de changer de métier ou de bénéficier d'une promotion sociale en suivant une formation en alternance tout en gardant leur contrat initial."
+            },
+            {
+                "q": "Quels salariés sont éligibles à la Pro-A ?",
+                "a": "Les salariés en CDI ou en CUI dont le niveau de qualification actuel est inférieur au niveau Licence (Bac+3)."
+            },
+            {
+                "q": "Comment trouver l'OPCO dont dépend mon entreprise ?",
+                "a": "Vous pouvez trouver votre OPCO grâce au code IDCC (Identifiant de la Convention collective) de votre entreprise ou via son numéro SIRET sur les annuaires officiels."
+            },
+            {
+                "q": "Qu'est-ce que la contribution unique à la formation professionnelle (CUFPA) ?",
+                "a": "C'est une taxe obligatoire versée annuellement par les entreprises à l'URSSAF, qui est ensuite mutualisée auprès des OPCO et de France Compétences."
+            },
+            {
+                "q": "Qu'est-ce que l'OPCO AKTO ?",
+                "a": "AKTO est l'opérateur de compétences des services à forte intensité de main-d'œuvre (restauration, propreté, sécurité, travail temporaire)."
+            },
+            {
+                "q": "Peut-on former des dirigeants non-salariés via un OPCO ?",
+                "a": "Non, les dirigeants non-salariés (TNS, gérants majoritaires) dépendent d'un FAF (Fonds d'Assurance Formation) comme le FIF PL, l'AGEFICE ou la FAFCEA."
+            },
+            {
+                "q": "Quel est le délai idéal pour déposer une demande de financement OPCO ?",
+                "a": "Il est conseillé de soumettre la demande au moins 30 jours avant le début de l'action de formation pour s'assurer d'obtenir l'accord écrit (subrogation de paiement)."
+            },
+            {
+                "q": "Qu'est-ce que la subrogation de paiement avec un OPCO ?",
+                "a": "C'est un accord par lequel l'OPCO règle directement les frais pédagogiques à Alt RH Formations, évitant ainsi à l'entreprise de faire l'avance des fonds."
+            },
+            {
+                "q": "Que se passe-t-il si l'OPCO refuse le financement ?",
+                "a": "L'entreprise peut décider de financer la formation sur ses fonds propres ou d'en réviser le périmètre, le devis d'Alt RH Formations devenant caduc sans accord."
+            },
+            {
+                "q": "Les actions collectives des OPCO, qu'est-ce que c'est ?",
+                "a": "Ce sont des programmes de formations clés en main sélectionnés par l'OPCO à des tarifs très avantageux, avec des critères de financement simplifiés pour les adhérents."
+            },
+            {
+                "q": "Alt RH Formations est-elle référencée auprès des principaux OPCO ?",
+                "a": "Oui, grâce à notre certification Qualiopi, nous sommes référencés et validés par l'ensemble des OPCO du territoire français."
+            }
+        ]
+    },
+    {
+        "id": "bilan",
+        "categorie": "Bilans de compétences (méthodologie & déroulement)",
+        "questions": [
+            {
+                "q": "Qu'est-ce qu'un bilan de compétences ?",
+                "a": "C'est un dispositif réglementé du droit du travail qui permet d'analyser ses compétences professionnelles et personnelles, ses aptitudes et ses motivations afin de définir un projet d'évolution ou de reconversion."
+            },
+            {
+                "q": "Combien de temps dure un bilan de compétences au maximum ?",
+                "a": "La durée légale maximale d'un bilan de compétences est de 24 heures, réparties sur plusieurs semaines (généralement 6 à 12 semaines)."
+            },
+            {
+                "q": "Quelles sont les 3 phases réglementaires d'un bilan de compétences ?",
+                "a": "Le bilan comprend obligatoirement une phase préliminaire, une phase d'investigation et une phase de conclusion."
+            },
+            {
+                "q": "En quoi consiste la phase préliminaire du bilan ?",
+                "a": "Elle permet de confirmer l'engagement du bénéficiaire, de définir ses besoins précis et de valider les modalités de déroulement du bilan avec son consultant dédié."
+            },
+            {
+                "q": "En quoi consiste la phase d'investigation ?",
+                "a": "C'est la phase centrale permettant de co-construire le projet professionnel, d'analyser le parcours, de passer les tests d'orientation et de confronter les pistes au marché du travail."
+            },
+            {
+                "q": "En quoi consiste la phase de conclusion ?",
+                "a": "Elle permet de formaliser les résultats de l'investigation, de recenser les facteurs de réussite et de remettre au bénéficiaire un document de synthèse confidentiel."
+            },
+            {
+                "q": "Qu'est-ce que le document de synthèse du bilan de compétences ?",
+                "a": "C'est le document officiel rédigé par le consultant résumant le projet, le plan d'action détaillé et les étapes à suivre. Il est la propriété exclusive du bénéficiaire."
+            },
+            {
+                "q": "Le bilan de compétences peut-il être réalisé entièrement à distance ?",
+                "a": "Oui, Alt RH Formations propose des bilans de compétences 100 % en visioconférence, associant rendez-vous individuels et exercices sur notre plateforme."
+            },
+            {
+                "q": "Puis-je faire un bilan de compétences sur mon temps de travail ?",
+                "a": "Oui, à condition d'obtenir l'accord écrit de votre employeur dans le cadre d'un congé de bilan de compétences. Le contenu reste strictement confidentiel."
+            },
+            {
+                "q": "Mon employeur a-t-il accès aux résultats de mon bilan de compétences ?",
+                "a": "Absolument pas. Aucun résultat ni document de synthèse ne peut être communiqué à l'employeur sans l'accord écrit exprès du salarié."
+            },
+            {
+                "q": "Puis-je réaliser mon bilan de compétences en toute confidentialité hors temps de travail ?",
+                "a": "Oui, en mobilisant vos droits CPF en dehors de vos heures de bureau, l'employeur n'est pas informé et n'intervient pas dans la démarche."
+            },
+            {
+                "q": "Le bilan de compétences est-il éligible au CPF ?",
+                "a": "Oui, le bilan de compétences est un droit éligible de plein droit au CPF, ce qui permet un financement à 100 % de la prestation."
+            },
+            {
+                "q": "Qui sont les consultants qui animent les bilans chez Alt RH Formations ?",
+                "a": "Nos consultants sont des psychologues du travail ou des experts RH seniors certifiés dans l'accompagnement des trajectoires professionnelles."
+            },
+            {
+                "q": "Quelle est la fréquence moyenne des rendez-vous en bilan de compétences ?",
+                "a": "Les rendez-vous individuels d'une durée de 1h30 à 2h ont lieu généralement toutes les semaines ou toutes les deux semaines."
+            },
+            {
+                "q": "Un demandeur d'emploi peut-il faire un bilan de compétences ?",
+                "a": "Oui, c'est un excellent outil pour faire le point sur ses acquis, redéfinir une stratégie de recherche d'emploi ou amorcer une reconversion professionnelle pertinente."
+            },
+            {
+                "q": "Le bilan de compétences est-il obligatoire pour se reconvertir ?",
+                "a": "Non, il n'est pas juridiquement obligatoire, mais il est vivement recommandé pour sécuriser son projet de reconversion et éviter les erreurs d'orientation."
+            },
+            {
+                "q": "Existe-t-il un suivi après la fin du bilan de compétences ?",
+                "a": "Oui, la réglementation impose un entretien de suivi à 6 mois après la remise de la synthèse pour faire le point sur l'avancement de votre plan d'action."
+            },
+            {
+                "q": "Quelle est la différence entre un bilan de compétences et un coaching de carrière ?",
+                "a": "Le bilan est très normé par la loi avec une analyse complète des compétences passées et un livrable de synthèse, tandis que le coaching est centré sur le développement d'objectifs futurs spécifiques."
+            },
+            {
+                "q": "Peut-on interrompre un bilan de compétences en cours ?",
+                "a": "Oui, la démarche repose sur le volontariat. L'interruption se fait d'un commun accord avec l'organisme, selon les clauses contractuelles financières."
+            },
+            {
+                "q": "À quel moment de sa carrière est-il opportun de faire un bilan ?",
+                "a": "Lorsqu'on ressent une perte de sens, une lassitude, un besoin d'évolution, après une longue absence (congé parental, maladie), ou pour préparer une transition."
+            },
+            {
+                "q": "Qu'est-ce que l'enquête métier ou enquête terrain dans un bilan ?",
+                "a": "C'est une démarche clé consistant à interviewer des professionnels en activité pour valider la réalité du métier visé (missions, salaires, contraintes)."
+            },
+            {
+                "q": "Le coût d'un bilan de compétences varie-t-il selon les organismes ?",
+                "a": "Oui, les prix sont libres mais ils se situent généralement entre 1 500 € et 3 000 € TTC selon l'expertise, les outils utilisés et le format."
+            },
+            {
+                "q": "Quels sont les engagements d'Alt RH Formations en matière de déontologie ?",
+                "a": "Le secret professionnel absolu, la neutralité bienveillante, le respect de la vie privée et l'indépendance du jugement pédagogique."
+            },
+            {
+                "q": "Un bilan de compétences peut-il déboucher sur l'inscription à une formation ?",
+                "a": "Très souvent, le plan d'action du bilan identifie un besoin de formation pour acquérir les compétences manquantes requises par le nouveau projet."
+            },
+            {
+                "q": "Peut-on faire plusieurs bilans de compétences au cours de sa vie ?",
+                "a": "Oui, il n'y a pas de limite légale, à condition de respecter un délai de carence minimal si les bilans sont financés par certains dispositifs spécifiques."
+            }
+        ]
+    },
+    {
+        "id": "tests-metiers",
+        "categorie": "Tests métiers & outils psychométriques",
+        "questions": [
+            {
+                "q": "Quels types de tests passe-t-on durant un bilan de compétences ?",
+                "a": "On utilise des tests de personnalité (MBTI, RIASEC), des inventaires d'intérêts professionnels, des tests de motivation et d'aptitudes relationnelles."
+            },
+            {
+                "q": "Qu'est-ce que le test RIASEC ou modèle de Holland ?",
+                "a": "C'est un outil d'orientation qui classe les intérêts professionnels en 6 types de profils : Réaliste, Investigateur, Artiste, Social, Entreprenant, Conventionnel."
+            },
+            {
+                "q": "À quoi sert le test de personnalité MBTI dans un cadre professionnel ?",
+                "a": "Le MBTI permet de comprendre vos préférences de fonctionnement, votre mode de communication, de prise de décision et vos environnements de travail idéaux."
+            },
+            {
+                "q": "Ces tests de personnalité sont-ils fiables et scientifiques ?",
+                "a": "Oui, Alt RH Formations utilise exclusivement des outils validés scientifiquement par des comités de psychométrie et actualisés régulièrement."
+            },
+            {
+                "q": "Puis-je rater ou échouer à un test de personnalité ?",
+                "a": "Absolument pas. Il n'y a pas de bonne ou de mauvaise réponse, l'objectif est d'obtenir une image fidèle de vos préférences naturelles."
+            },
+            {
+                "q": "Qui interprète les résultats de mes tests ?",
+                "a": "Les résultats sont toujours interprétés, débriefés et restitués de vive voix par votre consultant certifié lors d'une séance d'échange personnalisée."
+            },
+            {
+                "q": "Les résultats des tests me sont-ils remis par écrit ?",
+                "a": "Oui, un rapport complet et détaillé généré par l'éditeur du test vous est remis et reste votre propriété exclusive."
+            },
+            {
+                "q": "Qu'est-ce qu'un inventaire des valeurs professionnelles ?",
+                "a": "C'est un outil permettant de hiérarchiser ce qui est le plus important pour vous au travail (autonomie, salaire, sécurité, altruisme, équilibre de vie)."
+            },
+            {
+                "q": "Utilisez-vous des tests d'aptitudes logiques ou de QI ?",
+                "a": "Non, sauf demande très spécifique, car le bilan de compétences vise la valorisation de l'expérience et du profil comportemental, non la performance pure."
+            },
+            {
+                "q": "Combien de temps faut-il pour passer un test en ligne ?",
+                "a": "La plupart des inventaires d'intérêts ou de personnalité durent entre 15 et 30 minutes de passation autonome."
+            },
+            {
+                "q": "Puis-je mentir ou manipuler un test professionnel ?",
+                "a": "C'est possible mais contre-productif, car cela fausserait les résultats du bilan et vous orienterait vers des pistes professionnelles inadaptées à votre vraie nature."
+            },
+            {
+                "q": "Qu'est-ce que le test SOSIE ?",
+                "a": "C'est un test de personnalité de référence très utilisé en recrutement et en bilan, qui évalue à la fois les traits de personnalité et les valeurs de la personne."
+            },
+            {
+                "q": "Les tests d'orientation sont-ils adaptés aux adultes en reconversion ?",
+                "a": "Tout à fait, les questionnaires que nous sélectionnons intègrent des scénarios professionnels typiquement adaptés à la gestion de carrière d'adultes expérimentés."
+            },
+            {
+                "q": "Comment le test aide-t-il à identifier une liste de fiches métiers ?",
+                "a": "Le croisement de votre profil de personnalité et de vos intérêts génère automatiquement des suggestions de métiers issues des référentiels ROME."
+            },
+            {
+                "q": "Qu'est-ce que le référentiel ROME ?",
+                "a": "Le Répertoire Opérationnel des Métiers et des Emplois est l'outil de référence de France Travail qui structure l'ensemble des métiers en France."
+            },
+            {
+                "q": "Puis-je passer les tests sans faire l'intégralité du bilan ?",
+                "a": "Nous proposons des modules courts d'évaluation de profil ou de coaching incluant la passation d'un test spécifique en dehors du cadre global du bilan."
+            },
+            {
+                "q": "Les données de mes tests sont-elles protégées (RGPD) ?",
+                "a": "Oui, toutes nos plateformes d'évaluation respectent scrupuleusement les normes RGPD. Vos données sont chiffrées et ne sont jamais vendues."
+            },
+            {
+                "q": "Que se passe-t-il si je ne me reconnais pas dans les résultats d'un test ?",
+                "a": "Le test n'est qu'un outil de dialogue. Si les résultats ne vous correspondent pas, le consultant travaille avec vous pour comprendre les écarts constatés."
+            },
+            {
+                "q": "Qu'est-ce qu'un test de gestion du stress ou d'intelligence émotionnelle ?",
+                "a": "C'est un outil qui mesure votre capacité à identifier, comprendre et réguler vos émotions ainsi que celles de vos collaborateurs en situation complexe."
+            },
+            {
+                "q": "Peut-on utiliser ces tests pour le recrutement en entreprise ?",
+                "a": "Oui, les entreprises font appel à Alt RH Formations pour évaluer la personnalité des candidats short-listés et sécuriser leurs recrutements."
+            },
+            {
+                "q": "Existe-t-il des tests pour évaluer le potentiel managérial ?",
+                "a": "Oui, nous disposons d'outils spécifiques évaluant la capacité d'influence, la prise de décision stratégique et la délégation."
+            },
+            {
+                "q": "Le test de positionnement et le test psychométrique, est-ce la même chose ?",
+                "a": "Non, le positionnement évalue des connaissances techniques acquises (ex: Excel), le test psychométrique évalue des traits de personnalité ou des schémas d'intérêts."
+            },
+            {
+                "q": "Les tests sont-ils accessibles aux personnes malvoyantes ?",
+                "a": "Nos plateformes de tests intègrent de plus en plus d'options d'accessibilité numérique conformes aux standards en vigueur."
+            },
+            {
+                "q": "Combien de tests passe-t-on en moyenne dans un bilan Alt RH ?",
+                "a": "En moyenne, nos bénéficiaires passent 2 tests majeurs (un de personnalité globale et un dédié aux intérêts professionnels)."
+            },
+            {
+                "q": "Quelle est l'importance de l'échange de restitution avec le consultant ?",
+                "a": "Le rapport écrit seul n'est qu'une donnée brute. C'est l'échange avec le consultant qui apporte de la valeur en faisant le lien avec votre vécu et votre projet réel."
+            }
+        ]
+    },
+    {
+        "id": "recrutement-carriere",
+        "categorie": "Recrutement, gestion de carrière & fiches métiers",
+        "questions": [
+            {
+                "q": "Qu'est-ce qu'une fiche métier et à quoi sert-elle ?",
+                "a": "C'est un document de synthèse décrivant les missions principales, les compétences requises, les conditions de travail, les formations d'accès et la rémunération d'un métier."
+            },
+            {
+                "q": "Comment Alt RH Formations utilise-t-elle les fiches métiers ?",
+                "a": "Nous les utilisons comme base de référence lors des bilans pour cartographier précisément les compétences à acquérir pour atteindre le métier cible."
+            },
+            {
+                "q": "Qu'est-ce que la gestion des emplois et des parcours professionnels (GEPP) ?",
+                "a": "C'est une stratégie managériale d'entreprise visant à adapter les compétences des salariés aux évolutions technologiques et économiques à moyen terme."
+            },
+            {
+                "q": "Comment optimiser son CV pour un logiciel de recrutement (ATS) ?",
+                "a": "Il faut utiliser des mots-clés précis correspondant aux compétences demandées dans l'offre d'emploi, utiliser une mise en page simple et éviter les formats d'image."
+            },
+            {
+                "q": "Qu'est-ce qu'une compétence transférable ?",
+                "a": "C'est un savoir ou savoir-faire acquis dans une expérience passée qui peut être réutilisé avec succès dans un tout autre secteur d'activité (ex: gestion de projet)."
+            },
+            {
+                "q": "Comment réussir son entretien d'embauche selon vos experts ?",
+                "a": "Il faut préparer minutieusement la présentation de son parcours en s'appuyant sur des résultats chiffrés (méthode STAR) et s'être renseigné sur la culture de l'entreprise."
+            },
+            {
+                "q": "Qu'est-ce que la méthode STAR en entretien ?",
+                "a": "C'est une technique structurée pour répondre aux questions : décrire la Situation, la Tâche à accomplir, l'Action menée, et le Résultat obtenu."
+            },
+            {
+                "q": "Alt RH Formations propose-t-elle un service de cabinet de recrutement ?",
+                "a": "Oui, nous accompagnons les entreprises dans l'identification, la sélection, l'évaluation et l'intégration de talents sur des profils spécialisés."
+            },
+            {
+                "q": "Qu'est-ce que la marque employeur d'une entreprise ?",
+                "a": "C'est l'image de marque renvoyée par une entreprise auprès de ses salariés actuels et des candidats potentiels (valeurs, qualité de vie au travail, réputation)."
+            },
+            {
+                "q": "Comment négocier son salaire lors d'une embauche ou d'une promotion ?",
+                "a": "Il faut s'appuyer sur des études de salaires du marché, valoriser ses compétences uniques et proposer une approche globale (salaire fixe + variable + avantages)."
+            },
+            {
+                "q": "Qu'est-ce que le personal branding professionnel ?",
+                "a": "C'est l'art de gérer sa propre image et sa réputation professionnelle comme s'il s'agissait d'une marque, notamment sur les réseaux sociaux comme LinkedIn."
+            },
+            {
+                "q": "Pourquoi utiliser LinkedIn pour sa recherche d'emploi ou son réseau ?",
+                "a": "LinkedIn est le premier réseau professionnel mondial. Il permet de se faire chasser par les recruteurs, de faire de la veille et de développer son réseau direct."
+            },
+            {
+                "q": "Qu'est-ce qu'un entretien professionnel obligatoire ?",
+                "a": "C'est un entretien légal que l'employeur doit réaliser tous les deux ans avec chaque salarié, dédié à ses perspectives d'évolution professionnelle et de formation."
+            },
+            {
+                "q": "Quelle est la différence entre l'entretien annuel d'évaluation et l'entretien professionnel ?",
+                "a": "L'entretien annuel évalue les performances de l'année écoulée et fixe les objectifs. L'entretien professionnel est prospectif et centré sur le parcours de carrière et la formation."
+            },
+            {
+                "q": "Qu'est-ce que la mobilité interne dans une entreprise ?",
+                "a": "C'est le fait pour un salarié de changer de poste ou de responsabilité au sein de la même structure ou du même groupe."
+            },
+            {
+                "q": "Comment savoir si mon profil correspond aux besoins actuels du marché du travail ?",
+                "a": "Nos consultants RH réalisent des diagnostics d'employabilité pour analyser l'attractivité de votre profil face à l'offre et à la demande."
+            },
+            {
+                "q": "Qu'est-ce qu'un chasseur de têtes ?",
+                "a": "C'est un recruteur spécialisé qui démarche directement des professionnels hautement qualifiés ou de niveau direction pour le compte d'entreprises, même s'ils ne sont pas activement à l'écoute du marché."
+            },
+            {
+                "q": "Quelles sont les compétences les plus recherchées par les recruteurs aujourd'hui ?",
+                "a": "Outre l'expertise technique (hard skills), les recruteurs privilégient l'adaptabilité, l'esprit d'équipe, la communication et l'intelligence émotionnelle (soft skills)."
+            },
+            {
+                "q": "Comment rédiger une lettre de motivation efficace en 2026 ?",
+                "a": "Elle doit être courte, personnalisée, structurée selon la méthode « Vous (l'entreprise), Moi (mon parcours), Nous (notre future collaboration) ». Modernisez-la en insistant sur l'impact opérationnel."
+            },
+            {
+                "q": "Qu'est-ce qu'un projet de transition professionnelle (PTP) ?",
+                "a": "C'est le dispositif qui remplace l'ancien CIF, permettant à tout salarié de s'absenter de son poste pour suivre une formation certifiante en vue d'une reconversion."
+            },
+            {
+                "q": "Qu'est-ce que l'outplacement individuel ?",
+                "a": "C'est un accompagnement au reclassement externe proposé par l'entreprise à un salarié qui la quitte (généralement suite à un licenciement ou rupture conventionnelle)."
+            },
+            {
+                "q": "Comment se déroule un accompagnement à l'outplacement chez Alt RH ?",
+                "a": "Nous proposons un bilan de transition, des ateliers de techniques de recherche d'emploi intensives, du réseau et un soutien psychologique jusqu'au retour à l'emploi."
+            },
+            {
+                "q": "Comment gérer une reconversion professionnelle après 45 ans ?",
+                "a": "C'est un atout majeur. Il convient de capitaliser sur votre maturité professionnelle, d'identifier vos compétences clés transférables et de cibler des secteurs en pénurie de main-d'œuvre."
+            },
+            {
+                "q": "Qu'est-ce que la flexibilité du travail et quel impact sur les carrières ?",
+                "a": "Le développement du télétravail, du management hybride et du freelancing redéfinit la gestion des carrières en demandant plus d'autonomie et de compétences digitales."
+            },
+            {
+                "q": "Comment contacter Alt RH Formations pour un besoin en recrutement ou de carrière ?",
+                "a": "Vous pouvez remplir notre formulaire de contact dédié aux entreprises ou aux particuliers sur alt-rh.com ou appeler notre agence pour fixer un premier rendez-vous gratuit."
             }
         ]
     }
 ]
-

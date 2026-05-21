@@ -1,7 +1,7 @@
 import CatalogueFormationsPage from '../components/CatalogueFormationsPage';
 import { catalogueCourtes } from '../data/formations';
 import { hero } from '../data/elearning';
-import { Shield, Code, Users, Container, Monitor, Cpu } from 'lucide-react';
+import { Shield, Code, Users, Container, Monitor, Cpu, FileSpreadsheet } from 'lucide-react';
 
 const categoryIcons = {
   'cybersecurite': <Shield className="w-6 h-6" />,
@@ -10,6 +10,7 @@ const categoryIcons = {
   'devops-devsecops': <Container className="w-6 h-6" />,
   'informatique-systemes-reseaux': <Monitor className="w-6 h-6" />,
   'systemes-embarques-iot': <Cpu className="w-6 h-6" />,
+  bureautique: <FileSpreadsheet className="w-6 h-6" />,
 };
 
 export default function ElearningPage() {

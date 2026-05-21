@@ -155,6 +155,7 @@ export default function CatalogueFormationsPage({
                         variant="white"
                         href={item.href}
                         typeBadge={item.typeBadge || cardTypeBadge}
+                        modalites={item.modalites}
                         compact
                       />
                     ))}

@@ -7,5 +7,6 @@ export default function PageFaqSection() {
     const { pathname } = useLocation();
     const props = getFaqSectionProps(pathname);
     if (!props) return null;
-    return <FaqSection {...props} />;
+    /* Remonte la FAQ à chaque route pour réinitialiser l’aperçu (10 questions) et « Voir le reste » */
+    return <FaqSection key={pathname} {...props} />;
 }

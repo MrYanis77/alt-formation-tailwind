@@ -83,11 +83,11 @@ export const slides = [
   {
     id: 8,
     badge: 'Intelligence Artificielle',
-    title: "Maîtrisez\nl'Intelligence Artificielle",
-    subtitle: 'Le futur du numérique commence ici',
-    desc: "Apprenez à concevoir, entraîner et déployer des modèles d'IA. Devenez acteur de la révolution technologique qui transforme toutes les industries.",
+    title: "Microsoft 365\nCopilot & IA générative",
+    subtitle: 'L’IA au service de votre productivité',
+    desc: 'Utilisez Microsoft 365 Copilot au quotidien : automatisation, création de contenu et collaboration — parcours certifiant préparant à la certification Microsoft AI Business Professional.',
     cta: 'Découvrir la formation',
-    ctaTo: '/formation/formation-intelligence-artificielle',
+    ctaTo: '/formation/microsoft-365-copilot-ai-business-professional',
     video: '/assets/video/formations/informatique.mp4'
   },
   {

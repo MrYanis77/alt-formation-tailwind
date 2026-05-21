@@ -21,6 +21,10 @@ export default function CatalogueFormationsBlock({
   sectionDescription,
   sharedSearchTerm,
   setSharedSearchTerm,
+  activeCategory: controlledActiveCategory,
+  onActiveCategoryChange,
+  hideDomainFilter = false,
+  onResetAllFilters,
   legacyDiplCertHashes = false,
 }) {
   const showSectionHeader = Boolean(sectionTitle?.trim() || sectionDescription?.trim());
@@ -29,7 +33,11 @@ export default function CatalogueFormationsBlock({
   const searchControlled = sharedSearchTerm !== undefined && setSharedSearchTerm !== undefined;
   const searchTerm = searchControlled ? sharedSearchTerm : localSearch;
   const setSearchTerm = searchControlled ? setSharedSearchTerm : setLocalSearch;
-  const [activeCategory, setActiveCategory] = useState('all');
+  const categoryControlled =
+    controlledActiveCategory !== undefined && onActiveCategoryChange !== undefined;
+  const [localActiveCategory, setLocalActiveCategory] = useState('all');
+  const activeCategory = categoryControlled ? controlledActiveCategory : localActiveCategory;
+  const setActiveCategory = categoryControlled ? onActiveCategoryChange : setLocalActiveCategory;
 
   const prefixedCatalogue = useMemo(
     () =>
@@ -57,9 +65,9 @@ export default function CatalogueFormationsBlock({
   const handleFilterCategoryChange = useCallback(
     (categoryId) => {
       setActiveCategory(categoryId);
-      scrollToCatalogueHeading(categoryId);
+      if (!categoryControlled) scrollToCatalogueHeading(categoryId);
     },
-    [scrollToCatalogueHeading]
+    [categoryControlled, scrollToCatalogueHeading, setActiveCategory]
   );
 
   useEffect(() => {
@@ -85,7 +93,13 @@ export default function CatalogueFormationsBlock({
 
     if (idPrefix === 'catalogue') {
       if (effective === 'catalogue-comptabilite-gestion') effective = 'catalogue-ressources-humaines';
-      if (effective === 'catalogue-devops') effective = 'catalogue-ia-data';
+      if (
+        effective === 'catalogue-devops' ||
+        effective === 'catalogue-digital-developpement' ||
+        effective === 'catalogue-ia-data'
+      ) {
+        effective = 'catalogue-digital-ia-devops';
+      }
     }
 
     if (effective === idPrefix) {
@@ -103,7 +117,7 @@ export default function CatalogueFormationsBlock({
         if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 150);
     }
-  }, [location.hash, idPrefix, legacyDiplCertHashes]);
+  }, [location.hash, idPrefix, legacyDiplCertHashes, setActiveCategory]);
 
   const filteredCatalogue = useMemo(
     () =>
@@ -123,7 +137,7 @@ export default function CatalogueFormationsBlock({
     if (!filteredCatalogue.some((c) => c.id === activeCategory)) {
       setActiveCategory('all');
     }
-  }, [filteredCatalogue, activeCategory]);
+  }, [filteredCatalogue, activeCategory, setActiveCategory]);
 
   const visibleCatalogue = useMemo(
     () =>
@@ -146,7 +160,7 @@ export default function CatalogueFormationsBlock({
       aria-labelledby={showSectionHeader ? `${idPrefix}-heading` : undefined}
       aria-label={showSectionHeader ? undefined : sectionAria}
       className={`scroll-mt-[280px] border-t border-gray-100 first:border-t-0 ${
-        showSectionHeader ? '' : 'pt-2'
+        showSectionHeader ? '' : hideDomainFilter ? 'pt-8 lg:pt-12' : 'pt-2'
       }`}
     >
       {showSectionHeader ? (
@@ -163,22 +177,24 @@ export default function CatalogueFormationsBlock({
         </div>
       ) : null}
 
-      <FiltreCat
-        categories={prefixedCatalogue.map((cat) => ({
-          id: cat.id,
-          label: cat.label,
-          icon: categoryIcons[cat.id.replace(`${idPrefix}-`, '')] || <Filter className="w-3.5 h-3.5" />,
-        }))}
-        activeCat={activeCategory}
-        setActiveCat={handleFilterCategoryChange}
-        allValue="all"
-        allLabel="Tous les domaines"
-        sectionLabel="Domaines"
-        searchTerm={searchControlled ? undefined : searchTerm}
-        setSearchTerm={searchControlled ? undefined : setSearchTerm}
-        showSearch={!searchControlled}
-        searchPlaceholder="Rechercher une formation…"
-      />
+      {!hideDomainFilter ? (
+        <FiltreCat
+          categories={prefixedCatalogue.map((cat) => ({
+            id: cat.id,
+            label: cat.label,
+            icon: categoryIcons[cat.id.replace(`${idPrefix}-`, '')] || <Filter className="w-3.5 h-3.5" />,
+          }))}
+          activeCat={activeCategory}
+          setActiveCat={handleFilterCategoryChange}
+          allValue="all"
+          allLabel="Tous les domaines"
+          sectionLabel="Domaines"
+          searchTerm={searchControlled ? undefined : searchTerm}
+          setSearchTerm={searchControlled ? undefined : setSearchTerm}
+          showSearch={!searchControlled}
+          searchPlaceholder="Rechercher une formation…"
+        />
+      ) : null}
 
       <div
         id={`catalogue-formations-root-${idPrefix}`}
@@ -217,6 +233,7 @@ export default function CatalogueFormationsBlock({
                         variant="white"
                         href={item.href}
                         typeBadge={item.typeBadge || cardTypeBadge}
+                        modalites={item.modalites}
                         compact
                       />
                     ))}
@@ -235,9 +252,13 @@ export default function CatalogueFormationsBlock({
             <button
               type="button"
               onClick={() => {
+                if (onResetAllFilters) {
+                  onResetAllFilters();
+                  return;
+                }
                 setSearchTerm('');
-                setActiveCategory('all');
-                scrollToCatalogueHeading('all');
+                handleFilterCategoryChange('all');
+                if (!categoryControlled) scrollToCatalogueHeading('all');
               }}
               className="mt-6 text-accent font-bold hover:underline"
             >
