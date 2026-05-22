@@ -4,6 +4,7 @@ import CallToAction from '../components/CallToAction';
 import Faq from '../components/Faq';
 import { Link } from 'react-router-dom';
 import data from '../data/json/bilan.json';
+import bilanFaq from '../data/faqSite/bilan.js';
 
 const bilan = data.bilanDeCompetences;
 
@@ -50,15 +51,17 @@ export default function BilanDeCompetencePage() {
     cta,
   } = bilan;
 
-  const faqData =
-    faqPage?.items?.length > 0
-      ? [
-          {
-            id: 'bilan-page-faq',
-            questions: faqPage.items,
-          },
-        ]
-      : [];
+  const faqData = bilanFaq.questions?.length
+    ? [
+        {
+          id: bilanFaq.id,
+          theme: bilanFaq.theme,
+          categorie: bilanFaq.categorie,
+          order: bilanFaq.order,
+          questions: bilanFaq.questions,
+        },
+      ]
+    : [];
 
   return (
     <div className="bg-surface-soft min-h-screen antialiased">
@@ -161,10 +164,27 @@ export default function BilanDeCompetencePage() {
             </div>
           </div>
 
+          {/* ── OUTILS D'ACCOMPAGNEMENT ── */}
+          {testsExterieurs?.titre && (
+            <div className="bg-white rounded-2xl p-10 md:p-12 border border-gray-100 shadow-sm mb-16">
+              <div className="max-w-3xl mx-auto text-center">
+                <p className="text-sm md:text-base font-extrabold text-accent uppercase tracking-widest mb-3">
+                  Accompagnement
+                </p>
+                <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary leading-tight mb-6">
+                  {testsExterieurs.titre}
+                </h2>
+                <p className="text-content-muted font-body text-sm md:text-[15px] leading-relaxed">
+                  {testsExterieurs.paragraphe}
+                </p>
+              </div>
+            </div>
+          )}
+
           {/* ── POURQUOI FAIRE ── */}
           {pourquoiFaire && (
             <div className="mb-16">
-              <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-primary text-center mb-10 px-2">
+              <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary text-center mb-10 px-2">
                 {pourquoiFaire.titre}
               </h2>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -197,7 +217,7 @@ export default function BilanDeCompetencePage() {
           {/* ── COMMENT DÉMARRER ── */}
           {demarrage?.etapes?.length > 0 && (
             <div className="mb-16">
-              <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-primary text-center mb-10">
+              <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary text-center mb-10">
                 {demarrage.titre}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -216,8 +236,8 @@ export default function BilanDeCompetencePage() {
           {parcours?.etapes?.length > 0 && (
             <div className="bg-white rounded-2xl p-10 border border-gray-100 shadow-sm mb-16">
               <div className="text-center mb-10">
-                <p className="text-[11px] font-extrabold text-accent uppercase tracking-widest mb-3">Méthode</p>
-                <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-primary leading-tight mb-4">
+                <p className="text-sm md:text-base font-extrabold text-accent uppercase tracking-widest mb-3">Méthode</p>
+                <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary leading-tight mb-4">
                   {parcours.titre}
                 </h2>
                 <p className="text-content-muted font-body max-w-2xl mx-auto leading-relaxed">{parcours.sousTitre}</p>
@@ -249,8 +269,8 @@ export default function BilanDeCompetencePage() {
           {tarifs?.formules?.length > 0 && (
             <div className="mb-16">
               <div className="text-center mb-10">
-                <p className="text-[11px] font-extrabold text-accent uppercase tracking-widest mb-3">Tarifs</p>
-                <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-primary leading-tight mb-4">
+                <p className="text-sm md:text-base font-extrabold text-accent uppercase tracking-widest mb-3">Tarifs</p>
+                <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary leading-tight mb-4">
                   {tarifs.titre}
                 </h2>
                 <p className="text-content-muted font-body max-w-2xl mx-auto leading-relaxed">{tarifs.sousTitre}</p>
@@ -330,7 +350,7 @@ export default function BilanDeCompetencePage() {
           {/* ── CHIFFRES CLÉS ── */}
           {chiffresCles?.cartes?.length > 0 && (
             <div className="mb-16">
-              <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-primary text-center mb-10 px-2 leading-tight">
+              <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary text-center mb-10 px-2 leading-tight">
                 {chiffresCles.titre}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -354,7 +374,7 @@ export default function BilanDeCompetencePage() {
           {/* ── POURQUOI ALT ── */}
           <div className="mb-16">
             <div className="text-center mb-10">
-              <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-primary leading-tight mb-4">
+              <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary leading-tight mb-4">
                 {pourquoiChoisir.titre}
               </h2>
               <p className="text-content-muted font-body max-w-2xl mx-auto">{pourquoiChoisir.intro}</p>
@@ -378,7 +398,7 @@ export default function BilanDeCompetencePage() {
           {/* ── FINANCEMENT ── */}
           {financementBloc?.points?.length > 0 && (
             <div className="bg-primary rounded-2xl p-10 md:p-12 text-white shadow-md mb-16">
-              <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-4">{financementBloc.titre}</h2>
+              <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">{financementBloc.titre}</h2>
               <p className="text-white/90 font-body leading-relaxed mb-8 max-w-3xl">{financementBloc.intro}</p>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
                 {financementBloc.points.map((pt, idx) => (
@@ -403,7 +423,7 @@ export default function BilanDeCompetencePage() {
           {/* ── DÉONTOLOGIE ── */}
           {deontologie?.points?.length > 0 && (
             <div className="mb-16 bg-white rounded-2xl p-10 border border-gray-100 shadow-sm">
-              <h2 className="font-heading text-xl md:text-2xl font-extrabold text-primary mb-6">{deontologie.titre}</h2>
+              <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary mb-6">{deontologie.titre}</h2>
               <ul className="space-y-3">
                 {deontologie.points.map((pt, idx) => (
                   <li key={idx} className="flex items-start gap-3 text-content-muted font-body text-sm leading-relaxed">
@@ -414,45 +434,12 @@ export default function BilanDeCompetencePage() {
             </div>
           )}
 
-          {/* ── TESTS EXTÉRIEURS ── */}
-          <div className="bg-white rounded-2xl p-10 border border-gray-100 shadow-sm mb-16">
-            <div className="text-center mb-10">
-              <p className="text-[11px] font-extrabold text-accent uppercase tracking-widest mb-3">Outils gratuits</p>
-              <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-primary leading-tight mb-4">
-                {testsExterieurs.titre}
-              </h2>
-              <p className="text-content-muted font-body max-w-2xl mx-auto">{testsExterieurs.intro}</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {testsExterieurs.tests.map((test, idx) => (
-                <div key={idx} className="bg-gray-50 rounded-xl p-7 border border-gray-100 flex flex-col hover:shadow-lg transition-all duration-300">
-                  <div className="w-11 h-11 bg-primary rounded-lg flex items-center justify-center mb-5 shrink-0">
-                    <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 012-2h2a2 2 0 012 2" />
-                    </svg>
-                  </div>
-                  <h4 className="font-heading text-lg font-bold text-primary mb-2">{test.nom}</h4>
-                  <p className="text-content-muted font-body text-sm leading-relaxed mb-6 flex-grow">{test.description}</p>
-                  <a
-                    href={test.lien}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-accent font-bold font-heading hover:text-primary transition-colors text-sm mt-auto no-underline"
-                  >
-                    {test.labelLien}
-                    <ArrowIcon />
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* ── FAQ ── */}
           {faqData.length > 0 && (
             <div className="mb-16">
               <div className="text-center mb-8">
-                <p className="text-[11px] font-extrabold text-accent uppercase tracking-widest mb-3">FAQ</p>
-                <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-primary leading-tight mb-3">
+                <p className="text-sm md:text-base font-extrabold text-accent uppercase tracking-widest mb-3">FAQ</p>
+                <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-primary leading-tight mb-3">
                   {faqPage.titre}
                 </h2>
                 {faqPage.sousTitre && (

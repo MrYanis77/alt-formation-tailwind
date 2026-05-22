@@ -1,42 +1,41 @@
 /**
  * Page d'accueil - Alt RH Formations
- * Ce fichier centralise les sections principales de la landing page :
- * - Hero Carousel : Diaporama dynamique avec vidéos en fond.
- * - StatsSection : Affichage des chiffres clés.
- * - Grille de Formations/Services : Affichage via CardFormation avec liens.
- * - VideoSection : Section de présentation vidéo.
- * - TrustSection : Bandeau de logos partenaires cliquables avec défilement infini.
- * - Témoignages : Avis type Google avec défilement infini.
- * - Certification : Bandeau de réassurance Qualité.
- * - CTA Final : Appel à l'action pour la prise de contact.
  */
-
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import SEOHead from '../components/SEO/SEOHead';
-
 import HeroSlide from '../components/Hero/HeroSlide';
+import HeroVideo from '../components/HeroVideo';
+import ResponsiveImage from '../components/ResponsiveImage';
 import StatsSection from '../components/Stats/StatsSection';
 import CardFormation from '../components/Card/CardFormation';
-import VideoSection from '../components/VideoSection';
 import CertificationSection from '../components/CertificationSection';
-
-// Import des données statiques depuis home.js
 import { slides, stats, presentation, services, partenaires, temoignages, certifications } from '../data/home';
+import { FALLBACK_IMAGE, videoPosterSrc } from '../utils/responsiveImage';
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   const doublePartenaires = [...partenaires, ...partenaires];
-  // On quadruple le tableau pour s'assurer que le défilement couvre les très grands écrans
   const scrollingTemoignages = [...temoignages, ...temoignages];
+
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 768px)');
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener('change', update);
+    return () => mq.removeEventListener('change', update);
+  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 6000);
     return () => clearInterval(timer);
-  }, [currentSlide]);
+  }, []);
+
+  const slide = slides[currentSlide];
+  const slidePoster = slide.image || videoPosterSrc(slide.video);
 
   return (
     <div className="bg-white antialiased">
@@ -48,52 +47,26 @@ export default function HomePage() {
 
       {/* SECTION 1 : HERO CAROUSEL */}
       <section className="relative h-[600px] md:h-[550px] bg-primary overflow-hidden flex items-center group">
-        {/* Animation de fond */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={`bg-${currentSlide}`}
-            initial={{ opacity: 0, scale: 1.1 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.8 }}
-            className="absolute inset-0 z-0"
-          >
-            {/* Affichage de la vidéo en arrière-plan */}
-            {slides[currentSlide].video ? (
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover"
-              >
-                <source src={slides[currentSlide].video} type="video/mp4" />
-              </video>
-            ) : (
-              <img
-                src={slides[currentSlide].image}
-                className="w-full h-full object-cover"
-                alt="Background Alt RH Formations"
-              />
-            )}
-          </motion.div>
-        </AnimatePresence>
-
-        <div className="container mx-auto relative z-20 px-6 md:px-[60px]">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentSlide}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-            >
-              <HeroSlide slide={slides[currentSlide]} />
-            </motion.div>
-          </AnimatePresence>
+        <div className="absolute inset-0 z-0 hero-slide-enter" key={`bg-${currentSlide}`}>
+          {slide.video && !isMobile ? (
+            <HeroVideo video={slide.video} poster={slidePoster} priority={currentSlide === 0} />
+          ) : slidePoster ? (
+            <ResponsiveImage
+              src={slidePoster}
+              alt="Background Alt RH Formations"
+              priority={currentSlide === 0}
+              sizes="100vw"
+              className="w-full h-full object-cover"
+            />
+          ) : null}
         </div>
 
-        {/* Flèches de navigation */}
+        <div className="container mx-auto relative z-20 px-6 md:px-[60px]">
+          <div key={currentSlide} className="hero-content-enter">
+            <HeroSlide slide={slide} />
+          </div>
+        </div>
+
         <button
           onClick={() => setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1))}
           className="absolute left-2 md:left-6 inset-y-0 my-auto h-12 w-12 flex items-center justify-center bg-black/20 hover:bg-black/50 text-white rounded-full opacity-0 group-hover:opacity-100 transition-all z-30"
@@ -109,38 +82,28 @@ export default function HomePage() {
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
         </button>
 
-        {/* Navigation Dots */}
         <div className="absolute bottom-10 left-6 md:left-[60px] z-30 flex gap-3">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`h-1.5 rounded-full transition-all duration-500 ${index === currentSlide ? 'w-10 bg-accent' : 'w-4 bg-white/30 hover:bg-white/60'
-                }`}
+              className={`h-1.5 rounded-full transition-all duration-500 ${index === currentSlide ? 'w-10 bg-accent' : 'w-4 bg-white/30 hover:bg-white/60'}`}
               aria-label={`Slide ${index + 1}`}
             />
           ))}
         </div>
       </section>
 
-      {/* SECTION 2 : STATS */}
       <StatsSection stats={stats} />
 
-       {/* SECTION PRÉSENTATION */}
       <section className="py-20 px-6 max-w-container-2xl mx-auto text-center">
         <h2 className="font-heading text-2xl md:text-h1 font-extrabold text-primary uppercase tracking-wider mb-8">
           {presentation.titre}
         </h2>
         <div className="space-y-6 text-content-muted text-base md:text-lg font-body leading-relaxed">
-          <p className="font-bold text-accent text-xl mb-8">
-            {presentation.accroche}
-          </p>
-          <p>
-            {presentation.paragraphe1}
-          </p>
-          <p>
-            {presentation.paragraphe2}
-          </p>
+          <p className="font-bold text-accent text-xl mb-8">{presentation.accroche}</p>
+          <p>{presentation.paragraphe1}</p>
+          <p>{presentation.paragraphe2}</p>
           <div className="bg-gray-50 p-8 rounded-2xl mx-auto my-8 max-w-container-lg border border-gray-100 shadow-sm text-left">
             <p className="mb-4">
               <strong className="text-primary font-bold">{presentation.mission.label} </strong>
@@ -151,13 +114,10 @@ export default function HomePage() {
               {presentation.objectif.texte}
             </p>
           </div>
-          <p className="font-bold text-primary text-[18px] md:text-xl pt-4">
-            {presentation.conclusion}
-          </p>
+          <p className="font-bold text-primary text-[18px] md:text-xl pt-4">{presentation.conclusion}</p>
         </div>
-      </section> 
+      </section>
 
-      {/* SECTION 3 : NOS SERVICES / FORMATIONS */}
       <section className="pb-[80px] pt-10 px-6 md:px-[60px] max-w-container-3xl mx-auto">
         <h2 className="font-heading text-2xl md:text-h1 font-extrabold text-primary text-center mb-[50px] uppercase tracking-wider">
           Nos Formations & Services
@@ -167,74 +127,62 @@ export default function HomePage() {
             <CardFormation
               key={index}
               title={service.titre}
-              image={service.image || "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600"}
-              variant={service.theme || "white"}
-              href={service.href || "#"}
+              image={service.image || FALLBACK_IMAGE}
+              variant={service.theme || 'white'}
+              href={service.href || '#'}
               items={service.items}
             />
           ))}
         </div>
       </section>
 
-      {/* SECTION 5 : TRUST SECTION (LOGOS PARTENAIRES CLIQUABLES) */}
       <section className="py-[70px] bg-white border-t border-border overflow-hidden">
         <div className="max-w-container-2xl mx-auto px-6 mb-12">
           <h2 className="font-heading text-2xl md:text-h1 font-extrabold text-primary-light text-center uppercase tracking-wider">
             Nos Partenaires
           </h2>
         </div>
-
         <div className="relative flex overflow-hidden group">
           <div className="flex py-4 animate-scroll whitespace-nowrap">
             {doublePartenaires.map((partenaire, index) => (
-              <a
+              <div
                 key={index}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-shrink-0 w-[150px] md:w-[200px] mx-8 md:mx-12 flex items-center justify-center transition-opacity duration-300 opacity-80 hover:opacity-100 cursor-pointer"
+                className="flex-shrink-0 w-[150px] md:w-[200px] mx-8 md:mx-12 flex items-center justify-center opacity-80"
               >
-                <img
+                <ResponsiveImage
                   src={partenaire.logo}
                   alt={partenaire.nom}
-                  loading="lazy"
-                  decoding="async"
+                  sizes="200px"
                   className="h-12 md:h-16 w-auto object-contain"
                 />
-              </a>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* SECTION 6 : TÉMOIGNAGES AVIS GOOGLE (DÉFILEMENT INFINI) */}
       <section className="py-[70px] bg-slate-50 border-t border-border overflow-hidden">
         <div className="max-w-container-2xl mx-auto px-6 mb-12">
           <h2 className="font-heading text-2xl md:text-h1 font-extrabold text-primary text-center uppercase tracking-wider">
             Ce que disent nos apprenants
           </h2>
         </div>
-
         <div className="relative flex overflow-hidden group">
-          {/* Ajout de items-start ici pour empêcher l'étirement vertical */}
           <div className="flex animate-scroll-reviews py-4 whitespace-nowrap items-start">
             {scrollingTemoignages.map((t, idx) => (
               <article
                 key={idx}
-                // Ajout de h-fit pour que la carte colle au texte
                 className="flex-shrink-0 w-[320px] md:w-[450px] h-fit mx-4 bg-white p-6 border border-gray-100 shadow-sm rounded-xl flex flex-col gap-3 whitespace-normal hover:shadow-md transition-shadow"
               >
-                {/* En-tête : Avatar + Infos */}
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-gray-200 overflow-hidden flex-shrink-0">
-                    <img src={t.avatar} alt={t.author} loading="lazy" decoding="async" className="w-full h-full object-cover" />
+                    <ResponsiveImage src={t.avatar} alt={t.author} sizes="48px" className="w-full h-full object-cover" />
                   </div>
                   <div className="flex flex-col">
                     <h3 className="font-bold text-gray-900 text-medium leading-tight">{t.author}</h3>
                     <span className="text-small text-gray-500">{t.role}</span>
                   </div>
                 </div>
-
-                {/* Étoiles et Date */}
                 <div className="flex items-center gap-2 mt-1">
                   <div className="flex text-star">
                     {[...Array(5)].map((_, i) => (
@@ -245,21 +193,15 @@ export default function HomePage() {
                   </div>
                   <span className="text-small text-gray-500">{t.date}</span>
                 </div>
-
-                {/* Texte de l'avis */}
-                <p className="text-content-muted text-sm leading-relaxed mt-2 font-body">
-                  {t.quote}
-                </p>
+                <p className="text-content-muted text-sm leading-relaxed mt-2 font-body">{t.quote}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* SECTION 7 : CERTIFICATION */}
       <CertificationSection data={certifications} />
 
-      {/* SECTION 8 : CALL TO ACTION FINAL */}
       <section className="py-24 px-6 bg-slate-50 text-center border-t border-border">
         <div className="max-w-container-xl mx-auto">
           <h2 className="font-heading text-h2 md:text-[33px] font-extrabold text-primary mb-6 uppercase tracking-tight">
@@ -277,7 +219,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Animations CSS partagées */}
       <style dangerouslySetInnerHTML={{
         __html: `
           @keyframes scroll {
@@ -290,21 +231,26 @@ export default function HomePage() {
             animation: scroll 40s linear infinite;
             will-change: transform;
           }
-          .animate-scroll:hover {
-            animation-play-state: paused;
-          }
-
-          /* Nouvelle animation pour les avis (légèrement plus lente pour la lecture) */
+          .animate-scroll:hover { animation-play-state: paused; }
           .animate-scroll-reviews {
             display: flex;
             width: max-content;
             animation: scroll 60s linear infinite;
             will-change: transform;
           }
-          .animate-scroll-reviews:hover {
-            animation-play-state: paused;
+          .animate-scroll-reviews:hover { animation-play-state: paused; }
+          @keyframes heroFadeIn {
+            from { opacity: 0; transform: scale(1.05); }
+            to { opacity: 1; transform: scale(1); }
           }
-        `}} />
+          @keyframes heroContentIn {
+            from { opacity: 0; transform: translateY(16px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+          .hero-slide-enter { animation: heroFadeIn 0.7s ease-out both; }
+          .hero-content-enter { animation: heroContentIn 0.45s ease-out both; }
+        `,
+      }} />
     </div>
   );
 }

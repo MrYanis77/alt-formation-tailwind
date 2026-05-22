@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- ── Pages principales ── -->
   <url>
     <loc>https://alt-rh.com/accueil</loc>
     <changefreq>weekly</changefreq>
@@ -28,14 +26,29 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alt-rh.com/certification</loc>
+    <loc>https://alt-rh.com/a-propos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alt-rh.com/bilan-de-competences</loc>
+    <loc>https://alt-rh.com/campus</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/certification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/carrieres</loc>
@@ -43,42 +56,25 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alt-rh.com/ressources-ia</loc>
+    <loc>https://alt-rh.com/bilan-de-competences</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alt-rh.com/campus</loc>
+    <loc>https://alt-rh.com/ressources-ia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alt-rh.com/a-propos</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://alt-rh.com/blog</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://alt-rh.com/nous-rejoindre</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/faq</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
-    <loc>https://alt-rh.com/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ── Pages légales ── -->
   <url>
     <loc>https://alt-rh.com/mentions-legales</loc>
     <changefreq>yearly</changefreq>
@@ -99,37 +95,35 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-
-  <!-- ── Fiches formations diplômantes ── -->
   <url>
     <loc>https://alt-rh.com/formation/formations-administrateur-dinfrastructures-securisees-ais</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/formations-developpeur-web-mobile</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/formations-developpeur-dapplications-multimedia</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/formations-concepteur-developpeur-dapplications</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/formations-technicien-superieur-systemes-et-reseaux</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/formations-lead-developpeur-web</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/formations-community-manager</loc>
@@ -139,7 +133,7 @@
   <url>
     <loc>https://alt-rh.com/formation/formations-assistante-ressources-humaines</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/formations-assistante-administratifve</loc>
@@ -148,11 +142,6 @@
   </url>
   <url>
     <loc>https://alt-rh.com/formation/formations-assistante-commerciale</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alt-rh.com/formation/formations-conseiller-de-vente</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -169,17 +158,17 @@
   <url>
     <loc>https://alt-rh.com/formation/administrateur-reseaux-netops</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/administrateursysteme-devops</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/technicien-reseaux-cybersecurite</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/gestionnaire-comptable-fiscal</loc>
@@ -194,10 +183,60 @@
   <url>
     <loc>https://alt-rh.com/formation/formations-concepteur-designer-ui</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/formations-assistante-de-direction</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/executive-mastere-ingenierie-logiciel</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/formations-responsable-etablissement-marchand</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/formations-assistant-immobilier</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/formations-assistant-import-export</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/formations-conseiller-insertion-professionnelle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/formations-conseiller-de-vente</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/creer-site-internet-html-css-wordpress</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/formations-employe-commercial</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/formations-graphiste</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/formations-monteur-audiovisuel-analyse-sportive</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -212,87 +251,20 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alt-rh.com/formation/formation-python-tosa</loc>
+    <loc>https://alt-rh.com/formation/formations-secretaire-assistant-medico-administratif</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alt-rh.com/formation/formation-responsive-web-design</loc>
+    <loc>https://alt-rh.com/formation/formations-charge-accueil-et-gestion-administrative</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alt-rh.com/formation/formation-php</loc>
+    <loc>https://alt-rh.com/formation/formations-responsable-developpement-des-activites</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://alt-rh.com/formation/formation-initiation-cybersecurite</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alt-rh.com/formation/executive-mastere-ingenierie-logiciel</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alt-rh.com/formation/formation-implementer-politique-cybersecurite</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alt-rh.com/formation/formation-cisco-configuration-administration</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alt-rh.com/formation/microsoft-365-copilot-ai-business-professional</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alt-rh.com/formation/ia-generative-administration-systemes-reseaux</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alt-rh.com/formation/ia-generative-maitrise-llm-transformers</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alt-rh.com/formation/chatgpt-openai-api-developpeurs</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alt-rh.com/formation/api-chatgpt-openai-integration-applications</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alt-rh.com/formation/ia-generative-communication-webmarketing</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alt-rh.com/formation/machine-learning-fondamentaux-intensif</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alt-rh.com/formation/seminaire-vue-ensemble-ia-ml-deep-learning</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alt-rh.com/formation/deep-learning-traitement-langage-nlp</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ── Fiches formations E-Learning ── -->
   <url>
     <loc>https://alt-rh.com/formation/systemes-embarques-iot-android</loc>
     <changefreq>monthly</changefreq>
@@ -331,7 +303,7 @@
   <url>
     <loc>https://alt-rh.com/formation/management-rse</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/management-reussir-management-projet</loc>
@@ -346,7 +318,7 @@
   <url>
     <loc>https://alt-rh.com/formation/management-management-3-0</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/devops-devenez-devops-avec-docker</loc>
@@ -358,8 +330,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- ── Fiches formations certifiantes ── -->
+  <url>
+    <loc>https://alt-rh.com/formation/tosa-evaluation-niveau-excel</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/tosa-powerpoint-basique</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/tosa-personnaliser-word</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://alt-rh.com/formation/dasa-devops-fundamentals</loc>
     <changefreq>monthly</changefreq>
@@ -393,17 +378,17 @@
   <url>
     <loc>https://alt-rh.com/formation/istqb-testeur-certifie-niveau-fondation-ihmisen</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/istqb-testeur-agile-fondation-ib-cegos</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/istqb-tests-acceptation-fondation-m2i</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/piloter-animer-securite-informatique-sysdream</loc>
@@ -423,7 +408,7 @@
   <url>
     <loc>https://alt-rh.com/formation/developper-culture-digitale</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alt-rh.com/formation/csharp-dotnet-visual-studio</loc>
@@ -480,5 +465,79 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
+  <url>
+    <loc>https://alt-rh.com/formation/formation-python-tosa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/formation-responsive-web-design</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/formation-php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/formation-initiation-cybersecurite</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/formation-implementer-politique-cybersecurite</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/formation-cisco-configuration-administration</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/microsoft-365-copilot-ai-business-professional</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/ia-generative-administration-systemes-reseaux</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/ia-generative-maitrise-llm-transformers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/chatgpt-openai-api-developpeurs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/api-chatgpt-openai-integration-applications</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/ia-generative-communication-webmarketing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/machine-learning-fondamentaux-intensif</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/seminaire-vue-ensemble-ia-ml-deep-learning</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alt-rh.com/formation/deep-learning-traitement-langage-nlp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

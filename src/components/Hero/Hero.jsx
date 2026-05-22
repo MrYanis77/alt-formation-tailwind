@@ -1,15 +1,15 @@
 import React from 'react';
+import HeroVideo from '../HeroVideo';
 
 /**
  * Hero.jsx — Bannière hero avec vidéo en fond (sans overlay)
- * @param {boolean} compact — Réduit hauteur et padding à partir de md (ex. pages formation détail)
- * @param {boolean} subtleTypography — Titres / chapô plus modestes (ex. page Certification)
- * @param {boolean} alignLeft — Aligne titre et sous-titre à gauche dans un container limité
  */
 export default function Hero({
   title,
   subtitle,
   video,
+  poster,
+  priority = false,
   compact = false,
   subtleTypography = false,
   alignLeft = false,
@@ -45,18 +45,7 @@ export default function Hero({
       className={`relative flex items-center ${justify} bg-primary px-6 ${sectionLayout} ${textAlign} overflow-hidden`}
       aria-label={`Bandeau ${title}`}
     >
-      {video && (
-        <video
-          key={video}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        >
-          <source src={video} type="video/mp4" />
-        </video>
-      )}
+      {video && <HeroVideo video={video} poster={poster} priority={priority} />}
 
       <div className={innerWrap}>
         <h1

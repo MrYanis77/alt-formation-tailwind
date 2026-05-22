@@ -1,5 +1,5 @@
 import { matchPath } from 'react-router-dom';
-import { getFormationCatalogCategory } from './navdata';
+import { getFormationCatalogCategory } from './formationCategory';
 
 /** Pages sans mini-FAQ (contenu légal uniquement). */
 const LEGAL_PATHS = new Set([
@@ -71,7 +71,6 @@ export function getFaqSectionProps(pathname) {
         '/campus': { categoryId: 'formation' },
         '/certification': { categoryId: 'certification-tests' },
         '/carrieres': { categoryId: 'recrutement-carriere' },
-        '/bilan-de-competences': { categoryId: 'bilan' },
         '/ressources-ia': {
             categoryId: 'formation',
             filtersByCategoryId: { formation: formationIaDataFilter },

@@ -137,3 +137,50 @@ Vite proxy `/api/*` vers `http://localhost:3000`, donc en développement tu acc�
 - **Chat** : conversations contacts / FAQ inchangées · messages admin via `admin_sender_id`
 - **Admin** : stats étendues, contacts, utilisateurs site, blog, newsletter, chatbot, gestion `admin_users`
 - **Visit** : `POST /api/visit`
+
+## 8. Optimisation performance (images, vidéos, bundle)
+
+### Workflow avant déploiement OVH
+
+```bash
+# 1. Optimiser les images (WebP 400/800/1200w + recompression JPEG)
+npm run optimize:images
+
+# 2. Optimiser les vidéos (requiert ffmpeg installé)
+npm run optimize:videos
+
+# 3. Build production (+ index formations + sitemap)
+npm run build
+
+# 4. Prerender SEO (optionnel, requiert puppeteer)
+npm run build:full
+
+# 5. Audit tailles bundle + assets lourds
+npm run audit:perf
+```
+
+### Scripts disponibles
+
+| Commande | Rôle |
+|---|---|
+| `npm run optimize:images` | Génère variantes WebP et compresse `public/assets/images/` |
+| `npm run optimize:videos` | Re-encode MP4 720p + posters WebP via ffmpeg |
+| `npm run generate:formations-index` | Regénère `formations-index.json` (lookup fiches) |
+| `npm run generate:sitemap` | Regénère `public/sitemap.xml` |
+| `npm run prerender` | Snapshots HTML des routes SEO dans `dist/` |
+| `npm run audit:perf` | Build + rapport chunks JS + fichiers > 500 Ko |
+
+### Architecture bundle
+
+- **Navbar** : liens statiques (`navlinks-static.js`) + méga-menu chargé au survol (`navdata-mega.js` en chunk séparé).
+- **Fiche formation** : une seule fiche via `getFormationById.js` (import dynamique du JSON source).
+- **Images** : composant `ResponsiveImage` avec `<picture>` WebP.
+- **Vidéos hero** : `HeroVideo` — poster immédiat, pas de vidéo sur mobile, lazy load desktop.
+- **Polices** : self-hosted via `@fontsource` (plus de Google Fonts).
+- **Cache** : headers `Cache-Control` dans `public/.htaccess` (vérifier `mod_headers` sur OVH).
+
+### Validation post-déploiement
+
+- [PageSpeed Insights](https://pagespeed.web.dev/) sur `/accueil` et `/formations` (mobile)
+- Objectifs : LCP < 2,5 s, aucune requête Unsplash externe
+

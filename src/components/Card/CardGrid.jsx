@@ -25,7 +25,7 @@ export default function CardGrid({ services, cols = 3, variant = "default" }) {
               {/* Image de la formation */}
               <div className="h-48 overflow-hidden">
                 <img 
-                  src={service.image || "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600"} 
+                  src={service.image || "/assets/images/fallback.webp"} 
                   alt={service.titre} 
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />

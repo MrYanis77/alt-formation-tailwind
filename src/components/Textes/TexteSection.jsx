@@ -1,4 +1,4 @@
-import React from 'react';
+import ResponsiveImage from '../ResponsiveImage';
 
 /*
  * Composant TexteSection
@@ -53,9 +53,10 @@ export default function TexteSection({ data, imageRight = true, variant = 'defau
           {hasImage && (
             <div className="relative">
               <div className={imageWrap}>
-                <img
+                <ResponsiveImage
                   src={image}
                   alt={titre}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="w-full object-cover h-auto aspect-[4/3]"
                 />
               </div>

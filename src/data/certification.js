@@ -360,10 +360,12 @@ export const certifications = [
 /** Contenus éditoriaux (page Certification) */
 export const certificationEditorial = {
   badge: 'Certification',
-  headline:
-    'Certifications professionnelles : un levier pour sécuriser et valoriser les compétences',
+  headline: [
+    'Certifications professionnelles :',
+    'un levier pour sécuriser et valoriser les compétences',
+  ],
   lead: [
-    'En reconversion ou en évolution de carrière, la certification prouve que vous êtes opérationnel — pas seulement formé.',
+    'En reconversion ou en évolution de carrière, la certification prouve que vous êtes opérationnel pas seulement formé.',
     'Alt RH Formations vous aide à choisir le bon référentiel (RNCP, RS, éditeurs) et à financer votre parcours.',
   ],
 

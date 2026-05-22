@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { jsPDF } from "jspdf";
 
 export default function FormulaireCandidature({ type }) {
     const [status, setStatus] = useState('idle'); // 'idle' | 'loading' | 'success' | 'error'
@@ -81,7 +80,8 @@ export default function FormulaireCandidature({ type }) {
                 throw new Error(result.error || "Une erreur est survenue lors de l'envoi.");
             }
 
-            // --- 2. Génération du PDF de confirmation (Client-side) ---
+            // --- 2. Génération du PDF de confirmation (Client-side, chargement dynamique) ---
+            const { jsPDF } = await import('jspdf');
             const doc = new jsPDF();
             // ... (PDF logic remains the same)
 

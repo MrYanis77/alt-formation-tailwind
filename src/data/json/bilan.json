@@ -2,7 +2,7 @@
     "bilanDeCompetences": {
         "hero": {
             "titre": "Bilan de compétences",
-            "sousTitre": "Prenez du recul sur votre parcours, mettez des mots sur vos compétences et posez les fondations d'une trajectoire professionnelle cohérente, avec Alt RH Formations.",
+            "sousTitre": "Prenez du recul sur votre parcours et posez les fondations d'une trajectoire professionnelle cohérente. Avec Alt RH Formations, découvrez un bilan de compétences innovant qui s'appuie sur les outils IA pour optimiser votre potentiel avec précision.",
             "video": "/assets/video/bilan.mp4"
         },
         "titre": "Clarifiez votre projet professionnel",
@@ -266,61 +266,11 @@
             "lienVersFaqComplete": {
                 "label": "Accéder à l'ensemble des questions / réponses du site",
                 "url": "/faq"
-            },
-            "items": [
-                {
-                    "q": "Le bilan s'étale sur combien de semaines ou de mois ?",
-                    "a": "Il n'y a pas de durée calendaire imposée par la loi, mais la réglementation borne la prestation à vingt-quatre heures au total. Dans les faits, les organismes étalent généralement les séances sur plusieurs mois pour laisser infuser les analyses."
-                },
-                {
-                    "q": "Est-ce que je dois prendre des notes entre deux rendez-vous ?",
-                    "a": "Ce n'est pas une obligation au sens juridique du terme, mais des temps personnels peuvent être suggérés pour préparer la séance suivante ou tester une hypothèse : votre conseiller précise ce qui est facultatif ou attendu."
-                },
-                {
-                    "q": "Puis-je faire l'intégralité du bilan depuis chez moi ?",
-                    "a": "Oui si les conditions techniques préservent la qualité des échanges et la confidentialité. Le cadre sera précisé avant signature ; certaines situations se prêtent mieux au présentiel pour une partie du temps."
-                },
-                {
-                    "q": "Qu'est-ce qui distingue juridiquement le bilan d'une séance de coaching libre ?",
-                    "a": "Le bilan suit trois phases réglementaires et doit déboucher sur une synthèse identifiée comme telle ; un coaching hors ce cadre ne présente pas les mêmes obligations pour l'organisme ni les mêmes effets pour les financeurs institutionnels."
-                },
-                {
-                    "q": "Est-ce que je repars avec un CV ou une lettre prête à poster ?",
-                    "a": "Le bilan vise avant tout la clarification du projet professionnel et les grandes lignes d'actions ; les livrables annexes type CV peuvent faire l'objet d'autres prestations si vous le souhaitez après coup."
-                },
-                {
-                    "q": "L'employeur est-il automatiquement au courant si je passe par mon CPF ?",
-                    "a": "Ce n'est pas systématique : tout dépend du calendrier choisi (temps de travail ou hors temps de travail) et du montage financier. Nous vous aidons à distinguer les cas où une information devient nécessaire."
-                },
-                {
-                    "q": "Comment lit-on les prix affichés sur cette page ?",
-                    "a": "Ce sont des références pour trois volumétries ; le montant exact figurera sur votre devis après analyse du mode de financement et des éventuelles aides cumulables."
-                }
-            ]
+            }
         },
         "testsExterieurs": {
-            "titre": "Outils gratuits pour explorer votre profil",
-            "intro": "Ces liens externes sont fournis à titre exploratoire ; ils ne remplacent ni les entretiens ni les outils éventuellement mobilisés pendant votre bilan avec Alt RH Formations.",
-            "tests": [
-                {
-                    "nom": "Test de Personnalité (MBTI)",
-                    "description": "Le célèbre test gratuit '16Personalities' pour comprendre votre mode de fonctionnement, vos forces et vos préférences en milieu professionnel.",
-                    "lien": "https://www.16personalities.com/fr/test-de-personnalite",
-                    "labelLien": "Passer le test (10 min)"
-                },
-                {
-                    "nom": "L'Emploi Store (France Travail)",
-                    "description": "Une sélection de tests et d'applications officiels gratuits pour évaluer vos compétences, explorer des métiers et affiner votre projet d'évolution.",
-                    "lien": "https://www.emploi-store.fr/portail/centresdinteret/choisirUnMetier",
-                    "labelLien": "Découvrir les outils"
-                },
-                {
-                    "nom": "Diagoriente (Plateforme d'État)",
-                    "description": "Un service public soutenu par France Travail pour identifier rapidement vos compétences transversales et explorer des pistes de reconversion adaptées.",
-                    "lien": "https://diagoriente.beta.gouv.fr/",
-                    "labelLien": "Évaluer mes compétences"
-                }
-            ]
+            "titre": "Outils et tests pour vous accompagner",
+            "paragraphe": "Pour optimiser votre bilan de compétences, nous mobilisons différents tests de personnalité, d'intérêt professionnel et des outils intégrant l'Intelligence Artificielle pour la gestion de carrière et la reconversion professionnelle  l'ensemble est proposé pour vous aider à clarifier votre projet avec précision."
         },
         "cta": [
             {

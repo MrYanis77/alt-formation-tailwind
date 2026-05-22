@@ -84,8 +84,10 @@ export default function CertificationPage() {
             <p className="text-[11px] font-extrabold text-accent uppercase tracking-widest mb-3">
               {ed.badge}
             </p>
-            <h2 className="font-heading text-xl md:text-2xl lg:text-[1.65rem] font-bold text-primary uppercase tracking-tight leading-snug mb-6">
-              {ed.headline}
+            <h2 className="font-heading text-lg md:text-xl lg:text-[1.35rem] font-bold text-primary uppercase tracking-tight leading-snug mb-6">
+              {ed.headline[0]}
+              <br />
+              {ed.headline[1]}
             </h2>
             <div className="space-y-4 text-content-muted font-body text-sm md:text-[15px] leading-relaxed">
               {ed.lead.map((p, i) => (
@@ -125,10 +127,6 @@ export default function CertificationPage() {
         className="pt-10 lg:pt-12 pb-16 px-6 scroll-mt-[280px] bg-white"
       >
         <div className="max-w-[min(100%,90rem)] mx-auto">
-          <p className="text-center text-content-muted font-body text-sm mb-8 max-w-2xl mx-auto">
-            Parcourez nos certifications enregistrées sur France Compétences — cliquez sur une
-            fiche pour consulter le référentiel officiel.
-          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 lg:gap-6">
             {filteredCertifs.map((certif) => (
               <CardFormation
@@ -136,7 +134,7 @@ export default function CertificationPage() {
                 title={certif.nom}
                 image={
                   certif.imageUrl ||
-                  'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80'
+                  '/assets/images/fallback.webp'
                 }
                 href={certif.lienFranceCompetence}
                 compact

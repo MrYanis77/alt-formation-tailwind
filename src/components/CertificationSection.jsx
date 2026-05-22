@@ -1,4 +1,4 @@
-import React from 'react';
+import ResponsiveImage from './ResponsiveImage';
 
 export default function CertificationSection({ data }) {
     if (!data) return null;
@@ -27,9 +27,10 @@ export default function CertificationSection({ data }) {
                             key={index}
                             className="flex items-center justify-center bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/20 shadow-2xl hover:scale-105 transition-transform duration-300"
                         >
-                            <img
+                            <ResponsiveImage
                                 src={badge.image}
                                 alt={badge.nom}
+                                sizes="96px"
                                 className="h-20 md:h-24 w-auto object-contain bg-white rounded-lg p-3 shadow-lg"
                             />
                         </div>

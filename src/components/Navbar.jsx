@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { navlinks, megaMenuFormations, megaMenuCombinedDiplCertRows } from "../data/navdata";
+import { navlinksStatic, loadNavMegaData, getFullNavlinks } from "../data/navlinks-static";
+import ResponsiveImage from "./ResponsiveImage";
 // import { useAuth } from "../context/AuthContext";
 
 function navFormationsCatalogActive(location) {
@@ -17,7 +18,7 @@ function catalogScopeFromLocation(pathname, search) {
   return elearning ? "elearning" : "combined";
 }
 
-function buildCombinedMegaRows() {
+function buildCombinedMegaRows(megaMenuCombinedDiplCertRows) {
   return megaMenuCombinedDiplCertRows.map((row) => ({
     ...row,
     rowKey:
@@ -25,18 +26,18 @@ function buildCombinedMegaRows() {
   }));
 }
 
-function firstCombinedRowKey() {
+function firstCombinedRowKey(megaMenuCombinedDiplCertRows) {
   const r = megaMenuCombinedDiplCertRows[0];
   if (!r) return null;
   return r.kind === "merged" ? `m:${r.id}` : r.kind === "diplomantes" ? `d:${r.id}` : `c:${r.id}`;
 }
 
-function buildElearningMegaRows() {
+function buildElearningMegaRows(megaMenuFormations) {
   return megaMenuFormations.elearning.map((c) => ({ ...c, rowKey: `e:${c.id}`, kind: "elearning" }));
 }
 
 // ── Mega Menu Formations ───────────────────────────────────────────────────────
-function FormationsMegaMenu({ onMouseEnter, onMouseLeave, onClose }) {
+function FormationsMegaMenu({ megaMenuFormations, megaMenuCombinedDiplCertRows, onMouseEnter, onMouseLeave, onClose }) {
   const location = useLocation();
   const [catalogScope, setCatalogScope] = useState(() =>
     catalogScopeFromLocation(location.pathname, location.search)
@@ -48,7 +49,7 @@ function FormationsMegaMenu({ onMouseEnter, onMouseLeave, onClose }) {
       ? megaMenuFormations.elearning[0]
         ? `e:${megaMenuFormations.elearning[0].id}`
         : null
-      : firstCombinedRowKey()
+      : firstCombinedRowKey(megaMenuCombinedDiplCertRows)
   );
 
   useEffect(() => {
@@ -60,11 +61,11 @@ function FormationsMegaMenu({ onMouseEnter, onMouseLeave, onClose }) {
       const first = megaMenuFormations.elearning[0];
       setHoveredRowKey(first ? `e:${first.id}` : null);
     } else {
-      setHoveredRowKey(firstCombinedRowKey());
+      setHoveredRowKey(firstCombinedRowKey(megaMenuCombinedDiplCertRows));
     }
-  }, [catalogScope]);
+  }, [catalogScope, megaMenuCombinedDiplCertRows, megaMenuFormations.elearning]);
 
-  const megaRows = variant === "elearning" ? buildElearningMegaRows() : buildCombinedMegaRows();
+  const megaRows = variant === "elearning" ? buildElearningMegaRows(megaMenuFormations) : buildCombinedMegaRows(megaMenuCombinedDiplCertRows);
   const currentRow = megaRows.find((r) => r.rowKey === hoveredRowKey) || megaRows[0];
 
   const handleCatalogScopeChange = (scope) => {
@@ -81,15 +82,14 @@ function FormationsMegaMenu({ onMouseEnter, onMouseLeave, onClose }) {
 
   return (
     <div
-      className="absolute top-full left-0 right-0 bg-white shadow-2xl border-t-[3px] border-accent z-[99] overflow-hidden"
-      style={{ maxHeight: "520px" }}
+      className="absolute top-full left-0 right-0 bg-white shadow-2xl border-t-[3px] border-accent z-[99] overflow-hidden max-h-[min(520px,85vh)]"
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <div className="flex" style={{ height: "520px" }}>
+      <div className="flex flex-col xl:flex-row max-h-[min(520px,85vh)]">
 
         {/* ── LEFT SIDEBAR ── */}
-        <div className="w-72 bg-[#f8f9fb] border-r border-gray-100 flex flex-col shrink-0">
+        <div className="w-full xl:w-72 bg-[#f8f9fb] border-b xl:border-b-0 xl:border-r border-gray-100 flex flex-col shrink-0 max-h-[40vh] xl:max-h-none">
 
           {/* Diplômantes & certifiantes | E-Learning */}
           <div className="p-4 border-b border-gray-100 shrink-0">
@@ -152,14 +152,15 @@ function FormationsMegaMenu({ onMouseEnter, onMouseLeave, onClose }) {
 
         {/* ── RIGHT: détail catégorie ── */}
         {currentRow && (
-          <div className="flex-1 flex flex-col overflow-hidden">
+          <div className="flex-1 flex flex-col overflow-hidden min-h-0 min-w-0">
 
             {/* Header catégorie avec image */}
             <div className="flex items-center gap-5 px-8 py-5 border-b border-gray-100 bg-white shrink-0">
               <div className="relative w-32 h-[72px] rounded-xl overflow-hidden shadow-md shrink-0">
-                <img
+                <ResponsiveImage
                   src={currentRow.image}
                   alt={currentRow.label}
+                  sizes="128px"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent" />
@@ -188,8 +189,8 @@ function FormationsMegaMenu({ onMouseEnter, onMouseLeave, onClose }) {
             </div>
 
             {/* Grille formations avec images + badge vidéo */}
-            <div className="flex-1 overflow-y-auto p-6">
-              <div className="grid grid-cols-2 xl:grid-cols-3 gap-3">
+            <div className="flex-1 overflow-y-auto p-4 xl:p-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 gap-3">
                 {currentRow.formations.map((f, i) => (
                   <Link
                     key={i}
@@ -198,10 +199,11 @@ function FormationsMegaMenu({ onMouseEnter, onMouseLeave, onClose }) {
                     className="flex items-center gap-3 p-2.5 rounded-xl border border-gray-100 hover:border-accent/40 hover:bg-orange-50/50 transition-all no-underline group"
                   >
                     <div className="relative w-14 h-11 shrink-0 rounded-lg overflow-hidden bg-gray-100">
-                      <img
+                      <ResponsiveImage
                         src={f.image}
                         alt=""
-                        loading="lazy"
+                        ariaHidden
+                        sizes="56px"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                       />
                     </div>
@@ -233,7 +235,7 @@ function GenericMegaMenu({ item, onMouseEnter, onMouseLeave }) {
           {item.label}
         </p>
 
-        <div className={`grid gap-4 ${item.submenu.length > 2 ? "grid-cols-3" : "grid-cols-2"}`}>
+        <div className={`grid gap-4 ${item.submenu.length > 2 ? "grid-cols-1 sm:grid-cols-2 xl:grid-cols-3" : "grid-cols-1 sm:grid-cols-2"}`}>
           {item.submenu.map((sub) => (
             <Link
               key={sub.label}
@@ -242,9 +244,11 @@ function GenericMegaMenu({ item, onMouseEnter, onMouseLeave }) {
             >
               {sub.image && (
                 <div className="w-16 h-14 shrink-0 rounded-lg overflow-hidden">
-                  <img
+                  <ResponsiveImage
                     src={sub.image}
                     alt=""
+                    ariaHidden
+                    sizes="64px"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -272,20 +276,24 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openMobileMenus, setOpenMobileMenus] = useState({});
   const [activeMegaLabel, setActiveMegaLabel] = useState(null);
+  const [navlinks, setNavlinks] = useState(navlinksStatic);
+  const [megaData, setMegaData] = useState(null);
   const closeTimer = useRef(null);
   const location = useLocation();
   const formationsNav = navFormationsCatalogActive(location);
-  // const navigate = useNavigate();
-  // const { user, isAdmin, logout } = useAuth();
 
-  // const handleLogout = async () => {
-  //   await logout();
-  //   setIsOpen(false);
-  //   navigate("/accueil");
-  // };
+  const ensureMegaLoaded = useCallback(async () => {
+    if (megaData) return megaData;
+    const mega = await loadNavMegaData();
+    setMegaData(mega);
+    const full = await getFullNavlinks();
+    setNavlinks(full);
+    return mega;
+  }, [megaData]);
 
-  const toggleMobileMenu = (label) => {
-    setOpenMobileMenus((prev) => ({ ...prev, [label]: !prev[label] }));
+  const toggleMobileMenu = async (item) => {
+    if (item?.lazySubmenu) await ensureMegaLoaded();
+    setOpenMobileMenus((prev) => ({ ...prev, [item.label]: !prev[item.label] }));
   };
 
   const openMega = (label) => {
@@ -293,56 +301,74 @@ export default function Navbar() {
     setActiveMegaLabel(label);
   };
 
+  const handleMegaEnter = async (item) => {
+    if (item.megaMenu || item.label === "Formations") await ensureMegaLoaded();
+    openMega(item.label);
+  };
+
   const scheduleMegaClose = () => {
     closeTimer.current = setTimeout(() => setActiveMegaLabel(null), 180);
   };
 
+  const navLinkClass = (item) => {
+    const hasMenu = item.submenu || item.megaMenu;
+    if (hasMenu) {
+      if (item.label === "Formations") {
+        return formationsNav.navActive ? "text-accent" : "text-gray-300 hover:text-white";
+      }
+      if (item.href && item.href !== "/" && location.pathname.startsWith(item.href)) {
+        return "text-accent";
+      }
+      return activeMegaLabel === item.label ? "text-accent" : "text-gray-300 hover:text-white";
+    }
+    return item.href !== "/" && location.pathname.startsWith(item.href)
+      ? "text-accent"
+      : "text-gray-300 hover:text-white";
+  };
+
+  const desktopNavItemClass =
+    "text-[11px] xl:text-[12px] 2xl:text-nav min-[1536px]:text-nav-lg font-semibold transition-colors duration-200 font-heading flex items-center gap-0.5 whitespace-nowrap px-1 2xl:px-1.5 py-2";
+
   return (
     <nav className="sticky top-0 z-[100] w-full bg-primary relative">
-      {/* Padding gauche/droite : px-4 xl:px-8 */}
-      <div className="relative w-full px-4 xl:px-8 flex items-center justify-between h-[80px] gap-6 xl:gap-8">
+      <div className="relative w-full max-w-[100vw] px-4 sm:px-6 xl:px-8 flex items-center h-[70px] xl:h-[80px] gap-3 xl:gap-4">
 
         {/* Logo */}
         <Link
           to="/"
-          className={`relative z-[101] flex-shrink-0 no-underline group flex items-center transition-opacity duration-200 ${isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+          className={`relative z-[101] shrink-0 no-underline group flex items-center transition-opacity duration-200 ${isOpen ? "opacity-0 pointer-events-none xl:opacity-100 xl:pointer-events-auto" : "opacity-100"}`}
         >
           <img
             src="/assets/logo-altrh.png"
             alt="Logo Alt RH Formations"
-            className="h-14 md:h-16 w-auto max-h-16 object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_0_8px_rgba(255,255,255,0.9)] drop-shadow-[0_0_18px_rgba(255,255,255,0.45)]"
+            fetchPriority="high"
+            width={64}
+            height={64}
+            className="h-12 sm:h-14 xl:h-16 w-auto max-h-16 object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_0_8px_rgba(255,255,255,0.9)] drop-shadow-[0_0_18px_rgba(255,255,255,0.45)]"
           />
         </Link>
-        
-        {/* Liens centrés — léger décalage vers la gauche pour rapprocher du logo */}
-        <div className="pointer-events-none absolute inset-0 hidden xl:flex items-center justify-center z-[100]">
-          <div className="pointer-events-auto flex items-center gap-2 2xl:gap-6 -translate-x-14 2xl:-translate-x-20">
+
+        {/* Navigation desktop — flex entre logo et actions */}
+        <div className="hidden xl:flex flex-1 min-w-0 items-center justify-center">
+          <div className="flex items-center justify-center gap-x-0.5 2xl:gap-x-1 min-[1536px]:gap-x-2">
             {navlinks.map((item) => {
-              if (item.submenu) {
+              const hasMenu = item.submenu || item.megaMenu;
+              if (hasMenu) {
                 return (
                   <div
                     key={item.label}
-                    className="self-stretch flex items-center"
-                    onMouseEnter={() => openMega(item.label)}
+                    className="flex items-center"
+                    onMouseEnter={() => handleMegaEnter(item)}
                     onMouseLeave={scheduleMegaClose}
                   >
                     {item.href ? (
                       <Link
                         to={item.href}
-                        className={`text-nav 2xl:text-nav-lg font-semibold transition-colors duration-200 no-underline font-heading flex items-center gap-1 ${
-                          item.label === "Formations"
-                            ? formationsNav.navActive
-                              ? "text-accent"
-                              : "text-gray-300 hover:text-white"
-                            : item.href !== "/" && location.pathname.startsWith(item.href)
-                              ? "text-accent"
-                              : "text-gray-300 hover:text-white"
-                        }`}
+                        className={`${desktopNavItemClass} no-underline ${navLinkClass(item)}`}
                       >
                         {item.label}
                         <svg
-                          className={`w-3.5 h-3.5 fill-current opacity-50 transition-transform duration-200 ${activeMegaLabel === item.label ? "rotate-180" : ""
-                            }`}
+                          className={`w-3 h-3 2xl:w-3.5 2xl:h-3.5 fill-current opacity-50 transition-transform duration-200 shrink-0 ${activeMegaLabel === item.label ? "rotate-180" : ""}`}
                           viewBox="0 0 20 20"
                         >
                           <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
@@ -351,15 +377,11 @@ export default function Navbar() {
                     ) : (
                       <button
                         type="button"
-                        className={`text-nav 2xl:text-nav-lg font-semibold transition-colors duration-200 font-heading flex items-center gap-1 bg-transparent border-0 cursor-pointer p-0 ${activeMegaLabel === item.label
-                          ? "text-accent"
-                          : "text-gray-300 hover:text-white"
-                          }`}
+                        className={`${desktopNavItemClass} bg-transparent border-0 cursor-pointer ${navLinkClass(item)}`}
                       >
                         {item.label}
                         <svg
-                          className={`w-3.5 h-3.5 fill-current opacity-50 transition-transform duration-200 ${activeMegaLabel === item.label ? "rotate-180" : ""
-                            }`}
+                          className={`w-3 h-3 2xl:w-3.5 2xl:h-3.5 fill-current opacity-50 transition-transform duration-200 shrink-0 ${activeMegaLabel === item.label ? "rotate-180" : ""}`}
                           viewBox="0 0 20 20"
                         >
                           <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
@@ -371,24 +393,20 @@ export default function Navbar() {
               }
 
               return (
-                <div key={item.label} className="py-[25px]">
-                  <Link
-                    to={item.href}
-                    className={`text-nav 2xl:text-nav-lg font-semibold transition-colors duration-200 no-underline font-heading flex items-center gap-1 ${item.href !== "/" && location.pathname.startsWith(item.href)
-                      ? "text-accent"
-                      : "text-gray-300 hover:text-white"
-                      }`}
-                  >
-                    {item.label}
-                  </Link>
-                </div>
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className={`${desktopNavItemClass} no-underline ${navLinkClass(item)}`}
+                >
+                  {item.label}
+                </Link>
               );
             })}
           </div>
         </div>
 
         {/* Actions + burger */}
-        <div className="relative z-[101] flex items-center gap-3 shrink-0">
+        <div className="relative z-[101] ml-auto xl:ml-0 flex items-center gap-3 shrink-0 w-10 sm:w-12 xl:w-14 justify-end">
           {/* Auth desktop commenté
             {user ? (
               <div className="hidden sm:flex items-center gap-2">
@@ -422,7 +440,11 @@ export default function Navbar() {
             */}
 
           {!isOpen && (
-            <button className="xl:hidden text-white p-2" onClick={() => setIsOpen(true)}>
+            <button
+              className="xl:hidden text-white p-2 -mr-2"
+              onClick={() => setIsOpen(true)}
+              aria-label="Ouvrir le menu"
+            >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path d="M4 6h16M4 12h16m-7 6h7" />
               </svg>
@@ -431,8 +453,10 @@ export default function Navbar() {
         </div>
       </div>
 
-      {activeMegaLabel === "Formations" && (
+      {activeMegaLabel === "Formations" && megaData && (
         <FormationsMegaMenu
+          megaMenuFormations={megaData.megaMenuFormations}
+          megaMenuCombinedDiplCertRows={megaData.megaMenuCombinedDiplCertRows}
           onMouseEnter={() => openMega("Formations")}
           onMouseLeave={scheduleMegaClose}
           onClose={() => setActiveMegaLabel(null)}
@@ -448,18 +472,30 @@ export default function Navbar() {
 
       {/* ── Menu Mobile ── */}
       <div
-        className={`fixed inset-0 bg-primary z-[90] transition-transform duration-300 xl:hidden ${isOpen ? "translate-y-0" : "-translate-y-full"
-          } flex flex-col overflow-y-auto`}
+        className={`fixed inset-0 bg-primary z-[90] transition-transform duration-300 xl:hidden ${isOpen ? "translate-x-0" : "translate-x-full"
+          } flex flex-col overflow-y-auto overscroll-contain`}
       >
-          <div className="flex items-center justify-end px-6 min-h-[70px] border-b border-white/10 shrink-0">
+          <div className="flex items-center justify-between px-4 sm:px-6 min-h-[70px] border-b border-white/10 shrink-0">
+            <Link
+              to="/"
+              onClick={() => setIsOpen(false)}
+              className="shrink-0 no-underline"
+            >
+              <img
+                src="/assets/logo-altrh.png"
+                alt="Logo Alt RH Formations"
+                className="h-12 w-auto object-contain"
+              />
+            </Link>
             <button
               onClick={() => setIsOpen(false)}
               className="flex items-center gap-2 text-gray-300 hover:text-white bg-white/5 px-3 py-2 rounded-lg transition-colors"
+              aria-label="Fermer le menu"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
-              <span className="text-sm font-semibold uppercase">Retour</span>
+              <span className="text-sm font-semibold uppercase hidden sm:inline">Fermer</span>
             </button>
           </div>
 
@@ -488,8 +524,8 @@ export default function Navbar() {
                       {item.label}
                     </span>
                   )}
-                  {item.submenu && (
-                    <button onClick={() => toggleMobileMenu(item.label)} className="p-2 text-white">
+                  {(item.submenu || item.megaMenu) && (
+                    <button onClick={() => toggleMobileMenu(item)} className="p-2 text-white">
                       <svg
                         className={`w-6 h-6 fill-current transition-transform ${openMobileMenus[item.label] ? "rotate-180" : ""
                           }`}
@@ -502,7 +538,11 @@ export default function Navbar() {
                 </div>
 
                 {/* Mobile sous-menu */}
-                {item.submenu && openMobileMenus[item.label] && (
+                {(item.submenu || item.megaMenu) && openMobileMenus[item.label] && !item.submenu && item.lazySubmenu && (
+                  <p className="text-gray-400 text-sm pl-4">Chargement du menu…</p>
+                )}
+
+                {(item.submenu || item.megaMenu) && openMobileMenus[item.label] && item.submenu && (
                   <div className="flex flex-col gap-5 pl-4 border-l-2 border-accent/30">
                     {item.submenu.map((sub) => (
                       <div key={sub.label} className="flex flex-col gap-4">
@@ -515,7 +555,7 @@ export default function Navbar() {
                             {sub.label}
                           </Link>
                           {sub.submenu && (
-                            <button onClick={() => toggleMobileMenu(sub.label)} className="p-2 text-gray-400">
+                            <button onClick={() => toggleMobileMenu({ label: sub.label })} className="p-2 text-gray-400">
                               <svg
                                 className={`w-5 h-5 fill-current transition-transform ${openMobileMenus[sub.label] ? "rotate-180" : ""
                                   }`}
@@ -540,7 +580,7 @@ export default function Navbar() {
                                     {subItem.label}
                                   </Link>
                                   {subItem.submenu && (
-                                    <button onClick={() => toggleMobileMenu(subItem.label)} className="p-1 text-gray-500">
+                                    <button onClick={() => toggleMobileMenu({ label: subItem.label })} className="p-1 text-gray-500">
                                       <svg
                                         className={`w-5 h-5 fill-current transition-transform ${openMobileMenus[subItem.label] ? "rotate-180" : ""
                                           }`}

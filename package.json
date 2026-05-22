@@ -10,7 +10,14 @@
     "dev:full": "concurrently \"npm run dev\" \"npm run server\" \"npm run php\"",
     "dev:mail": "concurrently \"npm run dev\" \"npm run php\"",
     "seed:admin": "node src/data/backend/seed-admin.js",
-    "build": "vite build",
+    "build": "npm run generate:formations-index && npm run generate:sitemap && vite build",
+    "build:full": "npm run build && npm run prerender",
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "optimize:videos": "node scripts/optimize-videos.mjs",
+    "generate:formations-index": "node scripts/generate-formations-index.mjs",
+    "generate:sitemap": "node scripts/generate-sitemap.mjs",
+    "prerender": "node scripts/prerender.mjs",
+    "audit:perf": "node scripts/audit-perf.mjs",
     "sync:certification": "node scripts/sync-certification-from-formation.mjs",
     "inject:certification": "node scripts/inject-certification-officielle.mjs",
     "move:non-rncp-certifiantes": "node scripts/move-non-rncp-to-certifiantes.mjs",
@@ -19,6 +26,8 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@fontsource/montserrat": "^5.2.8",
+    "@fontsource/open-sans": "^5.2.7",
     "@hookform/resolvers": "^5.2.2",
     "@tailwindcss/vite": "^4.2.2",
     "bcryptjs": "^3.0.3",
@@ -52,7 +61,9 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
+    "puppeteer": "^25.0.4",
     "rollup-plugin-visualizer": "^7.0.1",
+    "sharp": "^0.34.5",
     "vite": "^8.0.1"
   }
 }

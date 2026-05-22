@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ResponsiveImage from '../ResponsiveImage';
 import { getModaliteBadgeLabel } from '../../utils/formationModalites';
 
 export default function CardFormation({
@@ -80,21 +81,19 @@ export default function CardFormation({
             aria-label={`Agrandir la photo — ${title}`}
             className="relative z-[2] block h-full w-full border-0 bg-transparent p-0 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-inset"
           >
-            <img
+            <ResponsiveImage
               src={image}
               alt=""
-              loading="lazy"
-              decoding="async"
-              aria-hidden
+              ariaHidden
+              sizes="(max-width: 768px) 100vw, 400px"
               className="pointer-events-none h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
           </button>
         ) : (
-          <img
+          <ResponsiveImage
             src={image}
             alt={title}
-            loading="lazy"
-            decoding="async"
+            sizes="(max-width: 768px) 100vw, 400px"
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
         )}

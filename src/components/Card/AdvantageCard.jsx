@@ -1,20 +1,28 @@
 import React from 'react';
-import * as LucideIcons from 'lucide-react';
+import { Coffee, Laptop, GraduationCap, Medal, Clock, Briefcase, BookOpen, MapPin, HelpCircle } from 'lucide-react';
+
+const ICON_MAP = {
+  coffee: Coffee,
+  laptop: Laptop,
+  'graduation-cap': GraduationCap,
+  medal: Medal,
+  clock: Clock,
+  briefcase: Briefcase,
+  book: BookOpen,
+  'map-pin': MapPin,
+};
 
 export default function AdvantageCard({ label, iconeName, index }) {
-  // Récupération dynamique de l'icône Lucide
-  const Icon = LucideIcons[iconeName.charAt(0).toUpperCase() + iconeName.slice(1)] || LucideIcons.HelpCircle;
+  const Icon = ICON_MAP[iconeName] || HelpCircle;
 
-  // Logique d'alternance des couleurs (Orange / Navy)
-  // Basé sur le design : [Orange, Navy, Orange, Navy] puis [Navy, Orange, Navy, Orange]
-  const isNavy = Math.floor(index / 4) % 2 === 0 
-    ? index % 2 !== 0 
+  const isNavy = Math.floor(index / 4) % 2 === 0
+    ? index % 2 !== 0
     : index % 2 === 0;
 
   return (
     <div className={`
-      ${isNavy ? 'bg-primary' : 'bg-accent'} 
-      rounded-card p-8 flex flex-col items-center justify-center text-center 
+      ${isNavy ? 'bg-primary' : 'bg-accent'}
+      rounded-card p-8 flex flex-col items-center justify-center text-center
       h-full min-h-[200px] transition-transform hover:scale-105 duration-300 shadow-md
     `}>
       <div className="text-white mb-4">

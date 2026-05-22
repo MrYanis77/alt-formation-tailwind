@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import SEOHead from '../components/SEO/SEOHead';
 import { useParams, Link } from 'react-router-dom';
-import { formationsArray } from '../data/navdata';
+import { getFormationById } from '../data/getFormationById';
 import { imageMap } from '../data/formations';
 import { certifications } from '../data/certification';
 import { mapCertificationOfficielleToCertif } from '../utils/mapCertificationOfficielle';
@@ -19,8 +19,28 @@ const sectionY = 'py-12 lg:py-16';
 
 export default function FormationDetail() {
   const { id } = useParams();
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  const data = formationsArray.find((f) => f.id === id);
+  useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+    getFormationById(id).then((f) => {
+      if (!cancelled) {
+        setData(f);
+        setLoading(false);
+      }
+    });
+    return () => { cancelled = true; };
+  }, [id]);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-[40vh] text-content-muted font-body">
+        Chargement…
+      </div>
+    );
+  }
 
   const certifFromData = data?.certificationOfficielle
     ? mapCertificationOfficielleToCertif(data.certificationOfficielle, id, {
@@ -116,7 +136,7 @@ export default function FormationDetail() {
                     data.presentation?.image ||
                     imageMap[id] ||
                     data.presentation.image ||
-                    'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80',
+                    '/assets/images/fallback.webp',
                 }}
                 imageRight={true}
               />

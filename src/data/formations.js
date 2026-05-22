@@ -110,7 +110,7 @@ export const imageMap = {
 };
 
 // Fallback si un ID n'est pas encore dans le mapping
-const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800';
+const FALLBACK_IMAGE = '/assets/images/fallback.webp';
 
 // Fonction d'aide pour extraire et formater une formation du JSON
 const mapIdToItem = (id) => {

@@ -4,7 +4,7 @@ import CardFormation from './Card/CardFormation';
 import FiltreCat from './Items/FiltreCat';
 import { Filter } from 'lucide-react';
 
-const FALLBACK_IMG = 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800';
+const FALLBACK_IMG = '/assets/images/fallback.webp';
 
 /**
  * Bloc catalogue (filtres + grille) avec id de catégories préfixés — évite les collisions

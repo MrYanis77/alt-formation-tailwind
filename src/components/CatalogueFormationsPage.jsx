@@ -7,7 +7,7 @@ import CallToAction from '../components/CallToAction';
 import FiltreCat from '../components/Items/FiltreCat';
 import { Filter } from 'lucide-react';
 
-const FALLBACK_IMG = 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800';
+const FALLBACK_IMG = '/assets/images/fallback.webp';
 
 /**
  * Composant partagé pour les pages catalogue de formations.
