@@ -59,7 +59,7 @@ function h($str) { return htmlspecialchars($str, ENT_QUOTES, 'UTF-8'); }
 $html = '
 <div style="font-family:sans-serif;color:#1a202c;max-width:600px;margin:0 auto;border:1px solid #e2e8f0;border-radius:8px;padding:20px;">
   <div style="background:#1e2f47;padding:20px 24px;border-radius:6px 6px 0 0;margin:-20px -20px 20px;">
-    <h1 style="color:#fca311;margin:0;font-size:20px;text-transform:uppercase;letter-spacing:2px;">Alt Formations</h1>
+    <h1 style="color:#fca311;margin:0;font-size:20px;text-transform:uppercase;letter-spacing:2px;">Alt RH Formations</h1>
     <p style="color:#fff;margin:4px 0 0;font-size:13px;">Nouveau message de contact</p>
   </div>
   <table style="width:100%;border-collapse:collapse;margin-top:10px;">

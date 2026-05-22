@@ -1,10 +1,10 @@
 /**
- * authData.js - Données pour la page d'inscription Alt Formations
+ * authData.js - Données pour la page d'inscription Alt RH Formations
  */
 
 export const registerData = {
   header: {
-    title: "Alt Formations",
+    title: "Alt RH Formations",
     subtitle: "Créez votre compte pour accéder à nos formations"
   },
   sections: {

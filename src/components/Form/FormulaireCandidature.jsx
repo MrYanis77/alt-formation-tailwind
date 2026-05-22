@@ -92,7 +92,7 @@ export default function FormulaireCandidature({ type }) {
         // Titre de l'entreprise
         doc.setTextColor(255, 255, 255);
         doc.setFontSize(22);
-        doc.text("ALT FORMATIONS", 20, 25);
+        doc.text("Alt RH Formations", 20, 25);
 
         // Titre du document
         doc.setTextColor(0, 0, 0);
@@ -113,7 +113,7 @@ export default function FormulaireCandidature({ type }) {
         doc.line(20, 140, 190, 140);
 
         // Message de fin
-        doc.text("Merci pour votre intérêt envers Alt Formations.", 20, 160);
+        doc.text("Merci pour votre intérêt envers Alt RH Formations.", 20, 160);
         doc.text("Notre équipe RH va étudier votre profil et vous recontactera", 20, 170);
         doc.text("dans les meilleurs délais.", 20, 180);
 

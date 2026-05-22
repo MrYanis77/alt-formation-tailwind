@@ -4,7 +4,7 @@
         "type": "certifiante",
         "hero": {
             "titre": "DASA DevOps Fundamentals",
-            "sousTitre": "Avec Alt Formation, renforcez votre culture DevOps et préparez la certification DASA : articulation entre équipes, livraison continue et indicateurs utiles au terrain.",
+            "sousTitre": "Avec Alt RH Formations, renforcez votre culture DevOps et préparez la certification DASA : articulation entre équipes, livraison continue et indicateurs utiles au terrain.",
             "video": "/assets/video/formations/dev_equipe.mp4"
         },
         "stats": [
@@ -26,10 +26,10 @@
             }
         ],
         "presentation": {
-            "titre": "DASA DevOps Fundamentals",
+            "titre": "Le métier",
             "image": "/assets/images/devops.jpg",
             "paragraphes": [
-                "Chez Alt Formation, ce parcours certifiant s’inscrit dans une logique d’accompagnement : comprendre les fondamentaux DevOps et les relier à vos enjeux de delivery, sans jargon superflu.",
+                "Chez Alt RH Formations, ce parcours certifiant s’inscrit dans une logique d’accompagnement : comprendre les fondamentaux DevOps et les relier à vos enjeux de delivery, sans jargon superflu.",
                 "Nous travaillons la compréhension des flux de valeur, des rôles et des pratiques qui sécurisent la transformation numérique côté équipes IT.",
                 "À l’issue de la session, vous disposerez de repères concrets pour l’automatisation des tests, l’infrastructure et le déploiement continu, et pour aborder l’examen DASA DevOps Fundamentals sereinement."
             ]
@@ -89,7 +89,7 @@
         },
         "evaluation": {
             "titre": "Évaluation & Progression",
-            "description": "Alt Formation met en place un suivi clair : objectifs personnels en amont, retours du formateur pendant le parcours, évaluations en fin de module et regard sur la satisfaction.",
+            "description": "Alt RH Formations met en place un suivi clair : objectifs personnels en amont, retours du formateur pendant le parcours, évaluations en fin de module et regard sur la satisfaction.",
             "etapes": [
                 "Avant la session : cadrage de vos objectifs et auto-positionnement sur les thématiques.",
                 "Pendant la session : points de reprise avec le formateur sur forces et axes de progrès.",
@@ -106,24 +106,24 @@
                     "Format : Présentiel",
                     "Tarif standard : 2 170 €",
                     "Prix avec certification : 2 170 €",
-                    "Public visé : Professionnels impliqués dans le développement et la fourniture de services informatiques",
+                    "Public visé : professionnels IT et services numériques",
                     "Disponible en Inter-Entreprise et Intra-Entreprise",
                     "Formation disponible sur demande",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
-                    "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+                    "Inscriptions : nos conseillers vous accompagnent (dossier, format)."
                 ]
             },
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
                     "Aucune connaissance particulière requise.",
-                    "La connaissance fondamentale des principes Agile, Scrum, Lean et ITSM est bénéfique."
+                    "Notions Agile, Scrum, Lean et ITSM appréciées."
                 ]
             }
         },
-        "methodologie": "Alt Formation alterne apports structurants, échanges sur vos cas et mises en situation pour ancrer les pratiques DevOps dans votre contexte quotidien.",
+        "methodologie": "Alt RH Formations alterne apports structurants, échanges sur vos cas et mises en situation pour ancrer les pratiques DevOps dans votre contexte quotidien.",
         "certification": "DASA DevOps Fundamentals",
         "competences": [
             "Expliquer les principes et enjeux culturels du DevOps",
@@ -142,7 +142,7 @@
         ],
         "ctaFinal": {
             "titre": "Prêt à obtenir votre certification DevOps ?",
-            "sousTitre": "Un conseiller Alt Formation vous aide à caler les dates et le format (inter / intra). Réponse sous 48 h ouvrées en général.",
+            "sousTitre": "Un conseiller Alt RH Formations vous aide à caler les dates et le format (inter / intra). Réponse sous 48 h ouvrées en général.",
             "boutons": [
                 {
                     "label": "NOUS CONTACTER",
@@ -156,7 +156,7 @@
         "type": "certifiante",
         "hero": {
             "titre": "DevOps, méthode et organisation",
-            "sousTitre": "Alt Formation vous propose un parcours pour relier culture d’équipe, chaîne de déploiement et culture de la mesure, avec des ateliers directement exploitables.",
+            "sousTitre": "Alt RH Formations vous propose un parcours pour relier culture d’équipe, chaîne de déploiement et culture de la mesure, avec des ateliers directement exploitables.",
             "video": "/assets/video/formations/dev_equipe.mp4"
         },
         "stats": [
@@ -178,7 +178,7 @@
             }
         ],
         "presentation": {
-            "titre": "DevOps, méthode et organisation",
+            "titre": "Le métier",
             "image": "/assets/images/devops.jpg",
             "paragraphes": [
                 "Nous partons des racines du mouvement DevOps pour éclairer les angles culturels d’une équipe qui livre plus souvent et plus sereinement.",
@@ -224,7 +224,7 @@
         },
         "evaluation": {
             "titre": "Évaluation & Progression",
-            "description": "Alt Formation met en place un suivi clair : objectifs personnels en amont, retours du formateur pendant le parcours, évaluations en fin de module et regard sur la satisfaction.",
+            "description": "Alt RH Formations met en place un suivi clair : objectifs personnels en amont, retours du formateur pendant le parcours, évaluations en fin de module et regard sur la satisfaction.",
             "etapes": [
                 "Avant la session : cadrage de vos objectifs et auto-positionnement sur les thématiques.",
                 "Pendant la session : points de reprise avec le formateur sur forces et axes de progrès.",
@@ -243,10 +243,10 @@
                     "Public visé : Toute personne voulant faire carrière en DevOps",
                     "Disponible en Inter-Entreprise et Intra-Entreprise",
                     "Formation disponible sur demande",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
-                    "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+                    "Inscriptions : nos conseillers vous accompagnent (dossier, format)."
                 ]
             },
             "prerequis": {
@@ -257,7 +257,7 @@
                 ]
             }
         },
-        "methodologie": "Alt Formation alterne apports structurants, échanges sur vos cas et mises en situation pour ancrer les pratiques DevOps dans votre contexte quotidien.",
+        "methodologie": "Alt RH Formations alterne apports structurants, échanges sur vos cas et mises en situation pour ancrer les pratiques DevOps dans votre contexte quotidien.",
         "certification": "Formation non certifiante",
         "competences": [
             "Expliquer l’évolution du mouvement DevOps et ses fondations",
@@ -276,7 +276,7 @@
         ],
         "ctaFinal": {
             "titre": "Prêt à transformer votre organisation en DevOps ?",
-            "sousTitre": "Un conseiller Alt Formation vous aide à caler les dates et le format (inter / intra). Réponse sous 48 h ouvrées en général.",
+            "sousTitre": "Un conseiller Alt RH Formations vous aide à caler les dates et le format (inter / intra). Réponse sous 48 h ouvrées en général.",
             "boutons": [
                 {
                     "label": "NOUS CONTACTER",
@@ -290,7 +290,7 @@
         "type": "certifiante",
         "hero": {
             "titre": "ISO/IEC 27035 — Information Security Incident Management — Foundation",
-            "sousTitre": "Alt Formation vous accompagne sur la gestion d’incidents ISO/IEC 27035 et la préparation au niveau Foundation PECB, en classe virtuelle pilotée.",
+            "sousTitre": "Alt RH Formations vous accompagne sur la gestion d’incidents ISO/IEC 27035 et la préparation au niveau Foundation PECB, en classe virtuelle pilotée.",
             "video": "/assets/video/formations/cyber.mp4"
         },
         "stats": [
@@ -304,7 +304,7 @@
             },
             {
                 "label": "Public",
-                "value": "Toute personne concernée par la gestion d'incidents SI"
+                "value": "Toute personne concernée par la gestion d…"
             },
             {
                 "label": "Tarif Inter",
@@ -312,12 +312,12 @@
             }
         ],
         "presentation": {
-            "titre": "Gestion des incidents de sécurité de l'information",
+            "titre": "Le métier",
             "image": "/assets/images/analyst_soc.jpg",
             "paragraphes": [
                 "Le parcours donne des repères opérationnels pour prévenir, détecter et traiter les incidents de sécurité de l’information, en cohérence avec un SMSI et la famille ISO/IEC 27000.",
                 "Vous structurez les rôles, le plan de réponse et les échanges internes / externes, du signalement jusqu’aux retours d’expérience.",
-                "La session est animée à distance en synchrone, avec quiz et exercices intégrés ; Alt Formation vous aide à préparer l’examen PECB ISO/IEC 27035 Foundation et à choisir vos dates.",
+                "La session est animée à distance en synchrone, avec quiz et exercices intégrés ; Alt RH Formations vous aide à préparer l’examen PECB ISO/IEC 27035 Foundation et à choisir vos dates.",
                 "Les financements possibles (CPF, plan de développement des compétences, etc.) dépendent de votre situation : nos équipes vous orientent sur les démarches, sans promesse d’éligibilité avant analyse de dossier."
             ]
         },
@@ -479,26 +479,26 @@
                 "points": [
                     "Durée : 14 heures sur 2 jours",
                     "Format : classe virtuelle (distanciel synchrone, visioconférence)",
-                    "Inter-entreprises : 712 € HT / personne (certification obligatoire incluse)",
-                    "Intra-entreprise : 3 970 € HT / groupe (minimum 4 stagiaires, certification incluse)",
+                    "Inter-entreprises : 712 € HT / personne (certification obligatoire incl…",
+                    "Intra-entreprise : 3 970 € HT / groupe (minimum 4 stagiaires…",
                     "Référence indicative : ISO/IEC 27035 Foundation — préparation PECB",
-                    "Sessions : calendrier inter ou intra communiqué lors de votre prise de contact avec Alt Formation",
-                    "Les dispositifs mobilisables varient selon les profils — nous examinons votre dossier au cas par cas.",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Sessions : calendrier inter/intra sur demande",
+                    "Les dispositifs mobilisables varient selon les profils — nous examinons…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
-                    "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+                    "Inscriptions : nos conseillers vous accompagnent (dossier, format)."
                 ]
             },
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
-                    "Aucun prérequis technique obligatoire pour suivre la formation Foundation.",
-                    "Une première exposition aux concepts de sécurité de l'information ou au SMSI (ISO/IEC 27001) facilite la montée en charge."
+                    "Aucun prérequis technique obligatoire pour suivre la formation Foundati…",
+                    "Une première exposition aux concepts de sécurité de l'information ou au…"
                 ]
             }
         },
-        "methodologie": "Alt Formation propose une classe virtuelle synchrone : apports courts, quiz fréquents et préparation progressive à l’épreuve, avec un rythme proche d’une salle.",
+        "methodologie": "Alt RH Formations propose une classe virtuelle synchrone : apports courts, quiz fréquents et préparation progressive à l’épreuve, avec un rythme proche d’une salle.",
         "certification": "PECB ISO/IEC 27035 Foundation",
         "competences": [
             "Poser les bases d’une réponse structurée aux incidents SI",
@@ -517,7 +517,7 @@
         ],
         "ctaFinal": {
             "titre": "Certifiez-vous en gestion d'incidents ISO/IEC 27035",
-            "sousTitre": "Inter, intra ou calendrier classe virtuelle : écrivez à Alt Formation ou passez par la page contact — prise en charge rapide des demandes.",
+            "sousTitre": "Inter, intra ou calendrier classe virtuelle : écrivez à Alt RH Formations ou passez par la page contact — prise en charge rapide des demandes.",
             "boutons": [
                 {
                     "label": "NOUS CONTACTER",
@@ -531,7 +531,7 @@
         "type": "certifiante",
         "hero": {
             "titre": "Langage SQL — Exploiter une base de données relationnelle (certifiante)",
-            "sousTitre": "Renforcez vos fondamentaux SGBDR et requêtes SQL sur les moteurs courants, avec un rythme adapté et un accompagnement Alt Formation jusqu’à la certification RS7205.",
+            "sousTitre": "Renforcez vos fondamentaux SGBDR et requêtes SQL sur les moteurs courants, avec un rythme adapté et un accompagnement Alt RH Formations jusqu’à la certification RS7205.",
             "video": "/assets/video/formations/informatique.mp4"
         },
         "stats": [
@@ -553,10 +553,10 @@
             }
         ],
         "presentation": {
-            "titre": "Exploitation avancée du SQL",
+            "titre": "Le métier",
             "image": "/assets/images/analyste_data.jpg",
             "paragraphes": [
-                "Chez Alt Formation, ce parcours certifiant ancre le SQL sur vos usages métier : modèle relationnel, algèbre portée en requêtes, sélections complexes et mises à jour contrôlées.",
+                "Chez Alt RH Formations, ce parcours certifiant ancre le SQL sur vos usages métier : modèle relationnel, algèbre portée en requêtes, sélections complexes et mises à jour contrôlées.",
                 "Vous travaillez sur un environnement SQL pertinent pour la session (MySQL, Oracle, PostgreSQL ou SQL Server), avec une progression nette sur jointures, sous-requêtes, vues, CTE et fonctions de fenêtrage.",
                 "La pédagogie mêle apports ciblés, démonstrations et travaux guidés. Elle vise la certification RS7205 (Répertoire Spécifique France Compétences) ; en financement CPF, le passage à l’examen peut être requis selon les règles du dispositif.",
                 "Nous proposons inter, intra, présentiel ou distanciel depuis nos dispositifs à Bailly-Romainvilliers et Serris : un conseiller vous aide à choisir le format et à monter votre dossier."
@@ -613,7 +613,7 @@
         },
         "evaluation": {
             "titre": "Évaluation des acquis",
-            "description": "Alt Formation assure un suivi continu : vous savez où vous en êtes avant l’examen de certification.",
+            "description": "Alt RH Formations assure un suivi continu : vous savez où vous en êtes avant l’examen de certification.",
             "etapes": [
                 "Auto-évaluation en amont et en fin de parcours pour cadrer la progression.",
                 "Retours du formateur (non évalué → acquis) via QCM, exercices, quiz et mises en situation.",
@@ -626,17 +626,17 @@
                 "titre": "Modalités pratiques",
                 "points": [
                     "Durée : 20 heures",
-                    "Tarif indicatif Inter : 1 760 € HT à distance (contactez-nous pour présentiel et intra-entreprise)",
-                    "Effectifs : sessions de 1 à 12 stagiaires (effectif moyen favorable au suivi individualisé)",
-                    "Modalités possibles : présentiel en salle, salle immersive / téléprésentiel, ou formation à distance en immersion synchrone",
-                    "Support : poste de travail adapté, supports et manuel numérique ou papier selon session",
-                    "Inscriptions : jusqu'à 48 h avant le début en général ; financement CPF : délai légal minimum entre proposition et démarrage à respecter (11 jours ouvrés)",
-                    "Sessions indicatives : juin, septembre, octobre, décembre — à distance ou en présentiel (villes sur demande)",
-                    "CPF et certification RS7205 : dates d’examen et formalités détaillées avec votre interlocuteur Alt Formation",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Tarif indicatif Inter : 1 760 € HT à distance (contactez-nous pour prés…",
+                    "Effectifs : sessions de 1 à 12 stagiaires (effectif moyen favorable au…",
+                    "Modalités possibles : présentiel en salle…",
+                    "Support : poste de travail adapté, supports et manuel numérique ou papi…",
+                    "Inscriptions : jusqu'à 48 h avant le début en général ; financement CPF…",
+                    "Sessions indicatives : juin, septembre, octobre…",
+                    "CPF et certification RS7205 : dates d’examen et formalités détaillées a…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
-                    "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+                    "Inscriptions : nos conseillers vous accompagnent (dossier, format)."
                 ]
             },
             "prerequis": {
@@ -647,7 +647,7 @@
                 ]
             }
         },
-        "methodologie": "Alt Formation privilégie une dynamique active : le formateur alterne apports courts, démonstrations et exercices guidés en petit groupe, avec un expert présent pendant toute la durée du parcours.",
+        "methodologie": "Alt RH Formations privilégie une dynamique active : le formateur alterne apports courts, démonstrations et exercices guidés en petit groupe, avec un expert présent pendant toute la durée du parcours.",
         "certification": "Langage SQL — exploiter une base de données relationnelle (référence RS7205 — Répertoire Spécifique France Compétences)",
         "competences": [
             "Identifier les concepts des SGBDR et les fondements relationnels du SQL",
@@ -682,7 +682,7 @@
         "type": "certifiante",
         "hero": {
             "titre": "Docker — Concevoir, tester et déployer des applications (certifiante)",
-            "sousTitre": "Prenez en main Docker avec Alt Formation : images, conteneurs, Dockerfiles, réseaux, volumes, Compose et Swarm pour déployer vos applications proprement tout en gardant la sécurité à l’œil.",
+            "sousTitre": "Prenez en main Docker avec Alt RH Formations : images, conteneurs, Dockerfiles, réseaux, volumes, Compose et Swarm pour déployer vos applications proprement tout en gardant la sécurité à l’œil.",
             "video": "/assets/video/formations/dev.mp4"
         },
         "stats": [
@@ -704,13 +704,13 @@
             }
         ],
         "presentation": {
-            "titre": "Conteneurisation et déploiement avec Docker",
+            "titre": "Le métier",
             "image": "/assets/images/devops.jpg",
             "paragraphes": [
                 "Ce parcours certifiant vous accompagne pas à pas sur Docker, de l’installation à la mise en production : Linux, Windows ou macOS, cycle de vie des images et des conteneurs, réseaux, volumes, Compose puis Swarm lorsque vous montez en charge.",
                 "Vous sécurisez vos Dockerfiles, vos registres (dont CI de build d’images) et vos stacks multi-services avec des retours d’expérience concrets.",
                 "À l’issue du parcours, vous savez placer Docker dans votre paysage technique, livrer des environnements reproductibles et identifier limites, risques et premiers durcissements utiles.",
-                "La formation prépare à la certification RS6425 (Répertoire Spécifique France Compétences). Le financement CPF et l’obligation éventuelle de passer l’examen dépendent de votre dossier : nos conseillers vous le rappellent clairement avant le démarrage. Dates inter ou intra sur simple demande auprès d’Alt Formation."
+                "La formation prépare à la certification RS6425 (Répertoire Spécifique France Compétences). Le financement CPF et l’obligation éventuelle de passer l’examen dépendent de votre dossier : nos conseillers vous le rappellent clairement avant le démarrage. Dates inter ou intra sur simple demande auprès d’Alt RH Formations."
             ]
         },
         "objectifs": [
@@ -782,17 +782,17 @@
                 "titre": "Modalités pratiques",
                 "points": [
                     "Durée : 21 heures",
-                    "Tarif indicatif Inter : 1 770 € HT à distance (devis pour présentiel et intra-entreprise)",
-                    "Effectifs : 1 à 12 stagiaires par session (effectif moyen orienté accompagnement personnalisé)",
-                    "Formats : présentiel en salle, salle immersive / téléprésentiel, ou distanciel synchrone immersif",
-                    "Supports : poste adapté, cours et manuel numérique ou papier selon session",
-                    "Inscriptions : jusqu'à 48 h avant le démarrage en général ; financement CPF : délai légal d'au moins 11 jours ouvrés entre proposition et début",
-                    "Sessions indicatives : juin, octobre, décembre — à distance ou villes partenaires sur demande",
-                    "Certification RS6425 : calendrier d’examen et formalités précisés lors de votre inscription avec Alt Formation",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Tarif indicatif Inter : 1 770 € HT à distance (devis pour présentiel et…",
+                    "Effectifs : 1 à 12 stagiaires par session (effectif moyen orienté accom…",
+                    "Formats : présentiel en salle, salle immersive / téléprésentiel…",
+                    "Supports : poste adapté, cours et manuel numérique ou papier selon sess…",
+                    "Inscriptions : jusqu'à 48 h avant le démarrage en général ; financement…",
+                    "Sessions indicatives : juin, octobre, décembre — à distance ou villes p…",
+                    "Certification RS6425 : calendrier d’examen et formalités précisés lors…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
-                    "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+                    "Inscriptions : nos conseillers vous accompagnent (dossier, format)."
                 ]
             },
             "prerequis": {
@@ -804,7 +804,7 @@
                 ]
             }
         },
-        "methodologie": "Chez Alt Formation, l’accent est mis sur la pratique : apports courts, démonstrations réalistes et ateliers seul ou en groupe, avec un expert présent du premier au dernier jour.",
+        "methodologie": "Chez Alt RH Formations, l’accent est mis sur la pratique : apports courts, démonstrations réalistes et ateliers seul ou en groupe, avec un expert présent du premier au dernier jour.",
         "certification": "Concevoir, tester et déployer des applications avec Docker (référence RS6425 — Répertoire Spécifique France Compétences)",
         "competences": [
             "Expliquer le rôle de Docker et des conteneurs dans la chaîne de livraison",
@@ -826,7 +826,7 @@
         ],
         "ctaFinal": {
             "titre": "Planifiez votre formation Docker certifiante",
-            "sousTitre": "Calendrier inter ou intra, présentiel ou distanciel : un interlocuteur Alt Formation vous répond sur les sessions et les aides au financement.",
+            "sousTitre": "Calendrier inter ou intra, présentiel ou distanciel : un interlocuteur Alt RH Formations vous répond sur les sessions et les aides au financement.",
             "boutons": [
                 {
                     "label": "NOUS CONTACTER",
@@ -840,7 +840,7 @@
         "type": "certifiante",
         "hero": {
             "titre": "Cybersécurité — Menaces, risques et architectures défensives",
-            "sousTitre": "Chez Alt Formation, reliez menaces actuelles, architectures défensives et pilotage SSI : attaquants et TTPs, IoT/ICS, risques, gouvernance, SOC, Threat Intelligence et défense en profondeur.",
+            "sousTitre": "Chez Alt RH Formations, reliez menaces actuelles, architectures défensives et pilotage SSI : attaquants et TTPs, IoT/ICS, risques, gouvernance, SOC, Threat Intelligence et défense en profondeur.",
             "video": "/assets/video/formations/cyber.mp4"
         },
         "stats": [
@@ -862,13 +862,13 @@
             }
         ],
         "presentation": {
-            "titre": "Une approche exhaustive de la cybersécurité",
+            "titre": "Le métier",
             "image": "/assets/images/expert_cyber.jpg",
             "paragraphes": [
                 "Parcours structuré pour comprendre comment les menaces se matérialisent, quelles erreurs de conception coûtent cher et quels leviers réduisent réellement votre surface d’exposition.",
                 "Du panorama offensif aux réseaux industriels et objets connectés, en passant par risques, PSSI et gouvernance, vous reliez technique, organisation et cadres utiles à la DSI.",
                 "Threat Intelligence, SOC et architectures défensives (segmentation, firewalls, IDS, honeypots, VPN, PKI, durcissement poste, chiffrement) sont abordés avec des mises en situation type cyber-range lorsque le dispositif le permet.",
-                "Sessions en présentiel ou à distance ; financements étudiés au cas par cas. Alt Formation assure le suivi administratif depuis vos sites de proximité en Seine-et-Marne."
+                "Sessions en présentiel ou à distance ; financements étudiés au cas par cas. Alt RH Formations assure le suivi administratif depuis vos sites de proximité en Seine-et-Marne."
             ]
         },
         "objectifs": [
@@ -948,17 +948,17 @@
                 "titre": "Modalités pratiques",
                 "points": [
                     "Durée : 21 heures",
-                    "Tarif indicatif Inter : 2 360 € HT à distance (devis présentiel et intra)",
+                    "Tarif indicatif Inter : 2 360 € HT à distance (devis présentiel et intr…",
                     "Effectifs : 1 à 12 stagiaires par session",
-                    "Formats : présentiel, salle immersive / téléprésentiel, ou distanciel synchrone immersif",
+                    "Formats : présentiel, salle immersive / téléprésentiel…",
                     "Supports : poste adapté, cours et manuel numérique ou papier",
-                    "Inscriptions : jusqu'à 48 h avant le début ; CPF : délai légal d'au moins 11 jours ouvrés entre proposition et démarrage",
-                    "Sessions indicatives : mai, septembre, décembre — à distance ou villes partenaires ; certaines dates peuvent être annoncées comme garanties selon calendrier",
-                    "Certification / examen : selon le financement retenu, Alt Formation vous indique les étapes officielles et les délais à respecter avant le démarrage",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Inscriptions : jusqu'à 48 h avant le début ; CPF : délai légal d'au moi…",
+                    "Sessions indicatives : mai, septembre, décembre — à distance ou villes…",
+                    "Certification / examen : selon le financement retenu…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
-                    "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+                    "Inscriptions : nos conseillers vous accompagnent (dossier, format)."
                 ]
             },
             "prerequis": {
@@ -969,8 +969,8 @@
                 ]
             }
         },
-        "methodologie": "Alt Formation alterne apports, démonstrations et exercices sur cas réels, en individuel ou en petit groupe, pour que chaque notion trouve vite un débouché opérationnel.",
-        "certification": "Parcours certifiant : l’intitulé exact et le référentiel France Compétences associé vous sont communiqués par Alt Formation lors de la réservation, selon la session retenue.",
+        "methodologie": "Alt RH Formations alterne apports, démonstrations et exercices sur cas réels, en individuel ou en petit groupe, pour que chaque notion trouve vite un débouché opérationnel.",
+        "certification": "Parcours certifiant : l’intitulé exact et le référentiel France Compétences associé vous sont communiqués par Alt RH Formations lors de la réservation, selon la session retenue.",
         "competences": [
             "Cartographier une attaque et les comportements adverses usuels",
             "Analyser une architecture pour en déduire les vulnérabilités critiques",
@@ -989,7 +989,7 @@
         ],
         "ctaFinal": {
             "titre": "Sécurisez votre SI avec une vision globale",
-            "sousTitre": "Sessions mai / septembre / décembre (indicatif) ou intra sur mesure : contactez Alt Formation pour caler votre date et votre dispositif de financement.",
+            "sousTitre": "Sessions mai / septembre / décembre (indicatif) ou intra sur mesure : contactez Alt RH Formations pour caler votre date et votre dispositif de financement.",
             "boutons": [
                 {
                     "label": "NOUS CONTACTER",
@@ -1003,7 +1003,7 @@
         "type": "certifiante",
         "hero": {
             "titre": "Certification ISTQB — Testeur certifié niveau Fondation",
-            "sousTitre": "Accompagnez la certification ISTQB niveau Fondation avec Alt Formation : principes des tests, techniques structurées et préparation à l’épreuve officielle, en présentiel ou en classe virtuelle.",
+            "sousTitre": "Accompagnez la certification ISTQB niveau Fondation avec Alt RH Formations : principes des tests, techniques structurées et préparation à l’épreuve officielle, en présentiel ou en classe virtuelle.",
             "video": "/assets/video/formations/dev-app.mp4"
         },
         "stats": [
@@ -1021,13 +1021,13 @@
             }
         ],
         "presentation": {
-            "titre": "ISTQB niveau Fondation — Tests logiciels",
+            "titre": "Le métier",
             "image": "/assets/images/concepteur_app.jpg",
             "paragraphes": [
                 "Ce parcours certifiant vous donne les repères ISTQB Foundation pour structurer vos campagnes de test : vocabulaire, niveaux, techniques et pilotage quotidien.",
                 "Testeurs, QA, MOA ou chefs de projet y trouvent un socle commun, y compris lorsque vous formalisez déjà de l’expérience terrain.",
                 "Sessions synchrones en présentiel ou à distance ; inter-entreprises ou intra lorsque vous regroupez vos équipes.",
-                "Pour le CPF ou autres dispositifs, nos conseillers Alt Formation vous expliquent les obligations (dont examen lorsque le financement l’exige) avant validation du dossier."
+                "Pour le CPF ou autres dispositifs, nos conseillers Alt RH Formations vous expliquent les obligations (dont examen lorsque le financement l’exige) avant validation du dossier."
             ]
         },
         "objectifs": [
@@ -1064,7 +1064,7 @@
         },
         "evaluation": {
             "titre": "Évaluation",
-            "description": "Alt Formation assure un suivi sur trois jours : vous validez les blocs du syllabus avant l’épreuve officielle.",
+            "description": "Alt RH Formations assure un suivi sur trois jours : vous validez les blocs du syllabus avant l’épreuve officielle.",
             "etapes": [
                 "Contrôles de connaissances types QCM et cas guidés pour consolider chaque jour.",
                 "Restitution des attentes d’examen (gestion du temps, lecture des énoncés).",
@@ -1077,19 +1077,19 @@
                 "points": [
                     "Durée : 21 heures",
                     "Formats : classe virtuelle, présentiel ; Inter ou Intra",
-                    "Inter : 970,02 € HT / personne + certification obligatoire 235 € HT / personne",
-                    "Intra : 3 970,02 € HT / groupe + certification obligatoire 235 € HT / personne — 4 stagiaires minimum",
-                    "Sessions inter ou intra : calendrier communiqué lors de votre échange avec Alt Formation",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Inter : 970,02 € HT / personne + certification obligatoire 235 € HT / p…",
+                    "Intra : 3 970,02 € HT / groupe + certification obligatoire 235 € HT / p…",
+                    "Sessions inter ou intra : calendrier communiqué lors de votre échange a…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
-                    "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+                    "Inscriptions : nos conseillers vous accompagnent (dossier, format)."
                 ]
             },
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
-                    "Une connaissance de base des processus de développement logiciel et des tests manuels est recommandée."
+                    "Une connaissance de base des processus de développement logiciel et des…"
                 ]
             }
         },
@@ -1127,7 +1127,7 @@
         "type": "certifiante",
         "hero": {
             "titre": "ISTQB — Extension Fondation Testeur Agile",
-            "sousTitre": "Avec Alt Formation, préparez l’extension ISTQB Testeur Agile : pratiques de test en contexte Agile, techniques, outils et épreuve officielle (présentiel ou classe virtuelle).",
+            "sousTitre": "Avec Alt RH Formations, préparez l’extension ISTQB Testeur Agile : pratiques de test en contexte Agile, techniques, outils et épreuve officielle (présentiel ou classe virtuelle).",
             "video": "/assets/video/formations/dev-app.mp4"
         },
         "stats": [
@@ -1145,12 +1145,12 @@
             }
         ],
         "presentation": {
-            "titre": "Tests logiciels — ISTQB Testeur Agile",
+            "titre": "Le métier",
             "image": "/assets/images/concepteur_app.jpg",
             "paragraphes": [
                 "Ce parcours certifiant prépare l’extension ISTQB Fondation « Testeur Agile » : enchaîner user stories, itérations et stratégie de test sans perdre la rigueur.",
                 "Il s’adresse aux testeurs, QA, analystes et chefs de projet qui sécurisent la qualité dans des équipes déjà tournées vers l’Agile.",
-                "Alt Formation dispense la session en présentiel ou en distanciel synchrone ; les calendriers inter sont communiqués à l’inscription.",
+                "Alt RH Formations dispense la session en présentiel ou en distanciel synchrone ; les calendriers inter sont communiqués à l’inscription.",
                 "Les aides mobilisables (CPF, plans entreprise, etc.) sont précisées dossier par dossier ; aucune promesse d’éligibilité avant analyse."
             ]
         },
@@ -1185,7 +1185,7 @@
         },
         "evaluation": {
             "titre": "Évaluation",
-            "description": "Un suivi pédagogique sur trois jours puis passage à l’épreuve officielle lorsque vous validez le calendrier avec Alt Formation.",
+            "description": "Un suivi pédagogique sur trois jours puis passage à l’épreuve officielle lorsque vous validez le calendrier avec Alt RH Formations.",
             "etapes": [
                 "Attestation de fin de formation après la session présentielle ou distancielle.",
                 "Examen ISTQB Testeur Agile : 1 h, 40 QCM, 65 % de réussite requise pour la certification."
@@ -1197,19 +1197,19 @@
                 "points": [
                     "Durée : 21 heures (3 jours)",
                     "Formats : classe virtuelle, présentiel — Inter ou Intra",
-                    "Inter : 960 € HT / personne + certification obligatoire 330 € HT / personne",
-                    "Intra : 4 620 € HT / groupe + certification obligatoire 330 € HT / personne — 4 stagiaires minimum",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Inter : 960 € HT / personne + certification obligatoire 330 € HT / pers…",
+                    "Intra : 4 620 € HT / groupe + certification obligatoire 330 € HT / pers…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
-                    "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+                    "Inscriptions : nos conseillers vous accompagnent (dossier, format)."
                 ]
             },
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
                     "Certification ISTQB niveau Fondation (obligatoire).",
-                    "Expérience préalable en tests logiciels et connaissance des principes Agiles fortement recommandées."
+                    "Expérience préalable en tests logiciels et connaissance des principes A…"
                 ]
             }
         },
@@ -1230,7 +1230,7 @@
         ],
         "ctaFinal": {
             "titre": "Certifiez-vous ISTQB Testeur Agile",
-            "sousTitre": "Choisissez une session visio ou salle, ou un intra sur mesure : contactez Alt Formation au 01 60 43 94 32 ou formations@altrh.com.",
+            "sousTitre": "Choisissez une session visio ou salle, ou un intra sur mesure : contactez Alt RH Formations au 01 60 43 94 32 ou formations@altrh.com.",
             "boutons": [
                 {
                     "label": "NOUS CONTACTER",
@@ -1244,7 +1244,7 @@
         "type": "certifiante",
         "hero": {
             "titre": "ISTQB — Extension Fondation Tests d’acceptation",
-            "sousTitre": "Structurer tests d’acceptation (ATDD, BDD, BPMN, exigences non fonctionnelles) et viser la certification ISTQB Extension « Tests d’acceptation » avec Alt Formation, en classe virtuelle synchrone.",
+            "sousTitre": "Structurer tests d’acceptation (ATDD, BDD, BPMN, exigences non fonctionnelles) et viser la certification ISTQB Extension « Tests d’acceptation » avec Alt RH Formations, en classe virtuelle synchrone.",
             "video": "/assets/video/formations/dev-app.mp4"
         },
         "stats": [
@@ -1262,14 +1262,14 @@
             }
         ],
         "presentation": {
-            "titre": "Tests logiciels — ISTQB Acceptance Testing",
+            "titre": "Le métier",
             "image": "/assets/images/concepteur_app.jpg",
             "paragraphes": [
                 "Ce parcours certifiant prépare l’extension ISTQB « Tests d’acceptation » : relier besoins métiers, exigences et preuves de conformité utilisateur.",
                 "Public : équipes test/QA, MOA et analystes métiers qui sécurisent l’aval de projet.",
-                "Alt Formation anime la session en classe virtuelle interactive : même exigence de présence qu’en salle, avec des travaux guidés en direct.",
+                "Alt RH Formations anime la session en classe virtuelle interactive : même exigence de présence qu’en salle, avec des travaux guidés en direct.",
                 "Sessions inter régulières ; possibilité intra pour regrouper vos équipes sur vos créneaux (minimum de participants communiqué lors du devis).",
-                "Les financements sont étudiés dossier par dossier avec un interlocuteur Alt Formation."
+                "Les financements sont étudiés dossier par dossier avec un interlocuteur Alt RH Formations."
             ]
         },
         "objectifs": [
@@ -1311,19 +1311,19 @@
                 "points": [
                     "Durée : 14 heures (2 jours)",
                     "Format : classe virtuelle — Inter ou Intra",
-                    "Inter : 642 € HT / personne + certification obligatoire 315 € HT / personne",
-                    "Intra : 3 040 € HT / groupe + certification obligatoire 315 € HT / personne — 4 stagiaires minimum",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Inter : 642 € HT / personne + certification obligatoire 315 € HT / pers…",
+                    "Intra : 3 040 € HT / groupe + certification obligatoire 315 € HT / pers…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
-                    "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+                    "Inscriptions : nos conseillers vous accompagnent (dossier, format)."
                 ]
             },
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
                     "Certification ISTQB niveau Fondation (obligatoire).",
-                    "Expérience ou sensibilisation aux processus de validation fonctionnelle fortement recommandée."
+                    "Expérience ou sensibilisation aux processus de validation fonctionnelle…"
                 ]
             }
         },
@@ -1359,7 +1359,7 @@
         "type": "certifiante",
         "hero": {
             "titre": "Piloter et animer la sécurité informatique",
-            "sousTitre": "Avec Alt Formation, parcours certifiant long format (217 h) : stratégie cyber, ISO 27001/27005, EBIOS Risk Manager, réseaux et Linux durcis, réponse à incident et sensibilisation — 100 % classe virtuelle et travaux pratiques immersifs.",
+            "sousTitre": "Avec Alt RH Formations, parcours certifiant long format (217 h) : stratégie cyber, ISO 27001/27005, EBIOS Risk Manager, réseaux et Linux durcis, réponse à incident et sensibilisation — 100 % classe virtuelle et travaux pratiques immersifs.",
             "video": "/assets/video/formations/infra-reseau.mp4"
         },
         "stats": [
@@ -1377,14 +1377,14 @@
             }
         ],
         "presentation": {
-            "titre": "Cybersécurité — Certification de compétences",
+            "titre": "Le métier",
             "image": "/assets/images/expert_cyber.jpg",
             "paragraphes": [
                 "Ce parcours certifiant vise la maîtrise opérationnelle du pilotage cyber en entreprise : analyse du risque, SMSI ISO 27001/27002, ISO 27005, EBIOS Risk Manager, durcissement réseaux et systèmes, réponse à incident et montée en puissance de la sensibilisation.",
                 "Il s’adresse aux profils IT (techniciens, support, DSI) titulaires d’un niveau 5 ou 6 lorsque la cybersécurité n’est pas encore leur cœur de métier.",
                 "La pédagogie combine apports, démonstrations, retours d’expérience et travaux pratiques sur une plateforme immersive (scénarios type ransomware, phishing, etc.).",
                 "Le format est 100 % classe virtuelle pour permettre une montée en charge progressive sans vous éloigner durablement de vos missions.",
-                "Alt Formation coordonne inscriptions, financements éventuels et calendrier ; les engagements intra sont chiffrés au plus près de vos effectifs."
+                "Alt RH Formations coordonne inscriptions, financements éventuels et calendrier ; les engagements intra sont chiffrés au plus près de vos effectifs."
             ]
         },
         "objectifs": [
@@ -1441,7 +1441,7 @@
         },
         "evaluation": {
             "titre": "Évaluation des acquis",
-            "description": "Alt Formation s’appuie sur une progression continue puis une validation finale type jury professionnel.",
+            "description": "Alt RH Formations s’appuie sur une progression continue puis une validation finale type jury professionnel.",
             "etapes": [
                 "Quiz, travaux pratiques et cas tout au long des sept axes.",
                 "Constitution d’un dossier professionnel individuel.",
@@ -1454,25 +1454,25 @@
                 "titre": "Modalités pratiques",
                 "points": [
                     "Volume : 217 heures (7 axes)",
-                    "Déroulé : 100 % classe virtuelle — créneaux communiqués à l’inscription (éventuel mélange synchrone / asynchrone selon modules)",
-                    "Inter : 15 377 € HT / personne + certification obligatoire 370 € HT / personne",
-                    "Intra : 75 920 € HT / groupe + certification obligatoire 370 € HT / personne — 4 stagiaires minimum",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Déroulé : 100 % classe virtuelle — créneaux communiqués à l’inscription…",
+                    "Inter : 15 377 € HT / personne + certification obligatoire 370 € HT / p…",
+                    "Intra : 75 920 € HT / groupe + certification obligatoire 370 € HT / per…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
-                    "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+                    "Inscriptions : nos conseillers vous accompagnent (dossier, format)."
                 ]
             },
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
-                    "Justifier d’un diplôme ou d’une certification de niveau 5 (ex. : BTS SIO, BTS SN, BUT Informatique, DUT informatique, LP métiers de l’informatique, titres professionnels, CQP dont CQP Administrateur systèmes et réseaux, etc.)",
-                    "OU justifier d’une expérience au sein de la DSI d’une entreprise ou d’une ESN (Entreprise de services du numérique)"
+                    "Justifier d’un diplôme ou d’une certification de niveau 5 (ex. : BTS SI…",
+                    "OU justifier d’une expérience au sein de la DSI d’une entreprise ou d’u…"
                 ]
             }
         },
         "methodologie": "Sept axes complémentaires : théorie, démonstrations, retours terrain et travaux pratiques sur plateforme immersive ; vous consolidez chaque étape avant la soutenance finale.",
-        "certification": "Parcours certifiant « Piloter et animer la sécurité informatique » — organisme et modalités d’examen communiqués par Alt Formation selon votre inscription.",
+        "certification": "Parcours certifiant « Piloter et animer la sécurité informatique » — organisme et modalités d’examen communiqués par Alt RH Formations selon votre inscription.",
         "competences": [
             "Esquisser une stratégie cyber ancrée dans l’analyse de risque",
             "Coordonner durcissement réseau et serveurs selon vos contraintes",
@@ -1492,7 +1492,7 @@
         ],
         "ctaFinal": {
             "titre": "Engagez un parcours long en cybersécurité",
-            "sousTitre": "Montant, certification, planning intra ou inter : nos conseillers Alt Formation répondent au 01 60 43 94 32 ou via formations@altrh.com.",
+            "sousTitre": "Montant, certification, planning intra ou inter : nos conseillers Alt RH Formations répondent au 01 60 43 94 32 ou via formations@altrh.com.",
             "boutons": [
                 {
                     "label": "NOUS CONTACTER",
@@ -1506,7 +1506,7 @@
         "type": "certifiante",
         "hero": {
             "titre": "Développement Web — HTML5, CSS3 et JavaScript",
-            "sousTitre": "Applications web réactives : intégration HTML/CSS, JavaScript, DOM, services REST et WebSocket — parcours pratique Alt Formation préparant à la certification Éditions ENI.",
+            "sousTitre": "Applications web réactives : intégration HTML/CSS, JavaScript, DOM, services REST et WebSocket — parcours pratique Alt RH Formations préparant à la certification Éditions ENI.",
             "video": "/assets/video/formations/dev-web-mobile.mp4"
         },
         "stats": [
@@ -1524,11 +1524,11 @@
             }
         ],
         "presentation": {
-            "titre": "HTML5, CSS3, JavaScript — intégration et front-end",
+            "titre": "Le métier",
             "image": "/assets/images/concepteur_web.jpg",
             "paragraphes": [
                 "Parcours certifiant pour concevoir des applications web modernes : HTML5, CSS3 (responsive, Flexbox), formulaires, JavaScript côté navigateur, consommation d’API REST et usage de WebSocket.",
-                "Public : intégrateurs et développeurs front. Alt Formation alterne apports, démonstrations et travaux pratiques ; chaque stagiaire dispose d’un poste adapté et de supports numériques ou papier.",
+                "Public : intégrateurs et développeurs front. Alt RH Formations alterne apports, démonstrations et travaux pratiques ; chaque stagiaire dispose d’un poste adapté et de supports numériques ou papier.",
                 "Formats possibles : présentiel à Bailly-Romainvilliers ou Serris, salle immersive (formateur à distance) ou distanciel synchrone depuis votre lieu de travail.",
                 "Le parcours prépare la certification Éditions ENI « Créer et mettre en forme des pages web (HTML5 et CSS3) ». L’examen reste volontaire hors obligation contractuelle ; un travail personnel complémentaire renforce les chances de réussite.",
                 "CPF : respect du délai légal d’au moins 11 jours ouvrés entre la proposition commerciale et le démarrage. Inscriptions en général jusqu’à 48 h avant la session. Accessibilité aux personnes en situation de handicap prise en charge sur demande. Intra entreprise chiffré au cas par cas."
@@ -1635,7 +1635,7 @@
         },
         "evaluation": {
             "titre": "Évaluation des acquis",
-            "description": "Alt Formation assure un suivi de progression et vous prépare, si vous le souhaitez, à la certification Éditions ENI.",
+            "description": "Alt RH Formations assure un suivi de progression et vous prépare, si vous le souhaitez, à la certification Éditions ENI.",
             "etapes": [
                 "Auto-évaluation en début et fin de parcours.",
                 "Retour du formateur (non évalué → acquis) via QCM, TP, quiz, cas ou mises en situation.",
@@ -1649,19 +1649,19 @@
                 "points": [
                     "Durée indicative : 35 heures",
                     "Effectifs : 1 à 12 personnes (souvent 5 à 6 en moyenne)",
-                    "Inscriptions : jusqu’à 48 h avant le début en général ; CPF : 11 jours ouvrés minimum entre proposition et démarrage",
+                    "Inscriptions : jusqu’à 48 h avant le début en général ; CPF : 11 jours…",
                     "Intra-entreprise : sur devis",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
-                    "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+                    "Inscriptions : nos conseillers vous accompagnent (dossier, format)."
                 ]
             },
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
                     "Savoir mettre en œuvre l’algorithmique dans un langage de programmation",
-                    "OU avoir suivi la formation T410-010 « Algorithmique — Initiation à la programmation » ou équivalent"
+                    "OU avoir suivi la formation T410-010 « Algorithmique — Initiation à la…"
                 ]
             }
         },
@@ -1683,7 +1683,7 @@
         ],
         "ctaFinal": {
             "titre": "Planifiez votre formation Web certifiante",
-            "sousTitre": "Inter, intra ou financement : un conseiller Alt Formation vous répond au 01 60 43 94 32 ou via formations@altrh.com.",
+            "sousTitre": "Inter, intra ou financement : un conseiller Alt RH Formations vous répond au 01 60 43 94 32 ou via formations@altrh.com.",
             "boutons": [
                 {
                     "label": "NOUS CONTACTER",
@@ -1697,7 +1697,7 @@
         "type": "certifiante",
         "hero": {
             "titre": "Python — Programmation orientée objet (certifiante)",
-            "sousTitre": "Renforcez Python orienté objet avec PyCharm : modules, classes, exceptions, tests et interfaces Tkinter — chemin Alt Formation vers la certification RS6701 délivrée par les Éditions ENI.",
+            "sousTitre": "Renforcez Python orienté objet avec PyCharm : modules, classes, exceptions, tests et interfaces Tkinter — chemin Alt RH Formations vers la certification RS6701 délivrée par les Éditions ENI.",
             "video": "/assets/video/formations/dev-app.mp4"
         },
         "stats": [
@@ -1715,14 +1715,14 @@
             }
         ],
         "presentation": {
-            "titre": "Python objet — certification France Compétences RS6701",
+            "titre": "Le métier",
             "image": "/assets/images/concepteur_app.jpg",
             "paragraphes": [
                 "Parcours certifiant centré sur Python objet : installation, environnements virtuels, syntaxe, modules, classes (encapsulation, héritage, polymorphisme), exceptions, tests unittest, automatisation avec la bibliothèque standard et interfaces Tkinter.",
                 "Fil rouge pédagogique : jeux sur nombres aléatoires, calculs de dates, hiérarchie de comptes bancaires testée et sérialisée, puis IHM de consultation.",
-                "Public : développeurs et chefs de projet techniques. Alt Formation propose présentiel sur site, salle immersive ou distanciel synchrone ; groupes de 1 à 12 personnes pour garder le lien avec le formateur.",
+                "Public : développeurs et chefs de projet techniques. Alt RH Formations propose présentiel sur site, salle immersive ou distanciel synchrone ; groupes de 1 à 12 personnes pour garder le lien avec le formateur.",
                 "Une certification « Langage Python » (Éditions ENI) inscrite au Répertoire Spécifique France Compétences (référence RS6701 depuis le 19/07/2024). En financement CPF, passage de l’examen obligatoire ; les modalités officielles sont celles du certificateur.",
-                "Calendrier inter indicatif et lieux (distanciel ou villes partenaires) : précisés lors de votre demande auprès d’Alt Formation. Intra entreprise sur devis."
+                "Calendrier inter indicatif et lieux (distanciel ou villes partenaires) : précisés lors de votre demande auprès d’Alt RH Formations. Intra entreprise sur devis."
             ]
         },
         "objectifs": [
@@ -1791,7 +1791,7 @@
         },
         "evaluation": {
             "titre": "Évaluation des acquis",
-            "description": "Suivi Alt Formation et préparation à la certification RS6701 lorsque celle-ci fait partie de votre parcours.",
+            "description": "Suivi Alt RH Formations et préparation à la certification RS6701 lorsque celle-ci fait partie de votre parcours.",
             "etapes": [
                 "Auto-évaluation en début et fin de session.",
                 "Retour du formateur (non évalué à acquis) via QCM, TP, quiz, cas ou mises en situation.",
@@ -1804,21 +1804,21 @@
                 "titre": "Modalités pratiques",
                 "points": [
                     "Durée : 35 heures",
-                    "Lieux types : distanciel ou villes partenaires — détail communiqué à l’inscription",
-                    "Inscriptions : jusqu’à 48 h avant le début en général ; CPF : 11 jours ouvrés minimum entre proposition commerciale et démarrage",
+                    "Lieux types : distanciel ou villes partenaires — détail communiqué à l’…",
+                    "Inscriptions : jusqu’à 48 h avant le début en général ; CPF : 11 jours…",
                     "Intra-entreprise : sur devis",
-                    "Accessibilité : signalez vos besoins à Alt Formation pour étude préalable",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Accessibilité : signalez vos besoins à Alt RH Formations pour étude pré…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
-                    "Inscriptions, calendrier et modalités détaillées : nos conseillers vous accompagnent pour monter votre dossier et choisir le format adapté."
+                    "Inscriptions : nos conseillers vous accompagnent (dossier, format)."
                 ]
             },
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
                     "Programmer dans un langage structuré.",
-                    "Avoir suivi la formation TACNUM1-1A « Conception et programmation objet » ou posséder des connaissances et compétences équivalentes."
+                    "Avoir suivi la formation TACNUM1-1A « Conception et programmation objet…"
                 ]
             }
         },
@@ -1877,12 +1877,12 @@
             }
         ],
         "presentation": {
-            "titre": "Culture digitale : enjeux, usages et transformation",
+            "titre": "Le métier",
             "image": "/assets/images/designer_app_mobile.jpg",
             "paragraphes": [
                 "Cette formation d’une journée vous donne des repères solides sur la culture digitale, son impact sur l’économie et les organisations, et les grands courants technologiques (web, réseaux sociaux, collaboration, IoT, IA, données…).",
                 "Vous partirez avec un socle de vocabulaire partagé et une meilleure lecture des métiers et des enjeux (transformation du travail, réglementation, réputation numérique).",
-                "Alt Formation propose l’Inter-entreprise et l’intra sur mesure ; les dates s’organisent avec nos équipes de Bailly-Romainvilliers et Serris. Référence catalogue : NUM_DIGIT_06."
+                "Alt RH Formations propose l’Inter-entreprise et l’intra sur mesure ; les dates s’organisent avec nos équipes de Bailly-Romainvilliers et Serris. Référence catalogue : NUM_DIGIT_06."
             ]
         },
         "objectifs": [
@@ -1935,15 +1935,15 @@
             "modalites": {
                 "titre": "Modalités pratiques",
                 "points": [
-                    "Durée : 1 jour — volume pédagogique équivalent 5 h à 7 h selon effectif et rythme",
+                    "Durée : 1 jour — volume pédagogique équivalent 5 h à 7 h selon effectif…",
                     "Format : présentiel — inter-entreprise ou intra sur demande",
                     "Tarif indicatif inter : 1 000 € HT (devis intra sur mesure)",
                     "Référence : NUM_DIGIT_06",
-                    "Aucune session fixe à date : formation sur demande — nous consulter pour calendrier",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Aucune session fixe à date : formation sur demande — nous consulter pou…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
-                    "Inscriptions et programme personnalisé : nos conseillers vous répondent sous 48 h ouvrées en moyenne."
+                    "Inscriptions et programme personnalisé : nos conseillers vous répondent…"
                 ]
             },
             "prerequis": {
@@ -1971,7 +1971,7 @@
         ],
         "ctaFinal": {
             "titre": "Demander une formation culture digitale",
-            "sousTitre": "Inter ou intra, dates à construire avec vous : contactez Alt Formation pour une proposition adaptée à vos objectifs.",
+            "sousTitre": "Inter ou intra, dates à construire avec vous : contactez Alt RH Formations pour une proposition adaptée à vos objectifs.",
             "boutons": [
                 {
                     "label": "NOUS CONTACTER",
@@ -2007,12 +2007,12 @@
             }
         ],
         "presentation": {
-            "titre": ".NET, C# et Visual Studio — du CLR aux applications",
+            "titre": "Le métier",
             "image": "/assets/images/concepteur_app.jpg",
             "paragraphes": [
                 "Parcours certifiant pour développeurs qui veulent produire des applications .NET professionnelles avec Visual Studio : compréhension de la plateforme, langage C# (y compris évolutions récentes), POO, bibliothèques de base, LINQ et aperçu des stacks WPF, ASP.NET MVC et services.",
                 "La progression alterne apports, démonstrations et travaux pratiques guidés (algorithmes, classes, exceptions, collections, mini-projets).",
-                "Inter-entreprise ou intra sur demande ; planning construit avec Alt Formation (Bailly-Romainvilliers / Serris). Référence catalogue : NUM_DEV_21."
+                "Inter-entreprise ou intra sur demande ; planning construit avec Alt RH Formations (Bailly-Romainvilliers / Serris). Référence catalogue : NUM_DEV_21."
             ]
         },
         "objectifs": [
@@ -2080,9 +2080,9 @@
                     "Inter-entreprise ou intra-entreprise sur devis",
                     "Tarif indicatif inter : 3 000 € HT",
                     "Référence : NUM_DEV_21",
-                    "Sessions : sur demande (aucun calendrier fixe) — contact pour proposer des dates",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Sessions : sur demande (aucun calendrier fixe) — contact pour proposer…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
                     "Demande de formation sur mesure : réponse sous 48 h ouvrées en moyenne."
                 ]
@@ -2150,12 +2150,12 @@
             }
         ],
         "presentation": {
-            "titre": "Objet, UML, implémentation et patrons de conception",
+            "titre": "Le métier",
             "image": "/assets/images/concepteur_app.jpg",
             "paragraphes": [
                 "La formation pose les fondations de la pensée objet : modularité, réutilisabilité, évolutivité, bibliothèques de composants, puis la modélisation UML (classes, séquences) et les critères de bonne structuration.",
                 "Vous verrez comment aller du modèle à l’implémentation (langages et bases), les enjeux du distribué et les grandes plateformes (.NET, Jakarta EE), puis les frameworks, composants et design patterns comme levier de réutilisation d’expérience.",
-                "Inter ou intra sur demande ; planning avec Alt Formation. Référence catalogue : NUM_DEV_01."
+                "Inter ou intra sur demande ; planning avec Alt RH Formations. Référence catalogue : NUM_DEV_01."
             ]
         },
         "objectifs": [
@@ -2209,7 +2209,7 @@
         },
         "evaluation": {
             "titre": "Évaluation de la formation et de votre progression",
-            "description": "Parcours d’évaluation aligné sur les autres formations certifiantes Alt Formation.",
+            "description": "Parcours d’évaluation aligné sur les autres formations certifiantes Alt RH Formations.",
             "etapes": [
                 "Avant : questionnaire d’objectifs et d’auto-positionnement.",
                 "Pendant : observation et conseils personnalisés du formateur.",
@@ -2226,8 +2226,8 @@
                     "Tarif indicatif inter : 2 400 € HT",
                     "Référence : NUM_DEV_01",
                     "Sessions sur demande — calendrier communiqué à l’inscription",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
                     "Demande sur mesure : réponse sous 48 h ouvrées en moyenne."
                 ]
@@ -2235,7 +2235,7 @@
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
-                    "Connaissances de base en conception d’applications et en développement logiciel."
+                    "Connaissances de base en conception d’applications et en développement…"
                 ]
             }
         },
@@ -2257,7 +2257,7 @@
         ],
         "ctaFinal": {
             "titre": "Demander la formation Conception orientée objet",
-            "sousTitre": "Dates inter ou intra : contactez Alt Formation pour une proposition alignée sur vos enjeux.",
+            "sousTitre": "Dates inter ou intra : contactez Alt RH Formations pour une proposition alignée sur vos enjeux.",
             "boutons": [
                 {
                     "label": "NOUS CONTACTER",
@@ -2293,12 +2293,12 @@
             }
         ],
         "presentation": {
-            "titre": "Gouvernance SSI, risques et stratégie",
+            "titre": "Le métier",
             "image": "/assets/images/expert_cyber.jpg",
             "paragraphes": [
                 "Cette session certifiante aide les futurs ou actuels responsables sécurité à structurer la gouvernance du SI : cadrage ISO/IEC 27001, analyse et traitement du risque avec EBIOS RM et ISO/IEC 27005, et intégration des recommandations et référentiels utiles (dont logique ANSSI).",
                 "Vous travaillerez l’articulation entre vision métier, exigences réglementaires et plan d’action opérationnel pour une stratégie cybersécurité durable.",
-                "Alt Formation propose l’inter-entreprise sur calendrier régulier et l’intra sur devis (Île-de-France et distanciel selon session). Inscription : 01 60 43 94 32 / formations@altrh.com."
+                "Alt RH Formations propose l’inter-entreprise sur calendrier régulier et l’intra sur devis (Île-de-France et distanciel selon session). Inscription : 01 60 43 94 32 / formations@altrh.com."
             ]
         },
         "objectifs": [
@@ -2346,13 +2346,13 @@
                 "titre": "Modalités pratiques",
                 "points": [
                     "Durée : 3 jours présentiel (inter ou intra sur demande)",
-                    "Tarif indicatif inter : 2 800 € HT — certification incluse au même montant",
-                    "Calendrier inter : sessions en général sur trois jours ouvrés consécutifs (exemples 2026 : 26–28 mai ; 1–3 juin ; 8–10 juin ; 22–24 juin ; 29 juin – 1er juil. ; puis rotation hebdomadaire juil.–déc. 2026 ; 2027 : janv.–mai). La liste exacte, les salles et les fuseaux sont confirmés à l’inscription.",
-                    "Places limitées par session — réservation recommandée 3 semaines à l’avance",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Tarif indicatif inter : 2 800 € HT — certification incluse au même mont…",
+                    "Calendrier inter : sessions en général sur trois jours ouvrés consécuti…",
+                    "Places limitées par session — réservation recommandée 3 semaines à l’av…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
-                    "Formation sur mesure possible pour votre équipe (intra) : même référentiel pédagogique, dates et lieu à définir."
+                    "Formation sur mesure possible pour votre équipe (intra) : même référent…"
                 ]
             },
             "prerequis": {
@@ -2415,7 +2415,7 @@
             }
         ],
         "presentation": {
-            "titre": "Préparation à la certification Cloud Technology Associate",
+            "titre": "Le métier",
             "image": "/assets/images/Datacenter.jpg",
             "paragraphes": [
                 "Cette formation pose les bases du cloud computing et de la virtualisation pour décideurs et cadres techniques : repères ISO, Gartner et NIST, modèles de service et de déploiement, enjeux de sécurité, conformité et gouvernance du SI.",
@@ -2469,18 +2469,18 @@
                 "points": [
                     "Durée : 3 jours présentiel",
                     "Inter-entreprise ou intra sur devis",
-                    "Tarif indicatif inter : 2 500 € HT — certification CTA incluse au même montant",
-                    "Aucune session inter fixe pour le moment : dates organisées sur demande — nous contacter pour monter une session",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Tarif indicatif inter : 2 500 € HT — certification CTA incluse au même…",
+                    "Aucune session inter fixe pour le moment : dates organisées sur demande…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
-                    "Formation sur mesure possible pour votre équipe (intra) : programme ajustable à vos objectifs."
+                    "Formation sur mesure possible pour votre équipe (intra) : programme aju…"
                 ]
             },
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
-                    "Connaissances de base des architectures techniques et du management du SI",
+                    "Connaissances de base des architectures techniques et du management du…",
                     "Expérience des technologies Web d’au moins six mois"
                 ]
             }
@@ -2531,7 +2531,7 @@
             },
             {
                 "label": "Public visé",
-                "value": "Techniciens et administrateurs systèmes et réseaux"
+                "value": "Techniciens et administrateurs systèmes e…"
             },
             {
                 "label": "Tarif indicatif",
@@ -2539,7 +2539,7 @@
             }
         ],
         "presentation": {
-            "titre": "Implémentation et administration des solutions Cisco (piste CCNA)",
+            "titre": "Le métier",
             "image": "/assets/images/Terchnicien_reseau.jpg",
             "paragraphes": [
                 "La formation couvre les fondamentaux des réseaux (classification, OSI, TCP/IP, LAN), la prise en main de l’IOS Cisco et de la CLI, Ethernet et commutation, puis l’adressage IP, le routage statique, les listes d’accès et l’accès Internet.",
@@ -2589,7 +2589,7 @@
         },
         "evaluation": {
             "titre": "Évaluation de la formation et de votre progression",
-            "description": "Évaluation alignée sur le parcours standard des formations certifiantes Alt Formation, avant, pendant et après la session.",
+            "description": "Évaluation alignée sur le parcours standard des formations certifiantes Alt RH Formations, avant, pendant et après la session.",
             "etapes": [
                 "Avant : questionnaire d’objectifs personnels et d’auto-positionnement sur les thématiques du programme.",
                 "Pendant : observation de vos pratiques par le formateur et conseils personnalisés (points forts et axes de vigilance).",
@@ -2603,10 +2603,10 @@
                 "points": [
                     "Durée : 5 jours présentiel",
                     "Inter-entreprise ou intra sur devis",
-                    "Tarif indicatif inter : 3 500 € HT — prix avec certification : même montant (préparation examen 200-301)",
+                    "Tarif indicatif inter : 3 500 € HT — prix avec certification : même mon…",
                     "Aucune session inter fixe pour le moment : dates sur demande",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
                     "Formation sur mesure possible pour votre équipe (intra)"
                 ]
@@ -2664,7 +2664,7 @@
             },
             {
                 "label": "Public visé",
-                "value": "Architectes IT, resp. SI, DSI, consultants SI"
+                "value": "Architectes IT, resp. SI…"
             },
             {
                 "label": "Tarif indicatif",
@@ -2672,7 +2672,7 @@
             }
         ],
         "presentation": {
-            "titre": "Fondamentaux cloud, architecture d’entreprise et certification PCSA",
+            "titre": "Le métier",
             "image": "/assets/images/Datacenter.jpg",
             "paragraphes": [
                 "Cette session relie histoire et enjeux du cloud aux cadres d’architecture (SOA, architecture d’entreprise), aux risques, à la sécurité et aux aspects juridiques, puis aux vues IaaS, PaaS et SaaS et aux familles XaaS.",
@@ -2732,10 +2732,10 @@
                 "points": [
                     "Durée : 2 jours présentiel",
                     "Inter-entreprise ou intra sur devis",
-                    "Tarif indicatif inter : 2 700 € HT — certification PCSA incluse au même montant",
+                    "Tarif indicatif inter : 2 700 € HT — certification PCSA incluse au même…",
                     "Aucune session inter fixe pour le moment : dates sur demande",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
                     "Formation sur mesure possible pour votre équipe (intra)"
                 ]
@@ -2743,7 +2743,7 @@
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
-                    "Connaissances cloud de base souhaitables, ou équivalent aux contenus du parcours « Cloud Technology Associate (CTA) » (réf. NUM_Cloud_07) ou du stage « Cloud Computing, synthèse » (réf. AAS)"
+                    "Connaissances cloud de base souhaitables, ou équivalent aux contenus du…"
                 ]
             }
         },
@@ -2765,7 +2765,7 @@
         ],
         "ctaFinal": {
             "titre": "Demander la formation PCSA — Professional Cloud Solution Architect",
-            "sousTitre": "Inter ou intra sur mesure : devis et dates avec Alt Formation.",
+            "sousTitre": "Inter ou intra sur mesure : devis et dates avec Alt RH Formations.",
             "boutons": [
                 {
                     "label": "NOUS CONTACTER",
@@ -2801,12 +2801,12 @@
             }
         ],
         "presentation": {
-            "titre": "Introduction à l’audit sécurité des applications Android",
+            "titre": "Le métier",
             "image": "/assets/images/analyst_soc.jpg",
             "paragraphes": [
                 "Cette formation certifiante pose les fondations pour des audits mobiles avancés : mise en œuvre d’un dispositif de tests d’intrusion ciblant Android, lecture du code et de la surface d’attaque (analyse statique), puis observation du comportement applicatif et des flux (analyse réseau et dynamique).",
                 "Les travaux pratiques alternent avec des apports méthodologiques pour que vous repartiez avec des réflexes opérationnels.",
-                "Alt Formation propose l’inter-entreprise (calendrier communiqué à l’inscription) et l’intra sur devis. Contact : 01 60 43 94 32 — formations@altrh.com."
+                "Alt RH Formations propose l’inter-entreprise (calendrier communiqué à l’inscription) et l’intra sur devis. Contact : 01 60 43 94 32 — formations@altrh.com."
             ]
         },
         "objectifs": [
@@ -2833,7 +2833,7 @@
         },
         "evaluation": {
             "titre": "Évaluation de la formation et de votre progression",
-            "description": "Parcours d’évaluation aligné sur les autres formations certifiantes Alt Formation.",
+            "description": "Parcours d’évaluation aligné sur les autres formations certifiantes Alt RH Formations.",
             "etapes": [
                 "Avant : questionnaire d’objectifs personnels et de positionnement sur les thèmes du programme.",
                 "Pendant : observation de vos pratiques par le formateur et conseils personnalisés (points forts et axes de vigilance).",
@@ -2846,11 +2846,11 @@
                 "titre": "Modalités pratiques",
                 "points": [
                     "Durée : 2 jours présentiel — inter-entreprise ou intra sur devis",
-                    "Tarif indicatif inter : 1 056 € HT — certification « Audit sécurité d’applications mobiles Android – Introduction » incluse au même montant",
-                    "Public : consultants en sécurité, administrateurs système ou réseau, développeurs",
-                    "Calendrier inter : sessions en présentiel sur l’année — dates et lieux confirmés à l’inscription",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Tarif indicatif inter : 1 056 € HT — certification « Audit sécurité d’a…",
+                    "Public : consultants en sécurité, administrateurs système ou réseau…",
+                    "Calendrier inter : sessions en présentiel sur l’année — dates et lieux…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
                     "Formation sur mesure possible pour votre équipe (intra)"
                 ]
@@ -2915,12 +2915,12 @@
             }
         ],
         "presentation": {
-            "titre": "Sécurité intégrée à la livraison continue",
+            "titre": "Le métier",
             "image": "/assets/images/devops.jpg",
             "paragraphes": [
                 "Le parcours relie vocabulaire et principes DevSecOps à la culture d’entreprise : stratégie, sciences de la donnée appliquées au risque, équipes rouges et bleues, et implémentation concrète dans les flux CI/CD.",
                 "Vous aborderez l’hygiène de sécurité, l’IAM, la sécurité applicative (AST, menaces, automatisation), la sécurité opérationnelle, la GRC et la conformité dans un contexte DevOps, puis journalisation, détection et réponse.",
-                "Inter ou intra sur devis ; aucune session inter figée pour le moment. Référence : NUM_DEVSEC_02. Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com."
+                "Inter ou intra sur devis ; aucune session inter figée pour le moment. Référence : NUM_DEVSEC_02. Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com."
             ]
         },
         "objectifs": [
@@ -2951,7 +2951,7 @@
         },
         "evaluation": {
             "titre": "Évaluation de la formation et de votre progression",
-            "description": "Dispositif standard des formations certifiantes Alt Formation, du positionnement initial au bilan à froid.",
+            "description": "Dispositif standard des formations certifiantes Alt RH Formations, du positionnement initial au bilan à froid.",
             "etapes": [
                 "Avant : questionnaire d’objectifs personnels et de positionnement sur les thématiques.",
                 "Pendant : observation par le formateur et conseils personnalisés (forces et axes de vigilance).",
@@ -2965,10 +2965,10 @@
                 "points": [
                     "Durée : 2 jours présentiel",
                     "Inter-entreprise ou intra sur devis",
-                    "Tarif indicatif inter : 2 000 € HT — certification DevSecOps Engineering (DSOE) incluse au même montant",
+                    "Tarif indicatif inter : 2 000 € HT — certification DevSecOps Engineerin…",
                     "Aucune session inter fixe pour le moment : dates sur demande",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
                     "Formation sur mesure possible pour votre équipe (intra)"
                 ]
@@ -2976,7 +2976,7 @@
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
-                    "Connaissance des services IT en général, notamment de la sécurité et des méthodologies agiles (Scrum)"
+                    "Connaissance des services IT en général, notamment de la sécurité et de…"
                 ]
             }
         },
@@ -3027,7 +3027,7 @@
             },
             {
                 "label": "Public visé",
-                "value": "Développeurs, ingénieurs, chefs de projet techniques"
+                "value": "Développeurs, ingénieurs…"
             },
             {
                 "label": "Tarif indicatif",
@@ -3035,7 +3035,7 @@
             }
         ],
         "presentation": {
-            "titre": "Du C++ procédural aux objets, templates et STL",
+            "titre": "Le métier",
             "image": "/assets/images/concepteur_app.jpg",
             "paragraphes": [
                 "La formation enchaîne la syntaxe et les spécificités C++ (par rapport au C), puis l’approche orientée objet avec prise en main de l’outil de développement et des travaux pratiques structurés autour d’une étude de cas.",
@@ -3086,7 +3086,7 @@
         },
         "evaluation": {
             "titre": "Évaluation de la formation et de votre progression",
-            "description": "Évaluation structurée comme sur les autres parcours certifiants Alt Formation.",
+            "description": "Évaluation structurée comme sur les autres parcours certifiants Alt RH Formations.",
             "etapes": [
                 "Avant : questionnaire d’objectifs personnels et de positionnement sur les thèmes du programme.",
                 "Pendant : observation de vos pratiques et retours personnalisés du formateur.",
@@ -3102,8 +3102,8 @@
                     "Inter-entreprise ou intra sur devis",
                     "Tarif indicatif inter : 3 000 € HT",
                     "Aucune session inter fixe pour le moment : dates sur demande",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
                     "Formation sur mesure possible pour votre équipe (intra)"
                 ]
@@ -3133,7 +3133,7 @@
         ],
         "ctaFinal": {
             "titre": "Demander la formation Programmation objet en C++",
-            "sousTitre": "Inter ou intra : devis et dates avec Alt Formation.",
+            "sousTitre": "Inter ou intra : devis et dates avec Alt RH Formations.",
             "boutons": [
                 {
                     "label": "NOUS CONTACTER",
@@ -3161,7 +3161,7 @@
             },
             {
                 "label": "Public visé",
-                "value": "Admins virtualisation, sécu. cloud, DSI, auditeurs cloud"
+                "value": "Admins virtualisation, sécu. cloud…"
             },
             {
                 "label": "Tarif indicatif",
@@ -3169,12 +3169,12 @@
             }
         ],
         "presentation": {
-            "titre": "Standards de criminalistique numérique et préparation C-DFE",
+            "titre": "Le métier",
             "image": "/assets/images/expert_cyber.jpg",
             "paragraphes": [
                 "À l’issue du parcours, les participants sont en mesure d’instaurer des standards professionnels reconnus en criminalistique numérique, alignés sur les meilleures pratiques et politiques du secteur, et de se présenter sereinement à l’examen C-DFE.",
                 "Le programme couvre incidents, théorie et processus d’enquête, acquisitions et analyse sur disques et systèmes (Windows, Linux, macOS), preuves numériques, laboratoire, eDiscovery, mobile, gestion d’incident et restitution.",
-                "Inter-entreprise selon calendrier Mile2 / Alt Formation, ou intra sur devis. Contact : 01 60 43 94 32 — formations@altrh.com."
+                "Inter-entreprise selon calendrier Mile2 / Alt RH Formations, ou intra sur devis. Contact : 01 60 43 94 32 — formations@altrh.com."
             ]
         },
         "objectifs": [
@@ -3231,10 +3231,10 @@
                 "titre": "Modalités pratiques",
                 "points": [
                     "Durée : 5 jours présentiel — inter-entreprise ou intra sur devis",
-                    "Tarif indicatif inter : 2 399,20 € HT — certification C-DFE incluse au même montant",
-                    "Calendrier inter indicatif (France, présentiel) : 8–12 juin, 15–19 juin, 22–26 juin, 29 juin – 3 juil., 6–10 juil., 20–24 juil., 27–31 juil., 3–7 août, 10–14 août, 17–21 août, 24–28 août, 7–11 sept., 14–18 sept., 21–25 sept., 28 sept. – 2 oct., 5–9 oct., 12–16 oct., 19–23 oct., 26–30 oct., 2–6 nov., 16–20 nov., 23–27 nov., 30 nov. – 4 déc., 7–11 déc., 14–18 déc. 2026 ; 12–16 janv., 19–23 janv., 26–30 janv., 2–6 févr., 9–13 févr., 16–20 févr., 23–27 févr., 2–6 mars, 9–13 mars, 16–20 mars, 23–27 mars, 13–17 avr., 20–24 avr., 18–22 mai 2027. Dates et lieux définitifs à l’inscription",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Tarif indicatif inter : 2 399,20 € HT — certification C-DFE incluse au…",
+                    "Calendrier inter indicatif (France, présentiel) : 8–12 juin, 15–19 juin…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
                     "Formation sur mesure possible pour votre équipe (intra)"
                 ]
@@ -3243,7 +3243,7 @@
                 "titre": "Prérequis",
                 "points": [
                     "Au minimum 1 an d’expérience en environnement informatique",
-                    "Avoir suivi la formation Mile2 C)SP (Certified Security Principles) ou équivalent communiqué par l’organisme",
+                    "Avoir suivi la formation Mile2 C)SP (Certified Security Principles) ou…",
                     "Mile2 Foundational Course Pack (pack de cours fondamentaux Mile2)"
                 ]
             }
@@ -3266,7 +3266,7 @@
         ],
         "ctaFinal": {
             "titre": "Réserver la formation C-DFE — Certified Digital Forensics Examiner",
-            "sousTitre": "Choisissez une session inter ou demandez un intra : devis, financement et inscription avec Alt Formation.",
+            "sousTitre": "Choisissez une session inter ou demandez un intra : devis, financement et inscription avec Alt RH Formations.",
             "boutons": [
                 {
                     "label": "NOUS CONTACTER",
@@ -3302,7 +3302,7 @@
             }
         ],
         "presentation": {
-            "titre": "Les 8 domaines CISSP et alignement sécurité / métier",
+            "titre": "Le métier",
             "image": "/assets/images/expert_cyber.jpg",
             "paragraphes": [
                 "La formation relie les concepts IT et sécurité aux enjeux opérationnels : protection des actifs sur leur cycle de vie, conception et supervision de systèmes, réseaux et applications avec une exigence de confidentialité, intégrité et disponibilité (CIA).",
@@ -3394,10 +3394,10 @@
                 "titre": "Modalités pratiques",
                 "points": [
                     "Durée : 5 jours présentiel — inter-entreprise ou intra sur devis",
-                    "Tarif indicatif inter : 3 120 € HT — certification ISC2 CISSP incluse au même montant",
-                    "Calendrier inter indicatif (France, présentiel) : 1–5 juin, 8–12 juin, 15–19 juin, 22–26 juin, 29 juin – 3 juil., 6–10 juil., 20–24 juil., 27–31 juil., 3–7 août, 10–14 août, 17–21 août, 24–28 août, 7–11 sept., 14–18 sept., 21–25 sept., 5–9 oct., 12–16 oct., 19–23 oct., 26–30 oct., 2–6 nov., 16–20 nov., 23–27 nov., 30 nov. – 4 déc., 7–11 déc., 14–18 déc. 2026 ; 26–30 janv., 9–13 févr., 16–20 févr., 23–27 févr., 9–13 mars, 16–20 mars, 30 mars – 3 avr., 13–17 avr., 20–24 avr., 18–22 mai 2027. Dates et lieux définitifs à l’inscription",
-                    "Contact Alt Formation : 01 60 43 94 32 — formations@altrh.com",
-                    "Adresses : 3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris",
+                    "Tarif indicatif inter : 3 120 € HT — certification ISC2 CISSP incluse a…",
+                    "Calendrier inter indicatif (France, présentiel) : 1–5 juin, 8–12 juin…",
+                    "Contact Alt RH Formations : 01 60 43 94 32 — formations@altrh.com",
+                    "Lieux : Bailly-Romainvilliers & Serris (77)",
                     "Horaires d'accueil : lundi au vendredi, 9h00 – 18h00",
                     "Formation sur mesure possible pour votre équipe (intra)"
                 ]
@@ -3405,7 +3405,7 @@
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
-                    "Notions solides de réseaux et de systèmes d’exploitation, ainsi qu’en sécurité de l’information",
+                    "Notions solides de réseaux et de systèmes d’exploitation…",
                     "Notions d’audit et de continuité d’activité (business continuity)"
                 ]
             }
@@ -3433,7 +3433,7 @@
         ],
         "ctaFinal": {
             "titre": "Réserver la formation CISSP — Certified Information Systems Security Professional",
-            "sousTitre": "Choisissez une session inter ou demandez un intra : devis, financement et inscription avec Alt Formation.",
+            "sousTitre": "Choisissez une session inter ou demandez un intra : devis, financement et inscription avec Alt RH Formations.",
             "boutons": [
                 {
                     "label": "NOUS CONTACTER",
@@ -3467,7 +3467,7 @@
             }
         ],
         "presentation": {
-            "titre": "Présentation du cycle de formation",
+            "titre": "Le métier",
             "paragraphes": [
                 "Ce cycle de formation vous guide pas à pas dans l’apprentissage de la syntaxe de base du langage, la manipulation des structures de données, l’application de la programmation orientée objet et l’utilisation des modules et packages pour structurer vos projets. Vous êtes également formé·e à l’optimisation du code afin de garantir des scripts performants et maintenables.",
                 "Conçu pour les professionnel·le·s en reconversion ou en évolution de carrière, ce programme vous permet de développer des compétences immédiatement opérationnelles, tout en vous donnant l’opportunité de valider la certification TOSA.",
@@ -3630,7 +3630,7 @@
             }
         ],
         "presentation": {
-            "titre": "Présentation de la formation",
+            "titre": "Le métier",
             "description": "L’essor incroyable du web mobile et le nombre croissant de terminaux ont bouleversé les comportements des internautes. Il devient crucial pour les entreprises d’optimiser leur site pour qu’il s’adapte aux différentes résolutions d’écran. Cette formation vous donne les clés pour appréhender les enjeux du Responsive Web Design, en termes de techniques, de design, et de bonnes pratiques.",
             "pourquoi": {
                 "titre": "Pourquoi réaliser une Formation Responsive Web Design ?",
@@ -3851,7 +3851,7 @@
             }
         ],
         "presentation": {
-            "titre": "Présentation de la formation",
+            "titre": "Le métier",
             "description": "Le langage de programmation PHP permet de générer dynamiquement des pages Web, notamment en lien avec une base de données. Très populaire en raison de sa nature open-source et de ses multi fonctionnalités, il dispose d’une forte communauté et d’une grande part de marché. C’est par exemple avec PHP qu’est écrit le très connu CMS WordPress. Le PHP est un langage assez simple pour les débutant·e·s, et les programmeur·euse·s professionnel·le·s peuvent également l’utiliser pour des fonctions plus avancées.",
             "pourquoi": {
                 "titre": "Pourquoi réaliser une Formation PHP ?",
@@ -4054,7 +4054,7 @@
             }
         ],
         "presentation": {
-            "titre": "Présentation de la formation",
+            "titre": "Le métier",
             "description": "Que ce soit dans le monde de l’entreprise ou dans la vie courante, le numérique occupe une place conséquente de notre quotidien : emails, réseaux sociaux, banque, impôts, applications, télétravail, etc. Tout cela attire des individus qui peuvent désormais commettre leurs actes malveillants à distance et subtiliser vos informations personnelles, usurper votre identité, prendre en otage vos données ou encore vous voler vos coordonnées bancaires. À la fin de cette formation, vous serez en mesure d’identifier les pièges dans l’espace numérique.",
             "pourquoi": {
                 "titre": "Pourquoi réaliser une Formation Initiation à la Cybersécurité ?",
@@ -4223,7 +4223,7 @@
             }
         ],
         "presentation": {
-            "titre": "Présentation de la formation",
+            "titre": "Le métier",
             "description": "Une cyberattaque peut avoir des impacts catastrophiques sur une entreprise : vol de données, impacts sur la réputation, pertes financières, etc. Ce quelle que soit la taille de sa structure. Pour autant, il n'existe pas de fatalité : lorsque la simple bonne volonté des employé·e·s ne suffit plus à maintenir un niveau de sécurité adéquat, il est temps de passer à la vitesse supérieure ! Cette formation vous permettra ainsi de maîtriser les concepts liés à l'organisation et à la mise en place d'une cybersécurité efficace en entreprise.",
             "pourquoi": {
                 "titre": "Pourquoi réaliser une Formation Implémenter une politique de Cybersécurité ?",
@@ -4400,7 +4400,7 @@
             }
         ],
         "presentation": {
-            "titre": "Présentation de la formation",
+            "titre": "Le métier",
             "description": "Cisco est un constructeur informatique de matériel réseau de référence depuis les débuts d’internet. En proposant un grand nombre d’équipements permettant d’équiper informatiquement les entreprises, il s’impose comme un leader du marché de l’administration réseau pour les professionnels. Cette formation permettra aux futur·e·s technicien·ne·s système et réseau d'administrer les équipements réseaux Cisco dans le cadre de leurs missions professionnelles.",
             "pourquoi": {
                 "titre": "Pourquoi réaliser une Formation Configuration et administration d’équipements réseaux CISCO ?",
@@ -4629,7 +4629,7 @@
             }
         ],
         "presentation": {
-            "titre": "Microsoft 365 Copilot — formation certifiante",
+            "titre": "Le métier",
             "image": "/assets/images/analyste_data.jpg",
             "paragraphes": [
                 "Cette formation certifiante permet de comprendre comment utiliser l’intelligence artificielle générative dans un contexte professionnel avec Microsoft 365 Copilot. Vous découvrez comment automatiser des tâches, améliorer la création de contenu et optimiser la collaboration au sein des outils Microsoft 365.",
@@ -4702,12 +4702,12 @@
                 "titre": "Modalités pratiques",
                 "points": [
                     "Durée : 7 heures (1 jour).",
-                    "Formats : présentiel en salle, téléprésentiel immersif, ou depuis votre domicile / entreprise (même qualité de suivi qu’en présentiel).",
-                    "Groupes de 1 à 12 stagiaires (5 à 6 en moyenne), poste de travail adapté et supports pédagogiques numériques ou papier.",
+                    "Formats : présentiel en salle, téléprésentiel immersif…",
+                    "Groupes de 1 à 12 stagiaires (5 à 6 en moyenne)…",
                     "Inscriptions possibles jusqu’à 48 h avant le début de la formation.",
-                    "Financement CPF : délai minimal de 11 jours ouvrés entre l’envoi de la proposition et le début de la formation.",
+                    "Financement CPF : délai minimal de 11 jours ouvrés entre l’envoi de la…",
                     "Sessions inter-entreprise et sur mesure en intra-entreprise (devis).",
-                    "Accessibilité aux personnes en situation de handicap : adaptations étudiées sur demande.",
+                    "Accessibilité aux personnes en situation de handicap : adaptations étud…",
                     "Contact Alt RH & formations : 01 60 43 94 32 — formations@altrh.com"
                 ]
             },
@@ -4716,7 +4716,7 @@
                 "points": [
                     "Connaissance de base de Microsoft 365.",
                     "Maîtrise des usages bureautiques courants (Word, Excel, Outlook, Teams).",
-                    "Compréhension des processus métier standards dans son environnement professionnel."
+                    "Compréhension des processus métier standards dans son environnement pro…"
                 ]
             }
         },
@@ -4776,7 +4776,7 @@
             }
         ],
         "presentation": {
-            "titre": "IA générative au service du quotidien IT",
+            "titre": "Le métier",
             "image": "/assets/images/Terchnicien_reseau.jpg",
             "paragraphes": [
                 "Face à l’évolution des environnements informatiques et à la montée de l’IA, les administrateur·rice·s et technicien·ne·s ont l’opportunité de transformer leur façon de travailler. Cette formation certifiante vise à faire découvrir et maîtriser l’usage concret de l’IA générative (ChatGPT, Copilot, Mistral, Perplexity, etc.) au service des tâches quotidiennes d’administration systèmes et réseaux.",
@@ -4842,12 +4842,12 @@
             "modalites": {
                 "titre": "Modalités pratiques",
                 "points": [
-                    "Durée : 2 jours (environ 14 heures) — présentiel, téléprésentiel immersif ou distanciel en immersion avec le groupe.",
-                    "Groupes de 1 à 12 stagiaires (5 à 6 en moyenne), poste adapté et supports numériques ou papier.",
+                    "Durée : 2 jours (environ 14 heures) — présentiel…",
+                    "Groupes de 1 à 12 stagiaires (5 à 6 en moyenne)…",
                     "Inscriptions possibles jusqu’à 48 h avant le début de la session.",
-                    "Financement CPF : délai minimal de 11 jours ouvrés entre la proposition et le début de formation (dispositif applicable).",
+                    "Financement CPF : délai minimal de 11 jours ouvrés entre la proposition…",
                     "Inter-entreprise et intra-entreprise sur devis.",
-                    "Accessibilité des personnes en situation de handicap : étude des besoins sur demande.",
+                    "Accessibilité des personnes en situation de handicap : étude des besoin…",
                     "Contact Alt RH & formations : 01 60 43 94 32 — formations@altrh.com"
                 ]
             },
@@ -4917,7 +4917,7 @@
             }
         ],
         "presentation": {
-            "titre": "Maîtrise des IA génératives",
+            "titre": "Le métier",
             "image": "/assets/images/analyste_data.jpg",
             "paragraphes": [
                 "Cette formation intensive vous fait explorer l’histoire, le fonctionnement et l’architecture des outils d’IA générative les plus avancés : ChatGPT, les familles GPT, et au-delà de nombreux acteurs du marché. Vous comprenez comment ces technologies transforment la finance, l’éducation, la santé et d’autres secteurs.",
@@ -4989,13 +4989,13 @@
             "modalites": {
                 "titre": "Modalités pratiques",
                 "points": [
-                    "Durée indicative : environ 14 heures sur 2 jours — présentiel, téléprésentiel immersif ou distanciel.",
-                    "Groupes de 1 à 12 participant·e·s ; supports numériques remis aux participant·e·s.",
-                    "Création d’un compte Google (gratuit) recommandée avant la formation pour certains exercices.",
+                    "Durée indicative : environ 14 heures sur 2 jours — présentiel…",
+                    "Groupes de 1 à 12 participant·e·s ; supports numériques remis aux parti…",
+                    "Création d’un compte Google (gratuit) recommandée avant la formation po…",
                     "Inscriptions possibles jusqu’à 48 h avant le début de la session.",
-                    "Financement CPF : prévoir un délai minimal de 11 jours ouvrés entre la proposition et le début lorsque le dispositif s’applique.",
+                    "Financement CPF : prévoir un délai minimal de 11 jours ouvrés entre la…",
                     "Sessions inter-entreprise et intra-entreprise sur devis.",
-                    "Accessibilité des personnes en situation de handicap : étude des besoins sur demande.",
+                    "Accessibilité des personnes en situation de handicap : étude des besoin…",
                     "Contact Alt RH & formations : 01 60 43 94 32 — formations@altrh.com"
                 ]
             },
@@ -5003,8 +5003,8 @@
                 "titre": "Prérequis",
                 "points": [
                     "Bonne maîtrise de l’environnement informatique.",
-                    "Bases de programmation fortement recommandées (quel que soit le langage).",
-                    "Compte Google (gratuit) à créer avant la formation pour réaliser certains exercices."
+                    "Bases de programmation fortement recommandées (quel que soit le langage…",
+                    "Compte Google (gratuit) à créer avant la formation pour réaliser certai…"
                 ]
             }
         },
@@ -5064,7 +5064,7 @@
             }
         ],
         "presentation": {
-            "titre": "IA générative au service du développement",
+            "titre": "Le métier",
             "image": "/assets/images/concepteur_web.jpg",
             "paragraphes": [
                 "Cette formation intensive place les développeur·euses au cœur des IA génératives : introduction approfondie à ChatGPT et à l’API OpenAI, pour faire évoluer la façon dont vous produisez et maintenez du code.",
@@ -5115,21 +5115,21 @@
                 "titre": "Modalités pratiques",
                 "points": [
                     "Durée : 14 heures — présentiel, téléprésentiel immersif ou distanciel.",
-                    "Groupes de 1 à 12 stagiaires ; support de cours fourni au format numérique.",
+                    "Groupes de 1 à 12 stagiaires ; support de cours fourni au format numéri…",
                     "Inscriptions possibles jusqu’à 48 h avant le début de la session.",
-                    "Financement CPF : délai minimal de 11 jours ouvrés entre proposition et début lorsque le dispositif s’applique.",
+                    "Financement CPF : délai minimal de 11 jours ouvrés entre proposition et…",
                     "Sessions inter-entreprise et intra-entreprise (devis).",
-                    "Accessibilité des personnes en situation de handicap : étude des besoins sur demande.",
+                    "Accessibilité des personnes en situation de handicap : étude des besoin…",
                     "Contact Alt RH & formations : 01 60 43 94 32 — formations@altrh.com"
                 ]
             },
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
-                    "Connaissances de base en programmation et en développement web front-end (HTML, CSS, JavaScript).",
+                    "Connaissances de base en programmation et en développement web front-en…",
                     "Maîtrise d’au moins un langage back-end (Python, PHP, Java, etc.).",
-                    "Création d’un compte ChatGPT (chat.openai.com) et d’un compte développeur OpenAI avant la formation.",
-                    "Prévoir un budget pour l’accès aux offres ChatGPT / crédits API OpenAI utilisés pendant les TP (tarification et formules évolutives selon le fournisseur)."
+                    "Création d’un compte ChatGPT (chat.openai.com) et d’un compte développe…",
+                    "Prévoir un budget pour l’accès aux offres ChatGPT / crédits API OpenAI…"
                 ]
             }
         },
@@ -5185,7 +5185,7 @@
             }
         ],
         "presentation": {
-            "titre": "Maîtriser l’API ChatGPT en production",
+            "titre": "Le métier",
             "image": "/assets/images/concepteur_app.jpg",
             "paragraphes": [
                 "Cette formation vous fait exploiter tout le potentiel de l’API ChatGPT d’OpenAI pour des applications web et mobiles : configuration, authentification, requêtes et réponses, paramètres avancés et conversations multi-tours pour des échanges plus précis et contextualisés.",
@@ -5240,12 +5240,12 @@
                 "titre": "Modalités pratiques",
                 "points": [
                     "Durée : 21 heures — présentiel, téléprésentiel immersif ou distanciel.",
-                    "Travaux pratiques sous forme de notebooks ; support de cours numérique fourni.",
+                    "Travaux pratiques sous forme de notebooks ; support de cours numérique…",
                     "Groupes de 1 à 12 participant·e·s.",
                     "Inscriptions possibles jusqu’à 48 h avant le début de la session.",
-                    "Financement CPF : délai minimal de 11 jours ouvrés entre proposition et début lorsque le dispositif s’applique.",
+                    "Financement CPF : délai minimal de 11 jours ouvrés entre proposition et…",
                     "Inter-entreprise et intra sur devis.",
-                    "Accessibilité des personnes en situation de handicap : étude des besoins sur demande.",
+                    "Accessibilité des personnes en situation de handicap : étude des besoin…",
                     "Contact Alt RH & formations : 01 60 43 94 32 — formations@altrh.com"
                 ]
             },
@@ -5253,9 +5253,9 @@
                 "titre": "Prérequis",
                 "points": [
                     "Aucune expérience préalable en IA n’est exigée.",
-                    "Connaissances de base en programmation et en développement web front-end (HTML, CSS, JavaScript).",
+                    "Connaissances de base en programmation et en développement web front-en…",
                     "Maîtrise d’au moins un langage back-end (Python, PHP, Java, etc.).",
-                    "Création préalable d’un compte sur la plateforme OpenAI et d’un compte ChatGPT — prévoir un budget pour l’accès facturé à l’API (tarification du fournisseur, selon usage)."
+                    "Création préalable d’un compte sur la plateforme OpenAI et d’un compte…"
                 ]
             }
         },
@@ -5314,7 +5314,7 @@
             }
         ],
         "presentation": {
-            "titre": "L’IA au service de votre communication",
+            "titre": "Le métier",
             "image": "/assets/images/designer_app_mobile.jpg",
             "paragraphes": [
                 "Cette formation approfondit l’usage de l’intelligence artificielle générative dans une perspective communication et webmarketing : fondements, rédaction de prompts, création de contenus éditoriaux, et mise en œuvre concrète dans vos campagnes et dispositifs digitaux.",
@@ -5404,12 +5404,12 @@
             "modalites": {
                 "titre": "Modalités pratiques",
                 "points": [
-                    "Durée indicative : environ 15 h 30 sur 2 jours — présentiel, téléprésentiel immersif ou distanciel.",
+                    "Durée indicative : environ 15 h 30 sur 2 jours — présentiel…",
                     "Groupes de 1 à 12 participant·e·s ; support numérique fourni.",
                     "Inscriptions possibles jusqu’à 48 h avant le début.",
-                    "Financement CPF : délai minimal de 11 jours ouvrés entre proposition et début lorsque le dispositif s’applique.",
-                    "Inter / intra sur devis — accès aux outils d’IA tiers éventuellement soumis à abonnement payant de votre côté.",
-                    "Accessibilité des personnes en situation de handicap : étude des besoins sur demande.",
+                    "Financement CPF : délai minimal de 11 jours ouvrés entre proposition et…",
+                    "Inter / intra sur devis — accès aux outils d’IA tiers éventuellement so…",
+                    "Accessibilité des personnes en situation de handicap : étude des besoin…",
                     "Contact Alt RH & formations : 01 60 43 94 32 — formations@altrh.com"
                 ]
             },
@@ -5417,7 +5417,7 @@
                 "titre": "Prérequis",
                 "points": [
                     "Maîtriser les bases du webmarketing et de la communication digitale.",
-                    "Être à l’aise avec les outils numériques courants (bureautique, navigateur, réseaux sociaux)."
+                    "Être à l’aise avec les outils numériques courants (bureautique…"
                 ]
             }
         },
@@ -5477,7 +5477,7 @@
             }
         ],
         "presentation": {
-            "titre": "Une formation intensive orientée production",
+            "titre": "Le métier",
             "image": "/assets/images/analyste_data.jpg",
             "paragraphes": [
                 "Cette session intensive couvre les principes fondamentaux du machine learning, de la définition d’un problème adapté jusqu’à la production de résultats actionnables : prétraitement des données, construction et évaluation de modèles, et identification des verrous techniques (sur-apprentissage, biais, qualité des données, etc.).",
@@ -5541,20 +5541,20 @@
             "modalites": {
                 "titre": "Modalités pratiques",
                 "points": [
-                    "Durée indicative : environ 35 h sur 5 jours — présentiel, téléprésentiel immersif ou distanciel.",
-                    "Groupes de 1 à 12 participant·e·s ; support pédagogique numérique ou papier selon session.",
+                    "Durée indicative : environ 35 h sur 5 jours — présentiel…",
+                    "Groupes de 1 à 12 participant·e·s ; support pédagogique numérique ou pa…",
                     "Inscriptions possibles jusqu’à 48 h avant le début.",
-                    "Financement CPF : délai minimal de 11 jours ouvrés entre proposition et début lorsque le dispositif s’applique.",
-                    "Inter / intra sur devis — environnement logiciel (Python ou équivalent) et accès aux données d’exercices fournis ou à préciser.",
-                    "Accessibilité des personnes en situation de handicap : étude des besoins sur demande.",
+                    "Financement CPF : délai minimal de 11 jours ouvrés entre proposition et…",
+                    "Inter / intra sur devis — environnement logiciel (Python ou équivalent)…",
+                    "Accessibilité des personnes en situation de handicap : étude des besoin…",
                     "Contact Alt RH & formations : 01 60 43 94 32 — formations@altrh.com"
                 ]
             },
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
-                    "Connaissances de base en programmation dans au moins un langage utilisé pendant la formation.",
-                    "Notions d’algèbre linéaire (matrices, dérivées) et de statistiques fortement recommandées."
+                    "Connaissances de base en programmation dans au moins un langage utilisé…",
+                    "Notions d’algèbre linéaire (matrices, dérivées) et de statistiques fort…"
                 ]
             }
         },
@@ -5612,7 +5612,7 @@
             }
         ],
         "presentation": {
-            "titre": "Comprendre l’IA sans prérequis technique",
+            "titre": "Le métier",
             "image": "/assets/images/analyste_data.jpg",
             "paragraphes": [
                 "Ce séminaire propose une vue d’ensemble des enjeux et tendances de l’intelligence artificielle, avec un accent sur le machine learning et le deep learning : retour historique, questions d’actualité (éthique, données, emploi…), et panorama des capacités réelles des systèmes d’aujourd’hui.",
@@ -5661,19 +5661,19 @@
             "modalites": {
                 "titre": "Modalités pratiques",
                 "points": [
-                    "Durée indicative : environ 7 h sur 1 jour — présentiel, téléprésentiel immersif ou distanciel.",
+                    "Durée indicative : environ 7 h sur 1 jour — présentiel…",
                     "Groupes de 1 à 12 participant·e·s ; support numérique selon session.",
                     "Inscriptions possibles jusqu’à 48 h avant le début.",
-                    "Financement CPF : délai minimal de 11 jours ouvrés entre proposition et début lorsque le dispositif s’applique.",
+                    "Financement CPF : délai minimal de 11 jours ouvrés entre proposition et…",
                     "Inter / intra sur devis.",
-                    "Accessibilité des personnes en situation de handicap : étude des besoins sur demande.",
+                    "Accessibilité des personnes en situation de handicap : étude des besoin…",
                     "Contact Alt RH & formations : 01 60 43 94 32 — formations@altrh.com"
                 ]
             },
             "prerequis": {
                 "titre": "Prérequis",
                 "points": [
-                    "Aucun prérequis technique — ouvert à tout public professionnel souhaitant une culture IA à jour."
+                    "Aucun prérequis technique — ouvert à tout public professionnel souhaita…"
                 ]
             }
         },
@@ -5728,7 +5728,7 @@
             }
         ],
         "presentation": {
-            "titre": "Une formation technique et orientée pratique",
+            "titre": "Le métier",
             "image": "/assets/images/analyste_data.jpg",
             "paragraphes": [
                 "Cette formation propose une introduction solide au deep learning appliqué au traitement du langage : réseaux de neurones, rétropropagation du gradient, fonctions de non-linéarité, puis enchaînement sur les briques classiques et modernes du NLP (réseaux récurrents, LSTM, GRU, softmax, embeddings, mécanismes d’attention et de mémoire, évolutions récentes de la littérature).",
@@ -5795,12 +5795,12 @@
             "modalites": {
                 "titre": "Modalités pratiques",
                 "points": [
-                    "Durée indicative : environ 28 h sur 4 jours — présentiel, téléprésentiel immersif ou distanciel.",
-                    "Groupes de 1 à 12 participant·e·s ; support pédagogique numérique selon session ; environnement de code fourni ou à valider en amont.",
+                    "Durée indicative : environ 28 h sur 4 jours — présentiel…",
+                    "Groupes de 1 à 12 participant·e·s ; support pédagogique numérique selon…",
                     "Inscriptions possibles jusqu’à 48 h avant le début.",
-                    "Financement CPF : délai minimal de 11 jours ouvrés entre proposition et début lorsque le dispositif s’applique.",
-                    "Inter / intra sur devis — usage d’outils / bibliothèques open source selon stack retenue (à préciser avec le formateur).",
-                    "Accessibilité des personnes en situation de handicap : étude des besoins sur demande.",
+                    "Financement CPF : délai minimal de 11 jours ouvrés entre proposition et…",
+                    "Inter / intra sur devis — usage d’outils / bibliothèques open source se…",
+                    "Accessibilité des personnes en situation de handicap : étude des besoin…",
                     "Contact Alt RH & formations : 01 60 43 94 32 — formations@altrh.com"
                 ]
             },
@@ -5808,8 +5808,8 @@
                 "titre": "Prérequis",
                 "points": [
                     "Connaissances de base en programmation.",
-                    "Notions d’algèbre linéaire (matrices, dérivées) et de statistiques fortement recommandées.",
-                    "Avoir suivi notre formation « Machine learning — fondamentaux (intensif) » ou disposer de compétences équivalentes en machine learning."
+                    "Notions d’algèbre linéaire (matrices, dérivées) et de statistiques fort…",
+                    "Avoir suivi notre formation « Machine learning — fondamentaux (intensif…"
                 ]
             }
         },

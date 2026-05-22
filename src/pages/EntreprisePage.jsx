@@ -55,7 +55,7 @@ export default function EntreprisePage() {
       </main>
 
       {/* ======== SECTION STATISTIQUES ======== */}
-      <StatsSection stats={stats} title="Pourquoi choisir Alt Formations ?" variant="navy" />
+      <StatsSection stats={stats} title="Pourquoi choisir Alt RH Formations ?" variant="navy" />
 
       {/* ======== SECTION CTA FINAL ======== */}
       <CallToAction

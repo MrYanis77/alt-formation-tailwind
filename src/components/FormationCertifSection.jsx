@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Award } from 'lucide-react';
 
@@ -79,7 +79,7 @@ export default function FormationCertifSection({ certif, showFallback = false })
         ) : (
           <div className="max-w-2xl mx-auto text-center rounded-2xl border border-border bg-gray-50 px-8 py-12">
             <p className="text-content-muted text-base leading-relaxed mb-8">
-              Alt Formations est certifié Qualiopi et propose des parcours menant à des certifications reconnues.
+              Alt RH Formations est certifié Qualiopi et propose des parcours menant à des certifications reconnues.
               Retrouvez l'ensemble des titres RNCP associés à nos formations sur la page dédiée.
             </p>
             <Link to="/certification" className="btn-orange inline-block text-sm py-3 px-8 no-underline uppercase font-bold tracking-wider">

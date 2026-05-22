@@ -461,7 +461,7 @@ export const navlinks = [
       {
         label: "Blog & actualités",
         href: "/blog",
-        image: "/images/blog/financement-formation.jpg",
+        image: "/assets/images/blog.jpg",
         description: "Articles, conseils et tendances sur la formation et le digital.",
       },
       {

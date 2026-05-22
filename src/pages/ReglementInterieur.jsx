@@ -31,7 +31,7 @@ export default function ReglementInterieur() {
             <div>
               <p className="font-bold text-primary uppercase mb-8">Fait à Bailly Romainvilliers</p>
               <p className="mb-2 underline underline-offset-4">La Direction</p>
-              <p className="font-bold italic text-content-dark uppercase">Alt Formations</p>
+              <p className="font-bold italic text-content-dark uppercase">Alt RH Formations</p>
             </div>
             <div className="md:text-right">
               <p className="mb-8">Nom, prénom et signature du stagiaire :</p>
@@ -42,7 +42,7 @@ export default function ReglementInterieur() {
 
         {/* COORDONNÉES ADMINISTRATIVES */}
         <div className="mt-16 pt-8 border-t border-gray-100 text-tiny text-center opacity-60 uppercase tracking-widest leading-loose">
-          Alt Formations — 03 Rue du Cochet – 77700 Bailly Romainvilliers — Siret : 811 698 919 00016<br/>
+          Alt RH Formations — 03 Rue du Cochet – 77700 Bailly Romainvilliers — Siret : 811 698 919 00016<br/>
           Naf : 70.22Z — TVA : FR39811698919 — RCS 811 698 919 R.C.S. Meaux — Capital : 20 000.00 €
         </div>
 

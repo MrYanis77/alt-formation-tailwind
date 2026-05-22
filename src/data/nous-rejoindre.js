@@ -5,12 +5,12 @@
 export const dataNousRejoindre = {
     collaborateur: {
         hero: {
-            titre: "Rejoignez l'équipe Alt Formations",
+            titre: "Rejoignez l'équipe Alt RH Formations",
             sousTitre: "Développez votre carrière au sein d'un organisme en pleine croissance.",
             video: "/assets/video/nous-rejoindre.mp4",
         },
         pourquoiNousRejoindre: {
-            titre: "Pourquoi rejoindre Alt Formations ?",
+            titre: "Pourquoi rejoindre Alt RH Formations ?",
             sousTitre: "Intégrez une entreprise dynamique, innovante et humaine.",
             valeurs: [
                 { id: 1, titre: "Ambiance conviviale", description: "Un environnement bienveillant et solidaire." },
@@ -36,7 +36,7 @@ export const dataNousRejoindre = {
         },
         sectionEquipe: {
             titre: "Rejoignez une équipe passionnée",
-            paragraphe1: "Chez Alt Formations, nous croyons que la force d'une entreprise réside dans ses collaborateurs.",
+            paragraphe1: "Chez Alt RH Formations, nous croyons que la force d'une entreprise réside dans ses collaborateurs.",
             paragraphe2: "Nous avons une place pour vous dans notre équipe.",
             stats: [
                 { label: "Collaborateurs", valeur: "50+" },
@@ -79,7 +79,7 @@ export const dataNousRejoindre = {
             paragraphe1: "Nos formateurs sont des mentors qui préparent les élèves au monde réel.",
             paragraphe2: "Nous vous accompagnons dans la création de vos supports.",
             stats: [
-                { label: "Formateurs experts", valeur: "80+" },
+                { label: "Formateurs experts", valeur: "180+" },
                 { label: "Taux de réussite", valeur: "95%" }
             ]
         }

@@ -51,7 +51,7 @@ function h($str) { return htmlspecialchars($str, ENT_QUOTES, 'UTF-8'); }
 $htmlStagiaire = '
 <div style="font-family:sans-serif;color:#1a202c;max-width:600px;margin:0 auto;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
   <div style="background:#1e2f47;padding:32px 24px;text-align:center;">
-    <h1 style="color:#fca311;margin:0;font-size:24px;text-transform:uppercase;letter-spacing:2px;">Alt Formations</h1>
+    <h1 style="color:#fca311;margin:0;font-size:24px;text-transform:uppercase;letter-spacing:2px;">Alt RH Formations</h1>
     <p style="color:#cbd5e0;margin:8px 0 0;font-size:14px;">Confirmation d\'inscription</p>
   </div>
   <div style="padding:32px 24px;">
@@ -84,12 +84,12 @@ $htmlStagiaire = '
       <a href="mailto:formations@alt-rh.com" style="color:#fca311;font-weight:600;">formations@alt-rh.com</a> 
       ou par téléphone au <strong>01 60 43 94 30</strong>.
     </p>
-    <p style="margin-top:32px;color:#1e2f47;font-weight:600;">L\'équipe Alt Formations</p>
+    <p style="margin-top:32px;color:#1e2f47;font-weight:600;">L\'équipe Alt RH Formations</p>
   </div>
   <div style="background:#f8fafc;padding:16px 24px;text-align:center;border-top:1px solid #e2e8f0;">
     <p style="margin:0;font-size:11px;color:#aaa;">
       3 rue du cochet, 77700 Bailly-Romainvilliers — 2-4 boulevard Michaël Faraday, 77700 Serris<br>
-      © Alt Formations — <a href="https://alt-rh.com" style="color:#aaa;">alt-rh.com</a>
+      © Alt RH Formations — <a href="https://alt-rh.com" style="color:#aaa;">alt-rh.com</a>
     </p>
   </div>
 </div>';
@@ -98,7 +98,7 @@ $htmlStagiaire = '
 $htmlAdmin = '
 <div style="font-family:sans-serif;color:#1a202c;max-width:600px;margin:0 auto;border:1px solid #e2e8f0;border-radius:8px;padding:20px;">
   <div style="background:#1e2f47;padding:20px 24px;border-radius:6px 6px 0 0;margin:-20px -20px 20px;">
-    <h1 style="color:#fca311;margin:0;font-size:20px;text-transform:uppercase;letter-spacing:2px;">Alt Formations</h1>
+    <h1 style="color:#fca311;margin:0;font-size:20px;text-transform:uppercase;letter-spacing:2px;">Alt RH Formations</h1>
     <p style="color:#fff;margin:4px 0 0;font-size:13px;">Nouvelle inscription à une formation</p>
   </div>
   <table style="width:100%;border-collapse:collapse;margin-top:10px;">
@@ -135,7 +135,7 @@ try {
     $mail->isHTML(true);
     $mail->Subject = "Confirmation d'inscription – $formation";
     $mail->Body    = $htmlStagiaire;
-    $mail->AltBody = "Bonjour $prenom $nom,\n\nVotre inscription à la formation \"$formation\" est bien enregistrée." . ($date ? "\nDate : $date" : '') . "\n\nL'équipe Alt Formations";
+    $mail->AltBody = "Bonjour $prenom $nom,\n\nVotre inscription à la formation \"$formation\" est bien enregistrée." . ($date ? "\nDate : $date" : '') . "\n\nL'équipe Alt RH Formations";
     $mail->send();
 
     // 2. Notification à l'admin

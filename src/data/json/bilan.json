@@ -1,63 +1,306 @@
 {
     "bilanDeCompetences": {
         "hero": {
-            "titre": "Bilan de Compétences",
-            "sousTitre": "Analysez vos compétences, clarifiez vos motivations et construisez un projet professionnel solide avec l'accompagnement d'Alt Formations.",
+            "titre": "Bilan de compétences",
+            "sousTitre": "Prenez du recul sur votre parcours, mettez des mots sur vos compétences et posez les fondations d'une trajectoire professionnelle cohérente, avec Alt RH Formations.",
             "video": "/assets/video/bilan.mp4"
         },
-        "titre": "Bilan de Compétences",
+        "titre": "Clarifiez votre projet professionnel",
         "image": "/assets/images/emploi.jpg",
-        "tagline": "Faites le point sur votre parcours et définissez sereinement votre avenir professionnel.",
-        "description": "Le bilan de compétences est une démarche officielle et structurée qui permet d'analyser vos compétences professionnelles et personnelles, vos aptitudes et vos motivations afin de définir un projet professionnel ou un projet de formation adapté à votre situation.",
+        "tagline": "Une pause structurée pour avancer avec un cap, pas au hasard.",
+        "description": "Le bilan de compétences est une prestation encadrée par la loi : elle vise à dresser un état des lieux honnête de vos compétences, de vos appétences et de votre contexte, afin de déboucher sur un projet professionnel (ou des hypothèses de formation) argumenté et actionnable.",
+        "introPlus": {
+            "bullets": [
+                "Respect strict du dispositif légal : phases, durée plafond et document de synthèse remis au bénéficiaire.",
+                "Un interlocuteur unique pour toute la durée : pas d'orientation « en chaîne », le fil de la réflexion reste lisible.",
+                "Trois volumes d'heures au choix pour coller au degré de complexité de votre situation, sans vous imposer une offre unique.",
+                "Les entretiens peuvent être menés sur site ou en visio, avec la possibilité d'alterner selon vos contraintes.",
+                "Des plages entre les séances pour intégrer ce que vous découvrez, plutôt qu'un empilement de rendez-vous serrés.",
+                "Montage des dossiers de prise en charge expliqué pas à pas lorsque vous activez un financeur (CPF, employeur, France Travail, etc.)."
+            ]
+        },
         "contenu": {
-            "titre": "Le Bilan de Compétences",
-            "description": "Le bilan de compétences permet d'analyser ses compétences professionnelles et personnelles, ses aptitudes et ses motivations afin de définir un projet professionnel ou un projet de formation.",
+            "titre": "Objectifs de la démarche",
+            "description": "L'objectif n'est pas de « diagnostiquer » une vérité figée sur vous, mais de produire une lecture partagée de votre parcours et de vos options, à partir d'échanges, d'outils pertinents et d'un retour régulier du conseiller.",
             "objectifs": [
-                "Analyser son parcours professionnel pour identifier ses savoir-faire.",
-                "Mieux connaître ses motivations et ses centres d'intérêt.",
-                "Identifier ses ressources et ses axes de développement.",
-                "Définir un projet professionnel réaliste et réalisable."
+                "Ordonner votre expérience passée pour en extraire des compétences nommées et valorisables.",
+                "Donner une place explicite à ce qui vous attire, ce qui vous pèse et ce qui reste négociable.",
+                "Repérer les leviers et les verrous du contexte (contrat, famille, santé, mobilité, formation).",
+                "Formuler au moins une trajectoire principale jugée sérieuse, avec des jalons réalistes."
             ],
             "lesTroisPhases": [
                 {
-                    "phase": "Phase Préliminaire",
-                    "details": "Confirmer l'engagement dans la démarche, définir les besoins et présenter les méthodes de travail."
+                    "phase": "Phase préliminaire",
+                    "details": "Vérification de votre compréhension du dispositif, recueil des attentes et des contraintes, présentation des règles de confidentialité et du calendrier, choix éventuel d'outils d'exploration pour la suite."
                 },
                 {
-                    "phase": "Phase d'Investigation",
-                    "details": "Analyser le parcours, identifier les compétences, les motivations et explorer les pistes d'évolution."
+                    "phase": "Phase d'investigation",
+                    "details": "Travail sur votre historique professionnel et personnel pour en extraire des compétences, des motifs d'engagement et des angles morts ; confrontation prudente avec des pistes concrètes (marché du travail, formation, évolution interne)."
                 },
                 {
-                    "phase": "Phase de Conclusion",
-                    "details": "Recenser les facteurs de réussite, définir les étapes du projet et remettre un document de synthèse."
+                    "phase": "Phase de conclusion",
+                    "details": "Choix ou arbitrages argumentés, définition des premières actions concrètes, rédaction et remise du document de synthèse qui officialise la réalisation du bilan."
+                }
+            ]
+        },
+        "pourquoiFaire": {
+            "titre": "Pourquoi faire un bilan de compétences ?",
+            "decalage": {
+                "titre": "Vous vous reconnaissez dans ces situations",
+                "points": [
+                    "Le métier fonctionne encore « techniquement », mais la motivation plonge ou devient intermittente.",
+                    "Une décision externe impose une réorientation : reclassement, fin de mission, préavis de mobilité géographique.",
+                    "Vous hésitez entre plusieurs directions sans critères pour trancher sans vous précipiter.",
+                    "Un projet existe dans votre tête mais semble fragile une fois confronté aux délais, au budget ou au marché.",
+                    "Vous souhaitez documenter votre évolution pour la présenter à votre structure RH ou à un financeur."
+                ]
+            },
+            "reprendre": {
+                "titre": "Ce que vous obtenez à l'issue du bilan",
+                "points": [
+                    "Une carte lisible : où vous en êtes, ce qui est consolidé et ce qui reste hypothétique.",
+                    "Une décision ou un ensemble de décisions mieux formulées (formation courte, VAE, mobilité, statut…).",
+                    "Une liste d'étapes court terme qui évite de tout remettre au lendemain du dernier entretien.",
+                    "Des formulations prêtes pour échanger avec un employeur ou une administration sans improvisation.",
+                    "Un sentiment plus stable de légitimité sur vos expériences, au-delà du titre de poste."
+                ]
+            }
+        },
+        "demarrage": {
+            "titre": "Les étapes pour démarrer",
+            "etapes": [
+                {
+                    "titre": "Premier contact",
+                    "description": "Vous nous présentez votre contexte ; nous vérifions ensemble si le bilan répond bien à votre questionnement ou si une autre prestation serait plus pertinente."
+                },
+                {
+                    "titre": "Devis et financement",
+                    "description": "Nous fixons la durée retenue, le mode de réalisation et les engagements réciproques ; nous vous guidons dans les pièces à joindre selon votre mode de paiement."
+                },
+                {
+                    "titre": "Lancement du bilan",
+                    "description": "Démarrage effectif par la phase préliminaire : vous savez quel sera le déroulé, les délais et les livrables à attendre."
+                },
+                {
+                    "titre": "Accompagnement et synthèse",
+                    "description": "Les séances centrales donnent corps au dossier ; la phase de conclusion verrouille les conclusions et vous remet la synthèse officielle."
+                }
+            ]
+        },
+        "parcours": {
+            "titre": "Déroulement de votre accompagnement",
+            "sousTitre": "Le cadre légal impose trois phases ; à l'intérieur, nous adaptons les angles selon votre vécu.",
+            "etapes": [
+                {
+                    "titre": "Cadrage",
+                    "points": [
+                        "Ce qui entre dans le bilan — et ce qui, volontairement, reste hors périmètre pour garder la séance utile.",
+                        "Les modalités logistiques et les engagements sur la confidentialité."
+                    ]
+                },
+                {
+                    "titre": "Analyse de votre parcours",
+                    "points": [
+                        "Revivre les étapes marquantes pour détecter les patterns : ce qui vous a fait grandir, ce qui vous a épuisé.",
+                        "Ne pas réduire votre valeur au dernier intitulé de poste."
+                    ]
+                },
+                {
+                    "titre": "Exploration des pistes",
+                    "points": [
+                        "Comparer plusieurs voies sans les idéaliser : temps, niveau de risque, niveau de diplôme visé.",
+                        "Introduire des informations externes lorsque le projet le nécessite (ordres de grandeur, filières connues)."
+                    ]
+                },
+                {
+                    "titre": "Choix et arbitrage",
+                    "points": [
+                        "Nommer explicitement ce que vous retenez comme hypothèse principale.",
+                        "Identifier les conditions sine qua non pour que cette hypothèse devienne viable."
+                    ]
+                },
+                {
+                    "titre": "Plan d'action et synthèse",
+                    "points": [
+                        "Découper « ce qui commence la semaine prochaine » de ce qui relevé du trimestre suivant.",
+                        "Finaliser la synthèse qui restera votre référence écrite après la fin du bilan."
+                    ]
+                }
+            ]
+        },
+        "tarifs": {
+            "titre": "Nos formules et tarifs",
+            "sousTitre": "Les montants ci-dessous correspondent aux trois niveaux d'accompagnement actuellement proposés (temps avec votre conseiller). Un devis précis et une étude de financement peuvent être réalisés après échange.",
+            "noteCommune": {
+                "titre": "Inclus dans chaque formule",
+                "texte": "La prestation inclut les temps de rendez-vous avec votre conseiller et une préparation entre séances lorsque la méthode l'exige. La réglementation fixe une durée maximale de vingt-quatre heures pour le bilan au global ; au-delà des séances synchrones, une partie du temps peut prendre la forme de travaux guidés à votre initiative.",
+                "mentionConsultant": "Les rendez-vous peuvent avoir lieu dans nos locaux ou à distance ; le mode est arrêté avec vous avant la signature du cadre."
+            },
+            "formules": [
+                {
+                    "nom": "Essentiel",
+                    "heures": 15,
+                    "prix": 1600,
+                    "resume": "Volume adapté lorsque votre question est déjà bien formulée mais mérite une lecture structurée et une décision documentée.",
+                    "programme": "Passage en revue des domaines habituels du bilan — savoir-faire, motivations, contraintes — puis mise au net d'une orientation principale et d'une première série de gestes à engager.",
+                    "dureeDetails": [
+                        "Quinze heures au titre du bilan avec votre conseiller",
+                        "Échelonnement habituel sur deux à quatre mois",
+                        "Synthèse écrite conforme aux obligations du dispositif"
+                    ],
+                    "situations": [
+                        "« Je dois structurer une demande interne ou une candidature sans improviser mon discours. »",
+                        "« J'ai plusieurs cordes au métier mais je ne sais pas laquelle privilégier pour les trois ans à venir. »"
+                    ],
+                    "modalite": "Présentiel ou visio. Prise en charge : selon votre statut et les références disponibles sur les plateformes publiques ; nous précisons au cas par cas après lecture de votre dossier."
+                },
+                {
+                    "nom": "Confort",
+                    "heures": 18,
+                    "prix": 1800,
+                    "resume": "Volume intermédiaire lorsque les arbitrages demandent davantage de temps de parole et de confrontation aux données.",
+                    "programme": "Même socle méthodologique que la formule Essentiel, avec des créneaux supplémentaires pour creuser les zones encore floues (priorités contradictoires, peur du saut, lecture du marché…).",
+                    "dureeDetails": [
+                        "Dix-huit heures avec votre conseiller",
+                        "Étalement typique sur deux à quatre mois",
+                        "Possibilité d'approfondir deux scénarios avant de trancher"
+                    ],
+                    "situations": [
+                        "« Je balance entre deux secteurs qui n'ont pas les mêmes contraintes de vie. »",
+                        "« Je veux éviter de confondre coup de fatigue et vrai besoin de bifurcation. »"
+                    ],
+                    "modalite": "Présentiel ou visio. Financements : étude commune des dispositifs mobilisables selon votre situation professionnelle au moment de la demande."
+                },
+                {
+                    "nom": "Premium",
+                    "heures": 20,
+                    "prix": 2000,
+                    "resume": "La volumétrie la plus large lorsque la trajectoire implique plusieurs variables à stabiliser en parallèle.",
+                    "programme": "Parcours dense axé sur la robustesse du projet : consolidation des analyses personnelles, exploration suivie des hypothèses retenues et préparation méthodique à ce qui suivra immédiatement la fin du bilan.",
+                    "dureeDetails": [
+                        "Vingt heures avec votre conseiller",
+                        "Durée globale souvent comprise entre trois et cinq mois",
+                        "Adapté aux dossiers où la décision engage fortement budgets ou famille"
+                    ],
+                    "situations": [
+                        "« Je prépare une création ou une activité hybride avec peu de marges d'erreur. »",
+                        "« Je change radicalement de secteur et je veux tester mes hypothèses avant de m'engager. »"
+                    ],
+                    "modalite": "Présentiel ou visio. Modalités financières : examen au cas par cas ; aucune combinaison n'est présupposée sans validation du financeur concerné."
+                }
+            ]
+        },
+        "chiffresCles": {
+            "titre": "La satisfaction de nos bénéficiaires",
+            "cartes": [
+                {
+                    "valeur": "98%",
+                    "texte": "estiment que la méthode et les échanges ont bien reflété leur niveau d'exigence au départ"
+                },
+                {
+                    "valeur": "95%",
+                    "texte": "donnent une note globalement positive au bilan au moment de la remise du document de synthèse"
+                },
+                {
+                    "valeur": "92%",
+                    "texte": "maintiennent un jugement favorable lors du point de satisfaction ouvert six mois après la fin du bilan"
                 }
             ]
         },
         "pourquoiChoisir": {
-            "titre": "Pourquoi réaliser un bilan de compétences ?",
-            "intro": "Choisir Alt Formations, c'est bénéficier d'un accompagnement certifié, confidentiel et orienté résultats pour construire un avenir professionnel qui vous ressemble.",
+            "titre": "Pourquoi choisir Alt RH Formations ?",
+            "intro": "Un bilan réussi repose sur la qualité du cadre autant que sur la bienveillance du conseiller : nous articulons les deux sans fondre la prestation dans un simple « coaching » informel.",
             "avantages": [
                 {
-                    "titre": "Clarifier son projet professionnel",
-                    "description": "Identifier un projet réaliste et cohérent avec vos compétences, vos valeurs et le marché de l'emploi."
+                    "titre": "Méthode structurée",
+                    "description": "Chaque séance renvoie aux phases légales et au livrable final : vous savez où vous êtes dans le parcours, sans perdre le fil au milieu des digressions."
                 },
                 {
-                    "titre": "Valoriser ses compétences",
-                    "description": "Prendre conscience de vos savoir-faire acquis et les mettre en avant auprès des recruteurs."
+                    "titre": "Confidentialité et neutralité",
+                    "description": "Le conseiller n'est pas partie prenante dans vos décisions ; son rôle est d'éclairer et de challenger sans prendre votre place."
                 },
                 {
-                    "titre": "Préparer une reconversion",
-                    "description": "Obtenir des clés concrètes pour changer de voie en toute sérénité et avec méthode."
+                    "titre": "Présentiel ou visio, horaires adaptés",
+                    "description": "Créneaux journée ou début de soirée selon disponibilités, alternance présentiel / visio lorsque les deux sont pertinents."
                 },
                 {
-                    "titre": "Accéder à une formation adaptée",
-                    "description": "Identifier la formation la plus pertinente pour atteindre vos objectifs et évoluer dans votre carrière."
+                    "titre": "Lien avec nos formations et certifications",
+                    "description": "Si votre projet débouche sur une formation dispensée par Alt RH Formations ou sur une démarche certifiante, la transition peut être préparée dès la phase de conclusion."
+                },
+                {
+                    "titre": "Organisme certifié Qualiopi",
+                    "description": "Les procédures qualité attendues par les financeurs publics sont connues du service administratif ; votre dossier n'est pas improvisé au dernier moment."
+                },
+                {
+                    "titre": "Engagements clairs et vérifiables",
+                    "description": "Nous préférons des formulations vérifiables à des promesses floues : ce qui est garanti par la loi ou par le contrat est dit explicitement."
+                }
+            ]
+        },
+        "financementBloc": {
+            "titre": "Financer votre bilan de compétences",
+            "intro": "Le prix du bilan peut être absorbé tout ou partie selon votre situation au jour où vous montez le dossier ; voici les grandes familles que nous retravaillons fréquemment avec les bénéficiaires.",
+            "points": [
+                "Salariés : solde CPF, accord employeur dans le cadre du développement des compétences, ou partie personnelle si nécessaire.",
+                "Personnes inscrites à France Travail : pistes selon votre référent et votre droit aux dispositifs ouverts au moment du dossier.",
+                "Profils particuliers : nous vous signalons les organismes sectoriels lorsque votre statut les rend concernés.",
+                "Après votre premier échange écrit ou téléphonique : proposition budgétaire formalisée avant tout engagement définitif."
+            ],
+            "lienLabel": "Consulter la page Financements du site",
+            "lienUrl": "/financements"
+        },
+        "deontologie": {
+            "titre": "Cadre légal et déontologie",
+            "points": [
+                "La prestation est individuelle ; les contenus produits pendant les séances restent couverts par le secret professionnel applicable.",
+                "La synthèse vous est remise à titre personnel ; aucune diffusion à votre employeur sans consentement exprès.",
+                "La durée réglementaire du bilan est plafonnée à vingt-quatre heures.",
+                "Les attestations de présence ou questionnaires participent au suivi qualité du centre lorsque votre financeur l'exige.",
+                "Le conseiller respecte les bonnes pratiques attachées au métier de conseil en évolution professionnelle."
+            ]
+        },
+        "faqPage": {
+            "titre": "Questions fréquentes",
+            "sousTitre": "Réponses courtes ; votre situation précise sera toujours re-verbalisée lors d'un échange direct.",
+            "initialVisibleCount": 6,
+            "lienVersFaqComplete": {
+                "label": "Accéder à l'ensemble des questions / réponses du site",
+                "url": "/faq"
+            },
+            "items": [
+                {
+                    "q": "Le bilan s'étale sur combien de semaines ou de mois ?",
+                    "a": "Il n'y a pas de durée calendaire imposée par la loi, mais la réglementation borne la prestation à vingt-quatre heures au total. Dans les faits, les organismes étalent généralement les séances sur plusieurs mois pour laisser infuser les analyses."
+                },
+                {
+                    "q": "Est-ce que je dois prendre des notes entre deux rendez-vous ?",
+                    "a": "Ce n'est pas une obligation au sens juridique du terme, mais des temps personnels peuvent être suggérés pour préparer la séance suivante ou tester une hypothèse : votre conseiller précise ce qui est facultatif ou attendu."
+                },
+                {
+                    "q": "Puis-je faire l'intégralité du bilan depuis chez moi ?",
+                    "a": "Oui si les conditions techniques préservent la qualité des échanges et la confidentialité. Le cadre sera précisé avant signature ; certaines situations se prêtent mieux au présentiel pour une partie du temps."
+                },
+                {
+                    "q": "Qu'est-ce qui distingue juridiquement le bilan d'une séance de coaching libre ?",
+                    "a": "Le bilan suit trois phases réglementaires et doit déboucher sur une synthèse identifiée comme telle ; un coaching hors ce cadre ne présente pas les mêmes obligations pour l'organisme ni les mêmes effets pour les financeurs institutionnels."
+                },
+                {
+                    "q": "Est-ce que je repars avec un CV ou une lettre prête à poster ?",
+                    "a": "Le bilan vise avant tout la clarification du projet professionnel et les grandes lignes d'actions ; les livrables annexes type CV peuvent faire l'objet d'autres prestations si vous le souhaitez après coup."
+                },
+                {
+                    "q": "L'employeur est-il automatiquement au courant si je passe par mon CPF ?",
+                    "a": "Ce n'est pas systématique : tout dépend du calendrier choisi (temps de travail ou hors temps de travail) et du montage financier. Nous vous aidons à distinguer les cas où une information devient nécessaire."
+                },
+                {
+                    "q": "Comment lit-on les prix affichés sur cette page ?",
+                    "a": "Ce sont des références pour trois volumétries ; le montant exact figurera sur votre devis après analyse du mode de financement et des éventuelles aides cumulables."
                 }
             ]
         },
         "testsExterieurs": {
-            "titre": "Tests & Outils en ligne gratuits",
-            "intro": "En complément de notre accompagnement, voici une sélection de tests officiels et fiables pour amorcer votre réflexion sur vos compétences.",
+            "titre": "Outils gratuits pour explorer votre profil",
+            "intro": "Ces liens externes sont fournis à titre exploratoire ; ils ne remplacent ni les entretiens ni les outils éventuellement mobilisés pendant votre bilan avec Alt RH Formations.",
             "tests": [
                 {
                     "nom": "Test de Personnalité (MBTI)",
@@ -81,11 +324,11 @@
         },
         "cta": [
             {
-                "label": "Demander un bilan",
+                "label": "Écrire au service bilan",
                 "url": "/contact"
             },
             {
-                "label": "En savoir plus",
+                "label": "Questions avant dossier",
                 "url": "/contact"
             }
         ]

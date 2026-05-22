@@ -164,7 +164,7 @@ export default function NousRejoindre() {
           <div className="rounded-section overflow-hidden h-[400px] xl:h-[500px] shadow-lg border-8 border-white group">
             <img
               src="/assets/images/rejoindre.jpg"
-              alt="Team Alt Formations"
+              alt="Team Alt RH Formations"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
           </div>

@@ -6,14 +6,16 @@ import { rateLimit } from 'express-rate-limit';
 import hpp from 'hpp';
 import cookieParser from 'cookie-parser';
 
-import { attachUser } from './middleware/auth.js';
+import { attachUser, attachAdminUser } from './middleware/auth.js';
 
 import authRoutes from './routes/auth.js';
+import adminAuthRoutes from './routes/adminAuth.js';
 import contactRoutes from './routes/contact.js';
 import faqRoutes from './routes/faq.js';
 import chatRoutes from './routes/chat.js';
 import adminRoutes from './routes/admin.js';
 import visitRoutes from './routes/visit.js';
+import { isDatabaseDisabled } from './db.js';
 
 dotenv.config();
 
@@ -85,6 +87,7 @@ const chatLimiter = rateLimit({
 });
 
 app.use('/api/auth/', authLimiter);
+app.use('/api/admin/auth/', authLimiter);
 app.use('/api/contact', formLimiter);
 app.use('/api/visit', visitLimiter);
 app.use('/api/chat/messages', chatLimiter);
@@ -92,8 +95,10 @@ app.use('/api/faq/requests', chatLimiter);
 
 // --- Auth context attaché à toutes les requêtes /api ---
 app.use('/api/', attachUser);
+app.use('/api/', attachAdminUser);
 
 // --- Routes ---
+app.use('/api/admin/auth', adminAuthRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/faq', faqRoutes);
@@ -101,9 +106,14 @@ app.use('/api/chat', chatRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/visit', visitRoutes);
 
-app.get('/api/health', (_req, res) => res.json({ ok: true }));
+app.get('/api/health', (_req, res) =>
+  res.json({ ok: true, databaseDisabled: isDatabaseDisabled })
+);
 
 app.listen(port, () => {
   console.log(`Serveur Express backend lancé sur http://localhost:${port}`);
   console.log(`CORS origines autorisées: ${allowedOrigins.join(', ')}`);
+  if (isDatabaseDisabled) {
+    console.warn('[backend] DISABLE_DATABASE actif — pas de MySQL, données factices (tests uniquement).');
+  }
 });

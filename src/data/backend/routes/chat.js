@@ -1,15 +1,14 @@
 import express from 'express';
 import { query } from '../db.js';
-import { requireAuth, requireAdmin } from '../middleware/auth.js';
+import { requireAuth, requireAdmin, requireUserOrAdmin } from '../middleware/auth.js';
 import { parseId, looksLikeInjection } from '../utils.js';
 
 const router = express.Router();
 
-// ---------------------------------------------------------------------------
-// Helper: vérifier qu'un utilisateur a accès à une conversation
-// ---------------------------------------------------------------------------
-async function userOwnsConversation(user, { contactId, faqRequestId }) {
-  if (user.role === 'admin') return true;
+async function canAccessConversation(req, { contactId, faqRequestId }) {
+  if (req.adminUser) return true;
+  const user = req.user;
+  if (!user) return false;
   if (contactId) {
     const rows = await query('SELECT user_id FROM contacts WHERE id = ?', [contactId]);
     return rows.length > 0 && rows[0].user_id === user.id;
@@ -21,9 +20,6 @@ async function userOwnsConversation(user, { contactId, faqRequestId }) {
   return false;
 }
 
-// ---------------------------------------------------------------------------
-// USER : liste de mes conversations (contacts + faq_requests)
-// ---------------------------------------------------------------------------
 router.get('/conversations/mine', requireAuth, async (req, res) => {
   try {
     const contacts = await query(
@@ -59,9 +55,6 @@ router.get('/conversations/mine', requireAuth, async (req, res) => {
   }
 });
 
-// ---------------------------------------------------------------------------
-// ADMIN : liste de toutes les conversations
-// ---------------------------------------------------------------------------
 router.get('/conversations', requireAdmin, async (_req, res) => {
   try {
     const contacts = await query(
@@ -82,11 +75,7 @@ router.get('/conversations', requireAdmin, async (_req, res) => {
   }
 });
 
-// ---------------------------------------------------------------------------
-// GET contexte d'une conversation (sujet/message initial pour un contact,
-// question + réponse admin pour une faq_request)
-// ---------------------------------------------------------------------------
-router.get('/context', requireAuth, async (req, res) => {
+router.get('/context', requireUserOrAdmin, async (req, res) => {
   try {
     const contactId = req.query.contactId ? parseId(req.query.contactId) : null;
     const faqRequestId = req.query.faqRequestId ? parseId(req.query.faqRequestId) : null;
@@ -95,7 +84,7 @@ router.get('/context', requireAuth, async (req, res) => {
       return res.status(400).json({ success: false, error: 'contactId ou faqRequestId requis' });
     }
 
-    const ok = await userOwnsConversation(req.user, { contactId, faqRequestId });
+    const ok = await canAccessConversation(req, { contactId, faqRequestId });
     if (!ok) return res.status(403).json({ success: false, error: 'Accès refusé' });
 
     if (contactId) {
@@ -132,10 +121,7 @@ router.get('/context', requireAuth, async (req, res) => {
   }
 });
 
-// ---------------------------------------------------------------------------
-// GET messages d'une conversation
-// ---------------------------------------------------------------------------
-router.get('/messages', requireAuth, async (req, res) => {
+router.get('/messages', requireUserOrAdmin, async (req, res) => {
   try {
     const contactId = req.query.contactId ? parseId(req.query.contactId) : null;
     const faqRequestId = req.query.faqRequestId ? parseId(req.query.faqRequestId) : null;
@@ -146,23 +132,30 @@ router.get('/messages', requireAuth, async (req, res) => {
       return res.status(400).json({ success: false, error: 'contactId ou faqRequestId requis' });
     }
 
-    const ok = await userOwnsConversation(req.user, { contactId, faqRequestId });
+    const ok = await canAccessConversation(req, { contactId, faqRequestId });
     if (!ok) return res.status(403).json({ success: false, error: 'Accès refusé' });
 
-    let sql, params;
+    let sql;
+    let params;
     if (contactId) {
-      sql = `SELECT m.id, m.message, m.sender_role, m.sender_id, m.created_at,
-                    u.prenom, u.nom
+      sql = `SELECT m.id, m.message, m.sender_role, m.sender_id, m.admin_sender_id, m.created_at,
+                    COALESCE(u.prenom, '') AS prenom,
+                    COALESCE(u.nom, '') AS nom,
+                    au.username AS admin_username
              FROM chat_messages m
-             JOIN users u ON u.id = m.sender_id
+             LEFT JOIN users u ON u.id = m.sender_id
+             LEFT JOIN admin_users au ON au.id = m.admin_sender_id
              WHERE m.contact_id = ? AND m.id > ?
              ORDER BY m.id ASC`;
       params = [contactId, after];
     } else {
-      sql = `SELECT m.id, m.message, m.sender_role, m.sender_id, m.created_at,
-                    u.prenom, u.nom
+      sql = `SELECT m.id, m.message, m.sender_role, m.sender_id, m.admin_sender_id, m.created_at,
+                    COALESCE(u.prenom, '') AS prenom,
+                    COALESCE(u.nom, '') AS nom,
+                    au.username AS admin_username
              FROM chat_messages m
-             JOIN users u ON u.id = m.sender_id
+             LEFT JOIN users u ON u.id = m.sender_id
+             LEFT JOIN admin_users au ON au.id = m.admin_sender_id
              WHERE m.faq_request_id = ? AND m.id > ?
              ORDER BY m.id ASC`;
       params = [faqRequestId, after];
@@ -176,10 +169,7 @@ router.get('/messages', requireAuth, async (req, res) => {
   }
 });
 
-// ---------------------------------------------------------------------------
-// POST nouveau message
-// ---------------------------------------------------------------------------
-router.post('/messages', requireAuth, async (req, res) => {
+router.post('/messages', requireUserOrAdmin, async (req, res) => {
   try {
     const { message } = req.body || {};
     const contactId = req.body?.contactId ? parseId(req.body.contactId) : null;
@@ -198,26 +188,35 @@ router.post('/messages', requireAuth, async (req, res) => {
       return res.status(400).json({ success: false, error: 'contactId ou faqRequestId requis (entier positif)' });
     }
 
-    const ok = await userOwnsConversation(req.user, { contactId, faqRequestId });
+    const ok = await canAccessConversation(req, { contactId, faqRequestId });
     if (!ok) return res.status(403).json({ success: false, error: 'Accès refusé' });
 
-    const result = await query(
-      `INSERT INTO chat_messages (contact_id, faq_request_id, sender_id, sender_role, message)
-       VALUES (?, ?, ?, ?, ?)`,
-      [
-        contactId,
-        faqRequestId,
-        req.user.id,
-        req.user.role,
-        String(message).trim().slice(0, 2000),
-      ]
-    );
-
-    if (req.user.role === 'admin' && contactId) {
-      await query(
-        `UPDATE contacts SET status = 'replied' WHERE id = ?`,
-        [contactId]
+    let result;
+    if (req.adminUser) {
+      result = await query(
+        `INSERT INTO chat_messages (contact_id, faq_request_id, sender_id, admin_sender_id, sender_role, message)
+         VALUES (?, ?, NULL, ?, 'admin', ?)`,
+        [contactId, faqRequestId, req.adminUser.id, String(message).trim().slice(0, 2000)]
       );
+      if (contactId) {
+        await query(`UPDATE contacts SET status = 'replied' WHERE id = ?`, [contactId]);
+      }
+    } else {
+      result = await query(
+        `INSERT INTO chat_messages (contact_id, faq_request_id, sender_id, admin_sender_id, sender_role, message)
+         VALUES (?, ?, ?, NULL, ?, ?)`,
+        [
+          contactId,
+          faqRequestId,
+          req.user.id,
+          req.user.role === 'admin' ? 'admin' : 'user',
+          String(message).trim().slice(0, 2000),
+        ]
+      );
+
+      if (req.user.role === 'admin' && contactId) {
+        await query(`UPDATE contacts SET status = 'replied' WHERE id = ?`, [contactId]);
+      }
     }
 
     res.status(201).json({ success: true, id: result.insertId });

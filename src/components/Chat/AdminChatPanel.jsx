@@ -121,6 +121,7 @@ function ContactChatPanel({ contact }) {
           contactId={contact.id}
           title={`Conversation avec ${contact.prenom} ${contact.nom}`}
           compact
+          viewerMode="admin"
         />
       </div>
     </div>

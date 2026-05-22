@@ -6,9 +6,10 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import PageLoader from './components/Items/PageLoader';
 import PageShell from './components/PageShell';
+import { AuthProvider } from './context/AuthContext';
+import { AdminAuthProvider } from './context/AdminAuthContext';
 // import RequireAuth from './components/RequireAuth';
 // import ChatWidget from './components/Chat/ChatWidget';
-// import { AuthProvider } from './context/AuthContext';
 // import usePageTracking from './hooks/usePageTracking';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -34,6 +35,8 @@ const RessourcesIAPages = lazy(() => import('./pages/RessourcesIAPages'));
 const FaqPage = lazy(() => import('./pages/FaqPage'));
 const CarrierePage = lazy(() => import('./pages/CarrierePage'));
 const BilanDeCompetencePage = lazy(() => import('./pages/BilanDeCompetencePage'));
+const AdminDashboard = lazy(() => import('./pages/AdminDashboard'));
+
 /** Anciennes URLs → catalogue unifié (ancres conservées pour les domaines). */
 function RedirectFormationCatalogTab({ tab }) {
   const { hash } = useLocation();
@@ -59,7 +62,6 @@ function RedirectFormationCatalogTab({ tab }) {
 }
 
 // const UserDashboard = lazy(() => import('./pages/UserDashboard'));
-// const AdminDashboard = lazy(() => import('./pages/AdminDashboard'));
 
 function ComingSoon({ title }) {
   return (
@@ -130,24 +132,20 @@ function AppShell() {
             <Route path="/conditions-generales" element={<PolitiqueCookies />} />
             <Route path="/reglement-interieur" element={<ReglementInterieur />} />
 
-            {/*
-            <Route
-              path="/mon-espace"
-              element={
-                <RequireAuth denyAdmin>
-                  <UserDashboard />
-                </RequireAuth>
-              }
-            />
             <Route
               path="/admin"
               element={
-                <RequireAuth adminOnly>
-                  <AdminDashboard />
-                </RequireAuth>
+                <Suspense fallback={<PageLoader />}>
+                  <AuthProvider>
+                    <AdminAuthProvider>
+                      <AdminDashboard />
+                    </AdminAuthProvider>
+                  </AuthProvider>
+                </Suspense>
               }
             />
-            */}
+
+            {/* <Route path="/mon-espace" element={<RequireAuth denyAdmin><UserDashboard /></RequireAuth>} /> */}
 
             <Route path="*" element={<ComingSoon title="Page introuvable" />} />
           </Routes>
@@ -164,9 +162,7 @@ function AppShell() {
 export default function App() {
   return (
     <BrowserRouter>
-      {/* <AuthProvider> */}
-        <AppShell />
-      {/* </AuthProvider> */}
+      <AppShell />
     </BrowserRouter>
   );
 }

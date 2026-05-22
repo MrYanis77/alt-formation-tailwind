@@ -32,6 +32,7 @@ function formatDate(d) {
  *   onBack (optional)         — back handler (left arrow, e.g. return to list)
  *   title (optional)          — header label override
  *   compact (optional)        — render without surrounding card chrome
+ *   viewerMode (optional)     — 'admin' pour le panneau back-office (messages équipe à droite)
  */
 export default function ChatWindow({
   contactId,
@@ -40,6 +41,7 @@ export default function ChatWindow({
   onBack,
   title,
   compact = false,
+  viewerMode = 'user',
 }) {
   const { user } = useAuth();
   const [messages, setMessages] = useState([]);
@@ -254,19 +256,27 @@ export default function ChatWindow({
         )}
 
         {messages.map((m) => {
-          const mine = m.sender_id === user?.id;
-          const isAdmin = m.sender_role === 'admin';
+          const isAdminMsg = m.sender_role === 'admin';
+          const mine =
+            viewerMode === 'admin'
+              ? Boolean(m.admin_sender_id || isAdminMsg)
+              : m.sender_id === user?.id;
+          const whoLabel = isAdminMsg
+            ? m.admin_username
+              ? `Équipe (${m.admin_username})`
+              : 'Équipe Alt RH Formations'
+            : `${m.prenom || ''} ${m.nom || ''}`.trim() || 'Visiteur';
           return (
             <div key={m.id} className={`flex ${mine ? 'justify-end' : 'justify-start'}`}>
               <div className={`max-w-[80%] rounded-2xl px-4 py-2 text-sm ${
                 mine
                   ? 'bg-accent text-white rounded-br-sm'
-                  : isAdmin
+                  : isAdminMsg
                     ? 'bg-primary text-white rounded-bl-sm'
                     : 'bg-white border border-gray-200 text-content-dark rounded-bl-sm'
               }`}>
                 <div className="text-[10px] uppercase tracking-wider font-bold opacity-70 mb-0.5">
-                  {isAdmin ? 'Équipe Alt Formations' : `${m.prenom} ${m.nom}`}
+                  {whoLabel}
                 </div>
                 <div className="whitespace-pre-wrap break-words">{m.message}</div>
                 <div className="text-[10px] opacity-60 mt-1 text-right">{formatDate(m.created_at)}</div>

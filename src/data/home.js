@@ -116,10 +116,10 @@ export const slides = [
  * Statistiques clés.
  */
 export const stats = [
-  { value: '+5000', label: 'Stagiaires formés' },
+  { value: '92%', label: "Taux de réussite à l'examen" },
+  { value: '88%', label: "Taux d'insertion" },
   { value: '+180', label: 'Experts formateurs' },
   { value: '95%', label: 'Taux de satisfaction' },
-  { value: '+150', label: 'Formations disponibles' },
 ];
 
 /**
@@ -205,7 +205,7 @@ export const temoignages = [
     role: "Local Guide · 32 avis · 10 photos",
     date: "Modifié il y a un an",
     rating: 5,
-    quote: "J'ai suivi une formation d'administrateur infrastructures sécurisées dans le centre de formation Alt Formations et je ne regret pas, très bon suivi tout le long de formation et formateurs de qualité, grâce à eux j'ai pu acquérir des bonnes compétences et réussir mon diplôme 🎉 🎊",
+    quote: "J'ai suivi une formation d'administrateur infrastructures sécurisées dans le centre de formation Alt RH Formations et je ne regret pas, très bon suivi tout le long de formation et formateurs de qualité, grâce à eux j'ai pu acquérir des bonnes compétences et réussir mon diplôme 🎉 🎊",
   },
   {
     avatar: "https://ui-avatars.com/api/?name=Aude+Havette&background=7B1FA2&color=fff",
@@ -213,7 +213,7 @@ export const temoignages = [
     role: "1 avis",
     date: "il y a 2 ans",
     rating: 5,
-    quote: "J'ai suivi une formation préparatoire (non diplômante) chez Alt Formations afin de mieux aborder un cycle diplômant. Je recommande cette formation où l'on aborde HTML/CSS, Javascript ainsi que SQL, PHP/Symfony côté back-end. En fait, on est plus vraiment dans le cadre d'une formation préparatoire mais mi-chemin avec une formation diplômante. D'une manière générale, le volume horaire est très satisfaisant pour une formation préparatoire notamment en ce qui concerne PHP. Les formateurs sont compétents. Beaucoup de travail personnel à côté car c'est intense mais ça en vaut la peine.",
+    quote: "J'ai suivi une formation préparatoire (non diplômante) chez Alt RH Formations afin de mieux aborder un cycle diplômant. Je recommande cette formation où l'on aborde HTML/CSS, Javascript ainsi que SQL, PHP/Symfony côté back-end. En fait, on est plus vraiment dans le cadre d'une formation préparatoire mais mi-chemin avec une formation diplômante. D'une manière générale, le volume horaire est très satisfaisant pour une formation préparatoire notamment en ce qui concerne PHP. Les formateurs sont compétents. Beaucoup de travail personnel à côté car c'est intense mais ça en vaut la peine.",
   },
   {
     avatar: "https://ui-avatars.com/api/?name=Guillaume&background=C2185B&color=fff",
@@ -270,12 +270,12 @@ export const certifications = {
 };
 
 /**
- * Section Présentation (Professionnels et engagés)
+ * Section Présentation (accroche métier / mission)
  */
 export const presentation = {
-  titre: "Professionnels et engagés",
+  titre: "Accélérateur des talents pour le travail de demain",
   accroche: "Formons les talents au Travail de demain.",
-  paragraphe1: "Notre centre de formation et CFA, filiale du groupe Alt Formations, s’impose comme un acteur de référence dans la formation, le développement des compétences professionnelles. Spécialistes des métiers du numérique, de l’intelligence artificielle, de la cybersécurité et des ressources humaines, nous concevons des parcours de formation innovants, certifiants et orientés terrain.",
+  paragraphe1: "Notre centre de formation et CFA, filiale du groupe Alt RH Formations, s’impose comme un acteur de référence dans la formation, le développement des compétences professionnelles. Spécialistes des métiers du numérique, de l’intelligence artificielle, de la cybersécurité et des ressources humaines, nous concevons des parcours de formation innovants, certifiants et orientés terrain.",
   paragraphe2: "Dans un environnement en constante mutation, marqué par la transformation digitale des entreprises, l’essor de l’intelligence artificielle et les enjeux croissants de la cybersécurité, notre ingénierie pédagogique moderne et des formateurs experts, nous proposons des formats d’apprentissage flexibles (présentiel, distanciel, blended learning) adaptés aux exigences actuelles des entreprises.",
   mission: {
     label: "Notre mission :",
@@ -285,6 +285,6 @@ export const presentation = {
     label: "Notre Objectif :",
     texte: "vous faire réussir vos certifications, accélérer votre insertion ou votre reconversion, et vous rendre employable immédiatement."
   },
-  conclusion: "Rejoindre Alt Formations, c’est choisir une formation reconnue, concrète et tournée vers l’avenir professionnel."
+  conclusion: "Rejoindre Alt RH Formations, c’est choisir une formation reconnue, concrète et tournée vers l’avenir professionnel."
 };
 

@@ -1,4 +1,4 @@
-# Alt Formations - Setup base de données et backend
+# Alt RH Formations - Setup base de données et backend
 
 Cette application utilise React + Vite (frontend) et Express + MySQL (backend).
 
@@ -11,7 +11,7 @@ Crée (ou complète) le fichier `.env` à la racine du projet :
 PORT=3000
 NODE_ENV=development
 
-# MySQL
+# MySQL — nom de base aligné avec le script SQL choisi (voir §2)
 DB_HOST=localhost
 DB_PORT=3306
 DB_USER=root
@@ -34,38 +34,79 @@ RESEND_API_KEY=ta_cle_resend
 RESEND_FROM=onboarding@resend.dev
 EMAIL_DESTINATAIRE=contact@alt-rh.com
 
-# Compte admin par défaut (utilisé par seed:admin)
-ADMIN_EMAIL=admin@alt-rh.com
+# Compte administrateur back-office (table admin_users) — utilisé par npm run seed:admin
+ADMIN_USERNAME=superadmin
+ADMIN_EMAIL=admin@altformations.fr
 ADMIN_PASSWORD=Admin1234!
-ADMIN_PRENOM=Admin
-ADMIN_NOM=Alt Formations
+
+# Tests sans MySQL : données factices, aucune connexion BDD (ne jamais mettre en production)
+# DISABLE_DATABASE=1
 ```
 
 **Important production :**
+
 - `IP_HASH_SALT` DOIT être un secret long et unique
 - `CORS_ORIGINS` DOIT lister explicitement vos domaines (sinon CORS bloque tout)
 - `ADMIN_PASSWORD` DOIT être changé après la première connexion
 
+### Back-office vs compte « site »
+
+- **`admin_users` / cookie `admin_session_token`** : tableau de bord `/admin` (rôles `superadmin`, `admin`, `editor`).
+- **`users` / cookie `session_token`** : espace utilisateur public (`/connexion`, `/mon-espace`) si ces routes sont activées.
+
+Ce sont deux espèces de comptes distinctes.
+
+### Tester sans MySQL (`DISABLE_DATABASE`)
+
+Pour faire tourner le backend **sans MariaDB/MySQL** (aperçu UI, démo locale) :
+
+1. Dans `.env`, définis **`DISABLE_DATABASE=1`** (valeurs reconnues : `1`, `true`, `yes`, `on`).
+2. Lance `npm run server` ou `npm run dev:full`. Un avertissement s’affiche au démarrage ; **`GET /api/health`** inclut `"databaseDisabled": true`.
+3. Page **`/admin`** : tout couple identifiant + mot de passe **non vides** déclenche une connexion admin simulée.
+4. Les stats et listes viennent de données **factices** ([`src/data/backend/mockDb.js`](src/data/backend/mockDb.js)).
+
+**Ne pas utiliser en production** : pas de persistance ni de sécurité réelle.
+
 ## 2. Création de la base MySQL
 
-Exécute le script SQL :
+### Schéma recommandé (fusion site + back-office)
+
+À partir d'une base vide ou pour une nouvelle installation :
 
 ```bash
-mysql -u root -p < schema.sql
+mysql -u root -p < schema-merged.sql
 ```
 
-Cela crée la base `alt_formations_db` et les 7 tables : `users`, `sessions`, `contacts`,
-`faq_requests`, `chat_messages`, `faq`, `page_visits`.
+Ce script crée `alt_formations_db` avec :
 
-## 3. Création du compte administrateur
+- Parties « sécurisées » : `admin_users`, `admin_sessions`, FAQ normalisée (`faq_categories`, `faq_items`), blog, newsletter, chatbot, `audit_logs`, `login_attempts`, vues et procédures stockées ;
+- Parties « site » héritées de `schema.sql` : `users`, `sessions`, `contacts`, `faq_requests`, `chat_messages`, `faq`, `page_visits` ;
+- Mises à niveau conditionnelles pour `chat_messages` (`sender_id` nullable, `admin_sender_id` pour les réponses depuis le back-office).
+
+### Ancien schéma minimal (sans module newsletter / admin séparé)
+
+Le fichier [`schema.sql`](schema.sql) reste disponible pour les environnements qui ne migrent pas encore. Dans ce cas le backend moderne (sessions `admin_users`) ne sera pas utilisable tant que les tables correspondantes n'existent pas.
+
+## 3. Compte administrateur back-office
+
+Après avoir appliqué **`schema-merged.sql`**, un superadmin peut déjà être présent avec le hash bcrypt du script SQL (mot de passe documenté lors de la génération du script d'origine). Pour créer ou réinitialiser un compte dans `admin_users` :
 
 ```bash
 npm run seed:admin
 ```
 
-Cela crée (ou met à jour) le compte admin avec les identifiants définis dans `.env`.
+Les identifiants utilisés sont ceux du `.env` (`ADMIN_USERNAME`, `ADMIN_EMAIL`, `ADMIN_PASSWORD`).  
+Si **`DISABLE_DATABASE=1`** est actif, le seed quitte sans toucher à MySQL.
 
-## 4. Lancement
+## 4. Maintenance optionnelle
+
+La procédure stockée `clean_expired_sessions()` supprime les sessions admin expirées et nettoie certains jetons newsletter non confirmés. À planifier via cron ou exécution manuelle :
+
+```sql
+CALL clean_expired_sessions();
+```
+
+## 5. Lancement
 
 ```bash
 # Frontend + backend ensemble
@@ -79,24 +120,20 @@ npm run server   # Express (port 3000)
 Vite proxy `/api/*` vers `http://localhost:3000`, donc en développement tu accèdes à
 `http://localhost:5173`.
 
-## 5. Routes principales
+## 6. Routes principales
 
-- `/connexion` et `/inscription` : auth utilisateur
-- `/mon-espace` : tableau de bord utilisateur (profil, messages, questions FAQ)
-- `/admin` : tableau de bord administrateur (stats, contacts, FAQ, utilisateurs)
-- `/contact` : formulaire de contact (envoie un email + crée une entrée DB + ouvre une conversation)
-- `/faq` : FAQ publique + bouton pour poser une question
+- `/connexion` et `/inscription` : auth utilisateur site (si activées dans `App.jsx`)
+- `/mon-espace` : tableau de bord utilisateur (si activé)
+- `/admin` : tableau de bord administrateur (**connexion dédiée** `POST /api/admin/auth/login`)
+- `/contact` : formulaire de contact
+- `/faq` : FAQ (contenu statique côté UI ; données dynamiques disponibles via API si besoin)
 
-## 6. API endpoints
+## 7. API endpoints (aperçu)
 
-- `POST /api/auth/register|login|logout` · `GET /api/auth/me` · `PATCH /api/auth/me`
-- `POST /api/contact` · `GET /api/contact/mine`
-- `GET /api/faq/published`
-- `POST /api/faq/requests` · `GET /api/faq/requests/mine`
-- `GET /api/faq/requests` (admin) · `POST /api/faq/requests/:id/reply` · `POST /api/faq/requests/:id/publish`
-- `GET /api/faq/admin/list` · `PUT /api/faq/admin/:id` · `DELETE /api/faq/admin/:id`
-- `GET /api/chat/conversations/mine` · `GET /api/chat/conversations` (admin)
-- `GET /api/chat/messages?contactId=...&after=...` · `POST /api/chat/messages`
-- `GET /api/admin/stats` · `GET /api/admin/contacts` · `PATCH /api/admin/contacts/:id/status`
-- `GET /api/admin/users` · `PATCH /api/admin/users/:id/role`
-- `POST /api/visit` (beacon de tracking)
+- **Site** : `POST /api/auth/register|login|logout` · `GET /api/auth/me` · `PATCH /api/auth/me`
+- **Admin auth** : `POST /api/admin/auth/login|logout` · `GET /api/admin/auth/me`
+- **Contact** : `POST /api/contact` · `GET /api/contact/mine`
+- **FAQ** : `GET /api/faq/published` · flux demandes utilisateur inchangés si table `faq_requests` présente · CRUD admin sur catégories / items normalisés
+- **Chat** : conversations contacts / FAQ inchangées · messages admin via `admin_sender_id`
+- **Admin** : stats étendues, contacts, utilisateurs site, blog, newsletter, chatbot, gestion `admin_users`
+- **Visit** : `POST /api/visit`

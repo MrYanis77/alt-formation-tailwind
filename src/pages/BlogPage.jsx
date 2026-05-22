@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Breadcrumb from '../components/Breadcrumb';
 import Hero from '../components/Hero/Hero';
-import { categories, blogPosts, newsletterData, paginationData } from '../data/Blog';
+import { hero, categories, blogPosts, newsletterData, paginationData } from '../data/Blog';
 import BlogCard from '../components/Card/BlogCard';
 import FiltreCat from '../components/Items/FiltreCat'; // <-- Import du nouveau composant
 
@@ -17,9 +17,9 @@ export default function BlogPage() {
     <div className="bg-white min-h-screen">
 
       <Hero
-        title="Actualités & Ressources"
-        subtitle="Suivez les dernières tendances de la formation et du digital"
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200"
+        title={hero.titre}
+        subtitle={hero.sousTitre}
+        video={hero.video}
       />
 
       <Breadcrumb

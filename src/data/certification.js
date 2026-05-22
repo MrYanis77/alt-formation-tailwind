@@ -357,7 +357,7 @@ export const certifications = [
   }
 ];
 
-/** Contenus éditoriaux (page Certification) — résumés Alt RH Formations */
+/** Contenus éditoriaux (page Certification) */
 export const certificationEditorial = {
   badge: 'Certification',
   headline:
@@ -367,21 +367,53 @@ export const certificationEditorial = {
     'Alt RH Formations vous aide à choisir le bon référentiel (RNCP, RS, éditeurs) et à financer votre parcours.',
   ],
 
-  pourquoiCertifiante: {
-    titre: 'Pourquoi se certifier ?',
-    paragraphes: [
-      'Une certification prouve des compétences évaluées — pas seulement une présence en formation.',
-    ],
-  },
+  benefits: [
+    {
+      id: 'credibilite',
+      titre: 'Pourquoi se certifier ?',
+      texte:
+        'Une certification atteste des compétences évaluées par un jury ou un organisme tiers — pas seulement une présence en formation. Elle rassure recruteurs, clients et employeurs sur votre niveau réel et votre capacité à exercer le métier visé.',
+    },
+    {
+      id: 'projet',
+      titre: 'Reconversion & évolution',
+      texte:
+        'Changer de métier ou de secteur, c’est convaincre qu’on est opérationnel. La certification structure ce projet : objectif clair, niveau reconnu, délais maîtrisés. Elle peut s’appuyer sur un bilan de compétences, une VAE ou un parcours certifiant.',
+    },
+    {
+      id: 'financement',
+      titre: 'Financement & dossier',
+      texte:
+        'CPF, OPCO, employeur, France Travail ou plan de développement des compétences : nous vérifions votre éligibilité, vous expliquons les obligations (examen, présentiel…) et vous accompagnons jusqu’à la validation du financement.',
+    },
+  ],
 
-  reconversion: {
-    titre: 'Reconversion : pourquoi passer par une certification ?',
-    texte:
-      'Changer de métier ou de secteur, c’est convaincre qu’on est opérationnel. La certification structure ce projet : objectif clair, niveau reconnu, financement possible (CPF, OPCO, employeur).',
-    points: [
-      'Donner un cap à votre reconversion (métier, secteur, délais)',
-      'Rassurer recruteurs et employeurs sur votre niveau',
-      'S’appuyer sur bilan de compétences, VAE ou formation certifiante',
+  referentiels: {
+    titre: 'Quelle certification pour votre projet ?',
+    intro:
+      'RNCP, RS ou certifications éditeurs ne répondent pas au même besoin. Nous comparons les référentiels avec vous selon votre objectif (reconversion, montée en compétences, évolution interne) et le niveau visé.',
+    blocs: [
+      {
+        id: 'rncp',
+        titre: 'RNCP',
+        sousTitre: 'Titres et diplômes professionnels',
+        texte:
+          'Reconversion vers un métier reconnu : titre ou diplôme inscrit au Répertoire national (niveaux 4 à 7). Idéal pour les métiers du numérique, de la cybersécurité, des RH, du commerce ou du management. Chaque fiche France Compétences détaille les blocs de compétences et les modalités d’accès.',
+      },
+      {
+        id: 'rs',
+        titre: 'RS',
+        sousTitre: 'Répertoire spécifique — blocs de compétences',
+        texte:
+          'Renforcer une compétence clé en cours de reconversion ou en poste : bureautique (TOSA), langages, outils métier, création de site… Les certifications RS sont souvent plus courtes et ciblées ; elles complètent un titre RNCP ou valorisent une expertise précise sur le CV.',
+      },
+      {
+        id: 'editeurs',
+        titre: 'Éditeurs',
+        sousTitre: 'Cloud, cyber, tests logiciels, data',
+        texte:
+          'Reconversion ou spécialisation numérique : ISTQB, AWS, Azure, Microsoft, PECB, Cisco, Mile2… Ces certifications sont recherchées par les entreprises et peuvent être préparées via nos formations certifiantes, en présentiel ou à distance selon le programme.',
+      },
     ],
   },
 
@@ -389,42 +421,64 @@ export const certificationEditorial = {
     {
       id: 'demandeurs',
       titre: 'Demandeurs d’emploi',
-      intro: 'Reconversion : crédibiliser un nouveau métier sur le CV.',
-      points: ['Métiers porteurs (numérique, cybersécurité, cloud…)', 'Accès emploi ou alternance'],
+      intro:
+        'Reconversion : crédibiliser un nouveau métier sur le CV et rassurer les recruteurs sur votre niveau.',
+      points: [
+        'Métiers porteurs : numérique, cybersécurité, cloud, développement, RH',
+        'Accès à l’emploi, à l’alternance ou à la VAE selon votre parcours',
+        'Articulation possible avec bilan de compétences ou formation préparatoire',
+      ],
     },
     {
       id: 'salaries',
       titre: 'Salariés',
-      intro: 'Reconversion interne ou externe vers un autre métier.',
-      points: ['Compétences transférables validées', 'Mobilité ou évolution sécurisée'],
+      intro:
+        'Reconversion interne ou externe, évolution vers un autre métier ou montée en grade dans votre filière.',
+      points: [
+        'Compétences transférables reconnues par un référentiel officiel',
+        'Mobilité ou évolution sécurisée avec l’accord de l’employeur',
+        'Financements OPCO ou plan de développement des compétences',
+      ],
     },
     {
       id: 'entreprises',
       titre: 'Entreprises',
-      intro: 'Piloter les reconversions et mobilités par la certification.',
-      points: ['Parcours salariés encadrés', 'Compétences alignées sur vos besoins'],
+      intro:
+        'Piloter les reconversions, les mobilités internes et les montées en compétences par la certification.',
+      points: [
+        'Parcours salariés encadrés, du diagnostic au passage de l’examen',
+        'Compétences alignées sur vos besoins métiers et mesurables',
+        'Reconversions internes, digital et gestion de carrière',
+      ],
     },
   ],
 
-  complementaires: {
-    titre: 'Quelle certification pour votre reconversion ?',
-    blocs: [
-      { titre: 'RNCP', texte: 'Reconversion vers un métier : titre ou diplôme pro.' },
-      { titre: 'RS', texte: 'Renforcer une compétence clé en cours de reconversion.' },
-      { titre: 'Éditeurs', texte: 'Reconversion numérique : cloud, cyber, IA, data.' },
+  parcours: {
+    titre: 'Notre accompagnement',
+    intro:
+      'Orientation, parcours certifiant et financement : un fil conducteur jusqu’à la certification, avec un interlocuteur dédié chez Alt RH Formations.',
+    etapes: [
+      {
+        numero: '01',
+        titre: 'Cibler le métier et la certification',
+        texte:
+          'Analyse de votre projet, du référentiel adapté (RNCP, RS, éditeur) et des prérequis. Nous vous orientons vers la formation certifiante ou le titre correspondant dans notre catalogue.',
+      },
+      {
+        numero: '02',
+        titre: 'Monter le dossier de financement',
+        texte:
+          'CPF, OPCO, employeur ou autre dispositif : constitution du dossier, vérification des pièces, rappel des engagements (examen obligatoire, assiduité…) et suivi jusqu’à l’accord.',
+      },
+      {
+        numero: '03',
+        titre: 'Préparer et valoriser le résultat',
+        texte:
+          'Préparation à l’évaluation ou à l’examen, suivi pédagogique pendant la formation, puis conseils pour mettre en avant la certification sur LinkedIn, le CV et en entretien.',
+      },
     ],
+    note:
+      'Organisme certifié Qualiopi : nos processus répondent aux exigences des financeurs publics et mutualisés pour les actions éligibles.',
   },
-
-  approche: {
-    titre: 'Notre accompagnement reconversion',
-    intro: 'Orientation, parcours certifiant et financement — un fil conducteur jusqu’à la certification.',
-    points: [
-      'Cibler le métier et la certification',
-      'Monter le dossier (CPF, OPCO, employeur)',
-      'Préparer l’examen et valoriser le résultat',
-    ],
-    entrepriseFocus: 'Reconversions internes, digital et gestion de carrière.',
-  },
-
 };
 

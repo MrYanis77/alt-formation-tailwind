@@ -1,4 +1,4 @@
--- Schema MySQL pour Alt Formations
+-- Schema MySQL pour Alt RH Formations
 -- Auth, contact, FAQ, chat, admin
 -- À exécuter sur une base de données vide. Le script est idempotent (DROP IF EXISTS / CREATE TABLE IF NOT EXISTS).
 

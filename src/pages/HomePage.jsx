@@ -1,5 +1,5 @@
 /**
- * Page d'accueil - Alt Formations
+ * Page d'accueil - Alt RH Formations
  * Ce fichier centralise les sections principales de la landing page :
  * - Hero Carousel : Diaporama dynamique avec vidéos en fond.
  * - StatsSection : Affichage des chiffres clés.
@@ -73,7 +73,7 @@ export default function HomePage() {
               <img
                 src={slides[currentSlide].image}
                 className="w-full h-full object-cover"
-                alt="Background Alt Formations"
+                alt="Background Alt RH Formations"
               />
             )}
           </motion.div>
@@ -126,7 +126,7 @@ export default function HomePage() {
       {/* SECTION 2 : STATS */}
       <StatsSection stats={stats} />
 
-       {/* SECTION PRÉSENTATION : Professionnels et engagés */}
+       {/* SECTION PRÉSENTATION */}
       <section className="py-20 px-6 max-w-container-2xl mx-auto text-center">
         <h2 className="font-heading text-2xl md:text-h1 font-extrabold text-primary uppercase tracking-wider mb-8">
           {presentation.titre}

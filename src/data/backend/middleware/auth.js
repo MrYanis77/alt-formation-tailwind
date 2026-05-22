@@ -1,9 +1,10 @@
 import { query } from '../db.js';
 
+export { attachAdminUser } from './attachAdmin.js';
+
 /**
- * Resolves the current user from the session cookie.
+ * Resolves the current site user from the session cookie.
  * Attaches req.user (or null) and req.sessionToken.
- * Does not block requests; use requireAuth/requireAdmin for that.
  */
 export async function attachUser(req, _res, next) {
   try {
@@ -52,12 +53,38 @@ export function requireAuth(req, res, next) {
   next();
 }
 
+/** Tout compte admin_sessions valide (superadmin | admin | editor). */
 export function requireAdmin(req, res, next) {
-  if (!req.user) {
-    return res.status(401).json({ success: false, error: 'Non authentifié' });
-  }
-  if (req.user.role !== 'admin') {
-    return res.status(403).json({ success: false, error: 'Accès refusé : admin requis' });
+  if (!req.adminUser) {
+    return res.status(401).json({ success: false, error: 'Non authentifié (admin)' });
   }
   next();
+}
+
+/** superadmin uniquement */
+export function requireSuperAdmin(req, res, next) {
+  if (!req.adminUser) {
+    return res.status(401).json({ success: false, error: 'Non authentifié (admin)' });
+  }
+  if (req.adminUser.role !== 'superadmin') {
+    return res.status(403).json({ success: false, error: 'Accès réservé au super-administrateur' });
+  }
+  next();
+}
+
+/** superadmin ou admin (exclut editor pour actions sensibles). */
+export function requireAdminElevated(req, res, next) {
+  if (!req.adminUser) {
+    return res.status(401).json({ success: false, error: 'Non authentifié (admin)' });
+  }
+  if (!['superadmin', 'admin'].includes(req.adminUser.role)) {
+    return res.status(403).json({ success: false, error: 'Droits insuffisants' });
+  }
+  next();
+}
+
+/** Utilisateur site OU session admin back-office (chat / contexte conversation). */
+export function requireUserOrAdmin(req, res, next) {
+  if (req.adminUser) return next();
+  return requireAuth(req, res, next);
 }

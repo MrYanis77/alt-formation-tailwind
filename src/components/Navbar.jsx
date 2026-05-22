@@ -309,7 +309,7 @@ export default function Navbar() {
         >
           <img
             src="/assets/logo-altrh.png"
-            alt="Logo Alt Formations"
+            alt="Logo Alt RH Formations"
             className="h-14 md:h-16 w-auto max-h-16 object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_0_8px_rgba(255,255,255,0.9)] drop-shadow-[0_0_18px_rgba(255,255,255,0.45)]"
           />
         </Link>

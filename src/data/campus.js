@@ -1,4 +1,4 @@
-// Données de campus pour l'application Alt Formations
+// Données de campus pour l'application Alt RH Formations
 // Chaque objet contient les informations de localisation et d'affichage
 // `images` : galerie lightbox (optionnel — sinon `image` est utilisée comme unique slide)
 
