@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import ResponsiveImage from './ResponsiveImage';
-import { videoPosterSrc } from '../utils/responsiveImage';
+import { FALLBACK_IMAGE, videoPosterSrc } from '../utils/responsiveImage';
 
 /**
- * Vidéo hero optimisée : poster immédiat, chargement différé, pas de vidéo sur mobile.
+ * Vidéo hero : poster immédiat + lecture auto (desktop et mobile, muted + playsInline).
  */
 export default function HeroVideo({
   video,
@@ -14,20 +14,13 @@ export default function HeroVideo({
   const sectionRef = useRef(null);
   const videoRef = useRef(null);
   const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [posterFailed, setPosterFailed] = useState(false);
 
-  const posterSrc = poster || videoPosterSrc(video) || null;
-
-  useEffect(() => {
-    const mq = window.matchMedia('(max-width: 768px)');
-    const update = () => setIsMobile(mq.matches);
-    update();
-    mq.addEventListener('change', update);
-    return () => mq.removeEventListener('change', update);
-  }, []);
+  const derivedPoster = poster || videoPosterSrc(video) || null;
+  const posterSrc = posterFailed ? (video ? null : FALLBACK_IMAGE) : derivedPoster;
 
   useEffect(() => {
-    if (isMobile || !video) return undefined;
+    if (!video) return undefined;
     const el = sectionRef.current?.closest('section') || sectionRef.current?.parentElement;
     if (!el) {
       setShouldLoadVideo(true);
@@ -44,7 +37,7 @@ export default function HeroVideo({
     );
     observer.observe(el);
     return () => observer.disconnect();
-  }, [isMobile, video]);
+  }, [video]);
 
   useEffect(() => {
     const v = videoRef.current;
@@ -63,16 +56,17 @@ export default function HeroVideo({
           priority={priority}
           sizes="100vw"
           className={className}
+          onError={() => setPosterFailed(true)}
         />
       )}
-      {!isMobile && shouldLoadVideo && video && (
+      {shouldLoadVideo && video && (
         <video
           ref={videoRef}
           autoPlay
           loop
           muted
           playsInline
-          preload={priority ? 'auto' : 'none'}
+          preload={priority ? 'auto' : 'metadata'}
           className={`${className} ${posterSrc ? 'absolute inset-0' : ''}`}
         >
           <source src={video.replace(/\.mp4$/i, '.webm')} type="video/webm" />

@@ -24,6 +24,7 @@ export default function CampusPages() {
         title={hero.titre}
         subtitle={hero.sousTitre}
         video={hero.video}
+        poster={hero.poster}
       />
 
       <Breadcrumb

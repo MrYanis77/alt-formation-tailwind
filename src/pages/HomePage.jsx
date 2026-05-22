@@ -10,22 +10,13 @@ import StatsSection from '../components/Stats/StatsSection';
 import CardFormation from '../components/Card/CardFormation';
 import CertificationSection from '../components/CertificationSection';
 import { slides, stats, presentation, services, partenaires, temoignages, certifications } from '../data/home';
-import { FALLBACK_IMAGE, videoPosterSrc } from '../utils/responsiveImage';
+import { FALLBACK_IMAGE } from '../utils/responsiveImage';
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
 
   const doublePartenaires = [...partenaires, ...partenaires];
   const scrollingTemoignages = [...temoignages, ...temoignages];
-
-  useEffect(() => {
-    const mq = window.matchMedia('(max-width: 768px)');
-    const update = () => setIsMobile(mq.matches);
-    update();
-    mq.addEventListener('change', update);
-    return () => mq.removeEventListener('change', update);
-  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -35,7 +26,6 @@ export default function HomePage() {
   }, []);
 
   const slide = slides[currentSlide];
-  const slidePoster = slide.image || videoPosterSrc(slide.video);
 
   return (
     <div className="bg-white antialiased">
@@ -48,15 +38,11 @@ export default function HomePage() {
       {/* SECTION 1 : HERO CAROUSEL */}
       <section className="relative h-[600px] md:h-[550px] bg-primary overflow-hidden flex items-center group">
         <div className="absolute inset-0 z-0 hero-slide-enter" key={`bg-${currentSlide}`}>
-          {slide.video && !isMobile ? (
-            <HeroVideo video={slide.video} poster={slidePoster} priority={currentSlide === 0} />
-          ) : slidePoster ? (
-            <ResponsiveImage
-              src={slidePoster}
-              alt="Background Alt RH Formations"
+          {slide.video ? (
+            <HeroVideo
+              video={slide.video}
+              poster={slide.image}
               priority={currentSlide === 0}
-              sizes="100vw"
-              className="w-full h-full object-cover"
             />
           ) : null}
         </div>

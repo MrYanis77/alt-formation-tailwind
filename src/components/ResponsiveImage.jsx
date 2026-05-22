@@ -14,6 +14,7 @@ export default function ResponsiveImage({
   aspectRatio,
   ariaHidden = false,
   onClick,
+  onError,
   ...rest
 }) {
   const parsed = parseAssetImagePath(src);
@@ -30,6 +31,7 @@ export default function ResponsiveImage({
     ...(width ? { width } : {}),
     ...(height ? { height } : {}),
     ...(ariaHidden ? { 'aria-hidden': true } : {}),
+    ...(onError ? { onError } : {}),
     ...rest,
   };
 

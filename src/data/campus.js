@@ -17,7 +17,8 @@ export function getCampusGalleryImages(item) {
 export const hero = {
   titre: "Nos Campus",
   sousTitre: "Retrouvez-nous dans toute l'Île-de-France. Des infrastructures modernes au service de votre réussite.",
-  video: "/assets/video/campus.mp4"
+  video: "/assets/video/campus.mp4",
+  poster: "/assets/images/campus/img2.jpeg",
 };
 
 export const campus = [

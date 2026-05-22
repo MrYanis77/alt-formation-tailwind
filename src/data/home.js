@@ -116,10 +116,10 @@ export const slides = [
  * Statistiques clés.
  */
 export const stats = [
-  { value: '92%', label: "Taux de réussite à l'examen" },
-  { value: '88%', label: "Taux d'insertion" },
-  { value: '+180', label: 'Experts formateurs' },
-  { value: '95%', label: 'Taux de satisfaction' },
+  { value: '95%', label: "Taux de réussite à l'examen" },
+  { value: '91%', label: "Taux d'insertion" },
+  { value: '+196', label: 'Experts formateurs' },
+  { value: '93%', label: 'Taux de satisfaction' },
 ];
 
 /**

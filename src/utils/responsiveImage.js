@@ -37,7 +37,7 @@ export function webpVariantSrc(src, width) {
  */
 export function buildWebpSrcSet(src, widths = WIDTHS) {
   const parsed = parseAssetImagePath(src);
-  if (!parsed || parsed.external) return null;
+  if (!parsed || parsed.external || parsed.ext === 'webp') return null;
   return widths
     .map((w) => {
       const url = webpVariantSrc(src, w);

@@ -328,7 +328,7 @@ export default function BilanDeCompetencePage() {
                         to="/contact"
                         className="btn-orange no-underline inline-flex items-center justify-center w-full mt-8 box-border"
                       >
-                        Demander un devis
+                        Eligible CPF - Nous contacter
                       </Link>
                     </div>
                   </div>
