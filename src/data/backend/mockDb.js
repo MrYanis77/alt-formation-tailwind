@@ -343,7 +343,6 @@ export function mockQuery(sql, params = []) {
   }
 
   if (u.includes('FROM NEWSLETTER_CAMPAIGNS') && u.includes('WHERE') && u.includes('ID')) {
-    const now = new Date().toISOString();
     return [
       {
         id: Number(p0) || 1,
@@ -411,7 +410,6 @@ export function mockQuery(sql, params = []) {
   }
 
   if (u.includes('CHAT_MESSAGES') && u.includes('LEFT JOIN')) {
-    const now = new Date().toISOString();
     return [];
   }
 

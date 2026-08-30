@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Test BDD — Alt Formation (Nexytal)</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 2rem; background: #f1f5f9; color: #1e293b; }
+    h1 { margin: 0 0 0.5rem; font-size: 1.5rem; }
+    .meta { color: #64748b; font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+    .badge { background: #002845; color: #fff; padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600; }
+    .ok { color: #15803d; font-weight: 700; }
+    .err { color: #b91c1c; font-weight: 700; }
+    pre { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1rem; overflow: auto; max-height: 75vh; font-size: 12px; line-height: 1.5; margin: 0; }
+    a { color: #f39233; }
+  </style>
+</head>
+<body>
+  <h1>Test BDD Nexytal — Alt Formation</h1>
+  <p class="meta">
+    <code>core_sites.id = 1</code> — formations · blog · newsletter —
+    <a href="/api/health.php">health</a> ·
+    <a href="/api/formations.php">formations</a> ·
+    <a href="/api/blog.php">blog</a> ·
+    <a href="/api/test-data.php">JSON brut</a> ·
+    <a href="/test-bdd">version React</a>
+  </p>
+  <p id="status">Chargement…</p>
+  <div id="badges" class="badges"></div>
+  <pre id="out"></pre>
+  <script>
+    fetch('/api/test-data.php')
+      .then(function (r) {
+        return r.text().then(function (text) {
+          return { ok: r.ok, status: r.status, text: text };
+        });
+      })
+      .then(function (res) {
+        var status = document.getElementById('status');
+        var out = document.getElementById('out');
+        var badges = document.getElementById('badges');
+
+        if (!res.text.trim()) {
+          status.innerHTML = '<span class="err">Réponse vide</span> — lancez <code>npm run php</code> ou uploadez <code>api/</code> sur Ionos';
+          return;
+        }
+
+        var data;
+        try {
+          data = JSON.parse(res.text);
+        } catch (e) {
+          status.innerHTML = '<span class="err">JSON invalide</span>';
+          out.textContent = res.text.slice(0, 2000);
+          return;
+        }
+
+        if (!res.ok || !data.ok) {
+          status.innerHTML = '<span class="err">Erreur</span> — ' + (data.error || 'HTTP ' + res.status);
+          out.textContent = JSON.stringify(data, null, 2);
+          return;
+        }
+
+        status.innerHTML =
+          '<span class="ok">OK</span> — ' + (data.site && data.site.name ? data.site.name : 'site ' + data.site_id) +
+          ' — base <strong>' + (data.db || '') + '</strong>';
+
+        var counts = data.counts || {};
+        [
+          ['formations', counts.formation_courses],
+          ['blog', counts.blog_posts],
+          ['newsletter', counts.newsletter_subscribers]
+        ].forEach(function (pair) {
+          if (pair[1] !== undefined) {
+            var b = document.createElement('span');
+            b.className = 'badge';
+            b.textContent = pair[0] + ': ' + pair[1];
+            badges.appendChild(b);
+          }
+        });
+
+        out.textContent = JSON.stringify(data, null, 2);
+      })
+      .catch(function (e) {
+        document.getElementById('status').innerHTML = '<span class="err">Erreur réseau</span>';
+        document.getElementById('out').textContent = e.message;
+      });
+  </script>
+</body>
+</html>

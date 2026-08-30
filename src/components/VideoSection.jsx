@@ -5,7 +5,7 @@ export default function VideoSection({ title }) {
         {title}
       </h2>
       <div className="relative max-w-container-md mx-auto aspect-video bg-content-dark/50 rounded-xl overflow-hidden border border-white/10 shadow-2xl group flex items-center justify-center">
-        <button 
+        <button type="button"
           onClick={() => console.log('Play Video')}
           className="w-20 h-20 bg-accent hover:bg-accent-dark text-white rounded-full flex items-center justify-center transition-transform hover:scale-110 shadow-xl z-20 cursor-pointer"
         >

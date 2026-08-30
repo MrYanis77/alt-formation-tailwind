@@ -1,6 +1,6 @@
 import express from 'express';
 import bcrypt from 'bcryptjs';
-import crypto from 'crypto';
+import crypto from 'node:crypto';
 import { query } from '../db.js';
 import { requireAuth } from '../middleware/auth.js';
 
@@ -19,7 +19,11 @@ const cookieOptions = {
 };
 
 function isValidEmail(email) {
-  return typeof email === 'string' && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  if (typeof email !== 'string') return false;
+  const parts = email.trim().split('@');
+  if (parts.length !== 2) return false;
+  const [local, domain] = parts;
+  return Boolean(local && domain && domain.includes('.') && !domain.startsWith('.') && !domain.endsWith('.'));
 }
 
 function publicUser(u) {

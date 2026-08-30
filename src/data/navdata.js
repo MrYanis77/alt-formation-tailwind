@@ -1,15 +1,6 @@
-/**
- * Ré-export de compatibilité — préférer navlinks-static + navdata-mega (lazy).
- */
+export { navlinksStatic as navlinks, loadNavMegaData, getFullNavlinks } from './navlinks-static.js';
 export {
   getFormationCatalogCategory,
-} from './formationCategory.js';
-
-export {
-  formationsArray,
-  formationsCortesArray,
-  formationsCertifiantesArray,
-  megaMenuFormations,
-  megaMenuCombinedDiplCertRows,
-  navlinks,
-} from './navdata-mega.js';
+  buildCatalogueFromCourses,
+  buildNavMegaData,
+} from '../features/formations/domain/catalog.js';

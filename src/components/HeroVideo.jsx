@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import ResponsiveImage from './ResponsiveImage';
-import { FALLBACK_IMAGE, videoPosterSrc } from '../utils/responsiveImage';
+import { FALLBACK_IMAGE } from '../utils/responsiveImage';
 
 /**
- * Vidéo hero : poster immédiat + lecture auto (desktop et mobile, muted + playsInline).
+ * Hero video with optional poster and lazy autoplay.
  */
 export default function HeroVideo({
   video,
@@ -16,16 +16,15 @@ export default function HeroVideo({
   const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
   const [posterFailed, setPosterFailed] = useState(false);
 
-  const derivedPoster = poster || videoPosterSrc(video) || null;
-  const posterSrc = posterFailed ? (video ? null : FALLBACK_IMAGE) : derivedPoster;
+  const posterSrc = posterFailed ? (video ? null : FALLBACK_IMAGE) : (poster || (!video ? FALLBACK_IMAGE : null));
 
   useEffect(() => {
     if (!video) return undefined;
-    const el = sectionRef.current?.closest('section') || sectionRef.current?.parentElement;
-    if (!el) {
-      setShouldLoadVideo(true);
-      return undefined;
-    }
+    const el =
+      sectionRef.current?.closest('section') ||
+      sectionRef.current?.parentElement ||
+      sectionRef.current;
+    if (!el) return undefined;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -69,7 +68,6 @@ export default function HeroVideo({
           preload={priority ? 'auto' : 'metadata'}
           className={`${className} ${posterSrc ? 'absolute inset-0' : ''}`}
         >
-          <source src={video.replace(/\.mp4$/i, '.webm')} type="video/webm" />
           <source src={video} type="video/mp4" />
         </video>
       )}

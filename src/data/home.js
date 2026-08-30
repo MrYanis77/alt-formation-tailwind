@@ -184,7 +184,7 @@ export const partenaires = [
   { nom: 'cic', logo: '/assets/partenaires/cic.png' },
   { nom: 'credit-agricole', logo: '/assets/partenaires/credit-agricole.png' },
   { nom: 'edf', logo: '/assets/partenaires/edf.png' },
-  { nom: 'france-compétence', logo: '/assets/partenaires/france-compétence.png' },
+  { nom: 'france-compétence', logo: '/assets/partenaires/france-competence.png' },
   { nom: 'france-travail', logo: '/assets/partenaires/france-travail.png' },
   { nom: 'région ile de france', logo: '/assets/partenaires/idf.png' },
   { nom: 'microsoft', logo: '/assets/partenaires/microsoft.png' },

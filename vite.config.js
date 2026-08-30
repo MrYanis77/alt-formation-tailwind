@@ -13,21 +13,16 @@ export default defineConfig({
       filename: 'stats.html',
       gzipSize: true,
       brotliSize: true,
-    })
+    }),
   ],
   server: {
     proxy: {
-      // Les requêtes /api/*.php sont relayées vers le serveur PHP local (port 8000)
-      // En production sur OVH, Apache sert ces fichiers directement.
-      '^/api/.*\\.php$': {
-        target: 'http://localhost:8000',
-        changeOrigin: true,
-      },
-      // Les autres routes /api (auth, chat, faq, admin, visit) restent sur Express
+      // Toutes les requêtes /api → serveur PHP local (port 8000)
+      // Express (port 3000) : uniquement avec npm run dev:full
       '/api': {
-        target: 'http://localhost:3000',
+        target: 'http://127.0.0.1:8000',
         changeOrigin: true,
       },
-    }
-  }
+    },
+  },
 })

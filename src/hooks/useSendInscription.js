@@ -1,5 +1,12 @@
 import { useState } from 'react';
 
+const isValidEmail = (value) => {
+  const parts = String(value ?? '').trim().split('@');
+  if (parts.length !== 2) return false;
+  const [local, domain] = parts;
+  return Boolean(local && domain && domain.includes('.') && !domain.startsWith('.') && !domain.endsWith('.'));
+};
+
 /**
  * Hook pour envoyer une confirmation d'inscription à une formation.
  *
@@ -28,7 +35,7 @@ export function useSendInscription() {
       return false;
     }
 
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    if (!isValidEmail(email)) {
       setError('Adresse email invalide');
       setStatus('error');
       return false;

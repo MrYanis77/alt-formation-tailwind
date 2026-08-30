@@ -10,7 +10,17 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+coverage
 *.local
+
+# Variables locales et secrets (conserver les modeles versionnes)
+/.env
+/.env.*
+!/.env.example
+
+# Credentials BDD Ionos (FTP) + config locale
+public/api/config/.env
+public/api/config/.env.local
 
 # Editor directories and files
 .vscode/*

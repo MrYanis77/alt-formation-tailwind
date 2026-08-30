@@ -32,17 +32,17 @@ export default function StatsBar({ stats }) {
 
   if (!stats) return null;
 
+  let gridColumns = 'grid-cols-2 lg:grid-cols-4';
+  if (stats.length <= 2) gridColumns = 'grid-cols-1 sm:grid-cols-2';
+  else if (stats.length === 3) gridColumns = 'grid-cols-1 sm:grid-cols-3';
+
   return (
     <div className="w-full bg-primary py-0">
       <div className="max-w-container-xl mx-auto px-6">
-        <div className={`grid gap-0 divide-x divide-white/10 ${
-          stats.length <= 2 ? 'grid-cols-1 sm:grid-cols-2' :
-          stats.length === 3 ? 'grid-cols-1 sm:grid-cols-3' :
-          'grid-cols-2 lg:grid-cols-4'
-        }`}>
-          {stats.map((stat, idx) => (
+        <div className={`grid gap-0 divide-x divide-white/10 ${gridColumns}`}>
+          {stats.map((stat) => (
             <div
-              key={idx}
+              key={`${stat.label}-${stat.valeur}`}
               className="flex items-center group transition-all duration-300 hover:bg-white/5 gap-5 px-8 py-7"
             >
               {/* Icône avec cercle accent */}

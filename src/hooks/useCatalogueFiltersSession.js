@@ -8,25 +8,44 @@ import {
 } from '../utils/catalogueFiltersSession';
 
 const SEARCH_DEBOUNCE_MS = 300;
+const DEFAULT_FILTERS = {
+  q: '',
+  repertoire: 'all',
+  domain: 'all',
+  type: 'all',
+  modalite: 'all',
+  needsTypeNavigation: false,
+};
 
 /**
  * États filtres catalogue + persistance sessionStorage (F5, même onglet).
  * @param {{ enabled: boolean, hash: string, typeQuery: string | null, modaliteQuery: string | null, navigate: (to: string, opts?: object) => void }} options
  */
 export default function useCatalogueFiltersSession({ enabled, hash, typeQuery, modaliteQuery, navigate }) {
-  const initialRef = useRef(null);
-  if (enabled && initialRef.current === null) {
-    initialRef.current = resolveCatalogueFilters(hash, typeQuery, modaliteQuery);
-  }
-
-  const initial = enabled
-    ? initialRef.current
-    : { q: '', repertoire: 'all', domain: 'all', type: 'all', modalite: 'all', needsTypeNavigation: false };
+  const [initial] = useState(() =>
+    enabled ? resolveCatalogueFilters(hash, typeQuery, modaliteQuery) : DEFAULT_FILTERS
+  );
 
   const [sharedSearch, setSharedSearch] = useState(initial.q ?? '');
   const [repertoireFilter, setRepertoireFilter] = useState(initial.repertoire ?? 'all');
   const [activeDomain, setActiveDomain] = useState(initial.domain ?? 'all');
-  const [modaliteFilter, setModaliteFilter] = useState(initial.modalite ?? 'all');
+  const [modaliteState, setModaliteState] = useState(() => ({
+    query: modaliteQuery,
+    value: initial.modalite ?? 'all',
+  }));
+  const modaliteFilter =
+    enabled && modaliteState.query !== modaliteQuery
+      ? getModaliteFromUrl(modaliteQuery)
+      : modaliteState.value;
+  const setModaliteFilter = useCallback(
+    (value) => {
+      setModaliteState((previous) => ({
+        query: modaliteQuery,
+        value: typeof value === 'function' ? value(previous.value) : value,
+      }));
+    },
+    [modaliteQuery]
+  );
 
   const formationVisibility = getCatalogueTypeFromUrl(hash, typeQuery);
 
@@ -39,11 +58,6 @@ export default function useCatalogueFiltersSession({ enabled, hash, typeQuery, m
     typeNavigationDone.current = true;
     navigate(`/formations#${initial.typeToNavigate}`, { replace: true });
   }, [enabled, initial.needsTypeNavigation, initial.typeToNavigate, navigate]);
-
-  useEffect(() => {
-    if (!enabled) return;
-    setModaliteFilter(getModaliteFromUrl(modaliteQuery));
-  }, [enabled, modaliteQuery]);
 
   useEffect(() => {
     if (!enabled) return undefined;
@@ -74,7 +88,7 @@ export default function useCatalogueFiltersSession({ enabled, hash, typeQuery, m
       type: formationVisibility,
       q: sharedSearch,
     });
-  }, [formationVisibility, sharedSearch]);
+  }, [formationVisibility, sharedSearch, setModaliteFilter]);
 
   const clearAllFilters = useCallback(() => {
     clearCatalogueFilters();
@@ -83,7 +97,7 @@ export default function useCatalogueFiltersSession({ enabled, hash, typeQuery, m
     setActiveDomain('all');
     setModaliteFilter('all');
     navigate('/formations', { replace: true });
-  }, [navigate]);
+  }, [navigate, setModaliteFilter]);
 
   return {
     sharedSearch,

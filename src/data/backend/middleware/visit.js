@@ -1,4 +1,4 @@
-import crypto from 'crypto';
+import crypto from 'node:crypto';
 import { query } from '../db.js';
 
 const IP_SALT = process.env.IP_HASH_SALT || 'alt-formations-default-salt-change-me';

@@ -77,8 +77,8 @@ export default function CertificationPage() {
 
       <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'Certifications' }]} />
 
-      {/* Intro */}
-      <section className="py-14 lg:py-16 px-6">
+      {/* Intro - Texte principal uniquement */}
+      <section className="pt-14 lg:pt-16 pb-10 px-6">
         <div className="max-w-container-3xl mx-auto">
           <div className="max-w-3xl">
             <p className="text-[11px] font-extrabold text-accent uppercase tracking-widest mb-3">
@@ -95,23 +95,10 @@ export default function CertificationPage() {
               ))}
             </div>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 mt-10">
-            {ed.benefits.map((b) => (
-              <article
-                key={b.id}
-                className="rounded-2xl border border-border bg-white p-6 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <h3 className="font-heading font-bold text-primary text-lg mb-3">{b.titre}</h3>
-                <p className="text-content-muted font-body text-sm md:text-[15px] leading-relaxed">
-                  {b.texte}
-                </p>
-              </article>
-            ))}
-          </div>
         </div>
       </section>
 
+      {/* Filtres de recherche */}
       <FiltreCat
         categories={categories}
         activeCat={activeCategory}
@@ -122,6 +109,7 @@ export default function CertificationPage() {
         sectionLabel="Catégories"
       />
 
+      {/* Catalogue de formations */}
       <section
         id="catalogue-certifications-root"
         className="pt-10 lg:pt-12 pb-16 px-6 scroll-mt-[280px] bg-white"
@@ -162,6 +150,25 @@ export default function CertificationPage() {
               ) : null}
             </p>
           )}
+        </div>
+      </section>
+
+      {/* Avantages / Bénéfices (Déplacés après le catalogue) */}
+      <section className="py-14 lg:py-16 px-6 bg-surface-soft border-t border-border">
+        <div className="max-w-container-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
+            {ed.benefits.map((b) => (
+              <article
+                key={b.id}
+                className="rounded-2xl border border-border bg-white p-6 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <h3 className="font-heading font-bold text-primary text-lg mb-3">{b.titre}</h3>
+                <p className="text-content-muted font-body text-sm md:text-[15px] leading-relaxed">
+                  {b.texte}
+                </p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

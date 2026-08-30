@@ -1,0 +1,16 @@
+# Dossier API PHP — copié dans dist/api/ au build
+
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-store, no-cache, must-revalidate"
+  Header set Pragma "no-cache"
+</IfModule>
+
+<Files "db.env">
+  Require all denied
+</Files>
+<Files ".env">
+  Require all denied
+</Files>
+<Files "config.php">
+  Require all denied
+</Files>

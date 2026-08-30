@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { User, Mail, Phone, Lock, Eye, EyeOff } from 'lucide-react';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '../../hooks/useAuth';
 
 export default function FormUser({ type = 'connexion' }) {
   const isInscription = type === 'inscription';
@@ -84,10 +84,11 @@ export default function FormUser({ type = 'connexion' }) {
       {isInscription && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="space-y-1.5 text-left">
-            <label className="text-sm font-bold text-primary">Prénom *</label>
+            <label htmlFor="user-prenom" className="text-sm font-bold text-primary">Prénom *</label>
             <div className="relative">
               <User className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
               <input
+                id="user-prenom"
                 type="text"
                 placeholder="Jean"
                 value={form.prenom}
@@ -98,10 +99,11 @@ export default function FormUser({ type = 'connexion' }) {
             </div>
           </div>
           <div className="space-y-1.5 text-left">
-            <label className="text-sm font-bold text-primary">Nom *</label>
+            <label htmlFor="user-nom" className="text-sm font-bold text-primary">Nom *</label>
             <div className="relative">
               <User className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
               <input
+                id="user-nom"
                 type="text"
                 placeholder="Dupont"
                 value={form.nom}
@@ -115,10 +117,11 @@ export default function FormUser({ type = 'connexion' }) {
       )}
 
       <div className="space-y-1.5 text-left">
-        <label className="text-sm font-bold text-primary">Adresse email {isInscription && '*'}</label>
+        <label htmlFor="user-email" className="text-sm font-bold text-primary">Adresse email {isInscription && '*'}</label>
         <div className="relative">
           <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
           <input
+            id="user-email"
             type="email"
             placeholder="nom@exemple.com"
             value={form.email}
@@ -131,10 +134,11 @@ export default function FormUser({ type = 'connexion' }) {
 
       {isInscription && (
         <div className="space-y-1.5 text-left">
-          <label className="text-sm font-bold text-primary">Téléphone</label>
+          <label htmlFor="user-telephone" className="text-sm font-bold text-primary">Téléphone</label>
           <div className="relative">
             <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
             <input
+              id="user-telephone"
               type="tel"
               placeholder="06 12 34 56 78"
               value={form.telephone}
@@ -146,10 +150,11 @@ export default function FormUser({ type = 'connexion' }) {
       )}
 
       <div className="space-y-1.5 text-left">
-        <label className="text-sm font-bold text-primary">Mot de passe {isInscription && '*'}</label>
+        <label htmlFor="user-password" className="text-sm font-bold text-primary">Mot de passe {isInscription && '*'}</label>
         <div className="relative">
           <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
           <input
+            id="user-password"
             type={showPass ? 'text' : 'password'}
             placeholder="••••••••"
             value={form.password}
@@ -171,10 +176,11 @@ export default function FormUser({ type = 'connexion' }) {
 
       {isInscription && (
         <div className="space-y-1.5 text-left">
-          <label className="text-sm font-bold text-primary">Confirmer le mot de passe *</label>
+          <label htmlFor="user-password-confirm" className="text-sm font-bold text-primary">Confirmer le mot de passe *</label>
           <div className="relative">
             <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
             <input
+              id="user-password-confirm"
               type={showPass ? 'text' : 'password'}
               placeholder="••••••••"
               value={form.passwordConfirm}

@@ -41,6 +41,7 @@ export default function AdminChatPanel() {
           <div className="flex gap-1 mt-3">
             {['all', 'open', 'replied'].map((f) => (
               <button
+                type="button"
                 key={f}
                 onClick={() => setFilter(f)}
                 className={`text-xs font-bold px-3 py-1.5 rounded ${filter === f ? 'bg-accent text-white' : 'bg-gray-100 text-content-muted hover:bg-gray-200'}`}
@@ -60,6 +61,7 @@ export default function AdminChatPanel() {
             {filtered.map((c) => (
               <li key={c.id}>
                 <button
+                  type="button"
                   onClick={() => setOpenContact(c)}
                   className={`w-full text-left p-4 border-b border-gray-100 hover:bg-gray-50 transition-colors ${
                     openContact?.id === c.id ? 'bg-amber-50' : ''

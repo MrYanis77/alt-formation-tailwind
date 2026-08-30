@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback, useMemo } from 'react';
-import { useAuth } from '../context/AuthContext';
-import { useAdminAuth } from '../context/AdminAuthContext';
+import { useAuth } from '../hooks/useAuth';
+import { useAdminAuth } from '../hooks/useAdminAuth';
 import AdminChatPanel from '../components/Chat/AdminChatPanel';
 
 const TAB_DEF = [
@@ -72,8 +72,9 @@ export default function AdminDashboard() {
           </div>
           {loginErr && <p className="text-red-600 text-sm font-semibold">{loginErr}</p>}
           <div>
-            <label className="text-xs font-bold text-content-muted uppercase">Identifiant ou e-mail</label>
+            <label htmlFor="admin-login" className="text-xs font-bold text-content-muted uppercase">Identifiant ou e-mail</label>
             <input
+              id="admin-login"
               type="text"
               autoComplete="username"
               value={loginId}
@@ -82,8 +83,9 @@ export default function AdminDashboard() {
             />
           </div>
           <div>
-            <label className="text-xs font-bold text-content-muted uppercase">Mot de passe</label>
+            <label htmlFor="admin-password" className="text-xs font-bold text-content-muted uppercase">Mot de passe</label>
             <input
+              id="admin-password"
               type="password"
               autoComplete="current-password"
               value={loginPw}
@@ -538,8 +540,9 @@ function FaqRequestsTab() {
               <p className="text-xs text-content-muted mb-3">Choisissez une rubrique existante.</p>
               <div className="space-y-3">
                 <div>
-                  <label className="text-xs uppercase tracking-wider text-content-muted font-bold">Rubrique</label>
+                  <label htmlFor="faq-category" className="text-xs uppercase tracking-wider text-content-muted font-bold">Rubrique</label>
                   <select
+                    id="faq-category"
                     value={publishDraft.category_slug}
                     onChange={(e) => setPublishDraft({ ...publishDraft, category_slug: e.target.value })}
                     className="mt-1 w-full border border-gray-200 rounded-lg px-3 py-2 text-sm outline-none focus:border-accent focus:ring-1 focus:ring-accent"
@@ -552,8 +555,9 @@ function FaqRequestsTab() {
                   </select>
                 </div>
                 <div>
-                  <label className="text-xs uppercase tracking-wider text-content-muted font-bold">Question (publique)</label>
+                  <label htmlFor="faq-public-question" className="text-xs uppercase tracking-wider text-content-muted font-bold">Question (publique)</label>
                   <textarea
+                    id="faq-public-question"
                     value={publishDraft.question}
                     onChange={(e) => setPublishDraft({ ...publishDraft, question: e.target.value })}
                     rows={2}
@@ -561,8 +565,9 @@ function FaqRequestsTab() {
                   />
                 </div>
                 <div>
-                  <label className="text-xs uppercase tracking-wider text-content-muted font-bold">Réponse (publique)</label>
+                  <label htmlFor="faq-public-answer" className="text-xs uppercase tracking-wider text-content-muted font-bold">Réponse (publique)</label>
                   <textarea
+                    id="faq-public-answer"
                     value={publishDraft.reponse}
                     onChange={(e) => setPublishDraft({ ...publishDraft, reponse: e.target.value })}
                     rows={4}
@@ -1065,9 +1070,12 @@ function ChatbotTab() {
   }, []);
 
   useEffect(() => {
-    loadConv();
-    const id = setInterval(loadConv, 20000);
-    return () => clearInterval(id);
+    const initialTimer = setTimeout(loadConv, 0);
+    const refreshTimer = setInterval(loadConv, 20000);
+    return () => {
+      clearTimeout(initialTimer);
+      clearInterval(refreshTimer);
+    };
   }, [loadConv]);
 
   const openConv = async (c) => {

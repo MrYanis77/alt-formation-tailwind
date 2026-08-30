@@ -15,6 +15,8 @@ import faqRoutes from './routes/faq.js';
 import chatRoutes from './routes/chat.js';
 import adminRoutes from './routes/admin.js';
 import visitRoutes from './routes/visit.js';
+import formationsRoutes from './routes/formations.js';
+import blogRoutes from './routes/blog.js';
 import { isDatabaseDisabled } from './db.js';
 
 dotenv.config();
@@ -105,6 +107,8 @@ app.use('/api/faq', faqRoutes);
 app.use('/api/chat', chatRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/visit', visitRoutes);
+app.use('/api/formations', formationsRoutes);
+app.use('/api/blog', blogRoutes);
 
 app.get('/api/health', (_req, res) =>
   res.json({ ok: true, databaseDisabled: isDatabaseDisabled })

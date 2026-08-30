@@ -12,7 +12,7 @@ const ICON_MAP = {
   'map-pin': MapPin,
 };
 
-export default function AdvantageCard({ label, iconeName, index }) {
+export default function AdvantageCard({ label, iconeName, index, compact = false }) {
   const Icon = ICON_MAP[iconeName] || HelpCircle;
 
   const isNavy = Math.floor(index / 4) % 2 === 0
@@ -22,13 +22,14 @@ export default function AdvantageCard({ label, iconeName, index }) {
   return (
     <div className={`
       ${isNavy ? 'bg-primary' : 'bg-accent'}
-      rounded-card p-8 flex flex-col items-center justify-center text-center
-      h-full min-h-[200px] transition-transform hover:scale-105 duration-300 shadow-md
+      rounded-card flex flex-col items-center justify-center text-center
+      h-full transition-transform hover:scale-105 duration-300 shadow-md
+      ${compact ? 'p-5 min-h-[130px]' : 'p-8 min-h-[200px]'}
     `}>
-      <div className="text-white mb-4">
-        <Icon size={42} strokeWidth={1.5} />
+      <div className={`text-white ${compact ? 'mb-2' : 'mb-4'}`}>
+        <Icon size={compact ? 28 : 42} strokeWidth={1.5} />
       </div>
-      <h3 className="text-white font-bold text-lg md:text-xl">
+      <h3 className={`text-white font-bold ${compact ? 'text-sm md:text-base' : 'text-lg md:text-xl'}`}>
         {label}
       </h3>
     </div>

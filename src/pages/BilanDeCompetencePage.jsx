@@ -3,8 +3,13 @@ import Breadcrumb from '../components/Breadcrumb';
 import CallToAction from '../components/CallToAction';
 import Faq from '../components/Faq';
 import { Link } from 'react-router-dom';
+import { useMemo } from 'react';
 import data from '../data/json/bilan.json';
 import bilanFaq from '../data/faqSite/bilan.js';
+import {
+  usePublicPricing,
+  mapPricingPlansToBilanFormules,
+} from '../features/pricing/hooks/usePublicPricing';
 
 const bilan = data.bilanDeCompetences;
 
@@ -50,6 +55,27 @@ export default function BilanDeCompetencePage() {
     testsExterieurs,
     cta,
   } = bilan;
+
+  const { plans: pricingPlans } = usePublicPricing({ entitySlug: 'bilan-competences' });
+
+  const formulesTarifs = useMemo(() => {
+    const fromDb = mapPricingPlansToBilanFormules(pricingPlans);
+    if (!fromDb?.length) return tarifs?.formules ?? [];
+
+    return fromDb.map((f) => {
+      const staticMatch = (tarifs?.formules ?? []).find(
+        (s) => s.nom.toLowerCase() === String(f.nom).toLowerCase(),
+      );
+      if (!staticMatch) return f;
+      return {
+        ...staticMatch,
+        prix: f.prix,
+        heures: f.heures ?? staticMatch.heures,
+        resume: f.resume || staticMatch.resume,
+        modalite: f.modalite || staticMatch.modalite,
+      };
+    });
+  }, [pricingPlans, tarifs?.formules]);
 
   const faqData = bilanFaq.questions?.length
     ? [
@@ -266,7 +292,7 @@ export default function BilanDeCompetencePage() {
           )}
 
           {/* ── TARIFS ── */}
-          {tarifs?.formules?.length > 0 && (
+          {formulesTarifs.length > 0 && (
             <div className="mb-16">
               <div className="text-center mb-10">
                 <p className="text-sm md:text-base font-extrabold text-accent uppercase tracking-widest mb-3">Tarifs</p>
@@ -276,7 +302,7 @@ export default function BilanDeCompetencePage() {
                 <p className="text-content-muted font-body max-w-2xl mx-auto leading-relaxed">{tarifs.sousTitre}</p>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                {tarifs.formules.map((formule) => (
+                {formulesTarifs.map((formule) => (
                   <div
                     key={formule.nom}
                     className="flex flex-col rounded-2xl bg-white border border-gray-100 shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300"

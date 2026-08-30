@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../hooks/useAuth';
 import ChatWindow from '../components/Chat/ChatWindow';
 
 const TABS = [
@@ -23,6 +23,7 @@ export default function UserDashboard() {
             <p className="text-white/70 text-sm mt-1">{user?.email}</p>
           </div>
           <button
+            type="button"
             onClick={logout}
             className="bg-white/10 hover:bg-white/20 border border-white/20 text-white text-sm font-bold px-4 py-2 rounded-lg transition-colors"
           >
@@ -35,6 +36,7 @@ export default function UserDashboard() {
         <nav className="flex flex-wrap gap-2 mb-6 border-b border-gray-200">
           {TABS.map((t) => (
             <button
+              type="button"
               key={t.id}
               onClick={() => setTab(t.id)}
               className={`px-4 py-3 text-sm font-bold border-b-2 transition-colors ${
@@ -100,6 +102,7 @@ function ProfileTab({ user, onUpdate }) {
         <h2 className="text-xl font-extrabold text-primary">Mes informations</h2>
         {!editing && (
           <button
+            type="button"
             onClick={() => setEditing(true)}
             className="text-sm font-bold text-accent hover:underline"
           >
@@ -225,6 +228,7 @@ function MessagesTab() {
           {contacts.map((c) => (
             <li key={c.id}>
               <button
+                type="button"
                 onClick={() => setOpenContact(c)}
                 className={`w-full text-left border rounded-xl p-4 transition-colors ${
                   openContact?.id === c.id ? 'border-accent bg-amber-50/50' : 'border-gray-200 hover:border-accent/50'
@@ -373,13 +377,15 @@ function FaqTab() {
           )}
           <ul className="space-y-3">
             {requests.map((r) => (
-              <li
-                key={r.id}
-                className={`border rounded-xl p-4 transition-colors cursor-pointer ${
+              <li key={r.id}>
+                <button
+                  type="button"
+                  aria-expanded={openRequest?.id === r.id}
+                  className={`w-full border rounded-xl p-4 text-left transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
                   openRequest?.id === r.id ? 'border-accent bg-amber-50/50' : 'border-gray-200 hover:border-accent/50'
                 }`}
-                onClick={() => setOpenRequest(openRequest?.id === r.id ? null : r)}
-              >
+                  onClick={() => setOpenRequest(openRequest?.id === r.id ? null : r)}
+                >
                 <div className="flex items-start justify-between gap-3">
                   <p className="text-sm text-content-dark font-medium">{r.question}</p>
                   <StatusBadge status={r.status} />
@@ -393,6 +399,7 @@ function FaqTab() {
                 <p className="text-[11px] text-content-muted mt-2">
                   {new Date(r.created_at).toLocaleString('fr-FR')}
                 </p>
+                </button>
               </li>
             ))}
           </ul>

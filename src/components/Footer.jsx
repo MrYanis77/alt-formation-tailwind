@@ -5,8 +5,7 @@ const currentYear = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <>
-      <footer className="bg-footer px-10 pt-10 pb-5 border-t-4 border-accent">
+    <footer className="bg-footer px-10 pt-10 pb-5 border-t-4 border-accent">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-[30px]">
 
           {/* Colonne 1 : Formations */}
@@ -112,7 +111,5 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-    </>
   );
 }
-

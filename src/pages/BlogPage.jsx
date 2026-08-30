@@ -1,92 +1,52 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Breadcrumb from '../components/Breadcrumb';
 import Hero from '../components/Hero/Hero';
-import { hero, categories, blogPosts, newsletterData, paginationData } from '../data/Blog';
 import BlogCard from '../components/Card/BlogCard';
-import FiltreCat from '../components/Items/FiltreCat'; // <-- Import du nouveau composant
+import FiltreCat from '../components/Items/FiltreCat';
+import { usePublicBlog } from '../features/blog/hooks/usePublicBlog';
+
+const HERO = {
+  titre: 'Blog',
+  sousTitre: 'Actualités et conseils Alt RH Formations',
+  video: '/assets/video/blog.mp4',
+};
 
 export default function BlogPage() {
-  const [activeCategory, setActiveCategory] = useState("Tous");
+  const { posts, categories, loading, error } = usePublicBlog();
+  const [activeCategory, setActiveCategory] = useState('Tous');
 
-  // Filtrage des articles selon la catégorie sélectionnée
-  const filteredPosts = activeCategory === "Tous"
-    ? blogPosts
-    : blogPosts.filter(post => post.category === activeCategory);
+  const filteredPosts =
+    activeCategory === 'Tous' ? posts : posts.filter((post) => post.category === activeCategory);
 
   return (
     <div className="bg-white min-h-screen">
-
-      <Hero
-        title={hero.titre}
-        subtitle={hero.sousTitre}
-        video={hero.video}
-      />
-
-      <Breadcrumb
-        items={[{ label: 'Accueil', to: '/' }, { label: 'Actualités' }]}
-      />
+      <Hero title={HERO.titre} subtitle={HERO.sousTitre} video={HERO.video} />
+      <Breadcrumb items={[{ label: 'Accueil', to: '/' }, { label: 'Blog' }]} />
 
       <main className="max-w-container-3xl mx-auto px-6 py-[60px]">
+        {loading ? <p className="text-content-muted text-sm mb-8">Chargement depuis la base…</p> : null}
 
-        {/* ======== SECTION FILTRES ======== */}
-        <FiltreCat
-          categories={categories}
-          activeCat={activeCategory}
-          setActiveCat={setActiveCategory}
-        />
+        {error ? (
+          <div className="rounded-xl border border-red-200 bg-red-50 text-red-800 px-5 py-4 text-sm mb-8">
+            <strong>Erreur BDD :</strong> {error}
+          </div>
+        ) : null}
 
-        {/* ======== GRILLE D'ARTICLES (image_a607c5.png) ======== */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {filteredPosts.map((post) => (
-            <BlogCard key={post.id} article={post} />
-          ))}
-        </div>
+        {!loading && !error && posts.length === 0 ? (
+          <p className="text-content-muted text-sm mb-8">Aucun article dans la base pour le moment.</p>
+        ) : null}
 
-        {/* ======== PAGINATION (image_a607d7.png) ======== */}
-        <div className="flex justify-center items-center gap-2 mb-20">
-          <button className="px-4 py-2 border border-gray-200 rounded-lg text-primary text-sm hover:bg-gray-50">
-            {paginationData.prevLabel}
-          </button>
-          {[1, 2, 3].map((num) => (
-            <button
-              key={num}
-              className={`w-10 h-10 rounded-lg flex items-center justify-center font-bold text-sm
-                ${num === paginationData.currentPage ? 'bg-accent text-white' : 'border border-gray-200 text-primary hover:bg-gray-50'}`}
-            >
-              {num}
-            </button>
-          ))}
-          <button className="px-4 py-2 border border-gray-200 rounded-lg text-primary text-sm hover:bg-gray-50">
-            {paginationData.nextLabel}
-          </button>
-        </div>
-
-        {/* ======== NEWSLETTER (image_a607e5.png) ======== */}
-        <section className="bg-surface-alt border border-gray-100 rounded-3xl p-10 md:p-16 text-center">
-          <h2 className="font-heading text-h2 md:text-h1 font-bold text-primary mb-4">
-            {newsletterData.title}
-          </h2>
-          <p className="text-content-muted text-base mb-10 max-w-xl mx-auto leading-relaxed">
-            {newsletterData.subtitle}
-          </p>
-          <form className="flex flex-col md:flex-row max-w-2xl mx-auto gap-4" onSubmit={(e) => e.preventDefault()}>
-            <input
-              type="email"
-              placeholder={newsletterData.placeholder}
-              className="flex-1 bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-accent transition-colors text-medium"
-              required
-            />
-            <button
-              type="submit"
-              className="bg-accent hover:bg-accent-dark text-white px-10 py-4 rounded-xl font-bold text-base transition-all shadow-lg shadow-accent/20"
-            >
-              {newsletterData.buttonText}
-            </button>
-          </form>
-        </section>
-
+        {posts.length > 0 ? (
+          <>
+            <FiltreCat categories={categories} activeCat={activeCategory} setActiveCat={setActiveCategory} />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {filteredPosts.map((post) => (
+                <BlogCard key={post.id ?? post.slug} article={post} />
+              ))}
+            </div>
+          </>
+        ) : null}
       </main>
-
     </div>
   );
-};
+}

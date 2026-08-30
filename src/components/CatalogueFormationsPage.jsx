@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Hero from '../components/Hero/Hero';
 import Breadcrumb from '../components/Breadcrumb';
@@ -33,8 +33,25 @@ export default function CatalogueFormationsPage({
   cardTypeBadge,
 }) {
   const [searchTerm, setSearchTerm] = useState('');
-  const [activeCategory, setActiveCategory] = useState('all');
   const location = useLocation();
+  const categoryFromHash = location.hash ? location.hash.replace('#', '') : 'all';
+  const [categorySelection, setCategorySelection] = useState(() => ({
+    hash: location.hash,
+    value: categoryFromHash,
+  }));
+  const activeCategory =
+    categorySelection.hash === location.hash
+      ? categorySelection.value
+      : categoryFromHash;
+  const setActiveCategory = useCallback(
+    (value) => {
+      setCategorySelection((previous) => ({
+        hash: location.hash,
+        value: typeof value === 'function' ? value(previous.value) : value,
+      }));
+    },
+    [location.hash]
+  );
 
   const scrollToCatalogueHeading = useCallback((categoryId) => {
     requestAnimationFrame(() => {
@@ -53,20 +70,18 @@ export default function CatalogueFormationsPage({
       setActiveCategory(categoryId);
       scrollToCatalogueHeading(categoryId);
     },
-    [scrollToCatalogueHeading]
+    [scrollToCatalogueHeading, setActiveCategory]
   );
 
   // Scroll vers l'ancre si présente dans l'URL
-  useMemo(() => {
-    if (location.hash) {
-      const id = location.hash.replace('#', '');
-      setActiveCategory(id);
-      setTimeout(() => {
-        const el = document.getElementById(id);
-        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 150);
-    }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    if (!location.hash) return undefined;
+    const id = location.hash.replace('#', '');
+    const timer = setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 150);
+    return () => clearTimeout(timer);
   }, [location.hash]);
 
   const filteredCatalogue = useMemo(() =>
@@ -147,9 +162,9 @@ export default function CatalogueFormationsPage({
               <div className="px-6">
                 <div className="max-w-container-3xl mx-auto">
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                    {cat.items.map((item, idx) => (
+                    {cat.items.map((item) => (
                       <CardFormation
-                        key={idx}
+                        key={item.id || item.slug || item.href || item.titre}
                         title={item.titre}
                         image={item.imageUrl || FALLBACK_IMG}
                         variant="white"
@@ -191,9 +206,9 @@ export default function CatalogueFormationsPage({
       {crossLinks.length > 0 && (
         <section className="py-12 px-6 bg-gray-50 border-y border-gray-100">
           <div className="max-w-container-xl mx-auto flex flex-wrap items-center justify-center gap-6">
-            {crossLinks.map((link, i) => (
+            {crossLinks.map((link) => (
               <Link
-                key={i}
+                key={link.to}
                 to={link.to}
                 className="inline-flex items-center gap-2 text-primary font-bold hover:text-accent transition-colors text-sm no-underline"
               >

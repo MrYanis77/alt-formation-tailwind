@@ -141,9 +141,8 @@ export default function CataloguePlusFiltres({
       </button>
 
       {open ? (
-        <div
+        <section
           id={panelId}
-          role="region"
           aria-label="Filtres avancés du catalogue"
           className="absolute right-0 top-full mt-2 z-50 w-[min(100vw-3rem,28rem)] rounded-xl border border-border bg-white shadow-xl p-4 sm:p-5 space-y-5"
         >
@@ -184,7 +183,7 @@ export default function CataloguePlusFiltres({
               Réinitialiser les filtres avancés
             </button>
           ) : null}
-        </div>
+        </section>
       ) : null}
     </div>
   );

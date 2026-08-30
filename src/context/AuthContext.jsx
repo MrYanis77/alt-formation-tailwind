@@ -1,6 +1,5 @@
-import { createContext, useContext, useEffect, useState, useCallback } from 'react';
-
-const AuthContext = createContext(null);
+import { useEffect, useState, useCallback, useMemo } from 'react';
+import { AuthContext } from './authContexts';
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
@@ -80,7 +79,7 @@ export function AuthProvider({ children }) {
     return data.user;
   }, []);
 
-  const value = {
+  const value = useMemo(() => ({
     user,
     loading,
     isAuthenticated: !!user,
@@ -90,13 +89,7 @@ export function AuthProvider({ children }) {
     logout,
     updateProfile,
     refresh: fetchMe,
-  };
+  }), [fetchMe, loading, login, logout, register, updateProfile, user]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
-}
-
-export function useAuth() {
-  const ctx = useContext(AuthContext);
-  if (!ctx) throw new Error('useAuth must be used within an AuthProvider');
-  return ctx;
 }

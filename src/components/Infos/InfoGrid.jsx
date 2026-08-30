@@ -19,24 +19,39 @@ export default function InfoGrid({
   description,
   icon: Icon,
   variant = 'orange',
+  compact = false,
 }) {
   const iconBg = variant === 'orange' ? 'bg-accent' : 'bg-primary';
 
   return (
-    <div className="bg-white border border-border rounded-card flex flex-col items-center text-center w-full shadow-sm hover:shadow-md transition-all h-full p-10">
+    <div
+      className={`bg-white border border-border rounded-card flex flex-col items-center text-center w-full shadow-sm hover:shadow-md transition-all h-full ${
+        compact ? 'p-5' : 'p-10'
+      }`}
+    >
       {Icon && (
         <div
-          className={`${iconBg} rounded-full flex items-center justify-center shadow-sm text-white w-20 h-20 mb-8`}
+          className={`${iconBg} rounded-full flex items-center justify-center shadow-sm text-white ${
+            compact ? 'w-14 h-14 mb-4' : 'w-20 h-20 mb-8'
+          }`}
         >
-          <Icon size={32} strokeWidth={2} />
+          <Icon size={compact ? 24 : 32} strokeWidth={2} />
         </div>
       )}
 
-      <h3 className="text-accent font-heading font-extrabold leading-tight uppercase text-2xl mb-5">
+      <h3
+        className={`text-accent font-heading font-extrabold leading-tight uppercase ${
+          compact ? 'text-lg mb-3' : 'text-2xl mb-5'
+        }`}
+      >
         {titre}
       </h3>
 
-      <div className="text-content-muted font-body leading-relaxed w-full text-base">
+      <div
+        className={`text-content-muted font-body leading-relaxed w-full ${
+          compact ? 'text-sm' : 'text-base'
+        }`}
+      >
         {description}
       </div>
     </div>

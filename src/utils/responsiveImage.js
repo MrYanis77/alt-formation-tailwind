@@ -1,10 +1,10 @@
-/** Chemin fallback local (remplace Unsplash). */
+/** Local fallback image. */
 export const FALLBACK_IMAGE = '/assets/images/fallback.webp';
 
 const WIDTHS = [400, 800, 1200];
 
 /**
- * Parse un chemin /assets/images/foo.jpg en composants.
+ * Parse /assets/images/foo.jpg-like paths into reusable parts.
  */
 export function parseAssetImagePath(src) {
   if (!src || typeof src !== 'string') return null;
@@ -12,7 +12,7 @@ export function parseAssetImagePath(src) {
     return { external: true, src };
   }
   const clean = src.split('?')[0];
-  const match = clean.match(/^(.+\/)([^/]+)\.(\w+)$/i);
+  const match = /^(.+\/)([^/]+)\.(\w+)$/i.exec(clean);
   if (!match) return null;
   return {
     external: false,
@@ -23,21 +23,31 @@ export function parseAssetImagePath(src) {
   };
 }
 
+export function hasLocalWebpVariants(src) {
+  const parsed = parseAssetImagePath(src);
+  return Boolean(
+    parsed
+      && !parsed.external
+      && parsed.ext !== 'webp'
+      && parsed.dir.startsWith('/assets/images/')
+  );
+}
+
 /**
- * Variante WebP responsive : /assets/images/foo-800w.webp
+ * Responsive WebP variant: /assets/images/foo-800w.webp.
  */
 export function webpVariantSrc(src, width) {
   const parsed = parseAssetImagePath(src);
-  if (!parsed || parsed.external) return null;
+  if (!parsed || parsed.external || !hasLocalWebpVariants(src)) return null;
   return `${parsed.dir}${parsed.baseName}-${width}w.webp`;
 }
 
 /**
- * srcSet WebP pour ResponsiveImage.
+ * WebP srcSet for local optimized /assets/images files only.
  */
 export function buildWebpSrcSet(src, widths = WIDTHS) {
   const parsed = parseAssetImagePath(src);
-  if (!parsed || parsed.external || parsed.ext === 'webp') return null;
+  if (!parsed || !hasLocalWebpVariants(src)) return null;
   return widths
     .map((w) => {
       const url = webpVariantSrc(src, w);
@@ -45,14 +55,6 @@ export function buildWebpSrcSet(src, widths = WIDTHS) {
     })
     .filter(Boolean)
     .join(', ');
-}
-
-/**
- * Poster dérivé d'une vidéo : /assets/video/foo.mp4 → /assets/video/foo-poster.webp
- */
-export function videoPosterSrc(videoSrc) {
-  if (!videoSrc) return null;
-  return videoSrc.replace(/\.mp4$/i, '-poster.webp');
 }
 
 export { WIDTHS };

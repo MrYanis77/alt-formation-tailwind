@@ -225,9 +225,9 @@ export default function CatalogueFormationsBlock({
               <div className="px-6">
                 <div className="max-w-container-3xl mx-auto">
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                    {cat.items.map((item, idx) => (
+                    {cat.items.map((item) => (
                       <CardFormation
-                        key={idx}
+                        key={item.id || item.slug || item.href || item.titre}
                         title={item.titre}
                         image={item.imageUrl || FALLBACK_IMG}
                         variant="white"

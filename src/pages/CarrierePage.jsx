@@ -272,6 +272,7 @@ export default function CarrierePage() {
 
                         {/* CARTE — GESTION DE CARRIÈRE */}
                         <button
+                            type="button"
                             onClick={() => setSelected('carriere')}
                             className={`text-left rounded-card p-10 md:p-12 border-2 flex flex-col transition-all duration-300 group cursor-pointer
                                 ${isCarriere
@@ -286,7 +287,7 @@ export default function CarrierePage() {
                             <h3 className={`font-heading text-2xl font-bold mb-3 transition-colors duration-300 ${isCarriere ? 'text-white' : 'text-primary'}`}>
                                 {carriere.titre}
                             </h3>
-                            <p className={`font-bold font-body mb-4 transition-colors duration-300 ${isCarriere ? 'text-accent' : 'text-accent'}`}>
+                            <p className="font-bold font-body mb-4 text-accent transition-colors duration-300">
                                 {carriere.tagline}
                             </p>
                             <p className={`font-body leading-relaxed text-sm transition-colors duration-300 ${isCarriere ? 'text-white/80' : 'text-content-muted'}`}>
@@ -302,6 +303,7 @@ export default function CarrierePage() {
 
                         {/* CARTE — COACHING EMPLOI */}
                         <button
+                            type="button"
                             onClick={() => setSelected('coaching')}
                             className={`text-left rounded-card p-10 md:p-12 border-2 flex flex-col transition-all duration-300 group cursor-pointer relative overflow-hidden
                                 ${!isCarriere

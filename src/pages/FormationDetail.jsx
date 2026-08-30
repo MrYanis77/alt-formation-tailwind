@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import SEOHead from '../components/SEO/SEOHead';
 import { useParams, Link } from 'react-router-dom';
-import { getFormationById } from '../data/getFormationById';
-import { imageMap } from '../data/formations';
+import { getPublicFormations } from '../features/formations/api/formationsApi';
+import { mapFormationCourseToDetail } from '../features/formations/domain/formationMappers';
 import { certifications } from '../data/certification';
 import { mapCertificationOfficielleToCertif } from '../utils/mapCertificationOfficielle';
 
@@ -19,20 +19,24 @@ const sectionY = 'py-12 lg:py-16';
 
 export default function FormationDetail() {
   const { id } = useParams();
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [result, setResult] = useState({ id: null, data: null });
 
   useEffect(() => {
-    let cancelled = false;
-    setLoading(true);
-    getFormationById(id).then((f) => {
-      if (!cancelled) {
-        setData(f);
-        setLoading(false);
-      }
-    });
-    return () => { cancelled = true; };
+    const controller = new AbortController();
+    getPublicFormations({ slug: id, signal: controller.signal })
+      .then((json) => {
+        if (controller.signal.aborted) return;
+        const course = json.data?.courses?.[0] ?? json.data?.formations?.[0] ?? null;
+        setResult({ id, data: course ? mapFormationCourseToDetail(course) : null });
+      })
+      .catch(() => {
+        if (!controller.signal.aborted) setResult({ id, data: null });
+      });
+    return () => controller.abort();
   }, [id]);
+
+  const loading = result.id !== id;
+  const data = loading ? null : result.data;
 
   if (loading) {
     return (
@@ -46,7 +50,7 @@ export default function FormationDetail() {
     ? mapCertificationOfficielleToCertif(data.certificationOfficielle, id, {
         hero: data.hero,
         categorie: data.categorie,
-        imageUrl: imageMap[id],
+        imageUrl: data.presentation?.image,
       })
     : null;
 
@@ -56,7 +60,7 @@ export default function FormationDetail() {
     ? {
         ...certifLegacy,
         ...certifFromData,
-        imageUrl: certifFromData.imageUrl || certifLegacy?.imageUrl || imageMap[id],
+        imageUrl: certifFromData.imageUrl || certifLegacy?.imageUrl || data.presentation?.image,
         category: certifLegacy?.category || certifFromData.category,
       }
     : certifLegacy;
@@ -133,9 +137,7 @@ export default function FormationDetail() {
                   titre: data.presentation.titre,
                   contenu: data.presentation.paragraphes,
                   image:
-                    data.presentation?.image ||
-                    imageMap[id] ||
-                    data.presentation.image ||
+                    data.presentation?.image ||                    data.presentation.image ||
                     '/assets/images/fallback.webp',
                 }}
                 imageRight={true}

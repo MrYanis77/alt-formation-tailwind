@@ -1,0 +1,19 @@
+﻿
+Fatal error: Uncaught PDOException: SQLSTATE[HY000] [2002] Aucune connexion nÔÇÖa pu ├¬tre ├®tablie car lÔÇÖordinateur cible lÔÇÖa express├®ment refus├®e in C:\alt-formation final\public\api\analyze-db-state.php:13
+Stack trace:
+#0 C:\alt-formation final\public\api\analyze-db-state.php(13): PDO->__construct('mysql:host=127....', 'dbu977482', Object(SensitiveParameterValue), Array)
+#1 {main}
+  thrown in C:\alt-formation final\public\api\analyze-db-state.php on line 13
+php.exe : PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Aucune connexion nÔÇÖa pu ├¬tre ├®tablie car 
+lÔÇÖordinateur cible lÔÇÖa express├®ment refus├®e in C:\alt-formation final\public\api\analyze-db-state.php:13
+Au caractère C:\Users\yanis\AppData\Local\Temp\ps-script-73a41d9b-091d-4a00-b053-21f30617f442.ps1:112 : 1
++ & "C:/xampp/php/php.exe" "c:\alt-formation final\public\api\analyze-d ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (PHP Fatal error...db-state.php:13:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Stack trace:
+#0 C:\alt-formation final\public\api\analyze-db-state.php(13): PDO->__construct('mysql:host=127....', 'dbu977482', 
+Object(SensitiveParameterValue), Array)
+#1 {main}
+  thrown in C:\alt-formation final\public\api\analyze-db-state.php on line 13

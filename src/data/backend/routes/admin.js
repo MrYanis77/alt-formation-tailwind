@@ -168,7 +168,7 @@ router.patch('/users/:id/role', requireAdminElevated, async (req, res) => {
       return res.status(400).json({ success: false, error: 'Rôle invalide' });
     }
 
-    if (req.user && id === req.user.id) {
+    if (id === req.user?.id) {
       return res.status(400).json({ success: false, error: 'Vous ne pouvez pas modifier votre propre rôle' });
     }
 

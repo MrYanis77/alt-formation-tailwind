@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ResponsiveImage from '../ResponsiveImage';
-import { getModaliteBadgeLabel } from '../../utils/formationModalites';
+import { getModaliteBadgeLabel } from '../../features/formations/utils/formationModalites';
 
 export default function CardFormation({
   title,
@@ -35,11 +35,12 @@ export default function CardFormation({
   const bodyPad = dense ? 'p-3' : compact ? 'p-4' : 'p-6';
   const titleSize = dense ? 'text-sm' : compact ? 'text-base' : 'text-lg';
   const footerGap = dense ? 'gap-1.5 pt-3' : compact ? 'gap-2 pt-4' : 'gap-3 pt-6';
-  const btnClass = dense
-    ? 'text-[11px] py-1.5 px-3'
-    : compact
-      ? 'text-xs py-2 px-4'
-      : 'text-sm py-2.5 px-6';
+  let btnClass = 'text-sm py-2.5 px-6';
+  if (dense) btnClass = 'text-[11px] py-1.5 px-3';
+  else if (compact) btnClass = 'text-xs py-2 px-4';
+  let modalityClass = 'bg-primary/95';
+  if (resolvedModalityBadge === 'Distanciel') modalityClass = 'bg-sky-700/95';
+  else if (resolvedModalityBadge === 'Mixte') modalityClass = 'bg-accent/95';
 
   return (
     <div className={`
@@ -62,13 +63,7 @@ export default function CardFormation({
         ) : null}
         {resolvedModalityBadge ? (
           <span
-            className={`absolute right-3 z-[3] max-w-[calc(100%-1.5rem)] rounded-md font-extrabold uppercase tracking-wide text-white shadow-md ${
-              resolvedModalityBadge === 'Distanciel'
-                ? 'bg-sky-700/95'
-                : resolvedModalityBadge === 'Mixte'
-                  ? 'bg-accent/95'
-                  : 'bg-primary/95'
-            } ${compact ? 'top-2 px-2 py-0.5 text-[9px]' : 'top-3 px-2.5 py-1 text-[10px]'}`}
+            className={`absolute right-3 z-[3] max-w-[calc(100%-1.5rem)] rounded-md font-extrabold uppercase tracking-wide text-white shadow-md ${modalityClass} ${compact ? 'top-2 px-2 py-0.5 text-[9px]' : 'top-3 px-2.5 py-1 text-[10px]'}`}
             title={`Modalité : ${resolvedModalityBadge}`}
           >
             {resolvedModalityBadge}
@@ -110,8 +105,8 @@ export default function CardFormation({
           <ul
             className={`list-disc font-body leading-relaxed ${compact ? 'mt-3 space-y-1 pl-4 text-xs' : 'mt-4 space-y-1.5 pl-5 text-sm'} ${isNavy ? 'text-white/90 marker:text-accent' : 'text-content-muted marker:text-accent'}`}
           >
-            {items.map((line, i) => (
-              <li key={i}>{line}</li>
+            {items.map((line) => (
+              <li key={line}>{line}</li>
             ))}
           </ul>
         ) : null}

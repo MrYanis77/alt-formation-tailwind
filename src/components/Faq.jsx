@@ -91,20 +91,22 @@ export default function Faq({
                         )}
 
                         <div className="space-y-3">
-                            {visibleQuestions.map((item, qIndex) => {
-                                const questionId = `${catKey}-${qIndex}`;
+                            {visibleQuestions.map((item) => {
+                                const questionId = `${catKey}-${item.id || item.q}`;
                                 const isOpen = openQuestion === questionId;
 
                                 return (
                                     <div
-                                        key={qIndex}
+                                        key={questionId}
                                         className={`border rounded-xl transition-all duration-300 ${isOpen ? 'border-accent bg-accent/5 shadow-sm' : 'border-gray-200 bg-white hover:border-gray-300'}`}
                                     >
                                         <button
+                                            id={`faq-question-${questionId}`}
                                             type="button"
                                             onClick={() => toggleQuestion(questionId)}
-                                            className="w-full text-left px-5 py-4 flex items-center justify-between focus:outline-none cursor-pointer"
+                                            className="w-full text-left px-5 py-4 flex items-center justify-between cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                                             aria-expanded={isOpen}
+                                            aria-controls={`faq-answer-${questionId}`}
                                         >
                                             <span
                                                 className={`font-bold text-sm pr-4 ${isOpen ? 'text-accent' : 'text-primary'}`}
@@ -141,13 +143,17 @@ export default function Faq({
                                             </span>
                                         </button>
 
-                                        <div
+                                        <section
+                                            id={`faq-answer-${questionId}`}
+                                            aria-label={item.q}
+                                            aria-labelledby={`faq-question-${questionId}`}
+                                            hidden={!isOpen}
                                             className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'}`}
                                         >
                                             <div className="px-5 pb-5 pt-1 text-slate-600 text-sm leading-relaxed">
                                                 {item.a}
                                             </div>
-                                        </div>
+                                        </section>
                                     </div>
                                 );
                             })}
@@ -158,7 +164,7 @@ export default function Faq({
                                 <button
                                     type="button"
                                     onClick={() => toggleCategoryExpanded(catKey)}
-                                    className="inline-flex items-center gap-2 text-accent font-bold text-sm hover:text-accent-dark transition-colors uppercase tracking-wider"
+                                    className="inline-flex items-center gap-2 text-accent font-bold text-sm hover:text-accent-dark transition-colors uppercase tracking-wider focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                                 >
                                     {hasMore
                                         ? `Voir les ${total - initialVisibleCount} autres questions`

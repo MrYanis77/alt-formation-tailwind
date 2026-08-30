@@ -1,16 +1,87 @@
-# React + Vite
+# Alt Formation / Nexytal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Plateforme web d'un organisme de formation : catalogue de formations diplômantes,
+certifiantes et e-learning, blog, recrutement, bilan de compétences et back-office.
 
-Currently, two official plugins are available:
+## Architecture
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Le projet suit un monolithe modulaire : les règles propres à chaque activité sont
+rangées dans `src/features/<metier>`, tandis que les mécanismes réutilisables
+(HTTP, état asynchrone, observabilité) restent dans `src/shared`.
 
-## React Compiler
+La cartographie complète, les règles de dépendance et la stratégie de fiabilité
+sont décrites dans [docs/architecture/README.md](docs/architecture/README.md).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Démarrage local
 
-## Expanding the ESLint configuration
+Prérequis : Node.js 22+, npm, PHP 7.4+ et MySQL/MariaDB pour les données réelles.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run php
+npm run dev
+```
+
+Vite sert l'interface sur `http://localhost:5173` et transmet `/api` au serveur PHP
+sur `http://127.0.0.1:8000`. Les variables PHP se configurent avec les modèles dans
+`public/api/config/`.
+
+Le serveur Express historique/back-office peut être lancé séparément avec :
+
+```bash
+npm run server
+```
+
+## Contrôles qualité
+
+```bash
+npm run check:architecture
+npm run lint
+npm run test:js
+npm run test:php
+npm run test:coverage
+npm run build
+```
+
+`npm run test` exécute les contrôles d'architecture, ESLint, les tests JavaScript
+et le test PHP du logger.
+
+Le rapport de couverture Vitest est généré dans `coverage/index.html`. Le bilan
+versionné se trouve dans `docs/quality/coverage-report.md`.
+
+`npm run build` lance directement le build Vite avec les donnees versionnees. Les
+anciens scripts de generation retires du depot ne font plus partie de la chaine de
+build.
+
+L'analyse SonarQube se lance avec `npm run sonar`. Le jeton est fourni uniquement
+par `SONAR_TOKEN` dans `.env`; il n'est jamais stocke dans la configuration Sonar.
+
+## Logs de debug
+
+Les appels API produisent des événements structurés en développement :
+`request:start`, `request:success`, `request:failed`, `response:error` et
+`response:invalid-json`. Les mots de passe, jetons, cookies et clés API sont
+automatiquement masqués.
+
+Pour activer temporairement ces traces dans un navigateur hors mode développement :
+
+```js
+localStorage.setItem('nexytal:debug', '1');
+location.reload();
+```
+
+Pour les désactiver : `localStorage.removeItem('nexytal:debug')`.
+
+## Arborescence utile
+
+```text
+src/
+  features/       modules métier autonomes
+  shared/         briques techniques génériques
+  components/     composants d'interface transverses
+  pages/          composition des routes
+  data/backend/   serveur Express historique, isolé du frontend
+public/api/        API PHP exécutée en local et copiée au build
+tests/             tests JavaScript et PHP
+docs/architecture décisions et règles d'évolution
+```

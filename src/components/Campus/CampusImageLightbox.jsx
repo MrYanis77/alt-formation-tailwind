@@ -1,5 +1,12 @@
-import React, { useCallback, useEffect, useId, useState } from 'react';
+import React, { useCallback, useEffect, useId, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+
+const FOCUSABLE_SELECTOR =
+  'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+function getFocusableElements(container) {
+  return container ? [...container.querySelectorAll(FOCUSABLE_SELECTOR)] : [];
+}
 
 /**
  * Lightbox plein écran pour la galerie photos campus (backdrop flouté, navigation).
@@ -12,7 +19,10 @@ export default function CampusImageLightbox({
   initialIndex = 0,
 }) {
   const titleId = useId();
-  const [slideIndex, setSlideIndex] = useState(0);
+  const [slideIndex, setSlideIndex] = useState(initialIndex);
+  const dialogRef = useRef(null);
+  const closeButtonRef = useRef(null);
+  const previouslyFocusedRef = useRef(null);
 
   const count = images.length;
   const safeIndex =
@@ -20,19 +30,15 @@ export default function CampusImageLightbox({
   const currentSrc = images[safeIndex];
 
   useEffect(() => {
-    if (!open || count === 0) return undefined;
-    let start = initialIndex;
-    if (start < 0 || start >= count) start = 0;
-    setSlideIndex(start);
-    return undefined;
-  }, [open, initialIndex, count]);
-
-  useEffect(() => {
     if (!open) return undefined;
+    previouslyFocusedRef.current = document.activeElement;
     const prev = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
+    const focusFrame = requestAnimationFrame(() => closeButtonRef.current?.focus());
     return () => {
+      cancelAnimationFrame(focusFrame);
       document.body.style.overflow = prev;
+      previouslyFocusedRef.current?.focus?.();
     };
   }, [open]);
 
@@ -54,6 +60,19 @@ export default function CampusImageLightbox({
         onClose();
         return;
       }
+      if (e.key === 'Tab') {
+        const focusableElements = getFocusableElements(dialogRef.current);
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements.at(-1);
+        if (e.shiftKey && document.activeElement === firstElement) {
+          e.preventDefault();
+          lastElement?.focus();
+        } else if (!e.shiftKey && document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement?.focus();
+        }
+        return;
+      }
       if (count <= 1) return;
       if (e.key === 'ArrowLeft') {
         e.preventDefault();
@@ -71,16 +90,18 @@ export default function CampusImageLightbox({
   if (!open || count === 0) return null;
 
   return (
-    <div
-      className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6"
-      role="dialog"
-      aria-modal="true"
+    <dialog
+      ref={dialogRef}
+      open
+      onCancel={onClose}
+      className="fixed inset-0 z-[100] m-0 max-w-none w-full h-full items-center justify-center p-4 sm:p-6 bg-transparent"
       aria-labelledby={titleId}
     >
       <button
         type="button"
         className="absolute inset-0 z-0 bg-white/50 backdrop-blur-xl cursor-default border-0 p-0"
         aria-label="Fermer la vue agrandie"
+        tabIndex="-1"
         onClick={onClose}
       />
 
@@ -89,6 +110,7 @@ export default function CampusImageLightbox({
       </p>
 
       <button
+        ref={closeButtonRef}
         type="button"
         onClick={onClose}
         className="fixed top-4 right-4 z-[102] flex h-11 w-11 items-center justify-center rounded-full bg-white/95 text-primary shadow-lg border border-border hover:bg-accent hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
@@ -127,16 +149,14 @@ export default function CampusImageLightbox({
 
       <div
         className="relative z-[101] max-h-[85vh] max-w-[90vw] rounded-lg overflow-hidden shadow-2xl bg-white ring-2 ring-white/80"
-        onClick={(e) => e.stopPropagation()}
-        role="presentation"
       >
         <img
           src={currentSrc}
-          alt={`${title} — photo ${safeIndex + 1} sur ${count}`}
+          alt={`${title} — vue ${safeIndex + 1} sur ${count}`}
           className="max-h-[85vh] max-w-[90vw] w-auto h-auto object-contain block"
           decoding="async"
         />
       </div>
-    </div>
+    </dialog>
   );
 }

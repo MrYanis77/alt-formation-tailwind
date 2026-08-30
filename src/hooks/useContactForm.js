@@ -1,19 +1,20 @@
 import { useState } from 'react';
-import { contactData } from '../data/contact';
 
 const initialState = {
   nom: '', prenom: '', email: '', telephone: '', sujet: '', message: '', honeypot: ''
+};
+
+const isValidEmail = (value) => {
+  const parts = String(value ?? '').trim().split('@');
+  if (parts.length !== 2) return false;
+  const [local, domain] = parts;
+  return Boolean(local && domain && domain.includes('.') && !domain.startsWith('.') && !domain.endsWith('.'));
 };
 
 export function useContactForm() {
   const [fields, setFields] = useState(initialState);
   const [status, setStatus] = useState('idle'); // 'idle' | 'loading' | 'success' | 'error'
   const [error, setError] = useState('');
-
-  // Note : Avec une API d'envoi silencieux (hors mailto), l'e-mail de destination 
-  // est généralement lié et sécurisé par la clé d'accès (Access Key) pour éviter le piratage.
-  const emailItem = contactData?.coordonnees?.items?.find(item => item.type === 'Email');
-  const destinataireAffichage = emailItem ? emailItem.valeur : 'formations@altformations.fr';
 
   const handleChange = (e) => {
     setFields(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -45,7 +46,7 @@ export function useContactForm() {
       return;
     }
 
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    if (!isValidEmail(email)) {
       setError('Adresse e-mail invalide.');
       setStatus('error');
       return;

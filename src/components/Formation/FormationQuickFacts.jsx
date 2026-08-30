@@ -30,8 +30,8 @@ export default function FormationQuickFacts({
     <div className="rounded-xl border border-border bg-surface-soft p-4 sm:p-5 shadow-sm">
       {stats && stats.length > 0 ? (
         <div className="grid grid-cols-2 gap-3 sm:gap-4 pb-4 mb-4 border-b border-border">
-          {stats.map((stat, idx) => (
-            <div key={idx} className="min-w-0">
+          {stats.map((stat) => (
+            <div key={stat.label || stat.value || stat.valeur} className="min-w-0">
               <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-widest text-content-muted mb-1 truncate">
                 {stat.label}
               </div>
@@ -51,8 +51,8 @@ export default function FormationQuickFacts({
                 {infosPratiques.modalites?.titre || 'Modalités'}
               </h3>
               <ul className="space-y-1.5 text-content-muted font-body leading-snug list-none pl-0">
-                {modalPreview.map((p, i) => (
-                  <li key={i} className="pl-3 border-l-2 border-accent/40">
+                {modalPreview.map((p) => (
+                  <li key={p} className="pl-3 border-l-2 border-accent/40">
                     {p}
                   </li>
                 ))}
@@ -66,8 +66,8 @@ export default function FormationQuickFacts({
                 {infosPratiques.prerequis?.titre || 'Prérequis'}
               </h3>
               <ul className="space-y-1.5 text-content-muted font-body leading-snug list-none pl-0">
-                {prereqPreview.map((p, i) => (
-                  <li key={i} className="pl-3 border-l-2 border-primary/25">
+                {prereqPreview.map((p) => (
+                  <li key={p} className="pl-3 border-l-2 border-primary/25">
                     {p}
                   </li>
                 ))}

@@ -1,0 +1,9 @@
+# Protéger les fichiers de configuration
+<FilesMatch "^\.env">
+  Require all denied
+</FilesMatch>
+
+# Forcer l'exécution PHP (hébergement mutualisé)
+<IfModule mod_rewrite.c>
+  RewriteEngine Off
+</IfModule>

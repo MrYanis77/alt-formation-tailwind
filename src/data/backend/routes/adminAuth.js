@@ -1,6 +1,6 @@
 import express from 'express';
 import bcrypt from 'bcryptjs';
-import crypto from 'crypto';
+import crypto from 'node:crypto';
 import { query, isDatabaseDisabled } from '../db.js';
 import { ADMIN_SESSION_COOKIE } from '../constants.js';
 import { attachAdminUser } from '../middleware/attachAdmin.js';

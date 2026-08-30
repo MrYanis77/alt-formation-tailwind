@@ -23,10 +23,21 @@ async function main() {
 
   const username = (process.env.ADMIN_USERNAME || 'superadmin').trim().slice(0, 60);
   const email = (process.env.ADMIN_EMAIL || 'admin@altformations.fr').trim().toLowerCase().slice(0, 180);
-  const password = process.env.ADMIN_PASSWORD || 'Admin1234!';
+  const password = process.env.ADMIN_PASSWORD;
 
-  if (password.length < 8) {
-    console.error('[ERREUR] ADMIN_PASSWORD doit faire au moins 8 caracteres.');
+  if (!password) {
+    console.error('[ERREUR] ADMIN_PASSWORD est obligatoire. Aucun mot de passe par defaut ne sera utilise.');
+    process.exit(1);
+  }
+
+  const isStrongPassword = password.length >= 12
+    && /[a-z]/.test(password)
+    && /[A-Z]/.test(password)
+    && /\d/.test(password)
+    && /[^A-Za-z0-9]/.test(password);
+
+  if (!isStrongPassword) {
+    console.error('[ERREUR] ADMIN_PASSWORD doit contenir 12 caracteres, une majuscule, une minuscule, un chiffre et un symbole.');
     process.exit(1);
   }
 
@@ -63,12 +74,14 @@ async function main() {
 
   await query('DELETE FROM admin_sessions WHERE admin_id = ?', [adminId]);
 
-  console.log(`Mot de passe : ${password}`);
+  console.log('Le mot de passe a ete lu depuis ADMIN_PASSWORD et ne sera jamais affiche.');
   console.log('Changez-le après la première connexion au tableau de bord.');
   process.exit(0);
 }
 
-main().catch((err) => {
+try {
+  await main();
+} catch (err) {
   console.error('Erreur seed-admin :', err);
   process.exit(1);
-});
+}

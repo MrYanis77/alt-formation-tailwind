@@ -1,12 +1,10 @@
-import { faqHero } from './hero.js';
+export { faqHero } from './hero.js';
 import formation from './formation.js';
 import financement from './financement.js';
 import bilan from './bilan.js';
 import certificationTests from './certification-tests.js';
 import recrutementCarriere from './recrutement-carriere.js';
 import qualiopiOrganisme from './qualiopi-organisme.js';
-
-export { faqHero };
 
 export const faqCategories = [
   formation,

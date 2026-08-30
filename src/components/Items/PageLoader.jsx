@@ -2,7 +2,12 @@ import React from 'react';
 
 const PageLoader = () => {
   return (
-    <div className="fixed inset-0 z-[999] flex items-center justify-center bg-white/80 backdrop-blur-sm transition-opacity duration-300">
+    <div
+      className="fixed inset-0 z-[999] flex items-center justify-center bg-white/80 backdrop-blur-sm transition-opacity duration-300"
+      role="status"
+      aria-live="polite"
+      aria-label="Chargement de la page"
+    >
       <div className="flex flex-col items-center gap-4">
         {/* Spinner élégant avec les couleurs du thème */}
         <div className="relative w-16 h-16">

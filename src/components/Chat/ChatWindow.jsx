@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, useCallback } from 'react';
 import { X, ArrowLeft } from 'lucide-react';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '../../hooks/useAuth';
 
 const POLL_INTERVAL = 5000;
 
@@ -206,6 +206,7 @@ export default function ChatWindow({
       <div className="flex items-center gap-2 px-4 py-3 bg-primary text-white shrink-0">
         {onBack && (
           <button
+            type="button"
             onClick={onBack}
             className="text-white/80 hover:text-white p-1"
             aria-label="Retour"
@@ -216,6 +217,7 @@ export default function ChatWindow({
         <h3 className="font-bold text-sm truncate flex-1">{computedTitle}</h3>
         {onClose && (
           <button
+            type="button"
             onClick={onClose}
             className="text-white/70 hover:text-white p-1"
             aria-label="Fermer"

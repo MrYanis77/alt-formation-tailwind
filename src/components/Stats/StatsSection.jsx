@@ -10,20 +10,21 @@ const AnimatedNumber = ({ value, duration = 2000 }) => {
   useEffect(() => {
     // Expression régulière pour séparer préfixe, nombre et suffixe
     // Gère les entiers et les décimales
-    const match = String(value).match(/^(\D*)(\d+(?:\.\d+)?)(\D*)$/);
+    const match = /^(\D*)(\d+(?:\.\d+)?)(\D*)$/.exec(String(value));
 
     // Si la valeur n'est pas un nombre (ex: juste du texte), on l'affiche direct
     if (!match) {
-      setDisplayValue(value);
-      return;
+      const frameId = window.requestAnimationFrame(() => setDisplayValue(value));
+      return () => window.cancelAnimationFrame(frameId);
     }
 
     const prefix = match[1];
-    const target = parseFloat(match[2]);
+    const target = Number.parseFloat(match[2]);
     const suffix = match[3];
     const isFloat = match[2].includes('.');
 
     let startTime = null;
+    let frameId;
 
     const step = (timestamp) => {
       if (!startTime) startTime = timestamp;
@@ -42,14 +43,15 @@ const AnimatedNumber = ({ value, duration = 2000 }) => {
       setDisplayValue(`${prefix}${formattedVal}${suffix}`);
 
       if (progress < 1) {
-        window.requestAnimationFrame(step);
+        frameId = window.requestAnimationFrame(step);
       } else {
         // S'assurer qu'à la fin de l'animation, on affiche exactement la prop d'origine
         setDisplayValue(value);
       }
     };
 
-    window.requestAnimationFrame(step);
+    frameId = window.requestAnimationFrame(step);
+    return () => window.cancelAnimationFrame(frameId);
   }, [value, duration]);
 
   return <>{displayValue}</>;
@@ -73,8 +75,8 @@ export default function StatsSection({ stats, title, variant = 'navy' }) {
         )}
 
         <div className="flex justify-center gap-10 md:gap-20 flex-wrap">
-          {stats.map((s, idx) => (
-            <div key={idx} className="flex flex-col items-center min-w-[150px]">
+          {stats.map((s) => (
+            <div key={`${s.label}-${s.value}`} className="flex flex-col items-center min-w-[150px]">
               {/* Le chiffre est toujours Orange et maintenant animé */}
               <span className="font-heading text-4xl md:text-[48px] font-extrabold text-accent leading-none">
                 <AnimatedNumber value={s.value} duration={2000} />

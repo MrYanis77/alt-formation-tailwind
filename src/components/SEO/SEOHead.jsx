@@ -23,7 +23,7 @@ export default function SEOHead({ title, description, canonical, ogImage }) {
       if (!el) {
         el = document.createElement('meta');
         const [attr, val] = selector.replace('[', '').replace(']', '').split('=');
-        el.setAttribute(attr.trim(), val.replace(/"/g, '').trim());
+        el.setAttribute(attr.trim(), val.replaceAll('"', '').trim());
         document.head.appendChild(el);
       }
       el.setAttribute(attribute, value);

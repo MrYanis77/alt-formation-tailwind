@@ -19,6 +19,9 @@ export default function CardDesc({
   imageContain = false,
 }) {
   const isExternal = (href) => href?.startsWith('http');
+  let columnsClass = 'lg:grid-cols-2';
+  if (columns.length >= 4) columnsClass = 'lg:grid-cols-4';
+  else if (columns.length === 3) columnsClass = 'lg:grid-cols-3';
 
   return (
     <section
@@ -54,24 +57,18 @@ export default function CardDesc({
           ) : null}
 
           <div
-            className={`grid grid-cols-1 ${
-              columns.length >= 4
-                ? 'lg:grid-cols-4'
-                : columns.length === 3
-                  ? 'lg:grid-cols-3'
-                  : 'lg:grid-cols-2'
-            } gap-8`}
+            className={`grid grid-cols-1 ${columnsClass} gap-8`}
           >
-            {columns.map((col, idx) => (
-              <div key={idx} className="flex flex-col h-full">
+            {columns.map((col) => (
+              <div key={col.label || col.titre} className="flex flex-col h-full">
                 <h3 className="font-heading text-medium font-bold text-primary mb-4 uppercase tracking-tight">
                   {col.label || col.titre}
                 </h3>
 
                 {col.items?.length > 0 ? (
                   <ul className="flex flex-col gap-3 mb-6">
-                    {col.items.map((item, i) => (
-                      <li key={i} className="flex items-start gap-3 text-medium text-content-muted">
+                    {col.items.map((item) => (
+                      <li key={item} className="flex items-start gap-3 text-medium text-content-muted">
                         <span className="text-accent font-bold text-xl leading-none mt-[-2px]">•</span>
                         {item}
                       </li>

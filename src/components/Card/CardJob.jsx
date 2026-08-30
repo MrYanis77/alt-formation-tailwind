@@ -1,45 +1,40 @@
 /*
- * Composant CardJob
- * Affiche une carte pour une offre d'emploi avec :
- * - Le titre du poste
- * - Le type de contrat (CDI, CDD, Freelance)
- * - Le lieu et la date de publication
- * - Un bouton pour postuler
+ * Composant CardJob — offre d'emploi interne (Nous rejoindre)
  */
 
-export default function CardJob({ titre, type, lieu, date, onClick, href = "#contact" }) {
+import { Link } from 'react-router-dom';
+
+export default function CardJob({ titre, type, lieu, date, applyTo }) {
   return (
-    <div className="bg-white rounded-sm shadow-sm border border-border border-l-[6px] border-l-orange p-6 flex flex-col md:flex-row md:items-center justify-between gap-6 transition-all hover:shadow-md w-full">
+    <div className="bg-white rounded-sm shadow-sm border border-border border-l-4 border-l-orange p-4 md:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all hover:shadow-md w-full">
       <div className="flex-1">
-        <h3 className="text-primary font-heading font-extrabold text-xl md:text-2xl mb-1">
+        <h3 className="text-primary font-heading font-extrabold text-lg md:text-xl mb-1">
           {titre}
         </h3>
-        {/* 'type' affiche CDI, CDD ou Freelance */}
-        <p className="text-accent font-bold text-xs uppercase tracking-wider mb-4">
+        <p className="text-accent font-bold text-xs uppercase tracking-wider mb-2">
           Type de contrat : {type}
         </p>
-        
-        <div className="flex flex-wrap gap-x-12 gap-y-4">
+
+        <div className="flex flex-wrap gap-x-8 gap-y-2">
           <div className="flex flex-col">
             <span className="text-content-dark font-bold text-sm">📍 Lieu :</span>
             <span className="text-content-muted text-sm">{lieu}</span>
           </div>
-          <div className="flex flex-col">
-            <span className="text-content-dark font-bold text-sm">📅 Publié le :</span>
-            <span className="text-content-muted text-sm leading-tight">
-              {date}
-            </span>
-          </div>
+          {date ? (
+            <div className="flex flex-col">
+              <span className="text-content-dark font-bold text-sm">📅 Publié le :</span>
+              <span className="text-content-muted text-sm leading-tight">{date}</span>
+            </div>
+          ) : null}
         </div>
       </div>
 
-      <a 
-        href={"/contact"}
-        onClick={onClick}
-        className="btn-orange px-10 py-3 self-start md:self-center shadow-lg hover:shadow-accent/20 active:scale-95 transition-all no-underline inline-block text-center"
+      <Link
+        to={applyTo}
+        className="btn-orange px-6 py-2 text-sm self-start md:self-center shadow-md hover:shadow-accent/20 active:scale-95 transition-all no-underline inline-block text-center"
       >
         Postuler
-      </a>
+      </Link>
     </div>
   );
 }

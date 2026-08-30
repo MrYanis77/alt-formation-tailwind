@@ -1,4 +1,4 @@
-import { Search, Filter } from 'lucide-react';
+import { Search } from 'lucide-react';
 
 /**
  * Barre de filtre par catégorie réutilisable — sticky, avec chips pill.
@@ -55,6 +55,7 @@ const FiltreCat = ({
               />
               {searchTerm && (
                 <button
+                  type="button"
                   onClick={() => setSearchTerm('')}
                   className="absolute inset-y-0 right-0 pr-3 flex items-center text-content-muted hover:text-primary transition-colors"
                   aria-label="Effacer la recherche"
@@ -74,6 +75,7 @@ const FiltreCat = ({
           </span>
 
           <button
+            type="button"
             onClick={() => setActiveCat(allValue)}
             className={`shrink-0 inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-200 whitespace-nowrap border ${
               activeCat === allValue
@@ -90,6 +92,7 @@ const FiltreCat = ({
             const isActive = activeCat === cat.id;
             return (
               <button
+                type="button"
                 key={cat.id}
                 onClick={() => setActiveCat(cat.id)}
                 className={`shrink-0 inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-200 whitespace-nowrap border ${

@@ -11,9 +11,7 @@ function truthyEnv(v) {
 /** Si true : aucune connexion MySQL ; `query()` utilise des données factices (voir mockDb.js). */
 export const isDatabaseDisabled = truthyEnv(process.env.DISABLE_DATABASE);
 
-let pool = null;
-if (!isDatabaseDisabled) {
-  pool = mysql.createPool({
+const pool = isDatabaseDisabled ? null : mysql.createPool({
     host: process.env.DB_HOST || 'localhost',
     port: Number(process.env.DB_PORT) || 3306,
     user: process.env.DB_USER || 'root',
@@ -24,7 +22,6 @@ if (!isDatabaseDisabled) {
     queueLimit: 0,
     charset: 'utf8mb4',
   });
-}
 
 export async function query(sql, params = []) {
   if (isDatabaseDisabled) {

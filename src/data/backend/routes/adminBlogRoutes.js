@@ -121,7 +121,7 @@ router.patch('/posts/:id', async (req, res) => {
     const st = status != null && ['draft', 'published', 'archived'].includes(status) ? status : prev[0].status;
     let pubAt = prev[0].published_at;
     if (published_at !== undefined) {
-      pubAt = published_at ? published_at : null;
+      pubAt = published_at || null;
     }
     if (st === 'published' && !pubAt) {
       pubAt = new Date().toISOString().slice(0, 19).replace('T', ' ');

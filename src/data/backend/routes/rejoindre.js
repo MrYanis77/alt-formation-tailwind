@@ -27,14 +27,14 @@ router.post('/', async (req, res) => {
           </table>
           <div style="margin-top: 25px;">
             <strong>Message / Motivation :</strong>
-            <div style="background-color: #f8fafc; padding: 15px; border-radius: 6px; white-space: pre-wrap;">${message ? message.replace(/\n/g, '<br/>') : 'Aucun message.'}</div>
+            <div style="background-color: #f8fafc; padding: 15px; border-radius: 6px; white-space: pre-wrap;">${message ? message.replaceAll('\n', '<br/>') : 'Aucun message.'}</div>
           </div>
           <p style="margin-top: 20px; font-size: 12px; color: #718096;">Le CV est joint à cet email.</p>
         </div>
       `,
     };
 
-    if (attachment && attachment.content && attachment.filename) {
+    if (attachment?.content && attachment.filename) {
       emailOptions.attachments = [
         { filename: attachment.filename, content: attachment.content },
       ];

@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { MessageCircle, X, ChevronRight, MessageSquare, HelpCircle } from 'lucide-react';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '../../hooks/useAuth';
 import ChatWindow from './ChatWindow';
 
 const POLL_LIST_INTERVAL = 20000;
@@ -59,6 +59,7 @@ export default function ChatWidget() {
   return (
     <>
       <button
+        type="button"
         onClick={() => setOpen(!open)}
         className="fixed bottom-6 right-6 z-[200] bg-accent hover:bg-accent-dark text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110"
         aria-label={open ? 'Fermer le chat' : 'Ouvrir le chat'}
@@ -106,6 +107,7 @@ function ConversationList({ contacts, faqRequests, loading, total, onPick, onClo
           <p className="text-[11px] text-white/70">{total} ticket{total > 1 ? 's' : ''}</p>
         </div>
         <button
+          type="button"
           onClick={onClose}
           className="text-white/70 hover:text-white p-1"
           aria-label="Fermer"
@@ -209,6 +211,7 @@ function ListSection({ title, icon, items, onPick }) {
         {items.map((it) => (
           <li key={`${it.kind}-${it.id}`}>
             <button
+              type="button"
               onClick={() =>
                 onPick({
                   kind: it.kind,

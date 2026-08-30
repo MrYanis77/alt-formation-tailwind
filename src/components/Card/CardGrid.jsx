@@ -46,7 +46,7 @@ export default function CardGrid({ services, cols = 3, variant = "default" }) {
                   ))}
                 </ul>
 
-                <button className="btn-orange self-start text-small py-2 px-6 uppercase tracking-wider">
+                <button type="button" className="btn-orange self-start text-small py-2 px-6 uppercase tracking-wider">
                   En savoir plus
                 </button>
               </div>

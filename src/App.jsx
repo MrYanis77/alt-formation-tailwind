@@ -19,6 +19,7 @@ const FinancementPage = lazy(() => import('./pages/FinancementPage'));
 const EntreprisePage = lazy(() => import('./pages/EntreprisePage'));
 const AproposPage = lazy(() => import('./pages/AproposPage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
+const BlogArticlePage = lazy(() => import('./pages/BlogArticlePage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 // const ConnexionPage = lazy(() => import('./pages/ConnexionPage'));
 // const InscriptionPage = lazy(() => import('./pages/InscriptionPage'));
@@ -26,6 +27,7 @@ const FormationDetail = lazy(() => import('./pages/FormationDetail'));
 const CampusPage = lazy(() => import('./pages/CampusPages'));
 const CertificationPage = lazy(() => import('./pages/CertificationPage'));
 const NousRejoindre = lazy(() => import('./pages/NousRejoindrePage'));
+const CareerJobDetailPage = lazy(() => import('./pages/CareerJobDetailPage'));
 const MentionsLegales = lazy(() => import('./pages/MentionsLegales'));
 const PolitiqueConfidentialite = lazy(() => import('./pages/PolitiqueConfidentialite'));
 const ReglementInterieur = lazy(() => import('./pages/ReglementInterieur'));
@@ -36,6 +38,7 @@ const FaqPage = lazy(() => import('./pages/FaqPage'));
 const CarrierePage = lazy(() => import('./pages/CarrierePage'));
 const BilanDeCompetencePage = lazy(() => import('./pages/BilanDeCompetencePage'));
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard'));
+const TestBddPage = lazy(() => import('./pages/TestBddPage'));
 
 /** Anciennes URLs → catalogue unifié (ancres conservées pour les domaines). */
 function RedirectFormationCatalogTab({ tab }) {
@@ -78,9 +81,15 @@ function AppShell() {
   return (
     <>
       <ScrollToTop />
+      <a
+        href="#contenu-principal"
+        className="sr-only focus:not-sr-only fixed left-4 top-4 z-[200] rounded-md bg-white px-4 py-3 font-bold text-primary shadow-lg"
+      >
+        Aller au contenu principal
+      </a>
       <Navbar />
 
-      <main className="min-h-screen">
+      <main id="contenu-principal" tabIndex="-1" className="min-h-screen outline-none">
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Navigate to="/accueil" replace />} />
@@ -102,6 +111,7 @@ function AppShell() {
 
               <Route path="/a-propos" element={<AproposPage />} />
               <Route path="/blog" element={<BlogPage />} />
+              <Route path="/blog/:slug" element={<BlogArticlePage />} />
               <Route path="/contact" element={<ContactPage />} />
               {/* <Route path="/inscription" element={<InscriptionPage />} /> */}
               {/* <Route path="/connexion" element={<ConnexionPage />} /> */}
@@ -119,6 +129,7 @@ function AppShell() {
 
               <Route path="/ressources-ia" element={<RessourcesIAPages />} />
               <Route path="/nous-rejoindre" element={<NousRejoindre />} />
+              <Route path="/nous-rejoindre/offre/:slug" element={<CareerJobDetailPage />} />
 
               <Route path="/demarche-pedagogique" element={<DemarchePage />} />
               <Route path="/demarche-qualite" element={<DemarchePage />} />
@@ -131,6 +142,8 @@ function AppShell() {
             <Route path="/politique-de-confidentialite" element={<PolitiqueConfidentialite />} />
             <Route path="/conditions-generales" element={<PolitiqueCookies />} />
             <Route path="/reglement-interieur" element={<ReglementInterieur />} />
+
+            <Route path="/test-bdd" element={<TestBddPage />} />
 
             <Route
               path="/admin"

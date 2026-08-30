@@ -1,7 +1,7 @@
-import { buildWebpSrcSet, parseAssetImagePath } from '../utils/responsiveImage';
+import { buildWebpSrcSet, parseAssetImagePath, hasLocalWebpVariants } from '../utils/responsiveImage';
 
 /**
- * Image responsive avec variantes WebP (-400w, -800w, -1200w) si disponibles.
+ * Responsive image with WebP variants only when generated local variants exist.
  */
 export default function ResponsiveImage({
   src,
@@ -13,17 +13,16 @@ export default function ResponsiveImage({
   height,
   aspectRatio,
   ariaHidden = false,
-  onClick,
   onError,
   ...rest
 }) {
   const parsed = parseAssetImagePath(src);
-  const webpSrcSet = parsed && !parsed.external ? buildWebpSrcSet(src) : null;
+  const webpSrcSet = parsed && hasLocalWebpVariants(src) ? buildWebpSrcSet(src) : null;
   const loading = priority ? 'eager' : 'lazy';
   const fetchPriority = priority ? 'high' : undefined;
+  const accessibleAlt = ariaHidden ? '' : alt;
 
   const imgProps = {
-    alt: ariaHidden ? '' : alt,
     className,
     loading,
     decoding: 'async',
@@ -42,10 +41,10 @@ export default function ResponsiveImage({
     return (
       <picture>
         <source type="image/webp" srcSet={webpSrcSet} sizes={sizes} />
-        <img src={src} sizes={sizes} {...imgProps} onClick={onClick} />
+        <img src={src} alt={accessibleAlt} sizes={sizes} {...imgProps} />
       </picture>
     );
   }
 
-  return <img src={src} {...imgProps} onClick={onClick} />;
+  return <img src={src} alt={accessibleAlt} {...imgProps} />;
 }

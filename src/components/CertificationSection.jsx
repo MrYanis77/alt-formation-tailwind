@@ -22,9 +22,9 @@ export default function CertificationSection({ data }) {
 
                 {/* Partie Badges/Images */}
                 <div className="flex-shrink-0 flex gap-6 items-center justify-center flex-wrap">
-                    {data.badges.map((badge, index) => (
+                    {data.badges.map((badge) => (
                         <div
-                            key={index}
+                            key={badge.image || badge.nom}
                             className="flex items-center justify-center bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/20 shadow-2xl hover:scale-105 transition-transform duration-300"
                         >
                             <ResponsiveImage

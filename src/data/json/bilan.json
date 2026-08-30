@@ -89,7 +89,6 @@
         },
         "parcours": {
             "titre": "Déroulement de votre accompagnement",
-            "sousTitre": "Le cadre légal impose trois phases ; à l'intérieur, nous adaptons les angles selon votre vécu.",
             "etapes": [
                 {
                     "titre": "Cadrage",
@@ -140,7 +139,7 @@
                 {
                     "nom": "Essentiel",
                     "heures": 15,
-                    "prix": 1600,
+                    "prix": 1800,
                     "resume": "Volume adapté lorsque votre question est déjà bien formulée mais mérite une lecture structurée et une décision documentée.",
                     "programme": "Passage en revue des domaines habituels du bilan — savoir-faire, motivations, contraintes — puis mise au net d'une orientation principale et d'une première série de gestes à engager.",
                     "dureeDetails": [
@@ -157,7 +156,7 @@
                 {
                     "nom": "Confort",
                     "heures": 18,
-                    "prix": 1800,
+                    "prix": 2000,
                     "resume": "Volume intermédiaire lorsque les arbitrages demandent davantage de temps de parole et de confrontation aux données.",
                     "programme": "Même socle méthodologique que la formule Essentiel, avec des créneaux supplémentaires pour creuser les zones encore floues (priorités contradictoires, peur du saut, lecture du marché…).",
                     "dureeDetails": [
@@ -174,7 +173,7 @@
                 {
                     "nom": "Premium",
                     "heures": 20,
-                    "prix": 2000,
+                    "prix": 2400,
                     "resume": "La volumétrie la plus large lorsque la trajectoire implique plusieurs variables à stabiliser en parallèle.",
                     "programme": "Parcours dense axé sur la robustesse du projet : consolidation des analyses personnelles, exploration suivie des hypothèses retenues et préparation méthodique à ce qui suivra immédiatement la fin du bilan.",
                     "dureeDetails": [

@@ -1,5 +1,5 @@
 import { matchPath } from 'react-router-dom';
-import { getFormationCatalogCategory } from './formationCategory';
+import { getFormationCatalogCategory } from './formationCatalogueBdd';
 
 /** Pages sans mini-FAQ (contenu légal uniquement). */
 const LEGAL_PATHS = new Set([

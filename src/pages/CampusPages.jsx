@@ -62,13 +62,15 @@ export default function CampusPages() {
         </div>
       </section>
 
-      <CampusImageLightbox
-        open={Boolean(lightboxCampusId)}
-        onClose={() => setLightboxCampusId(null)}
-        title={activeCampus?.nom ?? ''}
-        images={galleryImages}
-        initialIndex={0}
-      />
+      {lightboxCampusId ? (
+        <CampusImageLightbox
+          open
+          onClose={() => setLightboxCampusId(null)}
+          title={activeCampus?.nom ?? ''}
+          images={galleryImages}
+          initialIndex={0}
+        />
+      ) : null}
     </div>
   );
 }
