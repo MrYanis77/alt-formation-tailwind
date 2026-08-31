@@ -71,7 +71,7 @@ function fetchPostTags(PDO $pdo, int $postId): array
 
     $stmt = $pdo->prepare('
         SELECT t.name
-        FRM blog_tags t
+        FROM blog_tags t
         INNER JOIN blog_post_tags pt ON pt.tag_id = t.id
         WHERE pt.post_id = :post_id
         ORDER BY t.name ASC
