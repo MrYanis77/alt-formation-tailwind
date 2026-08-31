@@ -14,9 +14,22 @@ function getSiteRow(PDO $pdo, int $siteId): ?array
     if (!tableExists($pdo, 'core_sites')) {
         return null;
     }
+
+    // Les anciennes bases ne possèdent pas toujours toutes les colonnes
+    // éditoriales. On conserve le même format de réponse sans provoquer
+    // d'erreur SQL lorsqu'une de ces colonnes est absente.
+    $optionalColumns = ['name', 'slug', 'site_code', 'domain', 'is_active'];
+    $selectedColumns = ['id'];
+
+    foreach ($optionalColumns as $column) {
+        $selectedColumns[] = columnExists($pdo, 'core_sites', $column)
+            ? $column
+            : 'NULL AS ' . $column;
+    }
+
     $rows = fetchAll(
         $pdo,
-        'SELECT id, name, slug, site_code, domain, is_active FROM core_sites WHERE id = ? LIMIT 1',
+        'SELECT ' . implode(', ', $selectedColumns) . ' FROM core_sites WHERE id = ? LIMIT 1',
         [$siteId]
     );
     return $rows[0] ?? null;
